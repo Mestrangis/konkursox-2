@@ -3,6 +3,7 @@ import { copyFileSync, existsSync, mkdirSync, readdirSync, statSync } from 'node
 import { extname, join, relative, resolve, sep } from 'node:path'
 import { pathToFileURL } from 'node:url'
 import { app, net, protocol } from 'electron'
+import { imagesDir } from './banks'
 import { dispatch, getState } from './store'
 import type { AudioLibrary } from '../shared/types'
 
@@ -59,10 +60,12 @@ export function setAudioDir(dir: string): void {
 export function handleMediaProtocol(): void {
   protocol.handle(MEDIA_SCHEME, (req) => {
     const url = new URL(req.url)
-    const root = resolve(audioDir())
+    const roots: Record<string, string> = { audio: audioDir(), imagenes: imagesDir() }
+    if (!roots[url.host]) return new Response('forbidden', { status: 403 })
+    const root = resolve(roots[url.host])
     const target = resolve(root, decodeURIComponent(url.pathname).replace(/^\/+/, ''))
     const rel = relative(root, target)
-    if (url.host !== 'audio' || rel.startsWith('..') || rel.includes(':') || target === root || !target.startsWith(root + sep)) {
+    if (rel.startsWith('..') || rel.includes(':') || target === root || !target.startsWith(root + sep)) {
       return new Response('forbidden', { status: 403 })
     }
     return net.fetch(pathToFileURL(target).toString())

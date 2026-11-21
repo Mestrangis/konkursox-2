@@ -1,9 +1,10 @@
 // Escenas del plató (cabecera y plantillas 1/2/3/4/equipos). Compartidas por el plató y la vista previa del panel.
 import { sourceRectForFrame } from '../../shared/crop'
 import { LAYOUTS } from '../../shared/layouts'
-import { contestantOrder } from '../../shared/state'
+import { contestantOrder } from '../../shared/order'
 import type { GameState, SlotId } from '../../shared/types'
 import type { CaptureFeed } from '../common/feed'
+import { buildQuizScene, quizSceneKey, turnSlots } from './quizScenes'
 import {
   camFrame,
   emblem,
@@ -23,9 +24,14 @@ export interface Scene {
   root: HTMLDivElement
   frames: Map<SlotId, CamFrameEl>
   update(s: GameState): void
+  /** animaciones por fotograma (temporizador) */
+  tick?(s: GameState): void
 }
 
-export const sceneKey = (s: GameState): string => `${s.layout}:${contestantOrder(s).join(',')}`
+/** ¿El plató muestra la escena de preguntas? */
+export const showsQuiz = (s: GameState): boolean => (s.view === 'quiz' && !!s.quiz.current) || (s.view === 'result' && !!s.quiz.ladder.outcome)
+
+export const sceneKey = (s: GameState): string => (showsQuiz(s) ? quizSceneKey(s) : `${s.layout}:${contestantOrder(s).join(',')}`)
 
 function coverScene(): HTMLDivElement {
   const ring = (size: number, alpha: number) =>
@@ -75,6 +81,7 @@ function coverScene(): HTMLDivElement {
 }
 
 export function buildScene(s: GameState): Scene {
+  if (showsQuiz(s)) return buildQuizScene(s)
   const key = sceneKey(s)
   const frames = new Map<SlotId, CamFrameEl>()
   if (s.layout === 'logo') {
@@ -123,6 +130,8 @@ export function buildScene(s: GameState): Scene {
   root.append(lower.root)
 
   const update = (st: GameState) => {
+    const turn = turnSlots(st)
+    for (const [slot, f] of frames) f.root.classList.toggle('is-turn', turn.has(slot))
     for (const [slot, plate] of plates) {
       if (slot === 'host') {
         plate.setName(st.host.name)

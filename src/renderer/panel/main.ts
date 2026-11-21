@@ -2,12 +2,13 @@ import '../ds/tokens.css'
 import '../ds/components.css'
 import './panel.css'
 import { LAYOUT_ORDER, LAYOUTS, STAGE_W } from '../../shared/layouts'
-import { contestantOrder } from '../../shared/state'
+import { contestantOrder } from '../../shared/order'
 import { SLOT_IDS, type Action, type AudioLibrary, type CaptureHealth, type DisplayInfo, type GameState } from '../../shared/types'
 import { autoReconnect, CaptureFeed } from '../common/feed'
 import { h } from '../ds/components'
 import { buildScene, drawFrames, sceneKey, type Scene } from '../plato/scenes'
 import { AudioEngine } from './audio'
+import { createQuizTab } from './quiz'
 import { createCalibration, drawSlotPreview, slotLabel } from './calibrate'
 
 const app = document.getElementById('app') as HTMLDivElement
@@ -192,9 +193,12 @@ onState((s) => {
   drawFrames(feed, scene, s.cameras.rects)
 })
 
+const previewCard = card('Vista previa del plató', preview)
+const previewSlot1 = h('div', 'p-slot', {}, [previewCard])
+const previewSlot2 = h('div', 'p-slot')
 const col1 = h('div', 'p-col', {}, [
   card('Plantilla del plató', h('div', 'p-layouts', {}, layoutBtns)),
-  card('Vista previa', preview),
+  previewSlot1,
   card(
     'Rótulo inferior',
     h('div', 'p-col', { gap: 8 }, [
@@ -377,6 +381,7 @@ audio.onChange = renderLibrary
 async function loadLibrary(): Promise<void> {
   library = await konk.audioLibrary()
   renderLibrary()
+  quizTab.refreshSounds()
 }
 
 function slider(label: string, min: number, max: number, stepV: number, get: (s: GameState) => number, set: (v: number) => void, fmt: (v: number) => string) {
@@ -441,7 +446,59 @@ setInterval(() => {
 
 const col3 = h('div', 'p-col', {}, [camCard, audioCard])
 
-app.append(h('main', 'p-main', {}, [col1, col2, col3]), calibration.el)
+const quizTab = createQuizTab({
+  send: (a) => send(a),
+  getState: () => state,
+  audio,
+  getSfx: () => library.sfx,
+  previewSlot: previewSlot2
+})
+const platoMain = h('main', 'p-main', {}, [col1, col2, col3])
+
+// ---------- pestañas ----------
+type Tab = 'plato' | 'quiz'
+let tab: Tab = 'plato'
+try {
+  tab = localStorage.getItem('konk.tab') === 'quiz' ? 'quiz' : 'plato'
+} catch {
+  /* sin almacenamiento */
+}
+const tabBtns = {
+  plato: btn('Plató y cámaras', () => setTab('plato'), 'p-tab'),
+  quiz: btn('Preguntas', () => setTab('quiz'), 'p-tab')
+}
+function setTab(t: Tab): void {
+  tab = t
+  try {
+    localStorage.setItem('konk.tab', t)
+  } catch {
+    /* sin almacenamiento */
+  }
+  platoMain.style.display = t === 'plato' ? '' : 'none'
+  quizTab.el.style.display = t === 'quiz' ? '' : 'none'
+  ;(t === 'plato' ? previewSlot1 : previewSlot2).append(previewCard)
+  tabBtns.plato.classList.toggle('is-active', t === 'plato')
+  tabBtns.quiz.classList.toggle('is-active', t === 'quiz')
+  previewStage.style.transform = `scale(${preview.clientWidth / STAGE_W})`
+}
+const viewBadge = h('span', 'p-phase')
+onState((s) => {
+  viewBadge.textContent = s.view === 'plato' ? 'En el plató: plantilla' : s.view === 'quiz' ? (s.quiz.current ? 'En el plató: pregunta' : 'En el plató: plantilla') : 'En el plató: pantalla final'
+})
+app.append(h('nav', 'p-tabs', {}, [tabBtns.plato, tabBtns.quiz, h('span', 'p-spacer', { flex: 1 }), viewBadge]), platoMain, quizTab.el, calibration.el)
+setTab(tab)
+
+window.addEventListener('keydown', (e) => {
+  if (calibration.isOpen || !state) return
+  quizTab.onKey(e)
+})
+
+// temporizador de la vista previa
+const tickLoop = () => {
+  if (scene?.tick && state) scene.tick(state)
+  requestAnimationFrame(tickLoop)
+}
+requestAnimationFrame(tickLoop)
 
 // ---------- fotogramas ----------
 let lastThumbs = 0
@@ -462,6 +519,7 @@ function render(s: GameState): void {
   state = s
   for (const u of updaters) u(s)
   calibration.update(s)
+  quizTab.update()
   renderDisplays()
   if (feed.currentSource !== s.cameras.sourceId || epoch !== s.runtime.captureEpoch) {
     epoch = s.runtime.captureEpoch
@@ -473,6 +531,7 @@ konk.onState(render)
 void konk.getState().then(async (s) => {
   render(s)
   void loadLibrary()
+  void quizTab.loadBanks()
   // Primera vez: preselecciona la ventana de Discord si existe.
   if (!s.cameras.sourceId) {
     const list = await konk.listSources()

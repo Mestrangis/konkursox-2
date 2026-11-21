@@ -52,5 +52,12 @@ function render(s: GameState): void {
 }
 let epoch = -1
 
+// temporizador y otras animaciones por fotograma
+const loop = () => {
+  if (scene?.tick && state) scene.tick(state)
+  requestAnimationFrame(loop)
+}
+requestAnimationFrame(loop)
+
 window.konk.onState(render)
 void window.konk.getState().then(render)

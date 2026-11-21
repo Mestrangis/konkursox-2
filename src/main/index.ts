@@ -1,5 +1,6 @@
 import { join } from 'node:path'
 import { app, BrowserWindow, dialog, ipcMain, screen, shell } from 'electron'
+import { banksDir, ensureBanks, importLegacyFile, listBanks, readBank } from './banks'
 import { installDisplayMediaHandler, listWindowSources, resolveSource } from './capture'
 import { audioDir, audioLibrary, handleMediaProtocol, registerMediaScheme, setAudioDir } from './media'
 import { dispatch, flushSave, getState, initStore, onStateChange } from './store'
@@ -26,6 +27,11 @@ if (!app.requestSingleInstanceLock()) {
   app.whenReady().then(() => {
     initStore(join(app.getPath('userData'), 'konkursox-state.json'), app.getVersion())
     handleMediaProtocol()
+    try {
+      ensureBanks()
+    } catch (err) {
+      console.error('[bancos]', err)
+    }
     installDisplayMediaHandler()
     registerIpc()
 
@@ -80,6 +86,28 @@ function registerIpc(): void {
     const res = win ? await dialog.showOpenDialog(win, opts) : await dialog.showOpenDialog(opts)
     if (!res.canceled && res.filePaths[0]) setAudioDir(res.filePaths[0])
     return audioLibrary()
+  })
+  ipcMain.handle('bank:list', () => listBanks())
+  ipcMain.handle('bank:get', (_e, file: string) => readBank(file))
+  ipcMain.handle('bank:openDir', () => shell.openPath(banksDir()))
+  ipcMain.handle('bank:import', async () => {
+    const win = BrowserWindow.getFocusedWindow() ?? getPanel()
+    const opts: Electron.OpenDialogOptions = {
+      title: 'Importar preguntas (formato antiguo o nuevo)',
+      filters: [{ name: 'Preguntas JSON', extensions: ['json'] }],
+      properties: ['openFile', 'multiSelections']
+    }
+    const res = win ? await dialog.showOpenDialog(win, opts) : await dialog.showOpenDialog(opts)
+    const imported: string[] = []
+    const errors: string[] = []
+    for (const p of res.canceled ? [] : res.filePaths) {
+      try {
+        imported.push(importLegacyFile(p))
+      } catch (err) {
+        errors.push(`${p}: ${(err as Error).message}`)
+      }
+    }
+    return { imported, errors }
   })
   ipcMain.handle('update:check', () => checkForUpdates())
   ipcMain.handle('update:install', () => installUpdate())

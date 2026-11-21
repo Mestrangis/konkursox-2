@@ -1,6 +1,7 @@
 // Estado inicial + reducer puro. El proceso main es el único que lo ejecuta (fuente única de verdad).
 import { sanitizeRel } from './crop'
-import { CONTESTANT_IDS, type Action, type ContestantId, type GameState } from './types'
+import { applyQuizAction, defaultQuiz, type QuizAction, type QuizState } from './quiz'
+import { CONTESTANT_IDS, type Action, type GameState } from './types'
 
 export function todayLabel(d = new Date()): string {
   const months = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre']
@@ -9,6 +10,7 @@ export function todayLabel(d = new Date()): string {
 
 export function defaultState(): GameState {
   return {
+    view: 'plato',
     layout: 'logo',
     contestants: CONTESTANT_IDS.map((id, i) => ({
       id,
@@ -26,6 +28,7 @@ export function defaultState(): GameState {
     cameras: { sourceId: null, sourceName: null, rects: {} },
     plato: { displayId: null, windowed: false, visible: true },
     audio: { dir: null, musicVolume: 0.8, sfxVolume: 0.9, fadeSeconds: 1.5 },
+    quiz: defaultQuiz(),
     runtime: {
       capture: { plato: 'idle', panel: 'idle' },
       update: { state: 'disabled' },
@@ -35,19 +38,7 @@ export function defaultState(): GameState {
   }
 }
 
-/** Orden de concursantes en pantalla. En equipos: primero el equipo izquierdo, luego el derecho. */
-export function contestantOrder(state: GameState): ContestantId[] {
-  if (state.layout !== 'teams') return [...CONTESTANT_IDS]
-  const left = state.contestants.filter((c) => c.team === 0).map((c) => c.id)
-  const right = state.contestants.filter((c) => c.team === 1).map((c) => c.id)
-  // Siempre 2 por lado: si un equipo tiene 3, el sobrante pasa al hueco libre del otro.
-  const l = left.slice(0, 2)
-  const r = right.slice(0, 2)
-  const rest = [...left, ...right].filter((id) => !l.includes(id) && !r.includes(id))
-  while (l.length < 2 && rest.length) l.push(rest.shift()!)
-  while (r.length < 2 && rest.length) r.push(rest.shift()!)
-  return [...l, ...r]
-}
+export { contestantOrder } from './order'
 
 const num = (v: unknown, fallback: number): number => (typeof v === 'number' && Number.isFinite(v) ? v : fallback)
 
@@ -111,7 +102,7 @@ export function applyAction(s: GameState, a: Action): GameState {
     case 'setUpdate':
       return { ...s, runtime: { ...s.runtime, update: a.status } }
     default:
-      return s
+      return applyQuizAction(s, a as QuizAction)
   }
 }
 
@@ -147,7 +138,9 @@ export function hydrate(saved: unknown): GameState {
     sideInfo: { ...d.sideInfo, ...(s.sideInfo ?? {}) },
     cameras: { sourceId: s.cameras?.sourceId ?? null, sourceName: s.cameras?.sourceName ?? null, rects },
     plato: { ...d.plato, ...(s.plato ?? {}) },
-    audio: { ...d.audio, ...(s.audio ?? {}) }
+    audio: { ...d.audio, ...(s.audio ?? {}) },
+    view: s.view === 'quiz' || s.view === 'result' ? s.view : 'plato',
+    quiz: hydrateQuiz(s.quiz)
   }
 }
 
@@ -155,4 +148,31 @@ export function hydrate(saved: unknown): GameState {
 export function persistable(s: GameState): Omit<GameState, 'runtime'> {
   const { runtime: _r, ...rest } = s
   return rest
+}
+
+function hydrateQuiz(saved: unknown): QuizState {
+  const d = defaultQuiz()
+  if (!saved || typeof saved !== 'object') return d
+  const q = saved as Partial<QuizState>
+  const obj = <T>(v: unknown, fb: T): T => (v && typeof v === 'object' && !Array.isArray(v) ? (v as T) : fb)
+  const ladder = { ...d.ladder, ...obj(q.ladder, {}) }
+  if (!Array.isArray(ladder.levels) || !ladder.levels.length) ladder.levels = d.ladder.levels
+  ladder.used = { ...d.ladder.used, ...obj(ladder.used, {}) }
+  const current = q.current && typeof q.current === 'object' && q.current.question ? q.current : null
+  return {
+    ...d,
+    bankFile: typeof q.bankFile === 'string' ? q.bankFile : null,
+    order: obj(q.order, {}),
+    used: obj(q.used, {}),
+    current,
+    scoring: { ...d.scoring, ...obj(q.scoring, {}) },
+    // el temporizador no sigue corriendo tras reiniciar el programa
+    timer: { ...d.timer, ...obj(q.timer, {}), endsAt: null, remainingMs: null },
+    turn: q.turn ?? null,
+    rebound: typeof q.rebound === 'boolean' ? q.rebound : d.rebound,
+    autoRotate: typeof q.autoRotate === 'boolean' ? q.autoRotate : d.autoRotate,
+    asked: typeof q.asked === 'number' ? q.asked : 0,
+    ladder,
+    sounds: { ...d.sounds, ...obj(q.sounds, {}) }
+  }
 }

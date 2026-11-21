@@ -123,6 +123,31 @@ export class AudioEngine {
   /** Corta todo con fundido (botón de pánico). */
   async stopAll(): Promise<void> {
     this.stopSfx()
+    this.stopLoop()
     await this.stopMusic()
+  }
+
+  // ---- efecto en bucle (tic-tac del temporizador) ----
+  private loopEl: HTMLAudioElement | null = null
+  private loopName: string | null = null
+
+  playLoop(file: string): void {
+    if (this.loopName === file && this.loopEl) return
+    this.stopLoop()
+    const el = new Audio(mediaUrl('efectos', file))
+    el.loop = true
+    el.volume = this.sfxVolume
+    this.loopEl = el
+    this.loopName = file
+    el.play().catch((err) => console.error('[audio] bucle', file, err))
+  }
+
+  stopLoop(): void {
+    if (this.loopEl) {
+      this.loopEl.pause()
+      this.loopEl.src = ''
+    }
+    this.loopEl = null
+    this.loopName = null
   }
 }

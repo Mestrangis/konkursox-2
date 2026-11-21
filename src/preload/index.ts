@@ -1,4 +1,5 @@
 import { contextBridge, ipcRenderer, type IpcRendererEvent } from 'electron'
+import type { Bank, BankInfo } from '../shared/questions'
 import type { Action, AudioLibrary, CaptureSource, DisplayInfo, GameState } from '../shared/types'
 
 function subscribe<T>(channel: string, cb: (v: T) => void): () => void {
@@ -22,6 +23,11 @@ const api = {
   audioLibrary: (): Promise<AudioLibrary> => ipcRenderer.invoke('audio:library'),
   audioOpenDir: (): Promise<string> => ipcRenderer.invoke('audio:openDir'),
   audioChooseDir: (): Promise<AudioLibrary> => ipcRenderer.invoke('audio:chooseDir'),
+
+  listBanks: (): Promise<BankInfo[]> => ipcRenderer.invoke('bank:list'),
+  getBank: (file: string): Promise<Bank> => ipcRenderer.invoke('bank:get', file),
+  openBanksDir: (): Promise<string> => ipcRenderer.invoke('bank:openDir'),
+  importBanks: (): Promise<{ imported: string[]; errors: string[] }> => ipcRenderer.invoke('bank:import'),
 
   checkUpdate: (): Promise<void> => ipcRenderer.invoke('update:check'),
   installUpdate: (): Promise<void> => ipcRenderer.invoke('update:install')

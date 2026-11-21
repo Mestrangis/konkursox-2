@@ -1,4 +1,5 @@
 // Tipos compartidos entre main, preload y renderers.
+import type { QuizAction, QuizState, QuizView } from './quiz'
 
 export type ContestantId = 'c1' | 'c2' | 'c3' | 'c4'
 export type SlotId = ContestantId | 'host'
@@ -81,6 +82,8 @@ export interface RuntimeState {
 }
 
 export interface GameState {
+  /** qué muestra el plató: plantilla de cámaras, pregunta en curso o pantalla final de la escalera */
+  view: QuizView
   layout: LayoutId
   contestants: Contestant[]
   teams: [Team, Team]
@@ -90,6 +93,7 @@ export interface GameState {
   cameras: CameraConfig
   plato: PlatoConfig
   audio: AudioConfig
+  quiz: QuizState
   runtime: RuntimeState
 }
 
@@ -112,6 +116,7 @@ export type Action =
   | { type: 'setCaptureHealth'; who: 'plato' | 'panel'; health: CaptureHealth; error?: string }
   | { type: 'setUpdate'; status: UpdateStatus }
   | { type: 'restartCapture' }
+  | QuizAction
 
 export interface CaptureSource {
   id: string

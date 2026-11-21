@@ -11,6 +11,9 @@ extraResources:
   - from: resources/audio
     to: audio
     filter: ["**/*"]
+  - from: legacy/_data
+    to: legacy
+    filter: ["**/*"]
 asar: true
 win:
   target:

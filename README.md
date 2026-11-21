@@ -15,6 +15,41 @@ El estado del juego vive **solo en el proceso main** (`src/main/store.ts`): los 
 - Panel: concursantes (nombre, equipo, puntos +/- con paso configurable), equipos, rótulo inferior, presentador, selector de monitor del plató (se recuerda), vista previa del plató.
 - Audio: música (fundido de entrada/salida y fundido cruzado) y efectos. Carpeta por defecto `Documentos\KONKURSOX\audio\` con subcarpetas `musica\` y `efectos\` (lo que haya en `resources/audio` se copia ahí la primera vez; ahora está vacío). Formatos: mp3, wav, ogg, m4a, aac, flac, opus, webm.
 
+## Fase 2: juegos de preguntas
+
+Pestaña **Preguntas** del panel. El plató pasa solo a la pantalla de pregunta al lanzar una (tecla V para volver a la plantilla).
+
+- **Bancos**: un JSON por banco en `Documentos\KONKURSOX\preguntas\`, imágenes en `preguntas\imagenes\`. En el primer arranque se importan los de `legacy/` (formato antiguo `[{pregunta, opciones[], correcta}]`); el botón *Importar* convierte más archivos (antiguos o nuevos). Las preguntas usadas se recuerdan entre partidas; se puede barajar y buscar.
+
+  ```json
+  {
+    "formato": "konkursox-banco",
+    "version": 1,
+    "nombre": "General",
+    "preguntas": [
+      {
+        "id": "1",
+        "tipo": "test",
+        "enunciado": "¿Cuál es el río más largo del mundo?",
+        "opciones": ["Nilo", "Amazonas", "Yangtsé", "Misisipi"],
+        "correcta": 1,
+        "imagen": "rio.jpg",
+        "nota_presentador": "Durante años se dijo que era el Nilo",
+        "dificultad": 2,
+        "fuente": "National Geographic"
+      }
+    ]
+  }
+  ```
+
+  `tipo` es `"test"` (hasta 4 opciones) o `"sino"` (2 opciones). `imagen`, `nota_presentador`, `dificultad` y `fuente` son opcionales.
+- **Flujo**: lanzar (Intro / N) → opciones una a una (O) o todas (T) → marcar (1-4 o A-D; naranja con sonido de tensión) → revelar (R) → puntos (automático, o P). Turnos con rebote al siguiente si falla, temporizador opcional (Espacio) con tic-tac, imagen en el plató (I), retirar (Esc).
+- **Escalera** (modo Millonario): 15 escalones por defecto con seguros en 5, 10 y 15 (editables), comodines 50:50 (automático, tecla F), llamada y público (a mano; se tachan en el plató), plantarse, fallar (cae al último seguro) y ganar, con pantalla final y sonidos.
+- **Puntuación**: puntos por acierto, fallo que resta o no, sumar al revelar o a mano.
+- **Sonidos**: cada momento (nueva pregunta, respuesta definitiva, acierto, fallo, reloj, finales de la escalera) se asocia a un archivo de `audio\efectos\` en *Sonidos del juego*.
+
+Todo el estado de la partida (pregunta en curso, escalera, usadas) vive en el proceso main y se guarda: si cierras el programa, al abrirlo sigues donde estabas.
+
 ## Desarrollo
 
 Requisitos: Node 24+ (npm 11) y Windows (la captura de ventanas está pensada para Windows).
@@ -23,7 +58,7 @@ Requisitos: Node 24+ (npm 11) y Windows (la captura de ventanas está pensada pa
 npm install
 npm run dev        # Electron con recarga en caliente
 npm run typecheck  # tsc sin emitir
-npm test           # tests de la lógica de recorte (vitest)
+npm test           # tests de recorte, escalera y puntuación (vitest)
 npm run dist       # instalador local en release\ (sin publicar)
 ```
 
@@ -32,9 +67,9 @@ Estructura:
 ```
 src/main/        proceso main: store, ventanas, captura, audio (protocolo konk-media://), updater
 src/preload/     API segura expuesta como window.konk
-src/shared/      tipos, reducer del estado, geometría de plantillas, lógica de recorte (crop.ts)
+src/shared/      tipos, reducer, plantillas, recorte (crop.ts), preguntas y partida (questions.ts, quiz.ts)
 src/renderer/    plato.html + panel.html, ds/ (design system), plato/ (escenas), panel/ (UI, calibración, audio)
-tests/           tests de crop.ts
+tests/           tests de recorte, escalera y puntuación
 design/          diseño de referencia (export de Claude Design)
 legacy/          preguntas e imágenes del concurso antiguo
 ```

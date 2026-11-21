@@ -2,7 +2,7 @@
 // Los rectángulos se guardan en coordenadas relativas (0..1) a la ventana capturada.
 import { fitContain, rectFromDrag, sourceRectForFrame, type Point } from '../../shared/crop'
 import { frameSizeFor } from '../../shared/layouts'
-import { contestantOrder } from '../../shared/state'
+import { contestantOrder } from '../../shared/order'
 import { SLOT_IDS, type CaptureSource, type GameState, type SlotId } from '../../shared/types'
 import type { CaptureFeed } from '../common/feed'
 import { h } from '../ds/components'
