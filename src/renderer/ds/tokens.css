@@ -1,0 +1,82 @@
+/* KONKURSOX · Design tokens (extraídos 1:1 de design/KONKURSOX 2.html) */
+@import './fonts.css';
+
+:root {
+  /* Marino */
+  --k-navy-1000: #02050b;
+  --k-navy-950: #03060d;
+  --k-navy-925: #04080f;
+  --k-navy-900: #050a16;
+  --k-navy-875: #05080f;
+  --k-navy-850: #070d1c;
+  --k-navy-800: #091228;
+  --k-navy-750: #0a1328;
+  --k-navy-700: #0a1429;
+  --k-navy-650: #0a101e;
+  --k-navy-600: #13213f;
+  --k-navy-550: #142347;
+  --k-navy-500: #15244a;
+  --k-navy-450: #1b2b50;
+  --k-navy-400: #1c2d55;
+  --k-navy-350: #1d2a46;
+  --k-silhouette: #24314f;
+
+  /* Oro */
+  --k-gold-900: #6f5629;
+  --k-gold-800: #8a6a2f;
+  --k-gold-600: #b8975a;
+  --k-gold-500: #c9a961;
+  --k-gold-450: #d9bd7c;
+  --k-gold-400: #e6cb85;
+  --k-gold-350: #e6c983;
+  --k-gold-300: #f0dca6;
+  --k-gold-200: #f1dfab;
+  --k-gold-150: #f6e6b8;
+  --k-gold-100: #fff6dc;
+  --k-gold-a07: rgba(214, 186, 120, 0.07);
+  --k-gold-a11: rgba(214, 186, 120, 0.11);
+  --k-gold-a18: rgba(214, 186, 120, 0.18);
+  --k-gold-a22: rgba(201, 169, 97, 0.22);
+  --k-gold-a45: rgba(201, 169, 97, 0.45);
+  --k-gold-a50: rgba(214, 186, 120, 0.5);
+  --k-gold-a60: rgba(201, 169, 97, 0.6);
+
+  /* Texto */
+  --k-text: #eef1f6;
+  --k-text-muted: #8e9ab3;
+  --k-text-quote: #f6ecd2;
+
+  /* Estados de respuesta */
+  --k-ok-hi: #3fb56e;
+  --k-ok: #187539;
+  --k-ok-lo: #0e4f27;
+  --k-ko-hi: #d4483b;
+  --k-ko: #8e2319;
+  --k-ko-lo: #5c130d;
+  --k-lock-hi: #f4b552;
+  --k-lock: #c9761d;
+  --k-lock-lo: #8d4b0d;
+  --k-lock-ink: #1c1003;
+  --k-lock-key: #2b1604;
+
+  /* Tipografía */
+  --k-font-ui: 'Barlow Condensed', 'Arial Narrow', sans-serif;
+  --k-font-display: 'Cinzel', serif;
+  --k-font-quote: 'Cormorant Garamond', Georgia, serif;
+
+  /* Fondos y efectos */
+  --k-bg-stage: radial-gradient(ellipse 75% 60% at 50% 32%, var(--k-navy-500) 0%, var(--k-navy-750) 42%, var(--k-navy-950) 100%);
+  --k-bg-cover: radial-gradient(ellipse 60% 55% at 50% 50%, var(--k-navy-550) 0%, var(--k-navy-800) 45%, var(--k-navy-1000) 100%);
+  --k-bg-cam: radial-gradient(ellipse at 50% 38%, var(--k-navy-350), var(--k-navy-650) 78%);
+  --k-cam-vignette: radial-gradient(ellipse at center, transparent 52%, rgba(0, 0, 0, 0.6) 100%);
+  --k-cam-shadow: 0 0 0 1px var(--k-gold-600), 0 0 0 5px var(--k-navy-875), 0 0 0 6px var(--k-gold-a22), 0 24px 60px rgba(0, 0, 0, 0.6);
+  --k-bevel-edge: linear-gradient(90deg, var(--k-gold-900), var(--k-gold-300) 50%, var(--k-gold-900));
+  --k-bevel-fill: linear-gradient(180deg, var(--k-navy-450) 0%, var(--k-navy-700) 55%, var(--k-navy-900) 100%);
+  --k-fill-ok: linear-gradient(180deg, var(--k-ok-hi), var(--k-ok) 58%, var(--k-ok-lo));
+  --k-fill-ko: linear-gradient(180deg, var(--k-ko-hi), var(--k-ko) 58%, var(--k-ko-lo));
+  --k-fill-lock: linear-gradient(180deg, var(--k-lock-hi), var(--k-lock) 58%, var(--k-lock-lo));
+  --k-track: linear-gradient(90deg, transparent, var(--k-gold-a50) 10%, var(--k-gold-a50) 90%, transparent);
+  --k-logo-fill: linear-gradient(180deg, var(--k-gold-100), var(--k-gold-350) 42%, var(--k-gold-800) 54%, #e8cf8f);
+  --k-logo-fill-hero: linear-gradient(180deg, var(--k-gold-100) 0%, var(--k-gold-350) 40%, var(--k-gold-800) 52%, var(--k-gold-450) 70%, var(--k-gold-150) 100%);
+  --k-panel-fill: linear-gradient(180deg, rgba(20, 34, 66, 0.7), rgba(5, 9, 20, 0.85));
+}

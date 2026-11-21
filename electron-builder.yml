@@ -1,0 +1,33 @@
+appId: com.mestrangis.konkursox
+productName: KONKURSOX
+copyright: KONKURSOX
+directories:
+  output: release
+  buildResources: build
+files:
+  - out/**
+  - package.json
+extraResources:
+  - from: resources/audio
+    to: audio
+    filter: ["**/*"]
+asar: true
+win:
+  target:
+    - target: nsis
+      arch: [x64]
+  icon: build/icon.png
+  artifactName: KONKURSOX-Setup-${version}.${ext}
+nsis:
+  oneClick: false
+  perMachine: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: always
+  createStartMenuShortcut: true
+  shortcutName: KONKURSOX
+  deleteAppDataOnUninstall: false
+publish:
+  - provider: github
+    owner: Mestrangis
+    repo: konkursox-2
+    releaseType: release

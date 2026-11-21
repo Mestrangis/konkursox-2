@@ -1,0 +1,27 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  background: var(--k-navy-950);
+  cursor: none;
+  user-select: none;
+}
+#viewport {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  -webkit-app-region: no-drag;
+}
+#stage {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1920px;
+  height: 1080px;
+  transform-origin: 0 0;
+}
+#stage > .k-stage {
+  position: absolute;
+  inset: 0;
+}

@@ -1,0 +1,355 @@
+/* KONKURSOX · Componentes del plató (lienzo 1920x1080, unidades en px de diseño) */
+
+.k-stage {
+  position: relative;
+  width: 1920px;
+  height: 1080px;
+  overflow: hidden;
+  font-family: var(--k-font-ui);
+  color: var(--k-text);
+  background: var(--k-bg-stage);
+}
+.k-stage--cover {
+  background: var(--k-bg-cover);
+}
+.k-abs {
+  position: absolute;
+}
+
+/* ---------- Marco de cámara ---------- */
+.k-cam {
+  position: absolute;
+  overflow: hidden;
+  border-radius: 4px;
+  background: var(--k-bg-cam);
+  box-shadow: var(--k-cam-shadow);
+}
+.k-cam::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--k-cam-vignette);
+  pointer-events: none;
+}
+.k-cam__sil {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  height: 74%;
+  fill: var(--k-silhouette);
+  transition: opacity 0.4s ease;
+}
+.k-cam__feed {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+.k-cam.is-live .k-cam__feed {
+  opacity: 1;
+}
+.k-cam.is-live .k-cam__sil {
+  opacity: 0;
+}
+
+/* ---------- Barra biselada (placa de nombre, rótulos, opciones) ---------- */
+.k-bar {
+  --c: 30px;
+  position: absolute;
+  box-sizing: border-box;
+  padding: 2px;
+  background: var(--k-bevel-edge);
+  clip-path: polygon(0 50%, var(--c) 0, calc(100% - var(--c)) 0, 100% 50%, calc(100% - var(--c)) 100%, var(--c) 100%);
+}
+.k-bar__in {
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 0 calc(var(--c) + 14px);
+  background: var(--k-bevel-fill);
+  clip-path: polygon(0 50%, var(--c) 0, calc(100% - var(--c)) 0, 100% 50%, calc(100% - var(--c)) 100%, var(--c) 100%);
+}
+.k-bar--center .k-bar__in {
+  justify-content: center;
+  text-align: center;
+}
+.k-bar.is-ok .k-bar__in {
+  background: var(--k-fill-ok);
+}
+.k-bar.is-ko .k-bar__in {
+  background: var(--k-fill-ko);
+}
+.k-bar.is-locked .k-bar__in {
+  background: var(--k-fill-lock);
+  color: var(--k-lock-ink);
+}
+.k-bar.is-locked .k-key {
+  color: var(--k-lock-key);
+}
+.k-bar.is-ok .k-key,
+.k-bar.is-ko .k-key {
+  color: #fff;
+}
+.k-dim {
+  opacity: 0.3;
+}
+
+.k-track {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--k-track);
+}
+
+/* ---------- Tipografía ---------- */
+.k-name {
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0;
+}
+.k-score {
+  margin-left: auto;
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--k-gold-400);
+  font-variant-numeric: tabular-nums;
+}
+.k-caption {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--k-gold-500);
+}
+.k-caption--muted {
+  color: var(--k-text-muted);
+}
+.k-logo {
+  font-family: var(--k-font-display);
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  background: var(--k-logo-fill);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  white-space: nowrap;
+}
+.k-logo--hero {
+  letter-spacing: 0.16em;
+  background: var(--k-logo-fill-hero);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.k-key {
+  color: var(--k-gold-400);
+  font-weight: 700;
+}
+.k-question {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.15;
+}
+.k-answer {
+  font-size: 34px;
+  font-weight: 500;
+}
+.k-quote {
+  font-family: var(--k-font-quote);
+  font-style: italic;
+  font-weight: 600;
+  font-size: 66px;
+  line-height: 1.1;
+  text-align: center;
+  color: var(--k-text-quote);
+}
+
+/* ---------- Chips (comodines, marcas) ---------- */
+.k-chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  height: 40px;
+  padding: 0 12px;
+  box-sizing: border-box;
+  font-size: 26px;
+  font-weight: 700;
+  border: 1px solid var(--k-gold-500);
+  color: var(--k-gold-400);
+}
+.k-chip--ok {
+  background: var(--k-ok);
+  border-color: var(--k-ok-hi);
+  color: #fff;
+}
+.k-chip--ko {
+  background: var(--k-ko);
+  border-color: var(--k-ko-hi);
+  color: #fff;
+}
+.k-chip--lock {
+  background: var(--k-lock);
+  border-color: var(--k-lock-hi);
+  color: var(--k-lock-ink);
+}
+
+/* ---------- Rótulo inferior ---------- */
+.k-lower__sep {
+  width: 1px;
+  height: 44px;
+  background: var(--k-gold-a60);
+  flex: none;
+}
+.k-lower__titles {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+.k-lower__title {
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ---------- Panel informativo lateral ---------- */
+.k-infobox {
+  position: absolute;
+  box-sizing: border-box;
+  border: 1px solid var(--k-gold-a45);
+  background: var(--k-panel-fill);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+.k-infobox__big {
+  font-size: 120px;
+  line-height: 1;
+  font-weight: 700;
+  color: var(--k-gold-300);
+  letter-spacing: 0.02em;
+}
+.k-infobox__rule {
+  width: 200px;
+  height: 1px;
+  background: rgba(201, 169, 97, 0.5);
+  margin: 18px 0;
+}
+.k-infobox__mid {
+  font-size: 54px;
+  font-weight: 600;
+}
+
+/* ---------- VS ---------- */
+.k-vs__diamond {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  transform: rotate(45deg);
+  border: 1px solid var(--k-gold-500);
+  background: linear-gradient(135deg, var(--k-navy-450), var(--k-navy-900));
+}
+.k-vs__label {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--k-font-display);
+  font-size: 30px;
+  font-weight: 600;
+  color: var(--k-gold-400);
+  letter-spacing: 0.08em;
+}
+.k-vs__line {
+  position: absolute;
+  width: 2px;
+}
+
+/* ---------- Puntos de equipo ---------- */
+.k-teamscore {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 18px;
+}
+.k-teamscore__value {
+  font-size: 92px;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--k-gold-300);
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---------- Temporizador circular ---------- */
+.k-timer {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--k-navy-600), var(--k-navy-925) 70%);
+  box-shadow: 0 0 0 1px var(--k-gold-900), 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+.k-timer svg {
+  position: absolute;
+  inset: 0;
+}
+.k-timer__value {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 52px;
+  font-weight: 700;
+  color: var(--k-gold-300);
+}
+
+/* ---------- Animación de puntos ---------- */
+@keyframes k-bump {
+  0% {
+    transform: scale(1);
+  }
+  35% {
+    transform: scale(1.25);
+    color: var(--k-gold-100);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.k-bump {
+  animation: k-bump 0.5s ease-out;
+  display: inline-block;
+}
+
+/* ---------- Transición entre plantillas ---------- */
+@keyframes k-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.k-enter {
+  animation: k-fade-in 0.45s ease-out both;
+}
