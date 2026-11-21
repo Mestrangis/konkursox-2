@@ -1,8 +1,15 @@
 // Formato unificado del banco de preguntas + conversión del formato antiguo (legacy).
 
-/** Tipos de pregunta. Preparado para ampliar (estimación, rosco, quién lo dijo...). */
-export type QuestionType = 'test' | 'sino'
-export const QUESTION_TYPES: QuestionType[] = ['test', 'sino']
+/** Tipos de pregunta. */
+export type QuestionType = 'test' | 'sino' | 'quien' | 'estimacion' | 'rosco'
+export const QUESTION_TYPES: QuestionType[] = ['test', 'sino', 'quien', 'estimacion', 'rosco']
+export const TYPE_LABEL: Record<QuestionType, string> = {
+  test: 'Test',
+  sino: 'Sí o No',
+  quien: '¿Quién lo dijo?',
+  estimacion: 'Estimación',
+  rosco: 'Rosco'
+}
 
 export interface Question {
   id: string
@@ -16,7 +23,22 @@ export interface Question {
   /** contexto que solo ve el presentador */
   nota_presentador?: string
   dificultad?: number | string
+  /** origen de la pregunta; en "quién lo dijo", dónde se dijo la frase (p. ej. "Chat del grupo") */
   fuente?: string
+
+  // ---- ¿Quién lo dijo? (enunciado = la frase; correcta = índice del autor en opciones)
+  autor?: string
+  fecha?: string
+  hora?: string
+
+  // ---- Estimación
+  valor?: number
+  unidad?: string
+
+  // ---- Rosco (enunciado = la definición)
+  letra?: string
+  modo?: 'empieza' | 'contiene'
+  respuesta?: string
 }
 
 export interface Bank {
@@ -30,6 +52,7 @@ export interface BankInfo {
   file: string
   nombre: string
   count: number
+  tipos: QuestionType[]
   error?: string
 }
 
@@ -50,27 +73,75 @@ export function slugify(s: string): string {
 const isSiNo = (ops: string[]) =>
   ops.length === 2 && /^s[ií]$/i.test(ops[0].trim()) && /^no$/i.test(ops[1].trim())
 
-/** Valida/normaliza una pregunta del formato nuevo. Devuelve null si no es utilizable. */
+const str = (v: unknown): string | undefined => (typeof v === 'string' && v.trim() ? v.trim() : typeof v === 'number' ? String(v) : undefined)
+
+/** Número escrito como 21196, "21.196", "21196,5"... */
+export function parseNumber(v: unknown): number | null {
+  if (typeof v === 'number') return Number.isFinite(v) ? v : null
+  if (typeof v !== 'string') return null
+  let t = v.trim().replace(/s/g, '')
+  if (!t) return null
+  if (t.includes(',')) t = t.replace(/./g, '').replace(',', '.')
+  else if (/^-?d{1,3}(.d{3})+$/.test(t)) t = t.replace(/./g, '')
+  const n = Number(t)
+  return Number.isFinite(n) ? n : null
+}
+
+export const ROSCO_ALPHABET = 'ABCDEFGHIJKLMNÑOPQRSTUVWXYZ'.split('')
+
+/** Valida/normaliza una pregunta (formato de archivo o interno). Devuelve null si no es utilizable. */
 export function normalizeQuestion(raw: unknown, fallbackId: string): Question | null {
   if (!raw || typeof raw !== 'object') return null
   const r = raw as Record<string, unknown>
-  const enunciado = typeof r.enunciado === 'string' ? r.enunciado : typeof r.pregunta === 'string' ? r.pregunta : ''
+  const id = r.id !== undefined && r.id !== null && String(r.id).trim() ? String(r.id) : fallbackId
+  const common: Partial<Question> = {}
+  if (str(r.imagen)) common.imagen = str(r.imagen)
+  if (str(r.nota_presentador)) common.nota_presentador = str(r.nota_presentador)
+  if (typeof r.dificultad === 'number' || typeof r.dificultad === 'string') common.dificultad = r.dificultad
+  if (str(r.fuente)) common.fuente = str(r.fuente)
+  const tipoRaw = typeof r.tipo === 'string' ? r.tipo : ''
+
+  if (tipoRaw === 'rosco' || (r.letra !== undefined && r.definicion !== undefined)) {
+    const letra = (str(r.letra) ?? '').toUpperCase().slice(0, 1)
+    const definicion = str(r.definicion) ?? str(r.enunciado)
+    const respuesta = str(r.respuesta)
+    if (!letra || !ROSCO_ALPHABET.includes(letra) || !definicion || !respuesta) return null
+    const modo = r.modo === 'contiene' ? 'contiene' : 'empieza'
+    return { ...common, id, tipo: 'rosco', enunciado: definicion, opciones: [], correcta: -1, letra, modo, respuesta }
+  }
+
+  if (tipoRaw === 'estimacion') {
+    const enunciado = str(r.enunciado) ?? str(r.pregunta)
+    const valor = parseNumber(r.valor ?? r.respuesta)
+    if (!enunciado || valor === null) return null
+    return { ...common, id, tipo: 'estimacion', enunciado, opciones: [], correcta: -1, valor, unidad: str(r.unidad) ?? '' }
+  }
+
+  if (tipoRaw === 'quien') {
+    const frase = str(r.frase) ?? str(r.enunciado)
+    const autor = str(r.autor)
+    if (!frase || !autor) return null
+    const opciones = Array.isArray(r.opciones) ? r.opciones.map((o) => String(o).trim()).filter(Boolean) : []
+    const q: Question = { ...common, id, tipo: 'quien', enunciado: frase, opciones, correcta: opciones.findIndex((o) => o.toLowerCase() === autor.toLowerCase()), autor }
+    if (str(r.fecha)) q.fecha = str(r.fecha)
+    if (str(r.hora)) q.hora = str(r.hora)
+    return q
+  }
+
+  const enunciado = str(r.enunciado) ?? str(r.pregunta) ?? ''
   const opciones = Array.isArray(r.opciones) ? r.opciones.map((o) => String(o)) : []
   const correcta = Number(r.correcta)
-  if (!enunciado.trim() || opciones.length < 2 || !Number.isInteger(correcta) || correcta < 0 || correcta >= opciones.length) return null
-  const tipo: QuestionType = r.tipo === 'sino' || r.tipo === 'test' ? r.tipo : isSiNo(opciones) ? 'sino' : 'test'
+  if (!enunciado || opciones.length < 2 || !Number.isInteger(correcta) || correcta < 0 || correcta >= opciones.length) return null
+  const tipo: QuestionType = tipoRaw === 'sino' || tipoRaw === 'test' ? tipoRaw : isSiNo(opciones) ? 'sino' : 'test'
   const q: Question = {
-    id: r.id !== undefined && r.id !== null && String(r.id).trim() ? String(r.id) : fallbackId,
+    ...common,
+    id,
     tipo,
     enunciado,
     opciones: tipo === 'test' ? opciones.slice(0, 4) : opciones.slice(0, 2),
     correcta
   }
   if (q.correcta >= q.opciones.length) return null
-  if (typeof r.imagen === 'string' && r.imagen.trim()) q.imagen = r.imagen.trim()
-  if (typeof r.nota_presentador === 'string' && r.nota_presentador.trim()) q.nota_presentador = r.nota_presentador
-  if (typeof r.dificultad === 'number' || typeof r.dificultad === 'string') q.dificultad = r.dificultad
-  if (typeof r.fuente === 'string' && r.fuente.trim()) q.fuente = r.fuente
   return q
 }
 

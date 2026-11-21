@@ -19,7 +19,8 @@ export function initStore(path: string, appVersion: string): GameState {
   filePath = path
   let saved: unknown = null
   try {
-    if (existsSync(path)) saved = JSON.parse(readFileSync(path, 'utf8'))
+    // sin BOM: algunos editores (y PowerShell) lo añaden al guardar
+    if (existsSync(path)) saved = JSON.parse(readFileSync(path, 'utf8').replace(/^﻿/, ''))
   } catch (err) {
     console.error('[store] estado corrupto, se usan valores por defecto', err)
   }

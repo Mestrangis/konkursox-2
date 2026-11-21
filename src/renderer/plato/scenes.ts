@@ -4,7 +4,9 @@ import { LAYOUTS } from '../../shared/layouts'
 import { contestantOrder } from '../../shared/order'
 import type { GameState, SlotId } from '../../shared/types'
 import type { CaptureFeed } from '../common/feed'
+import { buildFinalScene, buildTransitionScene, finalKey, transitionKey } from './showScenes'
 import { buildQuizScene, quizSceneKey, turnSlots } from './quizScenes'
+import { buildRoscoScene, roscoKey } from './roscoScene'
 import {
   camFrame,
   emblem,
@@ -26,12 +28,19 @@ export interface Scene {
   update(s: GameState): void
   /** animaciones por fotograma (temporizador) */
   tick?(s: GameState): void
+  /** marcos adicionales del mismo concursante (p. ej. marcador final) */
+  extraFrames?: { slot: SlotId; frame: CamFrameEl }[]
 }
 
 /** ¿El plató muestra la escena de preguntas? */
 export const showsQuiz = (s: GameState): boolean => (s.view === 'quiz' && !!s.quiz.current) || (s.view === 'result' && !!s.quiz.ladder.outcome)
 
-export const sceneKey = (s: GameState): string => (showsQuiz(s) ? quizSceneKey(s) : `${s.layout}:${contestantOrder(s).join(',')}`)
+export function sceneKey(s: GameState): string {
+  if (s.view === 'transition') return transitionKey(s)
+  if (s.view === 'final') return finalKey(s)
+  if (s.view === 'rosco' && s.rosco.players.length) return roscoKey(s)
+  return showsQuiz(s) ? quizSceneKey(s) : `${s.layout}:${contestantOrder(s).join(',')}`
+}
 
 function coverScene(): HTMLDivElement {
   const ring = (size: number, alpha: number) =>
@@ -81,6 +90,9 @@ function coverScene(): HTMLDivElement {
 }
 
 export function buildScene(s: GameState): Scene {
+  if (s.view === 'transition') return buildTransitionScene(s)
+  if (s.view === 'final') return buildFinalScene(s)
+  if (s.view === 'rosco' && s.rosco.players.length) return buildRoscoScene(s)
   if (showsQuiz(s)) return buildQuizScene(s)
   const key = sceneKey(s)
   const frames = new Map<SlotId, CamFrameEl>()
@@ -157,7 +169,8 @@ export function buildScene(s: GameState): Scene {
 export function drawFrames(feed: CaptureFeed | null, scene: Scene | null, rects: GameState['cameras']['rects']): void {
   if (!scene) return
   const ok = !!feed && feed.ready
-  for (const [slot, frame] of scene.frames) {
+  const all: [SlotId, CamFrameEl][] = [...scene.frames, ...(scene.extraFrames ?? []).map((x) => [x.slot, x.frame] as [SlotId, CamFrameEl])]
+  for (const [slot, frame] of all) {
     const rel = rects[slot]
     if (!ok || !rel) {
       frame.setLive(false)

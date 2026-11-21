@@ -1,0 +1,103 @@
+{
+  "formato": "konkursox-banco",
+  "version": 1,
+  "nombre": "¿Quién lo dijo? de ejemplo",
+  "preguntas": [
+    {
+      "id": "q1",
+      "tipo": "quien",
+      "frase": "Mañana madrugo y voy al gimnasio. Esta vez va en serio.",
+      "autor": "Dani",
+      "fuente": "Chat del grupo",
+      "fecha": "14 de marzo de 2024",
+      "hora": "03:12",
+      "opciones": [
+        "Sergio",
+        "Dani",
+        "Marta",
+        "Pablo"
+      ],
+      "nota_presentador": "Frases inventadas de ejemplo: cámbialas por las del grupo."
+    },
+    {
+      "id": "q2",
+      "tipo": "quien",
+      "frase": "Yo no me pido nada, solo pruebo lo vuestro.",
+      "autor": "Marta",
+      "fuente": "Chat del grupo",
+      "fecha": "2 de junio de 2024",
+      "hora": "22:47",
+      "opciones": [
+        "Sergio",
+        "Dani",
+        "Marta",
+        "Pablo"
+      ],
+      "nota_presentador": "Frases inventadas de ejemplo: cámbialas por las del grupo."
+    },
+    {
+      "id": "q3",
+      "tipo": "quien",
+      "frase": "Cinco minutos y salgo, que ya estoy casi listo.",
+      "autor": "Pablo",
+      "fuente": "Chat del grupo",
+      "fecha": "19 de julio de 2024",
+      "hora": "21:05",
+      "opciones": [
+        "Sergio",
+        "Dani",
+        "Marta",
+        "Pablo"
+      ],
+      "nota_presentador": "Frases inventadas de ejemplo: cámbialas por las del grupo."
+    },
+    {
+      "id": "q4",
+      "tipo": "quien",
+      "frase": "Esa película la he visto, pero no me acuerdo de nada.",
+      "autor": "Sergio",
+      "fuente": "Chat del grupo",
+      "fecha": "8 de septiembre de 2024",
+      "hora": "00:31",
+      "opciones": [
+        "Sergio",
+        "Dani",
+        "Marta",
+        "Pablo"
+      ],
+      "nota_presentador": "Frases inventadas de ejemplo: cámbialas por las del grupo."
+    },
+    {
+      "id": "q5",
+      "tipo": "quien",
+      "frase": "Hoy no bebo, que mañana tengo cosas.",
+      "autor": "Dani",
+      "fuente": "Chat del grupo",
+      "fecha": "31 de octubre de 2024",
+      "hora": "23:58",
+      "opciones": [
+        "Sergio",
+        "Dani",
+        "Marta",
+        "Pablo"
+      ],
+      "nota_presentador": "Frases inventadas de ejemplo: cámbialas por las del grupo."
+    },
+    {
+      "id": "q6",
+      "tipo": "quien",
+      "frase": "El que llegue último paga la primera ronda.",
+      "autor": "Marta",
+      "fuente": "Chat del grupo",
+      "fecha": "24 de diciembre de 2024",
+      "hora": "19:20",
+      "opciones": [
+        "Sergio",
+        "Dani",
+        "Marta",
+        "Pablo"
+      ],
+      "nota_presentador": "Frases inventadas de ejemplo: cámbialas por las del grupo."
+    }
+  ]
+}

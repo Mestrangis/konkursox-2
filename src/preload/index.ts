@@ -1,5 +1,6 @@
 import { contextBridge, ipcRenderer, type IpcRendererEvent } from 'electron'
 import type { Bank, BankInfo } from '../shared/questions'
+import type { Segment } from '../shared/show'
 import type { Action, AudioLibrary, CaptureSource, DisplayInfo, GameState } from '../shared/types'
 
 function subscribe<T>(channel: string, cb: (v: T) => void): () => void {
@@ -28,6 +29,13 @@ const api = {
   getBank: (file: string): Promise<Bank> => ipcRenderer.invoke('bank:get', file),
   openBanksDir: (): Promise<string> => ipcRenderer.invoke('bank:openDir'),
   importBanks: (): Promise<{ imported: string[]; errors: string[] }> => ipcRenderer.invoke('bank:import'),
+
+  listShows: (): Promise<{ file: string; title: string; count: number }[]> => ipcRenderer.invoke('show:list'),
+  saveShow: (title: string, segments: Segment[]): Promise<string> => ipcRenderer.invoke('show:save', title, segments),
+  loadShow: (file: string): Promise<{ title: string; segments: Segment[] }> => ipcRenderer.invoke('show:load', file),
+  deleteShow: (file: string): Promise<void> => ipcRenderer.invoke('show:delete', file),
+  openShowsDir: (): Promise<string> => ipcRenderer.invoke('show:openDir'),
+  choosePhoto: (name: string): Promise<string | null> => ipcRenderer.invoke('people:choosePhoto', name),
 
   checkUpdate: (): Promise<void> => ipcRenderer.invoke('update:check'),
   installUpdate: (): Promise<void> => ipcRenderer.invoke('update:install')

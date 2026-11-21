@@ -1,7 +1,8 @@
 // Pestaña "Preguntas" del panel: banco, flujo de la pregunta (con atajos), turnos, puntuación,
 // temporizador, escalera y sonidos. El estado vive en el main; aquí solo se envían acciones.
 import type { Bank, BankInfo, Question } from '../../shared/questions'
-import { questionKey } from '../../shared/questions'
+import { parseNumber, questionKey, TYPE_LABEL } from '../../shared/questions'
+import { formatNumber, quienOptions } from '../../shared/games'
 import {
   CUES,
   defaultLevels,
@@ -12,6 +13,7 @@ import {
   LIFELINES,
   sameTarget,
   shuffle,
+  targetKey,
   turnTargets,
   type CueId,
   type QuizAction,
@@ -38,6 +40,7 @@ const btn = (label: string, onClick: () => void, cls = '', key?: string) => {
 }
 const card = (title: string, ...children: Node[]) => h('section', 'p-card', {}, [h('h3', 'p-card__title', {}, [title]), ...children])
 const LETTERS = 'ABCD'
+const SHORT_TYPE: Record<string, string> = { test: 'TEST', sino: 'SÍ/NO', quien: 'QUIÉN', estimacion: 'CIFRA', rosco: 'ROSCO' }
 const targetLabel = (s: GameState, t: Target) => (t.kind === 'team' ? s.teams[t.index].name : targetName(s, t))
 
 export function createQuizTab(ctx: Ctx) {
@@ -62,17 +65,23 @@ export function createQuizTab(ctx: Ctx) {
     if (!bank) return []
     const file = S().quiz.bankFile ?? ''
     const order = S().quiz.order[file]
-    if (!order) return bank.preguntas
+    if (!order) return bank.preguntas.filter((q) => q.tipo !== 'rosco')
     const byId = new Map(bank.preguntas.map((q) => [q.id, q]))
     const out = order.map((id) => byId.get(id)).filter(Boolean) as Question[]
     for (const q of bank.preguntas) if (!order.includes(q.id)) out.push(q)
-    return out
+    return out.filter((q) => q.tipo !== 'rosco')
   }
   const isUsed = (q: Question) => !!S().quiz.used[questionKey(S().quiz.bankFile ?? '', q.id)]
 
   function launch(q: Question | undefined): void {
     const file = S().quiz.bankFile
     if (!q || !file) return
+    if (q.tipo === 'rosco') return void alert('Las definiciones de rosco se juegan en la pestaña Rosco.')
+    if (q.tipo === 'quien') {
+      q = quienOptions(q, S().people.map((p) => p.name))
+      if (q.opciones.length < 2 || q.correcta < 0)
+        return void alert('Esta frase no tiene opciones suficientes. Añade opciones en el banco o personas del grupo en la pestaña Programa.')
+    }
     audio.stopSfx()
     audio.stopLoop()
     send({ type: 'quizLoad', key: questionKey(file, q.id), bankFile: file, question: q, now: now() })
@@ -86,8 +95,21 @@ export function createQuizTab(ctx: Ctx) {
     const list = orderedQuestions()
     launch(list.find((q) => !isUsed(q)))
   }
-  function pick(i: number): void {
+  /** "Todos responden": respuesta de un concursante/equipo concreto. */
+  function answerAll(key: string, i: number | null): void {
     const cur = S().quiz.current
+    if (!cur || cur.mode !== 'all' || cur.phase === 'revealed' || cur.phase === 'question') return
+    send({ type: 'quizAnswerAll', key, index: i })
+    if (i !== null) cue('respondido')
+  }
+  function pick(i: number): void {
+    const s0 = S()
+    const cur = s0.quiz.current
+    if (cur?.mode === 'all') {
+      const next = turnTargets(s0).find((t) => !(targetKey(t) in cur.answers))
+      if (next) answerAll(targetKey(next), i)
+      return
+    }
     if (!cur || (cur.phase !== 'options' && cur.phase !== 'locked')) return
     if (i >= cur.shown || cur.hidden.includes(i) || cur.attempts.some((a) => !a.correct && a.pick === i)) return
     audio.stopLoop()
@@ -98,10 +120,22 @@ export function createQuizTab(ctx: Ctx) {
   function reveal(): void {
     const s = S()
     const cur = s.quiz.current
-    if (!cur || cur.phase !== 'locked' || cur.picked === null) return
-    const correct = cur.picked === cur.question.correcta
+    if (!cur || cur.phase === 'revealed') return
     audio.stopSfx()
     audio.stopLoop()
+    if (cur.question.tipo === 'estimacion') {
+      if (!Object.keys(cur.guesses).length) return
+      send({ type: 'quizReveal', now: now() })
+      return cue('estimacion')
+    }
+    if (cur.mode === 'all') {
+      const vals = Object.values(cur.answers)
+      if (!vals.length) return
+      send({ type: 'quizReveal', now: now() })
+      return cue(vals.some((v) => v === cur.question.correcta) ? 'correcto' : 'error')
+    }
+    if (cur.phase !== 'locked' || cur.picked === null) return
+    const correct = cur.picked === cur.question.correcta
     send({ type: 'quizReveal', now: now() })
     cue(correct ? 'correcto' : 'error')
   }
@@ -221,7 +255,7 @@ export function createQuizTab(ctx: Ctx) {
         }
         item.append(
           h('span', 'p-qitem__id', {}, [q.id]),
-          h('span', 'p-tag', {}, [q.tipo === 'sino' ? 'SÍ/NO' : 'TEST']),
+          h('span', 'p-tag', {}, [SHORT_TYPE[q.tipo]]),
           h('span', 'p-qitem__text', {}, [q.enunciado]),
           ...(q.imagen ? [h('span', 'p-tag p-tag--img', {}, ['IMG'])] : []),
           usedBtn
@@ -299,11 +333,25 @@ export function createQuizTab(ctx: Ctx) {
   const bTimerReset = btn('Reiniciar reloj', () => send({ type: 'timerReset' }), 'p-btn--sm')
   flowRow1.append(bLaunch, bNext, bOpt, bAll, bReveal, bAward)
   flowRow2.append(bUnpick, bImage, bView, bTimer, bTimerReset, timerLabel, h('span', 'p-spacer', { flex: 1 }), bClear)
+  const modeAll = h('input')
+  modeAll.type = 'checkbox'
+  modeAll.onchange = () => send({ type: 'quizSetAllMode', allMode: modeAll.checked })
+  const bModeTurn = btn('Por turno', () => send({ type: 'quizSetMode', mode: 'turn' }), 'p-btn--sm')
+  const bModeAll = btn('Todos', () => send({ type: 'quizSetMode', mode: 'all' }), 'p-btn--sm')
   const pickBtns = [0, 1, 2, 3].map((i) => btn(LETTERS[i], () => pick(i), 'p-btn--icon p-pick', String(i + 1)))
   pickRow.append(h('span', 'p-label', {}, ['Marcar']), ...pickBtns)
 
   function renderQuestionDetail(q: Question, s: GameState, live: boolean): HTMLElement {
     const cur = live ? s.quiz.current : null
+    if (q.tipo === 'estimacion') {
+      const el = h('div', 'p-col', { gap: 8 }, [
+        h('div', 'p-qtitle', {}, [q.enunciado]),
+        h('div', 'p-muted', {}, [`#${q.id} · Estimación${q.fuente ? ' · Fuente: ' + q.fuente : ''}`]),
+        h('div', 'p-answer', {}, [h('span', 'p-label', {}, ['Respuesta']), h('strong', '', {}, [`${formatNumber(q.valor ?? 0)} ${q.unidad ?? ''}`])])
+      ])
+      if (q.nota_presentador) el.append(h('div', 'p-note', {}, [h('strong', '', {}, ['Nota']), q.nota_presentador]))
+      return el
+    }
     const failed = new Set(cur?.attempts.filter((a) => !a.correct).map((a) => a.pick) ?? [])
     const opts = q.opciones.map((o, i) => {
       const cls = ['p-opt']
@@ -318,12 +366,13 @@ export function createQuizTab(ctx: Ctx) {
         ...(i === q.correcta ? [h('span', 'p-opt__badge', {}, ['Correcta'])] : [])
       ])
     })
-    const meta = [q.tipo === 'sino' ? 'Sí o No' : 'Test', q.dificultad !== undefined ? `Dificultad ${q.dificultad}` : '', q.fuente ? `Fuente: ${q.fuente}` : '']
+    const meta = [TYPE_LABEL[q.tipo], q.tipo === 'quien' ? `Autor: ${q.autor}` : '', q.fecha ?? '', q.hora ?? '', q.dificultad !== undefined ? `Dificultad ${q.dificultad}` : '', q.fuente ? `Fuente: ${q.fuente}` : '']
       .filter(Boolean)
       .join(' · ')
     const el = h('div', 'p-col', { gap: 8 }, [
-      h('div', 'p-qtitle', {}, [q.enunciado]),
+      h('div', 'p-qtitle', {}, [q.tipo === 'quien' ? `\u201C${q.enunciado}\u201D` : q.enunciado]),
       h('div', 'p-muted', {}, [`#${q.id} · ${meta}`]),
+      ...(q.tipo === 'quien' && !live && q.opciones.length < 2 ? [h('div', 'p-muted', {}, ['Sin opciones: se rellenarán con las personas del grupo.'])] : []),
       h('div', 'p-opts', {}, opts)
     ])
     if (q.nota_presentador) el.append(h('div', 'p-note', {}, [h('strong', '', {}, ['Nota']), q.nota_presentador]))
@@ -334,6 +383,86 @@ export function createQuizTab(ctx: Ctx) {
       el.append(img)
     }
     return el
+  }
+
+  /** Rejilla de "todos responden": una fila por concursante/equipo. */
+  function renderAllGrid(s: GameState): HTMLElement {
+    const cur = s.quiz.current!
+    const q = cur.question
+    const revealed = cur.phase === 'revealed'
+    const grid = h('div', 'p-allgrid')
+    for (const t of turnTargets(s)) {
+      const key = targetKey(t)
+      const ans = cur.answers[key]
+      const row = h('div', 'p-allrow', {}, [h('span', 'p-allrow__name', {}, [targetLabel(s, t)])])
+      q.opciones.forEach((o, i) => {
+        const label = q.tipo === 'sino' ? o.toUpperCase() : LETTERS[i]
+        const cls = ['p-btn', 'p-btn--sm', 'p-allbtn']
+        if (ans === i) cls.push(revealed ? (i === q.correcta ? 'p-btn--ok' : 'p-btn--ko') : 'is-active')
+        const b = h('button', cls.join(' '), {}, [label])
+        b.disabled = revealed || cur.phase === 'question' || i >= cur.shown || cur.hidden.includes(i)
+        b.title = o
+        b.onclick = () => answerAll(key, ans === i ? null : i)
+        row.append(b)
+      })
+      row.append(h('span', 'p-muted', {}, [ans === undefined ? (cur.phase === 'question' ? 'Muestra las opciones' : 'Sin respuesta') : revealed ? '' : 'Respondido']))
+      grid.append(row)
+    }
+    return grid
+  }
+
+  /** Cifras de cada uno en estimación (persisten mientras escribes). */
+  const guessBox = h('div', 'p-col', { gap: 6 })
+  let guessKey = ''
+  const guessInputs = new Map<string, HTMLInputElement>()
+  function renderGuesses(s: GameState): void {
+    const cur = s.quiz.current
+    if (!cur || cur.question.tipo !== 'estimacion') {
+      guessBox.replaceChildren()
+      guessKey = ''
+      return
+    }
+    const targets = turnTargets(s)
+    const k = cur.key + '|' + targets.map(targetKey).join(',') + '|' + cur.phase
+    if (k !== guessKey) {
+      guessKey = k
+      guessInputs.clear()
+      const unit = cur.question.unidad ?? ''
+      guessBox.replaceChildren(
+        h('span', 'p-label', {}, ['Cifras que dicen (Intro para pasar al siguiente)']),
+        ...targets.map((t, idx) => {
+          const key = targetKey(t)
+          const input = h('input', 'p-input', { width: 200, textAlign: 'right' })
+          input.inputMode = 'decimal'
+          input.disabled = cur.phase === 'revealed'
+          const commit = () => send({ type: 'quizGuess', key, value: parseNumber(input.value) })
+          input.onchange = commit
+          input.onkeydown = (e) => {
+            if (e.key === 'Enter') {
+              commit()
+              const next = targets[idx + 1]
+              if (next) guessInputs.get(targetKey(next))?.focus()
+              else input.blur()
+            }
+          }
+          guessInputs.set(key, input)
+          return h('div', 'p-row', {}, [h('span', 'p-allrow__name', {}, [targetLabel(s, t)]), input, h('span', 'p-muted', {}, [unit])])
+        })
+      )
+    }
+    for (const [key, input] of guessInputs) {
+      if (document.activeElement === input) continue
+      const v = cur.guesses[key]
+      input.value = v === undefined ? '' : formatNumber(v)
+    }
+    const res = cur.estimation
+    if (res) {
+      for (const r of res.rows) {
+        const input = guessInputs.get(r.key)
+        const info = input?.nextElementSibling as HTMLElement | null
+        if (info) info.textContent = `${cur.question.unidad ?? ''} · a ${formatNumber(r.diff)}${r.over && s.quiz.estimation.priceIsRight ? ' · se pasa' : ''}${r.rank ? ' · ' + r.rank + 'º' : ''}`
+      }
+    }
   }
 
   const phaseLabel: Record<string, string> = {
@@ -348,7 +477,7 @@ export function createQuizTab(ctx: Ctx) {
     const cur = s.quiz.current
     curBox.replaceChildren()
     if (cur) {
-      const who = cur.target ? targetLabel(s, cur.target) : 'Sin turno'
+      const who = cur.question.tipo === 'estimacion' ? 'Todos (estimación)' : cur.mode === 'all' ? 'Todos responden' : cur.target ? targetLabel(s, cur.target) : 'Sin turno'
       const pending = cur.attempts.filter((a) => !a.awarded && a.delta)
       const status = h('div', 'p-row', {}, [
         h('span', `p-phase is-${cur.phase}`, {}, [phaseLabel[cur.phase]]),
@@ -356,12 +485,13 @@ export function createQuizTab(ctx: Ctx) {
         h('strong', 'p-who', {}, [who]),
         ...cur.attempts.map((a) =>
           h('span', `p-tag ${a.correct ? 'p-tag--ok' : 'p-tag--ko'}`, {}, [
-            `${a.target ? targetLabel(s, a.target) : '-'}: ${cur.question.tipo === 'sino' ? cur.question.opciones[a.pick] : LETTERS[a.pick]} ${a.delta ? (a.delta > 0 ? '+' : '') + a.delta : ''}`
+            `${a.target ? targetLabel(s, a.target) : '-'}: ${a.pick < 0 ? (a.correct ? 'el más cercano' : a.delta ? '' : 'sin puntos') : cur.question.tipo === 'sino' ? cur.question.opciones[a.pick] : LETTERS[a.pick]} ${a.delta ? (a.delta > 0 ? '+' : '') + a.delta : ''}`
           ])
         ),
         ...(pending.length ? [h('span', 'p-tag p-tag--lock', {}, ['Puntos sin sumar'])] : [])
       ])
       curBox.append(status, renderQuestionDetail(cur.question, s, true))
+      if (cur.mode === 'all' && cur.question.tipo !== 'estimacion') curBox.append(renderAllGrid(s))
     } else {
       const sel = orderedQuestions().find((q) => q.id === selectedId)
       if (sel) curBox.append(h('div', 'p-phase', {}, ['Seleccionada (sin lanzar)']), renderQuestionDetail(sel, s, false))
@@ -371,7 +501,15 @@ export function createQuizTab(ctx: Ctx) {
     const phase = cur?.phase
     bOpt.disabled = !cur || phase === 'revealed' || cur.shown >= cur.question.opciones.length
     bAll.disabled = bOpt.disabled
-    bReveal.disabled = phase !== 'locked'
+    bReveal.disabled = !cur || phase === 'revealed' || (cur.question.tipo === 'estimacion' ? !Object.keys(cur.guesses).length : cur.mode === 'all' ? !Object.keys(cur.answers).length : phase !== 'locked')
+    renderGuesses(s)
+    modeAll.checked = s.quiz.allMode
+    bModeTurn.classList.toggle('is-active', cur?.mode === 'turn')
+    bModeAll.classList.toggle('is-active', cur?.mode === 'all')
+    const canMode = !!cur && cur.phase !== 'revealed' && !cur.attempts.length && cur.ladderLevel === null && cur.question.tipo !== 'estimacion'
+    bModeTurn.disabled = !canMode
+    bModeAll.disabled = !canMode
+    pickRow.style.display = cur?.question.tipo === 'estimacion' ? 'none' : ''
     bUnpick.disabled = phase !== 'locked'
     bAward.disabled = !cur || !cur.attempts.some((a) => !a.awarded && a.delta)
     bAward.style.display = s.quiz.scoring.autoAward ? 'none' : ''
@@ -382,10 +520,11 @@ export function createQuizTab(ctx: Ctx) {
     bClear.disabled = !cur
     bLaunch.disabled = !selectedId || !bank
     const n = cur?.question.opciones.length ?? 4
+    bUnpick.disabled = phase !== 'locked' || cur?.mode === 'all'
     pickBtns.forEach((b, i) => {
       b.style.display = i < n ? '' : 'none'
       b.firstChild!.textContent = cur?.question.tipo === 'sino' ? cur.question.opciones[i]?.toUpperCase() ?? '' : LETTERS[i]
-      b.disabled = !cur || (phase !== 'options' && phase !== 'locked') || i >= cur.shown || cur.hidden.includes(i) || cur.attempts.some((a) => !a.correct && a.pick === i)
+      b.disabled = !cur || (phase !== 'options' && phase !== 'locked') || (cur.mode === 'all' && Object.keys(cur.answers).length >= turnTargets(s).length) || i >= cur.shown || cur.hidden.includes(i) || cur.attempts.some((a) => !a.correct && a.pick === i)
       b.classList.toggle('is-active', phase === 'locked' && cur?.picked === i)
     })
     bTimer.disabled = !s.quiz.timer.enabled
@@ -393,7 +532,7 @@ export function createQuizTab(ctx: Ctx) {
   }
 
   const colB = h('div', 'p-col', {}, [
-    card('Pregunta en curso', curBox, h('div', 'p-flow', {}, [flowRow1, pickRow, flowRow2])),
+    card('Pregunta en curso', curBox, guessBox, h('div', 'p-flow', {}, [h('div', 'p-row', {}, [h('span', 'p-label', {}, ['Esta pregunta']), bModeTurn, bModeAll, h('span', 'p-spacer', { flex: 1 }), h('label', 'p-check', {}, [modeAll, 'Nuevas: todos responden'])]), flowRow1, pickRow, flowRow2])),
     card(
       'Atajos de teclado',
       h('div', 'p-keys', {}, [
@@ -445,7 +584,27 @@ export function createQuizTab(ctx: Ctx) {
   const autoAw = chk('Sumar al revelar', (s) => s.quiz.scoring.autoAward, (v) => ({ type: 'quizSetScoring', patch: { autoAward: v } }))
   const tOn = chk('Usar temporizador', (s) => s.quiz.timer.enabled, (v) => ({ type: 'timerConfig', patch: { enabled: v } }))
   const tSecs = num((s) => s.quiz.timer.seconds, (v) => ({ type: 'timerConfig', patch: { seconds: v } }))
-  const syncers = [ptsOk, ptsKo, penal, autoAw, tOn, tSecs]
+  const priceRight = chk('Precio justo', (s) => s.quiz.estimation.priceIsRight, (v) => ({ type: 'quizSetEstimation', patch: { priceIsRight: v } }))
+  const estMode = h('select', 'p-select', { width: 'auto' })
+  for (const [v, l] of [
+    ['closest', 'Solo el más cercano'],
+    ['ranked', 'Escalonado']
+  ] as const) {
+    const o = h('option', '', {}, [l])
+    o.value = v
+    estMode.append(o)
+  }
+  estMode.onchange = () => send({ type: 'quizSetEstimation', patch: { mode: estMode.value as 'closest' | 'ranked' } })
+  const estRankedInput = h('input', 'p-input', { width: 110 })
+  estRankedInput.onchange = () => send({ type: 'quizSetEstimation', patch: { ranked: estRankedInput.value.split(/[,;\s]+/).map(Number).filter(Number.isFinite) } })
+  const estRanked = {
+    el: estRankedInput,
+    sync: (s: GameState) => {
+      if (document.activeElement !== estRankedInput) estRankedInput.value = s.quiz.estimation.ranked.join(', ')
+      if (document.activeElement !== estMode) estMode.value = s.quiz.estimation.mode
+    }
+  }
+  const syncers = [ptsOk, ptsKo, penal, autoAw, tOn, tSecs, priceRight, estRanked]
 
   // escalera
   const ladderTarget = h('select', 'p-select', { width: 'auto', flex: 1 })
@@ -585,6 +744,7 @@ export function createQuizTab(ctx: Ctx) {
       h('div', 'p-col', { gap: 8 }, [
         h('div', 'p-row', {}, [h('span', 'p-label', {}, ['Acierto']), ptsOk.el, h('span', 'p-label', {}, ['Fallo']), ptsKo.el, penal.el]),
         h('div', 'p-row', {}, [autoAw.el]),
+        h('div', 'p-row', {}, [h('span', 'p-label', {}, ['Estimación']), priceRight.el, estMode, h('span', 'p-label', {}, ['Por puesto']), estRanked.el]),
         h('div', 'p-row', {}, [tOn.el, h('span', 'p-label', {}, ['Segundos']), tSecs.el])
       ])
     ),
@@ -648,7 +808,12 @@ export function createQuizTab(ctx: Ctx) {
     else if (k === 't') send({ type: 'quizShowAll', now: now() })
     else if (k === 'r') reveal()
     else if (k === 'p') send({ type: 'quizAward' })
-    else if (k === 'Backspace') send({ type: 'quizUnpick' })
+    else if (k === 'Backspace') {
+      if (cur?.mode === 'all') {
+        const last = turnTargets(s).filter((t) => targetKey(t) in cur.answers).pop()
+        if (last) answerAll(targetKey(last), null)
+      } else send({ type: 'quizUnpick' })
+    }
     else if (k === ' ') toggleTimer()
     else if (k === 'i') send({ type: 'quizToggleImage' })
     else if (k === 'v') send({ type: 'setView', view: s.view === 'plato' ? 'quiz' : 'plato' })

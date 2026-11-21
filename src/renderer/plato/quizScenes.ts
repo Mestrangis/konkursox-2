@@ -1,14 +1,16 @@
 // Escenas de preguntas: test, Sí/No, escalera de premios y pantalla final de la escalera.
 import { contestantOrder, playerCount } from '../../shared/order'
-import { formatPoints, ladderBank, LIFELINES, type LifelineId, type Target } from '../../shared/quiz'
+import { formatPoints, ladderBank, LIFELINES, targetKey, type LifelineId, type Target } from '../../shared/quiz'
 import type { Box } from '../../shared/layouts'
 import type { ContestantId, GameState, SlotId } from '../../shared/types'
 import { bevelBar, camFrame, h, svg, type CamFrameEl } from '../ds/components'
+import { buildEstimationScene, buildQuienScene } from './gameScenes'
 import type { Scene } from './scenes'
 
 const OK_ICON = '<path fill="#fff" d="M9.5 16.2 4.8 11.5 3.4 12.9l6.1 6.1L21 7.5l-1.4-1.4z"></path>'
 const KO_ICON = '<path fill="#fff" d="M19 6.4 17.6 5 12 10.6 6.4 5 5 6.4 10.6 12 5 17.6 6.4 19 12 13.4 17.6 19 19 17.6 13.4 12z"></path>'
-const DIAMOND = '<path d="M5 0 L10 5 L5 10 L0 5 Z" fill="#e6cb85"></path>'
+export const DIAMOND = '<path d="M5 0 L10 5 L5 10 L0 5 Z" fill="#e6cb85"></path>'
+const CHIP_DIAMOND = '<svg viewBox="0 0 10 10" width="16" height="16" aria-hidden="true"><path d="M5 0 L10 5 L5 10 L0 5 Z" fill="#1c1003"></path></svg>'
 
 /** Concursantes que corresponden a un turno (un equipo son sus miembros). */
 export function membersOf(s: GameState, t: Target | null | undefined): ContestantId[] {
@@ -35,11 +37,12 @@ export function targetScore(s: GameState, t: Target | null): number {
   return s.contestants.find((c) => c.id === t.id)?.score ?? 0
 }
 
-type Kind = 'test' | 'sino' | 'ladder'
+type Kind = 'test' | 'sino' | 'ladder' | 'quien' | 'estimacion'
 
 function quizKind(s: GameState): Kind {
   if (s.quiz.ladder.active && s.quiz.current?.ladderLevel !== null && s.quiz.current?.ladderLevel !== undefined) return 'ladder'
-  return s.quiz.current?.question.tipo === 'sino' ? 'sino' : 'test'
+  const t = s.quiz.current?.question.tipo
+  return t === 'sino' || t === 'quien' || t === 'estimacion' ? t : 'test'
 }
 
 export function quizSceneKey(s: GameState): string {
@@ -58,12 +61,12 @@ export function quizSceneKey(s: GameState): string {
 
 // ---------------------------------------------------------------- piezas
 
-interface PlateEl {
+export interface PlateEl {
   root: HTMLDivElement
   set(name: string, score: string | null, chip: string, chipCls: string): void
 }
 
-function quizPlate(box: Box, c: number, nameSize?: number): PlateEl {
+export function quizPlate(box: Box, c: number, nameSize?: number): PlateEl {
   const name = h('span', 'k-name', nameSize ? { fontSize: nameSize } : undefined)
   const chip = h('span', 'k-chip', { marginLeft: 'auto' })
   const score = h('span', 'k-score', { marginLeft: 0, minWidth: 64, textAlign: 'right' })
@@ -74,19 +77,20 @@ function quizPlate(box: Box, c: number, nameSize?: number): PlateEl {
       name.textContent = n
       score.textContent = sc ?? ''
       score.style.display = sc === null ? 'none' : ''
-      chip.textContent = ch
+      if (ch === 'DIAMOND') chip.innerHTML = CHIP_DIAMOND
+      else chip.textContent = ch
       chip.className = `k-chip ${cls}`.trim()
       chip.style.visibility = ch ? 'visible' : 'hidden'
     }
   }
 }
 
-interface OptEl {
+export interface OptEl {
   root: HTMLDivElement
   set(text: string, state: '' | 'ok' | 'ko' | 'locked', visible: boolean): void
 }
 
-function optionBar(key: string, box: Box, c: number, sino: boolean): OptEl {
+export function optionBar(key: string, box: Box, c: number, sino: boolean, upper = false): OptEl {
   const keyEl = h('span', 'k-key k-answer', {}, [`${key}:`])
   const text = h('span', sino ? 'k-sino' : 'k-answer')
   const icon = svg('0 0 24 24', { width: sino ? 52 : 34, height: sino ? 52 : 34 }, '')
@@ -101,7 +105,7 @@ function optionBar(key: string, box: Box, c: number, sino: boolean): OptEl {
       const sig = `${t}|${st}|${visible}`
       if (sig === last) return
       last = sig
-      text.textContent = sino ? t.toUpperCase() : t
+      text.textContent = sino || upper ? t.toUpperCase() : t
       root.classList.toggle('is-ok', st === 'ok')
       root.classList.toggle('is-ko', st === 'ko')
       root.classList.toggle('is-locked', st === 'locked')
@@ -134,7 +138,7 @@ function lifelineEl(id: LifelineId): HTMLDivElement {
 }
 
 /** Temporizador circular que se actualiza solo (rAF). */
-function liveTimer(x: number, y: number, scale = 1) {
+export function liveTimer(x: number, y: number, scale = 1) {
   const len = 2 * Math.PI * 52
   const ring = svg(
     '0 0 120 120',
@@ -162,7 +166,7 @@ function liveTimer(x: number, y: number, scale = 1) {
   }
 }
 
-function imageBox(box: Box) {
+export function imageBox(box: Box) {
   const img = h('img')
   img.alt = ''
   const root = h('div', 'k-qimage is-off', { left: box.x, top: box.y, width: box.w, height: box.h }, [img])
@@ -183,7 +187,7 @@ function imageBox(box: Box) {
 
 // ---------------------------------------------------------------- escena de pregunta
 
-interface CamGeo {
+export interface CamGeo {
   slot: ContestantId
   cam: Box
   plate: Box
@@ -191,12 +195,12 @@ interface CamGeo {
   nameSize?: number
 }
 
-function camGeometry(s: GameState, kind: Kind): CamGeo[] {
+export function camGeometry(s: GameState, kind: Kind, camH0?: number, plateY0?: number): CamGeo[] {
   const order = contestantOrder(s)
   const n = playerCount(s.layout)
   const sino = kind === 'sino'
-  const camH = sino ? 560 : 600
-  const plateY = sino ? 572 : 612
+  const camH = camH0 ?? (sino ? 560 : 600)
+  const plateY = plateY0 ?? (sino ? 572 : 612)
   const ids = order.slice(0, n)
   const xs: Record<number, number[]> = { 1: [370], 2: [100, 980], 3: [100, 687, 1274], 4: [100, 539, 978, 1417] }
   const ws: Record<number, number> = { 1: 1180, 2: 840, 3: 546, 4: 403 }
@@ -214,11 +218,19 @@ function camGeometry(s: GameState, kind: Kind): CamGeo[] {
   })
 }
 
-function optionStates(s: GameState): { text: string; state: '' | 'ok' | 'ko' | 'locked'; visible: boolean }[] {
+export function optionStates(s: GameState): { text: string; state: '' | 'ok' | 'ko' | 'locked'; visible: boolean }[] {
   const cur = s.quiz.current
   if (!cur) return []
   const q = cur.question
   const failed = new Set(cur.attempts.filter((a) => !a.correct).map((a) => a.pick))
+  if (cur.mode === 'all') {
+    // nadie ve las respuestas hasta revelar
+    return q.opciones.map((text, i) => ({
+      text: cur.hidden.includes(i) ? '' : text,
+      state: cur.phase === 'revealed' ? (i === q.correcta ? 'ok' : failed.has(i) ? 'ko' : '') : '',
+      visible: i < cur.shown || cur.phase === 'revealed'
+    }))
+  }
   return q.opciones.map((text, i) => {
     let state: '' | 'ok' | 'ko' | 'locked' = ''
     if (cur.phase === 'revealed' && i === q.correcta) state = 'ok'
@@ -229,11 +241,26 @@ function optionStates(s: GameState): { text: string; state: '' | 'ok' | 'ko' | '
   })
 }
 
+/** Clave de turno de un marco: el concursante, o su equipo en la plantilla de equipos. */
+export function keyForSlot(s: GameState, slot: ContestantId): string {
+  if (s.layout !== 'teams') return slot
+  return 't' + (s.contestants.find((c) => c.id === slot)?.team ?? 0)
+}
+
 /** Chip de respuesta en la placa de un concursante. */
-function chipFor(s: GameState, slot: ContestantId): { text: string; cls: string } {
+export function chipFor(s: GameState, slot: ContestantId): { text: string; cls: string } {
   const cur = s.quiz.current
   if (!cur) return { text: '', cls: '' }
   const label = (i: number) => (cur.question.tipo === 'sino' ? cur.question.opciones[i].toUpperCase() : 'ABCD'[i])
+  if (cur.mode === 'all') {
+    const key = keyForSlot(s, slot)
+    if (cur.phase === 'revealed') {
+      const att = cur.attempts.find((a) => a.target && targetKey(a.target) === key)
+      return att ? { text: label(att.pick), cls: att.correct ? 'k-chip--ok' : 'k-chip--ko' } : { text: '', cls: '' }
+    }
+    if (key in cur.answers) return { text: 'DIAMOND', cls: 'k-chip--lock' }
+    return cur.phase === 'question' ? { text: '', cls: '' } : { text: '…', cls: '' }
+  }
   const mine = (t: Target | null) => membersOf(s, t).includes(slot)
   const isTarget = mine(cur.target)
   if (isTarget) {
@@ -253,6 +280,8 @@ export function buildQuizScene(s: GameState): Scene {
   const key = quizSceneKey(s)
   if (s.view === 'result') return buildResultScene(s, key)
   const kind = quizKind(s)
+  if (kind === 'quien') return buildQuienScene(s, key)
+  if (kind === 'estimacion') return buildEstimationScene(s, key)
   const frames = new Map<SlotId, CamFrameEl>()
   const root = h('div', 'k-stage k-enter')
   const q = s.quiz.current?.question

@@ -62,6 +62,7 @@ export function importLegacyFile(path: string, forceType?: QuestionType): string
 export function ensureBanks(): void {
   const dir = banksDir()
   mkdirSync(imagesDir(), { recursive: true })
+  ensureExamples()
   if (existsSync(join(dir, MARKER))) return
   const legacy = legacyDir()
   copyImages(join(legacy, '_imagenes'))
@@ -81,6 +82,23 @@ export function ensureBanks(): void {
   writeFileSync(join(dir, MARKER), `Importado de ${legacy} el ${new Date().toISOString()}\n${imported.join('\n')}\n`, 'utf8')
 }
 
+const EXAMPLES_MARKER = '.ejemplos-v3'
+
+/** Bancos de ejemplo (rosco, estimación, quién lo dijo): se copian una vez; si los borras no vuelven. */
+function ensureExamples(): void {
+  const dir = banksDir()
+  if (existsSync(join(dir, EXAMPLES_MARKER))) return
+  const src = app.isPackaged ? join(process.resourcesPath, 'ejemplos') : join(app.getAppPath(), 'resources', 'ejemplos')
+  if (existsSync(src)) {
+    for (const f of readdirSync(src).filter((x) => x.endsWith('.json'))) {
+      const to = join(dir, f)
+      if (!existsSync(to)) copyFileSync(join(src, f), to)
+    }
+  }
+  writeFileSync(join(dir, EXAMPLES_MARKER), `Ejemplos copiados el ${new Date().toISOString()}
+`, 'utf8')
+}
+
 export function listBanks(): BankInfo[] {
   ensureBanks()
   const dir = banksDir()
@@ -90,9 +108,9 @@ export function listBanks(): BankInfo[] {
     .map((file) => {
       try {
         const bank = parseBank(JSON.parse(readFileSync(join(dir, file), 'utf8')), basename(file, '.json'))
-        return { file, nombre: bank.nombre, count: bank.preguntas.length }
+        return { file, nombre: bank.nombre, count: bank.preguntas.length, tipos: [...new Set(bank.preguntas.map((q) => q.tipo))] }
       } catch (err) {
-        return { file, nombre: file, count: 0, error: String((err as Error).message ?? err) }
+        return { file, nombre: file, count: 0, tipos: [], error: String((err as Error).message ?? err) }
       }
     })
 }

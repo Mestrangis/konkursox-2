@@ -1,6 +1,8 @@
 // Estado inicial + reducer puro. El proceso main es el único que lo ejecuta (fuente única de verdad).
 import { sanitizeRel } from './crop'
 import { applyQuizAction, defaultQuiz, type QuizAction, type QuizState } from './quiz'
+import { applyRoscoAction, defaultRosco, type RoscoAction, type RoscoState } from './rosco'
+import { applyShowAction, defaultShow, normalizeSegment, type Person, type ShowAction, type ShowState } from './show'
 import { CONTESTANT_IDS, type Action, type GameState } from './types'
 
 export function todayLabel(d = new Date()): string {
@@ -16,7 +18,8 @@ export function defaultState(): GameState {
       id,
       name: `Concursante ${i + 1}`,
       score: 0,
-      team: i < 2 ? 0 : 1
+      team: i < 2 ? 0 : 1,
+      gender: null
     })),
     teams: [
       { name: 'Equipo Norte', score: 0 },
@@ -29,6 +32,9 @@ export function defaultState(): GameState {
     plato: { displayId: null, windowed: false, visible: true },
     audio: { dir: null, musicVolume: 0.8, sfxVolume: 0.9, fadeSeconds: 1.5 },
     quiz: defaultQuiz(),
+    rosco: defaultRosco(),
+    show: defaultShow(),
+    people: [],
     runtime: {
       capture: { plato: 'idle', panel: 'idle' },
       update: { state: 'disabled' },
@@ -39,6 +45,8 @@ export function defaultState(): GameState {
 }
 
 export { contestantOrder } from './order'
+
+const SHOW_ACTIONS = new Set<string>(['showSet', 'showLoad', 'showStart', 'showResetPlayed', 'setPeople', 'setGender'])
 
 const num = (v: unknown, fallback: number): number => (typeof v === 'number' && Number.isFinite(v) ? v : fallback)
 
@@ -102,6 +110,8 @@ export function applyAction(s: GameState, a: Action): GameState {
     case 'setUpdate':
       return { ...s, runtime: { ...s.runtime, update: a.status } }
     default:
+      if (a.type.startsWith('rosco')) return applyRoscoAction(s, a as RoscoAction)
+      if (SHOW_ACTIONS.has(a.type)) return applyShowAction(s, a as ShowAction)
       return applyQuizAction(s, a as QuizAction)
   }
 }
@@ -117,7 +127,8 @@ export function hydrate(saved: unknown): GameState {
       id,
       name: typeof c?.name === 'string' ? c.name : d.contestants[i].name,
       score: num(c?.score, 0),
-      team: c?.team === 1 ? 1 : c?.team === 0 ? 0 : d.contestants[i].team
+      team: c?.team === 1 ? 1 : c?.team === 0 ? 0 : d.contestants[i].team,
+      gender: c?.gender === 'm' || c?.gender === 'f' ? c.gender : null
     } as const
   })
   const rects: GameState['cameras']['rects'] = {}
@@ -139,8 +150,11 @@ export function hydrate(saved: unknown): GameState {
     cameras: { sourceId: s.cameras?.sourceId ?? null, sourceName: s.cameras?.sourceName ?? null, rects },
     plato: { ...d.plato, ...(s.plato ?? {}) },
     audio: { ...d.audio, ...(s.audio ?? {}) },
-    view: s.view === 'quiz' || s.view === 'result' ? s.view : 'plato',
-    quiz: hydrateQuiz(s.quiz)
+    view: s.view && ['quiz', 'result', 'rosco', 'transition', 'final'].includes(s.view) ? s.view : 'plato',
+    quiz: hydrateQuiz(s.quiz),
+    rosco: hydrateRosco(s.rosco),
+    show: hydrateShow(s.show),
+    people: Array.isArray(s.people) ? (s.people as Person[]).filter((p) => p && typeof p.name === 'string') : []
   }
 }
 
@@ -158,7 +172,8 @@ function hydrateQuiz(saved: unknown): QuizState {
   const ladder = { ...d.ladder, ...obj(q.ladder, {}) }
   if (!Array.isArray(ladder.levels) || !ladder.levels.length) ladder.levels = d.ladder.levels
   ladder.used = { ...d.ladder.used, ...obj(ladder.used, {}) }
-  const current = q.current && typeof q.current === 'object' && q.current.question ? q.current : null
+  const old = q.current as Partial<QuizState['current']> | null | undefined
+  const current = old && typeof old === 'object' && old.question ? ({ mode: 'turn', answers: {}, guesses: {}, revealedAt: null, estimation: null, ...(old as object) } as QuizState['current']) : null
   return {
     ...d,
     bankFile: typeof q.bankFile === 'string' ? q.bankFile : null,
@@ -173,6 +188,31 @@ function hydrateQuiz(saved: unknown): QuizState {
     autoRotate: typeof q.autoRotate === 'boolean' ? q.autoRotate : d.autoRotate,
     asked: typeof q.asked === 'number' ? q.asked : 0,
     ladder,
-    sounds: { ...d.sounds, ...obj(q.sounds, {}) }
+    sounds: { ...d.sounds, ...obj(q.sounds, {}) },
+    allMode: typeof q.allMode === 'boolean' ? q.allMode : d.allMode,
+    estimation: { ...d.estimation, ...obj(q.estimation, {}) }
+  }
+}
+
+function hydrateRosco(saved: unknown): RoscoState {
+  const d = defaultRosco()
+  if (!saved || typeof saved !== 'object') return d
+  const r = { ...d, ...(saved as Partial<RoscoState>) }
+  if (!Array.isArray(r.players)) r.players = []
+  // los relojes no siguen corriendo tras reiniciar el programa
+  r.players = r.players.map((p) => ({ ...p, endsAt: null }))
+  return r
+}
+
+function hydrateShow(saved: unknown): ShowState {
+  const d = defaultShow()
+  if (!saved || typeof saved !== 'object') return d
+  const sh = saved as Partial<ShowState>
+  return {
+    title: typeof sh.title === 'string' ? sh.title : '',
+    segments: Array.isArray(sh.segments) ? sh.segments.map(normalizeSegment) : [],
+    current: typeof sh.current === 'number' ? sh.current : null,
+    played: Array.isArray(sh.played) ? sh.played.filter((x) => typeof x === 'string') : [],
+    extraPlayed: typeof sh.extraPlayed === 'number' ? sh.extraPlayed : 0
   }
 }

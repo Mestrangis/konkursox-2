@@ -1,5 +1,8 @@
 // Tipos compartidos entre main, preload y renderers.
+import type { Gender } from './games'
 import type { QuizAction, QuizState, QuizView } from './quiz'
+import type { RoscoAction, RoscoState } from './rosco'
+import type { Person, ShowAction, ShowState } from './show'
 
 export type ContestantId = 'c1' | 'c2' | 'c3' | 'c4'
 export type SlotId = ContestantId | 'host'
@@ -23,6 +26,8 @@ export interface Contestant {
   score: number
   /** 0 = equipo izquierdo, 1 = equipo derecho */
   team: 0 | 1
+  /** para decir "ganador" o "ganadora" */
+  gender: Gender
 }
 
 export interface Team {
@@ -94,6 +99,10 @@ export interface GameState {
   plato: PlatoConfig
   audio: AudioConfig
   quiz: QuizState
+  rosco: RoscoState
+  show: ShowState
+  /** personas del grupo (opciones de "quién lo dijo" y juegos futuros) */
+  people: Person[]
   runtime: RuntimeState
 }
 
@@ -117,6 +126,8 @@ export type Action =
   | { type: 'setUpdate'; status: UpdateStatus }
   | { type: 'restartCapture' }
   | QuizAction
+  | RoscoAction
+  | ShowAction
 
 export interface CaptureSource {
   id: string

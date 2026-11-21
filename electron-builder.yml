@@ -14,6 +14,9 @@ extraResources:
   - from: legacy/_data
     to: legacy
     filter: ["**/*"]
+  - from: resources/ejemplos
+    to: ejemplos
+    filter: ["**/*"]
 asar: true
 win:
   target:

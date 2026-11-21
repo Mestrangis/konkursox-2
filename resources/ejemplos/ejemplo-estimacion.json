@@ -1,0 +1,84 @@
+{
+  "formato": "konkursox-banco",
+  "version": 1,
+  "nombre": "Estimación de ejemplo",
+  "preguntas": [
+    {
+      "id": "e1",
+      "tipo": "estimacion",
+      "enunciado": "¿Cuántos kilómetros mide la Gran Muralla China, contando todos sus tramos?",
+      "respuesta": 21196,
+      "unidad": "km",
+      "nota_presentador": "Medición oficial china de 2012."
+    },
+    {
+      "id": "e2",
+      "tipo": "estimacion",
+      "enunciado": "¿Cuántos metros mide el monte Everest?",
+      "respuesta": 8849,
+      "unidad": "m",
+      "nota_presentador": "Medición conjunta de China y Nepal en 2020."
+    },
+    {
+      "id": "e3",
+      "tipo": "estimacion",
+      "enunciado": "¿En qué año se inauguró la Torre Eiffel?",
+      "respuesta": 1889,
+      "unidad": "",
+      "nota_presentador": "Para la Exposición Universal de París."
+    },
+    {
+      "id": "e4",
+      "tipo": "estimacion",
+      "enunciado": "¿Cuántos huesos tiene el cuerpo humano adulto?",
+      "respuesta": 206,
+      "unidad": "huesos"
+    },
+    {
+      "id": "e5",
+      "tipo": "estimacion",
+      "enunciado": "¿A cuántos kilómetros está la Luna de la Tierra, de media?",
+      "respuesta": 384400,
+      "unidad": "km"
+    },
+    {
+      "id": "e6",
+      "tipo": "estimacion",
+      "enunciado": "¿Cuántos metros mide de alto la Torre Eiffel, antenas incluidas?",
+      "respuesta": 330,
+      "unidad": "m"
+    },
+    {
+      "id": "e7",
+      "tipo": "estimacion",
+      "enunciado": "¿Cuántos habitantes tenía España el 1 de enero de 2024?",
+      "respuesta": 48619695,
+      "unidad": "habitantes",
+      "nota_presentador": "Dato del INE."
+    },
+    {
+      "id": "e8",
+      "tipo": "estimacion",
+      "enunciado": "¿Cuántas teclas tiene un piano estándar?",
+      "respuesta": 88,
+      "unidad": "teclas",
+      "nota_presentador": "52 blancas y 36 negras."
+    },
+    {
+      "id": "e9",
+      "tipo": "estimacion",
+      "enunciado": "¿En qué año llegó el ser humano a la Luna?",
+      "respuesta": 1969,
+      "unidad": "",
+      "nota_presentador": "Apolo 11, 20 de julio."
+    },
+    {
+      "id": "e10",
+      "tipo": "estimacion",
+      "enunciado": "¿Cuántos países forman la Unión Europea?",
+      "respuesta": 27,
+      "unidad": "países",
+      "nota_presentador": "Desde la salida del Reino Unido en 2020."
+    }
+  ]
+}

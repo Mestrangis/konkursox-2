@@ -1,5 +1,6 @@
 // Juegos de preguntas del modo clásico: flujo de pregunta, turnos/rebote, puntuación y escalera.
 // Todo puro: lo ejecuta el reducer del proceso main.
+import { estimationPoints, estimationResult, type EstimationConfig, type EstimationResult } from './games'
 import { contestantOrder, playerCount } from './order'
 import type { Question } from './questions'
 import type { ContestantId, GameState } from './types'
@@ -33,6 +34,14 @@ export interface CurrentQuestion {
   showImage: boolean
   /** escalón por el que se juega (solo en escalera) */
   ladderLevel: number | null
+  /** 'turn' = responde quien tiene el turno; 'all' = todos responden */
+  mode: 'turn' | 'all'
+  /** respuestas de cada uno en "todos responden" (clave de targetKey) */
+  answers: Record<string, number>
+  /** cifras de cada uno en estimación */
+  guesses: Record<string, number>
+  revealedAt: number | null
+  estimation: EstimationResult | null
 }
 
 export interface Scoring {
@@ -78,8 +87,21 @@ export interface LadderState {
   awarded: boolean
 }
 
-export type CueId = 'pregunta' | 'marcar' | 'correcto' | 'error' | 'reloj' | 'victoria' | 'plantarse' | 'caida'
-export const CUES: { id: CueId; label: string; def: string }[] = [
+export type CueId =
+  | 'pregunta'
+  | 'marcar'
+  | 'respondido'
+  | 'correcto'
+  | 'error'
+  | 'reloj'
+  | 'victoria'
+  | 'plantarse'
+  | 'caida'
+  | 'transicion'
+  | 'pasapalabra'
+  | 'estimacion'
+  | 'ganador'
+export const CUES: { id: CueId; label: string; def: string | null }[] = [
   { id: 'pregunta', label: 'Nueva pregunta', def: 'pregunta.mp3' },
   { id: 'marcar', label: 'Respuesta definitiva', def: 'tension.mp3' },
   { id: 'correcto', label: 'Acierto', def: 'correcto.mp3' },
@@ -87,7 +109,12 @@ export const CUES: { id: CueId; label: string; def: string }[] = [
   { id: 'reloj', label: 'Temporizador (bucle)', def: 'reloj.mp3' },
   { id: 'victoria', label: 'Escalera: gana', def: 'victoria.mp3' },
   { id: 'plantarse', label: 'Escalera: se planta', def: 'victoria.mp3' },
-  { id: 'caida', label: 'Escalera: cae', def: 'error.mp3' }
+  { id: 'caida', label: 'Escalera: cae', def: 'error.mp3' },
+  { id: 'respondido', label: 'Todos responden: marca', def: null },
+  { id: 'estimacion', label: 'Estimación: revelado', def: 'tension.mp3' },
+  { id: 'pasapalabra', label: 'Rosco: pasapalabra', def: 'pregunta.mp3' },
+  { id: 'transicion', label: 'Rótulo de prueba', def: 'pregunta.mp3' },
+  { id: 'ganador', label: 'Marcador final', def: 'victoria.mp3' }
 ]
 
 export interface QuizState {
@@ -105,9 +132,12 @@ export interface QuizState {
   asked: number
   ladder: LadderState
   sounds: Record<CueId, string | null>
+  /** las preguntas nuevas son para todos */
+  allMode: boolean
+  estimation: EstimationConfig
 }
 
-export type QuizView = 'plato' | 'quiz' | 'result'
+export type QuizView = 'plato' | 'quiz' | 'result' | 'rosco' | 'transition' | 'final'
 
 export type QuizAction =
   | { type: 'setView'; view: QuizView }
@@ -115,7 +145,12 @@ export type QuizAction =
   | { type: 'quizSetOrder'; file: string; order: string[] | null }
   | { type: 'quizMarkUsed'; key: string; used: boolean }
   | { type: 'quizResetUsed'; bankFile: string }
-  | { type: 'quizLoad'; key: string; bankFile: string; question: Question; now: number }
+  | { type: 'quizLoad'; key: string; bankFile: string; question: Question; now: number; mode?: 'turn' | 'all' }
+  | { type: 'quizAnswerAll'; key: string; index: number | null }
+  | { type: 'quizGuess'; key: string; value: number | null }
+  | { type: 'quizSetMode'; mode: 'turn' | 'all' }
+  | { type: 'quizSetAllMode'; allMode: boolean }
+  | { type: 'quizSetEstimation'; patch: Partial<EstimationConfig> }
   | { type: 'quizShowNext'; now: number }
   | { type: 'quizShowAll'; now: number }
   | { type: 'quizPick'; index: number; now: number }
@@ -174,7 +209,9 @@ export function defaultQuiz(): QuizState {
     autoRotate: true,
     asked: 0,
     ladder: defaultLadder(),
-    sounds: Object.fromEntries(CUES.map((c) => [c.id, c.def])) as Record<CueId, string | null>
+    sounds: Object.fromEntries(CUES.map((c) => [c.id, c.def])) as Record<CueId, string | null>,
+    allMode: false,
+    estimation: { priceIsRight: false, mode: 'closest', ranked: [10, 6, 3, 1] }
   }
 }
 
@@ -189,6 +226,14 @@ export function formatPoints(n: number): string {
 
 export const sameTarget = (a: Target | null | undefined, b: Target | null | undefined): boolean =>
   !!a && !!b && (a.kind === 'contestant' ? b.kind === 'contestant' && a.id === b.id : b.kind === 'team' && a.index === b.index)
+
+/** Clave estable de un turno ("c1", "t0"). */
+export const targetKey = (t: Target): string => (t.kind === 'team' ? 't' + t.index : t.id)
+export function targetFromKey(key: string): Target | null {
+  if (/^t[01]$/.test(key)) return { kind: 'team', index: Number(key[1]) as 0 | 1 }
+  if (/^c[1-4]$/.test(key)) return { kind: 'contestant', id: key as ContestantId }
+  return null
+}
 
 /** Concursantes/equipos que pueden recibir turno según la plantilla. */
 export function turnTargets(s: Pick<GameState, 'layout' | 'contestants'>): Target[] {
@@ -310,9 +355,47 @@ function settleLadder(s: S): S {
   return withQuiz(next, { ladder: { ...l, awarded: true } })
 }
 
+/** Revelado de estimación: más cercano (o precio justo) y puntos. */
+function revealEstimation(s: S, now: number): S {
+  const cur = s.quiz.current!
+  const answer = cur.question.valor ?? 0
+  const guesses = Object.entries(cur.guesses).map(([key, value]) => ({ key, value }))
+  if (!guesses.length) return s
+  const res = estimationResult(answer, guesses, s.quiz.estimation.priceIsRight)
+  const pts = estimationPoints(res, s.quiz.estimation, s.quiz.scoring.pointsCorrect)
+  const attempts: Attempt[] = res.rows.map((r) => ({
+    target: targetFromKey(r.key),
+    pick: -1,
+    correct: res.winners.includes(r.key),
+    delta: pts[r.key] ?? 0,
+    awarded: false
+  }))
+  let next = withQuiz(s, { current: { ...cur, phase: 'revealed', attempts, estimation: res, revealedAt: now }, timer: resetTimer(s.quiz.timer) })
+  if (s.quiz.scoring.autoAward) next = awardPending(next)
+  return next
+}
+
+/** Revelado de "todos responden": cada uno con su acierto o fallo. */
+function revealAll(s: S, now: number): S {
+  const cur = s.quiz.current!
+  const keys = Object.keys(cur.answers)
+  if (!keys.length) return s
+  const attempts: Attempt[] = keys.map((k) => {
+    const pick = cur.answers[k]
+    const correct = pick === cur.question.correcta
+    return { target: targetFromKey(k), pick, correct, delta: scoreDelta(s.quiz.scoring, correct), awarded: false }
+  })
+  let next = withQuiz(s, { current: { ...cur, phase: 'revealed', attempts, revealedAt: now }, timer: resetTimer(s.quiz.timer) })
+  if (s.quiz.scoring.autoAward) next = awardPending(next)
+  return next
+}
+
 function reveal(s: S, now: number): S {
   const cur = s.quiz.current
-  if (!cur || cur.phase !== 'locked' || cur.picked === null) return s
+  if (!cur || cur.phase === 'revealed') return s
+  if (cur.question.tipo === 'estimacion') return revealEstimation(s, now)
+  if (cur.mode === 'all') return revealAll(s, now)
+  if (cur.phase !== 'locked' || cur.picked === null) return s
   const correct = cur.picked === cur.question.correcta
   const inLadder = s.quiz.ladder.active && cur.ladderLevel !== null
   const attempt: Attempt = {
@@ -323,7 +406,7 @@ function reveal(s: S, now: number): S {
     awarded: false
   }
   const attempts = [...cur.attempts, attempt]
-  let current: CurrentQuestion = { ...cur, attempts, phase: 'revealed' }
+  let current: CurrentQuestion = { ...cur, attempts, phase: 'revealed', revealedAt: now }
   let timer = resetTimer(s.quiz.timer)
 
   if (!correct && !inLadder && s.quiz.rebound) {
@@ -373,7 +456,9 @@ export function applyQuizAction(s: S, a: QuizAction): S {
       const ladder = q.ladder
       const inLadder = ladder.active && !ladder.outcome
       let turn = q.turn
-      if (!inLadder && q.autoRotate && q.asked > 0) turn = nextTarget(turnTargets(s), turn) ?? turn
+      const mode: 'turn' | 'all' = inLadder || a.question.tipo === 'estimacion' ? 'turn' : a.mode ?? (q.allMode ? 'all' : 'turn')
+      const individual = mode === 'turn' && a.question.tipo !== 'estimacion'
+      if (!inLadder && individual && q.autoRotate && q.asked > 0) turn = nextTarget(turnTargets(s), turn) ?? turn
       const current: CurrentQuestion = {
         key: a.key,
         bankFile: a.bankFile,
@@ -385,12 +470,18 @@ export function applyQuizAction(s: S, a: QuizAction): S {
         target: inLadder ? ladder.target : turn,
         attempts: [],
         showImage: !!a.question.imagen,
-        ladderLevel: inLadder ? ladder.level : null
+        ladderLevel: inLadder ? ladder.level : null,
+        mode,
+        answers: {},
+        guesses: {},
+        revealedAt: null,
+        estimation: null
       }
+      if (!individual && !inLadder) current.target = null
       return {
         ...s,
         view: 'quiz',
-        quiz: { ...q, current, turn, asked: q.asked + 1, used: { ...q.used, [a.key]: true }, timer: resetTimer(q.timer) }
+        quiz: { ...q, current, turn, asked: individual ? q.asked + 1 : q.asked, used: { ...q.used, [a.key]: true }, timer: resetTimer(q.timer) }
       }
     }
     case 'quizShowNext':
@@ -403,9 +494,35 @@ export function applyQuizAction(s: S, a: QuizAction): S {
       const timer = shown === n && cur.phase !== 'locked' ? startTimer(q.timer, a.now) : q.timer
       return withQuiz(s, { current: { ...cur, shown, phase }, timer })
     }
+    case 'quizAnswerAll': {
+      const cur = q.current
+      if (!cur || cur.mode !== 'all' || cur.phase === 'revealed' || cur.phase === 'question') return s
+      const answers = { ...cur.answers }
+      if (a.index === null) delete answers[a.key]
+      else if (a.index >= 0 && a.index < cur.shown && !cur.hidden.includes(a.index)) answers[a.key] = a.index
+      else return s
+      return withCurrent(s, { answers })
+    }
+    case 'quizGuess': {
+      const cur = q.current
+      if (!cur || cur.question.tipo !== 'estimacion' || cur.phase === 'revealed') return s
+      const guesses = { ...cur.guesses }
+      if (a.value === null || !Number.isFinite(a.value)) delete guesses[a.key]
+      else guesses[a.key] = a.value
+      return withCurrent(s, { guesses })
+    }
+    case 'quizSetMode': {
+      const cur = q.current
+      if (!cur || cur.phase === 'revealed' || cur.attempts.length || cur.ladderLevel !== null || cur.question.tipo === 'estimacion') return s
+      return withCurrent(s, { mode: a.mode, picked: null, answers: {}, phase: cur.phase === 'locked' ? 'options' : cur.phase, target: a.mode === 'all' ? null : q.turn })
+    }
+    case 'quizSetAllMode':
+      return withQuiz(s, { allMode: a.allMode })
+    case 'quizSetEstimation':
+      return withQuiz(s, { estimation: { ...q.estimation, ...a.patch } })
     case 'quizPick': {
       const cur = q.current
-      if (!cur || (cur.phase !== 'options' && cur.phase !== 'locked')) return s
+      if (!cur || cur.mode === 'all' || (cur.phase !== 'options' && cur.phase !== 'locked')) return s
       const failed = cur.attempts.filter((x) => !x.correct).map((x) => x.pick)
       if (a.index < 0 || a.index >= cur.shown || cur.hidden.includes(a.index) || failed.includes(a.index)) return s
       return withQuiz(s, { current: { ...cur, picked: a.index, phase: 'locked' }, timer: pauseTimer(q.timer, a.now) })

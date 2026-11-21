@@ -4,6 +4,7 @@ import { extname, join, relative, resolve, sep } from 'node:path'
 import { pathToFileURL } from 'node:url'
 import { app, net, protocol } from 'electron'
 import { imagesDir } from './banks'
+import { peopleDir } from './library'
 import { dispatch, getState } from './store'
 import type { AudioLibrary } from '../shared/types'
 
@@ -60,7 +61,7 @@ export function setAudioDir(dir: string): void {
 export function handleMediaProtocol(): void {
   protocol.handle(MEDIA_SCHEME, (req) => {
     const url = new URL(req.url)
-    const roots: Record<string, string> = { audio: audioDir(), imagenes: imagesDir() }
+    const roots: Record<string, string> = { audio: audioDir(), imagenes: imagesDir(), personas: peopleDir() }
     if (!roots[url.host]) return new Response('forbidden', { status: 403 })
     const root = resolve(roots[url.host])
     const target = resolve(root, decodeURIComponent(url.pathname).replace(/^\/+/, ''))

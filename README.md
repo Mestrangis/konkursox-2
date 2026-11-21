@@ -50,6 +50,22 @@ Pestaña **Preguntas** del panel. El plató pasa solo a la pantalla de pregunta 
 
 Todo el estado de la partida (pregunta en curso, escalera, usadas) vive en el proceso main y se guarda: si cierras el programa, al abrirlo sigues donde estabas.
 
+## Fase 3: resto de juegos y escaleta
+
+- **Escaleta** (pestaña *Programa*): lista ordenada de pruebas con nombre, juego, banco y configuración (puntos, reloj, modo, rosco...). Se guarda y se carga desde `Documentos\KONKURSOX\escaletas\`. Al empezar una prueba sale en el plató el rótulo de transición ("PRUEBA 3 DE 9 · EL ROSCO") con su música o el efecto *Rótulo de prueba*; *Ir al juego* pasa a la pregunta o al rosco. Se puede seguir jugando suelto desde *Preguntas* y *Rosco*.
+- **Todos responden** (test, Sí/No y ¿Quién lo dijo?): marcas la respuesta de cada uno (1-4 o A-D rellenan en orden; Retroceso quita la última). En el plató cada placa muestra que ya ha respondido sin decir qué; al revelar se ve la de cada uno y se reparten los puntos.
+- **El rosco** (pestaña *Rosco*): 1 concursante o 2 alternándose, cada uno con su rosco y su reloj. Teclas: A acierto, F fallo, P pasapalabra, Espacio reloj. En el panel ves definición y respuesta; clic en una letra para corregirla. Bote opcional por completarlo sin fallos.
+- **Estimación**: escribes la cifra de cada uno; al revelar, recta con las marcas, la respuesta animada y el más cercano en verde. Opciones: precio justo (sin pasarse) y puntos solo al más cercano o escalonados por puesto. Los empates comparten puesto y puntos.
+- **¿Quién lo dijo?**: frase, autor, fuente, fecha y hora; al revelar destaca al autor y muestra la fuente (con su foto si está en *Personas del grupo*). Si faltan opciones, salen de las personas del grupo.
+- **Marcador final**: ganador con su cámara en grande, clasificación con todas las cámaras, fecha, número de pruebas y concursantes. "Ganador"/"Ganadora" según lo marcado en cada concursante; "Ganadores" con equipos; empates en cabeza contemplados.
+- **Bancos de ejemplo** (se copian una vez a `Documentos\KONKURSOX\preguntas\`): rosco, estimación y ¿quién lo dijo?. Formatos:
+
+  ```json
+  { "id": "r1", "tipo": "rosco", "letra": "Ñ", "modo": "contiene", "definicion": "Período de doce meses.", "respuesta": "Año" }
+  { "id": "e1", "tipo": "estimacion", "enunciado": "¿Cuántos metros mide el Everest?", "respuesta": 8849, "unidad": "m" }
+  { "id": "q1", "tipo": "quien", "frase": "...", "autor": "Dani", "fuente": "Chat del grupo", "fecha": "14 de marzo de 2024", "hora": "03:12", "opciones": ["Sergio", "Dani", "Marta", "Pablo"] }
+  ```
+
 ## Desarrollo
 
 Requisitos: Node 24+ (npm 11) y Windows (la captura de ventanas está pensada para Windows).
@@ -58,7 +74,7 @@ Requisitos: Node 24+ (npm 11) y Windows (la captura de ventanas está pensada pa
 npm install
 npm run dev        # Electron con recarga en caliente
 npm run typecheck  # tsc sin emitir
-npm test           # tests de recorte, escalera y puntuación (vitest)
+npm test           # tests de la lógica de juego (vitest)
 npm run dist       # instalador local en release\ (sin publicar)
 ```
 
@@ -69,7 +85,7 @@ src/main/        proceso main: store, ventanas, captura, audio (protocolo konk-m
 src/preload/     API segura expuesta como window.konk
 src/shared/      tipos, reducer, plantillas, recorte (crop.ts), preguntas y partida (questions.ts, quiz.ts)
 src/renderer/    plato.html + panel.html, ds/ (design system), plato/ (escenas), panel/ (UI, calibración, audio)
-tests/           tests de recorte, escalera y puntuación
+tests/           tests de recorte, escalera, puntuación, rosco, estimación y clasificación
 design/          diseño de referencia (export de Claude Design)
 legacy/          preguntas e imágenes del concurso antiguo
 ```

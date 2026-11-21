@@ -1,6 +1,8 @@
 import { join } from 'node:path'
 import { app, BrowserWindow, dialog, ipcMain, screen, shell } from 'electron'
 import { banksDir, ensureBanks, importLegacyFile, listBanks, readBank } from './banks'
+import { deleteShow, importPhoto, listShows, loadShow, saveShow, showsDir } from './library'
+import type { Segment } from '../shared/show'
 import { installDisplayMediaHandler, listWindowSources, resolveSource } from './capture'
 import { audioDir, audioLibrary, handleMediaProtocol, registerMediaScheme, setAudioDir } from './media'
 import { dispatch, flushSave, getState, initStore, onStateChange } from './store'
@@ -108,6 +110,22 @@ function registerIpc(): void {
       }
     }
     return { imported, errors }
+  })
+  ipcMain.handle('show:list', () => listShows())
+  ipcMain.handle('show:save', (_e, title: string, segments: Segment[]) => saveShow(title, segments))
+  ipcMain.handle('show:load', (_e, file: string) => loadShow(file))
+  ipcMain.handle('show:delete', (_e, file: string) => deleteShow(file))
+  ipcMain.handle('show:openDir', () => shell.openPath(showsDir()))
+  ipcMain.handle('people:choosePhoto', async (_e, name: string) => {
+    const win = BrowserWindow.getFocusedWindow() ?? getPanel()
+    const opts: Electron.OpenDialogOptions = {
+      title: 'Foto de ' + (name || 'la persona'),
+      filters: [{ name: 'Imágenes', extensions: ['jpg', 'jpeg', 'png', 'webp', 'gif', 'avif'] }],
+      properties: ['openFile']
+    }
+    const res = win ? await dialog.showOpenDialog(win, opts) : await dialog.showOpenDialog(opts)
+    if (res.canceled || !res.filePaths[0]) return null
+    return importPhoto(res.filePaths[0], name)
   })
   ipcMain.handle('update:check', () => checkForUpdates())
   ipcMain.handle('update:install', () => installUpdate())

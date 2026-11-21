@@ -8,7 +8,9 @@ import { autoReconnect, CaptureFeed } from '../common/feed'
 import { h } from '../ds/components'
 import { buildScene, drawFrames, sceneKey, type Scene } from '../plato/scenes'
 import { AudioEngine } from './audio'
+import { createProgramTab } from './program'
 import { createQuizTab } from './quiz'
+import { createRoscoTab } from './rosco'
 import { createCalibration, drawSlotPreview, slotLabel } from './calibrate'
 
 const app = document.getElementById('app') as HTMLDivElement
@@ -268,6 +270,14 @@ function state0Rows(): HTMLElement[] {
       })
       return b
     })
+    const genderBtns = ([
+      ['m', 'Chico'],
+      ['f', 'Chica']
+    ] as const).map(([g, label]) => {
+      const b = btn(label, () => send({ type: 'setGender', id, gender: state.contestants[i].gender === g ? null : g }), 'p-btn--sm')
+      onState((s) => b.classList.toggle('is-active', s.contestants[i].gender === g))
+      return b
+    })
     const row = h('div', 'p-contestant', {}, [
       h('span', 'p-num', {}, [String(i + 1)]),
       textField('', (s) => s.contestants[i].name, (v) => ({ type: 'setContestant', id, patch: { name: v } }), { placeholder: 'Nombre' }),
@@ -276,7 +286,7 @@ function state0Rows(): HTMLElement[] {
         (d) => ({ type: 'addScore', id, delta: d }),
         (v) => ({ type: 'setScore', id, value: v })
       ),
-      h('div', 'p-teamsel', {}, [h('span', 'p-label', {}, ['Equipo']), ...teamBtns])
+      h('div', 'p-teamsel', {}, [h('span', 'p-label', {}, ['Equipo']), ...teamBtns, h('span', 'p-spacer', { flex: 1 }), ...genderBtns])
     ])
     onState((s) => {
       const visible = s.layout !== 'logo' && contestantOrder(s).slice(0, LAYOUTS[s.layout].count).includes(id)
@@ -456,16 +466,26 @@ const quizTab = createQuizTab({
 const platoMain = h('main', 'p-main', {}, [col1, col2, col3])
 
 // ---------- pestañas ----------
-type Tab = 'plato' | 'quiz'
+const previewSlot3 = h('div', 'p-slot')
+const previewSlot4 = h('div', 'p-slot')
+const programTab = createProgramTab({ send: (a) => send(a), getState: () => state, audio, getSfx: () => library.sfx, getMusic: () => library.music, previewSlot: previewSlot3 })
+const roscoTab = createRoscoTab({ send: (a) => send(a), getState: () => state, audio, getSfx: () => library.sfx, previewSlot: previewSlot4 })
+
+// ---------- pestañas ----------
+type Tab = 'plato' | 'program' | 'quiz' | 'rosco'
+const TABS: Tab[] = ['plato', 'program', 'quiz', 'rosco']
 let tab: Tab = 'plato'
 try {
-  tab = localStorage.getItem('konk.tab') === 'quiz' ? 'quiz' : 'plato'
+  const saved = localStorage.getItem('konk.tab') as Tab
+  if (TABS.includes(saved)) tab = saved
 } catch {
   /* sin almacenamiento */
 }
-const tabBtns = {
-  plato: btn('Plató y cámaras', () => setTab('plato'), 'p-tab'),
-  quiz: btn('Preguntas', () => setTab('quiz'), 'p-tab')
+const tabEls: Record<Tab, { btn: HTMLButtonElement; el: HTMLElement; slot: HTMLElement }> = {
+  plato: { btn: btn('Plató y cámaras', () => setTab('plato'), 'p-tab'), el: platoMain, slot: previewSlot1 },
+  program: { btn: btn('Programa', () => setTab('program'), 'p-tab'), el: programTab.el, slot: previewSlot3 },
+  quiz: { btn: btn('Preguntas', () => setTab('quiz'), 'p-tab'), el: quizTab.el, slot: previewSlot2 },
+  rosco: { btn: btn('Rosco', () => setTab('rosco'), 'p-tab'), el: roscoTab.el, slot: previewSlot4 }
 }
 function setTab(t: Tab): void {
   tab = t
@@ -474,22 +494,43 @@ function setTab(t: Tab): void {
   } catch {
     /* sin almacenamiento */
   }
-  platoMain.style.display = t === 'plato' ? '' : 'none'
-  quizTab.el.style.display = t === 'quiz' ? '' : 'none'
-  ;(t === 'plato' ? previewSlot1 : previewSlot2).append(previewCard)
-  tabBtns.plato.classList.toggle('is-active', t === 'plato')
-  tabBtns.quiz.classList.toggle('is-active', t === 'quiz')
+  for (const k of TABS) {
+    tabEls[k].el.style.display = k === t ? '' : 'none'
+    tabEls[k].btn.classList.toggle('is-active', k === t)
+  }
+  tabEls[t].slot.append(previewCard)
   previewStage.style.transform = `scale(${preview.clientWidth / STAGE_W})`
 }
 const viewBadge = h('span', 'p-phase')
+const VIEW_LABEL: Record<string, string> = {
+  plato: 'plantilla',
+  quiz: 'pregunta',
+  result: 'final de la escalera',
+  rosco: 'rosco',
+  transition: 'rótulo de prueba',
+  final: 'marcador final'
+}
 onState((s) => {
-  viewBadge.textContent = s.view === 'plato' ? 'En el plató: plantilla' : s.view === 'quiz' ? (s.quiz.current ? 'En el plató: pregunta' : 'En el plató: plantilla') : 'En el plató: pantalla final'
+  const v = s.view === 'quiz' && !s.quiz.current ? 'plato' : s.view === 'rosco' && !s.rosco.players.length ? 'plato' : s.view
+  viewBadge.textContent = `En el plató: ${VIEW_LABEL[v] ?? v}`
 })
-app.append(h('nav', 'p-tabs', {}, [tabBtns.plato, tabBtns.quiz, h('span', 'p-spacer', { flex: 1 }), viewBadge]), platoMain, quizTab.el, calibration.el)
+const toPlato = btn('Plantilla', () => send({ type: 'setView', view: 'plato' }), 'p-btn--sm')
+app.append(
+  h('nav', 'p-tabs', {}, [...TABS.map((t) => tabEls[t].btn), h('span', 'p-spacer', { flex: 1 }), viewBadge, toPlato]),
+  platoMain,
+  programTab.el,
+  quizTab.el,
+  roscoTab.el,
+  calibration.el
+)
 setTab(tab)
 
 window.addEventListener('keydown', (e) => {
   if (calibration.isOpen || !state) return
+  // el rosco tiene sus propias teclas mientras está en el plató o en su pestaña
+  if (state.rosco.active && !state.rosco.finished && (state.view === 'rosco' || tab === 'rosco')) {
+    if (roscoTab.onKey(e)) return
+  }
   quizTab.onKey(e)
 })
 
@@ -520,6 +561,8 @@ function render(s: GameState): void {
   for (const u of updaters) u(s)
   calibration.update(s)
   quizTab.update()
+  programTab.update()
+  roscoTab.update()
   renderDisplays()
   if (feed.currentSource !== s.cameras.sourceId || epoch !== s.runtime.captureEpoch) {
     epoch = s.runtime.captureEpoch
@@ -532,6 +575,8 @@ void konk.getState().then(async (s) => {
   render(s)
   void loadLibrary()
   void quizTab.loadBanks()
+  void programTab.load()
+  void roscoTab.load()
   // Primera vez: preselecciona la ventana de Discord si existe.
   if (!s.cameras.sourceId) {
     const list = await konk.listSources()

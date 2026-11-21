@@ -1,0 +1,439 @@
+{
+  "formato": "konkursox-banco",
+  "version": 1,
+  "nombre": "Rosco de ejemplo",
+  "preguntas": [
+    {
+      "id": "r1",
+      "tipo": "rosco",
+      "letra": "A",
+      "modo": "empieza",
+      "definicion": "Fruto seco del almendro.",
+      "respuesta": "Almendra"
+    },
+    {
+      "id": "r2",
+      "tipo": "rosco",
+      "letra": "A",
+      "modo": "empieza",
+      "definicion": "Ave rapaz de gran tamaño que aparece en muchos escudos.",
+      "respuesta": "Águila"
+    },
+    {
+      "id": "r3",
+      "tipo": "rosco",
+      "letra": "B",
+      "modo": "empieza",
+      "definicion": "Embarcación pequeña que se mueve a remo o a motor.",
+      "respuesta": "Barca"
+    },
+    {
+      "id": "r4",
+      "tipo": "rosco",
+      "letra": "B",
+      "modo": "empieza",
+      "definicion": "Mamífero marino, el animal más grande del planeta.",
+      "respuesta": "Ballena"
+    },
+    {
+      "id": "r5",
+      "tipo": "rosco",
+      "letra": "C",
+      "modo": "empieza",
+      "definicion": "Órgano que bombea la sangre por todo el cuerpo.",
+      "respuesta": "Corazón"
+    },
+    {
+      "id": "r6",
+      "tipo": "rosco",
+      "letra": "C",
+      "modo": "empieza",
+      "definicion": "Capital de Venezuela.",
+      "respuesta": "Caracas"
+    },
+    {
+      "id": "r7",
+      "tipo": "rosco",
+      "letra": "D",
+      "modo": "empieza",
+      "definicion": "Pieza dura de la boca que sirve para masticar.",
+      "respuesta": "Diente"
+    },
+    {
+      "id": "r8",
+      "tipo": "rosco",
+      "letra": "D",
+      "modo": "empieza",
+      "definicion": "Reptil mitológico que echa fuego por la boca.",
+      "respuesta": "Dragón"
+    },
+    {
+      "id": "r9",
+      "tipo": "rosco",
+      "letra": "E",
+      "modo": "empieza",
+      "definicion": "Mamífero con trompa, el mayor de los animales terrestres.",
+      "respuesta": "Elefante"
+    },
+    {
+      "id": "r10",
+      "tipo": "rosco",
+      "letra": "E",
+      "modo": "empieza",
+      "definicion": "Conjunto de peldaños para subir y bajar.",
+      "respuesta": "Escalera"
+    },
+    {
+      "id": "r11",
+      "tipo": "rosco",
+      "letra": "F",
+      "modo": "empieza",
+      "definicion": "Recipiente de cristal con tapa para guardar conservas.",
+      "respuesta": "Frasco"
+    },
+    {
+      "id": "r12",
+      "tipo": "rosco",
+      "letra": "F",
+      "modo": "empieza",
+      "definicion": "Deporte de once contra once en el que hay que meter el balón en la portería.",
+      "respuesta": "Fútbol"
+    },
+    {
+      "id": "r13",
+      "tipo": "rosco",
+      "letra": "G",
+      "modo": "empieza",
+      "definicion": "Felino doméstico que maúlla.",
+      "respuesta": "Gato"
+    },
+    {
+      "id": "r14",
+      "tipo": "rosco",
+      "letra": "G",
+      "modo": "empieza",
+      "definicion": "Instrumento de seis cuerdas con caja de resonancia.",
+      "respuesta": "Guitarra"
+    },
+    {
+      "id": "r15",
+      "tipo": "rosco",
+      "letra": "H",
+      "modo": "empieza",
+      "definicion": "Agua en estado sólido.",
+      "respuesta": "Hielo"
+    },
+    {
+      "id": "r16",
+      "tipo": "rosco",
+      "letra": "H",
+      "modo": "empieza",
+      "definicion": "Insecto que vive en colonias y, según la fábula, trabaja todo el verano.",
+      "respuesta": "Hormiga"
+    },
+    {
+      "id": "r17",
+      "tipo": "rosco",
+      "letra": "I",
+      "modo": "empieza",
+      "definicion": "Porción de tierra rodeada de agua por todas partes.",
+      "respuesta": "Isla"
+    },
+    {
+      "id": "r18",
+      "tipo": "rosco",
+      "letra": "I",
+      "modo": "empieza",
+      "definicion": "Templo cristiano.",
+      "respuesta": "Iglesia"
+    },
+    {
+      "id": "r19",
+      "tipo": "rosco",
+      "letra": "J",
+      "modo": "empieza",
+      "definicion": "Animal de la sabana africana con el cuello muy largo.",
+      "respuesta": "Jirafa"
+    },
+    {
+      "id": "r20",
+      "tipo": "rosco",
+      "letra": "J",
+      "modo": "empieza",
+      "definicion": "Terreno con plantas y flores de adorno.",
+      "respuesta": "Jardín"
+    },
+    {
+      "id": "r21",
+      "tipo": "rosco",
+      "letra": "K",
+      "modo": "empieza",
+      "definicion": "Unidad de masa que equivale a mil gramos.",
+      "respuesta": "Kilo"
+    },
+    {
+      "id": "r22",
+      "tipo": "rosco",
+      "letra": "K",
+      "modo": "empieza",
+      "definicion": "Arte marcial japonés de combate sin armas.",
+      "respuesta": "Kárate"
+    },
+    {
+      "id": "r23",
+      "tipo": "rosco",
+      "letra": "L",
+      "modo": "empieza",
+      "definicion": "Satélite natural de la Tierra.",
+      "respuesta": "Luna"
+    },
+    {
+      "id": "r24",
+      "tipo": "rosco",
+      "letra": "L",
+      "modo": "empieza",
+      "definicion": "Felino al que llaman el rey de la selva.",
+      "respuesta": "León"
+    },
+    {
+      "id": "r25",
+      "tipo": "rosco",
+      "letra": "M",
+      "modo": "empieza",
+      "definicion": "Mamífero volador nocturno que se orienta por el sonido.",
+      "respuesta": "Murciélago"
+    },
+    {
+      "id": "r26",
+      "tipo": "rosco",
+      "letra": "M",
+      "modo": "empieza",
+      "definicion": "Fruta que muerde Blancanieves.",
+      "respuesta": "Manzana"
+    },
+    {
+      "id": "r27",
+      "tipo": "rosco",
+      "letra": "N",
+      "modo": "empieza",
+      "definicion": "Precipitación de agua helada en copos blancos.",
+      "respuesta": "Nieve"
+    },
+    {
+      "id": "r28",
+      "tipo": "rosco",
+      "letra": "N",
+      "modo": "empieza",
+      "definicion": "Fruta cítrica de color anaranjado.",
+      "respuesta": "Naranja"
+    },
+    {
+      "id": "r29",
+      "tipo": "rosco",
+      "letra": "Ñ",
+      "modo": "contiene",
+      "definicion": "Período de doce meses.",
+      "respuesta": "Año"
+    },
+    {
+      "id": "r30",
+      "tipo": "rosco",
+      "letra": "Ñ",
+      "modo": "contiene",
+      "definicion": "Persona de corta edad.",
+      "respuesta": "Niño"
+    },
+    {
+      "id": "r31",
+      "tipo": "rosco",
+      "letra": "O",
+      "modo": "empieza",
+      "definicion": "Órgano de la vista.",
+      "respuesta": "Ojo"
+    },
+    {
+      "id": "r32",
+      "tipo": "rosco",
+      "letra": "O",
+      "modo": "empieza",
+      "definicion": "Gran masa de agua salada que cubre la mayor parte del planeta.",
+      "respuesta": "Océano"
+    },
+    {
+      "id": "r33",
+      "tipo": "rosco",
+      "letra": "P",
+      "modo": "empieza",
+      "definicion": "Ave que simboliza la paz.",
+      "respuesta": "Paloma"
+    },
+    {
+      "id": "r34",
+      "tipo": "rosco",
+      "letra": "P",
+      "modo": "empieza",
+      "definicion": "Alimento hecho con harina, agua, sal y levadura cocido al horno.",
+      "respuesta": "Pan"
+    },
+    {
+      "id": "r35",
+      "tipo": "rosco",
+      "letra": "Q",
+      "modo": "empieza",
+      "definicion": "Producto que se obtiene cuajando la leche.",
+      "respuesta": "Queso"
+    },
+    {
+      "id": "r36",
+      "tipo": "rosco",
+      "letra": "Q",
+      "modo": "empieza",
+      "definicion": "Número ordinal que corresponde al cinco.",
+      "respuesta": "Quinto"
+    },
+    {
+      "id": "r37",
+      "tipo": "rosco",
+      "letra": "R",
+      "modo": "empieza",
+      "definicion": "Aparato que se lleva en la muñeca para saber la hora.",
+      "respuesta": "Reloj"
+    },
+    {
+      "id": "r38",
+      "tipo": "rosco",
+      "letra": "R",
+      "modo": "empieza",
+      "definicion": "Corriente de agua continua que desemboca en el mar.",
+      "respuesta": "Río"
+    },
+    {
+      "id": "r39",
+      "tipo": "rosco",
+      "letra": "S",
+      "modo": "empieza",
+      "definicion": "Estrella alrededor de la cual gira la Tierra.",
+      "respuesta": "Sol"
+    },
+    {
+      "id": "r40",
+      "tipo": "rosco",
+      "letra": "S",
+      "modo": "empieza",
+      "definicion": "Asiento con respaldo para una persona.",
+      "respuesta": "Silla"
+    },
+    {
+      "id": "r41",
+      "tipo": "rosco",
+      "letra": "T",
+      "modo": "empieza",
+      "definicion": "Capital de Japón.",
+      "respuesta": "Tokio"
+    },
+    {
+      "id": "r42",
+      "tipo": "rosco",
+      "letra": "T",
+      "modo": "empieza",
+      "definicion": "Reptil con caparazón que se mueve muy despacio.",
+      "respuesta": "Tortuga"
+    },
+    {
+      "id": "r43",
+      "tipo": "rosco",
+      "letra": "U",
+      "modo": "empieza",
+      "definicion": "Fruto de la vid.",
+      "respuesta": "Uva"
+    },
+    {
+      "id": "r44",
+      "tipo": "rosco",
+      "letra": "U",
+      "modo": "empieza",
+      "definicion": "Animal fantástico con forma de caballo y un cuerno en la frente.",
+      "respuesta": "Unicornio"
+    },
+    {
+      "id": "r45",
+      "tipo": "rosco",
+      "letra": "V",
+      "modo": "empieza",
+      "definicion": "Instrumento de cuatro cuerdas que se toca con arco.",
+      "respuesta": "Violín"
+    },
+    {
+      "id": "r46",
+      "tipo": "rosco",
+      "letra": "V",
+      "modo": "empieza",
+      "definicion": "Montaña que expulsa lava.",
+      "respuesta": "Volcán"
+    },
+    {
+      "id": "r47",
+      "tipo": "rosco",
+      "letra": "W",
+      "modo": "empieza",
+      "definicion": "Página o sitio de internet.",
+      "respuesta": "Web"
+    },
+    {
+      "id": "r48",
+      "tipo": "rosco",
+      "letra": "W",
+      "modo": "empieza",
+      "definicion": "Bebida alcohólica destilada típica de Escocia.",
+      "respuesta": "Whisky"
+    },
+    {
+      "id": "r49",
+      "tipo": "rosco",
+      "letra": "X",
+      "modo": "contiene",
+      "definicion": "Coche con conductor que se alquila para un trayecto.",
+      "respuesta": "Taxi"
+    },
+    {
+      "id": "r50",
+      "tipo": "rosco",
+      "letra": "X",
+      "modo": "contiene",
+      "definicion": "Prueba para evaluar conocimientos.",
+      "respuesta": "Examen"
+    },
+    {
+      "id": "r51",
+      "tipo": "rosco",
+      "letra": "Y",
+      "modo": "empieza",
+      "definicion": "Embarcación de recreo, normalmente lujosa.",
+      "respuesta": "Yate"
+    },
+    {
+      "id": "r52",
+      "tipo": "rosco",
+      "letra": "Y",
+      "modo": "contiene",
+      "definicion": "Orilla de arena junto al mar.",
+      "respuesta": "Playa"
+    },
+    {
+      "id": "r53",
+      "tipo": "rosco",
+      "letra": "Z",
+      "modo": "empieza",
+      "definicion": "Calzado que cubre el pie.",
+      "respuesta": "Zapato"
+    },
+    {
+      "id": "r54",
+      "tipo": "rosco",
+      "letra": "Z",
+      "modo": "empieza",
+      "definicion": "Bebida que se obtiene exprimiendo fruta.",
+      "respuesta": "Zumo"
+    }
+  ]
+}
