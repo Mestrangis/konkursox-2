@@ -17,7 +17,7 @@ La escena **Juego** enseña el juego que tiene el indicador **AIRE** en la naveg
 
 **Quién sale**: fila fija bajo la barra En el aire con un interruptor por persona (presentador y cada concursante), en cualquier combinación. Vale para las escenas Cámaras y Juego: el plató se reparte solo para 1-5 personas, con el presentador en medio cuando hay concursantes a ambos lados. F6/F7/F8 son atajos de esa fila (solo yo / solo el del turno / todos). En la pantalla Cámaras están además las opciones de nombres, puntos y transición (corte o fundido) y, como secundario, la calibración.
 
-**Multimedia (F9)**: en la sección Multimedia organizas imágenes y vídeos en carpetas (`DocumentosKONKURSOXmultimedia`): arrástralos desde el ordenador o pega un enlace de YouTube (coge miniatura y título). Clic en uno lo saca a pantalla completa en el plató; los vídeos se controlan desde el panel (play/pausa con Espacio, barra, volumen) y el sonido sale por el plató. Si un vídeo de YouTube no permite incrustarse, el panel avisa. F9 muestra/oculta al instante y al ocultar vuelve a la escena anterior. La imagen de una pregunta se manda aquí con **Imagen a Multimedia**.
+**Multimedia (F9)**: en la sección Multimedia organizas imágenes y vídeos en carpetas (`Documentos\KONKURSOX\multimedia\`): arrástralos desde el ordenador o pega un enlace de YouTube (coge miniatura y título). Clic en uno lo saca a pantalla completa en el plató; los vídeos se controlan desde el panel (play/pausa con Espacio, barra, volumen) y el sonido sale por el plató. Si un vídeo de YouTube no permite incrustarse, el panel avisa. F9 muestra/oculta al instante y al ocultar vuelve a la escena anterior. La imagen de una pregunta se manda aquí con **Imagen a Multimedia**.
 
 ### Juegos
 
