@@ -17,7 +17,7 @@ El estado del juego vive **solo en el proceso main** (`src/main/store.ts`): los 
 
 ## Desarrollo
 
-Requisitos: Node 22+ y Windows (la captura de ventanas está pensada para Windows).
+Requisitos: Node 24+ (npm 11) y Windows (la captura de ventanas está pensada para Windows).
 
 ```powershell
 npm install
