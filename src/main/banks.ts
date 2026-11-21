@@ -4,12 +4,13 @@ import { copyFileSync, existsSync, mkdirSync, readdirSync, readFileSync, renameS
 import { basename, extname, join } from 'node:path'
 import { app } from 'electron'
 import { bankRef, LIB_TYPES, newBankFile, parseRef, splitBank, toFileBank, type LibBankInfo, type LibType } from '../shared/library'
-import { convertLegacy, parseBank, slugify, type Bank, type QuestionType } from '../shared/questions'
+import { convertLegacy, isPlayable, parseBank, slugify, type Bank, type QuestionType } from '../shared/questions'
 
 const IMAGE_EXT = new Set(['.jpg', '.jpeg', '.png', '.webp', '.gif', '.avif'])
 const LEGACY_MARKER = '.legacy-importado'
 const EXAMPLES_MARKER = '.ejemplos-v3'
 const LIBRARY_MARKER = '.biblioteca-v4'
+const LADDER_MARKER = '.escalera-ejemplo'
 
 export const banksDir = (): string => join(app.getPath('documents'), 'KONKURSOX', 'preguntas')
 export const imagesDir = (): string => join(banksDir(), 'imagenes')
@@ -100,7 +101,34 @@ export function ensureLibrary(used: Record<string, unknown> = {}): void {
   }
   // siempre: cualquier banco suelto en la raíz se reparte por tipos
   migrateRoot(used)
+  ensureLadderExample()
   if (!existsSync(join(root, LIBRARY_MARKER))) writeFileSync(join(root, LIBRARY_MARKER), `Biblioteca por tipos desde ${new Date().toISOString()}\n`, 'utf8')
+}
+
+/**
+ * Escalera de ejemplo: 15 preguntas de los bancos de Tipo test (en el orden del banco).
+ * Solo se crea una vez y si no hay ninguna escalera.
+ */
+function ensureLadderExample(): void {
+  const root = banksDir()
+  if (existsSync(join(root, LADDER_MARKER))) return
+  const dir = typeDir('escalera')
+  if (jsonFiles(dir).length) return void writeFileSync(join(root, LADDER_MARKER), 'ya había escaleras\n', 'utf8')
+  const tests = jsonFiles(typeDir('test')).sort((a, b) => (a === 'general.json' ? -1 : b === 'general.json' ? 1 : a.localeCompare(b)))
+  const picked: Bank['preguntas'] = []
+  for (const file of tests) {
+    try {
+      const b = parseBank(JSON.parse(readFileSync(join(typeDir('test'), file), 'utf8').replace(/^﻿/, '')), file, true)
+      for (const q of b.preguntas) if (picked.length < 15 && isPlayable(q) && q.opciones.length === 4) picked.push({ ...q, id: 'e' + (picked.length + 1), usada: undefined })
+    } catch {
+      /* banco ilegible: se salta */
+    }
+    if (picked.length >= 15) break
+  }
+  if (picked.length) {
+    writeJson(join(dir, 'escalera-de-ejemplo.json'), toFileBank({ formato: 'konkursox-banco', version: 1, nombre: 'Escalera de ejemplo', preguntas: picked }))
+  }
+  writeFileSync(join(root, LADDER_MARKER), `Escalera de ejemplo creada el ${new Date().toISOString()}\n`, 'utf8')
 }
 
 function pathOf(ref: string): string {

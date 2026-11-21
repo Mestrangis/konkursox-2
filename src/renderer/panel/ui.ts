@@ -9,7 +9,7 @@ import type { LibStore } from './lib'
 
 export { h, svg }
 
-export type ScreenId = GameId | 'biblioteca' | 'concursantes' | 'camaras' | 'ajustes'
+export type ScreenId = GameId | 'biblioteca' | 'multimedia' | 'concursantes' | 'camaras' | 'ajustes'
 
 export interface Screen {
   el: HTMLElement
@@ -90,6 +90,8 @@ export const ICONS = {
   juego: 'M3 3h8v8H3zM13 3h8v8h-8zM3 13h8v8H3zM13 13h8v8h-8z',
   marcador: 'M3 13h5v8H3zM9.5 3h5v18h-5zM16 9h5v12h-5z',
   final: 'M8 6h8v15H8zM1 11h6v10H1zM17 14h6v7h-6z',
+  multimedia: 'M3 5h18v14H3zM5 17h14l-4.5-6-3.5 4.5-2.5-3zM16 8.5a1.5 1.5 0 1 1 0 .01z',
+  caret: 'M7 10l5 5 5-5z',
   play: 'M7 4v16l13-8z',
   pause: 'M6 4h4v16H6zM14 4h4v16h-4z',
   prev: 'M5 4h3v16H5zM20 4v16L9 12z',
@@ -188,4 +190,79 @@ export function editableArea(el: HTMLElement, rebuild: () => void): { refresh(ch
       rebuild()
     }
   }
+}
+
+// ---------------------------------------------------------------- diálogos propios
+// (Electron no admite prompt(); y confirm() bloquea la ventana: mejor diálogos del panel)
+
+function dialogBox(build: (close: (v: unknown) => void) => HTMLElement[]): Promise<unknown> {
+  return new Promise((resolve) => {
+    document.querySelector('.dlg-back')?.remove()
+    const back = h('div', 'dlg-back ui')
+    const box = h('div', 'dlg pnl')
+    const close = (v: unknown) => {
+      back.remove()
+      window.removeEventListener('keydown', onKey, true)
+      resolve(v)
+    }
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        e.stopPropagation()
+        e.preventDefault()
+        close(null)
+      }
+    }
+    window.addEventListener('keydown', onKey, true)
+    box.append(...build(close))
+    back.append(box)
+    back.onmousedown = (e) => e.target === back && close(null)
+    document.body.append(back)
+    requestAnimationFrame(() => (box.querySelector('input, textarea') as HTMLElement | null)?.focus())
+  })
+}
+
+/** Pide un texto. Devuelve null si se cancela. */
+export function askText(title: string, value = '', okLabel = 'Aceptar', hint?: string): Promise<string | null> {
+  return dialogBox((close) => {
+    const input = h('input', 'inp')
+    input.value = value
+    input.onkeydown = (e) => {
+      if (e.key === 'Enter') {
+        e.preventDefault()
+        close(input.value.trim() || null)
+      }
+    }
+    requestAnimationFrame(() => input.select())
+    return [
+      h('b', '', { fontSize: 16 }, [title]),
+      ...(hint ? [h('span', 'mut', { fontSize: 12 }, [hint])] : []),
+      input,
+      h('div', 'dlg-actions', {}, [btn('Cancelar', () => close(null), 'b ghost'), btn(okLabel, () => close(input.value.trim() || null), 'b acc')])
+    ]
+  }) as Promise<string | null>
+}
+
+/** Pide confirmación. */
+export function askConfirm(title: string, text = '', okLabel = 'Sí', danger = false): Promise<boolean> {
+  return dialogBox((close) => {
+    const ok = btn(okLabel, () => close(true), danger ? 'b danger-solid' : 'b acc')
+    requestAnimationFrame(() => ok.focus())
+    return [
+      h('b', '', { fontSize: 16 }, [title]),
+      ...(text ? [h('span', 'mut', { fontSize: 13, lineHeight: '1.4' }, [text])] : []),
+      h('div', 'dlg-actions', {}, [btn('Cancelar', () => close(false), 'b ghost'), ok])
+    ]
+  }).then((v) => v === true)
+}
+
+/** Diálogo con contenido libre (se cierra con el botón o con Esc). */
+export function openDialog(title: string, content: (close: () => void) => HTMLElement[], width = 560): Promise<void> {
+  return dialogBox((close) => {
+    const els = content(() => close(null))
+    requestAnimationFrame(() => {
+      const box = document.querySelector('.dlg') as HTMLElement | null
+      if (box) box.style.width = `${width}px`
+    })
+    return [h('div', '', { display: 'flex', alignItems: 'center' }, [h('b', '', { fontSize: 16, flex: 1 }, [title]), btn('Cerrar', () => close(null), 'b ghost sm')]), ...els]
+  }).then(() => undefined)
 }

@@ -1,6 +1,7 @@
 import { contextBridge, ipcRenderer, webUtils, type IpcRendererEvent } from 'electron'
 import type { LibBankInfo, LibType } from '../shared/library'
 import type { Bank } from '../shared/questions'
+import type { MediaLibrary } from '../main/multimedia'
 import type { Action, AudioLibrary, CaptureSource, DisplayInfo, GameState } from '../shared/types'
 
 function subscribe<T>(channel: string, cb: (v: T) => void): () => void {
@@ -37,6 +38,14 @@ const api = {
   libOpenDir: (): Promise<string> => ipcRenderer.invoke('lib:openDir'),
 
   choosePhoto: (name: string): Promise<string | null> => ipcRenderer.invoke('people:choosePhoto', name),
+
+  mediaList: (): Promise<MediaLibrary> => ipcRenderer.invoke('media:list'),
+  mediaImport: (paths: string[], folder: string): Promise<number> => ipcRenderer.invoke('media:import', paths, folder),
+  mediaChoose: (folder: string): Promise<number> => ipcRenderer.invoke('media:choose', folder),
+  mediaFolder: (name: string): Promise<string> => ipcRenderer.invoke('media:folder', name),
+  mediaDelete: (id: string): Promise<void> => ipcRenderer.invoke('media:delete', id),
+  mediaYoutube: (url: string, folder: string): Promise<{ title: string; embeddable: boolean }> => ipcRenderer.invoke('media:youtube', url, folder),
+  mediaOpenDir: (): Promise<string> => ipcRenderer.invoke('media:openDir'),
   /** ruta en disco de un archivo soltado en la ventana */
   pathForFile: (file: File): string => webUtils.getPathForFile(file),
 

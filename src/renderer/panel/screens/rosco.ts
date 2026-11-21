@@ -3,7 +3,7 @@ import { ROSCO_ALPHABET } from '../../../shared/questions'
 import { sameTarget, turnTargets, type Target } from '../../../shared/quiz'
 import { buildLetters, remainingMs, roscoPoints, roscoStats, roscoWinners, type RoscoAction, type RoscoPlayer } from '../../../shared/rosco'
 import type { GameState } from '../../../shared/types'
-import { btn, h, kbd, mmss, nameOf, type Ctx, type Screen } from '../ui'
+import { askConfirm, btn, h, kbd, mmss, nameOf, type Ctx, type Screen } from '../ui'
 import { flowSteps, goButton, onAirLabel } from './common'
 
 export function createRoscoScreen(ctx: Ctx): Screen {
@@ -50,7 +50,7 @@ export function createRoscoScreen(ctx: Ctx): Screen {
       if (!letters.length) return ctx.toast(`El rosco «${bank.nombre}» no tiene letras completas`)
       built.push({ target: chosen[i], letters })
     }
-    if (s.rosco.active && !s.rosco.finished && !confirm('Hay un rosco en marcha. ¿Empezar otro?')) return
+    if (s.rosco.active && !s.rosco.finished && !(await askConfirm('Hay un rosco en marcha', '¿Empezar otro?', 'Empezar otro'))) return
     r({ type: 'roscoStart', players: built, now: Date.now() })
     ctx.send({ type: 'setLiveGame', game: 'rosco', scene: true })
     ctx.send({ type: 'markPlayed', game: 'rosco' })
@@ -266,7 +266,7 @@ export function createRoscoScreen(ctx: Ctx): Screen {
       h('div', 'secrow', {}, [
         clockBtn,
         undoBtn,
-        btn('Terminar el rosco', () => confirm('¿Dar el rosco por terminado y sumar los puntos?') && r({ type: 'roscoFinish' }), 'b ghost'),
+        btn('Terminar el rosco', async () => (await askConfirm('¿Dar el rosco por terminado?', 'Se suman los puntos.', 'Terminar')) && r({ type: 'roscoFinish' }), 'b ghost'),
         h('span', 'spacer'),
         h('span', 'mut', { fontSize: 12 }, [ro.players.length === 2 ? 'Fallo y Pasapalabra pasan el turno al otro concursante' : 'Fallo y Pasapalabra paran el reloj: sigue con P'])
       ])

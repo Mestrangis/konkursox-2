@@ -44,6 +44,7 @@ function render(s: GameState): void {
     stageEl.append(next.root)
     drawFrames(feed, scene, s)
     if (old) {
+      old.dispose?.()
       if (cut) old.root.remove()
       else window.setTimeout(() => old.root.remove(), 500)
     }

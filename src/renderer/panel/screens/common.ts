@@ -85,6 +85,8 @@ export function questionList(ctx: Ctx, tipo: LibType, onPick: (q: Question, ref:
     if (ref) shuffleBank(ctx, ref)
     render(ctx.state)
   }, 'b sm')
+  // en la escalera el orden del banco es el de los niveles: no se baraja
+  if (tipo === 'escalera') shuffle.style.display = 'none'
   bankSel.onchange = () => {
     setBankFor(tipo, bankSel.value || null)
     render(ctx.state)

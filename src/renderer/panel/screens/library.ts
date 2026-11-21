@@ -4,7 +4,7 @@ import { parseNumber, isPlayable, ROSCO_ALPHABET, type Bank, type Question } fro
 import { formatNumber } from '../../../shared/games'
 import { LIB_TYPES, newQuestionId, parseRoscoText, QTYPE_OF, sortRosco, type LibType } from '../../../shared/library'
 import type { GameState } from '../../../shared/types'
-import { btn, h, icon, ICONS, type Ctx, type Screen } from '../ui'
+import { askConfirm, askText, btn, h, icon, ICONS, openDialog, type Ctx, type Screen } from '../ui'
 
 const MONTHS = ['ene', 'feb', 'mar', 'abr', 'may', 'jun', 'jul', 'ago', 'sep', 'oct', 'nov', 'dic']
 const usedLabel = (d?: string) => {
@@ -61,9 +61,10 @@ export function createLibraryScreen(ctx: Ctx): Screen {
   }
 
   async function newBank(): Promise<void> {
-    const nombre = prompt(`Nombre del banco nuevo de ${LIB_TYPES.find((x) => x.id === tipo)?.label}`, 'Nuevo banco')
-    if (!nombre?.trim()) return
-    const r = await ctx.lib.create(tipo, nombre.trim())
+    const label = LIB_TYPES.find((x) => x.id === tipo)?.label ?? ''
+    const nombre = await askText(`Banco nuevo de ${label}`, '', 'Crear', 'Ponle un nombre (por ejemplo "Cultura general")')
+    if (!nombre) return
+    const r = await ctx.lib.create(tipo, nombre)
     await ctx.lib.get(r)
     pickBank(tipo, r)
   }
@@ -81,6 +82,7 @@ export function createLibraryScreen(ctx: Ctx): Screen {
           : t === 'quien'
             ? { id, tipo: 'quien', enunciado: '', opciones: [], correcta: -1, autor: '' }
             : { id, tipo: 'test', enunciado: '', opciones: ['', '', '', ''], correcta: 0 }
+    void QTYPE_OF
     save({ ...b, preguntas: [...b.preguntas, q] })
     selId = id
     render()
@@ -160,18 +162,63 @@ export function createLibraryScreen(ctx: Ctx): Screen {
     name.value = info.nombre
     name.title = 'Nombre del banco (clic para cambiarlo)'
     name.onchange = () => b && save({ ...b, nombre: name.value.trim() || b.nombre })
+    const ladder = tipo === 'escalera'
+    const levels = ctx.state.quiz.ladder.levels
+    const n = b?.preguntas.length ?? 0
+    // escalera: lista ordenada (escalón 1 = la más fácil), se reordena arrastrando
+    let dragFrom = -1
     listEl.append(
       h('div', '', { display: 'flex', alignItems: 'center', gap: 6, padding: '2px 0 6px' }, [name, btn('+ Nueva', newQuestion, 'b acc sm')]),
+      ...(ladder
+        ? [
+            btn('Traer de Tipo test', () => void bringFromTest(), 'b sm'),
+            h('span', 'mut', { fontSize: 11, color: n === levels.length ? '' : '#e8a23a' }, [
+              n === levels.length
+                ? `${n} preguntas para ${levels.length} escalones · arrastra para ordenar (1 = la más fácil)`
+                : `${n} preguntas para ${levels.length} escalones · ${n < levels.length ? `faltan ${levels.length - n}` : `sobran ${n - levels.length}`} · arrastra para ordenar`
+            ])
+          ]
+        : []),
       h(
         'div',
         '',
         { display: 'flex', flexDirection: 'column', gap: 1, overflow: 'auto', flex: 1 },
-        (b?.preguntas ?? []).map((q) => {
-          const meta = [usedLabel(q.usada), q.imagen ? 'con imagen' : '', isPlayable(q) ? '' : 'incompleta'].filter(Boolean).join(' · ')
-          const it = h('div', `it${q.id === selId ? ' on' : ''}`, {}, [h('span', 't', {}, [q.enunciado || '(sin enunciado)']), h('span', 'm', { color: isPlayable(q) ? '' : '#e8a23a' }, [meta])])
+        (b?.preguntas ?? []).map((q, i) => {
+          const meta = [ladder ? `Escalón ${i + 1}${levels[i] ? ' · ' + levels[i].value.toLocaleString('es-ES') : ''}` : usedLabel(q.usada), q.imagen ? 'con imagen' : '', isPlayable(q) ? '' : 'incompleta']
+            .filter(Boolean)
+            .join(' · ')
+          const it = h('div', `it${q.id === selId ? ' on' : ''}`, ladder ? { cursor: 'grab' } : {}, [
+            h('span', 't', {}, [ladder ? `${i + 1}. ${q.enunciado || '(sin enunciado)'}` : q.enunciado || '(sin enunciado)']),
+            h('span', 'm', { color: isPlayable(q) ? '' : '#e8a23a' }, [meta])
+          ])
           it.onclick = () => {
             selId = q.id
             render()
+          }
+          if (ladder) {
+            it.draggable = true
+            it.ondragstart = (e) => {
+              dragFrom = i
+              e.dataTransfer?.setData('text/plain', String(i))
+              it.style.opacity = '0.4'
+            }
+            it.ondragend = () => (it.style.opacity = '')
+            it.ondragover = (e) => {
+              e.preventDefault()
+              it.style.boxShadow = '0 -2px 0 #4f7dff'
+            }
+            it.ondragleave = () => (it.style.boxShadow = '')
+            it.ondrop = (e) => {
+              e.preventDefault()
+              it.style.boxShadow = ''
+              const from = dragFrom >= 0 ? dragFrom : Number(e.dataTransfer?.getData('text/plain'))
+              const cur = bank()
+              if (!cur || !Number.isInteger(from) || from === i) return
+              const arr = [...cur.preguntas]
+              const [moved] = arr.splice(from, 1)
+              arr.splice(i, 0, moved)
+              save({ ...cur, preguntas: arr })
+            }
           }
           return it
         })
@@ -180,10 +227,66 @@ export function createLibraryScreen(ctx: Ctx): Screen {
     )
   }
 
+  /** Escalera: copiar preguntas de un banco de Tipo test. */
+  async function bringFromTest(): Promise<void> {
+    const tests = ctx.lib.banksOf('test')
+    if (!tests.length) return ctx.toast('No hay bancos de Tipo test')
+    let src = tests[0].ref
+    await openDialog(
+      'Traer preguntas de Tipo test',
+      () => {
+        const sel = h('select', 'inp')
+        for (const t of tests) {
+          const o = h('option', '', {}, [`${t.nombre} (${t.count})`])
+          o.value = t.ref
+          sel.append(o)
+        }
+        const filter = h('input', 'inp')
+        filter.placeholder = 'Buscar'
+        const list = h('div', '', { display: 'flex', flexDirection: 'column', gap: 2, maxHeight: '46vh', overflow: 'auto' })
+        const paint = async () => {
+          const b = await ctx.lib.get(src)
+          const target = bank()
+          const have = new Set((target?.preguntas ?? []).map((q) => q.enunciado.trim()))
+          const f = filter.value.trim().toLowerCase()
+          list.replaceChildren(
+            ...b.preguntas
+              .filter((q) => isPlayable(q) && (!f || q.enunciado.toLowerCase().includes(f)))
+              .map((q) => {
+                const added = have.has(q.enunciado.trim())
+                const add = btn(added ? 'Añadida' : 'Añadir', () => {
+                  const cur = bank()
+                  if (!cur) return
+                  const copy: Question = { ...q, id: newQuestionId(cur, 'e'), usada: undefined, tipo: 'test' }
+                  save({ ...cur, preguntas: [...cur.preguntas, copy] })
+                  void paint()
+                }, `b sm${added ? ' ghost' : ' acc'}`)
+                add.disabled = added
+                return h('div', 'it', { flexDirection: 'row', alignItems: 'center', gap: 10, cursor: 'default' }, [
+                  h('span', 't', { flex: 1 }, [q.enunciado]),
+                  h('span', 'm', {}, [q.opciones[q.correcta] ?? '']),
+                  add
+                ])
+              })
+          )
+        }
+        sel.onchange = () => {
+          src = sel.value
+          void paint()
+        }
+        filter.oninput = () => void paint()
+        void paint()
+        return [h('span', 'mut', { fontSize: 12 }, ['Se añaden al final de la escalera; luego ordénalas arrastrando.']), sel, filter, list]
+      },
+      720
+    )
+    render()
+  }
+
   async function deleteBank(): Promise<void> {
     const info = ctx.lib.info(ref)
     if (!ref || !info) return
-    if (!confirm(`¿Eliminar el banco «${info.nombre}»? Se mueve a la carpeta _papelera (no se pierde).`)) return
+    if (!(await askConfirm(`¿Eliminar el banco «${info.nombre}»?`, 'Se mueve a la carpeta _papelera (no se pierde).', 'Eliminar', true))) return
     await ctx.lib.remove(ref)
     pickBank(tipo, ctx.lib.banksOf(tipo)[0]?.ref ?? null)
   }
@@ -301,9 +404,9 @@ export function createLibraryScreen(ctx: Ctx): Screen {
           selId = id
           editorKey = ''
         }, 'b ghost'),
-        btn('Eliminar', () => {
+        btn('Eliminar', async () => {
           const b2 = bank()
-          if (!b2 || !confirm('¿Eliminar esta pregunta del banco?')) return
+          if (!b2 || !(await askConfirm('¿Eliminar esta pregunta del banco?', '', 'Eliminar', true))) return
           save({ ...b2, preguntas: b2.preguntas.filter((x) => x.id !== q.id) })
           selId = null
           editorKey = ''

@@ -5,7 +5,7 @@ import { activeContestants, camOf, camsLineup, playersInGame } from '../../../sh
 import { formatPoints } from '../../../shared/quiz'
 import { buildCamsScene } from '../../plato/camsScene'
 import { drawFrames, type Scene } from '../../plato/scenes'
-import { btn, editableArea, h, seg, silhouette, sw, type Ctx, type Screen } from '../ui'
+import { askConfirm, btn, editableArea, h, seg, silhouette, sw, type Ctx, type Screen } from '../ui'
 
 const camLabel = (slot: SlotId) => (slot === 'host' ? 'Cámara 5' : `Cámara ${CONTESTANT_IDS.indexOf(slot as ContestantId) + 1}`)
 
@@ -99,7 +99,7 @@ export function createContestantsScreen(ctx: Ctx): Screen {
       const x = h('button', 'x', {}, ['×'])
       x.setAttribute('aria-label', `Quitar a ${c.name}`)
       x.disabled = n <= 1 || teams
-      x.onclick = () => confirm(`¿Quitar a ${c.name}? Los de detrás suben un puesto.`) && ctx.send({ type: 'removeContestant', id })
+      x.onclick = async () => (await askConfirm(`¿Quitar a ${c.name}?`, 'Los de detrás suben un puesto.', 'Quitar', true)) && ctx.send({ type: 'removeContestant', id })
       return h('div', 'rowc', {}, [
         h('span', 'mut', { fontWeight: 700 }, [String(i + 1)]),
         name,
@@ -154,7 +154,7 @@ export function createContestantsScreen(ctx: Ctx): Screen {
           teams ? 'teams' : 'ind',
           (v) => ctx.send({ type: 'setFormat', teams: v === 'teams' })
         ),
-        btn('Poner todos a 0', () => confirm('¿Poner a cero los puntos de todos los concursantes y equipos?') && ctx.send({ type: 'resetScores' }), 'b')
+        btn('Poner todos a 0', async () => (await askConfirm('¿Poner a cero los puntos?', 'De todos los concursantes y equipos.', 'Poner a 0', true)) && ctx.send({ type: 'resetScores' }), 'b')
       ]),
       h('div', 'pnl', { overflowX: 'auto' }, [
         h('div', '', { minWidth: 900 }, [

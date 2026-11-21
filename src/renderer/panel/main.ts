@@ -8,7 +8,8 @@ import type { AudioLibrary, GameState } from '../../shared/types'
 import { autoReconnect, CaptureFeed } from '../common/feed'
 import { AudioEngine } from './audio'
 import { createCalibration } from './calibrate'
-import { createAirBar, createDock, createNav } from './chrome'
+import { createAirBar, createDock, createNav, createPeopleRow, goScene } from './chrome'
+import { createMediaScreen } from './screens/media'
 import { LibStore } from './lib'
 import { createEstimationScreen } from './screens/estimation'
 import { createLibraryScreen } from './screens/library'
@@ -19,6 +20,8 @@ import { createSettingsScreen } from './screens/settings'
 import { h, typing, type Ctx, type Screen, type ScreenId } from './ui'
 
 const konk = window.konk
+// las escenas que pinta el panel (miniatura, vistas previas) son mudas
+window.__konkPreview = true
 let state: GameState
 let audioLib: AudioLibrary = { dir: '', music: [], sfx: [] }
 const audio = new AudioEngine()
@@ -74,6 +77,7 @@ const screens: Record<ScreenId, Screen> = {
   estimacion: createEstimationScreen(ctx),
   rosco: createRoscoScreen(ctx),
   biblioteca: createLibraryScreen(ctx),
+  multimedia: createMediaScreen(ctx),
   concursantes: createContestantsScreen(ctx),
   camaras: createCamerasScreen(ctx),
   ajustes: createSettingsScreen(ctx)
@@ -88,10 +92,11 @@ try {
 }
 
 const air = createAirBar(ctx)
+const people = createPeopleRow(ctx)
 const nav = createNav(ctx, (id) => go(id))
 const dock = createDock(ctx)
 const main = h('main', 'main ui')
-const app = h('div', 'app ui', {}, [air.el, nav.el, main, dock.el])
+const app = h('div', 'app ui', {}, [air.el, people.el, nav.el, main, dock.el])
 document.getElementById('app')!.replaceWith(app)
 document.body.append(calibration.el)
 
@@ -116,6 +121,7 @@ let epoch = -1
 function render(s: GameState): void {
   state = s
   air.update(s)
+  people.update(s)
   nav.update(s, current)
   dock.update(s)
   screens[current].update(s)
@@ -155,15 +161,20 @@ const isGame = (id: ScreenId): id is GameId => GAMES.some((g) => g.id === id)
 
 window.addEventListener('keydown', (e) => {
   if (calibration.isOpen || !state) return
+  if (document.querySelector('.dlg-back')) return
   if (document.querySelector('.ctx')) {
     if (e.key === 'Escape') document.querySelector('.ctx')?.remove()
     return
   }
-  if (typing(e)) return
   const k = e.key
+  // las teclas de función funcionan siempre, aunque el foco esté en un campo
+  const fkey = /^F\d+$/.test(k)
+  if (typing(e) && !fkey) return
+  // la barra espaciadora no debe "pulsar" el botón que tenga el foco
+  if (k === ' ' && (e.target as HTMLElement)?.tagName === 'BUTTON') (e.target as HTMLElement).blur()
   let done = true
   const sc = SCENES.find((x) => x.key === k)
-  if (sc && !e.ctrlKey && !e.altKey) ctx.send({ type: 'setScene', scene: sc.id })
+  if (sc && !e.ctrlKey && !e.altKey) goScene(ctx, sc.id)
   else if (k === 'F6') ctx.send({ type: 'camsPreset', preset: 'yo' })
   else if (k === 'F7') ctx.send({ type: 'camsPreset', preset: 'turno' })
   else if (k === 'F8') ctx.send({ type: 'camsPreset', preset: 'todos' })

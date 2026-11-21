@@ -6,13 +6,14 @@ import type { Target } from './quiz'
 import type { RoscoState } from './rosco'
 import { CONTESTANT_IDS, type Action, type ContestantId, type GameState, type SlotId } from './types'
 
-export type SceneId = 'cabecera' | 'camaras' | 'juego' | 'marcador' | 'final'
+export type SceneId = 'cabecera' | 'camaras' | 'juego' | 'marcador' | 'final' | 'multimedia'
 export const SCENES: { id: SceneId; key: string; label: string }[] = [
   { id: 'cabecera', key: 'F1', label: 'Cabecera' },
   { id: 'camaras', key: 'F2', label: 'Cámaras' },
   { id: 'juego', key: 'F3', label: 'Juego' },
   { id: 'marcador', key: 'F4', label: 'Marcador' },
-  { id: 'final', key: 'F5', label: 'Clasificación' }
+  { id: 'final', key: 'F5', label: 'Clasificación' },
+  { id: 'multimedia', key: 'F9', label: 'Multimedia' }
 ]
 
 export type GameId = 'test' | 'sino' | 'escalera' | 'estimacion' | 'quien' | 'rosco'
@@ -36,7 +37,33 @@ export interface CamsScene {
   scores: boolean
   transition: 'cut' | 'fade'
   preset: CamsPreset | null
+  /** versión del formato (para reiniciar la fila al actualizar) */
+  rev?: number
 }
+
+// ---------------------------------------------------------------- multimedia
+
+export interface MediaItem {
+  kind: 'image' | 'video' | 'youtube'
+  /** imagen/vídeo: URL konk-media://...; YouTube: id del vídeo */
+  src: string
+  title: string
+  thumb?: string
+}
+
+export interface MediaState {
+  item: MediaItem | null
+  /** escena a la que se vuelve al ocultar */
+  prevScene: SceneId
+  playing: boolean
+  /** posición (s) en el instante `since` */
+  at: number
+  since: number
+  volume: number
+}
+
+/** Posición actual de reproducción (s). */
+export const mediaPosition = (m: MediaState, now: number): number => (m.playing ? m.at + Math.max(0, now - m.since) / 1000 : m.at)
 
 export interface ShowState {
   /** juegos jugados, en orden (cuenta para el marcador final) */
@@ -75,6 +102,13 @@ export type SceneAction =
   | { type: 'setFx'; index: number; patch: Partial<FxSlot> }
   /** deshacer el último paso de un juego (lo resuelve el store del main) */
   | { type: 'undo'; game: GameId }
+  | { type: 'mediaShow'; item: MediaItem; now: number }
+  | { type: 'mediaHide' }
+  | { type: 'mediaPlay'; now: number }
+  | { type: 'mediaPause'; now: number }
+  | { type: 'mediaSeek'; t: number; now: number }
+  | { type: 'mediaVolume'; volume: number }
+  | { type: 'mediaReport'; duration?: number; error?: string | null }
 
 export const SCENE_ACTIONS = new Set<string>([
   'setScene',
@@ -91,11 +125,18 @@ export const SCENE_ACTIONS = new Set<string>([
   'setPlayers',
   'setFormat',
   'removeContestant',
-  'setFx'
+  'setFx',
+  'mediaShow',
+  'mediaHide',
+  'mediaPlay',
+  'mediaPause',
+  'mediaSeek',
+  'mediaVolume',
+  'mediaReport'
 ])
 
 export function defaultCams(): CamsScene {
-  return { on: { host: true, c1: true, c2: false, c3: false, c4: false }, names: true, scores: true, transition: 'fade', preset: 'turno' }
+  return { on: { host: false, c1: true, c2: true, c3: true, c4: true }, names: true, scores: true, transition: 'fade', preset: null, rev: 2 }
 }
 
 export const DEFAULT_FX: FxSlot[] = [
@@ -147,7 +188,44 @@ export function applySceneAction(s: GameState, a: SceneAction): GameState {
     case 'camsToggle':
       return { ...s, camsScene: { ...s.camsScene, on: { ...s.camsScene.on, [a.slot]: !s.camsScene.on[a.slot] }, preset: null } }
     case 'camsPreset':
-      return { ...s, scene: 'camaras', camsScene: { ...s.camsScene, on: camsFor(s, a.preset), preset: a.preset } }
+      // preajuste de la fila "quién sale": en Juego se queda en Juego; si no, pone la escena Cámaras
+      return { ...s, scene: s.scene === 'juego' || s.scene === 'camaras' ? s.scene : 'camaras', camsScene: { ...s.camsScene, on: camsFor(s, a.preset), preset: a.preset } }
+    case 'mediaShow': {
+      // volver a mostrar lo mismo (F9 o "Mostrar") lo deja donde estaba
+      if (s.media.item?.src === a.item.src && s.media.item.kind === a.item.kind)
+        return { ...s, scene: 'multimedia', media: { ...s.media, item: a.item, prevScene: s.scene === 'multimedia' ? s.media.prevScene : s.scene } }
+      return {
+        ...s,
+        scene: 'multimedia',
+        media: {
+          ...s.media,
+          item: a.item,
+          prevScene: s.scene === 'multimedia' ? s.media.prevScene : s.scene,
+          playing: a.item.kind !== 'image',
+          at: 0,
+          since: a.now
+        },
+        runtime: { ...s.runtime, media: { duration: 0, error: null } }
+      }
+    }
+    case 'mediaHide':
+      return s.scene === 'multimedia' ? { ...s, scene: s.media.prevScene === 'multimedia' ? 'cabecera' : s.media.prevScene, media: { ...s.media, playing: false, at: mediaPosition(s.media, Date.now()) } } : s
+    case 'mediaPlay':
+      return s.media.playing ? s : { ...s, media: { ...s.media, playing: true, since: a.now } }
+    case 'mediaPause':
+      return s.media.playing ? { ...s, media: { ...s.media, playing: false, at: mediaPosition(s.media, a.now), since: a.now } } : s
+    case 'mediaSeek':
+      return { ...s, media: { ...s.media, at: Math.max(0, a.t), since: a.now } }
+    case 'mediaVolume':
+      return { ...s, media: { ...s.media, volume: Math.max(0, Math.min(1, a.volume)) } }
+    case 'mediaReport':
+      return {
+        ...s,
+        runtime: {
+          ...s.runtime,
+          media: { duration: a.duration ?? s.runtime.media.duration, error: a.error === undefined ? s.runtime.media.error : a.error }
+        }
+      }
     case 'camsSet':
       return { ...s, camsScene: { ...s.camsScene, ...a.patch } }
     case 'markPlayed': {

@@ -1,7 +1,8 @@
 import { join } from 'node:path'
-import { app, BrowserWindow, dialog, ipcMain, screen, shell } from 'electron'
+import { app, BrowserWindow, dialog, ipcMain, screen, session, shell } from 'electron'
 import { banksDir, createBank, deleteBank, ensureLibrary, importImage, listLibrary, markUsed, readBank, saveBank } from './banks'
 import { importPhoto } from './library'
+import { addYoutube, createFolder, deleteMedia, importMedia, mediaDir, mediaLibrary } from './multimedia'
 import type { LibType } from '../shared/library'
 import type { Bank } from '../shared/questions'
 import { installDisplayMediaHandler, listWindowSources, resolveSource } from './capture'
@@ -37,6 +38,15 @@ if (!app.requestSingleInstanceLock()) {
     }
     installDisplayMediaHandler()
     registerIpc()
+    // YouTube no deja reproducir incrustado sin "Referer" (desde file:// no hay ninguno)
+    session.defaultSession.webRequest.onBeforeSendHeaders(
+      { urls: ['*://*.youtube.com/*', '*://*.youtube-nocookie.com/*', '*://*.googlevideo.com/*', '*://*.ytimg.com/*'] },
+      (details, callback) => {
+        const headers = { ...details.requestHeaders }
+        if (!headers.Referer && !headers.referer) headers.Referer = 'https://konkursox.app/'
+        callback({ requestHeaders: headers })
+      }
+    )
 
     onStateChange((next, prev) => {
       if (
@@ -110,6 +120,22 @@ function registerIpc(): void {
     return importImage(res.filePaths[0])
   })
   ipcMain.handle('lib:openDir', () => shell.openPath(banksDir()))
+  ipcMain.handle('media:list', () => mediaLibrary())
+  ipcMain.handle('media:import', (_e, paths: string[], folder: string) => importMedia(paths, folder))
+  ipcMain.handle('media:folder', (_e, name: string) => createFolder(name))
+  ipcMain.handle('media:delete', (_e, id: string) => deleteMedia(id))
+  ipcMain.handle('media:youtube', (_e, url: string, folder: string) => addYoutube(url, folder))
+  ipcMain.handle('media:openDir', () => shell.openPath(mediaDir()))
+  ipcMain.handle('media:choose', async (_e, folder: string) => {
+    const win = BrowserWindow.getFocusedWindow() ?? getPanel()
+    const opts: Electron.OpenDialogOptions = {
+      title: 'Añadir imágenes o vídeos',
+      filters: [{ name: 'Imágenes y vídeos', extensions: ['jpg', 'jpeg', 'png', 'webp', 'gif', 'avif', 'bmp', 'mp4', 'webm', 'mov', 'm4v', 'ogv', 'mkv'] }],
+      properties: ['openFile', 'multiSelections']
+    }
+    const res = win ? await dialog.showOpenDialog(win, opts) : await dialog.showOpenDialog(opts)
+    return res.canceled ? 0 : importMedia(res.filePaths, folder)
+  })
   ipcMain.handle('people:choosePhoto', async (_e, name: string) => {
     const win = BrowserWindow.getFocusedWindow() ?? getPanel()
     const opts: Electron.OpenDialogOptions = {

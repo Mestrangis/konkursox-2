@@ -77,10 +77,11 @@ describe('escenas', () => {
     expect(run(s, { type: 'quizShowQuestion', game: 'test' }).quiz.slots.test!.phase).toBe('question')
   })
 
-  it('los atajos de cámaras ponen la escena Cámaras y eligen quién sale', () => {
+  it('los atajos de cámaras son preajustes de la fila: en Juego se quedan en Juego, si no ponen Cámaras', () => {
     const s = midGame()
+    expect(applyAction({ ...s, scene: 'cabecera' }, { type: 'camsPreset', preset: 'todos' }).scene).toBe('camaras')
     const todos = applyAction(s, { type: 'camsPreset', preset: 'todos' })
-    expect(todos.scene).toBe('camaras')
+    expect(todos.scene).toBe('juego')
     expect(todos.quiz).toBe(s.quiz)
     expect(camsLineup(todos)).toEqual(['c1', 'host', 'c2', 'c3'])
     const yo = applyAction(s, { type: 'camsPreset', preset: 'yo' })

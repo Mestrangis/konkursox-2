@@ -1,27 +1,22 @@
 // Escenas de "¿Quién lo dijo?" y "Estimación · revelado" (según design/KONKURSOX 2.html).
 import { formatNumber, niceScale, tickLabel } from '../../shared/games'
-import { playerCount } from '../../shared/order'
-import { formatPoints, targetFromKey } from '../../shared/quiz'
-import type { ContestantId, GameState, SlotId } from '../../shared/types'
+import { targetFromKey } from '../../shared/quiz'
+import type { GameState, SlotId } from '../../shared/types'
 import { bevelBar, camFrame, h, svg, type CamFrameEl } from '../ds/components'
-import { camGeometry, chipFor, DIAMOND, keyForSlot, liveTimer, optionBar, optionStates, quizPlate, targetName, turnSlots, type PlateEl } from './quizScenes'
+import { camGeometry, DIAMOND, keyForSlot, liveTimer, optionBar, optionStates, quizPlate, setLineupPlate, targetName, turnSlots, type PlateEl } from './quizScenes'
+import { camsLineup } from '../../shared/scene'
 import type { Scene } from './scenes'
-
-const plateScore = (st: GameState, slot: ContestantId): number => {
-  const c = st.contestants.find((x) => x.id === slot)
-  return st.layout === 'teams' && c ? st.teams[c.team].score : c?.score ?? 0
-}
 
 // ---------------------------------------------------------------- ¿Quién lo dijo?
 
 export function buildQuienScene(s: GameState, key: string): Scene {
   const frames = new Map<SlotId, CamFrameEl>()
   const root = h('div', 'k-stage k-enter')
-  const plates: { slot: ContestantId; plate: PlateEl }[] = []
+  const plates: { slot: SlotId; plate: PlateEl }[] = []
   for (const g of camGeometry(s, 'test', 450, 464)) {
     const f = camFrame(g.cam, g.slot)
     frames.set(g.slot, f)
-    const plate = quizPlate({ ...g.plate, h: 54 }, 22, playerCount(s.layout) >= 3 ? (playerCount(s.layout) === 3 ? 28 : 26) : undefined)
+    const plate = quizPlate({ ...g.plate, h: 54 }, 22, g.nameSize)
     plates.push({ slot: g.slot, plate })
     root.append(f.root, plate.root)
   }
@@ -52,7 +47,7 @@ export function buildQuienScene(s: GameState, key: string): Scene {
   const opts = Array.from({ length: n }, (_, i) => optionBar('ABCD'[i], { x: x0 + i * 435, y: 900, w: 415, h: 80 }, 32, false, true))
   root.append(...opts.map((o) => o.root))
 
-  const timer = playerCount(s.layout) === 2 ? liveTimer(900, 380) : liveTimer(1700, 572, 0.8)
+  const timer = camsLineup(s).length === 2 ? liveTimer(900, 380) : liveTimer(1700, 572, 0.8)
   root.append(timer.root)
 
   const update = (st: GameState) => {
@@ -71,11 +66,7 @@ export function buildQuienScene(s: GameState, key: string): Scene {
     optionStates(st).forEach((o, i) => opts[i]?.set(o.text, o.state, o.visible))
     const turn = turnSlots(st)
     for (const [slot, f] of frames) f.root.classList.toggle('is-turn', turn.has(slot))
-    for (const { slot, plate } of plates) {
-      const c = st.contestants.find((x) => x.id === slot)
-      const chip = chipFor(st, slot)
-      plate.set(c?.name ?? '', formatPoints(plateScore(st, slot)), chip.text, chip.cls)
-    }
+    for (const { slot, plate } of plates) setLineupPlate(st, slot, plate)
   }
   update(s)
   return { key, root, frames, update, tick: (st) => timer.tick(st) }
@@ -89,11 +80,11 @@ const ease = (t: number) => 1 - Math.pow(1 - t, 3)
 export function buildEstimationScene(s: GameState, key: string): Scene {
   const frames = new Map<SlotId, CamFrameEl>()
   const root = h('div', 'k-stage k-enter')
-  const plates: { slot: ContestantId; plate: PlateEl }[] = []
+  const plates: { slot: SlotId; plate: PlateEl }[] = []
   for (const g of camGeometry(s, 'test', 430, 444)) {
     const f = camFrame(g.cam, g.slot)
     frames.set(g.slot, f)
-    const plate = quizPlate(g.plate, 22, playerCount(s.layout) >= 3 ? (playerCount(s.layout) === 3 ? 28 : 26) : undefined)
+    const plate = quizPlate(g.plate, 22, g.nameSize)
     plates.push({ slot: g.slot, plate })
     root.append(f.root, plate.root)
   }
@@ -186,6 +177,10 @@ export function buildEstimationScene(s: GameState, key: string): Scene {
     } else closeText.textContent = ''
 
     for (const { slot, plate } of plates) {
+      if (slot === 'host') {
+        plate.set(st.host.name, null, '', '')
+        continue
+      }
       const c = st.contestants.find((x) => x.id === slot)
       const gk = keyForSlot(st, slot)
       const g = cur?.guesses[gk]

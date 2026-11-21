@@ -2,7 +2,7 @@
 import type { Gender } from './games'
 import type { QuizAction, QuizState } from './quiz'
 import type { RoscoAction, RoscoState } from './rosco'
-import type { CamsScene, FxSlot, GameId, Person, SceneAction, SceneId, ShowState } from './scene'
+import type { CamsScene, FxSlot, GameId, MediaState, Person, SceneAction, SceneId, ShowState } from './scene'
 
 export type ContestantId = 'c1' | 'c2' | 'c3' | 'c4'
 export type SlotId = ContestantId | 'host'
@@ -94,6 +94,8 @@ export interface RuntimeState {
   captureEpoch: number
   /** pasos que se pueden deshacer en cada juego */
   undo: Partial<Record<GameId, number>>
+  /** lo que informa el plató del vídeo en pantalla */
+  media: { duration: number; error: string | null }
 }
 
 export interface GameState {
@@ -103,6 +105,8 @@ export interface GameState {
   liveGame: GameId
   /** quién sale y cómo en la escena Cámaras */
   camsScene: CamsScene
+  /** escena Multimedia (imagen, vídeo o YouTube) */
+  media: MediaState
   layout: LayoutId
   contestants: Contestant[]
   teams: [Team, Team]

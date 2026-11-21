@@ -5,6 +5,7 @@ import { pathToFileURL } from 'node:url'
 import { app, net, protocol } from 'electron'
 import { imagesDir } from './banks'
 import { peopleDir } from './library'
+import { serveMedia } from './multimedia'
 import { dispatch, getState } from './store'
 import type { AudioLibrary } from '../shared/types'
 
@@ -61,6 +62,8 @@ export function setAudioDir(dir: string): void {
 export function handleMediaProtocol(): void {
   protocol.handle(MEDIA_SCHEME, (req) => {
     const url = new URL(req.url)
+    // multimedia: con Range, para poder saltar en los vídeos
+    if (url.host === 'multimedia') return serveMedia(req, decodeURIComponent(url.pathname).replace(/^\/+/, ''))
     const roots: Record<string, string> = { audio: audioDir(), imagenes: imagesDir(), personas: peopleDir() }
     if (!roots[url.host]) return new Response('forbidden', { status: 403 })
     const root = resolve(roots[url.host])

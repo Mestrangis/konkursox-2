@@ -11,24 +11,26 @@ El estado vive **solo en el proceso main** (`src/main/store.ts`): los renderers 
 
 ### Escenas (lo que sale en el plató)
 
-Arriba del panel, la barra **En el aire**: Cabecera (F1), Cámaras (F2), Juego (F3), Marcador (F4) y Clasificación final (F5). El plató pinta **solo** la escena en el aire. Cambiar de escena **no borra ni reinicia nada**: puedes ir a Cabecera a mitad de pregunta y volver con F3 tal cual estaba. Navegar por el panel tampoco cambia el plató.
+Arriba del panel, la barra **En el aire**: Cabecera (F1), Cámaras (F2), Juego (F3), Marcador (F4), Clasificación final (F5) y Multimedia (F9). El plató pinta **solo** la escena en el aire. Cambiar de escena **no borra ni reinicia nada**: puedes ir a Cabecera a mitad de pregunta y volver con F3 tal cual estaba. Navegar por el panel tampoco cambia el plató.
 
-La escena **Juego** enseña el juego que tiene el indicador **AIRE** en la navegación. Un juego se pone en el aire al dar su primer paso visible (por ejemplo "Mostrar pregunta" o "Empezar el rosco"). Cada juego guarda su propia pregunta en curso: trabajar en uno no toca los demás.
+La escena **Juego** enseña el juego que tiene el indicador **AIRE** en la navegación. Se elige con el desplegable del botón Juego, con el botón **Poner en el aire** de cada pantalla de juego, o al dar su primer paso visible (por ejemplo "Mostrar pregunta" o "Empezar el rosco"). Cada juego guarda su propia pregunta en curso: trabajar en uno no toca los demás.
 
-**Escena Cámaras**: interruptores de quién sale (presentador y cada concursante). El plató se reparte solo para 1-5 personas, con el presentador en medio cuando hay concursantes a ambos lados. Opciones de nombres, puntos y transición (corte o fundido).
+**Quién sale**: fila fija bajo la barra En el aire con un interruptor por persona (presentador y cada concursante), en cualquier combinación. Vale para las escenas Cámaras y Juego: el plató se reparte solo para 1-5 personas, con el presentador en medio cuando hay concursantes a ambos lados. F6/F7/F8 son atajos de esa fila (solo yo / solo el del turno / todos). En la pantalla Cámaras están además las opciones de nombres, puntos y transición (corte o fundido) y, como secundario, la calibración.
+
+**Multimedia (F9)**: en la sección Multimedia organizas imágenes y vídeos en carpetas (`DocumentosKONKURSOXmultimedia`): arrástralos desde el ordenador o pega un enlace de YouTube (coge miniatura y título). Clic en uno lo saca a pantalla completa en el plató; los vídeos se controlan desde el panel (play/pausa con Espacio, barra, volumen) y el sonido sale por el plató. Si un vídeo de YouTube no permite incrustarse, el panel avisa. F9 muestra/oculta al instante y al ocultar vuelve a la escena anterior. La imagen de una pregunta se manda aquí con **Imagen a Multimedia**.
 
 ### Juegos
 
 Tipo test, Sí o no, Escalera, Estimación, ¿Quién lo dijo? y Rosco. Cada pantalla tiene un **botón grande con el siguiente paso** (Espacio) y lo que viene después, controles secundarios debajo y **Deshacer** (Ctrl+Z), que deshace el último paso de ese juego.
 
-- **Test / Sí o no / ¿Quién lo dijo?**: por turno, "todos responden" o rebote al siguiente si falla. A-D marca la respuesta (en "todos responden" se asigna al concursante seleccionado y salta al siguiente).
-- **Escalera**: 15 escalones (seguros en 5, 10 y 15; se cambian en Ajustes), comodines 50:50 (F), llamada (L) y público (U), plantarse (X), pantalla final.
+- **Test / Sí o no / ¿Quién lo dijo?**: por turno, "todos responden" o rebote al siguiente si falla. Flujo: Mostrar opciones, **Marcar** (A-D o clic en la opción: queda en naranja en el plató como respuesta definitiva, se puede cambiar o desmarcar con Retroceso), Revelar y Siguiente. En "todos responden" cada marca se asigna al concursante seleccionado y salta al siguiente.
+- **Escalera**: el banco es una lista ordenada de 15 preguntas (de fácil a difícil) que se juegan en ese orden; 15 escalones (seguros en 5, 10 y 15; se cambian en Ajustes), comodines 50:50 (F), llamada (L) y público (U), plantarse (X), pantalla final.
 - **Estimación**: escribes la cifra de cada uno, revelado con recta animada, precio justo opcional y puntos al más cercano o escalonados.
 - **Rosco**: 1 o 2 concursantes, cada uno con su rosco y su reloj. A acierto, F fallo, Espacio pasapalabra, P pausa el reloj, Tab cambia el turno.
 
 ### Biblioteca
 
-Cada tipo de juego tiene sus bancos en su carpeta: `Documentos\KONKURSOX\preguntas\<tipo>\` (`test`, `sino`, `escalera`, `estimacion`, `quien`, `rosco`). El editor del panel permite crear, editar, duplicar, eliminar, marcar sin usar y poner imagen; el del rosco es una cuadrícula de 27 letras con **Importar desde texto** (`A: definición = RESPUESTA`, `Ñ (contiene): ... = ...`). Todo se guarda solo. Un banco eliminado va a `preguntas\_papelera\`.
+Cada tipo de juego tiene sus bancos en su carpeta: `Documentos\KONKURSOX\preguntas\<tipo>\` (`test`, `sino`, `escalera`, `estimacion`, `quien`, `rosco`). El editor del panel permite crear, editar, duplicar, eliminar, marcar sin usar y poner imagen; el del rosco es una cuadrícula de 27 letras con **Importar desde texto** (`A: definición = RESPUESTA`, `Ñ (contiene): ... = ...`). Todo se guarda solo. En la escalera el editor enseña el escalón de cada pregunta, se reordena arrastrando y **Traer de Tipo test** copia preguntas de tus bancos de test; la primera vez se crea una "Escalera de ejemplo" con tus preguntas de test. Un banco eliminado va a `preguntas\_papelera\`.
 
 Los bancos de versiones anteriores (mezclados en `preguntas\`) se reparten por tipo al arrancar y los originales se guardan en `preguntas\_antiguos\`. Un rosco con varias definiciones por letra se parte en varios roscos.
 
@@ -40,17 +42,18 @@ Reproductor de la carpeta `Documentos\KONKURSOX\audio\musica\` (play/pausa, ante
 
 | Dónde | Tecla | Qué hace |
 | --- | --- | --- |
-| Siempre | F1-F5 | Escenas |
-| Siempre | F6 / F7 / F8 | Cámaras: solo yo / solo el del turno / todos (y pone la escena Cámaras) |
+| Siempre | F1-F5, F9 | Escenas (F9 muestra/oculta Multimedia) |
+| Siempre | F6 / F7 / F8 | Cámaras: solo yo / solo el del turno / todos (si no estás en Juego, pone la escena Cámaras) |
 | Siempre | Ctrl+1..9 | Efectos |
 | Siempre | Ctrl+Espacio / Ctrl+F | Música: play-pausa / fundido |
 | Siempre | Ctrl+Z | Deshacer el último paso del juego |
 | Pantalla de juego | Espacio | Siguiente paso |
 | Test, Sí o no, Escalera, ¿Quién lo dijo? | A-D, O, T, R, I | Marcar, ocultar/mostrar opciones, temporizador, rebote, imagen |
 | Estimación | C, T | Mostrar cifras en el plató, temporizador |
+| Multimedia | Espacio | Play / pausa del vídeo |
 | Rosco | A, F, Espacio, P, Tab | Acierto, fallo, pasapalabra, reloj, cambiar turno |
 
-Ningún atajo se dispara mientras escribes en un campo de texto.
+Ningún atajo se dispara mientras escribes en un campo de texto, salvo las teclas F (escenas y cámaras), que funcionan siempre.
 
 ### Cámaras desde Discord
 

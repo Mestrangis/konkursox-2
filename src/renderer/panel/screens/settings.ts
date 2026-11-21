@@ -2,7 +2,7 @@
 import { CUES, defaultLevels } from '../../../shared/quiz'
 import { newId, playedCount, type Person } from '../../../shared/scene'
 import type { DisplayInfo, GameState } from '../../../shared/types'
-import { btn, editableArea, h, seg, sw, type Ctx, type Screen } from '../ui'
+import { askConfirm, btn, editableArea, h, seg, sw, type Ctx, type Screen } from '../ui'
 
 export function createSettingsScreen(ctx: Ctx): Screen {
   const el = h('div', 'screen')
@@ -149,7 +149,7 @@ export function createSettingsScreen(ctx: Ctx): Screen {
             btn('−', () => send({ type: 'playedAdjust', delta: -1 }), 'pm'),
             btn('+', () => send({ type: 'playedAdjust', delta: 1 }), 'pm')
           ),
-          row(btn('Empezar programa nuevo (poner a 0)', () => confirm('¿Poner a cero las pruebas jugadas?') && send({ type: 'playedReset' }), 'b ghost'))
+          row(btn('Empezar programa nuevo (poner a 0)', async () => (await askConfirm('¿Poner a cero las pruebas jugadas?', '', 'Poner a 0', true)) && send({ type: 'playedReset' }), 'b ghost'))
         ),
         card(
           'Audio',

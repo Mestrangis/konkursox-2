@@ -2,17 +2,50 @@
 import { formatPoints } from '../../shared/quiz'
 import { activeContestants, currentTurn, gameLabel, GAMES, playedCount, SCENES } from '../../shared/scene'
 import { targetMembers } from '../../shared/order'
-import type { GameState } from '../../shared/types'
+import type { GameState, SlotId } from '../../shared/types'
 import { buildScene, drawFrames, sceneKey, type Scene } from '../plato/scenes'
-import { btn, contextMenu, h, icon, ICONS, kbd, mmss, sw, type Ctx, type ScreenId } from './ui'
+import { askConfirm, askText, btn, contextMenu, h, icon, ICONS, kbd, mmss, sw, type Ctx, type ScreenId } from './ui'
 
 // ---------------------------------------------------------------- barra En el aire
 
+/** Pone una escena en el aire. Multimedia (F9) alterna: muestra lo último o vuelve a la escena anterior. */
+export function goScene(ctx: Ctx, id: (typeof SCENES)[number]['id']): void {
+  const s = ctx.state
+  if (id !== 'multimedia') return ctx.send({ type: 'setScene', scene: id })
+  if (s.scene === 'multimedia') return ctx.send({ type: 'mediaHide' })
+  if (s.media.item) return ctx.send({ type: 'mediaShow', item: s.media.item, now: Date.now() })
+  ctx.toast('Elige primero qué mostrar en Multimedia')
+  ctx.go('multimedia')
+}
+
 export function createAirBar(ctx: Ctx) {
+  const gameName = h('span', '', { fontSize: 10, fontWeight: 600, opacity: 0.85, maxWidth: 104, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' })
   const scenes = SCENES.map((sc) => {
-    const b = h('button', 'sc', {}, [kbd(sc.key), icon(ICONS[sc.id as keyof typeof ICONS], 22, '#9a9aa3'), h('span', '', {}, [sc.label])])
-    b.onclick = () => ctx.send({ type: 'setScene', scene: sc.id })
-    b.title = `Poner "${sc.label}" en el aire (${sc.key})`
+    const label = h('span', '', {}, [sc.label])
+    const b = h('button', 'sc', {}, [kbd(sc.key), icon(ICONS[sc.id as keyof typeof ICONS], 22, '#9a9aa3'), label])
+    b.onclick = () => goScene(ctx, sc.id)
+    b.title = sc.id === 'multimedia' ? 'Mostrar / ocultar lo elegido en Multimedia (F9)' : `Poner "${sc.label}" en el aire (${sc.key})`
+    if (sc.id === 'juego') {
+      // desplegable: elegir qué juego sale en la escena Juego
+      label.style.display = 'flex'
+      label.style.flexDirection = 'column'
+      label.style.alignItems = 'center'
+      label.append(gameName)
+      const caret = h('span', 'sc-caret', {}, [icon(ICONS.caret, 16, '#ececef')])
+      caret.title = 'Elegir qué juego sale en el aire'
+      caret.onclick = (e) => {
+        e.stopPropagation()
+        const r = b.getBoundingClientRect()
+        contextMenu(r.left, r.bottom + 4, [
+          h('span', 'lbl', {}, ['Juego en el aire']),
+          ...GAMES.map((g) => ({
+            label: (ctx.state.liveGame === g.id ? '● ' : '') + g.label,
+            run: () => ctx.send({ type: 'setLiveGame', game: g.id, scene: true })
+          }))
+        ])
+      }
+      b.append(caret)
+    }
     return { id: sc.id, b }
   })
   // miniatura en vivo del plató
@@ -35,8 +68,8 @@ export function createAirBar(ctx: Ctx) {
   } catch {
     /* sin almacenamiento */
   }
-  clock.onclick = () => {
-    if (!confirm('¿Poner el reloj del programa a cero?')) return
+  clock.onclick = async () => {
+    if (!(await askConfirm('¿Poner el reloj del programa a cero?'))) return
     start = Date.now()
     try {
       localStorage.setItem('konk.clock', JSON.stringify({ day: today, start }))
@@ -73,6 +106,7 @@ export function createAirBar(ctx: Ctx) {
         x.b.classList.toggle('live', s.scene === x.id)
         x.b.setAttribute('aria-pressed', String(s.scene === x.id))
       }
+      gameName.textContent = gameLabel(s.liveGame)
       const n = playedCount(s)
       played.textContent = `${n} ${n === 1 ? 'prueba jugada' : 'pruebas jugadas'} · ${gameLabel(s.liveGame)}`
       const key = sceneKey(s)
@@ -99,7 +133,7 @@ export function createNav(ctx: Ctx, onGo: (id: ScreenId) => void) {
     return { id, a }
   }
   const games = GAMES.map((g) => item(g.id, g.label))
-  const tools = [item('biblioteca', 'Biblioteca'), item('concursantes', 'Concursantes'), item('camaras', 'Cámaras')]
+  const tools = [item('biblioteca', 'Biblioteca'), item('multimedia', 'Multimedia'), item('concursantes', 'Concursantes'), item('camaras', 'Cámaras')]
   const settings = item('ajustes', 'Ajustes')
   const el = h('nav', 'nav ui', {}, [
     h('span', 'lbl', { padding: '4px 10px 8px' }, ['Juegos']),
@@ -254,9 +288,9 @@ export function createDock(ctx: Ctx) {
             null,
             {
               label: 'Cambiar el nombre…',
-              run: () => {
-                const label = prompt('Nombre del botón', f.label)
-                if (label?.trim()) ctx.send({ type: 'setFx', index: i, patch: { label: label.trim() } })
+              run: async () => {
+                const label = await askText('Nombre del botón', f.label)
+                if (label) ctx.send({ type: 'setFx', index: i, patch: { label } })
               }
             },
             { label: 'Quitar el sonido', run: () => ctx.send({ type: 'setFx', index: i, patch: { file: null } }) },
@@ -381,6 +415,42 @@ export function createDock(ctx: Ctx) {
       fadeBtn.title = 'Fundido de la música (Ctrl+F)'
       autoBox.replaceChildren(sw(s.audio.autoSounds, () => ctx.send({ type: 'setAudio', patch: { autoSounds: !ctx.state.audio.autoSounds } }), 'Sonidos automáticos'))
       renderFx()
+    }
+  }
+}
+
+// ---------------------------------------------------------------- fila "Quién sale" (siempre visible)
+
+export function createPeopleRow(ctx: Ctx) {
+  const el = h('div', 'peoplerow ui')
+  let key = ''
+  return {
+    el,
+    update(s: GameState): void {
+      const people: SlotId[] = ['host', ...activeContestants(s)]
+      const k = JSON.stringify([s.camsScene.on, s.camsScene.preset, s.scene, people, s.host.name, s.contestants.map((c) => c.name)])
+      if (k === key) return
+      key = k
+      const applies = s.scene === 'camaras' || s.scene === 'juego'
+      el.replaceChildren(
+        h('span', 'lbl', { flex: 'none' }, ['Quién sale']),
+        ...people.map((slot) => {
+          const on = !!s.camsScene.on[slot]
+          const name = slot === 'host' ? `${s.host.name} (yo)` : s.contestants.find((c) => c.id === slot)?.name ?? slot
+          const chip = h('button', `pchip${on ? ' on' : ''}`, {}, [h('span', `sw${on ? ' on' : ''}`, { pointerEvents: 'none' }), name])
+          chip.setAttribute('aria-pressed', String(on))
+          chip.title = on ? `Quitar a ${name} del plató` : `Sacar a ${name} en el plató`
+          chip.onclick = () => ctx.send({ type: 'camsToggle', slot })
+          return chip
+        }),
+        h('span', 'spacer'),
+        ...([
+          ['yo', 'Solo yo', 'F6'],
+          ['turno', 'Solo el del turno', 'F7'],
+          ['todos', 'Todos', 'F8']
+        ] as const).map(([v, t, key2]) => btn(t, () => ctx.send({ type: 'camsPreset', preset: v }), `b sm ghost${s.camsScene.preset === v ? ' on' : ''}`, key2)),
+        h('span', 'mut', { fontSize: 11, flex: 'none', maxWidth: 170, lineHeight: '1.3' }, [applies ? 'Se aplica ahora en el plató (Cámaras y Juego)' : 'Se aplica en las escenas Cámaras y Juego'])
+      )
     }
   }
 }

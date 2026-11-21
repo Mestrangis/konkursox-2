@@ -6,6 +6,7 @@ import { camOf } from '../../shared/scene'
 import type { GameState, SlotId } from '../../shared/types'
 import type { CaptureFeed } from '../common/feed'
 import { buildCamsScene, camsKey } from './camsScene'
+import { buildMediaScene, mediaKey } from './mediaScene'
 import { buildFinalScene, finalKey } from './showScenes'
 import { buildQuizScene, quizSceneKey, turnSlots } from './quizScenes'
 import { buildRoscoScene, roscoKey } from './roscoScene'
@@ -30,6 +31,8 @@ export interface Scene {
   update(s: GameState): void
   /** animaciones por fotograma (temporizador) */
   tick?(s: GameState): void
+  /** al retirar la escena (parar vídeos) */
+  dispose?(): void
   /** marcos adicionales del mismo concursante (p. ej. marcador final) */
   extraFrames?: { slot: SlotId; frame: CamFrameEl }[]
 }
@@ -43,7 +46,7 @@ export function viewState(s: GameState): GameState {
   return { ...s, quiz: { ...s.quiz, current: s.quiz.slots[s.liveGame] ?? null } }
 }
 
-type Kind = 'cover' | 'cams' | 'marcador' | 'final' | 'rosco' | 'quiz'
+type Kind = 'cover' | 'cams' | 'marcador' | 'final' | 'rosco' | 'quiz' | 'media'
 
 /** Qué pinta el plató según la escena en el aire. */
 function kindOf(s: GameState): Kind {
@@ -56,6 +59,8 @@ function kindOf(s: GameState): Kind {
       return 'marcador'
     case 'final':
       return 'final'
+    case 'multimedia':
+      return 'media'
     default: {
       if (s.liveGame === 'rosco') return s.rosco.players.length ? 'rosco' : 'cover'
       if (s.liveGame === 'escalera' && s.quiz.ladder.showResult && s.quiz.ladder.outcome) return 'quiz'
@@ -75,6 +80,8 @@ export function sceneKey(s0: GameState): string {
       return finalKey(s)
     case 'rosco':
       return roscoKey(s)
+    case 'media':
+      return mediaKey(s)
     case 'quiz':
       return quizSceneKey(s)
     default:
@@ -147,6 +154,8 @@ export function buildScene(s0: GameState): Scene {
       return wrap(buildRoscoScene(s))
     case 'quiz':
       return wrap(buildQuizScene(s))
+    case 'media':
+      return buildMediaScene(s)
     default:
       return wrap(buildMarcador(s))
   }

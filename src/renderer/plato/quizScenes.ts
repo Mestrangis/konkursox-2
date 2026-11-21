@@ -1,5 +1,6 @@
 // Escenas de preguntas: test, Sí/No, escalera de premios y pantalla final de la escalera.
-import { contestantOrder, playerCount } from '../../shared/order'
+import { contestantOrder } from '../../shared/order'
+import { camsLineup } from '../../shared/scene'
 import { formatPoints, ladderBank, LIFELINES, targetKey, type LifelineId, type Target } from '../../shared/quiz'
 import type { Box } from '../../shared/layouts'
 import type { ContestantId, GameState, SlotId } from '../../shared/types'
@@ -59,7 +60,7 @@ export function quizSceneKey(s: GameState): string {
     const t = s.quiz.ladder.target
     return `ladder:${n}:${t?.kind === 'team' ? membersOf(s, t).join(',') : t?.kind === 'contestant' ? t.id : ''}:${s.quiz.ladder.levels.length}`
   }
-  return `${kind}:${n}:${s.layout}:${contestantOrder(s).join(',')}`
+  return `${kind}:${n}:${s.layout}:${contestantOrder(s).join(',')}:${camsLineup(s).join(',')}`
 }
 
 // ---------------------------------------------------------------- piezas
@@ -191,34 +192,47 @@ export function imageBox(box: Box) {
 // ---------------------------------------------------------------- escena de pregunta
 
 export interface CamGeo {
-  slot: ContestantId
+  slot: SlotId
   cam: Box
   plate: Box
   c: number
   nameSize?: number
 }
 
+/**
+ * Recuadros de la escena Juego: salen las personas activas en la fila "quién sale"
+ * (concursantes y, si se activa, el presentador en medio). Medidas del diseño para 1-4 y 5 a juego.
+ */
 export function camGeometry(s: GameState, kind: Kind, camH0?: number, plateY0?: number): CamGeo[] {
-  const order = contestantOrder(s)
-  const n = playerCount(s.layout)
+  const ids = camsLineup(s)
+  const n = ids.length
   const sino = kind === 'sino'
   const camH = camH0 ?? (sino ? 560 : 600)
   const plateY = plateY0 ?? (sino ? 572 : 612)
-  const ids = order.slice(0, n)
-  const xs: Record<number, number[]> = { 1: [370], 2: [100, 980], 3: [100, 687, 1274], 4: [100, 539, 978, 1417] }
-  const ws: Record<number, number> = { 1: 1180, 2: 840, 3: 546, 4: 403 }
-  const pw: Record<number, number> = { 1: 600, 2: 560, 3: 480, 4: 351 }
+  const ws: Record<number, number> = { 1: 1180, 2: 840, 3: 546, 4: 403, 5: 312 }
+  const pw: Record<number, number> = { 1: 600, 2: 560, 3: 480, 4: 351, 5: 284 }
+  const w = ws[n] ?? 312
+  const gap = n > 1 ? (1720 - n * w) / (n - 1) : 0
   return ids.map((slot, i) => {
-    const x = xs[n][i]
-    const w = ws[n]
+    const x = n === 1 ? 370 : Math.round(100 + i * (w + gap))
+    const p = pw[n] ?? 284
     return {
       slot,
       cam: { x, y: 40, w, h: camH },
-      plate: { x: x + (w - pw[n]) / 2, y: plateY, w: pw[n], h: 56 },
-      c: n === 4 ? 22 : 24,
-      nameSize: n >= 4 ? 26 : n === 3 ? 28 : undefined
+      plate: { x: x + (w - p) / 2, y: plateY, w: p, h: 56 },
+      c: n >= 4 ? 22 : 24,
+      nameSize: n >= 5 ? 23 : n === 4 ? 26 : n === 3 ? 28 : undefined
     }
   })
+}
+
+/** Placa de alguien en la escena Juego (el presentador lleva su nombre, sin puntos). */
+export function setLineupPlate(st: GameState, slot: SlotId, plate: PlateEl): void {
+  if (slot === 'host') return plate.set(st.host.name, null, '', '')
+  const c = st.contestants.find((x) => x.id === slot)
+  const chip = chipFor(st, slot)
+  const score = st.layout === 'teams' && c ? st.teams[c.team].score : c?.score ?? 0
+  plate.set(c?.name ?? '', formatPoints(score), chip.text, chip.cls)
 }
 
 export function optionStates(s: GameState): { text: string; state: '' | 'ok' | 'ko' | 'locked'; visible: boolean }[] {
@@ -292,7 +306,7 @@ export function buildQuizScene(s: GameState): Scene {
   const sino = kind === 'sino'
 
   // cámaras + placas
-  const plates: { slots: ContestantId[]; plate: PlateEl }[] = []
+  const plates: { slots: SlotId[]; plate: PlateEl }[] = []
   let imgBox: Box
   let ladderEls: { rungs: HTMLDivElement[]; lifes: HTMLDivElement[] } | null = null
   if (kind === 'ladder') {
@@ -358,7 +372,7 @@ export function buildQuizScene(s: GameState): Scene {
   const image = imageBox(imgBox)
   root.append(image.root)
 
-  const n = playerCount(s.layout)
+  const n = camsLineup(s).length
   const timer =
     kind === 'ladder' ? liveTimer(1160, 520) : n === 2 ? liveTimer(900, 560) : liveTimer(1702, sino ? 680 : 710, 0.8)
   root.append(timer.root)
@@ -391,13 +405,7 @@ export function buildQuizScene(s: GameState): Scene {
       })
       ladderEls!.lifes.forEach((el) => el.classList.toggle('is-used', !!l.used[el.dataset.life as LifelineId]))
     } else {
-      for (const { slots, plate } of plates) {
-        const slot = slots[0]
-        const c = st.contestants.find((x) => x.id === slot)
-        const chip = chipFor(st, slot)
-        const score = st.layout === 'teams' && c ? st.teams[c.team].score : c?.score ?? 0
-        plate.set(c?.name ?? '', formatPoints(score), chip.text, chip.cls)
-      }
+      for (const { slots, plate } of plates) setLineupPlate(st, slots[0], plate)
     }
   }
   update(s)

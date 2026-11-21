@@ -1,6 +1,6 @@
 // Pantallas de pregunta: Tipo test, Sí o no, Escalera y ¿Quién lo dijo? (design/panel.html: Test turno / todos).
 import { quienOptions } from '../../../shared/games'
-import { questionKey, type Question } from '../../../shared/questions'
+import { isPlayable, questionKey, type Question } from '../../../shared/questions'
 import {
   fiftyFifty,
   formatPoints,
@@ -17,7 +17,7 @@ import {
 } from '../../../shared/quiz'
 import { gameLabel, type QuizGameId } from '../../../shared/scene'
 import type { GameState } from '../../../shared/types'
-import { btn, h, icon, ICONS, nameOf, seg, type Ctx, type Screen } from '../ui'
+import { askConfirm, btn, h, icon, ICONS, nameOf, seg, type Ctx, type Screen } from '../ui'
 import { bankFor, flowSteps, goButton, nextUnused, onAirLabel, questionList, toGame } from './common'
 
 const LETTERS = 'ABCD'
@@ -67,6 +67,13 @@ export function createQuizScreen(ctx: Ctx, game: Exclude<QuizGameId, 'estimacion
 
   function loadNext(): void {
     const ref = bankFor(ctx, tipo)
+    if (game === 'escalera') {
+      const l = S().quiz.ladder
+      const list = (ctx.lib.peek(ref)?.preguntas ?? []).filter(isPlayable)
+      const q = list[l.level]
+      if (!q || !ref) return ctx.toast(`La escalera no tiene pregunta para el escalón ${l.level + 1}: añádela en Biblioteca`)
+      return load(q, ref)
+    }
     const q = nextUnused(ctx, ref, slot()?.key)
     if (!q || !ref) return ctx.toast('No quedan preguntas sin usar en este banco')
     load(q, ref)
@@ -124,10 +131,10 @@ export function createQuizScreen(ctx: Ctx, game: Exclude<QuizGameId, 'estimacion
     else send({ type: 'ladderSetLifeline', id, used: !l.used[id], hide: [] })
   }
 
-  function walkAway(): void {
+  async function walkAway(): Promise<void> {
     const l = S().quiz.ladder
     if (!l.active || l.outcome) return
-    if (!confirm(`¿Se planta con ${formatPoints(ladderBank(l.levels, l.level))} puntos?`)) return
+    if (!(await askConfirm(`¿Se planta con ${formatPoints(ladderBank(l.levels, l.level))} puntos?`, '', 'Se planta'))) return
     ctx.audio.stopSfx()
     send({ type: 'ladderWalk' })
     ctx.send({ type: 'setLiveGame', game: 'escalera', scene: true })
@@ -188,10 +195,10 @@ export function createQuizScreen(ctx: Ctx, game: Exclude<QuizGameId, 'estimacion
             ctx.cue(l.outcome!.kind === 'won' ? 'victoria' : l.outcome!.kind === 'walked' ? 'plantarse' : 'caida')
           },
           warm: true,
-          step: 3,
+          step: 4,
           air: 'respuesta revelada'
         }
-      return { label: 'Terminar la escalera', after: 'Después: empezar otra', run: () => send({ type: 'ladderStop' }), step: 3, air: 'pantalla final de la escalera' }
+      return { label: 'Terminar la escalera', after: 'Después: empezar otra', run: () => send({ type: 'ladderStop' }), step: 4, air: 'pantalla final de la escalera' }
     }
     if (!cur)
       return { label: 'Cargar pregunta', after: 'Después: mostrar pregunta', run: ref ? loadNext : null, step: 0, air: 'nada de esta pregunta' }
@@ -199,21 +206,31 @@ export function createQuizScreen(ctx: Ctx, game: Exclude<QuizGameId, 'estimacion
       case 'ready':
         return { label: 'Mostrar pregunta', after: 'Después: mostrar opciones', run: showQuestion, step: 0, air: 'nada de esta pregunta' }
       case 'question':
-        return { label: 'Mostrar opciones', after: 'Después: revelar respuesta', run: () => send({ type: 'quizShowAll', now: Date.now() }), step: 1, air: 'solo la pregunta' }
-      case 'options':
-      case 'locked': {
-        const ready = cur.mode === 'all' ? Object.keys(cur.answers).length > 0 : cur.phase === 'locked'
-        const who = cur.mode === 'all' ? 'cada uno' : nameOf(s, cur.target) || 'el concursante'
-        return {
-          label: ready ? 'Revelar respuesta' : `Esperando respuesta de ${who}`,
-          after: ready ? 'Después: siguiente pregunta' : 'Marca la respuesta con A-D',
-          run: ready ? reveal : null,
-          step: 2,
-          air: cur.shown ? (cur.phase === 'locked' ? 'respuesta marcada' : 'pregunta y opciones') : 'solo la pregunta (opciones ocultas)'
+        return { label: 'Mostrar opciones', after: 'Después: marcar la respuesta', run: () => send({ type: 'quizShowAll', now: Date.now() }), step: 1, air: 'solo la pregunta' }
+      case 'options': {
+        if (cur.mode === 'all') {
+          const n = Object.keys(cur.answers).length
+          return {
+            label: n ? 'Revelar respuesta' : 'Marca lo que dice cada uno',
+            after: n ? `Han respondido ${n} de ${turnTargets(s).length} · después: siguiente` : 'A-D marca al seleccionado y salta al siguiente',
+            run: n ? reveal : null,
+            step: n ? 3 : 2,
+            air: n ? 'opciones; cada placa dice que ya ha respondido' : 'pregunta y opciones'
+          }
         }
+        const who = nameOf(s, cur.target) || 'el concursante'
+        return { label: `Marca la respuesta de ${who}`, after: 'A-D o clic en la opción: queda en naranja hasta revelar', run: null, step: 2, air: cur.shown ? 'pregunta y opciones' : 'solo la pregunta (opciones ocultas)' }
       }
+      case 'locked':
+        return {
+          label: 'Revelar respuesta',
+          after: `Marcada la ${cur.question.tipo === 'sino' ? cur.question.opciones[cur.picked ?? 0] : LETTERS[cur.picked ?? 0]} · puedes cambiarla antes de revelar`,
+          run: reveal,
+          step: 3,
+          air: 'respuesta marcada en naranja'
+        }
       default:
-        return { label: 'Siguiente pregunta', after: 'Después: mostrar pregunta', run: ref ? loadNext : null, step: 3, air: 'respuesta revelada' }
+        return { label: 'Siguiente pregunta', after: 'Después: mostrar pregunta', run: ref ? loadNext : null, step: 4, air: 'respuesta revelada' }
     }
   }
 
@@ -243,9 +260,15 @@ export function createQuizScreen(ctx: Ctx, game: Exclude<QuizGameId, 'estimacion
           (v) => setMode(v)
         )
       )
+    const onAir = s.scene === 'juego' && s.liveGame === game
     header.replaceChildren(
       h('div', 'title', {}, [
-        h('b', '', {}, [gameLabel(game)]),
+        h('b', '', { display: 'flex', alignItems: 'center', gap: 10 }, [
+          gameLabel(game),
+          onAir
+            ? h('span', 'air', { fontSize: 11, fontWeight: 700, letterSpacing: '0.06em', display: 'inline-flex', alignItems: 'center', gap: 5 }, [h('span', 'dotlive'), 'EN EL AIRE'])
+            : btn('Poner en el aire', () => ctx.send({ type: 'setLiveGame', game, scene: true }), 'b sm acc')
+        ]),
         h('span', 'mut', { fontSize: 13 }, [`Banco «${info?.nombre ?? '-'}»${idx >= 0 ? ` · pregunta ${idx + 1} de ${qs.length}` : ''}${all && game !== 'escalera' ? ' · todos responden' : ''}`])
       ]),
       h('span', 'spacer'),
@@ -253,7 +276,7 @@ export function createQuizScreen(ctx: Ctx, game: Exclude<QuizGameId, 'estimacion
     )
 
     const st = nextStep(s)
-    flow.replaceChildren(...flowSteps(['Pregunta', 'Opciones', 'Revelar', 'Siguiente'], st.step), h('span', 'spacer'), onAirLabel(s, game, st.air))
+    flow.replaceChildren(...flowSteps(['Pregunta', 'Opciones', 'Marcar', 'Revelar', 'Siguiente'], st.step), h('span', 'spacer'), onAirLabel(s, game, st.air))
     go.set(st.label, st.after, st.run, st.warm)
 
     // turno (en modo turno)
@@ -292,12 +315,19 @@ export function createQuizScreen(ctx: Ctx, game: Exclude<QuizGameId, 'estimacion
         if (cur.phase === 'locked' && cur.picked === i && cur.mode !== 'all') cls.push('picked')
         if (cur.hidden.includes(i)) cls.push('gone')
         if (i >= cur.shown && !revealed) cls.push('hidden')
-        return h('div', cls.join(' '), {}, [
+        const card = h('div', cls.join(' '), { cursor: cur.phase === 'options' || cur.phase === 'locked' ? 'pointer' : 'default' }, [
           h('span', 'L', {}, [q.tipo === 'sino' ? (i === 0 ? 'S' : 'N') : LETTERS[i]]),
           h('span', 't', {}, [o]),
           ...who,
+          ...(cur.phase === 'locked' && cur.picked === i && cur.mode !== 'all' ? [h('span', 'tag', { color: '#f4b552' }, ['Marcada'])] : []),
           ...(i === q.correcta ? [h('span', 'tag ok', {}, [icon(ICONS.check, 16, '#3ecf8e'), 'Correcta · solo tú'])] : [])
         ])
+        card.title = cur.phase === 'options' || cur.phase === 'locked' ? 'Clic para marcar esta respuesta' : ''
+        card.onclick = () => {
+          if (cur.phase === 'locked' && cur.picked === i && cur.mode !== 'all') send({ type: 'quizUnpick' })
+          else pick(i)
+        }
+        return card
       })
       qpanel.append(h('div', '', { display: 'grid', gridTemplateColumns: `repeat(${q.opciones.length === 2 ? 2 : 2}, minmax(0, 1fr))`, gap: 8 }, opts))
       if (q.nota_presentador) qpanel.append(h('div', 'note', {}, [icon(ICONS.note, 16, '#9a9aa3'), h('span', '', {}, [q.nota_presentador])]))
@@ -370,7 +400,7 @@ export function createQuizScreen(ctx: Ctx, game: Exclude<QuizGameId, 'estimacion
       btn(cur && cur.shown > 0 ? 'Ocultar opciones' : 'Mostrar opciones', toggleOptions, 'b ghost', 'O'),
       (timerBtn = btn(timerLabel, toggleTimer, `b ghost${t.endsAt !== null ? ' on' : ''}`, 'T')),
       ...(game !== 'escalera' ? [btn('Rebote al siguiente', () => ctx.send({ type: 'quizSetOptions', patch: { rebound: !S().quiz.rebound } }), `b ghost${s.quiz.rebound ? ' on' : ''}`, 'R')] : []),
-      ...(cur?.question.imagen ? [btn(cur.showImage ? 'Ocultar imagen' : 'Mostrar imagen', () => send({ type: 'quizToggleImage' }), 'b ghost', 'I')] : []),
+      ...(cur?.question.imagen ? [btn(cur.showImage ? 'Ocultar imagen' : 'Mostrar imagen', () => send({ type: 'quizToggleImage' }), 'b ghost', 'I'), btn('Imagen a Multimedia', () => ctx.send({ type: 'mediaShow', item: { kind: 'image', src: `konk-media://imagenes/${encodeURIComponent(cur.question.imagen!)}`, title: cur.question.enunciado }, now: Date.now() }), 'b ghost')] : []),
       ...(cur && !s.quiz.scoring.autoAward && cur.attempts.some((a) => !a.awarded && a.delta) ? [btn('Sumar puntos', () => send({ type: 'quizAward' }), 'b acc', 'P')] : []),
       h('span', 'spacer'),
       btn('Deshacer', () => ctx.send({ type: 'undo', game }), 'b ghost', 'Ctrl Z')
@@ -409,7 +439,7 @@ export function createQuizScreen(ctx: Ctx, game: Exclude<QuizGameId, 'estimacion
         return b
       }),
       (() => {
-        const b = btn('Plantarse', walkAway, 'b sm', 'X')
+        const b = btn('Plantarse', () => void walkAway(), 'b sm', 'X')
         b.disabled = !!l.outcome
         return b
       })(),
@@ -430,7 +460,8 @@ export function createQuizScreen(ctx: Ctx, game: Exclude<QuizGameId, 'estimacion
       pick('abcd'.indexOf(k))
     } else if (sino && (k === 's' || k === 'n')) {
       pick(k === 's' ? 0 : 1)
-    } else if (k === 'o') toggleOptions()
+    } else if (k === 'Backspace' && cur?.phase === 'locked') send({ type: 'quizUnpick' })
+    else if (k === 'o') toggleOptions()
     else if (k === 't') toggleTimer()
     else if (k === 'r' && game !== 'escalera') ctx.send({ type: 'quizSetOptions', patch: { rebound: !s.quiz.rebound } })
     else if (k === 'i') send({ type: 'quizToggleImage' })
@@ -442,7 +473,7 @@ export function createQuizScreen(ctx: Ctx, game: Exclude<QuizGameId, 'estimacion
     } else if (game === 'escalera' && k === 'f') useLifeline('5050')
     else if (game === 'escalera' && k === 'l') useLifeline('llamada')
     else if (game === 'escalera' && k === 'u') useLifeline('publico')
-    else if (game === 'escalera' && k === 'x') walkAway()
+    else if (game === 'escalera' && k === 'x') void walkAway()
     else return false
     return true
   }

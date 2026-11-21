@@ -15,6 +15,7 @@ export function defaultState(): GameState {
     scene: 'cabecera',
     liveGame: 'test',
     camsScene: defaultCams(),
+    media: { item: null, prevScene: 'cabecera', playing: false, at: 0, since: 0, volume: 1 },
     layout: 'quad',
     contestants: CONTESTANT_IDS.map((id, i) => ({
       id,
@@ -43,7 +44,8 @@ export function defaultState(): GameState {
       update: { state: 'disabled' },
       appVersion: '0.0.0',
       captureEpoch: 0,
-      undo: {}
+      undo: {},
+      media: { duration: 0, error: null }
     }
   }
 }
@@ -157,9 +159,11 @@ export function hydrate(saved: unknown): GameState {
       ...(s.audio ?? {}),
       fx: d.audio.fx.map((f, i) => ({ ...f, ...(Array.isArray(s.audio?.fx) ? s.audio!.fx[i] : {}) }))
     },
-    scene: s.scene && ['cabecera', 'camaras', 'juego', 'marcador', 'final'].includes(s.scene) ? s.scene : 'cabecera',
+    scene: s.scene && ['cabecera', 'camaras', 'juego', 'marcador', 'final', 'multimedia'].includes(s.scene) ? s.scene : 'cabecera',
     liveGame: s.liveGame && ['test', 'sino', 'escalera', 'estimacion', 'quien', 'rosco'].includes(s.liveGame) ? s.liveGame : 'test',
-    camsScene: { ...d.camsScene, ...(s.camsScene ?? {}), on: { ...d.camsScene.on, ...(s.camsScene?.on ?? {}) } },
+    // la fila "quién sale" cambió en la 0.4.1: los estados anteriores empiezan con todos los concursantes
+    camsScene: s.camsScene?.rev === 2 ? { ...d.camsScene, ...s.camsScene, on: { ...d.camsScene.on, ...s.camsScene.on } } : { ...d.camsScene, transition: s.camsScene?.transition ?? d.camsScene.transition },
+    media: { ...d.media, ...(s.media ?? {}), playing: false },
     quiz: hydrateQuiz(s.quiz),
     rosco: hydrateRosco(s.rosco),
     show: hydrateShow(s.show),
