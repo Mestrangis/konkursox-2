@@ -1,8 +1,8 @@
 // Tipos compartidos entre main, preload y renderers.
 import type { Gender } from './games'
-import type { QuizAction, QuizState, QuizView } from './quiz'
+import type { QuizAction, QuizState } from './quiz'
 import type { RoscoAction, RoscoState } from './rosco'
-import type { Person, ShowAction, ShowState } from './show'
+import type { CamsScene, FxSlot, GameId, Person, SceneAction, SceneId, ShowState } from './scene'
 
 export type ContestantId = 'c1' | 'c2' | 'c3' | 'c4'
 export type SlotId = ContestantId | 'host'
@@ -28,6 +28,8 @@ export interface Contestant {
   team: 0 | 1
   /** para decir "ganador" o "ganadora" */
   gender: Gender
+  /** recuadro de cámara que le corresponde (por defecto, el suyo) */
+  cam: SlotId
 }
 
 export interface Team {
@@ -66,6 +68,12 @@ export interface AudioConfig {
   musicVolume: number
   sfxVolume: number
   fadeSeconds: number
+  /** la música vuelve a empezar al acabar */
+  loop: boolean
+  /** sonidos automáticos del juego (acierto, fallo...) */
+  autoSounds: boolean
+  /** botonera de 9 efectos */
+  fx: FxSlot[]
 }
 
 export type CaptureHealth = 'idle' | 'starting' | 'ok' | 'lost'
@@ -84,15 +92,21 @@ export interface RuntimeState {
   appVersion: string
   /** Se incrementa para forzar que plató y panel reinicien la captura */
   captureEpoch: number
+  /** pasos que se pueden deshacer en cada juego */
+  undo: Partial<Record<GameId, number>>
 }
 
 export interface GameState {
-  /** qué muestra el plató: plantilla de cámaras, pregunta en curso o pantalla final de la escalera */
-  view: QuizView
+  /** escena en el aire: el plató pinta solo esto */
+  scene: SceneId
+  /** juego que sale en la escena Juego (indicador AIRE) */
+  liveGame: GameId
+  /** quién sale y cómo en la escena Cámaras */
+  camsScene: CamsScene
   layout: LayoutId
   contestants: Contestant[]
   teams: [Team, Team]
-  host: { name: string; label: string }
+  host: { name: string; label: string; cam: SlotId }
   lowerThird: LowerThird
   sideInfo: SideInfo
   cameras: CameraConfig
@@ -127,7 +141,7 @@ export type Action =
   | { type: 'restartCapture' }
   | QuizAction
   | RoscoAction
-  | ShowAction
+  | SceneAction
 
 export interface CaptureSource {
   id: string

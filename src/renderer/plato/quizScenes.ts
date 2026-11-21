@@ -45,8 +45,11 @@ function quizKind(s: GameState): Kind {
   return t === 'sino' || t === 'quien' || t === 'estimacion' ? t : 'test'
 }
 
+/** ¿La escena Juego enseña la pantalla final de la escalera? */
+export const showsLadderResult = (s: GameState): boolean => s.liveGame === 'escalera' && s.quiz.ladder.showResult && !!s.quiz.ladder.outcome
+
 export function quizSceneKey(s: GameState): string {
-  if (s.view === 'result') {
+  if (showsLadderResult(s)) {
     const t = s.quiz.ladder.target
     return `result:${t ? JSON.stringify(t) : ''}:${membersOf(s, t).join(',')}`
   }
@@ -278,7 +281,7 @@ export function chipFor(s: GameState, slot: ContestantId): { text: string; cls: 
 
 export function buildQuizScene(s: GameState): Scene {
   const key = quizSceneKey(s)
-  if (s.view === 'result') return buildResultScene(s, key)
+  if (showsLadderResult(s)) return buildResultScene(s, key)
   const kind = quizKind(s)
   if (kind === 'quien') return buildQuienScene(s, key)
   if (kind === 'estimacion') return buildEstimationScene(s, key)
@@ -362,9 +365,9 @@ export function buildQuizScene(s: GameState): Scene {
 
   const update = (st: GameState) => {
     const cur = st.quiz.current
-    qText.textContent = cur?.question.enunciado ?? ''
+    qText.textContent = cur && cur.phase !== 'ready' ? cur.question.enunciado : ''
     optionStates(st).forEach((o, i) => opts[i]?.set(o.text, o.state, o.visible))
-    image.set(cur?.question.imagen, !!cur?.showImage)
+    image.set(cur?.question.imagen, !!cur?.showImage && cur.phase !== 'ready')
     const turn = turnSlots(st)
     for (const [slot, f] of frames) f.root.classList.toggle('is-turn', turn.has(slot))
 

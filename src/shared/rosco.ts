@@ -27,6 +27,8 @@ export interface RoscoPlayer {
 export interface RoscoState {
   active: boolean
   bankFile: string | null
+  /** banco del segundo concursante (cada uno su rosco) */
+  bankFile2: string | null
   players: RoscoPlayer[]
   turn: number
   seconds: number
@@ -38,8 +40,8 @@ export interface RoscoState {
 }
 
 export type RoscoAction =
-  | { type: 'roscoConfig'; patch: Partial<Pick<RoscoState, 'bankFile' | 'seconds' | 'pointsPerHit' | 'jackpot'>> }
-  | { type: 'roscoStart'; players: { target: Target; letters: RoscoLetter[] }[] }
+  | { type: 'roscoConfig'; patch: Partial<Pick<RoscoState, 'bankFile' | 'bankFile2' | 'seconds' | 'pointsPerHit' | 'jackpot'>> }
+  | { type: 'roscoStart'; players: { target: Target; letters: RoscoLetter[] }[]; now?: number }
   | { type: 'roscoMark'; result: 'ok' | 'ko' | 'pasa'; now: number }
   | { type: 'roscoClock'; run: boolean; now: number }
   | { type: 'roscoTimeUp'; now: number }
@@ -49,7 +51,7 @@ export type RoscoAction =
   | { type: 'roscoStop' }
 
 export function defaultRosco(): RoscoState {
-  return { active: false, bankFile: null, players: [], turn: 0, seconds: 150, pointsPerHit: 10, jackpot: 0, finished: false, awarded: false }
+  return { active: false, bankFile: null, bankFile2: null, players: [], turn: 0, seconds: 150, pointsPerHit: 10, jackpot: 0, finished: false, awarded: false }
 }
 
 /** Una definición por letra (al azar entre las que haya), evitando las de `exclude`. Letras sin definición se omiten. */
@@ -93,14 +95,17 @@ const pause = (p: RoscoPlayer, now: number): RoscoPlayer => (p.endsAt === null ?
 const run = (p: RoscoPlayer, now: number): RoscoPlayer =>
   p.endsAt !== null || p.done || p.remainingMs <= 0 ? p : { ...p, endsAt: now + p.remainingMs }
 
-/** Tras un cambio, pasa el turno si toca y detecta el final. */
-function settle(s: RoscoState, switchTurn: boolean): RoscoState {
-  const players = s.players
+/** Tras un cambio, pasa el turno si toca (y arranca el reloj del otro) y detecta el final. */
+function settle(s: RoscoState, switchTurn: boolean, now: number): RoscoState {
+  let players = s.players
   let turn = s.turn
   const other = players.length === 2 ? 1 - turn : -1
-  if (other >= 0 && !players[other].done && (switchTurn || players[turn].done)) turn = other
+  if (other >= 0 && !players[other].done && (switchTurn || players[turn].done)) {
+    turn = other
+    players = players.map((p, i) => (i === turn ? run(p, now) : p))
+  }
   const finished = players.length > 0 && players.every((p) => p.done)
-  return { ...s, turn, finished }
+  return { ...s, players, turn, finished }
 }
 
 /** Acierto, fallo o pasapalabra sobre la letra actual del concursante en turno. */
@@ -117,7 +122,7 @@ export function roscoMark(s: RoscoState, result: 'ok' | 'ko' | 'pasa', now: numb
   if (next === null) np = { ...pause(np, now), done: true }
   else np = { ...np, current: next }
   const players = s.players.map((x, i) => (i === s.turn ? np : x))
-  return settle({ ...s, players }, result !== 'ok')
+  return settle({ ...s, players }, result !== 'ok', now)
 }
 
 /** Se acaba el tiempo del concursante en turno. */
@@ -126,7 +131,7 @@ export function roscoTimeUp(s: RoscoState, now: number): RoscoState {
   const p = s.players[s.turn]
   if (!p || p.endsAt === null || p.endsAt > now) return s
   const players = s.players.map((x, i) => (i === s.turn ? { ...x, endsAt: null, remainingMs: 0, done: true } : x))
-  return settle({ ...s, players }, true)
+  return settle({ ...s, players }, true, now)
 }
 
 /** Ganador(es): más aciertos; a igualdad, menos fallos. */
@@ -167,7 +172,9 @@ export function applyRoscoAction(g: GameState, a: RoscoAction): GameState {
         .slice(0, 2)
         .map((p) => ({ target: p.target, letters: p.letters, current: 0, remainingMs: r.seconds * 1000, endsAt: null, done: false }))
       if (!players.length) return g
-      return { ...g, view: 'rosco', rosco: { ...r, active: true, players, turn: 0, finished: false, awarded: false } }
+      // arranca el reloj del primero
+      players[0] = run(players[0], a.now ?? Date.now())
+      return { ...g, rosco: { ...r, active: true, players, turn: 0, finished: false, awarded: false } }
     }
     case 'roscoMark':
       return set(roscoMark(r, a.result, a.now))
@@ -199,7 +206,7 @@ export function applyRoscoAction(g: GameState, a: RoscoAction): GameState {
       return set({ ...r, players, finished: true })
     }
     case 'roscoStop':
-      return { ...g, view: g.view === 'rosco' ? 'plato' : g.view, rosco: { ...r, active: false } }
+      return { ...g, rosco: { ...r, active: false } }
     default:
       return g
   }

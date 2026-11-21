@@ -39,6 +39,9 @@ export interface Question {
   letra?: string
   modo?: 'empieza' | 'contiene'
   respuesta?: string
+
+  /** fecha (ISO) en que se usó en un programa; sin valor = sin usar */
+  usada?: string
 }
 
 export interface Bank {
@@ -99,6 +102,7 @@ export function normalizeQuestion(raw: unknown, fallbackId: string): Question | 
   if (str(r.nota_presentador)) common.nota_presentador = str(r.nota_presentador)
   if (typeof r.dificultad === 'number' || typeof r.dificultad === 'string') common.dificultad = r.dificultad
   if (str(r.fuente)) common.fuente = str(r.fuente)
+  if (str(r.usada)) common.usada = str(r.usada)
   const tipoRaw = typeof r.tipo === 'string' ? r.tipo : ''
 
   if (tipoRaw === 'rosco' || (r.letra !== undefined && r.definicion !== undefined)) {
@@ -145,15 +149,67 @@ export function normalizeQuestion(raw: unknown, fallbackId: string): Question | 
   return q
 }
 
-/** Lee un banco en formato nuevo (objeto) o un array (antiguo o nuevo sin envoltorio). */
-export function parseBank(json: unknown, fallbackName: string): Bank {
+/**
+ * Pregunta a medio escribir (borrador del editor): se guarda tal cual para no perderla,
+ * pero los juegos solo usan las completas (isPlayable).
+ */
+export function draftQuestion(raw: unknown, fallbackId: string): Question | null {
+  if (!raw || typeof raw !== 'object') return null
+  const r = raw as Record<string, unknown>
+  const tipo = typeof r.tipo === 'string' && (QUESTION_TYPES as string[]).includes(r.tipo) ? (r.tipo as QuestionType) : null
+  if (!tipo) return null
+  const id = r.id !== undefined && r.id !== null && String(r.id).trim() ? String(r.id) : fallbackId
+  const text = (v: unknown) => (typeof v === 'string' ? v : typeof v === 'number' ? String(v) : '')
+  const base: Question = { id, tipo, enunciado: '', opciones: [], correcta: -1 }
+  for (const k of ['imagen', 'nota_presentador', 'fuente', 'usada', 'fecha', 'hora'] as const) if (text(r[k])) base[k] = text(r[k])
+  switch (tipo) {
+    case 'rosco': {
+      const letra = text(r.letra).toUpperCase().slice(0, 1)
+      if (!ROSCO_ALPHABET.includes(letra)) return null
+      return { ...base, letra, modo: r.modo === 'contiene' ? 'contiene' : 'empieza', enunciado: text(r.definicion ?? r.enunciado), respuesta: text(r.respuesta) }
+    }
+    case 'estimacion': {
+      const v = parseNumber(r.valor ?? r.respuesta)
+      return { ...base, enunciado: text(r.enunciado), unidad: text(r.unidad), ...(v === null ? {} : { valor: v }) }
+    }
+    case 'quien': {
+      const opciones = Array.isArray(r.opciones) ? r.opciones.map((o) => String(o)) : []
+      const autor = text(r.autor)
+      return { ...base, enunciado: text(r.frase ?? r.enunciado), autor, opciones, correcta: opciones.findIndex((o) => o.trim().toLowerCase() === autor.trim().toLowerCase()) }
+    }
+    default: {
+      const opciones = Array.isArray(r.opciones) ? r.opciones.map((o) => String(o)) : tipo === 'sino' ? ['Sí', 'No'] : []
+      const c = Number(r.correcta)
+      return { ...base, enunciado: text(r.enunciado ?? r.pregunta), opciones, correcta: Number.isInteger(c) && c >= 0 && c < opciones.length ? c : 0 }
+    }
+  }
+}
+
+/** ¿Está la pregunta completa para jugarla? */
+export function isPlayable(q: Question): boolean {
+  switch (q.tipo) {
+    case 'rosco':
+      return !!q.enunciado.trim() && !!q.respuesta?.trim()
+    case 'estimacion':
+      return !!q.enunciado.trim() && typeof q.valor === 'number' && Number.isFinite(q.valor)
+    case 'quien':
+      return !!q.enunciado.trim() && !!q.autor?.trim()
+    default: {
+      const filled = q.opciones.filter((o) => o.trim()).length
+      return !!q.enunciado.trim() && filled >= 2 && q.correcta >= 0 && q.correcta < q.opciones.length && !!q.opciones[q.correcta]?.trim()
+    }
+  }
+}
+
+/** Lee un banco en formato nuevo (objeto) o un array (antiguo o nuevo sin envoltorio). Con `lenient`, conserva borradores. */
+export function parseBank(json: unknown, fallbackName: string, lenient = false): Bank {
   const list = Array.isArray(json) ? json : json && typeof json === 'object' && Array.isArray((json as Bank).preguntas) ? (json as Bank).preguntas : null
   if (!list) throw new Error('No es un banco de preguntas (falta la lista "preguntas")')
   const nombre = !Array.isArray(json) && typeof (json as Bank).nombre === 'string' ? (json as Bank).nombre : fallbackName
   const seen = new Set<string>()
   const preguntas: Question[] = []
   list.forEach((raw, i) => {
-    const q = normalizeQuestion(raw, String(i + 1))
+    const q = normalizeQuestion(raw, String(i + 1)) ?? (lenient ? draftQuestion(raw, String(i + 1)) : null)
     if (!q) return
     let id = q.id
     while (seen.has(id)) id = `${q.id}-${i + 1}`

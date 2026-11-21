@@ -3,6 +3,7 @@
 import { existsSync, mkdirSync, readFileSync, renameSync, writeFileSync } from 'node:fs'
 import { dirname } from 'node:path'
 import { BrowserWindow } from 'electron'
+import { restoreSnapshot, snapshotOf, undoKey, type GameId, type Snapshot } from '../shared/scene'
 import { applyAction, hydrate, persistable } from '../shared/state'
 import type { Action, GameState } from '../shared/types'
 
@@ -31,10 +32,33 @@ export function initStore(path: string, appVersion: string): GameState {
 
 export const getState = (): GameState => state
 
+/** Pasos deshacibles por juego (no se guardan en disco). */
+const history = new Map<GameId, Snapshot[]>()
+const MAX_UNDO = 30
+
+function undoCounts(): GameState['runtime']['undo'] {
+  return Object.fromEntries([...history].map(([k, v]) => [k, v.length]))
+}
+
 export function dispatch(action: Action): GameState {
   const prev = state
-  state = applyAction(state, action)
-  if (state === prev) return state
+  if (action.type === 'undo') {
+    const stack = history.get(action.game)
+    const snap = stack?.pop()
+    if (!snap) return state
+    state = restoreSnapshot(state, snap)
+  } else {
+    const key = undoKey(action, state)
+    state = applyAction(state, action)
+    if (state === prev) return state
+    if (key) {
+      const stack = history.get(key) ?? []
+      stack.push(snapshotOf(prev))
+      if (stack.length > MAX_UNDO) stack.shift()
+      history.set(key, stack)
+    }
+  }
+  state = { ...state, runtime: { ...state.runtime, undo: undoCounts() } }
   for (const w of BrowserWindow.getAllWindows()) if (!w.isDestroyed()) w.webContents.send('state', state)
   if (!RUNTIME_ACTIONS.has(action.type)) scheduleSave()
   for (const l of listeners) l(state, prev, action)

@@ -16,10 +16,13 @@ export function h<K extends keyof HTMLElementTagNameMap>(
   return el
 }
 
+/** Propiedades CSS cuyos números no llevan unidad. */
+const UNITLESS = new Set(['opacity', 'zIndex', 'fontWeight', 'lineHeight', 'flex', 'flexGrow', 'flexShrink', 'order', 'zoom'])
+
 export function applyStyle(el: HTMLElement, style: Partial<Record<string, string | number>>): void {
   for (const [k, v] of Object.entries(style)) {
     if (v === undefined) continue
-    const val = typeof v === 'number' && !k.startsWith('--') && k !== 'opacity' && k !== 'zIndex' ? `${v}px` : String(v)
+    const val = typeof v === 'number' && !k.startsWith('--') && !UNITLESS.has(k) ? `${v}px` : String(v)
     if (k.startsWith('--')) el.style.setProperty(k, val)
     else el.style.setProperty(k.replace(/[A-Z]/g, (m) => '-' + m.toLowerCase()), val)
   }

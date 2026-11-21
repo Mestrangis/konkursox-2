@@ -1,6 +1,6 @@
-import { contextBridge, ipcRenderer, type IpcRendererEvent } from 'electron'
-import type { Bank, BankInfo } from '../shared/questions'
-import type { Segment } from '../shared/show'
+import { contextBridge, ipcRenderer, webUtils, type IpcRendererEvent } from 'electron'
+import type { LibBankInfo, LibType } from '../shared/library'
+import type { Bank } from '../shared/questions'
 import type { Action, AudioLibrary, CaptureSource, DisplayInfo, GameState } from '../shared/types'
 
 function subscribe<T>(channel: string, cb: (v: T) => void): () => void {
@@ -24,18 +24,21 @@ const api = {
   audioLibrary: (): Promise<AudioLibrary> => ipcRenderer.invoke('audio:library'),
   audioOpenDir: (): Promise<string> => ipcRenderer.invoke('audio:openDir'),
   audioChooseDir: (): Promise<AudioLibrary> => ipcRenderer.invoke('audio:chooseDir'),
+  audioImport: (paths: string[], kind: 'musica' | 'efectos'): Promise<string[]> => ipcRenderer.invoke('audio:import', paths, kind),
 
-  listBanks: (): Promise<BankInfo[]> => ipcRenderer.invoke('bank:list'),
-  getBank: (file: string): Promise<Bank> => ipcRenderer.invoke('bank:get', file),
-  openBanksDir: (): Promise<string> => ipcRenderer.invoke('bank:openDir'),
-  importBanks: (): Promise<{ imported: string[]; errors: string[] }> => ipcRenderer.invoke('bank:import'),
+  libList: (): Promise<LibBankInfo[]> => ipcRenderer.invoke('lib:list'),
+  libGet: (ref: string): Promise<Bank> => ipcRenderer.invoke('lib:get', ref),
+  libSave: (ref: string, bank: Bank): Promise<void> => ipcRenderer.invoke('lib:save', ref, bank),
+  libCreate: (tipo: LibType, nombre: string): Promise<string> => ipcRenderer.invoke('lib:create', tipo, nombre),
+  libDelete: (ref: string): Promise<void> => ipcRenderer.invoke('lib:delete', ref),
+  libMarkUsed: (ref: string, ids: string[], used: boolean): Promise<void> => ipcRenderer.invoke('lib:markUsed', ref, ids, used),
+  libImportImage: (path: string): Promise<string> => ipcRenderer.invoke('lib:importImage', path),
+  libChooseImage: (): Promise<string | null> => ipcRenderer.invoke('lib:chooseImage'),
+  libOpenDir: (): Promise<string> => ipcRenderer.invoke('lib:openDir'),
 
-  listShows: (): Promise<{ file: string; title: string; count: number }[]> => ipcRenderer.invoke('show:list'),
-  saveShow: (title: string, segments: Segment[]): Promise<string> => ipcRenderer.invoke('show:save', title, segments),
-  loadShow: (file: string): Promise<{ title: string; segments: Segment[] }> => ipcRenderer.invoke('show:load', file),
-  deleteShow: (file: string): Promise<void> => ipcRenderer.invoke('show:delete', file),
-  openShowsDir: (): Promise<string> => ipcRenderer.invoke('show:openDir'),
   choosePhoto: (name: string): Promise<string | null> => ipcRenderer.invoke('people:choosePhoto', name),
+  /** ruta en disco de un archivo soltado en la ventana */
+  pathForFile: (file: File): string => webUtils.getPathForFile(file),
 
   checkUpdate: (): Promise<void> => ipcRenderer.invoke('update:check'),
   installUpdate: (): Promise<void> => ipcRenderer.invoke('update:install')

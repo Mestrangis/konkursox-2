@@ -2,9 +2,11 @@
 import { sourceRectForFrame } from '../../shared/crop'
 import { LAYOUTS } from '../../shared/layouts'
 import { contestantOrder } from '../../shared/order'
+import { camOf } from '../../shared/scene'
 import type { GameState, SlotId } from '../../shared/types'
 import type { CaptureFeed } from '../common/feed'
-import { buildFinalScene, buildTransitionScene, finalKey, transitionKey } from './showScenes'
+import { buildCamsScene, camsKey } from './camsScene'
+import { buildFinalScene, finalKey } from './showScenes'
 import { buildQuizScene, quizSceneKey, turnSlots } from './quizScenes'
 import { buildRoscoScene, roscoKey } from './roscoScene'
 import {
@@ -32,14 +34,52 @@ export interface Scene {
   extraFrames?: { slot: SlotId; frame: CamFrameEl }[]
 }
 
-/** ¿El plató muestra la escena de preguntas? */
-export const showsQuiz = (s: GameState): boolean => (s.view === 'quiz' && !!s.quiz.current) || (s.view === 'result' && !!s.quiz.ladder.outcome)
+/**
+ * Estado "visto desde el plató": en la escena Juego, la pregunta en curso es la del juego en el aire.
+ * Así el plató pinta solo lo que está en el aire y nada más cambia.
+ */
+export function viewState(s: GameState): GameState {
+  if (s.liveGame === 'rosco') return { ...s, quiz: { ...s.quiz, current: null } }
+  return { ...s, quiz: { ...s.quiz, current: s.quiz.slots[s.liveGame] ?? null } }
+}
 
-export function sceneKey(s: GameState): string {
-  if (s.view === 'transition') return transitionKey(s)
-  if (s.view === 'final') return finalKey(s)
-  if (s.view === 'rosco' && s.rosco.players.length) return roscoKey(s)
-  return showsQuiz(s) ? quizSceneKey(s) : `${s.layout}:${contestantOrder(s).join(',')}`
+type Kind = 'cover' | 'cams' | 'marcador' | 'final' | 'rosco' | 'quiz'
+
+/** Qué pinta el plató según la escena en el aire. */
+function kindOf(s: GameState): Kind {
+  switch (s.scene) {
+    case 'cabecera':
+      return 'cover'
+    case 'camaras':
+      return 'cams'
+    case 'marcador':
+      return 'marcador'
+    case 'final':
+      return 'final'
+    default: {
+      if (s.liveGame === 'rosco') return s.rosco.players.length ? 'rosco' : 'cover'
+      if (s.liveGame === 'escalera' && s.quiz.ladder.showResult && s.quiz.ladder.outcome) return 'quiz'
+      return s.quiz.current ? 'quiz' : 'cover'
+    }
+  }
+}
+
+export function sceneKey(s0: GameState): string {
+  const s = viewState(s0)
+  switch (kindOf(s)) {
+    case 'cover':
+      return 'cover'
+    case 'cams':
+      return camsKey(s)
+    case 'final':
+      return finalKey(s)
+    case 'rosco':
+      return roscoKey(s)
+    case 'quiz':
+      return quizSceneKey(s)
+    default:
+      return `marcador:${s.layout}:${contestantOrder(s).join(',')}`
+  }
 }
 
 function coverScene(): HTMLDivElement {
@@ -89,18 +129,33 @@ function coverScene(): HTMLDivElement {
   ])
 }
 
-export function buildScene(s: GameState): Scene {
-  if (s.view === 'transition') return buildTransitionScene(s)
-  if (s.view === 'final') return buildFinalScene(s)
-  if (s.view === 'rosco' && s.rosco.players.length) return buildRoscoScene(s)
-  if (showsQuiz(s)) return buildQuizScene(s)
+/** Construye la escena en el aire. Las escenas reciben el estado ya "visto desde el plató". */
+export function buildScene(s0: GameState): Scene {
+  const s = viewState(s0)
+  const wrap = (sc: Scene): Scene => ({ ...sc, update: (st) => sc.update(viewState(st)), tick: sc.tick ? (st) => sc.tick!(viewState(st)) : undefined })
+  switch (kindOf(s)) {
+    case 'cover': {
+      const root = coverScene()
+      root.classList.add('k-enter')
+      return { key: 'cover', root, frames: new Map(), update: () => {} }
+    }
+    case 'cams':
+      return wrap(buildCamsScene(s))
+    case 'final':
+      return wrap(buildFinalScene(s))
+    case 'rosco':
+      return wrap(buildRoscoScene(s))
+    case 'quiz':
+      return wrap(buildQuizScene(s))
+    default:
+      return wrap(buildMarcador(s))
+  }
+}
+
+/** Marcador: la plantilla de cámaras con puntos según el número de concursantes (o equipos). */
+function buildMarcador(s: GameState): Scene {
   const key = sceneKey(s)
   const frames = new Map<SlotId, CamFrameEl>()
-  if (s.layout === 'logo') {
-    const root = coverScene()
-    root.classList.add('k-enter')
-    return { key, root, frames, update: () => {} }
-  }
 
   const def = LAYOUTS[s.layout]
   const order = contestantOrder(s)
@@ -166,12 +221,13 @@ export function buildScene(s: GameState): Scene {
 }
 
 /** Pinta en cada marco su recorte del vídeo de Discord (object-fit: cover centrado en el recorte). */
-export function drawFrames(feed: CaptureFeed | null, scene: Scene | null, rects: GameState['cameras']['rects']): void {
+export function drawFrames(feed: CaptureFeed | null, scene: Scene | null, s: GameState): void {
+  const rects = s.cameras.rects
   if (!scene) return
   const ok = !!feed && feed.ready
   const all: [SlotId, CamFrameEl][] = [...scene.frames, ...(scene.extraFrames ?? []).map((x) => [x.slot, x.frame] as [SlotId, CamFrameEl])]
   for (const [slot, frame] of all) {
-    const rel = rects[slot]
+    const rel = rects[camOf(s, slot)]
     if (!ok || !rel) {
       frame.setLive(false)
       continue

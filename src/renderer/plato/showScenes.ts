@@ -1,69 +1,12 @@
-// Rótulo de transición entre pruebas (estética de la cabecera) y marcador final (según el diseño).
+// Marcador final y ganador (según el diseño).
 import { finalStandings, roman, winnerWord, type Gender } from '../../shared/games'
 import { contestantOrder } from '../../shared/order'
 import { formatPoints } from '../../shared/quiz'
-import { activePlayers, gameLabel, playedCount, scoreboardEntries } from '../../shared/show'
+import { activeContestants, playedCount, scoreboardEntries } from '../../shared/scene'
 import type { ContestantId, GameState, SlotId } from '../../shared/types'
-import { bevelBar, camFrame, emblem, h, svg, type CamFrameEl } from '../ds/components'
+import { bevelBar, camFrame, h, svg, type CamFrameEl } from '../ds/components'
 import { DIAMOND } from './quizScenes'
 import type { Scene } from './scenes'
-
-// ---------------------------------------------------------------- transición
-
-export const transitionKey = (s: GameState): string => `transition:${s.show.current}:${s.show.segments[s.show.current ?? -1]?.id ?? ''}`
-
-function ring(size: number, alpha: number, cls = ''): HTMLDivElement {
-  return h('div', `k-abs ${cls}`.trim(), {
-    left: '50%',
-    top: '50%',
-    width: size,
-    height: size,
-    margin: `${-size / 2}px 0 0 ${-size / 2}px`,
-    borderRadius: '50%',
-    border: `1px solid rgba(214, 186, 120, ${alpha})`
-  })
-}
-
-export function buildTransitionScene(s: GameState): Scene {
-  const key = transitionKey(s)
-  const idx = s.show.current ?? 0
-  const seg = s.show.segments[idx]
-  const kicker = h('div', 'k-trans__kicker')
-  const title = h('div', 'k-logo k-logo--hero k-trans__title')
-  const sub = h('div', 'k-caption k-caption--muted k-trans__sub')
-  const root = h('div', 'k-stage k-stage--cover k-enter k-trans', {}, [
-    ring(1500, 0.07, 'k-trans__ring'),
-    ring(1100, 0.11, 'k-trans__ring'),
-    ring(760, 0.18, 'k-trans__ring'),
-    h('div', 'k-abs', { left: '50%', top: '50%', width: 1300, height: 560, margin: '-280px 0 0 -650px', background: 'radial-gradient(ellipse at center, rgba(190,205,240,0.12), transparent 65%)' }),
-    h('div', 'k-abs k-trans__line', {
-      left: 0,
-      right: 0,
-      top: 539,
-      height: 1,
-      background: 'linear-gradient(90deg, transparent 2%, rgba(214,186,120,0.6) 14%, transparent 19%, transparent 81%, rgba(214,186,120,0.6) 86%, transparent 98%)'
-    }),
-    h('div', 'k-abs k-trans__emblem', { left: 0, right: 0, top: 330, display: 'flex', justifyContent: 'center' }, [emblem(44)]),
-    h('div', 'k-abs', { left: 0, right: 0, top: 400, display: 'flex', justifyContent: 'center' }, [kicker]),
-    h('div', 'k-abs', { left: 80, right: 80, top: 452, display: 'flex', justifyContent: 'center' }, [title]),
-    h('div', 'k-abs k-trans__rule', { left: '50%', top: 640, width: 620, marginLeft: -310, height: 2, background: 'linear-gradient(90deg, transparent, #c9a961 30%, #f1dfab 50%, #c9a961 70%, transparent)' }),
-    h('div', 'k-abs', { left: 0, right: 0, top: 672, display: 'flex', justifyContent: 'center' }, [sub])
-  ])
-  const update = (st: GameState) => {
-    const i = st.show.current ?? 0
-    const sg = st.show.segments[i]
-    kicker.textContent = `Prueba ${i + 1}${st.show.segments.length ? ` de ${st.show.segments.length}` : ''}`
-    const name = (sg?.name ?? '').toUpperCase()
-    title.textContent = name
-    title.style.fontSize = name.length > 22 ? '78px' : name.length > 14 ? '96px' : ''
-    const label = sg ? gameLabel(sg.game) : ''
-    // si el nombre ya es el del juego, no se repite debajo
-    sub.textContent = label.toUpperCase() === name ? '' : label
-  }
-  void seg
-  update(s)
-  return { key, root, frames: new Map(), update }
-}
 
 // ---------------------------------------------------------------- marcador final
 
@@ -171,7 +114,7 @@ export function buildFinalScene(s: GameState): Scene {
     }
     date.textContent = programDate()
     const pruebas = playedCount(st)
-    const players = isTeam ? `2 equipos` : `${activePlayers(st)} concursantes`
+    const players = isTeam ? `2 equipos` : `${activeContestants(st).length} concursantes`
     stats.textContent = `${pruebas} ${pruebas === 1 ? 'prueba' : 'pruebas'} · ${players}`
   }
   update(s)

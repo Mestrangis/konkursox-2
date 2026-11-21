@@ -2,7 +2,7 @@
 import { sanitizeRel } from './crop'
 import { applyQuizAction, defaultQuiz, type QuizAction, type QuizState } from './quiz'
 import { applyRoscoAction, defaultRosco, type RoscoAction, type RoscoState } from './rosco'
-import { applyShowAction, defaultShow, normalizeSegment, type Person, type ShowAction, type ShowState } from './show'
+import { applySceneAction, DEFAULT_FX, defaultCams, SCENE_ACTIONS, type Person, type SceneAction, type ShowState } from './scene'
 import { CONTESTANT_IDS, type Action, type GameState } from './types'
 
 export function todayLabel(d = new Date()): string {
@@ -12,41 +12,43 @@ export function todayLabel(d = new Date()): string {
 
 export function defaultState(): GameState {
   return {
-    view: 'plato',
-    layout: 'logo',
+    scene: 'cabecera',
+    liveGame: 'test',
+    camsScene: defaultCams(),
+    layout: 'quad',
     contestants: CONTESTANT_IDS.map((id, i) => ({
       id,
       name: `Concursante ${i + 1}`,
       score: 0,
       team: i < 2 ? 0 : 1,
-      gender: null
+      gender: null,
+      cam: id
     })),
     teams: [
       { name: 'Equipo Norte', score: 0 },
       { name: 'Equipo Sur', score: 0 }
     ],
-    host: { name: 'Marcos', label: 'Presentador' },
+    host: { name: 'Marcos', label: 'Presentador', cam: 'host' },
     lowerThird: { visible: true, kicker: 'Presentación', title: 'Los concursantes de esta noche', right: todayLabel() },
     sideInfo: { label1: 'Premio en juego', value1: '1.000.000', label2: 'Pregunta', value2: '1 de 15' },
     cameras: { sourceId: null, sourceName: null, rects: {} },
     plato: { displayId: null, windowed: false, visible: true },
-    audio: { dir: null, musicVolume: 0.8, sfxVolume: 0.9, fadeSeconds: 1.5 },
+    audio: { dir: null, musicVolume: 0.8, sfxVolume: 0.9, fadeSeconds: 3, loop: true, autoSounds: true, fx: DEFAULT_FX.map((f) => ({ ...f })) },
     quiz: defaultQuiz(),
     rosco: defaultRosco(),
-    show: defaultShow(),
+    show: { played: [], extra: 0 },
     people: [],
     runtime: {
       capture: { plato: 'idle', panel: 'idle' },
       update: { state: 'disabled' },
       appVersion: '0.0.0',
-      captureEpoch: 0
+      captureEpoch: 0,
+      undo: {}
     }
   }
 }
 
 export { contestantOrder } from './order'
-
-const SHOW_ACTIONS = new Set<string>(['showSet', 'showLoad', 'showStart', 'showResetPlayed', 'setPeople', 'setGender'])
 
 const num = (v: unknown, fallback: number): number => (typeof v === 'number' && Number.isFinite(v) ? v : fallback)
 
@@ -111,7 +113,7 @@ export function applyAction(s: GameState, a: Action): GameState {
       return { ...s, runtime: { ...s.runtime, update: a.status } }
     default:
       if (a.type.startsWith('rosco')) return applyRoscoAction(s, a as RoscoAction)
-      if (SHOW_ACTIONS.has(a.type)) return applyShowAction(s, a as ShowAction)
+      if (SCENE_ACTIONS.has(a.type)) return applySceneAction(s, a as SceneAction)
       return applyQuizAction(s, a as QuizAction)
   }
 }
@@ -128,7 +130,8 @@ export function hydrate(saved: unknown): GameState {
       name: typeof c?.name === 'string' ? c.name : d.contestants[i].name,
       score: num(c?.score, 0),
       team: c?.team === 1 ? 1 : c?.team === 0 ? 0 : d.contestants[i].team,
-      gender: c?.gender === 'm' || c?.gender === 'f' ? c.gender : null
+      gender: c?.gender === 'm' || c?.gender === 'f' ? c.gender : null,
+      cam: isSlot(c?.cam) ? c!.cam : id
     } as const
   })
   const rects: GameState['cameras']['rects'] = {}
@@ -138,19 +141,25 @@ export function hydrate(saved: unknown): GameState {
   }
   return {
     ...d,
-    layout: s.layout && ['logo', 'solo', 'duo', 'trio', 'quad', 'teams'].includes(s.layout) ? s.layout : d.layout,
+    layout: s.layout && ['solo', 'duo', 'trio', 'quad', 'teams'].includes(s.layout) ? s.layout : d.layout,
     contestants: [...contestants],
     teams: [0, 1].map((i) => ({
       name: typeof s.teams?.[i]?.name === 'string' ? s.teams[i].name : d.teams[i].name,
       score: num(s.teams?.[i]?.score, 0)
     })) as GameState['teams'],
-    host: { ...d.host, ...(s.host ?? {}) },
+    host: { ...d.host, ...(s.host ?? {}), cam: isSlot(s.host?.cam) ? s.host!.cam : 'host' },
     lowerThird: { ...d.lowerThird, ...(s.lowerThird ?? {}) },
     sideInfo: { ...d.sideInfo, ...(s.sideInfo ?? {}) },
     cameras: { sourceId: s.cameras?.sourceId ?? null, sourceName: s.cameras?.sourceName ?? null, rects },
     plato: { ...d.plato, ...(s.plato ?? {}) },
-    audio: { ...d.audio, ...(s.audio ?? {}) },
-    view: s.view && ['quiz', 'result', 'rosco', 'transition', 'final'].includes(s.view) ? s.view : 'plato',
+    audio: {
+      ...d.audio,
+      ...(s.audio ?? {}),
+      fx: d.audio.fx.map((f, i) => ({ ...f, ...(Array.isArray(s.audio?.fx) ? s.audio!.fx[i] : {}) }))
+    },
+    scene: s.scene && ['cabecera', 'camaras', 'juego', 'marcador', 'final'].includes(s.scene) ? s.scene : 'cabecera',
+    liveGame: s.liveGame && ['test', 'sino', 'escalera', 'estimacion', 'quien', 'rosco'].includes(s.liveGame) ? s.liveGame : 'test',
+    camsScene: { ...d.camsScene, ...(s.camsScene ?? {}), on: { ...d.camsScene.on, ...(s.camsScene?.on ?? {}) } },
     quiz: hydrateQuiz(s.quiz),
     rosco: hydrateRosco(s.rosco),
     show: hydrateShow(s.show),
@@ -173,13 +182,24 @@ function hydrateQuiz(saved: unknown): QuizState {
   if (!Array.isArray(ladder.levels) || !ladder.levels.length) ladder.levels = d.ladder.levels
   ladder.used = { ...d.ladder.used, ...obj(ladder.used, {}) }
   const old = q.current as Partial<QuizState['current']> | null | undefined
-  const current = old && typeof old === 'object' && old.question ? ({ mode: 'turn', answers: {}, guesses: {}, revealedAt: null, estimation: null, ...(old as object) } as QuizState['current']) : null
+  const fix = (c: unknown) =>
+    c && typeof c === 'object' && (c as { question?: unknown }).question
+      ? ({ mode: 'turn', answers: {}, guesses: {}, revealedAt: null, estimation: null, ...(c as object) } as QuizState['current'])
+      : null
+  const current = fix(old)
+  const slots: QuizState['slots'] = {}
+  for (const [k, v] of Object.entries(obj<Record<string, unknown>>(q.slots, {}))) {
+    if (['test', 'sino', 'escalera', 'estimacion', 'quien'].includes(k)) slots[k as keyof QuizState['slots']] = fix(v)
+  }
+  const focus = q.focus && ['test', 'sino', 'escalera', 'estimacion', 'quien'].includes(q.focus) ? q.focus : 'test'
   return {
     ...d,
     bankFile: typeof q.bankFile === 'string' ? q.bankFile : null,
     order: obj(q.order, {}),
     used: obj(q.used, {}),
-    current,
+    current: slots[focus] ?? current,
+    slots,
+    focus,
     scoring: { ...d.scoring, ...obj(q.scoring, {}) },
     // el temporizador no sigue corriendo tras reiniciar el programa
     timer: { ...d.timer, ...obj(q.timer, {}), endsAt: null, remainingMs: null },
@@ -198,6 +218,7 @@ function hydrateRosco(saved: unknown): RoscoState {
   const d = defaultRosco()
   if (!saved || typeof saved !== 'object') return d
   const r = { ...d, ...(saved as Partial<RoscoState>) }
+  if (r.bankFile2 === undefined) r.bankFile2 = null
   if (!Array.isArray(r.players)) r.players = []
   // los relojes no siguen corriendo tras reiniciar el programa
   r.players = r.players.map((p) => ({ ...p, endsAt: null }))
@@ -205,14 +226,13 @@ function hydrateRosco(saved: unknown): RoscoState {
 }
 
 function hydrateShow(saved: unknown): ShowState {
-  const d = defaultShow()
-  if (!saved || typeof saved !== 'object') return d
-  const sh = saved as Partial<ShowState>
-  return {
-    title: typeof sh.title === 'string' ? sh.title : '',
-    segments: Array.isArray(sh.segments) ? sh.segments.map(normalizeSegment) : [],
-    current: typeof sh.current === 'number' ? sh.current : null,
-    played: Array.isArray(sh.played) ? sh.played.filter((x) => typeof x === 'string') : [],
-    extraPlayed: typeof sh.extraPlayed === 'number' ? sh.extraPlayed : 0
-  }
+  if (!saved || typeof saved !== 'object') return { played: [], extra: 0 }
+  const sh = saved as Partial<ShowState> & { extraPlayed?: number }
+  const games = ['test', 'sino', 'escalera', 'estimacion', 'quien', 'rosco']
+  // la escaleta antigua guardaba ids de prueba: solo se conserva el número
+  const played = Array.isArray(sh.played) ? sh.played.filter((x) => games.includes(x)) : []
+  const legacy = Array.isArray(sh.played) ? sh.played.length - played.length : 0
+  return { played, extra: (typeof sh.extra === 'number' ? sh.extra : 0) + (typeof sh.extraPlayed === 'number' ? sh.extraPlayed : 0) + legacy }
 }
+
+const isSlot = (v: unknown): v is 'c1' | 'c2' | 'c3' | 'c4' | 'host' => typeof v === 'string' && ['c1', 'c2', 'c3', 'c4', 'host'].includes(v)

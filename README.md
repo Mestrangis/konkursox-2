@@ -2,69 +2,59 @@
 
 Remake desde cero del concurso de TV casero. App de escritorio (Electron + Vite + TypeScript, renderer en TS/HTML/CSS sin frameworks) con dos ventanas:
 
-- **Plató**: lienzo 1920x1080 escalado, sin marco, a pantalla completa en el monitor que elijas. Es lo que se comparte por Discord.
-- **Panel del presentador**: ventana normal en el otro monitor. Desde aquí se controla todo.
+- **Plató**: lienzo 1920x1080 escalado, sin marco, a pantalla completa en el monitor que elijas. Es lo que se comparte por Discord. Estética de `design/KONKURSOX 2.html` (marino y oro).
+- **Panel del presentador**: ventana normal en el otro monitor. Estilo gris oscuro neutro propio, calcado de `design/panel.html`.
 
-El estado del juego vive **solo en el proceso main** (`src/main/store.ts`): los renderers mandan acciones por IPC y reciben el estado completo. Se guarda en `%APPDATA%\KONKURSOX\konkursox-state.json`.
+El estado vive **solo en el proceso main** (`src/main/store.ts`): los renderers mandan acciones por IPC y reciben el estado completo. Se guarda en `%APPDATA%\KONKURSOX\konkursox-state.json`: si cierras a media partida, al abrir sigues donde estabas.
 
-## Fase 1 (esta versión)
+## Cómo se usa
 
-- Plantillas del plató fieles a `design/KONKURSOX 2.html`: cabecera, 1 + presentador, 2, 3, 4 concursantes y equipos 2 contra 2.
-- Design system en `src/renderer/ds/`: tokens (CSS variables), fuentes locales (Barlow Condensed, Cinzel, Cormorant Garamond) y componentes (marco de cámara, placa de nombre con puntos, cabecera de equipo, VS, rótulo inferior, barra de pregunta, opciones A-D, temporizador...).
-- **Cámaras desde Discord**: se captura solo la ventana de Discord (Windows Graphics Capture, funciona aunque esté tapada). En *Calibrar cámaras* se dibuja un rectángulo por concursante (y presentador) sobre la captura; se guardan en coordenadas relativas, así que mover o redimensionar Discord no los descuadra. El plató pinta cada recorte con `object-fit: cover` centrado en el rectángulo. Si Discord se minimiza o se cierra, los marcos vuelven a la silueta y el panel avisa (botones *Reconectar* / *Recalibrar*); si Discord se reabre, se reconecta solo.
-- Panel: concursantes (nombre, equipo, puntos +/- con paso configurable), equipos, rótulo inferior, presentador, selector de monitor del plató (se recuerda), vista previa del plató.
-- Audio: música (fundido de entrada/salida y fundido cruzado) y efectos. Carpeta por defecto `Documentos\KONKURSOX\audio\` con subcarpetas `musica\` y `efectos\` (lo que haya en `resources/audio` se copia ahí la primera vez; ahora está vacío). Formatos: mp3, wav, ogg, m4a, aac, flac, opus, webm.
+### Escenas (lo que sale en el plató)
 
-## Fase 2: juegos de preguntas
+Arriba del panel, la barra **En el aire**: Cabecera (F1), Cámaras (F2), Juego (F3), Marcador (F4) y Clasificación final (F5). El plató pinta **solo** la escena en el aire. Cambiar de escena **no borra ni reinicia nada**: puedes ir a Cabecera a mitad de pregunta y volver con F3 tal cual estaba. Navegar por el panel tampoco cambia el plató.
 
-Pestaña **Preguntas** del panel. El plató pasa solo a la pantalla de pregunta al lanzar una (tecla V para volver a la plantilla).
+La escena **Juego** enseña el juego que tiene el indicador **AIRE** en la navegación. Un juego se pone en el aire al dar su primer paso visible (por ejemplo "Mostrar pregunta" o "Empezar el rosco"). Cada juego guarda su propia pregunta en curso: trabajar en uno no toca los demás.
 
-- **Bancos**: un JSON por banco en `Documentos\KONKURSOX\preguntas\`, imágenes en `preguntas\imagenes\`. En el primer arranque se importan los de `legacy/` (formato antiguo `[{pregunta, opciones[], correcta}]`); el botón *Importar* convierte más archivos (antiguos o nuevos). Las preguntas usadas se recuerdan entre partidas; se puede barajar y buscar.
+**Escena Cámaras**: interruptores de quién sale (presentador y cada concursante). El plató se reparte solo para 1-5 personas, con el presentador en medio cuando hay concursantes a ambos lados. Opciones de nombres, puntos y transición (corte o fundido).
 
-  ```json
-  {
-    "formato": "konkursox-banco",
-    "version": 1,
-    "nombre": "General",
-    "preguntas": [
-      {
-        "id": "1",
-        "tipo": "test",
-        "enunciado": "¿Cuál es el río más largo del mundo?",
-        "opciones": ["Nilo", "Amazonas", "Yangtsé", "Misisipi"],
-        "correcta": 1,
-        "imagen": "rio.jpg",
-        "nota_presentador": "Durante años se dijo que era el Nilo",
-        "dificultad": 2,
-        "fuente": "National Geographic"
-      }
-    ]
-  }
-  ```
+### Juegos
 
-  `tipo` es `"test"` (hasta 4 opciones) o `"sino"` (2 opciones). `imagen`, `nota_presentador`, `dificultad` y `fuente` son opcionales.
-- **Flujo**: lanzar (Intro / N) → opciones una a una (O) o todas (T) → marcar (1-4 o A-D; naranja con sonido de tensión) → revelar (R) → puntos (automático, o P). Turnos con rebote al siguiente si falla, temporizador opcional (Espacio) con tic-tac, imagen en el plató (I), retirar (Esc).
-- **Escalera** (modo Millonario): 15 escalones por defecto con seguros en 5, 10 y 15 (editables), comodines 50:50 (automático, tecla F), llamada y público (a mano; se tachan en el plató), plantarse, fallar (cae al último seguro) y ganar, con pantalla final y sonidos.
-- **Puntuación**: puntos por acierto, fallo que resta o no, sumar al revelar o a mano.
-- **Sonidos**: cada momento (nueva pregunta, respuesta definitiva, acierto, fallo, reloj, finales de la escalera) se asocia a un archivo de `audio\efectos\` en *Sonidos del juego*.
+Tipo test, Sí o no, Escalera, Estimación, ¿Quién lo dijo? y Rosco. Cada pantalla tiene un **botón grande con el siguiente paso** (Espacio) y lo que viene después, controles secundarios debajo y **Deshacer** (Ctrl+Z), que deshace el último paso de ese juego.
 
-Todo el estado de la partida (pregunta en curso, escalera, usadas) vive en el proceso main y se guarda: si cierras el programa, al abrirlo sigues donde estabas.
+- **Test / Sí o no / ¿Quién lo dijo?**: por turno, "todos responden" o rebote al siguiente si falla. A-D marca la respuesta (en "todos responden" se asigna al concursante seleccionado y salta al siguiente).
+- **Escalera**: 15 escalones (seguros en 5, 10 y 15; se cambian en Ajustes), comodines 50:50 (F), llamada (L) y público (U), plantarse (X), pantalla final.
+- **Estimación**: escribes la cifra de cada uno, revelado con recta animada, precio justo opcional y puntos al más cercano o escalonados.
+- **Rosco**: 1 o 2 concursantes, cada uno con su rosco y su reloj. A acierto, F fallo, Espacio pasapalabra, P pausa el reloj, Tab cambia el turno.
 
-## Fase 3: resto de juegos y escaleta
+### Biblioteca
 
-- **Escaleta** (pestaña *Programa*): lista ordenada de pruebas con nombre, juego, banco y configuración (puntos, reloj, modo, rosco...). Se guarda y se carga desde `Documentos\KONKURSOX\escaletas\`. Al empezar una prueba sale en el plató el rótulo de transición ("PRUEBA 3 DE 9 · EL ROSCO") con su música o el efecto *Rótulo de prueba*; *Ir al juego* pasa a la pregunta o al rosco. Se puede seguir jugando suelto desde *Preguntas* y *Rosco*.
-- **Todos responden** (test, Sí/No y ¿Quién lo dijo?): marcas la respuesta de cada uno (1-4 o A-D rellenan en orden; Retroceso quita la última). En el plató cada placa muestra que ya ha respondido sin decir qué; al revelar se ve la de cada uno y se reparten los puntos.
-- **El rosco** (pestaña *Rosco*): 1 concursante o 2 alternándose, cada uno con su rosco y su reloj. Teclas: A acierto, F fallo, P pasapalabra, Espacio reloj. En el panel ves definición y respuesta; clic en una letra para corregirla. Bote opcional por completarlo sin fallos.
-- **Estimación**: escribes la cifra de cada uno; al revelar, recta con las marcas, la respuesta animada y el más cercano en verde. Opciones: precio justo (sin pasarse) y puntos solo al más cercano o escalonados por puesto. Los empates comparten puesto y puntos.
-- **¿Quién lo dijo?**: frase, autor, fuente, fecha y hora; al revelar destaca al autor y muestra la fuente (con su foto si está en *Personas del grupo*). Si faltan opciones, salen de las personas del grupo.
-- **Marcador final**: ganador con su cámara en grande, clasificación con todas las cámaras, fecha, número de pruebas y concursantes. "Ganador"/"Ganadora" según lo marcado en cada concursante; "Ganadores" con equipos; empates en cabeza contemplados.
-- **Bancos de ejemplo** (se copian una vez a `Documentos\KONKURSOX\preguntas\`): rosco, estimación y ¿quién lo dijo?. Formatos:
+Cada tipo de juego tiene sus bancos en su carpeta: `Documentos\KONKURSOX\preguntas\<tipo>\` (`test`, `sino`, `escalera`, `estimacion`, `quien`, `rosco`). El editor del panel permite crear, editar, duplicar, eliminar, marcar sin usar y poner imagen; el del rosco es una cuadrícula de 27 letras con **Importar desde texto** (`A: definición = RESPUESTA`, `Ñ (contiene): ... = ...`). Todo se guarda solo. Un banco eliminado va a `preguntas\_papelera\`.
 
-  ```json
-  { "id": "r1", "tipo": "rosco", "letra": "Ñ", "modo": "contiene", "definicion": "Período de doce meses.", "respuesta": "Año" }
-  { "id": "e1", "tipo": "estimacion", "enunciado": "¿Cuántos metros mide el Everest?", "respuesta": 8849, "unidad": "m" }
-  { "id": "q1", "tipo": "quien", "frase": "...", "autor": "Dani", "fuente": "Chat del grupo", "fecha": "14 de marzo de 2024", "hora": "03:12", "opciones": ["Sergio", "Dani", "Marta", "Pablo"] }
-  ```
+Los bancos de versiones anteriores (mezclados en `preguntas\`) se reparten por tipo al arrancar y los originales se guardan en `preguntas\_antiguos\`. Un rosco con varias definiciones por letra se parte en varios roscos.
+
+### Audio (siempre a la derecha)
+
+Reproductor de la carpeta `Documentos\KONKURSOX\audio\musica\` (play/pausa, anterior/siguiente, barra para saltar, volumen, bucle y fundido). Arrastra canciones a la lista para añadirlas. Botonera de 9 efectos: clic derecho en un botón para elegir su sonido. Interruptor de **sonidos automáticos** del juego (cuáles suenan en cada momento, en Ajustes).
+
+### Atajos
+
+| Dónde | Tecla | Qué hace |
+| --- | --- | --- |
+| Siempre | F1-F5 | Escenas |
+| Siempre | F6 / F7 / F8 | Cámaras: solo yo / solo el del turno / todos (y pone la escena Cámaras) |
+| Siempre | Ctrl+1..9 | Efectos |
+| Siempre | Ctrl+Espacio / Ctrl+F | Música: play-pausa / fundido |
+| Siempre | Ctrl+Z | Deshacer el último paso del juego |
+| Pantalla de juego | Espacio | Siguiente paso |
+| Test, Sí o no, Escalera, ¿Quién lo dijo? | A-D, O, T, R, I | Marcar, ocultar/mostrar opciones, temporizador, rebote, imagen |
+| Estimación | C, T | Mostrar cifras en el plató, temporizador |
+| Rosco | A, F, Espacio, P, Tab | Acierto, fallo, pasapalabra, reloj, cambiar turno |
+
+Ningún atajo se dispara mientras escribes en un campo de texto.
+
+### Cámaras desde Discord
+
+Se captura solo la ventana de Discord (Windows Graphics Capture: funciona aunque esté tapada). En **Cámaras → Calibrar recuadros** dibujas un recuadro por cámara; se guardan en coordenadas relativas, así que mover o redimensionar Discord no los descuadra. En **Concursantes** eliges qué cámara corresponde a cada uno. Si Discord se minimiza o se cierra, los marcos muestran la silueta y la navegación avisa; si Discord se reabre, se reconecta solo.
 
 ## Desarrollo
 
@@ -74,36 +64,39 @@ Requisitos: Node 24+ (npm 11) y Windows (la captura de ventanas está pensada pa
 npm install
 npm run dev        # Electron con recarga en caliente
 npm run typecheck  # tsc sin emitir
-npm test           # tests de la lógica de juego (vitest)
+npm test           # tests de la lógica (vitest)
 npm run dist       # instalador local en release\ (sin publicar)
 ```
 
 Estructura:
 
 ```
-src/main/        proceso main: store, ventanas, captura, audio (protocolo konk-media://), updater
+src/main/        proceso main: store (y deshacer), ventanas, captura, biblioteca, audio (konk-media://), updater
 src/preload/     API segura expuesta como window.konk
-src/shared/      tipos, reducer, plantillas, recorte (crop.ts), preguntas y partida (questions.ts, quiz.ts)
-src/renderer/    plato.html + panel.html, ds/ (design system), plato/ (escenas), panel/ (UI, calibración, audio)
-tests/           tests de recorte, escalera, puntuación, rosco, estimación y clasificación
-design/          diseño de referencia (export de Claude Design)
+src/shared/      estado y reducers: escenas (scene.ts), preguntas (quiz.ts), rosco, juegos, biblioteca, recorte
+src/renderer/    plato.html + panel.html
+  ds/            design system del plató (tokens, fuentes, componentes)
+  plato/         escenas del plató
+  panel/         panel: chrome.ts (barra, navegación, dock), screens/ (cada pantalla), audio, calibración
+tests/           recorte, escalera, puntuación, rosco, estimación, clasificación, escenas y migración
+design/          diseños de referencia (exports de Claude Design)
 legacy/          preguntas e imágenes del concurso antiguo
 ```
 
-Para depurar el plató sin que ocupe un monitor entero, marca **En ventana** en la cabecera del panel.
+Para depurar el plató sin que ocupe un monitor entero, activa **En ventana** en Ajustes.
 
 ## Sacar una release
 
-1. Sube la versión en `package.json` (por ejemplo `0.2.0`) y haz commit.
+1. Sube la versión en `package.json` (por ejemplo `0.5.0`) y haz commit.
 2. Crea y sube el tag con el mismo número:
 
    ```powershell
-   git tag v0.2.0
+   git tag v0.5.0
    git push origin main --tags
    ```
 
 3. La GitHub Action `.github/workflows/release.yml` compila en `windows-latest`, pasa typecheck y tests, y publica `KONKURSOX-Setup-x.y.z.exe` + `latest.yml` en GitHub Releases.
 
-Las instalaciones existentes se actualizan solas (electron-updater): descargan la nueva versión en segundo plano y la instalan al cerrar, o al pulsar *Reiniciar y actualizar* en el panel.
+Las instalaciones existentes se actualizan solas (electron-updater): descargan la nueva versión en segundo plano y la instalan al cerrar, o al pulsar *Reiniciar y actualizar* en Ajustes.
 
 El instalador no está firmado: la primera vez Windows SmartScreen puede avisar ("Más información" > "Ejecutar de todas formas").

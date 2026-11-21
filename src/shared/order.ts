@@ -27,3 +27,13 @@ export function playerCount(layout: GameState['layout']): number {
       return 4
   }
 }
+
+/** Concursantes de un turno (un equipo son sus dos miembros). */
+export function targetMembers(
+  state: Pick<GameState, 'layout' | 'contestants'>,
+  t: { kind: 'contestant'; id: ContestantId } | { kind: 'team'; index: 0 | 1 } | null | undefined
+): ContestantId[] {
+  if (!t) return []
+  if (t.kind === 'contestant') return [t.id]
+  return contestantOrder(state).filter((id) => state.contestants.find((c) => c.id === id)?.team === t.index)
+}

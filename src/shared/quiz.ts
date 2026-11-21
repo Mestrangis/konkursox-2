@@ -2,6 +2,7 @@
 // Todo puro: lo ejecuta el reducer del proceso main.
 import { estimationPoints, estimationResult, type EstimationConfig, type EstimationResult } from './games'
 import { contestantOrder, playerCount } from './order'
+import type { QuizGameId } from './scene'
 import type { Question } from './questions'
 import type { ContestantId, GameState } from './types'
 
@@ -9,7 +10,8 @@ import type { ContestantId, GameState } from './types'
 
 export type Target = { kind: 'contestant'; id: ContestantId } | { kind: 'team'; index: 0 | 1 }
 
-export type Phase = 'question' | 'options' | 'locked' | 'revealed'
+/** 'ready' = cargada pero aún no se ve en el plató */
+export type Phase = 'ready' | 'question' | 'options' | 'locked' | 'revealed'
 
 export interface Attempt {
   target: Target | null
@@ -42,6 +44,8 @@ export interface CurrentQuestion {
   guesses: Record<string, number>
   revealedAt: number | null
   estimation: EstimationResult | null
+  /** estimación: enseñar las cifras de cada uno en el plató antes de revelar */
+  showGuesses?: boolean
 }
 
 export interface Scoring {
@@ -85,6 +89,8 @@ export interface LadderState {
   /** sumar el premio final a los puntos del concursante/equipo */
   awardToScore: boolean
   awarded: boolean
+  /** la escena Juego enseña la pantalla final de la escalera */
+  showResult: boolean
 }
 
 export type CueId =
@@ -123,7 +129,11 @@ export interface QuizState {
   order: Record<string, string[]>
   /** preguntas ya usadas (clave banco::id) */
   used: Record<string, true>
+  /** pregunta del juego con el que se trabajó por última vez (= slots[focus]) */
   current: CurrentQuestion | null
+  /** pregunta en curso de cada juego: cambiar de juego o de escena no la pierde */
+  slots: Partial<Record<QuizGameId, CurrentQuestion | null>>
+  focus: QuizGameId
   scoring: Scoring
   timer: TimerState
   turn: Target | null
@@ -137,15 +147,16 @@ export interface QuizState {
   estimation: EstimationConfig
 }
 
-export type QuizView = 'plato' | 'quiz' | 'result' | 'rosco' | 'transition' | 'final'
-
-export type QuizAction =
-  | { type: 'setView'; view: QuizView }
+export type QuizAction = (
   | { type: 'quizSetBank'; file: string | null }
   | { type: 'quizSetOrder'; file: string; order: string[] | null }
   | { type: 'quizMarkUsed'; key: string; used: boolean }
   | { type: 'quizResetUsed'; bankFile: string }
-  | { type: 'quizLoad'; key: string; bankFile: string; question: Question; now: number; mode?: 'turn' | 'all' }
+  | { type: 'quizLoad'; key: string; bankFile: string; question: Question; now: number; mode?: 'turn' | 'all'; stage?: boolean }
+  | { type: 'quizShowQuestion' }
+  | { type: 'quizHideOptions' }
+  | { type: 'quizShowGuesses'; show: boolean }
+  | { type: 'ladderShowResult'; show: boolean }
   | { type: 'quizAnswerAll'; key: string; index: number | null }
   | { type: 'quizGuess'; key: string; value: number | null }
   | { type: 'quizSetMode'; mode: 'turn' | 'all' }
@@ -174,6 +185,7 @@ export type QuizAction =
   | { type: 'ladderSetLifeline'; id: LifelineId; used: boolean; hide?: number[] }
   | { type: 'ladderWalk' }
   | { type: 'ladderSetAward'; awardToScore: boolean }
+) & { /** juego sobre el que actúa (por defecto, el último usado) */ game?: QuizGameId }
 
 // ---------------------------------------------------------------- valores por defecto
 
@@ -192,7 +204,8 @@ export function defaultLadder(): LadderState {
     used: { '5050': false, llamada: false, publico: false },
     outcome: null,
     awardToScore: true,
-    awarded: false
+    awarded: false,
+    showResult: false
   }
 }
 
@@ -210,6 +223,8 @@ export function defaultQuiz(): QuizState {
     asked: 0,
     ladder: defaultLadder(),
     sounds: Object.fromEntries(CUES.map((c) => [c.id, c.def])) as Record<CueId, string | null>,
+    slots: {},
+    focus: 'test',
     allMode: false,
     estimation: { priceIsRight: false, mode: 'closest', ranked: [10, 6, 3, 1] }
   }
@@ -429,11 +444,47 @@ function reveal(s: S, now: number): S {
   return next
 }
 
+/** Acciones que actúan sobre la pregunta en curso de un juego concreto. */
+const SLOT_ACTIONS = new Set<string>([
+  'quizLoad',
+  'quizShowQuestion',
+  'quizShowNext',
+  'quizShowAll',
+  'quizHideOptions',
+  'quizShowGuesses',
+  'quizAnswerAll',
+  'quizGuess',
+  'quizSetMode',
+  'quizPick',
+  'quizUnpick',
+  'quizReveal',
+  'quizAward',
+  'quizClear',
+  'quizToggleImage',
+  'quizSetTurn',
+  'ladderSetLevel',
+  'ladderSetLifeline'
+])
+
+/** Juego al que va una acción: el indicado, la escalera para sus acciones, o el último usado. */
+export function quizGameOf(s: S, a: QuizAction): QuizGameId {
+  if (a.game) return a.game
+  if (a.type.startsWith('ladder')) return 'escalera'
+  return s.quiz.focus
+}
+
 export function applyQuizAction(s: S, a: QuizAction): S {
+  if (!SLOT_ACTIONS.has(a.type)) return applyQuizInner(s, a)
+  const game = quizGameOf(s, a)
+  const before: S = { ...s, quiz: { ...s.quiz, current: s.quiz.slots[game] ?? null } }
+  const after = applyQuizInner(before, a)
+  if (after === before) return s
+  return { ...after, quiz: { ...after.quiz, slots: { ...after.quiz.slots, [game]: after.quiz.current }, focus: game } }
+}
+
+function applyQuizInner(s: S, a: QuizAction): S {
   const q = s.quiz
   switch (a.type) {
-    case 'setView':
-      return { ...s, view: a.view }
     case 'quizSetBank':
       return withQuiz(s, { bankFile: a.file })
     case 'quizSetOrder': {
@@ -454,7 +505,7 @@ export function applyQuizAction(s: S, a: QuizAction): S {
     }
     case 'quizLoad': {
       const ladder = q.ladder
-      const inLadder = ladder.active && !ladder.outcome
+      const inLadder = ladder.active && !ladder.outcome && (!a.game || a.game === 'escalera')
       let turn = q.turn
       const mode: 'turn' | 'all' = inLadder || a.question.tipo === 'estimacion' ? 'turn' : a.mode ?? (q.allMode ? 'all' : 'turn')
       const individual = mode === 'turn' && a.question.tipo !== 'estimacion'
@@ -463,7 +514,7 @@ export function applyQuizAction(s: S, a: QuizAction): S {
         key: a.key,
         bankFile: a.bankFile,
         question: a.question,
-        phase: 'question',
+        phase: a.stage ? 'ready' : 'question',
         shown: 0,
         hidden: [],
         picked: null,
@@ -480,17 +531,30 @@ export function applyQuizAction(s: S, a: QuizAction): S {
       if (!individual && !inLadder) current.target = null
       return {
         ...s,
-        view: 'quiz',
         quiz: { ...q, current, turn, asked: individual ? q.asked + 1 : q.asked, used: { ...q.used, [a.key]: true }, timer: resetTimer(q.timer) }
       }
     }
+    case 'quizShowQuestion': {
+      const cur = q.current
+      if (!cur || cur.phase !== 'ready') return s
+      return withCurrent(s, { phase: 'question' })
+    }
+    case 'quizHideOptions': {
+      const cur = q.current
+      if (!cur || cur.phase === 'revealed' || cur.phase === 'ready') return s
+      return withCurrent(s, { shown: 0 })
+    }
+    case 'quizShowGuesses':
+      return q.current ? withCurrent(s, { showGuesses: a.show }) : s
+    case 'ladderShowResult':
+      return withQuiz(s, { ladder: { ...q.ladder, showResult: a.show && !!q.ladder.outcome } })
     case 'quizShowNext':
     case 'quizShowAll': {
       const cur = q.current
       if (!cur || cur.phase === 'revealed') return s
       const n = cur.question.opciones.length
       const shown = a.type === 'quizShowAll' ? n : Math.min(n, cur.shown + 1)
-      const phase = cur.phase === 'question' ? 'options' : cur.phase
+      const phase = cur.phase === 'question' || cur.phase === 'ready' ? 'options' : cur.phase
       const timer = shown === n && cur.phase !== 'locked' ? startTimer(q.timer, a.now) : q.timer
       return withQuiz(s, { current: { ...cur, shown, phase }, timer })
     }
@@ -537,7 +601,7 @@ export function applyQuizAction(s: S, a: QuizAction): S {
     case 'quizAward':
       return awardPending(s)
     case 'quizClear':
-      return { ...s, view: s.view === 'quiz' ? 'plato' : s.view, quiz: { ...q, current: null, timer: resetTimer(q.timer) } }
+      return { ...s, quiz: { ...q, current: null, timer: resetTimer(q.timer) } }
     case 'quizToggleImage':
       return q.current?.question.imagen ? withCurrent(s, { showImage: !q.current.showImage }) : s
     case 'quizSetScoring':
@@ -568,7 +632,7 @@ export function applyQuizAction(s: S, a: QuizAction): S {
         turn: a.target
       })
     case 'ladderStop':
-      return { ...s, view: s.view === 'result' ? 'plato' : s.view, quiz: { ...q, ladder: { ...q.ladder, active: false } } }
+      return withQuiz(s, { ladder: { ...q.ladder, active: false, showResult: false } })
     case 'ladderSetLevels': {
       const levels = a.levels.filter((l) => Number.isFinite(l.value)).slice(0, 30)
       if (!levels.length) return s
@@ -587,7 +651,8 @@ export function applyQuizAction(s: S, a: QuizAction): S {
     case 'ladderWalk': {
       if (!q.ladder.active || q.ladder.outcome) return s
       const next = withQuiz(s, { ladder: ladderWalkAway(q.ladder), timer: resetTimer(q.timer) })
-      return { ...settleLadder(next), view: 'result' }
+      const settled = settleLadder(next)
+      return withQuiz(settled, { ladder: { ...settled.quiz.ladder, showResult: true } })
     }
     case 'ladderSetAward':
       return withQuiz(s, { ladder: { ...q.ladder, awardToScore: a.awardToScore } })

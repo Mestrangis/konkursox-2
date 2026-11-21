@@ -58,7 +58,7 @@ export function buildQuienScene(s: GameState, key: string): Scene {
   const update = (st: GameState) => {
     const cur = st.quiz.current
     const q = cur?.question
-    const text = q?.enunciado ?? ''
+    const text = cur && cur.phase !== 'ready' ? q?.enunciado ?? '' : ''
     quote.textContent = text
     quote.style.fontSize = text.length > 140 ? '44px' : text.length > 90 ? '54px' : ''
     const revealed = cur?.phase === 'revealed'
@@ -138,7 +138,7 @@ export function buildEstimationScene(s: GameState, key: string): Scene {
     const q = cur?.question
     const answer = q?.valor ?? 0
     const unit = q?.unidad ? ` ${q.unidad}` : ''
-    qText.textContent = q?.enunciado ?? ''
+    qText.textContent = cur && cur.phase !== 'ready' ? q?.enunciado ?? '' : ''
     const revealed = cur?.phase === 'revealed'
     const guesses = Object.entries(cur?.guesses ?? {})
     const sk = `${answer}|${guesses.map(([k, v]) => k + v).join(',')}|${revealed}`
@@ -189,7 +189,8 @@ export function buildEstimationScene(s: GameState, key: string): Scene {
       const c = st.contestants.find((x) => x.id === slot)
       const gk = keyForSlot(st, slot)
       const g = cur?.guesses[gk]
-      plate.set(c?.name ?? '', g === undefined ? '' : formatNumber(g), '', '')
+      const showG = revealed || !!cur?.showGuesses
+      plate.set(c?.name ?? '', g === undefined || !showG ? '' : formatNumber(g), '', '')
       plate.root.classList.toggle('is-ok', winners.has(gk))
     }
   }

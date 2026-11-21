@@ -20,13 +20,14 @@ fit()
 
 let state: GameState
 let scene: Scene | null = null
+let epoch = -1
 const feed = new CaptureFeed()
 
 feed.onHealth = (health, error) => {
   void window.konk.dispatch({ type: 'setCaptureHealth', who: 'plato', health, error })
-  if (health !== 'ok') drawFrames(feed, scene, state?.cameras.rects ?? {})
+  if (health !== 'ok' && state) drawFrames(feed, scene, state)
 }
-feed.onFrame = () => drawFrames(feed, scene, state.cameras.rects)
+feed.onFrame = () => state && drawFrames(feed, scene, state)
 autoReconnect(feed, () => state?.cameras.sourceId ?? null)
 
 function render(s: GameState): void {
@@ -37,20 +38,24 @@ function render(s: GameState): void {
     const next = buildScene(s)
     const old = scene
     scene = next
+    // transición: corte (al instante) o fundido
+    const cut = s.camsScene.transition === 'cut'
+    if (cut) next.root.classList.remove('k-enter')
     stageEl.append(next.root)
-    drawFrames(feed, scene, s.cameras.rects)
-    // Fundido: la escena nueva entra por encima y la vieja se retira al terminar.
-    if (old) window.setTimeout(() => old.root.remove(), 500)
+    drawFrames(feed, scene, s)
+    if (old) {
+      if (cut) old.root.remove()
+      else window.setTimeout(() => old.root.remove(), 500)
+    }
   } else {
     scene.update(s)
-    if (prev && prev.cameras.rects !== s.cameras.rects) drawFrames(feed, scene, s.cameras.rects)
+    if (prev && (prev.cameras.rects !== s.cameras.rects || prev.contestants !== s.contestants || prev.host !== s.host)) drawFrames(feed, scene, s)
   }
   if (feed.currentSource !== s.cameras.sourceId || epoch !== s.runtime.captureEpoch) {
     epoch = s.runtime.captureEpoch
     void feed.start(s.cameras.sourceId)
   }
 }
-let epoch = -1
 
 // temporizador y otras animaciones por fotograma
 const loop = () => {

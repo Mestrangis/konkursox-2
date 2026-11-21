@@ -101,7 +101,7 @@ describe('rosco', () => {
     let s: GameState = { ...defaultState(), layout: 'duo' }
     s = applyAction(s, { type: 'roscoConfig', patch: { pointsPerHit: 5 } })
     s = applyAction(s, { type: 'roscoStart', players: [{ target: c1, letters: ['A', 'B'].map(L) }] })
-    expect(s.view).toBe('rosco')
+    expect(s.rosco.active).toBe(true)
     s = applyAction(s, { type: 'roscoMark', result: 'ok', now: 0 })
     s = applyAction(s, { type: 'roscoMark', result: 'ok', now: 0 })
     expect(s.rosco.finished).toBe(true)

@@ -1,6 +1,6 @@
 // Biblioteca de audio: carpeta con subcarpetas musica/ y efectos/, servida por el protocolo konk-media://
 import { copyFileSync, existsSync, mkdirSync, readdirSync, statSync } from 'node:fs'
-import { extname, join, relative, resolve, sep } from 'node:path'
+import { basename, extname, join, relative, resolve, sep } from 'node:path'
 import { pathToFileURL } from 'node:url'
 import { app, net, protocol } from 'electron'
 import { imagesDir } from './banks'
@@ -71,4 +71,20 @@ export function handleMediaProtocol(): void {
     }
     return net.fetch(pathToFileURL(target).toString())
   })
+}
+
+/** Copia archivos de audio (arrastrados al panel) a musica\ o efectos\. Devuelve los nombres añadidos. */
+export function importAudio(paths: string[], kind: 'musica' | 'efectos'): string[] {
+  const dir = join(ensureDir(), kind)
+  const added: string[] = []
+  for (const p of paths) {
+    const ext = extname(p).toLowerCase()
+    if (!AUDIO_EXT.has(ext)) continue
+    const base = basename(p, ext)
+    let name = `${base}${ext}`
+    for (let i = 2; existsSync(join(dir, name)); i++) name = `${base} (${i})${ext}`
+    copyFileSync(p, join(dir, name))
+    added.push(name)
+  }
+  return added
 }

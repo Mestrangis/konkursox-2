@@ -1,10 +1,11 @@
 import { join } from 'node:path'
 import { app, BrowserWindow, dialog, ipcMain, screen, shell } from 'electron'
-import { banksDir, ensureBanks, importLegacyFile, listBanks, readBank } from './banks'
-import { deleteShow, importPhoto, listShows, loadShow, saveShow, showsDir } from './library'
-import type { Segment } from '../shared/show'
+import { banksDir, createBank, deleteBank, ensureLibrary, importImage, listLibrary, markUsed, readBank, saveBank } from './banks'
+import { importPhoto } from './library'
+import type { LibType } from '../shared/library'
+import type { Bank } from '../shared/questions'
 import { installDisplayMediaHandler, listWindowSources, resolveSource } from './capture'
-import { audioDir, audioLibrary, handleMediaProtocol, registerMediaScheme, setAudioDir } from './media'
+import { audioDir, audioLibrary, handleMediaProtocol, importAudio, registerMediaScheme, setAudioDir } from './media'
 import { dispatch, flushSave, getState, initStore, onStateChange } from './store'
 import { checkForUpdates, initUpdater, installUpdate } from './updater'
 import { createPanel, createPlato, getPanel, listDisplays, placePlato, showPlato } from './windows'
@@ -30,9 +31,9 @@ if (!app.requestSingleInstanceLock()) {
     initStore(join(app.getPath('userData'), 'konkursox-state.json'), app.getVersion())
     handleMediaProtocol()
     try {
-      ensureBanks()
+      ensureLibrary(getState().quiz.used)
     } catch (err) {
-      console.error('[bancos]', err)
+      console.error('[biblioteca]', err)
     }
     installDisplayMediaHandler()
     registerIpc()
@@ -89,33 +90,26 @@ function registerIpc(): void {
     if (!res.canceled && res.filePaths[0]) setAudioDir(res.filePaths[0])
     return audioLibrary()
   })
-  ipcMain.handle('bank:list', () => listBanks())
-  ipcMain.handle('bank:get', (_e, file: string) => readBank(file))
-  ipcMain.handle('bank:openDir', () => shell.openPath(banksDir()))
-  ipcMain.handle('bank:import', async () => {
+  ipcMain.handle('audio:import', (_e, paths: string[], kind: 'musica' | 'efectos') => importAudio(paths, kind))
+  ipcMain.handle('lib:list', () => listLibrary())
+  ipcMain.handle('lib:get', (_e, ref: string) => readBank(ref))
+  ipcMain.handle('lib:save', (_e, ref: string, bank: Bank) => saveBank(ref, bank))
+  ipcMain.handle('lib:create', (_e, tipo: LibType, nombre: string) => createBank(tipo, nombre))
+  ipcMain.handle('lib:delete', (_e, ref: string) => deleteBank(ref))
+  ipcMain.handle('lib:markUsed', (_e, ref: string, ids: string[], used: boolean) => markUsed(ref, ids, used))
+  ipcMain.handle('lib:importImage', (_e, path: string) => importImage(path))
+  ipcMain.handle('lib:chooseImage', async () => {
     const win = BrowserWindow.getFocusedWindow() ?? getPanel()
     const opts: Electron.OpenDialogOptions = {
-      title: 'Importar preguntas (formato antiguo o nuevo)',
-      filters: [{ name: 'Preguntas JSON', extensions: ['json'] }],
-      properties: ['openFile', 'multiSelections']
+      title: 'Imagen de la pregunta',
+      filters: [{ name: 'Imágenes', extensions: ['jpg', 'jpeg', 'png', 'webp', 'gif', 'avif'] }],
+      properties: ['openFile']
     }
     const res = win ? await dialog.showOpenDialog(win, opts) : await dialog.showOpenDialog(opts)
-    const imported: string[] = []
-    const errors: string[] = []
-    for (const p of res.canceled ? [] : res.filePaths) {
-      try {
-        imported.push(importLegacyFile(p))
-      } catch (err) {
-        errors.push(`${p}: ${(err as Error).message}`)
-      }
-    }
-    return { imported, errors }
+    if (res.canceled || !res.filePaths[0]) return null
+    return importImage(res.filePaths[0])
   })
-  ipcMain.handle('show:list', () => listShows())
-  ipcMain.handle('show:save', (_e, title: string, segments: Segment[]) => saveShow(title, segments))
-  ipcMain.handle('show:load', (_e, file: string) => loadShow(file))
-  ipcMain.handle('show:delete', (_e, file: string) => deleteShow(file))
-  ipcMain.handle('show:openDir', () => shell.openPath(showsDir()))
+  ipcMain.handle('lib:openDir', () => shell.openPath(banksDir()))
   ipcMain.handle('people:choosePhoto', async (_e, name: string) => {
     const win = BrowserWindow.getFocusedWindow() ?? getPanel()
     const opts: Electron.OpenDialogOptions = {

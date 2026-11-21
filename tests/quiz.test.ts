@@ -181,7 +181,7 @@ describe('escalera', () => {
   it('plantarse suma lo ganado y muestra la pantalla final', () => {
     let s: GameState = defaultState()
     s = run(s, { type: 'ladderStart', target: { kind: 'team', index: 0 } }, { type: 'ladderSetLevel', level: 7 }, { type: 'ladderWalk' })
-    expect(s.view).toBe('result')
+    expect(s.quiz.ladder.showResult).toBe(true)
     expect(s.teams[0].score).toBe(4000)
   })
 
