@@ -3,7 +3,8 @@ import { sourceRectForFrame } from '../../../shared/crop'
 import { CONTESTANT_IDS, SLOT_IDS, type ContestantId, type GameState, type SlotId } from '../../../shared/types'
 import { activeContestants, camOf, camsLineup, playersInGame } from '../../../shared/scene'
 import { formatPoints } from '../../../shared/quiz'
-import { buildCamsScene } from '../../plato/camsScene'
+import { buildCamsScene, camsKey } from '../../plato/camsScene'
+import { LAYOUTS } from '../../../shared/layouts'
 import { drawFrames, type Scene } from '../../plato/scenes'
 import { askConfirm, btn, editableArea, h, seg, silhouette, sw, type Ctx, type Screen } from '../ui'
 
@@ -149,7 +150,7 @@ export function createContestantsScreen(ctx: Ctx): Screen {
         seg(
           [
             { v: 'ind', t: 'Individual' },
-            { v: 'teams', t: 'Equipos 2 contra 2' }
+            { v: 'teams', t: '2 contra 2' }
           ],
           teams ? 'teams' : 'ind',
           (v) => ctx.send({ type: 'setFormat', teams: v === 'teams' })
@@ -228,7 +229,7 @@ export function createCamerasScreen(ctx: Ctx): Screen {
     badge.textContent = live ? 'VISTA PREVIA · EN EL AIRE' : 'VISTA PREVIA'
     badge.classList.toggle('off', !live)
     // vista previa de la escena (aunque no esté en el aire)
-    const k = `cams:${camsLineup(s).join(',')}`
+    const k = camsKey(s)
     if (!scene || scene.key !== k) {
       scene = buildCamsScene(s)
       scene.root.classList.remove('k-enter')
@@ -256,7 +257,20 @@ export function createCamerasScreen(ctx: Ctx): Screen {
         ],
         s.camsScene.transition,
         (v) => ctx.send({ type: 'camsSet', patch: { transition: v } })
-      )
+      ),
+      h('div', '', { flexBasis: '100%', display: 'flex', alignItems: 'center', gap: 10, flexWrap: 'wrap' }, [
+        h('span', 'mut', { fontSize: 12 }, ['Distribución']),
+        seg(
+          [
+            { v: 'auto', t: 'Automática' },
+            ...(['solo', 'duo', 'trio', 'quad'] as const).map((id) => ({ v: id, t: id === 'solo' ? '1 + yo' : String(LAYOUTS[id].count), disabled: activeContestants(s).length < LAYOUTS[id].count })),
+            ...(s.layout === 'teams' ? [{ v: 'teams' as const, t: '2 contra 2' }] : [])
+          ],
+          s.camsScene.template ?? 'auto',
+          (v) => ctx.send({ type: 'camsSet', patch: { template: v === 'auto' ? null : v } })
+        ),
+        h('span', 'mut', { fontSize: 11 }, ['Las plantillas son las del diseño del plató; en Automática manda la fila "Quién sale".'])
+      ])
     )
     thumbs.clear()
     const list: SlotId[] = ['host', ...activeContestants(s)]

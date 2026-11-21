@@ -19,7 +19,15 @@ const MIME: Record<string, string> = {
   '.webm': 'video/webm',
   '.ogv': 'video/ogg',
   '.mov': 'video/quicktime',
-  '.mkv': 'video/x-matroska'
+  '.mkv': 'video/x-matroska',
+  '.mp3': 'audio/mpeg',
+  '.wav': 'audio/wav',
+  '.ogg': 'audio/ogg',
+  '.oga': 'audio/ogg',
+  '.opus': 'audio/ogg',
+  '.m4a': 'audio/mp4',
+  '.aac': 'audio/aac',
+  '.flac': 'audio/flac'
 }
 
 export const mediaDir = (): string => join(app.getPath('documents'), 'KONKURSOX', 'multimedia')
@@ -148,7 +156,12 @@ export async function addYoutube(url: string, folder: string): Promise<{ title: 
 
 /** Sirve un archivo de multimedia\ con soporte de Range (para poder saltar en los vídeos). */
 export function serveMedia(req: Request, relPath: string): Response {
-  const root = resolve(mediaDir())
+  return serveFile(req, mediaDir(), relPath)
+}
+
+/** Sirve un archivo de una carpeta con soporte de peticiones Range (para poder saltar en audio y vídeo). */
+export function serveFile(req: Request, rootDir: string, relPath: string): Response {
+  const root = resolve(rootDir)
   const target = resolve(root, relPath)
   const rel = relative(root, target)
   if (rel.startsWith('..') || rel.includes(':') || !target.startsWith(root + sep) || !existsSync(target)) return new Response('no encontrado', { status: 404 })

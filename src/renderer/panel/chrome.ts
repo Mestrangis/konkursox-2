@@ -1,6 +1,7 @@
 // Barra "En el aire", navegación y dock de marcador/música/efectos (design/panel.html: componentes).
 import { formatPoints } from '../../shared/quiz'
 import { activeContestants, currentTurn, gameLabel, GAMES, playedCount, SCENES } from '../../shared/scene'
+import type { Corner, HostMode } from '../../shared/arrange'
 import { targetMembers } from '../../shared/order'
 import type { GameState, SlotId } from '../../shared/types'
 import { buildScene, drawFrames, sceneKey, type Scene } from '../plato/scenes'
@@ -199,14 +200,23 @@ export function createDock(ctx: Ctx) {
   const tCur = h('span')
   const tDur = h('span')
   const playIco = h('span')
+  // mientras arrastras solo se mueve la barra y el tiempo; al soltar se salta
+  let dragFrac: number | null = null
   seek.onmousedown = (e) => {
+    e.preventDefault()
     const r = seek.getBoundingClientRect()
-    const to = (ev: MouseEvent) => ctx.audio.seek(Math.max(0, Math.min(1, (ev.clientX - r.left) / r.width)))
-    to(e)
-    const move = (ev: MouseEvent) => to(ev)
-    const up = () => {
+    const frac = (ev: MouseEvent) => Math.max(0, Math.min(1, (ev.clientX - r.left) / r.width))
+    dragFrac = frac(e)
+    renderPlayer()
+    const move = (ev: MouseEvent) => {
+      dragFrac = frac(ev)
+      renderPlayer()
+    }
+    const up = (ev: MouseEvent) => {
       window.removeEventListener('mousemove', move)
       window.removeEventListener('mouseup', up)
+      dragFrac = null
+      ctx.audio.seek(frac(ev))
     }
     window.addEventListener('mousemove', move)
     window.addEventListener('mouseup', up)
@@ -353,10 +363,11 @@ export function createDock(ctx: Ctx) {
     trackSub.textContent = a.current ? `${a.playing ? 'Sonando' : 'En pausa'}${ctx.state.audio.loop ? ' · bucle' : ''}` : `${ctx.audioLib.music.length} pistas en la carpeta`
     playIco.replaceChildren(icon(a.playing ? ICONS.pause : ICONS.play, 20, '#111113'))
     const p = a.position
-    const k = p.duration ? (p.current / p.duration) * 100 : 0
+    const cur = dragFrac !== null && p.duration ? dragFrac * p.duration : p.current
+    const k = p.duration ? (cur / p.duration) * 100 : 0
     fill.style.width = `${k}%`
     knob.style.left = `${k}%`
-    tCur.textContent = mmss(p.current)
+    tCur.textContent = mmss(cur)
     tDur.textContent = mmss(p.duration)
   }
   ctx.audio.onChange = () => {
@@ -422,16 +433,37 @@ export function createDock(ctx: Ctx) {
 // ---------------------------------------------------------------- fila "Quién sale" (siempre visible)
 
 export function createPeopleRow(ctx: Ctx) {
+  // cómo salgo yo: igual, destacado o en una esquina (un desplegable para que quepa en la fila)
+  const hostSelect = (s: GameState) => {
+    const sel = h('select', 'inp', { height: 32, width: 168, flex: 'none', fontSize: 13, padding: '0 6px' })
+    sel.title = 'Cómo sale el presentador en Cámaras y Juego'
+    const opts: [string, string][] = [
+      ['igual', 'Yo: igual'],
+      ['destacado', 'Yo: destacado'],
+      ['esquina:tl', 'Yo: esquina ↖'],
+      ['esquina:tr', 'Yo: esquina ↗'],
+      ['esquina:bl', 'Yo: esquina ↙'],
+      ['esquina:br', 'Yo: esquina ↘']
+    ]
+    for (const [v, t] of opts) sel.append(new Option(t, v))
+    sel.value = s.camsScene.hostMode === 'esquina' ? `esquina:${s.camsScene.corner}` : s.camsScene.hostMode
+    sel.onchange = () => {
+      const [mode, corner] = sel.value.split(':') as [HostMode, Corner | undefined]
+      ctx.send({ type: 'camsSet', patch: corner ? { hostMode: mode, corner } : { hostMode: mode } })
+      // destacado o en esquina implica que salgo
+      if (mode !== 'igual' && !ctx.state.camsScene.on.host) ctx.send({ type: 'camsToggle', slot: 'host' })
+    }
+    return sel
+  }
   const el = h('div', 'peoplerow ui')
   let key = ''
   return {
     el,
     update(s: GameState): void {
       const people: SlotId[] = ['host', ...activeContestants(s)]
-      const k = JSON.stringify([s.camsScene.on, s.camsScene.preset, s.scene, people, s.host.name, s.contestants.map((c) => c.name)])
+      const k = JSON.stringify([s.camsScene.on, s.camsScene.preset, s.camsScene.hostMode, s.camsScene.corner, s.camsScene.template, s.scene, people, s.host.name, s.contestants.map((c) => c.name)])
       if (k === key) return
       key = k
-      const applies = s.scene === 'camaras' || s.scene === 'juego'
       el.replaceChildren(
         h('span', 'lbl', { flex: 'none' }, ['Quién sale']),
         ...people.map((slot) => {
@@ -443,13 +475,14 @@ export function createPeopleRow(ctx: Ctx) {
           chip.onclick = () => ctx.send({ type: 'camsToggle', slot })
           return chip
         }),
+        hostSelect(s),
+        ...(s.camsScene.template && s.scene === 'camaras' ? [h('span', 'nm warn', { flex: 'none' }, ['Plantilla fija'])] : []),
         h('span', 'spacer'),
         ...([
           ['yo', 'Solo yo', 'F6'],
-          ['turno', 'Solo el del turno', 'F7'],
+          ['turno', 'El del turno', 'F7'],
           ['todos', 'Todos', 'F8']
         ] as const).map(([v, t, key2]) => btn(t, () => ctx.send({ type: 'camsPreset', preset: v }), `b sm ghost${s.camsScene.preset === v ? ' on' : ''}`, key2)),
-        h('span', 'mut', { fontSize: 11, flex: 'none', maxWidth: 170, lineHeight: '1.3' }, [applies ? 'Se aplica ahora en el plató (Cámaras y Juego)' : 'Se aplica en las escenas Cámaras y Juego'])
       )
     }
   }

@@ -1,10 +1,11 @@
 // Escenas del plató (lo que está "en el aire"), escena Cámaras, juego en el aire,
 // juegos jugados y deshacer. El estado de los juegos vive aparte: cambiar de escena no lo toca.
+import type { Corner, HostMode } from './arrange'
 import type { Gender } from './games'
 import { contestantOrder, playerCount, targetMembers } from './order'
 import type { Target } from './quiz'
 import type { RoscoState } from './rosco'
-import { CONTESTANT_IDS, type Action, type ContestantId, type GameState, type SlotId } from './types'
+import { CONTESTANT_IDS, type Action, type ContestantId, type GameState, type LayoutId, type SlotId } from './types'
 
 export type SceneId = 'cabecera' | 'camaras' | 'juego' | 'marcador' | 'final' | 'multimedia'
 export const SCENES: { id: SceneId; key: string; label: string }[] = [
@@ -39,6 +40,21 @@ export interface CamsScene {
   preset: CamsPreset | null
   /** versión del formato (para reiniciar la fila al actualizar) */
   rev?: number
+  /** cómo sale el presentador en Cámaras y Juego */
+  hostMode: HostMode
+  /** esquina del presentador en modo "esquina" */
+  corner: Corner
+  /** plantilla fija de la escena Cámaras (null: reparto automático) */
+  template: LayoutId | null
+}
+
+/** La plantilla elegida, si se puede usar con los concursantes que hay. */
+export function camsTemplate(s: GameState): LayoutId | null {
+  const t = s.camsScene.template
+  if (!t || t === 'logo') return null
+  if (t === 'teams') return s.layout === 'teams' ? t : null
+  const n = { solo: 1, duo: 2, trio: 3, quad: 4 }[t]
+  return activeContestants(s).length >= n ? t : null
 }
 
 // ---------------------------------------------------------------- multimedia
@@ -136,7 +152,7 @@ export const SCENE_ACTIONS = new Set<string>([
 ])
 
 export function defaultCams(): CamsScene {
-  return { on: { host: false, c1: true, c2: true, c3: true, c4: true }, names: true, scores: true, transition: 'fade', preset: null, rev: 2 }
+  return { on: { host: false, c1: true, c2: true, c3: true, c4: true }, names: true, scores: true, transition: 'fade', preset: null, rev: 2, hostMode: 'igual', corner: 'br', template: null }
 }
 
 export const DEFAULT_FX: FxSlot[] = [

@@ -1686,7 +1686,7 @@ input[type='range'] {
   align-items: center;
   gap: 8px;
   height: 34px;
-  padding: 0 12px 0 6px;
+  padding: 0 10px 0 4px;
   border-radius: 17px;
   border: 1px solid #2f2f35;
   background: #1d1d21;

@@ -1,6 +1,7 @@
 // Escenas de preguntas: test, Sí/No, escalera de premios y pantalla final de la escalera.
 import { contestantOrder } from '../../shared/order'
 import { camsLineup } from '../../shared/scene'
+import { arrangeFeatured, pipBox } from '../../shared/arrange'
 import { formatPoints, ladderBank, LIFELINES, targetKey, type LifelineId, type Target } from '../../shared/quiz'
 import type { Box } from '../../shared/layouts'
 import type { ContestantId, GameState, SlotId } from '../../shared/types'
@@ -60,7 +61,7 @@ export function quizSceneKey(s: GameState): string {
     const t = s.quiz.ladder.target
     return `ladder:${n}:${t?.kind === 'team' ? membersOf(s, t).join(',') : t?.kind === 'contestant' ? t.id : ''}:${s.quiz.ladder.levels.length}`
   }
-  return `${kind}:${n}:${s.layout}:${contestantOrder(s).join(',')}:${camsLineup(s).join(',')}`
+  return `${kind}:${n}:${s.layout}:${contestantOrder(s).join(',')}:${camsLineup(s).join(',')}:${s.camsScene.hostMode}:${s.camsScene.corner}`
 }
 
 // ---------------------------------------------------------------- piezas
@@ -204,11 +205,30 @@ export interface CamGeo {
  * (concursantes y, si se activa, el presentador en medio). Medidas del diseño para 1-4 y 5 a juego.
  */
 export function camGeometry(s: GameState, kind: Kind, camH0?: number, plateY0?: number): CamGeo[] {
-  const ids = camsLineup(s)
-  const n = ids.length
   const sino = kind === 'sino'
   const camH = camH0 ?? (sino ? 560 : 600)
   const plateY = plateY0 ?? (sino ? 572 : 612)
+  const all = camsLineup(s)
+  const area = { x: 100, y: 40, w: 1720, h: camH }
+  const mode = s.camsScene.hostMode
+  if (mode === 'destacado') {
+    const placed = arrangeFeatured(all, area)
+    if (placed)
+      return placed.map((p) => {
+        const pw = Math.min(p.small ? 420 : 600, p.cam.w - 40)
+        return { slot: p.slot, cam: p.cam, plate: { x: p.cam.x + (p.cam.w - pw) / 2, y: p.cam.y + p.cam.h - 28, w: pw, h: p.small ? 48 : 56 }, c: p.small ? 20 : 24, nameSize: p.small ? 22 : undefined }
+      })
+  }
+  if (mode === 'esquina' && all.includes('host') && all.length > 1) {
+    const rest = equalGeometry(all.filter((x) => x !== 'host'), camH, plateY)
+    const b = pipBox(area, s.camsScene.corner)
+    return [...rest, { slot: 'host', cam: b, plate: { x: b.x + 30, y: b.y + b.h - 24, w: b.w - 60, h: 44 }, c: 18, nameSize: 20 }]
+  }
+  return equalGeometry(all, camH, plateY)
+}
+
+function equalGeometry(ids: SlotId[], camH: number, plateY: number): CamGeo[] {
+  const n = ids.length
   const ws: Record<number, number> = { 1: 1180, 2: 840, 3: 546, 4: 403, 5: 312 }
   const pw: Record<number, number> = { 1: 600, 2: 560, 3: 480, 4: 351, 5: 284 }
   const w = ws[n] ?? 312

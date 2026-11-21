@@ -1,11 +1,10 @@
 // Biblioteca de audio: carpeta con subcarpetas musica/ y efectos/, servida por el protocolo konk-media://
 import { copyFileSync, existsSync, mkdirSync, readdirSync, statSync } from 'node:fs'
-import { basename, extname, join, relative, resolve, sep } from 'node:path'
-import { pathToFileURL } from 'node:url'
-import { app, net, protocol } from 'electron'
+import { basename, extname, join } from 'node:path'
+import { app, protocol } from 'electron'
 import { imagesDir } from './banks'
 import { peopleDir } from './library'
-import { serveMedia } from './multimedia'
+import { serveFile, serveMedia } from './multimedia'
 import { dispatch, getState } from './store'
 import type { AudioLibrary } from '../shared/types'
 
@@ -66,13 +65,8 @@ export function handleMediaProtocol(): void {
     if (url.host === 'multimedia') return serveMedia(req, decodeURIComponent(url.pathname).replace(/^\/+/, ''))
     const roots: Record<string, string> = { audio: audioDir(), imagenes: imagesDir(), personas: peopleDir() }
     if (!roots[url.host]) return new Response('forbidden', { status: 403 })
-    const root = resolve(roots[url.host])
-    const target = resolve(root, decodeURIComponent(url.pathname).replace(/^\/+/, ''))
-    const rel = relative(root, target)
-    if (rel.startsWith('..') || rel.includes(':') || target === root || !target.startsWith(root + sep)) {
-      return new Response('forbidden', { status: 403 })
-    }
-    return net.fetch(pathToFileURL(target).toString())
+    // con Range: sin esto el navegador no puede saltar y la barra vuelve a 0:00
+    return serveFile(req, roots[url.host], decodeURIComponent(url.pathname).replace(/^\/+/, ''))
   })
 }
 
