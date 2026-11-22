@@ -3,7 +3,7 @@ import { ROSCO_ALPHABET } from '../../../shared/questions'
 import { sameTarget, turnTargets, type Target } from '../../../shared/quiz'
 import { buildLetters, remainingMs, roscoPoints, roscoStats, roscoWaiting, roscoWinners, type RoscoAction, type RoscoPlayer } from '../../../shared/rosco'
 import type { GameState } from '../../../shared/types'
-import { askConfirm, btn, h, kbd, mmss, nameOf, type Ctx, type Screen } from '../ui'
+import { askConfirm, btn, contextMenu, h, kbd, mmss, nameOf, sw, type Ctx, type Screen } from '../ui'
 import { airBadge, flowSteps, goButton, onAirLabel } from './common'
 
 export function createRoscoScreen(ctx: Ctx): Screen {
@@ -21,6 +21,11 @@ export function createRoscoScreen(ctx: Ctx): Screen {
     if (!s.rosco.active || s.rosco.finished) return
     r({ type: 'roscoMark', result: res, now: Date.now() })
     ctx.cue(res === 'ok' ? 'correcto' : res === 'ko' ? 'error' : 'pasapalabra')
+  }
+  /** Perdonar un fallo: la letra pasa a acierto o a pasapalabra (los puntos se recalculan). */
+  function fix(player: number, index: number, status: 'ok' | 'pasa'): void {
+    r({ type: 'roscoFix', player, index, status, now: Date.now() })
+    if (!S().quiz.bribe.enabled && status === 'ok') ctx.cue('correcto')
   }
   function toggleClock(): void {
     const s = S()
@@ -80,7 +85,18 @@ export function createRoscoScreen(ctx: Ctx): Screen {
     p.letters.forEach((l, i) => {
       const a = -Math.PI / 2 + (i * 2 * Math.PI) / N
       const cur = i === p.current && !p.done
-      box.append(h('span', `ld s-${cur ? 'cur' : l.status}`, { left: Math.round(100 + 88 * Math.cos(a)), top: Math.round(100 + 88 * Math.sin(a)) }, [l.letra]))
+      const ld = h('span', `ld s-${cur ? 'cur' : l.status}`, { left: Math.round(100 + 88 * Math.cos(a)), top: Math.round(100 + 88 * Math.sin(a)) }, [l.letra])
+      if (l.status === 'ko') {
+        // clic en una letra fallada: convertirla en acierto o en pasapalabra
+        ld.style.cursor = 'pointer'
+        ld.title = 'Fallada: clic para corregirla'
+        ld.onclick = (e) => contextMenu(e.clientX, e.clientY, [
+          h('span', 'lbl', {}, [`Fallo en la ${l.letra}`]),
+          { label: 'Contar como acierto', run: () => fix(index, i, 'ok') },
+          { label: 'Dejarla en pasapalabra', run: () => fix(index, i, 'pasa') }
+        ])
+      }
+      box.append(ld)
     })
     box.append(
       h('div', '', { position: 'absolute', inset: 0, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }, [
@@ -158,7 +174,7 @@ export function createRoscoScreen(ctx: Ctx): Screen {
     const n1 = players[0] ? nameOf(s, players[0]) : 'concursante 1'
     const n2 = players[1] ? nameOf(s, players[1]) : 'concursante 2'
     body.replaceChildren(
-      ...(last ? [last] : []),
+      ...(last ? [last, ...lastKoBar(s)] : []),
       ...(missing.length
         ? [
             h('div', 'banner bad', { display: 'flex', alignItems: 'center', gap: 12 }, [
@@ -202,6 +218,26 @@ export function createRoscoScreen(ctx: Ctx): Screen {
         ])
       })
     ])
+  }
+
+  /** Barra del último fallo: perdonarlo con un clic (también se puede tocar cualquier letra fallada). */
+  function lastKoBar(s: GameState): HTMLElement[] {
+    const ro = s.rosco
+    const lk = ro.lastKo
+    const pl = lk ? ro.players[lk.player] : null
+    const letter = lk && pl ? pl.letters[lk.index] : null
+    if (!lk || !pl || letter?.status !== 'ko') return []
+    return [
+      h('div', 'pnl missrow', {}, [
+        h('span', '', { fontWeight: 700 }, [`Fallo de ${nameOf(s, pl.target)} en la ${letter.letra}`]),
+        h('span', 'mut', { fontSize: 12 }, [`(${letter.respuesta.toUpperCase()})`]),
+        btn('Contar como acierto', () => fix(lk.player, lk.index, 'ok'), 'b sm', 'G'),
+        btn('Dejarla en pasapalabra', () => fix(lk.player, lk.index, 'pasa'), 'b sm', 'H'),
+        h('span', 'spacer'),
+        h('span', '', { display: 'flex', alignItems: 'center', gap: 6, fontSize: 12 }, [sw(s.quiz.bribe.enabled, () => ctx.send({ type: 'quizSetForgive', patch: { bribe: !S().quiz.bribe.enabled } }), 'Rótulo de soborno'), 'Soborno']),
+        h('span', 'mut', { fontSize: 11 }, ['Puntos recalculados solos · clic en cualquier letra roja para corregirla'])
+      ])
+    ]
   }
 
   let goRun: (() => void) | null = null
@@ -286,6 +322,7 @@ export function createRoscoScreen(ctx: Ctx): Screen {
     body.replaceChildren(
       h('div', '', { display: 'flex', justifyContent: 'flex-end' }, [onAirLabel(s, 'rosco', 'el rosco')]),
       h('div', '', { display: 'flex', gap: 12 }, cards),
+      ...lastKoBar(s),
       ...(p.timeUp ? [h('div', 'banner bad', { fontSize: 15, fontWeight: 700 }, [`Tiempo agotado para ${nameOf(s, p.target)}${waiting ? ' · pulsa "Pasar turno" cuando quieras' : ''}`])] : []),
       def,
       ...(waiting ? [passGo.el] : []),
@@ -307,6 +344,11 @@ export function createRoscoScreen(ctx: Ctx): Screen {
     const s = S()
     const live = s.rosco.active && !s.rosco.finished
     const k = e.key.length === 1 ? e.key.toLowerCase() : e.key
+    const lk0 = s.rosco.lastKo
+    if (!live && (k === 'g' || k === 'h') && lk0 && s.rosco.players[lk0.player]?.letters[lk0.index]?.status === 'ko') {
+      fix(lk0.player, lk0.index, k === 'g' ? 'ok' : 'pasa')
+      return true
+    }
     if (!live) {
       if (k === ' ' && goRun) {
         goRun()
@@ -314,7 +356,9 @@ export function createRoscoScreen(ctx: Ctx): Screen {
       }
       return false
     }
-    if (k === ' ' && waitRun) waitRun()
+    const lk = s.rosco.lastKo
+    if ((k === 'g' || k === 'h') && lk && s.rosco.players[lk.player]?.letters[lk.index]?.status === 'ko') fix(lk.player, lk.index, k === 'g' ? 'ok' : 'pasa')
+    else if (k === ' ' && waitRun) waitRun()
     else if (k === 'a') mark('ok')
     else if (k === 'f') mark('ko')
     else if (k === ' ') mark('pasa')

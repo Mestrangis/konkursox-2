@@ -118,7 +118,11 @@ function go(id: ScreenId): void {
 
 // ---------------------------------------------------------------- estado
 let epoch = -1
+let lastBribe: number | null = null
 function render(s: GameState): void {
+  // sonido del soborno (sale el rótulo en el plató)
+  if (s.quiz.bribe.at && s.quiz.bribe.at !== lastBribe && state) ctx.cue('soborno')
+  lastBribe = s.quiz.bribe.at
   state = s
   air.update(s)
   people.update(s)

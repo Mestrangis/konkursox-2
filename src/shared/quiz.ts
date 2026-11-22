@@ -19,6 +19,10 @@ export interface Attempt {
   correct: boolean
   delta: number
   awarded: boolean
+  /** fallo perdonado por el presentador: "seguir igualmente" (cuenta como acierto) */
+  forgiven?: boolean
+  /** ya se le dio una segunda oportunidad por este fallo */
+  retried?: boolean
 }
 
 export interface CurrentQuestion {
@@ -138,6 +142,7 @@ export type CueId =
   | 'pasapalabra'
   | 'estimacion'
   | 'ganador'
+  | 'soborno'
 export const CUES: { id: CueId; label: string; def: string | null }[] = [
   { id: 'pregunta', label: 'Nueva pregunta', def: 'pregunta.mp3' },
   { id: 'marcar', label: 'Respuesta definitiva', def: 'tension.mp3' },
@@ -151,7 +156,8 @@ export const CUES: { id: CueId; label: string; def: string | null }[] = [
   { id: 'estimacion', label: 'Estimación: revelado', def: 'tension.mp3' },
   { id: 'pasapalabra', label: 'Rosco: pasapalabra', def: 'pregunta.mp3' },
   { id: 'transicion', label: 'Rótulo de prueba', def: 'pregunta.mp3' },
-  { id: 'ganador', label: 'Marcador final', def: 'victoria.mp3' }
+  { id: 'ganador', label: 'Marcador final', def: 'victoria.mp3' },
+  { id: 'soborno', label: 'Soborno aceptado', def: 'victoria.mp3' }
 ]
 
 export interface QuizState {
@@ -178,6 +184,10 @@ export interface QuizState {
   estimation: EstimationConfig
   /** comodines de la escalera (hasta 5) */
   lifelines: LifelineDef[]
+  /** "seguir igualmente" tras un fallo suma los puntos del acierto */
+  forgiveScores: boolean
+  /** rótulo "SOBORNO ACEPTADO" al perdonar un fallo (para la coña) */
+  bribe: { enabled: boolean; at: number | null }
 }
 
 export type QuizAction = (
@@ -219,6 +229,11 @@ export type QuizAction = (
   | { type: 'ladderWalk' }
   | { type: 'ladderSetAward'; awardToScore: boolean }
   | { type: 'ladderSetLifelines'; lifelines: LifelineDef[] }
+  | { type: 'quizSecondChance'; now: number }
+  | { type: 'quizForgive'; now: number; key?: string }
+  | { type: 'quizSetCorrect'; index: number }
+  | { type: 'quizSetValue'; value: number }
+  | { type: 'quizSetForgive'; patch: Partial<{ forgiveScores: boolean; bribe: boolean }> }
   | { type: 'ladderSetPlan'; plan: LadderPick[] }
 ) & { /** juego sobre el que actúa (por defecto, el último usado) */ game?: QuizGameId }
 
@@ -259,6 +274,8 @@ export function defaultQuiz(): QuizState {
     asked: 0,
     ladder: defaultLadder(),
     lifelines: DEFAULT_LIFELINES.map((l) => ({ ...l })),
+    forgiveScores: true,
+    bribe: { enabled: false, at: null },
     sounds: Object.fromEntries(CUES.map((c) => [c.id, c.def])) as Record<CueId, string | null>,
     slots: {},
     focus: 'test',
@@ -480,6 +497,118 @@ function reveal(s: S, now: number): S {
   return next
 }
 
+// ---------------------------------------------------------------- corregir y perdonar fallos
+
+/** El último fallo que se puede perdonar (null si no hay). */
+export function lastMiss(cur: CurrentQuestion | null): Attempt | null {
+  if (!cur || cur.mode === 'all' || cur.question.tipo === 'estimacion') return null
+  const a = cur.attempts[cur.attempts.length - 1]
+  return a && !a.correct && !a.forgiven && !a.retried ? a : null
+}
+
+/** Sale el rótulo del soborno (si está activado). */
+const bribed = (s: S, now: number): S => (s.quiz.bribe.enabled ? withQuiz(s, { bribe: { ...s.quiz.bribe, at: now } }) : s)
+
+/** Deshace un resultado de la escalera ya cerrado (y el premio si se sumó). */
+function reopenLadder(s: S): S {
+  const l = s.quiz.ladder
+  if (!l.outcome) return s
+  const next = l.awarded && l.awardToScore ? applyDelta(s, l.target, -l.outcome.prize) : s
+  return withQuiz(next, { ladder: { ...l, outcome: null, awarded: false, showResult: false } })
+}
+
+/** Cambia los puntos de un intento ya resuelto: si ya se sumaron, se ajusta la diferencia. */
+function redelta(s: S, a: Attempt, delta: number): { s: S; a: Attempt } {
+  const next = a.awarded ? applyDelta(s, a.target, delta - a.delta) : s
+  return { s: next, a: { ...a, delta } }
+}
+
+/** "Segunda oportunidad": la opción fallada queda tachada y vuelve a elegir. En la escalera no cae. */
+function secondChance(s: S, now: number): S {
+  const cur = s.quiz.current
+  const miss = lastMiss(cur)
+  if (!cur || !miss) return s
+  let next = s
+  // sin penalización por el fallo perdonado
+  const r = redelta(next, miss, 0)
+  next = r.s
+  const attempts = [...cur.attempts.slice(0, -1), { ...r.a, awarded: true, retried: true }]
+  if (cur.ladderLevel !== null && next.quiz.ladder.outcome?.kind === 'failed') next = reopenLadder(next)
+  next = withQuiz(next, { current: { ...cur, attempts, phase: 'options', picked: null, target: miss.target, revealedAt: null } })
+  return bribed(next, now)
+}
+
+/** "Seguir igualmente": se sigue como si hubiera acertado. En la escalera sube; en el resto suma si así se elige. */
+function forgive(s: S, now: number, key?: string): S {
+  const cur = s.quiz.current
+  if (!cur) return s
+  // "todos responden": se perdona a uno concreto
+  const idx = key !== undefined ? cur.attempts.findIndex((a) => !a.correct && !a.forgiven && a.target && targetKey(a.target) === key) : cur.attempts.length - 1
+  const miss = cur.attempts[idx]
+  if (!miss || miss.correct || miss.forgiven) return s
+  const inLadder = cur.ladderLevel !== null && s.quiz.ladder.active
+  let next = s
+  const r = redelta(next, miss, inLadder ? 0 : s.quiz.forgiveScores ? scoreDelta(s.quiz.scoring, true) : 0)
+  next = r.s
+  const attempts = cur.attempts.map((a, i) => (i === idx ? { ...r.a, forgiven: true } : a))
+  next = withQuiz(next, { current: { ...cur, attempts, phase: 'revealed', picked: cur.picked ?? miss.pick, target: miss.target, revealedAt: cur.revealedAt ?? now } })
+  if (s.quiz.scoring.autoAward) next = awardPending(next)
+  if (inLadder) {
+    next = reopenLadder(next)
+    next = withQuiz(next, { ladder: ladderAnswer(next.quiz.ladder, true) })
+    next = settleLadder(next)
+  }
+  return bribed(next, now)
+}
+
+/** Cambiar en directo cuál es la opción correcta. Si ya estaba revelada, se recalculan puntos (y escalera). */
+function setCorrect(s: S, index: number): S {
+  const cur = s.quiz.current
+  if (!cur || cur.question.tipo === 'estimacion' || index < 0 || index >= cur.question.opciones.length || index === cur.question.correcta) return s
+  const question = { ...cur.question, correcta: index }
+  if (cur.phase !== 'revealed' && !cur.attempts.length) return withCurrent(s, { question })
+  const inLadder = cur.ladderLevel !== null && s.quiz.ladder.active
+  const before = cur.attempts[cur.attempts.length - 1]
+  let next = s
+  const attempts: Attempt[] = []
+  for (const a of cur.attempts) {
+    const correct = a.pick === index
+    const r = redelta(next, a, a.forgiven ? a.delta : inLadder ? 0 : scoreDelta(s.quiz.scoring, correct))
+    next = r.s
+    attempts.push({ ...r.a, correct, forgiven: correct ? false : a.forgiven })
+  }
+  // si con la corrección alguien acierta (p. ej. tras un rebote), la pregunta queda resuelta
+  const solved = cur.mode !== 'all' && attempts.some((x) => x.correct || x.forgiven)
+  const phase = solved ? 'revealed' : cur.phase
+  const last = attempts.find((x) => x.correct || x.forgiven) ?? attempts[attempts.length - 1]
+  next = withQuiz(next, { current: { ...cur, question, attempts, phase, picked: solved && cur.phase !== 'revealed' ? last.pick : cur.picked, target: solved && cur.phase !== 'revealed' ? last.target : cur.target, revealedAt: cur.revealedAt ?? (solved ? Date.now() : null) } })
+  if (inLadder && before && cur.phase === 'revealed') {
+    const was = before.correct || !!before.forgiven
+    const now = attempts[attempts.length - 1].correct || !!attempts[attempts.length - 1].forgiven
+    if (was !== now) {
+      // vuelve al escalón de esta pregunta y se resuelve otra vez
+      next = reopenLadder(next)
+      next = withQuiz(next, { ladder: { ...next.quiz.ladder, level: cur.ladderLevel! } })
+      next = withQuiz(next, { ladder: ladderAnswer(next.quiz.ladder, now) })
+      next = settleLadder(next)
+    }
+  }
+  return next
+}
+
+/** Estimación: cambiar la cifra correcta. Si ya estaba revelada, se recalcula quién gana y los puntos. */
+function setValue(s: S, value: number): S {
+  const cur = s.quiz.current
+  if (!cur || cur.question.tipo !== 'estimacion' || !Number.isFinite(value)) return s
+  const question = { ...cur.question, valor: value }
+  if (cur.phase !== 'revealed') return withCurrent(s, { question })
+  // quita lo que se hubiera sumado y vuelve a revelar con la cifra nueva
+  let next = s
+  for (const a of cur.attempts) if (a.awarded) next = applyDelta(next, a.target, -a.delta)
+  next = withQuiz(next, { current: { ...cur, question, attempts: [], estimation: null, phase: 'options' } })
+  return revealEstimation(next, cur.revealedAt ?? Date.now())
+}
+
 /** Acciones que actúan sobre la pregunta en curso de un juego concreto. */
 const SLOT_ACTIONS = new Set<string>([
   'quizLoad',
@@ -497,6 +626,10 @@ const SLOT_ACTIONS = new Set<string>([
   'quizAward',
   'quizClear',
   'quizToggleImage',
+  'quizSecondChance',
+  'quizForgive',
+  'quizSetCorrect',
+  'quizSetValue',
   'quizSetTurn',
   'ladderSetLevel',
   'ladderSetLifeline'
@@ -639,6 +772,19 @@ function applyQuizInner(s: S, a: QuizAction): S {
     }
     case 'quizAward':
       return awardPending(s)
+    case 'quizSecondChance':
+      return secondChance(s, a.now)
+    case 'quizForgive':
+      return forgive(s, a.now, a.key)
+    case 'quizSetCorrect':
+      return setCorrect(s, a.index)
+    case 'quizSetValue':
+      return setValue(s, a.value)
+    case 'quizSetForgive':
+      return withQuiz(s, {
+        forgiveScores: a.patch.forgiveScores ?? q.forgiveScores,
+        bribe: { ...q.bribe, enabled: a.patch.bribe ?? q.bribe.enabled }
+      })
     case 'quizClear':
       return { ...s, quiz: { ...q, current: null, timer: resetTimer(q.timer) } }
     case 'quizToggleImage':

@@ -6,6 +6,7 @@ import {
   formatPoints,
   ladderBank,
   ladderSafe,
+  lastMiss,
   sameTarget,
   targetKey,
   turnTargets,
@@ -15,8 +16,8 @@ import {
 } from '../../../shared/quiz'
 import { gameLabel, type QuizGameId } from '../../../shared/scene'
 import type { GameState } from '../../../shared/types'
-import { askConfirm, btn, h, icon, ICONS, nameOf, seg, type Ctx, type Screen } from '../ui'
-import { airBadge, bankFor, flowSteps, goButton, nextUnused, onAirLabel, questionList, timerControls, toGame } from './common'
+import { askConfirm, btn, h, icon, ICONS, nameOf, seg, sw, type Ctx, type Screen } from '../ui'
+import { airBadge, askSaveFix, bankFor, flowSteps, goButton, nextUnused, onAirLabel, questionList, timerControls, toGame } from './common'
 import { editLadderPlan, planQuestion } from './ladderPlan'
 import { lifelineIcon } from '../../ds/lifeline'
 
@@ -41,6 +42,7 @@ export function createQuizScreen(ctx: Ctx, game: Exclude<QuizGameId, 'estimacion
   const flow = h('div', '', { display: 'flex', gap: 18, alignItems: 'center', flexWrap: 'wrap' })
   const qpanel = h('div', 'pnl', { padding: '18px 20px', display: 'flex', flexDirection: 'column', gap: 14 })
   const marks = h('div')
+  const missRow = h('div')
   const ladderBox = h('div')
   const secondary = h('div', 'secrow')
   const turnRow = h('div', 'secrow')
@@ -48,7 +50,7 @@ export function createQuizScreen(ctx: Ctx, game: Exclude<QuizGameId, 'estimacion
   const el = h('div', 'screen', {}, [
     header,
     h('div', '', { display: 'flex', gap: 18, minHeight: 0, flex: 1 }, [
-      h('div', '', { flex: 1, minWidth: 0, display: 'flex', flexDirection: 'column', gap: 12 }, [flow, turnRow, ladderBox, qpanel, marks, h('span', 'spacer'), goRow, secondary]),
+      h('div', '', { flex: 1, minWidth: 0, display: 'flex', flexDirection: 'column', gap: 12 }, [flow, turnRow, ladderBox, qpanel, missRow, marks, h('span', 'spacer'), goRow, secondary]),
       game === 'escalera' ? planCol : list.el
     ])
   ])
@@ -131,6 +133,29 @@ export function createQuizScreen(ctx: Ctx, game: Exclude<QuizGameId, 'estimacion
     // se marca como usada al revelarla (y se guarda en el banco)
     ctx.lib.markUsed(cur.bankFile, [cur.question.id], true)
     ctx.cue(good ? 'correcto' : 'error')
+  }
+
+  /** Cambiar en directo la opción correcta (antes o después de revelar) y ofrecer guardarlo en el banco. */
+  function changeCorrect(i: number): void {
+    const cur = slot()
+    if (!cur || i === cur.question.correcta) return
+    send({ type: 'quizSetCorrect', index: i })
+    const text = cur.question.opciones[i]
+    void askSaveFix(ctx, cur, (q) => (q.tipo === 'quien' ? { ...q, autor: text } : { ...q, correcta: q.opciones.indexOf(text) >= 0 ? q.opciones.indexOf(text) : i }))
+  }
+
+  function secondChance(): void {
+    if (!lastMiss(slot())) return
+    ctx.audio.stopSfx()
+    send({ type: 'quizSecondChance', now: Date.now() })
+  }
+  function forgiveMiss(key?: string): void {
+    const cur = slot()
+    if (!cur) return
+    if (key === undefined && !lastMiss(cur)) return
+    ctx.audio.stopSfx()
+    send({ type: 'quizForgive', now: Date.now(), key })
+    if (!S().quiz.bribe.enabled) ctx.cue('correcto')
   }
 
   function useLifeline(id: string): void {
@@ -339,7 +364,20 @@ export function createQuizScreen(ctx: Ctx, game: Exclude<QuizGameId, 'estimacion
           ...(cur.phase === 'locked' && cur.picked === i && cur.mode !== 'all' ? [h('span', 'tag', { color: '#f4b552' }, ['Marcada'])] : []),
           ...(i === q.correcta ? [h('span', 'tag ok', {}, [icon(ICONS.check, 16, '#3ecf8e'), 'Correcta · solo tú'])] : [])
         ])
-        card.title = cur.phase === 'options' || cur.phase === 'locked' ? 'Clic para marcar esta respuesta' : ''
+        card.title = (cur.phase === 'options' || cur.phase === 'locked' ? 'Clic para marcar esta respuesta · ' : '') + 'Clic derecho: hacer que esta sea la correcta'
+        card.oncontextmenu = (e) => {
+          e.preventDefault()
+          changeCorrect(i)
+        }
+        if (i !== q.correcta) {
+          const mk = h('button', 'mkc', {}, ['Hacer correcta'])
+          mk.title = 'Cambiar la respuesta correcta (también después de revelar)'
+          mk.onclick = (e) => {
+            e.stopPropagation()
+            changeCorrect(i)
+          }
+          card.append(mk)
+        }
         card.onclick = () => {
           if (cur.phase === 'locked' && cur.picked === i && cur.mode !== 'all') send({ type: 'quizUnpick' })
           else pick(i)
@@ -358,6 +396,33 @@ export function createQuizScreen(ctx: Ctx, game: Exclude<QuizGameId, 'estimacion
             cur.attempts.map((a) => `${nameOf(s, a.target)}: ${LETTERS[a.pick] ?? '-'} ${a.correct ? 'acierta' : 'falla'}${a.delta ? ` (${a.delta > 0 ? '+' : ''}${a.delta})` : ''}. `)
           )
         )
+    }
+
+    // fallos que se pueden perdonar
+    missRow.replaceChildren()
+    const miss = lastMiss(cur)
+    const failedAll = cur && cur.mode === 'all' && cur.phase === 'revealed' ? cur.attempts.filter((a) => !a.correct && !a.forgiven) : []
+    if (cur && (miss || failedAll.length)) {
+      const inLadder = cur.ladderLevel !== null
+      const L = (pk: number) => (cur.question.tipo === 'sino' ? cur.question.opciones[pk] ?? '' : LETTERS[pk] ?? '')
+      missRow.append(
+        h('div', 'pnl missrow', {}, [
+          h('span', '', { fontWeight: 700 }, [
+            miss ? `Ha fallado ${nameOf(s, miss.target)} (${L(miss.pick)})` : `Han fallado: ${failedAll.map((a) => nameOf(s, a.target)).join(', ')}`
+          ]),
+          ...(miss
+            ? [
+                btn('Segunda oportunidad', secondChance, 'b sm', 'G'),
+                btn(inLadder ? 'Seguir igualmente (sube)' : 'Seguir igualmente', () => forgiveMiss(), 'b sm', 'H')
+              ]
+            : failedAll.map((a) => btn(`Dar por buena a ${nameOf(s, a.target)}`, () => forgiveMiss(a.target ? targetKey(a.target) : undefined), 'b sm'))),
+          h('span', 'spacer'),
+          ...(inLadder
+            ? []
+            : [h('span', '', { display: 'flex', alignItems: 'center', gap: 6, fontSize: 12 }, [sw(s.quiz.forgiveScores, () => ctx.send({ type: 'quizSetForgive', patch: { forgiveScores: !S().quiz.forgiveScores } }), 'Seguir igualmente suma los puntos'), 'Suma puntos'])]),
+          h('span', '', { display: 'flex', alignItems: 'center', gap: 6, fontSize: 12 }, [sw(s.quiz.bribe.enabled, () => ctx.send({ type: 'quizSetForgive', patch: { bribe: !S().quiz.bribe.enabled } }), 'Rótulo de soborno'), 'Soborno'])
+        ])
+      )
     }
 
     // todos responden
@@ -500,6 +565,8 @@ export function createQuizScreen(ctx: Ctx, game: Exclude<QuizGameId, 'estimacion
     } else if (sino && (k === 's' || k === 'n')) {
       pick(k === 's' ? 0 : 1)
     } else if (k === 'Backspace' && cur?.phase === 'locked') send({ type: 'quizUnpick' })
+    else if (k === 'g') secondChance()
+    else if (k === 'h') forgiveMiss()
     else if (k === 'o') toggleOptions()
     else if (k === 't') timer.toggleShow()
     else if (k === 'y') timer.togglePlay()

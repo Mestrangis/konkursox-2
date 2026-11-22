@@ -58,9 +58,24 @@ function render(s: GameState): void {
   }
 }
 
+// rótulo "SOBORNO ACEPTADO" (3,5 s) al perdonar un fallo con el soborno activado
+const bribe = document.createElement('div')
+bribe.className = 'k-bribe'
+bribe.innerHTML = '<span class="k-bribe__kicker">Fallo perdonado</span><span class="k-bribe__title">Soborno aceptado</span>'
+stageEl.append(bribe)
+let bribeShown = false
+
 // temporizador y otras animaciones por fotograma
 const loop = () => {
   if (scene?.tick && state) scene.tick(state)
+  const at = state?.quiz.bribe.at
+  const show = !!at && Date.now() - at < 3500 && Date.now() >= at
+  if (show !== bribeShown) {
+    bribeShown = show
+    bribe.classList.toggle('is-on', show)
+    // siempre por encima de la escena
+    stageEl.append(bribe)
+  }
   requestAnimationFrame(loop)
 }
 requestAnimationFrame(loop)

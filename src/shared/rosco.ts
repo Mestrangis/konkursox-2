@@ -39,6 +39,8 @@ export interface RoscoState {
   jackpot: number
   finished: boolean
   awarded: boolean
+  /** último fallo marcado (para poder perdonarlo) */
+  lastKo?: { player: number; index: number } | null
 }
 
 export type RoscoAction =
@@ -49,6 +51,7 @@ export type RoscoAction =
   | { type: 'roscoTimeUp'; now: number }
   | { type: 'roscoSetTurn'; turn: number; now: number }
   | { type: 'roscoPassTurn'; now: number }
+  | { type: 'roscoFix'; player: number; index: number; status: 'ok' | 'pasa'; now: number }
   | { type: 'roscoUndo'; index: number; status: LetterStatus }
   | { type: 'roscoFinish' }
   | { type: 'roscoStop' }
@@ -126,7 +129,39 @@ export function roscoMark(s: RoscoState, result: 'ok' | 'ko' | 'pasa', now: numb
   if (next === null) np = { ...pause(np, now), done: true }
   else np = { ...np, current: next }
   const players = s.players.map((x, i) => (i === s.turn ? np : x))
-  return settle({ ...s, players }, result !== 'ok', now)
+  return settle({ ...s, players, lastKo: result === 'ko' ? { player: s.turn, index: p.current } : s.lastKo ?? null }, result !== 'ok', now)
+}
+
+/**
+ * Perdonar un fallo del rosco: la letra pasa a acierto o a pasapalabra (vuelve a quedar pendiente).
+ * Los puntos se recalculan solos; si ya se habían sumado, se ajusta la diferencia.
+ */
+export function roscoFix(g: GameState, player: number, index: number, status: 'ok' | 'pasa'): GameState {
+  const r = g.rosco
+  const p = r.players[player]
+  if (!p || p.letters[index]?.status !== 'ko') return g
+  const before = roscoPoints(r)
+  const letters = p.letters.map((l, i) => (i === index ? { ...l, status } : l))
+  let np: RoscoPlayer = { ...p, letters }
+  // si era su última letra y ahora queda una pendiente, vuelve a jugar (salvo que se le acabara el tiempo)
+  if (status === 'pasa' && p.done && !p.timeUp && p.remainingMs > 0) np = { ...np, done: false, current: index }
+  const players = r.players.map((x, i) => (i === player ? np : x))
+  const finished = players.length > 0 && players.every((x) => x.done)
+  let rosco: RoscoState = { ...r, players, finished, lastKo: r.lastKo && r.lastKo.player === player && r.lastKo.index === index ? null : r.lastKo }
+  let next: GameState = { ...g, rosco }
+  if (r.awarded) {
+    if (finished) {
+      // ya sumados: solo la diferencia
+      const after = roscoPoints(rosco)
+      r.players.forEach((x, i) => (next = applyDelta(next, x.target, after[i] - before[i])))
+    } else {
+      // vuelve a estar en juego: se quitan los puntos y se sumarán al terminar
+      r.players.forEach((x, i) => (next = applyDelta(next, x.target, -before[i])))
+      rosco = { ...rosco, awarded: false }
+      next = { ...next, rosco }
+    }
+  }
+  return next
 }
 
 /** Se acaba el tiempo del concursante en turno. */
@@ -202,6 +237,11 @@ export function applyRoscoAction(g: GameState, a: RoscoAction): GameState {
     }
     case 'roscoTimeUp':
       return set(roscoTimeUp(r, a.now))
+    case 'roscoFix': {
+      const fixed = roscoFix(g, a.player, a.index, a.status)
+      if (fixed === g) return g
+      return fixed.quiz.bribe.enabled ? { ...fixed, quiz: { ...fixed.quiz, bribe: { ...fixed.quiz.bribe, at: a.now } } } : fixed
+    }
     case 'roscoPassTurn':
       return { ...g, rosco: roscoPassTurn(r, a.now) }
     case 'roscoSetTurn': {

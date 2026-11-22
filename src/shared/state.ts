@@ -216,7 +216,9 @@ function hydrateQuiz(saved: unknown): QuizState {
     sounds: { ...d.sounds, ...obj(q.sounds, {}) },
     allMode: typeof q.allMode === 'boolean' ? q.allMode : d.allMode,
     estimation: { ...d.estimation, ...obj(q.estimation, {}) },
-    lifelines: Array.isArray(q.lifelines) && q.lifelines.length ? q.lifelines.slice(0, 5) : d.lifelines
+    lifelines: Array.isArray(q.lifelines) && q.lifelines.length ? q.lifelines.slice(0, 5) : d.lifelines,
+    forgiveScores: typeof q.forgiveScores === 'boolean' ? q.forgiveScores : d.forgiveScores,
+    bribe: { enabled: !!(q.bribe && q.bribe.enabled), at: null }
   }
 }
 

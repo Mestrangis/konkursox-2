@@ -1777,3 +1777,38 @@ input[type='range'] {
   gap: 8px;
   min-height: 38px;
 }
+
+/* ---------- perdonar fallos y cambiar la correcta ---------- */
+.missrow {
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  border-color: #6b3a2a;
+  background: #241814;
+}
+.op {
+  position: relative;
+}
+.op .mkc {
+  position: absolute;
+  right: 8px;
+  bottom: 6px;
+  display: none;
+  height: 22px;
+  padding: 0 8px;
+  border-radius: 5px;
+  border: 1px solid #3a3a42;
+  background: #1d1d21;
+  color: #c9c9d0;
+  font: 600 11px 'Inter', sans-serif;
+  cursor: pointer;
+}
+.op:hover .mkc {
+  display: block;
+}
+.op .mkc:hover {
+  background: #2a2a30;
+  color: #fff;
+}

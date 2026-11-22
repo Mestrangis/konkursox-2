@@ -929,3 +929,44 @@
   text-transform: uppercase;
   letter-spacing: 0.04em;
 }
+
+/* ---------- Rótulo "SOBORNO ACEPTADO" ---------- */
+.k-bribe {
+  position: absolute;
+  left: 50%;
+  top: 380px;
+  z-index: 50;
+  width: 1100px;
+  margin-left: -550px;
+  padding: 34px 0 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  background: linear-gradient(180deg, rgba(12, 22, 48, 0.96), rgba(6, 12, 28, 0.96));
+  box-shadow: 0 0 0 3px #c9a961, 0 30px 80px rgba(0, 0, 0, 0.7);
+  clip-path: polygon(40px 0, calc(100% - 40px) 0, 100% 50%, calc(100% - 40px) 100%, 40px 100%, 0 50%);
+  opacity: 0;
+  transform: scale(0.8) rotate(-2deg);
+  transition: opacity 0.25s ease, transform 0.35s cubic-bezier(0.2, 1.6, 0.4, 1);
+  pointer-events: none;
+}
+.k-bribe.is-on {
+  opacity: 1;
+  transform: scale(1) rotate(-2deg);
+}
+.k-bribe__kicker {
+  font: 600 26px/1 'Barlow Condensed', sans-serif;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #e6cb85;
+}
+.k-bribe__title {
+  font: 700 110px/1 'Barlow Condensed', sans-serif;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #fff4d2, #e6cb85 55%, #b08a3e);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}

@@ -4,7 +4,7 @@ import type { LibType } from '../../../shared/library'
 import type { CurrentQuestion, QuizAction } from '../../../shared/quiz'
 import type { QuizGameId } from '../../../shared/scene'
 import type { GameState } from '../../../shared/types'
-import { askConfirm, btn, h, icon, ICONS, kbd, type Ctx } from '../ui'
+import { askConfirm, btn, h, icon, ICONS, kbd, openDialog, type Ctx } from '../ui'
 
 const store = {
   get: (k: string): string | null => {
@@ -236,4 +236,30 @@ export function timerControls(ctx: Ctx): { el: HTMLElement; update(s: GameState)
       )
     }
   }
+}
+
+/** Tras corregir la respuesta en directo: "¿Guardar el cambio en el banco?" (Sí / Solo para esta partida). */
+export async function askSaveFix(ctx: Ctx, cur: CurrentQuestion, fix: (q: Question) => Question): Promise<void> {
+  const bank = ctx.lib.peek(cur.bankFile)
+  if (!bank || !bank.preguntas.some((q) => q.id === cur.question.id)) return
+  let save = false
+  await openDialog(
+    '¿Guardar el cambio en el banco?',
+    (close) => [
+      h('span', 'mut', { fontSize: 13 }, [`Pregunta: «${cur.question.enunciado.slice(0, 120)}»`]),
+      h('div', 'dlg-actions', {}, [
+        btn('Solo para esta partida', close, 'b'),
+        btn('Sí, guardar en el banco', () => {
+          save = true
+          close()
+        }, 'b acc')
+      ])
+    ],
+    520
+  )
+  if (!save) return
+  const fresh = ctx.lib.peek(cur.bankFile)
+  if (!fresh) return
+  ctx.lib.update(cur.bankFile, { ...fresh, preguntas: fresh.preguntas.map((q) => (q.id === cur.question.id ? fix(q) : q)) })
+  ctx.toast('Guardado en el banco')
 }

@@ -3,8 +3,8 @@ import { formatNumber } from '../../../shared/games'
 import { parseNumber, questionKey, type Question } from '../../../shared/questions'
 import { targetKey, turnTargets, type CurrentQuestion, type QuizAction } from '../../../shared/quiz'
 import type { GameState } from '../../../shared/types'
-import { btn, h, icon, ICONS, nameOf, type Ctx, type Screen } from '../ui'
-import { airBadge, bankFor, flowSteps, goButton, nextUnused, onAirLabel, questionList, timerControls, toGame } from './common'
+import { askText, btn, h, icon, ICONS, nameOf, type Ctx, type Screen } from '../ui'
+import { airBadge, askSaveFix, bankFor, flowSteps, goButton, nextUnused, onAirLabel, questionList, timerControls, toGame } from './common'
 
 export function createEstimationScreen(ctx: Ctx): Screen {
   const game = 'estimacion' as const
@@ -56,6 +56,16 @@ export function createEstimationScreen(ctx: Ctx): Screen {
     ctx.cue('estimacion')
   }
   const timer = timerControls(ctx)
+
+  /** Corregir la cifra correcta en directo (antes o después de revelar: recalcula ganador y puntos). */
+  async function changeValue(cur: CurrentQuestion): Promise<void> {
+    const txt = await askText('Cifra correcta', String(cur.question.valor ?? ''), 'Cambiar', cur.phase === 'revealed' ? 'Ya está revelada: se recalculan el ganador y los puntos.' : undefined)
+    if (txt === null) return
+    const v = parseNumber(txt)
+    if (v === null || !Number.isFinite(v)) return ctx.toast('Escribe un número')
+    send({ type: 'quizSetValue', value: v })
+    await askSaveFix(ctx, cur, (q) => ({ ...q, valor: v }))
+  }
   const toggleGuesses = () => {
     const cur = slot()
     if (cur) send({ type: 'quizShowGuesses', show: !cur.showGuesses })
@@ -164,6 +174,7 @@ export function createEstimationScreen(ctx: Ctx): Screen {
         h('div', 'answerbox', {}, [
           h('span', 'lbl ok', {}, ['Respuesta · solo tú']),
           h('span', '', { fontSize: 36, fontWeight: 800 }, [`${formatNumber(q.valor ?? 0)}${q.unidad ? ' ' + q.unidad : ''}`]),
+          btn('Cambiar cifra', () => void changeValue(cur), 'b sm ghost'),
           ...(q.nota_presentador ? [h('span', 'mut', { fontSize: 12, maxWidth: 320 }, [q.nota_presentador])] : [])
         ])
       )
