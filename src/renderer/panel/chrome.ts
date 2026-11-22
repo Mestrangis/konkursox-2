@@ -1,6 +1,6 @@
 // Barra "En el aire", navegación y dock de marcador/música/efectos (design/panel.html: componentes).
 import { formatPoints } from '../../shared/quiz'
-import { activeContestants, currentTurn, gameLabel, GAMES, playedCount, SCENES } from '../../shared/scene'
+import { activeContestants, currentTurn, gameLabel, GAMES, hasPublico, playedCount, PLANOS, SCENES } from '../../shared/scene'
 import type { Corner, HostMode } from '../../shared/arrange'
 import { targetMembers } from '../../shared/order'
 import type { GameState, SlotId } from '../../shared/types'
@@ -460,15 +460,38 @@ export function createPeopleRow(ctx: Ctx) {
   return {
     el,
     update(s: GameState): void {
-      const people: SlotId[] = ['host', ...activeContestants(s)]
-      const k = JSON.stringify([s.camsScene.on, s.camsScene.preset, s.camsScene.hostMode, s.camsScene.corner, s.camsScene.template, s.scene, people, s.host.name, s.contestants.map((c) => c.name)])
+      // la cámara del público aparece si está calibrada
+      const people: SlotId[] = ['host', ...activeContestants(s), ...(hasPublico(s) ? (['publico'] as SlotId[]) : [])]
+      const k = JSON.stringify([s.camsScene.on, s.camsScene.preset, s.camsScene.hostMode, s.camsScene.corner, s.camsScene.template, s.camsScene.plano, s.lowerThird.visible, s.scene, people, s.host.name, s.contestants.map((c) => c.name)])
       if (k === key) return
       key = k
-      el.replaceChildren(
-        h('span', 'lbl', { flex: 'none' }, ['Quién sale']),
+      const chipOf = (on: boolean, label: string, title: string, run: () => void) => {
+        const chip = h('button', `pchip${on ? ' on' : ''}`, {}, [h('span', `sw${on ? ' on' : ''}`, { pointerEvents: 'none' }), label])
+        chip.setAttribute('aria-pressed', String(on))
+        chip.title = title
+        chip.onclick = run
+        return chip
+      }
+      const row1 = h('div', 'prow')
+      const row2 = h('div', 'prow')
+      el.replaceChildren(row1, row2)
+      row2.append(
+        h('span', 'lbl', { flex: 'none', width: 74 }, ['Plano']),
+        ...PLANOS.map((pl) => btn(pl.label, () => ctx.send({ type: 'camsSet', patch: { plano: pl.id } }), `b sm ghost${s.camsScene.plano === pl.id ? ' on' : ''}`, pl.key)),
+        h('span', 'mut', { fontSize: 11, flex: 'none' }, [s.camsScene.plano === 'juego' ? '' : 'en la escena Juego']),
+        chipOf(s.lowerThird.visible, 'Rótulo inferior', 'Mostrar u ocultar el texto de abajo del plató', () => ctx.send({ type: 'setLowerThird', patch: { visible: !ctx.state.lowerThird.visible } })),
+        h('span', 'spacer'),
+        ...([
+          ['yo', 'Solo yo', 'F6'],
+          ['turno', 'El del turno', 'F7'],
+          ['todos', 'Todos', 'F8']
+        ] as const).map(([v, t, key2]) => btn(t, () => ctx.send({ type: 'camsPreset', preset: v }), `b sm ghost${s.camsScene.preset === v ? ' on' : ''}`, key2))
+      )
+      row1.append(
+        h('span', 'lbl', { flex: 'none', width: 74 }, ['Quién sale']),
         ...people.map((slot) => {
           const on = !!s.camsScene.on[slot]
-          const name = slot === 'host' ? `${s.host.name} (yo)` : s.contestants.find((c) => c.id === slot)?.name ?? slot
+          const name = slot === 'host' ? `${s.host.name} (yo)` : slot === 'publico' ? 'Público' : s.contestants.find((c) => c.id === slot)?.name ?? slot
           const chip = h('button', `pchip${on ? ' on' : ''}`, {}, [h('span', `sw${on ? ' on' : ''}`, { pointerEvents: 'none' }), name])
           chip.setAttribute('aria-pressed', String(on))
           chip.title = on ? `Quitar a ${name} del plató` : `Sacar a ${name} en el plató`
@@ -476,14 +499,9 @@ export function createPeopleRow(ctx: Ctx) {
           return chip
         }),
         hostSelect(s),
-        ...(s.camsScene.template && s.scene === 'camaras' ? [h('span', 'nm warn', { flex: 'none' }, ['Plantilla fija'])] : []),
-        h('span', 'spacer'),
-        ...([
-          ['yo', 'Solo yo', 'F6'],
-          ['turno', 'El del turno', 'F7'],
-          ['todos', 'Todos', 'F8']
-        ] as const).map(([v, t, key2]) => btn(t, () => ctx.send({ type: 'camsPreset', preset: v }), `b sm ghost${s.camsScene.preset === v ? ' on' : ''}`, key2)),
+        ...(s.camsScene.template && s.scene === 'camaras' ? [h('span', 'nm warn', { flex: 'none' }, ['Plantilla fija'])] : [])
       )
+      void chipOf
     }
   }
 }

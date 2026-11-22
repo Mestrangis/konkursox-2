@@ -1,5 +1,6 @@
 // Ajustes: plató, audio y sonidos del juego, puntuación, reloj, escalera, estimación, personas, rótulo y actualizaciones.
-import { CUES, defaultLevels } from '../../../shared/quiz'
+import { CUES, DEFAULT_LIFELINES, defaultLevels, LIFELINE_ICONS, MAX_LIFELINES, type LifelineDef } from '../../../shared/quiz'
+import { lifelineIcon } from '../../ds/lifeline'
 import { newId, playedCount, type Person } from '../../../shared/scene'
 import type { DisplayInfo, GameState } from '../../../shared/types'
 import { askConfirm, btn, editableArea, h, seg, sw, type Ctx, type Screen } from '../ui'
@@ -38,11 +39,48 @@ export function createSettingsScreen(ctx: Ctx): Screen {
     i.oninput = () => set(i.value)
     return i
   }
+  /** Comodines de la escalera: nombre, icono (propio o imagen) y qué hacen. */
+  const lifelinesCard = (s: GameState) => {
+    const list = s.quiz.lifelines
+    const save = (next: LifelineDef[]) => ctx.send({ type: 'ladderSetLifelines', lifelines: next })
+    const patch = (i: number, p: Partial<LifelineDef>) => save(list.map((l, j) => (j === i ? { ...l, ...p } : l)))
+    const rows = list.map((l, i) => {
+      const name = h('input', 'inp', { width: 150 })
+      name.value = l.name
+      name.onchange = () => name.value.trim() && patch(i, { name: name.value.trim() })
+      const iconSel = h('select', 'inp', { width: 150 })
+      for (const [k, v] of Object.entries(LIFELINE_ICONS)) iconSel.append(new Option(v.label, k))
+      iconSel.append(new Option('Imagen propia…', '__img'))
+      if (l.icon.startsWith('img:')) iconSel.append(new Option(`Imagen: ${l.icon.slice(4)}`, l.icon))
+      iconSel.value = l.icon
+      iconSel.onchange = async () => {
+        if (iconSel.value !== '__img') return patch(i, { icon: iconSel.value })
+        const file = await window.konk.libChooseImage()
+        if (file) patch(i, { icon: `img:${file}` })
+        else iconSel.value = l.icon
+      }
+      const kind = h('select', 'inp', { width: 190 })
+      kind.append(new Option('50:50 automático', 'fifty'), new Option('Solo marcar como usado', 'mark'))
+      kind.value = l.kind
+      kind.onchange = () => patch(i, { kind: kind.value as LifelineDef['kind'] })
+      const prev = h('span', '', { width: 44, height: 30, flex: 'none', display: 'flex', alignItems: 'center', justifyContent: 'center', borderRadius: 15, background: '#0d1530', boxShadow: '0 0 0 1px #8a6d32' }, [lifelineIcon(l, 18, '#e6cb85')])
+      return row(h('span', 'nm', {}, [String(i + 1)]), prev, name, iconSel, kind, btn('Quitar', () => save(list.filter((_, j) => j !== i)), 'b sm ghost'))
+    })
+    return card(
+      'Comodines de la escalera',
+      h('span', 'mut', { fontSize: 12 }, [`Hasta ${MAX_LIFELINES}. Se usan con las teclas 1-${MAX_LIFELINES} en la escalera; el plató se adapta al número.`]),
+      ...rows,
+      row(
+        btn('Añadir comodín', () => save([...list, { id: newId(), name: 'Comodín', icon: 'estrella', kind: 'mark' }]), 'b sm', undefined),
+        btn('Volver a los de por defecto', () => save(DEFAULT_LIFELINES.map((l) => ({ ...l }))), 'b sm ghost')
+      )
+    )
+  }
   const toggle = (label: string, on: boolean, flip: () => void) => h('span', '', { display: 'flex', alignItems: 'center', gap: 10 }, [sw(on, flip, label), label])
 
   const area = editableArea(el, () => build(ctx.state))
   function update(s: GameState): void {
-    const k = JSON.stringify([s.plato, s.audio, s.quiz.scoring, s.quiz.timer.seconds, s.quiz.timer.enabled, s.quiz.autoRotate, s.quiz.ladder.levels, s.quiz.ladder.awardToScore, s.quiz.estimation, s.quiz.sounds, s.people, s.lowerThird, s.host, s.show, s.runtime.update, s.runtime.appVersion, ctx.audioLib, displays.length])
+    const k = JSON.stringify([s.plato, s.audio, s.quiz.scoring, s.quiz.timer.seconds, s.quiz.lifelines, s.quiz.autoRotate, s.quiz.ladder.levels, s.quiz.ladder.awardToScore, s.quiz.estimation, s.quiz.sounds, s.people, s.lowerThird, s.host, s.show, s.runtime.update, s.runtime.appVersion, ctx.audioLib, displays.length])
     const changed = k !== key
     key = k
     area.refresh(changed)
@@ -179,7 +217,11 @@ export function createSettingsScreen(ctx: Ctx): Screen {
           ),
           row(toggle('Sumar los puntos al revelar', s.quiz.scoring.autoAward, () => send({ type: 'quizSetScoring', patch: { autoAward: !ctx.state.quiz.scoring.autoAward } }))),
           row(toggle('El turno pasa solo al siguiente con cada pregunta', s.quiz.autoRotate, () => send({ type: 'quizSetOptions', patch: { autoRotate: !ctx.state.quiz.autoRotate } }))),
-          row(h('span', 'fl', {}, ['Temporizador']), num(s.quiz.timer.seconds, (v) => send({ type: 'timerConfig', patch: { seconds: v } }), 70), h('span', 'mut', {}, ['s']), toggle('Activado', s.quiz.timer.enabled, () => send({ type: 'timerConfig', patch: { enabled: !ctx.state.quiz.timer.enabled } })))
+          row(
+            h('span', 'fl', {}, ['Duración del temporizador']),
+            num(s.quiz.timer.seconds, (v) => send({ type: 'timerConfig', patch: { seconds: v } }), 70),
+            h('span', 'mut', {}, ['s · se muestra y se arranca desde cada juego (T / Y)'])
+          )
         ),
         card(
           'Estimación',
@@ -215,6 +257,7 @@ export function createSettingsScreen(ctx: Ctx): Screen {
           ),
           h('div', '', { display: 'flex', flexDirection: 'column', gap: 4, maxHeight: 300, overflow: 'auto' }, levelRows)
         ),
+        lifelinesCard(s),
         card(
           'Personas del grupo',
           h('span', 'mut', { fontSize: 12 }, ['Rellenan las opciones de "¿Quién lo dijo?" (y servirán para otros juegos).']),

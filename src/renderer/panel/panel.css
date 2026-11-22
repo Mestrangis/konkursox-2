@@ -53,7 +53,7 @@ button {
   height: 100vh;
   display: grid;
   grid-template-columns: 200px minmax(0, 1fr) 340px;
-  grid-template-rows: 112px 52px minmax(0, 1fr);
+  grid-template-rows: 112px 88px minmax(0, 1fr);
   background: #111113;
   overflow: hidden;
 }
@@ -1671,11 +1671,12 @@ input[type='range'] {
 
 /* ---------- fila "Quién sale" ---------- */
 .peoplerow {
-  height: 52px;
-  padding: 0 16px;
+  height: 88px;
+  padding: 4px 16px;
   display: flex;
-  align-items: center;
-  gap: 8px;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
   background: #141416;
   border-bottom: 1px solid #2a2a2f;
   overflow-x: auto;
@@ -1768,4 +1769,11 @@ input[type='range'] {
 .nm.warn {
   background: #4a3410;
   color: #ffc46b;
+}
+
+.peoplerow .prow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 38px;
 }

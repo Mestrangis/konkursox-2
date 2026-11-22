@@ -10,6 +10,7 @@ import { buildMediaScene, mediaKey } from './mediaScene'
 import { buildFinalScene, finalKey } from './showScenes'
 import { buildQuizScene, quizSceneKey, turnSlots } from './quizScenes'
 import { buildRoscoScene, roscoKey } from './roscoScene'
+import { buildPlanoScene, planoKey } from './planoScene'
 import {
   camFrame,
   emblem,
@@ -46,7 +47,7 @@ export function viewState(s: GameState): GameState {
   return { ...s, quiz: { ...s.quiz, current: s.quiz.slots[s.liveGame] ?? null } }
 }
 
-type Kind = 'cover' | 'cams' | 'marcador' | 'final' | 'rosco' | 'quiz' | 'media'
+type Kind = 'cover' | 'cams' | 'marcador' | 'final' | 'rosco' | 'quiz' | 'media' | 'plano'
 
 /** Qué pinta el plató según la escena en el aire. */
 function kindOf(s: GameState): Kind {
@@ -62,6 +63,8 @@ function kindOf(s: GameState): Kind {
     case 'multimedia':
       return 'media'
     default: {
+      // plano "Cámaras + datos" o "Cámaras limpias" (cualquier juego)
+      if (s.camsScene.plano !== 'juego') return 'plano'
       if (s.liveGame === 'rosco') return s.rosco.players.length ? 'rosco' : 'cover'
       if (s.liveGame === 'escalera' && s.quiz.ladder.showResult && s.quiz.ladder.outcome) return 'quiz'
       return s.quiz.current ? 'quiz' : 'cover'
@@ -82,6 +85,8 @@ export function sceneKey(s0: GameState): string {
       return roscoKey(s)
     case 'media':
       return mediaKey(s)
+    case 'plano':
+      return planoKey(s)
     case 'quiz':
       return quizSceneKey(s)
     default:
@@ -156,6 +161,8 @@ export function buildScene(s0: GameState): Scene {
       return wrap(buildQuizScene(s))
     case 'media':
       return buildMediaScene(s)
+    case 'plano':
+      return wrap(buildPlanoScene(s))
     default:
       return wrap(buildMarcador(s))
   }

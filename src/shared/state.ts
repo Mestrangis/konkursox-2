@@ -184,7 +184,8 @@ function hydrateQuiz(saved: unknown): QuizState {
   const obj = <T>(v: unknown, fb: T): T => (v && typeof v === 'object' && !Array.isArray(v) ? (v as T) : fb)
   const ladder = { ...d.ladder, ...obj(q.ladder, {}) }
   if (!Array.isArray(ladder.levels) || !ladder.levels.length) ladder.levels = d.ladder.levels
-  ladder.used = { ...d.ladder.used, ...obj(ladder.used, {}) }
+  ladder.used = { ...obj(ladder.used, {}) }
+  if (!Array.isArray(ladder.plan)) ladder.plan = []
   const old = q.current as Partial<QuizState['current']> | null | undefined
   const fix = (c: unknown) =>
     c && typeof c === 'object' && (c as { question?: unknown }).question
@@ -214,7 +215,8 @@ function hydrateQuiz(saved: unknown): QuizState {
     ladder,
     sounds: { ...d.sounds, ...obj(q.sounds, {}) },
     allMode: typeof q.allMode === 'boolean' ? q.allMode : d.allMode,
-    estimation: { ...d.estimation, ...obj(q.estimation, {}) }
+    estimation: { ...d.estimation, ...obj(q.estimation, {}) },
+    lifelines: Array.isArray(q.lifelines) && q.lifelines.length ? q.lifelines.slice(0, 5) : d.lifelines
   }
 }
 

@@ -1,7 +1,7 @@
 // Biblioteca: Documentos\KONKURSOX\preguntas\<tipo>\*.json (imágenes en preguntas\imagenes\).
 // Primer arranque: importa legacy/ y los ejemplos, y reparte los bancos antiguos (mezclados) por tipo.
-import { copyFileSync, existsSync, mkdirSync, readdirSync, readFileSync, renameSync, statSync, writeFileSync } from 'node:fs'
-import { basename, extname, join } from 'node:path'
+import { copyFileSync, existsSync, mkdirSync, readdirSync, readFileSync, renameSync, rmSync, statSync, writeFileSync } from 'node:fs'
+import { basename, dirname, extname, join } from 'node:path'
 import { app } from 'electron'
 import { bankRef, LIB_TYPES, newBankFile, parseRef, splitBank, toFileBank, type LibBankInfo, type LibType } from '../shared/library'
 import { convertLegacy, isPlayable, parseBank, slugify, type Bank, type QuestionType } from '../shared/questions'
@@ -80,6 +80,12 @@ function migrateRoot(used: Record<string, unknown>): void {
 export function ensureLibrary(used: Record<string, unknown> = {}): void {
   const root = banksDir()
   mkdirSync(imagesDir(), { recursive: true })
+  // carpeta de la versión vieja que ya no se usa
+  try {
+    rmSync(join(dirname(root), 'escaletas'), { recursive: true, force: true })
+  } catch {
+    /* no pasa nada */
+  }
   for (const t of LIB_TYPES) mkdirSync(typeDir(t.id), { recursive: true })
   if (!existsSync(join(root, LEGACY_MARKER))) {
     copyImages(join(legacyDir(), '_imagenes'))

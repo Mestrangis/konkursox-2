@@ -880,3 +880,52 @@
   color: var(--k-text-muted);
   font-size: 40px;
 }
+
+/* ---------- Planos: cámaras limpias y widget de datos ---------- */
+.k-cam.k-cam--clean {
+  border-radius: 0;
+  box-shadow: none;
+}
+.k-cam.k-cam--clean::after {
+  background: linear-gradient(180deg, transparent 75%, rgba(0, 0, 0, 0.45));
+}
+.k-cleanname {
+  position: absolute;
+  font: 600 26px/1 'Barlow Condensed', sans-serif;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
+  pointer-events: none;
+}
+.k-data {
+  position: absolute;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 28px;
+  color: #fff;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.9);
+  font-family: 'Barlow Condensed', sans-serif;
+}
+.k-data__title {
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #e6cb85;
+}
+.k-data__rows {
+  display: flex;
+  gap: 34px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.k-data__row {
+  font-size: 30px;
+}
+.k-data__row b {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}

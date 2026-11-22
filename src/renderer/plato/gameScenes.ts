@@ -177,8 +177,8 @@ export function buildEstimationScene(s: GameState, key: string): Scene {
     } else closeText.textContent = ''
 
     for (const { slot, plate } of plates) {
-      if (slot === 'host') {
-        plate.set(st.host.name, null, '', '')
+      if (slot === 'host' || slot === 'publico') {
+        plate.set(slot === 'host' ? st.host.name : 'Público', null, '', '')
         continue
       }
       const c = st.contestants.find((x) => x.id === slot)

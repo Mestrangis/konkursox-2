@@ -175,6 +175,7 @@ window.addEventListener('keydown', (e) => {
   let done = true
   const sc = SCENES.find((x) => x.key === k)
   if (sc && !e.ctrlKey && !e.altKey) goScene(ctx, sc.id)
+  else if (e.ctrlKey && (k === 'F1' || k === 'F2' || k === 'F3')) ctx.send({ type: 'camsSet', patch: { plano: k === 'F1' ? 'juego' : k === 'F2' ? 'datos' : 'limpio' } })
   else if (k === 'F6') ctx.send({ type: 'camsPreset', preset: 'yo' })
   else if (k === 'F7') ctx.send({ type: 'camsPreset', preset: 'turno' })
   else if (k === 'F8') ctx.send({ type: 'camsPreset', preset: 'todos' })

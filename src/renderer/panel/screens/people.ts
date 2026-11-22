@@ -8,7 +8,7 @@ import { LAYOUTS } from '../../../shared/layouts'
 import { drawFrames, type Scene } from '../../plato/scenes'
 import { askConfirm, btn, editableArea, h, seg, silhouette, sw, type Ctx, type Screen } from '../ui'
 
-const camLabel = (slot: SlotId) => (slot === 'host' ? 'Cámara 5' : `Cámara ${CONTESTANT_IDS.indexOf(slot as ContestantId) + 1}`)
+const camLabel = (slot: SlotId) => (slot === 'host' ? 'Cámara 5' : slot === 'publico' ? 'Cámara Público' : `Cámara ${CONTESTANT_IDS.indexOf(slot as ContestantId) + 1}`)
 
 /** Estado de la señal de un recuadro de cámara. */
 function camState(s: GameState, cam: SlotId): { ok: boolean; text: string } {

@@ -4,7 +4,7 @@ import { parseNumber, questionKey, type Question } from '../../../shared/questio
 import { targetKey, turnTargets, type CurrentQuestion, type QuizAction } from '../../../shared/quiz'
 import type { GameState } from '../../../shared/types'
 import { btn, h, icon, ICONS, nameOf, type Ctx, type Screen } from '../ui'
-import { bankFor, flowSteps, goButton, nextUnused, onAirLabel, questionList, toGame } from './common'
+import { airBadge, bankFor, flowSteps, goButton, nextUnused, onAirLabel, questionList, timerControls, toGame } from './common'
 
 export function createEstimationScreen(ctx: Ctx): Screen {
   const game = 'estimacion' as const
@@ -33,7 +33,6 @@ export function createEstimationScreen(ctx: Ctx): Screen {
 
   function load(q: Question, ref: string): void {
     ctx.send({ type: 'quizLoad', key: questionKey(ref, q.id), bankFile: ref, question: q, now: Date.now(), stage: true, game })
-    ctx.lib.markUsed(ref, [q.id], true)
   }
   function loadNext(): void {
     const ref = bankFor(ctx, game)
@@ -50,18 +49,13 @@ export function createEstimationScreen(ctx: Ctx): Screen {
   function reveal(): void {
     ctx.audio.stopSfx()
     ctx.audio.stopLoop()
+    const cur = slot()
     send({ type: 'quizReveal', now: Date.now() })
+    // usada al revelarla
+    if (cur && Object.keys(cur.guesses).length) ctx.lib.markUsed(cur.bankFile, [cur.question.id], true)
     ctx.cue('estimacion')
   }
-  function toggleTimer(): void {
-    const t = S().quiz.timer
-    if (!t.enabled) {
-      ctx.send({ type: 'timerConfig', patch: { enabled: true } })
-      ctx.send({ type: 'timerStart', now: Date.now() })
-      return
-    }
-    ctx.send(t.endsAt !== null ? { type: 'timerPause', now: Date.now() } : { type: 'timerStart', now: Date.now() })
-  }
+  const timer = timerControls(ctx)
   const toggleGuesses = () => {
     const cur = slot()
     if (cur) send({ type: 'quizShowGuesses', show: !cur.showGuesses })
@@ -152,7 +146,7 @@ export function createEstimationScreen(ctx: Ctx): Screen {
     const est = s.quiz.estimation
     header.replaceChildren(
       h('div', 'title', {}, [
-        h('b', '', {}, ['Estimación']),
+        h('b', '', { display: 'flex', alignItems: 'center', gap: 10 }, ['Estimación', airBadge(ctx, s, game)]),
         h('span', 'mut', { fontSize: 13 }, [`Banco «${info?.nombre ?? '-'}»${idx >= 0 ? ` · pregunta ${idx + 1} de ${qs.length}` : ''} · todos responden${est.priceIsRight ? ' · precio justo' : ''}`])
       ]),
       h('span', 'spacer')
@@ -176,11 +170,10 @@ export function createEstimationScreen(ctx: Ctx): Screen {
     }
     renderGrid(s, cur)
 
-    const t = s.quiz.timer
-    const left = t.endsAt !== null ? Math.max(0, t.endsAt - Date.now()) : t.remainingMs ?? t.seconds * 1000
+    timer.update(s)
     secondary.replaceChildren(
       btn(cur?.showGuesses ? 'Ocultar cifras en el plató' : 'Mostrar cifras en el plató', toggleGuesses, `b${cur?.showGuesses ? ' on' : ''}`, 'C'),
-      (timerBtn = btn(t.endsAt !== null ? `Temporizador · quedan ${Math.ceil(left / 1000)} s` : `Temporizador ${t.seconds} s`, toggleTimer, `b ghost${t.endsAt !== null ? ' on' : ''}`, 'T')),
+      timer.el,
       h('span', 'spacer'),
       btn('Deshacer', () => ctx.send({ type: 'undo', game }), 'b ghost', 'Ctrl Z')
     )
@@ -195,17 +188,11 @@ export function createEstimationScreen(ctx: Ctx): Screen {
     const k = e.key.length === 1 ? e.key.toLowerCase() : e.key
     if (k === ' ') nextStep(S()).run?.()
     else if (k === 'c') toggleGuesses()
-    else if (k === 't') toggleTimer()
+    else if (k === 't') timer.toggleShow()
+    else if (k === 'y') timer.togglePlay()
     else return false
     return true
   }
-
-  let timerBtn: HTMLButtonElement | null = null
-  setInterval(() => {
-    const t = S()?.quiz.timer
-    if (!el.isConnected || !timerBtn || !t || t.endsAt === null) return
-    timerBtn.firstChild!.textContent = `Temporizador · quedan ${Math.ceil(Math.max(0, t.endsAt - Date.now()) / 1000)} s`
-  }, 250)
 
   return { el, update, onKey }
 }

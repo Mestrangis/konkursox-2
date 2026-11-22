@@ -9,7 +9,7 @@ import type { Scene } from './scenes'
 export function roscoKey(s: GameState): string {
   const r = s.rosco
   const p = r.players[r.turn]
-  return `rosco:${r.players.length}:${r.turn}:${p ? membersOf(s, p.target).join(',') : ''}:${p?.letters.length ?? 0}`
+  return `rosco:${r.players.length}:${r.turn}:${p ? membersOf(s, p.target).join(',') : ''}:${p?.letters.length ?? 0}:${s.camsScene.on.host ? 'h' : ''}`
 }
 
 const secs = (p: RoscoPlayer | undefined) => (p ? Math.ceil(remainingMs(p, Date.now()) / 1000) : 0)
@@ -46,8 +46,16 @@ export function buildRoscoScene(s: GameState): Scene {
   const name = h('span', 'k-name', { fontSize: 34 })
   root.append(bevelBar({ box: { x: 1150, y: 70, w: 670, h: 64 }, c: 26, center: true }, [name]))
   const time = h('span', 'k-rosco__time')
+  const timeCap = h('span', 'k-caption k-caption--muted', {}, ['segundos'])
+  // el presentador, si sale (fila "Quién sale"), a la izquierda del reloj
+  const withHost = s.camsScene.on.host
+  if (withHost) {
+    const f = camFrame({ x: 1150, y: 170, w: 320, h: 400 }, 'host')
+    frames.set('host', f)
+    root.append(f.root)
+  }
   root.append(
-    h('div', 'k-infobox', { left: 1150, top: 170, width: 670, height: 400, gap: 0 }, [h('span', 'k-caption', {}, ['Tiempo']), time, h('span', 'k-caption k-caption--muted', {}, ['segundos'])])
+    h('div', 'k-infobox', { left: withHost ? 1490 : 1150, top: 170, width: withHost ? 330 : 670, height: 400, gap: 0 }, [h('span', 'k-caption', {}, ['Tiempo']), time, timeCap])
   )
   const counter = (label: string, color: string) => {
     const v = h('span', 'k-rosco__count')
@@ -89,6 +97,7 @@ export function buildRoscoScene(s: GameState): Scene {
     cKo.v.textContent = String(st2.ko)
     cPend.v.textContent = String(st2.pending)
     time.textContent = String(secs(p))
+    timeCap.textContent = p.timeUp ? 'tiempo agotado' : 'segundos'
 
     const o = ro.players.length === 2 ? ro.players[1 - ro.turn] : null
     other.style.display = o ? '' : 'none'
@@ -111,6 +120,11 @@ export function buildRoscoScene(s: GameState): Scene {
           : w.length > 1
             ? `Empate a ${best.ok} aciertos y ${best.ko} fallos`
             : `Gana ${names[0]} con ${best.ok} ${best.ok === 1 ? 'acierto' : 'aciertos'}`
+    } else if (p.timeUp) {
+      lead.textContent = ''
+      big.textContent = ''
+      big.style.display = 'none'
+      def.textContent = `Tiempo agotado para ${targetName(st, p.target)}`
     } else {
       const l = p.letters[p.current]
       big.style.display = ''

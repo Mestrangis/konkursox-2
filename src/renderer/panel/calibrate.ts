@@ -12,11 +12,13 @@ export const SLOT_COLORS: Record<SlotId, string> = {
   c2: '#7fb0ff',
   c3: '#3fb56e',
   c4: '#f4b552',
-  host: '#e07a6f'
+  host: '#e07a6f',
+  publico: '#b48cff'
 }
 
 export function slotLabel(s: GameState, slot: SlotId): { short: string; name: string } {
   if (slot === 'host') return { short: 'P', name: s.host.name || 'Presentador' }
+  if (slot === 'publico') return { short: 'Pú', name: 'Público (cámara extra, opcional)' }
   const i = SLOT_IDS.indexOf(slot)
   return { short: String(i + 1), name: s.contestants.find((c) => c.id === slot)?.name ?? '' }
 }

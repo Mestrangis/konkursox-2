@@ -2,7 +2,8 @@
 import { contestantOrder } from '../../shared/order'
 import { camsLineup } from '../../shared/scene'
 import { arrangeFeatured, pipBox } from '../../shared/arrange'
-import { formatPoints, ladderBank, LIFELINES, targetKey, type LifelineId, type Target } from '../../shared/quiz'
+import { formatPoints, ladderBank, targetKey, type LifelineDef, type Target } from '../../shared/quiz'
+import { lifelineIcon } from '../ds/lifeline'
 import type { Box } from '../../shared/layouts'
 import type { ContestantId, GameState, SlotId } from '../../shared/types'
 import { bevelBar, camFrame, h, svg, type CamFrameEl } from '../ds/components'
@@ -50,6 +51,14 @@ function quizKind(s: GameState): Kind {
 /** ¿La escena Juego enseña la pantalla final de la escalera? */
 export const showsLadderResult = (s: GameState): boolean => s.liveGame === 'escalera' && s.quiz.ladder.showResult && !!s.quiz.ladder.outcome
 
+/** En la escalera, además del concursante, puedo salir yo y la cámara del público (fila "Quién sale"). */
+export function ladderExtras(s: GameState): SlotId[] {
+  const out: SlotId[] = []
+  if (s.camsScene.on.host) out.push('host')
+  if (s.camsScene.on.publico && s.cameras.rects.publico) out.push('publico')
+  return out
+}
+
 export function quizSceneKey(s: GameState): string {
   if (showsLadderResult(s)) {
     const t = s.quiz.ladder.target
@@ -59,7 +68,7 @@ export function quizSceneKey(s: GameState): string {
   const n = s.quiz.current?.question.opciones.length ?? 4
   if (kind === 'ladder') {
     const t = s.quiz.ladder.target
-    return `ladder:${n}:${t?.kind === 'team' ? membersOf(s, t).join(',') : t?.kind === 'contestant' ? t.id : ''}:${s.quiz.ladder.levels.length}`
+    return `ladder:${n}:${t?.kind === 'team' ? membersOf(s, t).join(',') : t?.kind === 'contestant' ? t.id : ''}:${s.quiz.ladder.levels.length}:${ladderExtras(s).join(',')}:${s.quiz.lifelines.map((l) => l.id + l.icon).join(',')}`
   }
   return `${kind}:${n}:${s.layout}:${contestantOrder(s).join(',')}:${camsLineup(s).join(',')}:${s.camsScene.hostMode}:${s.camsScene.corner}`
 }
@@ -121,24 +130,15 @@ export function optionBar(key: string, box: Box, c: number, sino: boolean, upper
   }
 }
 
-function lifelineEl(id: LifelineId): HTMLDivElement {
-  let inner: Node
-  if (id === '5050') inner = h('span', '', { fontSize: 30, fontWeight: 700, color: '#e6cb85', letterSpacing: '0.02em' }, ['50:50'])
-  else if (id === 'llamada')
-    inner = svg(
-      '0 0 24 24',
-      { width: 40, height: 40 },
-      '<path fill="#e6cb85" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"></path>'
-    )
-  else
-    inner = svg(
-      '0 0 24 22',
-      { width: 44, height: 40 },
-      '<rect x="2" y="12" width="4" height="9" fill="#e6cb85"></rect><rect x="8" y="4" width="4" height="17" fill="#e6cb85"></rect><rect x="14" y="9" width="4" height="12" fill="#e6cb85"></rect><rect x="20" y="15" width="3" height="6" fill="#e6cb85"></rect>'
-    )
-  const slash = svg('0 0 140 80', { width: 140, height: 80, class: 'k-life__slash' }, '<line x1="30" y1="70" x2="110" y2="10" stroke="#e6cb85" stroke-width="4"></line>')
-  const el = h('div', 'k-life', {}, [inner, slash])
-  el.dataset.life = id
+/** Comodín del plató: óvalo dorado con su icono (se encoge si hay más de 3). */
+function lifelineEl(def: LifelineDef, w: number): HTMLDivElement {
+  const hgt = Math.round(w * (80 / 140))
+  const inner = lifelineIcon(def, Math.round(hgt * 0.5), '#e6cb85')
+  const slash = svg('0 0 140 80', { width: w, height: hgt, class: 'k-life__slash' }, '<line x1="30" y1="70" x2="110" y2="10" stroke="#e6cb85" stroke-width="4"></line>')
+  slash.setAttribute('preserveAspectRatio', 'none')
+  const el = h('div', 'k-life', { width: w, height: hgt }, [inner, slash])
+  el.dataset.life = def.id
+  el.title = def.name
   return el
 }
 
@@ -158,7 +158,8 @@ export function liveTimer(x: number, y: number, scale = 1) {
     tick(s: GameState) {
       const t = s.quiz.timer
       const cur = s.quiz.current
-      const show = t.enabled && !!cur && cur.phase !== 'revealed' && (t.endsAt !== null || t.remainingMs !== null || cur.shown > 0)
+      // el reloj se ve cuando tú lo muestras (independiente de las opciones)
+      const show = t.enabled && !!cur
       root.style.display = show ? '' : 'none'
       if (!show) return
       const total = t.seconds * 1000
@@ -249,6 +250,7 @@ function equalGeometry(ids: SlotId[], camH: number, plateY: number): CamGeo[] {
 /** Placa de alguien en la escena Juego (el presentador lleva su nombre, sin puntos). */
 export function setLineupPlate(st: GameState, slot: SlotId, plate: PlateEl): void {
   if (slot === 'host') return plate.set(st.host.name, null, '', '')
+  if (slot === 'publico') return plate.set('Público', null, '', '')
   const c = st.contestants.find((x) => x.id === slot)
   const chip = chipFor(st, slot)
   const score = st.layout === 'teams' && c ? st.teams[c.team].score : c?.score ?? 0
@@ -330,20 +332,45 @@ export function buildQuizScene(s: GameState): Scene {
   let imgBox: Box
   let ladderEls: { rungs: HTMLDivElement[]; lifes: HTMLDivElement[] } | null = null
   if (kind === 'ladder') {
-    const members = membersOf(s, s.quiz.ladder.target)
-    const cams = members.length === 2 ? [{ x: 100, w: 585 }, { x: 695, w: 585 }] : [{ x: 100, w: 1180 }]
-    members.slice(0, cams.length).forEach((slot, i) => {
-      const f = camFrame({ x: cams[i].x, y: 40, w: cams[i].w, h: 600 }, slot)
-      frames.set(slot, f)
+    const members = membersOf(s, s.quiz.ladder.target).slice(0, 2)
+    const extras = ladderExtras(s)
+    const all = [...members, ...extras]
+    // el concursante ocupa el doble que cada extra (yo / público)
+    const units = members.length * 2 + extras.length
+    const gap = 10
+    const unitW = (1180 - gap * (all.length - 1)) / Math.max(1, units)
+    let x = 100
+    const boxes: { slot: SlotId; x: number; w: number }[] = []
+    for (const slot of all) {
+      const w = Math.round(unitW * (members.includes(slot as ContestantId) ? 2 : 1))
+      boxes.push({ slot, x, w })
+      x += w + gap
+    }
+    for (const b of boxes) {
+      const f = camFrame({ x: b.x, y: 40, w: b.w, h: 600 }, b.slot)
+      frames.set(b.slot, f)
       root.append(f.root)
-    })
-    const plate = quizPlate({ x: 390, y: 612, w: 600, h: 56 }, 24)
+    }
+    const mBoxes = boxes.filter((b) => members.includes(b.slot as ContestantId))
+    const mx0 = mBoxes[0]?.x ?? 100
+    const mx1 = mBoxes.length ? mBoxes[mBoxes.length - 1].x + mBoxes[mBoxes.length - 1].w : 1280
+    const pw = Math.min(600, mx1 - mx0 - 40)
+    const plate = quizPlate({ x: mx0 + (mx1 - mx0 - pw) / 2, y: 612, w: pw, h: 56 }, 24)
     plates.push({ slots: members, plate })
     root.append(plate.root)
+    for (const b of boxes.filter((x) => !members.includes(x.slot as ContestantId))) {
+      const ep = quizPlate({ x: b.x + 20, y: 612, w: b.w - 40, h: 48 }, 20, 22)
+      ep.set(b.slot === 'host' ? s.host.name : 'Público', null, '', '')
+      root.append(ep.root)
+    }
     imgBox = { x: 100, y: 40, w: 1180, h: 600 }
 
     const lifeRow = h('div', 'k-abs', { left: 1340, top: 40, width: 480, display: 'flex', justifyContent: 'space-between' })
-    const lifes = LIFELINES.map((l) => lifelineEl(l.id))
+    const defs = s.quiz.lifelines
+    const lw = Math.min(140, Math.floor((480 - 10 * Math.max(0, defs.length - 1)) / Math.max(1, defs.length)))
+    const lifes = defs.map((l) => lifelineEl(l, lw))
+    lifeRow.style.justifyContent = defs.length >= 3 ? 'space-between' : 'flex-start'
+    lifeRow.style.gap = '10px'
     lifeRow.append(...lifes)
     const box = h('div', 'k-ladder', { left: 1340, top: 146, width: 480, height: 494 })
     const levels = s.quiz.ladder.levels
@@ -423,7 +450,7 @@ export function buildQuizScene(s: GameState): Scene {
         r.classList.toggle('is-cur', i === l.level && !l.outcome)
         r.classList.toggle('is-passed', i < l.level)
       })
-      ladderEls!.lifes.forEach((el) => el.classList.toggle('is-used', !!l.used[el.dataset.life as LifelineId]))
+      ladderEls!.lifes.forEach((el) => el.classList.toggle('is-used', !!l.used[el.dataset.life ?? '']))
     } else {
       for (const { slots, plate } of plates) setLineupPlate(st, slots[0], plate)
     }

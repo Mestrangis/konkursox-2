@@ -85,6 +85,11 @@ export function buildCamsScene(s: GameState): Scene {
     for (const [slot, f] of frames) f.root.classList.toggle('is-turn', turn.has(slot))
     for (const [slot, plate] of plates) {
       plate.root.style.display = st.camsScene.names ? '' : 'none'
+      if (slot === 'publico') {
+        plate.setName('Público')
+        plate.setScore(null)
+        continue
+      }
       if (slot === 'host') {
         plate.setName(st.host.name)
         const tag = plate.root.querySelector('.k-caption')

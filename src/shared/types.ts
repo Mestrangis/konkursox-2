@@ -5,9 +5,9 @@ import type { RoscoAction, RoscoState } from './rosco'
 import type { CamsScene, FxSlot, GameId, MediaState, Person, SceneAction, SceneId, ShowState } from './scene'
 
 export type ContestantId = 'c1' | 'c2' | 'c3' | 'c4'
-export type SlotId = ContestantId | 'host'
+export type SlotId = ContestantId | 'host' | 'publico'
 export const CONTESTANT_IDS: ContestantId[] = ['c1', 'c2', 'c3', 'c4']
-export const SLOT_IDS: SlotId[] = ['c1', 'c2', 'c3', 'c4', 'host']
+export const SLOT_IDS: SlotId[] = ['c1', 'c2', 'c3', 'c4', 'host', 'publico']
 
 /** Plantillas de plató disponibles en esta fase. */
 export type LayoutId = 'logo' | 'solo' | 'duo' | 'trio' | 'quad' | 'teams'

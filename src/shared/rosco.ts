@@ -22,6 +22,8 @@ export interface RoscoPlayer {
   /** marca de tiempo en que se acaba si el reloj corre */
   endsAt: number | null
   done: boolean
+  /** se le acabó el tiempo (el turno no pasa solo: espera a "Pasar turno") */
+  timeUp?: boolean
 }
 
 export interface RoscoState {
@@ -46,6 +48,7 @@ export type RoscoAction =
   | { type: 'roscoClock'; run: boolean; now: number }
   | { type: 'roscoTimeUp'; now: number }
   | { type: 'roscoSetTurn'; turn: number; now: number }
+  | { type: 'roscoPassTurn'; now: number }
   | { type: 'roscoUndo'; index: number; status: LetterStatus }
   | { type: 'roscoFinish' }
   | { type: 'roscoStop' }
@@ -95,12 +98,13 @@ const pause = (p: RoscoPlayer, now: number): RoscoPlayer => (p.endsAt === null ?
 const run = (p: RoscoPlayer, now: number): RoscoPlayer =>
   p.endsAt !== null || p.done || p.remainingMs <= 0 ? p : { ...p, endsAt: now + p.remainingMs }
 
-/** Tras un cambio, pasa el turno si toca (y arranca el reloj del otro) y detecta el final. */
+/** Tras un cambio, pasa el turno si toca (y arranca el reloj del otro) y detecta el final.
+ *  Si al de turno se le acabó el tiempo, el turno NO pasa solo: se espera a "Pasar turno". */
 function settle(s: RoscoState, switchTurn: boolean, now: number): RoscoState {
   let players = s.players
   let turn = s.turn
   const other = players.length === 2 ? 1 - turn : -1
-  if (other >= 0 && !players[other].done && (switchTurn || players[turn].done)) {
+  if (other >= 0 && !players[other].done && !players[turn].timeUp && (switchTurn || players[turn].done)) {
     turn = other
     players = players.map((p, i) => (i === turn ? run(p, now) : p))
   }
@@ -130,9 +134,22 @@ export function roscoTimeUp(s: RoscoState, now: number): RoscoState {
   if (!s.active || s.finished) return s
   const p = s.players[s.turn]
   if (!p || p.endsAt === null || p.endsAt > now) return s
-  const players = s.players.map((x, i) => (i === s.turn ? { ...x, endsAt: null, remainingMs: 0, done: true } : x))
-  return settle({ ...s, players }, true, now)
+  const players = s.players.map((x, i) => (i === s.turn ? { ...x, endsAt: null, remainingMs: 0, done: true, timeUp: true } : x))
+  return settle({ ...s, players }, false, now)
 }
+
+/** "Pasar turno": el otro concursante juega y arranca su reloj (tras acabarse el tiempo, por ejemplo). */
+export function roscoPassTurn(s: RoscoState, now: number): RoscoState {
+  if (!s.active || s.finished || s.players.length !== 2) return s
+  const other = 1 - s.turn
+  if (s.players[other].done) return s
+  const players = s.players.map((p, i) => (i === other ? run(p, now) : pause(p, now)))
+  return { ...s, players, turn: other }
+}
+
+/** El concursante en turno está parado esperando a que pulses "Pasar turno". */
+export const roscoWaiting = (s: RoscoState): boolean =>
+  s.active && !s.finished && s.players.length === 2 && !!s.players[s.turn]?.timeUp && !s.players[1 - s.turn].done
 
 /** Ganador(es): más aciertos; a igualdad, menos fallos. */
 export function roscoWinners(s: RoscoState): number[] {
@@ -185,6 +202,8 @@ export function applyRoscoAction(g: GameState, a: RoscoAction): GameState {
     }
     case 'roscoTimeUp':
       return set(roscoTimeUp(r, a.now))
+    case 'roscoPassTurn':
+      return { ...g, rosco: roscoPassTurn(r, a.now) }
     case 'roscoSetTurn': {
       if (!r.players[a.turn] || r.players[a.turn].done) return g
       const players = r.players.map((p) => pause(p, a.now))

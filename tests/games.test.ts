@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest'
 import { estimationPoints, estimationResult, finalStandings, niceScale, quienOptions, roman, winnerWord } from '../src/shared/games'
 import type { Question } from '../src/shared/questions'
 import type { Target } from '../src/shared/quiz'
-import { buildLetters, defaultRosco, nextLetter, roscoMark, roscoPoints, roscoStats, roscoTimeUp, roscoWinners, type RoscoLetter, type RoscoState } from '../src/shared/rosco'
+import { buildLetters, defaultRosco, nextLetter, roscoMark, roscoPassTurn, roscoPoints, roscoStats, roscoTimeUp, roscoWaiting, roscoWinners, type RoscoLetter, type RoscoState } from '../src/shared/rosco'
 import { applyAction, defaultState } from '../src/shared/state'
 import type { GameState } from '../src/shared/types'
 
@@ -76,13 +76,54 @@ describe('rosco', () => {
     expect(r.finished).toBe(true)
   })
 
-  it('se acaba el tiempo', () => {
+  it('al acabarse el tiempo se para y NO pasa el turno hasta "Pasar turno"', () => {
     let r = rosco(2, 'AB', 10)
+    // solo corre el reloj del que tiene el turno
+    r = { ...r, players: [r.players[0], { ...r.players[1], endsAt: null }] }
     expect(roscoTimeUp(r, 5000)).toBe(r)
     r = roscoTimeUp(r, 10000)
     expect(r.players[0].done).toBe(true)
+    expect(r.players[0].timeUp).toBe(true)
     expect(r.players[0].remainingMs).toBe(0)
+    expect(r.players[0].endsAt).toBeNull()
+    // sigue siendo su turno, esperando
+    expect(r.turn).toBe(0)
+    expect(roscoWaiting(r)).toBe(true)
+    expect(r.finished).toBe(false)
+    // al pulsar "Pasar turno" juega el otro y arranca su reloj
+    r = roscoPassTurn(r, 20000)
     expect(r.turn).toBe(1)
+    expect(roscoWaiting(r)).toBe(false)
+    expect(r.players[1].endsAt).toBe(20000 + r.players[1].remainingMs)
+  })
+
+  it('con un solo jugador, acabarse el tiempo termina el rosco', () => {
+    let r = rosco(1, 'AB', 10)
+    r = roscoTimeUp(r, 10000)
+    expect(r.finished).toBe(true)
+    expect(roscoWaiting(r)).toBe(false)
+  })
+
+  it('cambiar turno (Tab) cambia de concursante sin marcar pasapalabra', () => {
+    let r = rosco(2, 'ABC', 100)
+    r = roscoPassTurn(r, 5000)
+    expect(r.turn).toBe(1)
+    // la letra del primero sigue pendiente (no pasada) y su reloj está parado
+    expect(r.players[0].letters[0].status).toBe('pend')
+    expect(r.players[0].current).toBe(0)
+    expect(r.players[0].endsAt).toBeNull()
+    expect(r.players[0].remainingMs).toBe(95000)
+    expect(r.players[1].endsAt).not.toBeNull()
+    // y vuelta
+    r = roscoPassTurn(r, 6000)
+    expect(r.turn).toBe(0)
+    expect(r.players[0].endsAt).toBe(6000 + 95000)
+  })
+
+  it('pasar turno no hace nada si el otro ya ha terminado', () => {
+    let r = rosco(2, 'A', 100)
+    r = { ...r, players: [r.players[0], { ...r.players[1], done: true }] }
+    expect(roscoPassTurn(r, 1000)).toBe(r)
   })
 
   it('ganador por aciertos y, a igualdad, por menos fallos; puntos y bote', () => {

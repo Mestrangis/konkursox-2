@@ -46,7 +46,16 @@ export interface CamsScene {
   corner: Corner
   /** plantilla fija de la escena Cámaras (null: reparto automático) */
   template: LayoutId | null
+  /** plano de la escena Juego: el juego, cámaras con datos encima o cámaras limpias */
+  plano: Plano
 }
+
+export type Plano = 'juego' | 'datos' | 'limpio'
+export const PLANOS: { id: Plano; label: string; key: string }[] = [
+  { id: 'juego', label: 'Juego', key: 'Ctrl F1' },
+  { id: 'datos', label: 'Cámaras + datos', key: 'Ctrl F2' },
+  { id: 'limpio', label: 'Cámaras limpias', key: 'Ctrl F3' }
+]
 
 /** La plantilla elegida, si se puede usar con los concursantes que hay. */
 export function camsTemplate(s: GameState): LayoutId | null {
@@ -152,7 +161,7 @@ export const SCENE_ACTIONS = new Set<string>([
 ])
 
 export function defaultCams(): CamsScene {
-  return { on: { host: false, c1: true, c2: true, c3: true, c4: true }, names: true, scores: true, transition: 'fade', preset: null, rev: 2, hostMode: 'igual', corner: 'br', template: null }
+  return { on: { host: false, c1: true, c2: true, c3: true, c4: true, publico: false }, names: true, scores: true, transition: 'fade', preset: null, rev: 2, hostMode: 'igual', corner: 'br', template: null, plano: 'juego' }
 }
 
 export const DEFAULT_FX: FxSlot[] = [
@@ -186,9 +195,11 @@ export function currentTurn(s: GameState): Target | null {
 
 function camsFor(s: GameState, preset: CamsPreset): Record<SlotId, boolean> {
   const active = new Set<SlotId>(activeContestants(s))
-  const on = { host: true, c1: false, c2: false, c3: false, c4: false } as Record<SlotId, boolean>
+  const on = { host: true, c1: false, c2: false, c3: false, c4: false, publico: false } as Record<SlotId, boolean>
   if (preset === 'todos') for (const id of active) on[id] = true
   if (preset === 'turno') for (const id of targetMembers(s, currentTurn(s))) on[id] = true
+  // la cámara del público se queda como estuviera
+  on.publico = !!s.camsScene.on.publico
   return on
 }
 
@@ -345,13 +356,17 @@ export function camOf(s: GameState, person: SlotId): SlotId {
 }
 
 /** Personas que salen en la escena Cámaras, en orden: el presentador en medio si hay concursantes a ambos lados. */
+/** La cámara "Público" se puede sacar si está calibrada. */
+export const hasPublico = (s: GameState): boolean => !!s.cameras.rects.publico
+
 export function camsLineup(s: GameState): SlotId[] {
   const cs = activeContestants(s).filter((id) => s.camsScene.on[id])
-  if (!s.camsScene.on.host) return cs
-  if (cs.length === 0) return ['host']
-  if (cs.length === 1) return [cs[0], 'host']
+  const pub: SlotId[] = s.camsScene.on.publico && hasPublico(s) ? ['publico'] : []
+  if (!s.camsScene.on.host) return [...cs, ...pub]
+  if (cs.length === 0) return ['host', ...pub]
+  if (cs.length === 1) return [cs[0], 'host', ...pub]
   const mid = Math.floor(cs.length / 2)
-  return [...cs.slice(0, mid), 'host', ...cs.slice(mid)]
+  return [...cs.slice(0, mid), 'host', ...cs.slice(mid), ...pub]
 }
 
 export const newId = (): string => Math.random().toString(36).slice(2, 10)

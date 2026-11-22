@@ -1,10 +1,10 @@
 // Rosco (design/panel.html: "Juego · Rosco · 2 concursantes").
 import { ROSCO_ALPHABET } from '../../../shared/questions'
 import { sameTarget, turnTargets, type Target } from '../../../shared/quiz'
-import { buildLetters, remainingMs, roscoPoints, roscoStats, roscoWinners, type RoscoAction, type RoscoPlayer } from '../../../shared/rosco'
+import { buildLetters, remainingMs, roscoPoints, roscoStats, roscoWaiting, roscoWinners, type RoscoAction, type RoscoPlayer } from '../../../shared/rosco'
 import type { GameState } from '../../../shared/types'
 import { askConfirm, btn, h, kbd, mmss, nameOf, type Ctx, type Screen } from '../ui'
-import { flowSteps, goButton, onAirLabel } from './common'
+import { airBadge, flowSteps, goButton, onAirLabel } from './common'
 
 export function createRoscoScreen(ctx: Ctx): Screen {
   const S = () => ctx.state
@@ -28,12 +28,10 @@ export function createRoscoScreen(ctx: Ctx): Screen {
     if (!s.rosco.active || !p || p.done) return
     r({ type: 'roscoClock', run: p.endsAt === null, now: Date.now() })
   }
+  /** Cambia de concursante sin marcar pasapalabra (y arranca su reloj). También "Pasar turno" tras acabarse el tiempo. */
   function swap(): void {
     const s = S()
-    if (s.rosco.players.length === 2 && !s.rosco.finished) {
-      r({ type: 'roscoSetTurn', turn: 1 - s.rosco.turn, now: Date.now() })
-      r({ type: 'roscoClock', run: true, now: Date.now() + 1 })
-    }
+    if (s.rosco.players.length === 2 && !s.rosco.finished) r({ type: 'roscoPassTurn', now: Date.now() })
   }
 
   async function start(): Promise<void> {
@@ -43,8 +41,8 @@ export function createRoscoScreen(ctx: Ctx): Screen {
     const refs = [s.rosco.bankFile, s.rosco.bankFile2]
     const built = []
     for (let i = 0; i < Math.min(2, chosen.length); i++) {
-      const ref = refs[i] ?? refs[0]
-      if (!ref) return ctx.toast('Elige el banco de cada concursante')
+      const ref = refs[i]
+      if (!ref) return ctx.toast(`Elige el rosco de ${nameOf(s, chosen[i])}`)
       const bank = await ctx.lib.get(ref)
       const letters = buildLetters(bank.preguntas.filter((q) => q.enunciado && q.respuesta))
       if (!letters.length) return ctx.toast(`El rosco «${bank.nombre}» no tiene letras completas`)
@@ -65,6 +63,7 @@ export function createRoscoScreen(ctx: Ctx): Screen {
     if (p && p.endsAt !== null && remainingMs(p, Date.now()) <= 0) {
       r({ type: 'roscoTimeUp', now: Date.now() })
       ctx.cue('error')
+      ctx.toast(`Tiempo agotado para ${nameOf(s, p.target)}`)
     }
     // solo los relojes: repintar todo cada 250 ms se comería los clics
     if (el.isConnected)
@@ -102,7 +101,7 @@ export function createRoscoScreen(ctx: Ctx): Screen {
     const bankSel = (i: 0 | 1) => {
       const cur = i === 0 ? s.rosco.bankFile : s.rosco.bankFile2
       const sel = h('select', 'inp')
-      sel.append(h('option', '', {}, [i === 1 ? '(el mismo que el primero)' : banks.length ? 'Elige un rosco' : 'No hay roscos: créalos en Biblioteca']))
+      sel.append(h('option', '', {}, [banks.length ? 'Elige un rosco' : 'No hay roscos: créalos en Biblioteca']))
       ;(sel.firstChild as HTMLOptionElement).value = ''
       for (const b of banks) {
         const o = h('option', '', {}, [`${b.nombre} · ${b.letters ?? 0}/27 letras`])
@@ -113,13 +112,15 @@ export function createRoscoScreen(ctx: Ctx): Screen {
       sel.onchange = () => r({ type: 'roscoConfig', patch: i === 0 ? { bankFile: sel.value || null } : { bankFile2: sel.value || null } })
       return sel
     }
-    if (!s.rosco.bankFile && banks[0]) r({ type: 'roscoConfig', patch: { bankFile: banks[0].ref, bankFile2: banks[1]?.ref ?? null } })
     const targets = turnTargets(s)
+    // con un solo concursante no hay rosco a dos
+    if (targets.length < 2) players[1] = null
     if (!players[0] || !targets.some((t) => sameTarget(t, players[0]))) players[0] = targets[0] ?? null
     if (players[1] && !targets.some((t) => sameTarget(t, players[1]))) players[1] = null
     const who = (i: 0 | 1) => {
       const sel = h('select', 'inp')
-      if (i === 1) sel.append(h('option', '', {}, ['Nadie (rosco en solitario)']))
+      if (i === 1) sel.append(h('option', '', {}, [targets.length < 2 ? 'Solo hay un concursante' : 'Nadie (rosco en solitario)']))
+      if (i === 1 && targets.length < 2) sel.disabled = true
       targets.forEach((t, j) => {
         const o = h('option', '', {}, [nameOf(s, t)])
         o.value = String(j)
@@ -143,18 +144,36 @@ export function createRoscoScreen(ctx: Ctx): Screen {
       }
       return h('label', 'field', {}, [h('span', 'fl', {}, [label]), i])
     }
+    // qué falta para empezar: sin rosco elegido, aviso claro con acceso a la Biblioteca
+    const missing: string[] = []
+    if (!banks.length) missing.push('No hay ningún rosco en la Biblioteca.')
+    else {
+      if (players[0] && !s.rosco.bankFile) missing.push(`Falta elegir el rosco de ${nameOf(s, players[0])}.`)
+      if (players[1] && !s.rosco.bankFile2) missing.push(`Falta elegir el rosco de ${nameOf(s, players[1])}.`)
+    }
+    const ready = !!players[0] && !missing.length
     const go = goButton()
-    go.set(`Empezar el rosco${players[1] ? ' a dos' : ''}`, `${s.rosco.seconds} s cada uno · el reloj arranca al empezar`, players[0] ? () => void start() : null)
+    go.set(`Empezar el rosco${players[1] ? ' a dos' : ''}`, ready ? `${s.rosco.seconds} s cada uno · el reloj arranca al empezar` : 'Elige antes el rosco de cada concursante', ready ? () => void start() : null)
     const last = s.rosco.finished ? result(s) : null
+    const n1 = players[0] ? nameOf(s, players[0]) : 'concursante 1'
+    const n2 = players[1] ? nameOf(s, players[1]) : 'concursante 2'
     body.replaceChildren(
       ...(last ? [last] : []),
+      ...(missing.length
+        ? [
+            h('div', 'banner bad', { display: 'flex', alignItems: 'center', gap: 12 }, [
+              h('span', '', { flex: 1 }, [missing.join(' ')]),
+              btn(banks.length ? 'Crear otro en Biblioteca' : 'Crear un rosco en Biblioteca', () => ctx.go('biblioteca'), 'b sm')
+            ])
+          ]
+        : []),
       h('div', 'pnl', { padding: '16px 18px', display: 'flex', flexDirection: 'column', gap: 14 }, [
         h('span', 'lbl', {}, ['Preparar el rosco']),
         h('div', '', { display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }, [
           h('label', 'field', {}, [h('span', 'fl', {}, ['Concursante 1']), who(0)]),
-          h('label', 'field', {}, [h('span', 'fl', {}, ['Rosco del concursante 1']), bankSel(0)]),
+          h('label', 'field', {}, [h('span', 'fl', {}, [`Rosco de ${n1}`]), bankSel(0)]),
           h('label', 'field', {}, [h('span', 'fl', {}, ['Concursante 2 (se alternan)']), who(1)]),
-          h('label', 'field', {}, [h('span', 'fl', {}, ['Rosco del concursante 2']), bankSel(1)])
+          players[1] ? h('label', 'field', {}, [h('span', 'fl', {}, [`Rosco de ${n2}`]), bankSel(1)]) : h('span')
         ]),
         h('div', '', { display: 'flex', gap: 12, flexWrap: 'wrap' }, [
           num('Segundos por concursante', s.rosco.seconds, (n) => r({ type: 'roscoConfig', patch: { seconds: Math.max(10, Math.round(n)) } })),
@@ -166,7 +185,7 @@ export function createRoscoScreen(ctx: Ctx): Screen {
       h('span', 'spacer'),
       go.el
     )
-    goRun = players[0] ? () => void start() : null
+    goRun = ready ? () => void start() : null
   }
 
   function result(s: GameState): HTMLElement {
@@ -186,6 +205,7 @@ export function createRoscoScreen(ctx: Ctx): Screen {
   }
 
   let goRun: (() => void) | null = null
+  let waitRun: (() => void) | null = null
 
   function update(s: GameState): void {
     const ro = s.rosco
@@ -193,7 +213,7 @@ export function createRoscoScreen(ctx: Ctx): Screen {
     const live = ro.active && !!p && !ro.finished
     header.replaceChildren(
       h('div', 'title', {}, [
-        h('b', '', {}, ['Rosco']),
+        h('b', '', { display: 'flex', alignItems: 'center', gap: 10 }, ['Rosco', airBadge(ctx, s, 'rosco')]),
         h('span', 'mut', { fontSize: 13 }, [
           live
             ? `Banco «${ctx.lib.info(ro.bankFile)?.nombre ?? '-'}»${ro.players.length === 2 ? ` y «${ctx.lib.info(ro.bankFile2 ?? ro.bankFile)?.nombre ?? '-'}»` : ''} · ${ro.players.length} ${ro.players.length === 1 ? 'concursante' : 'concursantes'} · ${ro.seconds} s cada uno`
@@ -255,13 +275,20 @@ export function createRoscoScreen(ctx: Ctx): Screen {
       b.disabled = p.done
       return b
     }
+    const waiting = roscoWaiting(ro)
+    const other = ro.players.length === 2 ? ro.players[1 - ro.turn] : null
+    const passGo = goButton()
+    passGo.set(`Pasar turno a ${other ? nameOf(s, other.target) : ''}`, 'Su reloj arranca al pulsar', waiting ? swap : null, true)
+    waitRun = waiting ? swap : null
     const clockBtn = btn(p.endsAt !== null ? 'Pausar reloj' : 'Seguir reloj', toggleClock, 'b ghost', 'P')
     const undoBtn = btn('Corregir la última letra', () => ctx.send({ type: 'undo', game: 'rosco' }), 'b ghost', 'Ctrl Z')
     undoBtn.disabled = !s.runtime.undo.rosco
     body.replaceChildren(
       h('div', '', { display: 'flex', justifyContent: 'flex-end' }, [onAirLabel(s, 'rosco', 'el rosco')]),
       h('div', '', { display: 'flex', gap: 12 }, cards),
+      ...(p.timeUp ? [h('div', 'banner bad', { fontSize: 15, fontWeight: 700 }, [`Tiempo agotado para ${nameOf(s, p.target)}${waiting ? ' · pulsa "Pasar turno" cuando quieras' : ''}`])] : []),
       def,
+      ...(waiting ? [passGo.el] : []),
       h('div', '', { display: 'flex', gap: 10 }, [big('ac', 'Acierto', 'A', () => mark('ok')), big('fa', 'Fallo', 'F', () => mark('ko')), big('pa', 'Pasapalabra', 'Espacio', () => mark('pasa'))]),
       h('div', 'secrow', {}, [
         clockBtn,
@@ -287,7 +314,8 @@ export function createRoscoScreen(ctx: Ctx): Screen {
       }
       return false
     }
-    if (k === 'a') mark('ok')
+    if (k === ' ' && waitRun) waitRun()
+    else if (k === 'a') mark('ok')
     else if (k === 'f') mark('ko')
     else if (k === ' ') mark('pasa')
     else if (k === 'p') toggleClock()

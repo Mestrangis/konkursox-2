@@ -114,14 +114,54 @@ describe('turnos y rebote', () => {
     expect(s.quiz.current!.target).toEqual(c('c2'))
   })
 
-  it('el temporizador arranca al mostrar todas las opciones y se para al marcar', () => {
+  it('el temporizador nunca arranca solo: se arranca a mano y se para al marcar', () => {
     let s: GameState = defaultState()
     s = run(s, { type: 'timerConfig', patch: { enabled: true, seconds: 20 } }, { type: 'quizLoad', key: 'b::1', bankFile: 'b', question: q4, now: 0 })
     s = run(s, { type: 'quizShowAll', now: 1000 })
+    expect(s.quiz.timer.endsAt).toBeNull()
+    s = run(s, { type: 'timerStart', now: 1000 })
+    expect(s.quiz.timer.endsAt).toBe(21000)
+    // ocultarlo no lo para
+    s = run(s, { type: 'timerConfig', patch: { enabled: false } })
     expect(s.quiz.timer.endsAt).toBe(21000)
     s = run(s, { type: 'quizPick', index: 1, now: 6000 })
     expect(s.quiz.timer.endsAt).toBeNull()
     expect(s.quiz.timer.remainingMs).toBe(15000)
+  })
+})
+
+describe('preguntas usadas', () => {
+  it('cargar una pregunta no la marca como usada; revelarla sí', () => {
+    let s: GameState = defaultState()
+    s = run(s, { type: 'quizLoad', key: 'b::1', bankFile: 'b', question: q4, now: 0 })
+    expect(s.quiz.used['b::1']).toBeUndefined()
+    s = run(s, { type: 'quizShowAll', now: 1 })
+    expect(s.quiz.used['b::1']).toBeUndefined()
+    s = run(s, { type: 'quizPick', index: 2, now: 2 })
+    expect(s.quiz.used['b::1']).toBeUndefined()
+    s = run(s, { type: 'quizReveal', now: 3 })
+    expect(s.quiz.used['b::1']).toBe(true)
+  })
+
+  it('revelar sin respuesta marcada no la da por usada; desmarcarla la deja libre', () => {
+    let s: GameState = defaultState()
+    s = run(s, { type: 'quizLoad', key: 'b::1', bankFile: 'b', question: q4, now: 0 }, { type: 'quizShowAll', now: 1 }, { type: 'quizReveal', now: 2 })
+    expect(s.quiz.used['b::1']).toBeUndefined()
+    s = run(s, { type: 'quizPick', index: 0, now: 3 }, { type: 'quizReveal', now: 4 })
+    expect(s.quiz.used['b::1']).toBe(true)
+    s = run(s, { type: 'quizMarkUsed', key: 'b::1', used: false })
+    expect(s.quiz.used['b::1']).toBeUndefined()
+  })
+
+  it('las opciones se muestran de una en una', () => {
+    let s: GameState = defaultState()
+    s = run(s, { type: 'quizLoad', key: 'b::1', bankFile: 'b', question: q4, now: 0 }, { type: 'quizShowNext', now: 1 })
+    expect(s.quiz.current!.shown).toBe(1)
+    expect(s.quiz.current!.phase).toBe('options')
+    s = run(s, { type: 'quizShowNext', now: 2 }, { type: 'quizShowNext', now: 3 })
+    expect(s.quiz.current!.shown).toBe(3)
+    s = run(s, { type: 'quizShowAll', now: 4 })
+    expect(s.quiz.current!.shown).toBe(4)
   })
 })
 

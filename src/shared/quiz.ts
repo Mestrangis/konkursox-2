@@ -69,12 +69,41 @@ export interface LadderLevel {
   safe: boolean
 }
 
-export type LifelineId = '5050' | 'llamada' | 'publico'
-export const LIFELINES: { id: LifelineId; label: string }[] = [
-  { id: '5050', label: '50:50' },
-  { id: 'llamada', label: 'Llamada' },
-  { id: 'publico', label: 'Público' }
+export type LifelineId = string
+/** fifty: quita dos opciones incorrectas; mark: solo se marca como usado */
+export type LifelineKind = 'fifty' | 'mark'
+export interface LifelineDef {
+  id: string
+  name: string
+  /** icono propio (clave de LIFELINE_ICONS) o "img:<archivo>" de la carpeta de imágenes */
+  icon: string
+  kind: LifelineKind
+}
+export const MAX_LIFELINES = 5
+/** Iconos propios para comodines (trazados 24x24, o texto). */
+export const LIFELINE_ICONS: Record<string, { label: string; path?: string; text?: string }> = {
+  mitad: { label: '50:50', text: '50:50' },
+  telefono: { label: 'Teléfono', path: 'M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z' },
+  publico: { label: 'Público', path: 'M2 12h4v9H2zM8 4h4v17H8zM14 9h4v12h-4zM20 15h3v6h-3z' },
+  cambio: { label: 'Cambio', path: 'M7 6h10.2l-2.6-2.6L16 2l5 5-5 5-1.4-1.4L17.2 8H7zM17 18H6.8l2.6 2.6L8 22l-5-5 5-5 1.4 1.4L6.8 16H17z' },
+  bombilla: { label: 'Pista', path: 'M12 2a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2zM9 19h6v2H9z' },
+  estrella: { label: 'Estrella', path: 'M12 2l3 6.9 7.5.7-5.7 5 1.7 7.4L12 18l-6.5 4 1.7-7.4-5.7-5 7.5-.7z' },
+  reloj: { label: 'Reloj', path: 'M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm0 2a8 8 0 1 1 0 16 8 8 0 0 1 0-16zm-1 3v6l5 3 1-1.7-4-2.3V7z' },
+  pregunta: { label: 'Pregunta', path: 'M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm-1 15h2v2h-2zm1-12a4 4 0 0 1 2.8 6.8l-.9.9c-.6.6-.9 1.1-.9 2.3h-2v-.5c0-1.1.4-2.1 1.2-2.8l1.2-1.3A2 2 0 1 0 10 9H8a4 4 0 0 1 4-4z' },
+  amigo: { label: 'Persona', path: 'M12 2a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 12c5 0 9 2.2 9 5v3H3v-3c0-2.8 4-5 9-5z' },
+  dado: { label: 'Dado', path: 'M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm2.5 3a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm9 9a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM12 10.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z' }
+}
+export const DEFAULT_LIFELINES: LifelineDef[] = [
+  { id: '5050', name: '50:50', icon: 'mitad', kind: 'fifty' },
+  { id: 'llamada', name: 'Llamada', icon: 'telefono', kind: 'mark' },
+  { id: 'publico', name: 'Público', icon: 'publico', kind: 'mark' }
 ]
+
+/** Pregunta de la escalera: de cualquier banco de test o sí o no (o de un banco de escalera). */
+export interface LadderPick {
+  ref: string
+  id: string
+}
 
 export type LadderOutcomeKind = 'won' | 'walked' | 'failed'
 
@@ -84,7 +113,9 @@ export interface LadderState {
   /** índice (0-based) del escalón por el que se juega ahora */
   level: number
   levels: LadderLevel[]
-  used: Record<LifelineId, boolean>
+  used: Record<string, boolean>
+  /** preguntas de la escalera en orden (escalón 1, 2...) */
+  plan: LadderPick[]
   outcome: { kind: LadderOutcomeKind; prize: number } | null
   /** sumar el premio final a los puntos del concursante/equipo */
   awardToScore: boolean
@@ -145,6 +176,8 @@ export interface QuizState {
   /** las preguntas nuevas son para todos */
   allMode: boolean
   estimation: EstimationConfig
+  /** comodines de la escalera (hasta 5) */
+  lifelines: LifelineDef[]
 }
 
 export type QuizAction = (
@@ -185,6 +218,8 @@ export type QuizAction = (
   | { type: 'ladderSetLifeline'; id: LifelineId; used: boolean; hide?: number[] }
   | { type: 'ladderWalk' }
   | { type: 'ladderSetAward'; awardToScore: boolean }
+  | { type: 'ladderSetLifelines'; lifelines: LifelineDef[] }
+  | { type: 'ladderSetPlan'; plan: LadderPick[] }
 ) & { /** juego sobre el que actúa (por defecto, el último usado) */ game?: QuizGameId }
 
 // ---------------------------------------------------------------- valores por defecto
@@ -201,7 +236,8 @@ export function defaultLadder(): LadderState {
     target: null,
     level: 0,
     levels: defaultLevels(),
-    used: { '5050': false, llamada: false, publico: false },
+    used: {},
+    plan: [],
     outcome: null,
     awardToScore: true,
     awarded: false,
@@ -222,6 +258,7 @@ export function defaultQuiz(): QuizState {
     autoRotate: true,
     asked: 0,
     ladder: defaultLadder(),
+    lifelines: DEFAULT_LIFELINES.map((l) => ({ ...l })),
     sounds: Object.fromEntries(CUES.map((c) => [c.id, c.def])) as Record<CueId, string | null>,
     slots: {},
     focus: 'test',
@@ -344,7 +381,7 @@ const withCurrent = (s: S, patch: Partial<CurrentQuestion>): S =>
   s.quiz.current ? withQuiz(s, { current: { ...s.quiz.current, ...patch } }) : s
 
 function startTimer(t: TimerState, now: number): TimerState {
-  if (!t.enabled || t.endsAt !== null) return t
+  if (t.endsAt !== null) return t
   return { ...t, endsAt: now + (t.remainingMs ?? t.seconds * 1000), remainingMs: null }
 }
 function pauseTimer(t: TimerState, now: number): TimerState {
@@ -431,7 +468,6 @@ function reveal(s: S, now: number): S {
     const remaining = cur.question.opciones.length - cur.hidden.length - attempts.filter((a) => !a.correct).length
     if (nt && remaining > 1) {
       current = { ...current, phase: 'options', picked: null, target: nt }
-      timer = startTimer(timer, now)
     }
   }
 
@@ -531,7 +567,7 @@ function applyQuizInner(s: S, a: QuizAction): S {
       if (!individual && !inLadder) current.target = null
       return {
         ...s,
-        quiz: { ...q, current, turn, asked: individual ? q.asked + 1 : q.asked, used: { ...q.used, [a.key]: true }, timer: resetTimer(q.timer) }
+        quiz: { ...q, current, turn, asked: individual ? q.asked + 1 : q.asked, timer: resetTimer(q.timer) }
       }
     }
     case 'quizShowQuestion': {
@@ -555,8 +591,7 @@ function applyQuizInner(s: S, a: QuizAction): S {
       const n = cur.question.opciones.length
       const shown = a.type === 'quizShowAll' ? n : Math.min(n, cur.shown + 1)
       const phase = cur.phase === 'question' || cur.phase === 'ready' ? 'options' : cur.phase
-      const timer = shown === n && cur.phase !== 'locked' ? startTimer(q.timer, a.now) : q.timer
-      return withQuiz(s, { current: { ...cur, shown, phase }, timer })
+      return withQuiz(s, { current: { ...cur, shown, phase } })
     }
     case 'quizAnswerAll': {
       const cur = q.current
@@ -596,8 +631,12 @@ function applyQuizInner(s: S, a: QuizAction): S {
       if (!cur || cur.phase !== 'locked') return s
       return withCurrent(s, { picked: null, phase: 'options' })
     }
-    case 'quizReveal':
-      return reveal(s, a.now)
+    case 'quizReveal': {
+      // la pregunta cuenta como usada al revelarla (no al cargarla)
+      const r = reveal(s, a.now)
+      const key = s.quiz.current?.key
+      return r === s || !key ? r : withQuiz(r, { used: { ...r.quiz.used, [key]: true } })
+    }
     case 'quizAward':
       return awardPending(s)
     case 'quizClear':
@@ -618,7 +657,7 @@ function applyQuizInner(s: S, a: QuizAction): S {
     case 'timerConfig': {
       const timer = { ...q.timer, ...a.patch }
       if (a.patch.seconds !== undefined) timer.seconds = Math.max(1, Math.round(a.patch.seconds))
-      return withQuiz(s, { timer: a.patch.enabled === false ? resetTimer(timer) : timer })
+      return withQuiz(s, { timer })
     }
     case 'timerStart':
       return withQuiz(s, { timer: startTimer(q.timer, a.now) })
@@ -628,7 +667,7 @@ function applyQuizInner(s: S, a: QuizAction): S {
       return withQuiz(s, { timer: resetTimer(q.timer) })
     case 'ladderStart':
       return withQuiz(s, {
-        ladder: { ...defaultLadder(), levels: q.ladder.levels, awardToScore: q.ladder.awardToScore, active: true, target: a.target },
+        ladder: { ...defaultLadder(), levels: q.ladder.levels, awardToScore: q.ladder.awardToScore, plan: q.ladder.plan, active: true, target: a.target },
         turn: a.target
       })
     case 'ladderStop':
@@ -645,7 +684,8 @@ function applyQuizInner(s: S, a: QuizAction): S {
     }
     case 'ladderSetLifeline': {
       let next = withQuiz(s, { ladder: { ...q.ladder, used: { ...q.ladder.used, [a.id]: a.used } } })
-      if (a.id === '5050' && q.current && a.hide) next = withCurrent(next, { hidden: a.used ? a.hide : [] })
+      const def = q.lifelines.find((x) => x.id === a.id)
+      if (def?.kind === 'fifty' && q.current && a.hide) next = withCurrent(next, { hidden: a.used ? a.hide : [] })
       return next
     }
     case 'ladderWalk': {
@@ -656,6 +696,10 @@ function applyQuizInner(s: S, a: QuizAction): S {
     }
     case 'ladderSetAward':
       return withQuiz(s, { ladder: { ...q.ladder, awardToScore: a.awardToScore } })
+    case 'ladderSetLifelines':
+      return withQuiz(s, { lifelines: a.lifelines.slice(0, MAX_LIFELINES).filter((l) => l && l.id && l.name) })
+    case 'ladderSetPlan':
+      return withQuiz(s, { ladder: { ...q.ladder, plan: a.plan.filter((x) => x && x.ref && x.id) } })
     default:
       return s
   }
