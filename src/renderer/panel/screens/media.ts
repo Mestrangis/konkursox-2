@@ -36,7 +36,9 @@ export function createMediaScreen(ctx: Ctx): Screen {
   ])
   const el = h('div', 'screen', {}, [head, controls, h('div', '', { display: 'flex', gap: 14, flex: 1, minHeight: 0 }, [folders, drop])])
 
-  yt.onkeydown = (e) => e.key === 'Enter' && void addYt()
+  yt.onkeydown = (e) => {
+    if (e.key === 'Enter') void addYt()
+  }
   drop.ondragover = (e) => {
     e.preventDefault()
     drop.style.boxShadow = '0 0 0 2px #4f7dff'

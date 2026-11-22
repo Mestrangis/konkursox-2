@@ -154,7 +154,9 @@ export function createSettingsScreen(ctx: Ctx): Screen {
       if (!name) return
       setPeople([...ctx.state.people, { id: newId(), name }])
     }
-    newPerson.onkeydown = (e) => e.key === 'Enter' && addPerson()
+    newPerson.onkeydown = (e) => {
+      if (e.key === 'Enter') addPerson()
+    }
 
     const u = s.runtime.update
     const upText: Record<string, string> = {

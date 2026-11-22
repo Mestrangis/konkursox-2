@@ -215,7 +215,9 @@ function dialogBox(build: (close: (v: unknown) => void) => HTMLElement[]): Promi
     window.addEventListener('keydown', onKey, true)
     box.append(...build(close))
     back.append(box)
-    back.onmousedown = (e) => e.target === back && close(null)
+    back.onmousedown = (e) => {
+      if (e.target === back) close(null)
+    }
     document.body.append(back)
     requestAnimationFrame(() => (box.querySelector('input, textarea') as HTMLElement | null)?.focus())
   })
