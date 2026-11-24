@@ -1,6 +1,9 @@
 // Ajustes: plató, audio y sonidos del juego, puntuación, reloj, escalera, estimación, personas, rótulo y actualizaciones.
 import { CUES, DEFAULT_LIFELINES, defaultLevels, LIFELINE_ICONS, MAX_LIFELINES, type LifelineDef } from '../../../shared/quiz'
 import { lifelineIcon } from '../../ds/lifeline'
+import { reloadTheme } from '../../common/theme'
+import { EFFECTS } from '../../../shared/effects'
+import { soundKeyLabel } from '../../../shared/keys'
 import { newId, playedCount, type Person } from '../../../shared/scene'
 import type { DisplayInfo, GameState } from '../../../shared/types'
 import { askConfirm, btn, editableArea, h, seg, sw, type Ctx, type Screen } from '../ui'
@@ -59,8 +62,8 @@ export function createSettingsScreen(ctx: Ctx): Screen {
         if (file) patch(i, { icon: `img:${file}` })
         else iconSel.value = l.icon
       }
-      const kind = h('select', 'inp', { width: 190 })
-      kind.append(new Option('50:50 automático', 'fifty'), new Option('Solo marcar como usado', 'mark'))
+      const kind = h('select', 'inp', { width: 160 })
+      kind.append(new Option('50:50 automático', 'fifty'), new Option('Solo marcarlo', 'mark'))
       kind.value = l.kind
       kind.onchange = () => patch(i, { kind: kind.value as LifelineDef['kind'] })
       const prev = h('span', '', { width: 44, height: 30, flex: 'none', display: 'flex', alignItems: 'center', justifyContent: 'center', borderRadius: 15, background: '#0d1530', boxShadow: '0 0 0 1px #8a6d32' }, [lifelineIcon(l, 18, '#e6cb85')])
@@ -76,11 +79,37 @@ export function createSettingsScreen(ctx: Ctx): Screen {
       )
     )
   }
+  // temas del plató (archivos de Documentos\KONKURSOX\temas)
+  let themes: { id: string; nombre: string; descripcion: string }[] = []
+  const loadThemes = async (reload = false) => {
+    themes = await window.konk.themesList()
+    if (!ctx.state) return
+    if (reload) reloadTheme(ctx.state.plato.theme)
+    if (el.isConnected) build(ctx.state)
+  }
+  void loadThemes()
+  const themeSel = (s: GameState) => {
+    const sel = h('select', 'inp', { width: 220 })
+    const list = themes.length ? themes : [{ id: s.plato.theme || 'clasico', nombre: s.plato.theme || 'Clásico', descripcion: '' }]
+    for (const t of list) {
+      const o = new Option(t.nombre, t.id)
+      o.title = t.descripcion
+      sel.append(o)
+    }
+    sel.value = s.plato.theme || 'clasico'
+    sel.onchange = () => ctx.send({ type: 'setPlato', patch: { theme: sel.value } })
+    return sel
+  }
+  /** Tarjeta a todo el ancho (las listas de sonidos no caben en media columna). */
+  const wide = (el: HTMLElement) => {
+    el.style.gridColumn = '1 / -1'
+    return el
+  }
   const toggle = (label: string, on: boolean, flip: () => void) => h('span', '', { display: 'flex', alignItems: 'center', gap: 10 }, [sw(on, flip, label), label])
 
   const area = editableArea(el, () => build(ctx.state))
   function update(s: GameState): void {
-    const k = JSON.stringify([s.plato, s.audio, s.quiz.scoring, s.quiz.timer.seconds, s.quiz.lifelines, s.quiz.autoRotate, s.quiz.ladder.levels, s.quiz.ladder.awardToScore, s.quiz.estimation, s.quiz.sounds, s.people, s.lowerThird, s.host, s.show, s.runtime.update, s.runtime.appVersion, ctx.audioLib, displays.length])
+    const k = JSON.stringify([s.plato, s.audio, s.quiz.scoring, s.quiz.timer.seconds, s.quiz.lifelines, s.quiz.autoRotate, s.quiz.ladder.levels, s.quiz.ladder.awardToScore, s.quiz.estimation, s.quiz.sounds, s.quiz.soundVolumes, s.effects.sounds, s.effects.volumes, s.people, s.lowerThird, s.host, s.show, s.runtime.update, s.runtime.appVersion, ctx.audioLib, displays.length])
     const changed = k !== key
     key = k
     area.refresh(changed)
@@ -103,20 +132,70 @@ export function createSettingsScreen(ctx: Ctx): Screen {
 
     // sonidos del juego
     const sfx = ctx.audioLib.sfx
-    const cueSel = CUES.map((c) => {
-      const v = s.quiz.sounds[c.id]
-      const sl = h('select', 'inp')
+    /** Fila de un sonido: nombre, escuchar, archivo (o importar uno nuevo) y volumen propio. */
+    const soundRow = (label: Node, file: string | null | undefined, volume: number, setFile: (f: string | null) => void, setVol: (v: number) => void) => {
+      const sl = h('select', 'inp', { flex: '0 1 300px', minWidth: 0 })
       const opts = ['', ...sfx]
-      if (v && !sfx.includes(v)) opts.push(v)
+      if (file && !sfx.includes(file)) opts.push(file)
       for (const f of opts) {
         const o = h('option', '', {}, [f ? (sfx.includes(f) ? f : `${f} (no está)`) : '(ninguno)'])
         o.value = f
-        o.selected = f === (v ?? '')
+        o.selected = f === (file ?? '')
         sl.append(o)
       }
-      sl.onchange = () => send({ type: 'quizSetSound', cue: c.id, file: sl.value || null })
-      return h('label', 'field', {}, [h('span', 'fl', {}, [c.label]), sl])
+      sl.append(new Option('Importar un archivo…', '__import'))
+      sl.onchange = async () => {
+        if (sl.value !== '__import') return setFile(sl.value || null)
+        const added = await window.konk.audioChoose('efectos')
+        await ctx.reloadAudio()
+        if (added[0]) setFile(added[0])
+        else sl.value = file ?? ''
+      }
+      const play = btn('▶', () => {
+        const f = sl.value && sl.value !== '__import' ? sl.value : null
+        if (f && sfx.includes(f)) ctx.audio.playSfx(f, Number(vol.value) / 100)
+        else ctx.toast('Sin sonido')
+      }, 'b sm ghost')
+      play.title = 'Escuchar'
+      const vol = h('input', '', { width: 90, flex: 'none' })
+      vol.type = 'range'
+      vol.min = '0'
+      vol.max = '100'
+      vol.value = String(Math.round(volume * 100))
+      vol.title = 'Volumen de este sonido'
+      vol.onchange = () => setVol(Number(vol.value) / 100)
+      return h('div', 'sndrow', {}, [label, play, sl, vol])
+    }
+    const fxRows = s.audio.fx.map((f, i) => {
+      const name = h('input', 'inp', { width: 170, flex: 'none' })
+      name.value = f.label
+      name.onchange = () => name.value.trim() && send({ type: 'setFx', index: i, patch: { label: name.value.trim() } })
+      return soundRow(
+        h('span', '', { display: 'flex', alignItems: 'center', gap: 6, flex: 'none' }, [h('span', 'nm', { width: 54, textAlign: 'center', whiteSpace: 'nowrap' }, [soundKeyLabel(i)]), name]),
+        f.file,
+        f.volume ?? 1,
+        (file) => send({ type: 'setFx', index: i, patch: { file } }),
+        (volume) => send({ type: 'setFx', index: i, patch: { volume } })
+      )
     })
+    const cueRows = CUES.map((c) =>
+      soundRow(
+        h('span', 'fl', { width: 190, flex: 'none' }, [c.label]),
+        s.quiz.sounds[c.id],
+        s.quiz.soundVolumes[c.id] ?? 1,
+        (file) => send({ type: 'quizSetSound', cue: c.id, file }),
+        (volume) => send({ type: 'quizSetSoundVolume', cue: c.id, volume })
+      )
+    )
+    const effRows = EFFECTS.map((e) =>
+      soundRow(
+        h('span', 'fl', { width: 190, flex: 'none' }, [`${e.label}${e.kind === 'hold' ? ' (mantener)' : ''}`]),
+        s.effects.sounds[e.id],
+        s.effects.volumes[e.id] ?? 1,
+        (file) => send({ type: 'fxvSound', id: e.id, file }),
+        (volume) => send({ type: 'fxvSound', id: e.id, volume })
+      )
+    )
 
     // escalera
     const levels = s.quiz.ladder.levels
@@ -178,7 +257,9 @@ export function createSettingsScreen(ctx: Ctx): Screen {
           row(h('span', 'fl', {}, ['Monitor']), disp),
           row(toggle('En ventana (para pruebas)', s.plato.windowed, () => send({ type: 'setPlato', patch: { windowed: !ctx.state.plato.windowed } }))),
           row(btn('Mostrar el plató', () => void window.konk.showPlato(), 'b'), btn('Ocultar el plató', () => send({ type: 'setPlato', patch: { visible: false } }), 'b ghost')),
-          row(btn('Cámaras: elegir ventana y calibrar', () => ctx.openCalibration(), 'b'))
+          row(btn('Cámaras: elegir ventana y calibrar', () => ctx.openCalibration(), 'b')),
+          row(h('span', 'fl', {}, ['Tema del plató']), themeSel(s), btn('Abrir la carpeta de temas', () => void window.konk.themesOpenDir(), 'b sm ghost'), btn('Recargar', () => void loadThemes(true), 'b sm ghost')),
+          h('span', 'mut', { fontSize: 12 }, ['Solo cambia lo que se ve en el plató (y sus vistas previas). Los temas son archivos en Documentos\\KONKURSOX\\temas: copia uno para crear otro.'])
         ),
         card(
           'Juegos jugados',
@@ -205,11 +286,19 @@ export function createSettingsScreen(ctx: Ctx): Screen {
           row(h('span', 'fl', {}, ['Volumen de efectos']), num(Math.round(s.audio.sfxVolume * 100), (v) => send({ type: 'setAudio', patch: { sfxVolume: Math.max(0, Math.min(100, v)) / 100 } }), 70), h('span', 'mut', {}, ['%'])),
           row(h('span', 'fl', {}, ['Fundido de la música']), num(s.audio.fadeSeconds, (v) => send({ type: 'setAudio', patch: { fadeSeconds: Math.max(0, Math.min(10, v)) } }), 70), h('span', 'mut', {}, ['s']))
         ),
-        card(
-          'Sonidos automáticos del juego',
-          row(toggle('Activados', s.audio.autoSounds, () => send({ type: 'setAudio', patch: { autoSounds: !ctx.state.audio.autoSounds } }))),
-          h('div', '', { display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 8 }, cueSel)
-        ),
+        wide(card(
+          'Sonidos',
+          h('span', 'mut', { fontSize: 12 }, ['Todos salen de la carpeta audio\\efectos (y su subcarpeta "alternativas"). ▶ para escucharlo; la barra es su volumen propio.']),
+          h('span', 'lbl', { marginTop: 4 }, ['Botonera (teclado numérico Num1-Num9, o Ctrl+1..9)']),
+          ...fxRows,
+          h('div', '', { display: 'flex', alignItems: 'center', gap: 10, marginTop: 8 }, [
+            h('span', 'lbl', { flex: 1 }, ['Automáticos del juego']),
+            toggle('Activados', s.audio.autoSounds, () => send({ type: 'setAudio', patch: { autoSounds: !ctx.state.audio.autoSounds } }))
+          ]),
+          ...cueRows,
+          h('span', 'lbl', { marginTop: 8 }, ['Efectos visuales (opcional)']),
+          ...effRows
+        )),
         card(
           'Puntuación y turnos',
           row(h('span', 'fl', {}, ['Puntos por acierto']), num(s.quiz.scoring.pointsCorrect, (v) => send({ type: 'quizSetScoring', patch: { pointsCorrect: v } }))),

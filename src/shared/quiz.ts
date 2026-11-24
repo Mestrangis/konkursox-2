@@ -143,21 +143,25 @@ export type CueId =
   | 'estimacion'
   | 'ganador'
   | 'soborno'
+  | 'opcion'
+  | 'tiempo'
 export const CUES: { id: CueId; label: string; def: string | null }[] = [
-  { id: 'pregunta', label: 'Nueva pregunta', def: 'pregunta.mp3' },
-  { id: 'marcar', label: 'Respuesta definitiva', def: 'tension.mp3' },
-  { id: 'correcto', label: 'Acierto', def: 'correcto.mp3' },
-  { id: 'error', label: 'Fallo', def: 'error.mp3' },
-  { id: 'reloj', label: 'Temporizador (bucle)', def: 'reloj.mp3' },
-  { id: 'victoria', label: 'Escalera: gana', def: 'victoria.mp3' },
-  { id: 'plantarse', label: 'Escalera: se planta', def: 'victoria.mp3' },
-  { id: 'caida', label: 'Escalera: cae', def: 'error.mp3' },
-  { id: 'respondido', label: 'Todos responden: marca', def: null },
-  { id: 'estimacion', label: 'Estimación: revelado', def: 'tension.mp3' },
-  { id: 'pasapalabra', label: 'Rosco: pasapalabra', def: 'pregunta.mp3' },
-  { id: 'transicion', label: 'Rótulo de prueba', def: 'pregunta.mp3' },
-  { id: 'ganador', label: 'Marcador final', def: 'victoria.mp3' },
-  { id: 'soborno', label: 'Soborno aceptado', def: 'victoria.mp3' }
+  { id: 'pregunta', label: 'Entrada de pregunta', def: 'kx-pregunta.wav' },
+  { id: 'opcion', label: 'Aparece una opción', def: 'kx-opcion.wav' },
+  { id: 'marcar', label: 'Respuesta marcada (tensión)', def: 'kx-marcada.wav' },
+  { id: 'correcto', label: 'Correcto', def: 'kx-acierto.wav' },
+  { id: 'error', label: 'Incorrecto', def: 'kx-fallo.wav' },
+  { id: 'reloj', label: 'Tic-tac del temporizador (bucle)', def: 'kx-tictac.wav' },
+  { id: 'tiempo', label: 'Tiempo agotado', def: 'kx-tiempo.wav' },
+  { id: 'victoria', label: 'Victoria / fanfarria (escalera gana)', def: 'kx-victoria.wav' },
+  { id: 'plantarse', label: 'Escalera: se planta', def: 'kx-comodin.wav' },
+  { id: 'caida', label: 'Escalera: cae', def: 'kx-fallo.wav' },
+  { id: 'respondido', label: 'Todos responden: marca', def: 'kx-opcion.wav' },
+  { id: 'estimacion', label: 'Estimación: revelado', def: 'kx-redoble.wav' },
+  { id: 'pasapalabra', label: 'Rosco: pasapalabra', def: 'kx-opcion.wav' },
+  { id: 'transicion', label: 'Rótulo de prueba', def: 'kx-pregunta.wav' },
+  { id: 'ganador', label: 'Marcador final', def: 'kx-victoria.wav' },
+  { id: 'soborno', label: 'Soborno aceptado', def: 'kx-soborno.wav' }
 ]
 
 export interface QuizState {
@@ -184,6 +188,8 @@ export interface QuizState {
   estimation: EstimationConfig
   /** comodines de la escalera (hasta 5) */
   lifelines: LifelineDef[]
+  /** volumen propio de cada sonido automático (0-1, por defecto 1) */
+  soundVolumes: Partial<Record<CueId, number>>
   /** "seguir igualmente" tras un fallo suma los puntos del acierto */
   forgiveScores: boolean
   /** rótulo "SOBORNO ACEPTADO" al perdonar un fallo (para la coña) */
@@ -233,6 +239,7 @@ export type QuizAction = (
   | { type: 'quizForgive'; now: number; key?: string }
   | { type: 'quizSetCorrect'; index: number }
   | { type: 'quizSetValue'; value: number }
+  | { type: 'quizSetSoundVolume'; cue: CueId; volume: number }
   | { type: 'quizSetForgive'; patch: Partial<{ forgiveScores: boolean; bribe: boolean }> }
   | { type: 'ladderSetPlan'; plan: LadderPick[] }
 ) & { /** juego sobre el que actúa (por defecto, el último usado) */ game?: QuizGameId }
@@ -275,6 +282,7 @@ export function defaultQuiz(): QuizState {
     ladder: defaultLadder(),
     lifelines: DEFAULT_LIFELINES.map((l) => ({ ...l })),
     forgiveScores: true,
+    soundVolumes: {},
     bribe: { enabled: false, at: null },
     sounds: Object.fromEntries(CUES.map((c) => [c.id, c.def])) as Record<CueId, string | null>,
     slots: {},
@@ -800,6 +808,8 @@ function applyQuizInner(s: S, a: QuizAction): S {
       return withQuiz(s, a.patch)
     case 'quizSetSound':
       return withQuiz(s, { sounds: { ...q.sounds, [a.cue]: a.file } })
+    case 'quizSetSoundVolume':
+      return withQuiz(s, { soundVolumes: { ...q.soundVolumes, [a.cue]: Math.max(0, Math.min(1, a.volume)) } })
     case 'timerConfig': {
       const timer = { ...q.timer, ...a.patch }
       if (a.patch.seconds !== undefined) timer.seconds = Math.max(1, Math.round(a.patch.seconds))

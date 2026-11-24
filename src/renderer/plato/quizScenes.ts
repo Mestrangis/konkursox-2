@@ -12,7 +12,7 @@ import type { Scene } from './scenes'
 
 const OK_ICON = '<path fill="#fff" d="M9.5 16.2 4.8 11.5 3.4 12.9l6.1 6.1L21 7.5l-1.4-1.4z"></path>'
 const KO_ICON = '<path fill="#fff" d="M19 6.4 17.6 5 12 10.6 6.4 5 5 6.4 10.6 12 5 17.6 6.4 19 12 13.4 17.6 19 19 17.6 13.4 12z"></path>'
-export const DIAMOND = '<path d="M5 0 L10 5 L5 10 L0 5 Z" fill="#e6cb85"></path>'
+export const DIAMOND = '<path d="M5 0 L10 5 L5 10 L0 5 Z" style="fill:var(--k-gold-400)"></path>'
 const CHIP_DIAMOND = '<svg viewBox="0 0 10 10" width="16" height="16" aria-hidden="true"><path d="M5 0 L10 5 L5 10 L0 5 Z" fill="#1c1003"></path></svg>'
 
 /** Concursantes que corresponden a un turno (un equipo son sus miembros). */
@@ -133,8 +133,8 @@ export function optionBar(key: string, box: Box, c: number, sino: boolean, upper
 /** Comodín del plató: óvalo dorado con su icono (se encoge si hay más de 3). */
 function lifelineEl(def: LifelineDef, w: number): HTMLDivElement {
   const hgt = Math.round(w * (80 / 140))
-  const inner = lifelineIcon(def, Math.round(hgt * 0.5), '#e6cb85')
-  const slash = svg('0 0 140 80', { width: w, height: hgt, class: 'k-life__slash' }, '<line x1="30" y1="70" x2="110" y2="10" stroke="#e6cb85" stroke-width="4"></line>')
+  const inner = lifelineIcon(def, Math.round(hgt * 0.5), 'var(--k-gold-400)')
+  const slash = svg('0 0 140 80', { width: w, height: hgt, class: 'k-life__slash' }, '<line x1="30" y1="70" x2="110" y2="10" style="stroke:var(--k-gold-400)" stroke-width="4"></line>')
   slash.setAttribute('preserveAspectRatio', 'none')
   const el = h('div', 'k-life', { width: w, height: hgt }, [inner, slash])
   el.dataset.life = def.id
@@ -148,7 +148,7 @@ export function liveTimer(x: number, y: number, scale = 1) {
   const ring = svg(
     '0 0 120 120',
     { width: 120, height: 120 },
-    `<circle cx="60" cy="60" r="52" fill="none" stroke="rgba(201,169,97,0.18)" stroke-width="5"></circle><circle class="k-timer__arc" cx="60" cy="60" r="52" fill="none" stroke="#e6cb85" stroke-width="5" stroke-dasharray="${len.toFixed(1)}" stroke-dashoffset="0" transform="rotate(-90 60 60)" stroke-linecap="round"></circle>`
+    `<circle cx="60" cy="60" r="52" fill="none" stroke="rgba(201,169,97,0.18)" stroke-width="5"></circle><circle class="k-timer__arc" cx="60" cy="60" r="52" fill="none" style="stroke:var(--k-gold-400)" stroke-width="5" stroke-dasharray="${len.toFixed(1)}" stroke-dashoffset="0" transform="rotate(-90 60 60)" stroke-linecap="round"></circle>`
   )
   const value = h('div', 'k-timer__value')
   const root = h('div', 'k-timer', { left: x, top: y, transform: scale !== 1 ? `scale(${scale})` : undefined, transformOrigin: '0 0' }, [ring, value])
@@ -167,7 +167,7 @@ export function liveTimer(x: number, y: number, scale = 1) {
       const secs = Math.ceil(left / 1000)
       if (value.textContent !== String(secs)) value.textContent = String(secs)
       arc.setAttribute('stroke-dashoffset', (len * (1 - left / total)).toFixed(1))
-      arc.setAttribute('stroke', left <= 5000 && left > 0 ? '#f4b552' : left === 0 ? '#d4483b' : '#e6cb85')
+      arc.style.stroke = (left <= 5000 && left > 0 ? '#f4b552' : left === 0 ? '#d4483b' : 'var(--k-gold-400)')
     }
   }
 }
@@ -474,14 +474,14 @@ function buildResultScene(s: GameState, key: string): Scene {
     root.append(f.root)
   })
 
-  const caption = h('span', 'k-caption', { fontSize: 26, letterSpacing: '0.34em', color: '#e6cb85', whiteSpace: 'nowrap' })
+  const caption = h('span', 'k-caption', { fontSize: 26, letterSpacing: '0.34em', color: 'var(--k-gold-400)', whiteSpace: 'nowrap' })
   root.append(
     h('div', 'k-headline', { left: 100, top: 40, width: 1100 }, [
-      h('span', 'k-headline__line', { background: 'linear-gradient(90deg, transparent, #c9a961)' }),
+      h('span', 'k-headline__line', { background: 'linear-gradient(90deg, transparent, var(--k-gold-500))' }),
       svg('0 0 10 10', { width: 18, height: 18 }, DIAMOND),
       caption,
       svg('0 0 10 10', { width: 18, height: 18 }, DIAMOND),
-      h('span', 'k-headline__line', { background: 'linear-gradient(90deg, #c9a961, transparent)' })
+      h('span', 'k-headline__line', { background: 'linear-gradient(90deg, var(--k-gold-500), transparent)' })
     ])
   )
   const name = h('span', 'k-name', { fontSize: 44, letterSpacing: '0.12em' })

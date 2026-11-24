@@ -68,7 +68,7 @@ export function buildRoscoScene(s: GameState): Scene {
 
   // rival (2 jugadores)
   const otherName = h('span', 'k-name', { fontSize: 24 })
-  const otherInfo = h('span', 'k-caption', { marginLeft: 'auto', fontSize: 18, color: '#e6cb85' })
+  const otherInfo = h('span', 'k-caption', { marginLeft: 'auto', fontSize: 18, color: 'var(--k-gold-400)' })
   const other = bevelBar({ box: { x: 1150, y: 790, w: 670, h: 54 }, c: 22 }, [h('span', 'k-caption k-caption--muted', { fontSize: 15 }, ['Rival']), otherName, otherInfo])
   root.append(other)
 

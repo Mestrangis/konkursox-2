@@ -33,10 +33,12 @@ function ensureDir(): string {
     const target = join(dir, sub)
     const fresh = !existsSync(target)
     mkdirSync(target, { recursive: true })
-    // Primera vez: copia los sonidos incluidos para tener algo con lo que probar.
     const src = join(bundledAudioDir(), sub)
-    if (fresh && existsSync(src)) {
-      for (const f of readdirSync(src)) if (AUDIO_EXT.has(extname(f).toLowerCase())) copyFileSync(join(src, f), join(target, f))
+    if (!existsSync(src)) continue
+    for (const f of readdirSync(src)) {
+      if (!AUDIO_EXT.has(extname(f).toLowerCase())) continue
+      // primera vez: todo; después, solo los sonidos propios de la app (kx-*) que falten, sin pisar nada
+      if (fresh || (f.startsWith('kx-') && !existsSync(join(target, f)))) copyFileSync(join(src, f), join(target, f))
     }
   }
   return dir
@@ -51,7 +53,9 @@ function listAudio(dir: string): string[] {
 
 export function audioLibrary(): AudioLibrary {
   const dir = ensureDir()
-  return { dir, music: listAudio(join(dir, 'musica')), sfx: listAudio(join(dir, 'efectos')) }
+  // los efectos incluyen la subcarpeta "alternativas" (otras versiones para elegir en Ajustes)
+  const alt = listAudio(join(dir, 'efectos', 'alternativas')).map((f) => `alternativas/${f}`)
+  return { dir, music: listAudio(join(dir, 'musica')), sfx: [...listAudio(join(dir, 'efectos')), ...alt] }
 }
 
 export function setAudioDir(dir: string): void {

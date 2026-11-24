@@ -5,6 +5,8 @@ import { STAGE_H, STAGE_W } from '../../shared/layouts'
 import type { GameState } from '../../shared/types'
 import { autoReconnect, CaptureFeed } from '../common/feed'
 import { buildScene, drawFrames, sceneKey, type Scene } from './scenes'
+import { applyTheme } from '../common/theme'
+import { createEffects } from './effects'
 
 const stageEl = document.getElementById('stage') as HTMLDivElement
 
@@ -19,6 +21,7 @@ window.addEventListener('resize', fit)
 fit()
 
 let state: GameState
+const effects = createEffects(stageEl)
 let scene: Scene | null = null
 let epoch = -1
 const feed = new CaptureFeed()
@@ -33,6 +36,8 @@ autoReconnect(feed, () => state?.cameras.sourceId ?? null)
 function render(s: GameState): void {
   const prev = state
   state = s
+  applyTheme(s.plato.theme)
+  queueMicrotask(() => effects.update(s))
   const key = sceneKey(s)
   if (!scene || scene.key !== key) {
     const next = buildScene(s)
@@ -68,6 +73,7 @@ let bribeShown = false
 // temporizador y otras animaciones por fotograma
 const loop = () => {
   if (scene?.tick && state) scene.tick(state)
+  effects.tick(state)
   const at = state?.quiz.bribe.at
   const show = !!at && Date.now() - at < 3500 && Date.now() >= at
   if (show !== bribeShown) {

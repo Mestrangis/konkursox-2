@@ -48,6 +48,22 @@ export interface CamsScene {
   template: LayoutId | null
   /** plano de la escena Juego: el juego, cámaras con datos encima o cámaras limpias */
   plano: Plano
+  /** plano de la escena Cámaras (F2): con marcos, limpias o con los datos del juego activo */
+  camsPlano: CamsPlano
+}
+
+export type CamsPlano = 'marcos' | 'limpio' | 'datos'
+export const CAMS_PLANOS: { id: CamsPlano; label: string; key: string }[] = [
+  { id: 'marcos', label: 'Con marcos', key: 'Ctrl F1' },
+  { id: 'datos', label: 'Cámaras + datos', key: 'Ctrl F2' },
+  { id: 'limpio', label: 'Cámaras limpias', key: 'Ctrl F3' }
+]
+
+/** Plano "de cámaras" que pinta el plató ahora (null: el de siempre de la escena). */
+export function activePlano(s: Pick<GameState, 'scene' | 'camsScene'>): 'datos' | 'limpio' | null {
+  if (s.scene === 'camaras') return s.camsScene.camsPlano === 'marcos' ? null : s.camsScene.camsPlano
+  if (s.scene === 'juego') return s.camsScene.plano === 'juego' ? null : s.camsScene.plano
+  return null
 }
 
 export type Plano = 'juego' | 'datos' | 'limpio'
@@ -107,6 +123,8 @@ export interface Person {
 export interface FxSlot {
   label: string
   file: string | null
+  /** volumen propio (0-1, por defecto 1) */
+  volume?: number
 }
 
 export type SceneAction =
@@ -161,19 +179,20 @@ export const SCENE_ACTIONS = new Set<string>([
 ])
 
 export function defaultCams(): CamsScene {
-  return { on: { host: false, c1: true, c2: true, c3: true, c4: true, publico: false }, names: true, scores: true, transition: 'fade', preset: null, rev: 2, hostMode: 'igual', corner: 'br', template: null, plano: 'juego' }
+  return { on: { host: false, c1: true, c2: true, c3: true, c4: true, publico: false }, names: true, scores: true, transition: 'fade', preset: null, rev: 2, hostMode: 'igual', corner: 'br', template: null, plano: 'juego', camsPlano: 'marcos' }
 }
 
+/** Botonera de sonidos (Num1..Num9). Juego de sonidos propio de la app (kx-*.wav). */
 export const DEFAULT_FX: FxSlot[] = [
-  { label: 'Correcto', file: 'correcto.mp3' },
-  { label: 'Error', file: 'error.mp3' },
-  { label: 'Tensión', file: 'tension.mp3' },
-  { label: 'Redoble', file: null },
-  { label: 'Aplausos', file: 'victoria.mp3' },
-  { label: 'Pasapalabra', file: 'pregunta.mp3' },
-  { label: 'Comodín', file: null },
-  { label: 'Tiempo', file: 'reloj.mp3' },
-  { label: 'Risas', file: null }
+  { label: 'Acierto', file: 'kx-acierto.wav' },
+  { label: 'Fallo', file: 'kx-fallo.wav' },
+  { label: 'Golpe de tensión', file: 'kx-tension.wav' },
+  { label: 'Redoble', file: 'kx-redoble.wav' },
+  { label: 'Aplausos', file: 'kx-aplausos.wav' },
+  { label: 'Ooooh', file: 'kx-oooh.wav' },
+  { label: 'Risas', file: 'kx-risas.wav' },
+  { label: 'Comodín', file: 'kx-comodin.wav' },
+  { label: 'Tiempo agotado', file: 'kx-tiempo.wav' }
 ]
 
 /** Número de concursantes en juego (1-4) según la plantilla. */

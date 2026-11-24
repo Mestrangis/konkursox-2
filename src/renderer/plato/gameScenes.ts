@@ -96,7 +96,7 @@ export function buildEstimationScene(s: GameState, key: string): Scene {
   const marksEl = h('div', 'k-abs', { inset: 0 })
   const answerLine = h('div', 'k-est__answer')
   line.append(
-    h('div', 'k-abs', { left: 0, right: 0, top: 96, height: 2, background: 'linear-gradient(90deg, rgba(201,169,97,0.2), #c9a961 10%, #c9a961 90%, rgba(201,169,97,0.2))' }),
+    h('div', 'k-abs', { left: 0, right: 0, top: 96, height: 2, background: 'linear-gradient(90deg, rgba(201,169,97,0.2), var(--k-gold-500) 10%, var(--k-gold-500) 90%, rgba(201,169,97,0.2))' }),
     ticksEl,
     marksEl,
     answerLine
@@ -147,7 +147,7 @@ export function buildEstimationScene(s: GameState, key: string): Scene {
         ...guesses.map(([k, v]) => {
           const t = targetFromKey(k)
           const name = targetName(st, t)
-          const mk = h('div', 'k-est__mark', { left: X(v) }, [h('span', '', {}, [name]), svg('0 0 10 10', { width: 18, height: 18 }, DIAMOND.replace('#e6cb85', '#cfd6e4'))])
+          const mk = h('div', 'k-est__mark', { left: X(v) }, [h('span', '', {}, [name]), svg('0 0 10 10', { width: 18, height: 18 }, DIAMOND.replace('var(--k-gold-400)', '#cfd6e4'))])
           mk.dataset.key = k
           return mk
         })

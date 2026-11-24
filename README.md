@@ -15,6 +15,8 @@ Arriba del panel, la barra **En el aire**: Cabecera (F1), Cámaras (F2), Juego (
 
 La escena **Juego** enseña el juego que tiene el indicador **AIRE** en la navegación. Se elige con el desplegable del botón Juego, con el botón **Poner en el aire** de cada pantalla de juego, o al dar su primer paso visible (por ejemplo "Mostrar pregunta" o "Empezar el rosco"). Cada juego guarda su propia pregunta en curso: trabajar en uno no toca los demás.
 
+**Escena Cámaras (F2)**: F2 la pone en el aire sin cambiar de pantalla; el botón Cámaras de la barra abre su pantalla, con vista previa. Tiene su propio plano (Con marcos, Cámaras limpias o Cámaras + datos del juego activo, también con Ctrl+F1/F2/F3 mientras está en el aire) y usa la fila "Quién sale". Se recuerda la última configuración.
+
 **Quién sale**: fila fija bajo la barra En el aire con un interruptor por persona (presentador y cada concursante), en cualquier combinación. Vale para las escenas Cámaras y Juego: el plató se reparte solo para 1-5 personas, con el presentador en medio cuando hay concursantes a ambos lados. F6/F7/F8 son atajos de esa fila (solo yo / solo el del turno / todos). Si calibras una cámara **Público** (un recuadro más en la calibración, opcional) aparece en la fila como otro interruptor. La segunda línea de la fila tiene el **Plano** de la escena Juego (vale para cualquier juego): **Juego** (lo normal, Ctrl+F1), **Cámaras + datos** (las cámaras ocupan casi todo y abajo un widget sin fondo con los datos: rosco, escalera o marcador; Ctrl+F2) y **Cámaras limpias** (a pantalla completa, sin marcos y solo el nombre; Ctrl+F3), y el interruptor **Rótulo inferior**. En la misma fila eliges cómo sales tú: **igual** que los demás, **destacado** (tú grande y los concursantes más pequeños) o **en una esquina** (pequeño y superpuesto, eligiendo la esquina). En la pantalla Cámaras, **Distribución** permite usar las plantillas del diseño del plató (1 + presentador, 2, 3, 4 y 2 contra 2 con el VS, esta solo con equipos) en vez del reparto automático; también están las opciones de nombres, puntos y transición (corte o fundido) y, como secundario, la calibración.
 
 **Multimedia (F9)**: en la sección Multimedia organizas imágenes y vídeos en carpetas (`Documentos\KONKURSOX\multimedia\`): arrástralos desde el ordenador o pega un enlace de YouTube (coge miniatura y título). Clic en uno lo saca a pantalla completa en el plató; los vídeos se controlan desde el panel (play/pausa con Espacio, barra, volumen) y el sonido sale por el plató. Si un vídeo de YouTube no permite incrustarse, el panel avisa. F9 muestra/oculta al instante y al ocultar vuelve a la escena anterior. La imagen de una pregunta se manda aquí con **Imagen a Multimedia**.
@@ -40,7 +42,19 @@ Los bancos de versiones anteriores (mezclados en `preguntas\`) se reparten por t
 
 ### Audio (siempre a la derecha)
 
-Reproductor de la carpeta `Documentos\KONKURSOX\audio\musica\` (play/pausa, anterior/siguiente, barra para saltar, volumen, bucle y fundido). Arrastra canciones a la lista para añadirlas. Botonera de 9 efectos: clic derecho en un botón para elegir su sonido. Interruptor de **sonidos automáticos** del juego (cuáles suenan en cada momento, en Ajustes).
+Reproductor de la carpeta `Documentos\KONKURSOX\audio\musica\` (play/pausa, anterior/siguiente, barra para saltar, volumen, bucle y fundido). Arrastra canciones a la lista o añádelas desde **Multimedia → Música de fondo** (es la misma biblioteca).
+
+**Botonera de sonidos** (3×3, con la misma disposición que el teclado numérico: 7 8 9 / 4 5 6 / 1 2 3): Num1-Num9 con Bloq Num activado, o Ctrl+1..9. Clic derecho en un botón para elegir su sonido.
+
+**Efectos visuales del plató** (Alt+1..9), debajo de los sonidos: Tensión (viñeta), Apagón (todo oscuro salvo la pregunta), Focos, Latido (desenfoque que palpita, con su sonido en bucle), Foco en uno (elige a quién) se quedan hasta volver a pulsarlos; Temblor, Destello y Confeti son golpes. Nunca tapan la pregunta, las opciones ni el reloj. "Quitar todos" los apaga.
+
+**Ajustes → Sonidos**: la botonera, los sonidos automáticos del juego y los de los efectos visuales, cada uno con ▶ para escucharlo, su archivo (o "Importar un archivo…") y su volumen propio.
+
+La app trae su propio juego de sonidos (`kx-*.wav`, generados con ElevenLabs, estilo concurso de televisión orquestal) y otras versiones en `audio\efectos\alternativas\` para cambiarlas desde Ajustes. Tus sonidos anteriores siguen en la carpeta.
+
+### Temas del plató
+
+En **Ajustes → Plató** eliges el tema: Clásico (marino y oro), Noche, Claro y acentos rojo, verde y morado. Solo cambia el plató (y sus vistas previas), no el panel. Cada tema es un archivo `.json` en `Documentos\KONKURSOX\temas\` con variables CSS (colores, tipografías y brillo de los marcos): copia uno, cámbialo y aparecerá en la lista ("Recargar").
 
 ### Atajos
 
@@ -48,7 +62,8 @@ Reproductor de la carpeta `Documentos\KONKURSOX\audio\musica\` (play/pausa, ante
 | --- | --- | --- |
 | Siempre | F1-F5, F9 | Escenas (F9 muestra/oculta Multimedia) |
 | Siempre | F6 / F7 / F8 | Cámaras: solo yo / solo el del turno / todos (si no estás en Juego, pone la escena Cámaras) |
-| Siempre | Ctrl+1..9 | Efectos |
+| Siempre | Num1-Num9 (Bloq Num) o Ctrl+1..9 | Botonera de sonidos |
+| Siempre | Alt+1..9 | Efectos visuales del plató |
 | Siempre | Ctrl+Espacio / Ctrl+F | Música: play-pausa / fundido |
 | Siempre | Ctrl+Z | Deshacer el último paso del juego |
 | Pantalla de juego | Espacio | Siguiente paso |

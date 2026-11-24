@@ -67,7 +67,7 @@ export function createRoscoScreen(ctx: Ctx): Screen {
     const p = s.rosco.players[s.rosco.turn]
     if (p && p.endsAt !== null && remainingMs(p, Date.now()) <= 0) {
       r({ type: 'roscoTimeUp', now: Date.now() })
-      ctx.cue('error')
+      ctx.cue('tiempo')
       ctx.toast(`Tiempo agotado para ${nameOf(s, p.target)}`)
     }
     // solo los relojes: repintar todo cada 250 ms se comería los clics

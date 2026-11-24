@@ -3,7 +3,7 @@
 import { formatPoints } from '../../shared/quiz'
 import { ladderBank } from '../../shared/quiz'
 import { remainingMs, roscoPoints, roscoStats } from '../../shared/rosco'
-import { activeContestants, camsLineup } from '../../shared/scene'
+import { activeContestants, activePlano, camsLineup } from '../../shared/scene'
 import type { Box } from '../../shared/layouts'
 import type { GameState, SlotId } from '../../shared/types'
 import { camFrame, h, namePlate, type CamFrameEl, type NamePlateEl } from '../ds/components'
@@ -13,7 +13,7 @@ import { targetName } from './quizScenes'
 import type { Scene } from './scenes'
 
 export const planoKey = (s: GameState): string =>
-  `plano:${s.camsScene.plano}:${camsLineup(s).join(',')}:${s.camsScene.hostMode}:${s.camsScene.corner}:${s.liveGame}`
+  `plano:${activePlano(s)}:${camsLineup(s).join(',')}:${s.camsScene.hostMode}:${s.camsScene.corner}:${s.liveGame}`
 
 const nameOf = (s: GameState, slot: SlotId): string =>
   slot === 'host' ? s.host.name : slot === 'publico' ? 'Público' : s.contestants.find((c) => c.id === slot)?.name ?? ''
@@ -68,7 +68,7 @@ export function buildPlanoScene(s: GameState): Scene {
   const frames = new Map<SlotId, CamFrameEl>()
   const root = h('div', 'k-stage k-enter')
   const lineup = camsLineup(s)
-  const clean = s.camsScene.plano === 'limpio'
+  const clean = activePlano(s) === 'limpio'
 
   if (clean) {
     root.classList.add('k-stage--clean')

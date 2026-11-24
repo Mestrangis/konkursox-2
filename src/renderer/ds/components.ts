@@ -243,7 +243,7 @@ export function timer(x: number, y: number, value: number, progress: number): HT
     '0 0 120 120',
     { width: 120, height: 120 },
     `<circle cx="60" cy="60" r="52" fill="none" stroke="rgba(201,169,97,0.18)" stroke-width="5"></circle>` +
-      `<circle cx="60" cy="60" r="52" fill="none" stroke="#e6cb85" stroke-width="5" stroke-dasharray="${len.toFixed(0)}" stroke-dashoffset="${(len * (1 - progress)).toFixed(0)}" transform="rotate(-90 60 60)" stroke-linecap="round"></circle>`
+      `<circle cx="60" cy="60" r="52" fill="none" style="stroke:var(--k-gold-400)" stroke-width="5" stroke-dasharray="${len.toFixed(0)}" stroke-dashoffset="${(len * (1 - progress)).toFixed(0)}" transform="rotate(-90 60 60)" stroke-linecap="round"></circle>`
   )
   return h('div', 'k-timer', { left: x, top: y }, [ring, h('div', 'k-timer__value', {}, [String(value)])])
 }
@@ -253,6 +253,6 @@ export function emblem(size = 44): SVGSVGElement {
   return svg(
     '0 0 44 44',
     { width: size, height: size },
-    '<path d="M22 2 L42 22 L22 42 L2 22 Z" fill="none" stroke="#c9a961" stroke-width="1.5"></path><path d="M22 12 L32 22 L22 32 L12 22 Z" fill="#c9a961"></path>'
+    '<path d="M22 2 L42 22 L22 42 L2 22 Z" fill="none" style="stroke:var(--k-gold-500)" stroke-width="1.5"></path><path d="M22 12 L32 22 L22 32 L12 22 Z" style="fill:var(--k-gold-500)"></path>'
   )
 }

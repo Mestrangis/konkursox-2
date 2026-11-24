@@ -1,8 +1,11 @@
 // Barra "En el aire", navegación y dock de marcador/música/efectos (design/panel.html: componentes).
 import { formatPoints } from '../../shared/quiz'
-import { activeContestants, currentTurn, gameLabel, GAMES, hasPublico, playedCount, PLANOS, SCENES } from '../../shared/scene'
+import { activeContestants, CAMS_PLANOS, currentTurn, gameLabel, GAMES, hasPublico, playedCount, PLANOS, SCENES } from '../../shared/scene'
 import type { Corner, HostMode } from '../../shared/arrange'
 import { targetMembers } from '../../shared/order'
+import { NUMPAD_LAYOUT, soundKeyLabel } from '../../shared/keys'
+import { EFFECTS, type EffectId } from '../../shared/effects'
+import { turnSlots } from '../plato/quizScenes'
 import type { GameState, SlotId } from '../../shared/types'
 import { buildScene, drawFrames, sceneKey, type Scene } from '../plato/scenes'
 import { askConfirm, askText, btn, contextMenu, h, icon, ICONS, kbd, mmss, sw, type Ctx, type ScreenId } from './ui'
@@ -24,8 +27,9 @@ export function createAirBar(ctx: Ctx) {
   const scenes = SCENES.map((sc) => {
     const label = h('span', '', {}, [sc.label])
     const b = h('button', 'sc', {}, [kbd(sc.key), icon(ICONS[sc.id as keyof typeof ICONS], 22, '#9a9aa3'), label])
-    b.onclick = () => goScene(ctx, sc.id)
-    b.title = sc.id === 'multimedia' ? 'Mostrar / ocultar lo elegido en Multimedia (F9)' : `Poner "${sc.label}" en el aire (${sc.key})`
+    // el botón Cámaras abre su pantalla (F2 la pone en el aire sin cambiar de pantalla)
+    b.onclick = () => (sc.id === 'camaras' ? ctx.go('camaras') : goScene(ctx, sc.id))
+    b.title = sc.id === 'camaras' ? 'Abrir la pantalla Cámaras (F2 la pone en el aire)' : sc.id === 'multimedia' ? 'Mostrar / ocultar lo elegido en Multimedia (F9)' : `Poner "${sc.label}" en el aire (${sc.key})`
     if (sc.id === 'juego') {
       // desplegable: elegir qué juego sale en la escena Juego
       label.style.display = 'flex'
@@ -267,7 +271,7 @@ export function createDock(ctx: Ctx) {
       ctx.toast(`"${f?.label ?? 'Efecto'}" no tiene sonido: clic derecho para elegirlo`)
       return
     }
-    const el = ctx.audio.playSfx(f.file)
+    const el = ctx.audio.playSfx(f.file, f.volume ?? 1)
     hit = i
     renderFx()
     clearTimeout(hitTimer)
@@ -284,11 +288,13 @@ export function createDock(ctx: Ctx) {
   }
   function renderFx(): void {
     const fx = ctx.state.audio.fx
+    // misma disposición que el teclado numérico: 7 8 9 / 4 5 6 / 1 2 3
     fxGrid.replaceChildren(
-      ...fx.map((f, i) => {
+      ...NUMPAD_LAYOUT.filter((i) => fx[i]).map((i) => {
+        const f = fx[i]
         const ok = !!f.file && ctx.audioLib.sfx.includes(f.file)
-        const b = h('button', `fx${hit === i ? ' hit' : ''}${ok ? '' : ' empty'}`, {}, [kbd(String(i + 1)), f.label])
-        b.title = ok ? `${f.file} · Ctrl+${i + 1} · clic derecho para cambiarlo` : 'Sin sonido · clic derecho para elegirlo'
+        const b = h('button', `fx${hit === i ? ' hit' : ''}${ok ? '' : ' empty'}`, {}, [kbd(soundKeyLabel(i)), f.label])
+        b.title = ok ? `${f.file} · ${soundKeyLabel(i)} (Bloq Num) o Ctrl+${i + 1} · clic derecho para cambiarlo` : 'Sin sonido · clic derecho para elegirlo'
         b.onclick = () => fire(i)
         b.oncontextmenu = (e) => {
           e.preventDefault()
@@ -320,6 +326,58 @@ export function createDock(ctx: Ctx) {
     ctx.toast(added.length ? `Añadidos ${added.length} efectos: asígnalos con clic derecho` : 'Ningún archivo de audio reconocido')
   }
 
+  // efectos visuales del plató (Alt+1..9)
+  const effGrid = h('div', '', { display: 'grid', gridTemplateColumns: 'repeat(3, minmax(0, 1fr))', gap: 6 })
+  const playEffectSound = (id: EffectId) => {
+    const s = ctx.state
+    const file = s.effects.sounds[id]
+    // el latido suena en bucle mientras dura (lo lleva el panel en cada cambio de estado)
+    if (id === 'latido' || !file || !ctx.audioLib.sfx.includes(file)) return
+    ctx.audio.playSfx(file, s.effects.volumes[id] ?? 1)
+  }
+  const people = (s: GameState): SlotId[] => ['host', ...activeContestants(s), ...(hasPublico(s) ? (['publico'] as SlotId[]) : [])]
+  const personName = (s: GameState, slot: SlotId) => (slot === 'host' ? s.host.name : slot === 'publico' ? 'Público' : s.contestants.find((c) => c.id === slot)?.name ?? slot)
+  /** Dispara un efecto. "Foco en uno" pregunta a quién (con teclado, al del turno). */
+  const fireEffect = (i: number, ev?: MouseEvent) => {
+    const e = EFFECTS[i]
+    if (!e) return
+    const s = ctx.state
+    if (e.id === 'foco' && !s.effects.on.foco) {
+      const go = (slot: SlotId) => {
+        ctx.send({ type: 'fxvToggle', id: 'foco', now: Date.now(), focus: slot })
+        playEffectSound('foco')
+      }
+      if (ev) {
+        contextMenu(ev.clientX, ev.clientY, [h('span', 'lbl', {}, ['Foco en…']), ...people(s).map((slot) => ({ label: personName(s, slot), run: () => go(slot) }))])
+        return
+      }
+      const turn = [...turnSlots(s)][0] ?? activeContestants(s)[0]
+      if (turn) go(turn)
+      return
+    }
+    const turningOn = e.kind === 'hit' || !s.effects.on[e.id]
+    ctx.send({ type: 'fxvToggle', id: e.id, now: Date.now() })
+    if (turningOn) playEffectSound(e.id)
+  }
+  function renderEffects(s: GameState): void {
+    effGrid.replaceChildren(
+      ...EFFECTS.map((e, i) => {
+        const on = e.kind === 'hold' && !!s.effects.on[e.id]
+        const label = e.id === 'foco' && on && s.effects.focus ? `Foco: ${personName(s, s.effects.focus)}` : e.label
+        const b = h('button', `fx eff${on ? ' on' : ''}`, {}, [kbd(`Alt ${i + 1}`), label])
+        b.title = `${e.hint} · ${e.kind === 'hold' ? 'se queda hasta volver a pulsar' : 'golpe'} · Alt+${i + 1}`
+        b.onclick = (ev) => fireEffect(i, ev)
+        return b
+      }),
+      (() => {
+        const b = h('button', 'fx eff', {}, ['Quitar todos'])
+        b.title = 'Apaga todos los efectos que se mantienen'
+        b.onclick = () => ctx.send({ type: 'fxvClear' })
+        return b
+      })()
+    )
+  }
+
   const autoBox = h('span')
   const el = h('aside', 'dock ui', {}, [
     h('div', 'sec', {}, [h('div', '', { display: 'flex', alignItems: 'center', gap: 6 }, [h('span', 'lbl', { flex: 1 }, ['Marcador']), h('span', 'mut', { fontSize: 12 }, ['Paso']), steps]), players]),
@@ -334,7 +392,8 @@ export function createDock(ctx: Ctx) {
       h('div', '', { display: 'flex', alignItems: 'center', gap: 10 }, [icon(ICONS.vol, 18, '#9a9aa3'), vol]),
       tracks
     ]),
-    h('div', 'sec', { borderBottom: 0 }, [h('span', 'lbl', {}, ['Efectos']), fxGrid]),
+    h('div', 'sec', {}, [h('span', 'lbl', {}, ['Sonidos']), fxGrid]),
+    h('div', 'sec', { borderBottom: 0 }, [h('span', 'lbl', {}, ['Efectos visuales']), effGrid]),
     h('span', 'spacer'),
     h('div', '', { padding: '12px 14px', borderTop: '1px solid #2a2a2f', display: 'flex', alignItems: 'center', gap: 10 }, [
       h('div', '', { flex: 1 }, [h('div', '', { fontWeight: 600, fontSize: 13 }, ['Sonidos automáticos del juego']), h('div', 'mut', { fontSize: 11 }, ['Correcto y error suenan solos al revelar'])]),
@@ -376,15 +435,26 @@ export function createDock(ctx: Ctx) {
   }
   setInterval(renderPlayer, 250)
 
+  let effKey = ''
   return {
     el,
     fire,
+    fireEffect: (i: number) => fireEffect(i),
     refreshAudio(): void {
       renderTracks()
       renderFx()
       renderPlayer()
     },
     update(s: GameState): void {
+      const ek = JSON.stringify([s.effects.on, s.effects.focus, s.contestants.map((c) => c.name)])
+      if (ek !== effKey) {
+        effKey = ek
+        renderEffects(s)
+      }
+      // latido: su sonido en bucle mientras está puesto
+      const lat = s.effects.sounds.latido
+      if (s.effects.on.latido && lat && ctx.audioLib.sfx.includes(lat)) ctx.audio.playLoop(lat, 'latido', s.effects.volumes.latido ?? 1)
+      else ctx.audio.stopLoop('latido')
       // marcador
       const turn = new Set(targetMembers(s, currentTurn(s)))
       const rows =
@@ -462,7 +532,7 @@ export function createPeopleRow(ctx: Ctx) {
     update(s: GameState): void {
       // la cámara del público aparece si está calibrada
       const people: SlotId[] = ['host', ...activeContestants(s), ...(hasPublico(s) ? (['publico'] as SlotId[]) : [])]
-      const k = JSON.stringify([s.camsScene.on, s.camsScene.preset, s.camsScene.hostMode, s.camsScene.corner, s.camsScene.template, s.camsScene.plano, s.lowerThird.visible, s.scene, people, s.host.name, s.contestants.map((c) => c.name)])
+      const k = JSON.stringify([s.camsScene.on, s.camsScene.preset, s.camsScene.hostMode, s.camsScene.corner, s.camsScene.template, s.camsScene.plano, s.camsScene.camsPlano, s.lowerThird.visible, s.scene, people, s.host.name, s.contestants.map((c) => c.name)])
       if (k === key) return
       key = k
       const chipOf = (on: boolean, label: string, title: string, run: () => void) => {
@@ -477,8 +547,11 @@ export function createPeopleRow(ctx: Ctx) {
       el.replaceChildren(row1, row2)
       row2.append(
         h('span', 'lbl', { flex: 'none', width: 74 }, ['Plano']),
-        ...PLANOS.map((pl) => btn(pl.label, () => ctx.send({ type: 'camsSet', patch: { plano: pl.id } }), `b sm ghost${s.camsScene.plano === pl.id ? ' on' : ''}`, pl.key)),
-        h('span', 'mut', { fontSize: 11, flex: 'none' }, [s.camsScene.plano === 'juego' ? '' : 'en la escena Juego']),
+        // el plano es el de la escena en el aire: Cámaras (F2) tiene el suyo; el resto, el de Juego
+        ...(s.scene === 'camaras'
+          ? CAMS_PLANOS.map((pl) => btn(pl.label, () => ctx.send({ type: 'camsSet', patch: { camsPlano: pl.id } }), `b sm ghost${s.camsScene.camsPlano === pl.id ? ' on' : ''}`, pl.key))
+          : PLANOS.map((pl) => btn(pl.label, () => ctx.send({ type: 'camsSet', patch: { plano: pl.id } }), `b sm ghost${s.camsScene.plano === pl.id ? ' on' : ''}`, pl.key))),
+        h('span', 'mut', { fontSize: 11, flex: 'none' }, [s.scene === 'camaras' ? 'de la escena Cámaras' : 'de la escena Juego']),
         chipOf(s.lowerThird.visible, 'Rótulo inferior', 'Mostrar u ocultar el texto de abajo del plató', () => ctx.send({ type: 'setLowerThird', patch: { visible: !ctx.state.lowerThird.visible } })),
         h('span', 'spacer'),
         ...([

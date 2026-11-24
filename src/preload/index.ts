@@ -26,6 +26,10 @@ const api = {
   audioOpenDir: (): Promise<string> => ipcRenderer.invoke('audio:openDir'),
   audioChooseDir: (): Promise<AudioLibrary> => ipcRenderer.invoke('audio:chooseDir'),
   audioImport: (paths: string[], kind: 'musica' | 'efectos'): Promise<string[]> => ipcRenderer.invoke('audio:import', paths, kind),
+  audioChoose: (kind: 'musica' | 'efectos'): Promise<string[]> => ipcRenderer.invoke('audio:choose', kind),
+  themesList: (): Promise<{ id: string; nombre: string; descripcion: string }[]> => ipcRenderer.invoke('themes:list'),
+  themeGet: (id: string): Promise<{ nombre: string; vars: Record<string, string> } | null> => ipcRenderer.invoke('themes:get', id),
+  themesOpenDir: (): Promise<string> => ipcRenderer.invoke('themes:openDir'),
 
   libList: (): Promise<LibBankInfo[]> => ipcRenderer.invoke('lib:list'),
   libGet: (ref: string): Promise<Bank> => ipcRenderer.invoke('lib:get', ref),

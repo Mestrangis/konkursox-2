@@ -15,14 +15,22 @@ export function toMediaItem(it: LibMediaItem): MediaItem {
 export function createMediaScreen(ctx: Ctx): Screen {
   let lib: MediaLibrary = { dir: '', folders: [''], items: [] }
   let folder = ''
+  /** sección Música: la música de fondo (misma biblioteca de audio que el reproductor) */
+  const MUSIC = '\u0000musica'
   const head = h('div', 'head')
   const controls = h('div')
   const folders = h('nav', 'pnl', { width: 210, flex: 'none', padding: 10, display: 'flex', flexDirection: 'column', gap: 1, overflow: 'auto' })
   const grid = h('div', 'mgrid')
   const yt = h('input', 'inp', { flex: 1 })
   yt.placeholder = 'Pega un enlace de YouTube y pulsa Intro'
+  const toolbar = h('div', '', { display: 'flex', gap: 8, alignItems: 'center', flexWrap: 'wrap' })
+  const fillBar = (kids: Node[]) => {
+    toolbar.append(...kids)
+    return toolbar
+  }
+  const hint = h('span', 'mut', { fontSize: 12 }, ['Arrastra aquí imágenes y vídeos de tu ordenador. Clic en uno para sacarlo en el plató (escena Multimedia, F9).'])
   const drop = h('div', 'pnl', { flex: 1, minWidth: 0, padding: 12, display: 'flex', flexDirection: 'column', gap: 10, minHeight: 0 }, [
-    h('div', '', { display: 'flex', gap: 8, alignItems: 'center', flexWrap: 'wrap' }, [
+    fillBar([
       btn('Añadir imágenes o vídeos…', async () => {
         const n = await window.konk.mediaChoose(folder)
         if (n) await reload()
@@ -31,7 +39,7 @@ export function createMediaScreen(ctx: Ctx): Screen {
       btn('Añadir YouTube', () => void addYt(), 'b acc'),
       btn('Abrir la carpeta', () => void window.konk.mediaOpenDir(), 'b ghost')
     ]),
-    h('span', 'mut', { fontSize: 12 }, ['Arrastra aquí imágenes y vídeos de tu ordenador. Clic en uno para sacarlo en el plató (escena Multimedia, F9).']),
+    hint,
     grid
   ])
   const el = h('div', 'screen', {}, [head, controls, h('div', '', { display: 'flex', gap: 14, flex: 1, minHeight: 0 }, [folders, drop])])
@@ -48,6 +56,12 @@ export function createMediaScreen(ctx: Ctx): Screen {
     e.preventDefault()
     drop.style.boxShadow = ''
     const paths = [...(e.dataTransfer?.files ?? [])].map((f) => window.konk.pathForFile(f)).filter(Boolean)
+    if (folder === MUSIC) {
+      const added = await window.konk.audioImport(paths, 'musica')
+      await ctx.reloadAudio()
+      ctx.toast(added.length ? `Añadidas ${added.length} pistas a la música` : 'Solo se admiten archivos de audio')
+      return paintLib()
+    }
     const n = await window.konk.mediaImport(paths, folder)
     ctx.toast(n ? `Añadidos ${n} archivos` : 'Solo se admiten imágenes y vídeos')
     await reload()
@@ -68,7 +82,7 @@ export function createMediaScreen(ctx: Ctx): Screen {
 
   async function reload(): Promise<void> {
     lib = await window.konk.mediaList()
-    if (!lib.folders.includes(folder)) folder = ''
+    if (folder !== MUSIC && !lib.folders.includes(folder)) folder = ''
     paintLib()
   }
 
@@ -89,6 +103,14 @@ export function createMediaScreen(ctx: Ctx): Screen {
         }
         return a
       }),
+      (() => {
+        const a = h('a', `tg${folder === MUSIC ? ' on' : ''}`, { marginTop: 10 }, [h('span', '', {}, ['Música de fondo']), h('span', 'c', {}, [String(ctx.audioLib.music.length)])])
+        a.onclick = () => {
+          folder = MUSIC
+          paintLib()
+        }
+        return a
+      })(),
       h('span', 'spacer'),
       btn('+ Nueva carpeta', async () => {
         const name = await askText('Carpeta nueva', '', 'Crear', 'Por ejemplo "Fotos del grupo" o "Vídeos de la final"')
@@ -101,6 +123,9 @@ export function createMediaScreen(ctx: Ctx): Screen {
         }
       }, 'b ghost')
     )
+    if (folder === MUSIC) return paintMusic()
+    toolbar.style.display = ''
+    hint.style.display = ''
     const cur = ctx.state?.media.item
     const items = lib.items.filter((x) => x.folder === folder)
     grid.replaceChildren(
@@ -148,6 +173,33 @@ export function createMediaScreen(ctx: Ctx): Screen {
       })
     )
     if (!items.length) grid.append(h('div', 'mut', { padding: 20, fontSize: 14 }, ['Carpeta vacía: arrastra aquí imágenes o vídeos, o pega un enlace de YouTube.']))
+  }
+
+  /** Música de fondo: la lista del reproductor; se añade arrastrando o con el botón. */
+  function paintMusic(): void {
+    toolbar.style.display = 'none'
+    hint.style.display = 'none'
+    const music = ctx.audioLib.music
+    grid.replaceChildren(
+      h('div', '', { gridColumn: '1 / -1', display: 'flex', alignItems: 'center', gap: 10 }, [
+        btn('Añadir música…', async () => {
+          const added = await window.konk.audioChoose('musica')
+          await ctx.reloadAudio()
+          if (added.length) ctx.toast(`Añadidas ${added.length} pistas`)
+          paintLib()
+        }, 'b acc'),
+        btn('Abrir la carpeta de audio', () => void window.konk.audioOpenDir(), 'b ghost'),
+        h('span', 'mut', { fontSize: 12 }, ['Arrastra aquí canciones. Es la misma música que el reproductor de la derecha.'])
+      ]),
+      ...music.map((m) => {
+        const row = h('div', 'pnl', { gridColumn: '1 / -1', padding: '8px 12px', display: 'flex', alignItems: 'center', gap: 10 }, [
+          h('span', '', { flex: 1, minWidth: 0, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap', fontWeight: ctx.audio.current === m ? 700 : 500 }, [m.replace(/\.[^.]+$/, '')]),
+          btn(ctx.audio.current === m && ctx.audio.playing ? 'Sonando' : 'Reproducir', () => void ctx.audio.play(m, true).then(paintMusic), 'b sm ghost')
+        ])
+        return row
+      })
+    )
+    if (!music.length) grid.append(h('div', 'mut', { padding: 20, fontSize: 14, gridColumn: '1 / -1' }, ['No hay música todavía.']))
   }
 
   function paintControls(s: GameState): void {

@@ -2,7 +2,7 @@
 import { sourceRectForFrame } from '../../shared/crop'
 import { LAYOUTS } from '../../shared/layouts'
 import { contestantOrder } from '../../shared/order'
-import { camOf } from '../../shared/scene'
+import { activePlano, camOf } from '../../shared/scene'
 import type { GameState, SlotId } from '../../shared/types'
 import type { CaptureFeed } from '../common/feed'
 import { buildCamsScene, camsKey } from './camsScene'
@@ -55,7 +55,8 @@ function kindOf(s: GameState): Kind {
     case 'cabecera':
       return 'cover'
     case 'camaras':
-      return 'cams'
+      // plano de la escena Cámaras: con marcos (el de siempre), limpias o con datos
+      return activePlano(s) ? 'plano' : 'cams'
     case 'marcador':
       return 'marcador'
     case 'final':
@@ -64,7 +65,7 @@ function kindOf(s: GameState): Kind {
       return 'media'
     default: {
       // plano "Cámaras + datos" o "Cámaras limpias" (cualquier juego)
-      if (s.camsScene.plano !== 'juego') return 'plano'
+      if (activePlano(s)) return 'plano'
       if (s.liveGame === 'rosco') return s.rosco.players.length ? 'rosco' : 'cover'
       if (s.liveGame === 'escalera' && s.quiz.ladder.showResult && s.quiz.ladder.outcome) return 'quiz'
       return s.quiz.current ? 'quiz' : 'cover'
@@ -136,7 +137,7 @@ function coverScene(): HTMLDivElement {
       width: 520,
       marginLeft: -260,
       height: 2,
-      background: 'linear-gradient(90deg, transparent, #c9a961 30%, #f1dfab 50%, #c9a961 70%, transparent)'
+      background: 'linear-gradient(90deg, transparent, var(--k-gold-500) 30%, #f1dfab 50%, var(--k-gold-500) 70%, transparent)'
     })
   ])
 }

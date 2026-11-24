@@ -7,6 +7,7 @@ import type { LibType } from '../shared/library'
 import type { Bank } from '../shared/questions'
 import { installDisplayMediaHandler, listWindowSources, resolveSource } from './capture'
 import { audioDir, audioLibrary, handleMediaProtocol, importAudio, registerMediaScheme, setAudioDir } from './media'
+import { ensureThemes, listThemes, readTheme, themesDir } from './themes'
 import { dispatch, flushSave, getState, initStore, onStateChange } from './store'
 import { checkForUpdates, initUpdater, installUpdate } from './updater'
 import { createPanel, createPlato, getPanel, listDisplays, placePlato, showPlato } from './windows'
@@ -35,6 +36,11 @@ if (!app.requestSingleInstanceLock()) {
       ensureLibrary(getState().quiz.used)
     } catch (err) {
       console.error('[biblioteca]', err)
+    }
+    try {
+      ensureThemes()
+    } catch (err) {
+      console.error('[temas]', err)
     }
     installDisplayMediaHandler()
     registerIpc()
@@ -100,7 +106,23 @@ function registerIpc(): void {
     if (!res.canceled && res.filePaths[0]) setAudioDir(res.filePaths[0])
     return audioLibrary()
   })
+  ipcMain.handle('themes:list', () => listThemes())
+  ipcMain.handle('themes:get', (_e, id: string) => readTheme(id))
+  ipcMain.handle('themes:openDir', () => {
+    ensureThemes()
+    return shell.openPath(themesDir())
+  })
   ipcMain.handle('audio:import', (_e, paths: string[], kind: 'musica' | 'efectos') => importAudio(paths, kind))
+  ipcMain.handle('audio:choose', async (_e, kind: 'musica' | 'efectos') => {
+    const win = BrowserWindow.getFocusedWindow() ?? getPanel()
+    const opts: Electron.OpenDialogOptions = {
+      title: kind === 'musica' ? 'Añadir música' : 'Añadir sonidos',
+      filters: [{ name: 'Audio', extensions: ['mp3', 'wav', 'ogg', 'm4a', 'aac', 'flac', 'opus', 'webm'] }],
+      properties: ['openFile', 'multiSelections']
+    }
+    const res = win ? await dialog.showOpenDialog(win, opts) : await dialog.showOpenDialog(opts)
+    return res.canceled ? [] : importAudio(res.filePaths, kind)
+  })
   ipcMain.handle('lib:list', () => listLibrary())
   ipcMain.handle('lib:get', (_e, ref: string) => readBank(ref))
   ipcMain.handle('lib:save', (_e, ref: string, bank: Bank) => saveBank(ref, bank))

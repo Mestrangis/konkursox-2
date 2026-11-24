@@ -2,6 +2,7 @@
 import { sanitizeRel } from './crop'
 import { applyQuizAction, defaultQuiz, type QuizAction, type QuizState } from './quiz'
 import { applyRoscoAction, defaultRosco, type RoscoAction, type RoscoState } from './rosco'
+import { applyEffectsAction, defaultEffects, type EffectsAction } from './effects'
 import { applySceneAction, DEFAULT_FX, defaultCams, SCENE_ACTIONS, type Person, type SceneAction, type ShowState } from './scene'
 import { CONTESTANT_IDS, type Action, type GameState } from './types'
 
@@ -33,10 +34,11 @@ export function defaultState(): GameState {
     lowerThird: { visible: true, kicker: 'Presentación', title: 'Los concursantes de esta noche', right: todayLabel() },
     sideInfo: { label1: 'Premio en juego', value1: '1.000.000', label2: 'Pregunta', value2: '1 de 15' },
     cameras: { sourceId: null, sourceName: null, rects: {} },
-    plato: { displayId: null, windowed: false, visible: true },
-    audio: { dir: null, musicVolume: 0.8, sfxVolume: 0.9, fadeSeconds: 3, loop: true, autoSounds: true, fx: DEFAULT_FX.map((f) => ({ ...f })) },
+    plato: { displayId: null, windowed: false, visible: true, theme: 'clasico' },
+    audio: { dir: null, musicVolume: 0.8, sfxVolume: 0.9, fadeSeconds: 3, loop: true, autoSounds: true, fx: DEFAULT_FX.map((f) => ({ ...f })), soundsRev: 2 },
     quiz: defaultQuiz(),
     rosco: defaultRosco(),
+    effects: defaultEffects(),
     show: { played: [], extra: 0 },
     people: [],
     runtime: {
@@ -115,6 +117,7 @@ export function applyAction(s: GameState, a: Action): GameState {
       return { ...s, runtime: { ...s.runtime, update: a.status } }
     default:
       if (a.type.startsWith('rosco')) return applyRoscoAction(s, a as RoscoAction)
+      if (a.type.startsWith('fxv')) return applyEffectsAction(s, a as EffectsAction)
       if (SCENE_ACTIONS.has(a.type)) return applySceneAction(s, a as SceneAction)
       return applyQuizAction(s, a as QuizAction)
   }
@@ -154,18 +157,20 @@ export function hydrate(saved: unknown): GameState {
     sideInfo: { ...d.sideInfo, ...(s.sideInfo ?? {}) },
     cameras: { sourceId: s.cameras?.sourceId ?? null, sourceName: s.cameras?.sourceName ?? null, rects },
     plato: { ...d.plato, ...(s.plato ?? {}) },
-    audio: {
-      ...d.audio,
-      ...(s.audio ?? {}),
-      fx: d.audio.fx.map((f, i) => ({ ...f, ...(Array.isArray(s.audio?.fx) ? s.audio!.fx[i] : {}) }))
-    },
+    // 0.6.0: el juego de sonidos nuevo (kx-*) se asigna una vez; los de antes siguen en la carpeta para elegirlos
+    audio:
+      s.audio?.soundsRev === 2
+        ? { ...d.audio, ...(s.audio ?? {}), fx: d.audio.fx.map((f, i) => ({ ...f, ...(Array.isArray(s.audio?.fx) ? s.audio!.fx[i] : {}) })) }
+        : { ...d.audio, ...(s.audio ?? {}), fx: d.audio.fx.map((f) => ({ ...f })), soundsRev: 2 },
     scene: s.scene && ['cabecera', 'camaras', 'juego', 'marcador', 'final', 'multimedia'].includes(s.scene) ? s.scene : 'cabecera',
     liveGame: s.liveGame && ['test', 'sino', 'escalera', 'estimacion', 'quien', 'rosco'].includes(s.liveGame) ? s.liveGame : 'test',
     // la fila "quién sale" cambió en la 0.4.1: los estados anteriores empiezan con todos los concursantes
     camsScene: s.camsScene?.rev === 2 ? { ...d.camsScene, ...s.camsScene, on: { ...d.camsScene.on, ...s.camsScene.on } } : { ...d.camsScene, transition: s.camsScene?.transition ?? d.camsScene.transition },
     media: { ...d.media, ...(s.media ?? {}), playing: false },
-    quiz: hydrateQuiz(s.quiz),
+    quiz: hydrateQuiz(s.quiz, s.audio?.soundsRev === 2),
     rosco: hydrateRosco(s.rosco),
+    // los efectos activos no sobreviven a un reinicio; los sonidos sí
+    effects: { ...defaultEffects(), ...(s.effects && typeof s.effects === 'object' ? (s.effects as object) : {}), on: {}, hit: null },
     show: hydrateShow(s.show),
     people: Array.isArray(s.people) ? (s.people as Person[]).filter((p) => p && typeof p.name === 'string') : []
   }
@@ -177,7 +182,7 @@ export function persistable(s: GameState): Omit<GameState, 'runtime'> {
   return rest
 }
 
-function hydrateQuiz(saved: unknown): QuizState {
+function hydrateQuiz(saved: unknown, keepSounds = true): QuizState {
   const d = defaultQuiz()
   if (!saved || typeof saved !== 'object') return d
   const q = saved as Partial<QuizState>
@@ -213,11 +218,12 @@ function hydrateQuiz(saved: unknown): QuizState {
     autoRotate: typeof q.autoRotate === 'boolean' ? q.autoRotate : d.autoRotate,
     asked: typeof q.asked === 'number' ? q.asked : 0,
     ladder,
-    sounds: { ...d.sounds, ...obj(q.sounds, {}) },
+    sounds: keepSounds ? { ...d.sounds, ...obj(q.sounds, {}) } : d.sounds,
     allMode: typeof q.allMode === 'boolean' ? q.allMode : d.allMode,
     estimation: { ...d.estimation, ...obj(q.estimation, {}) },
     lifelines: Array.isArray(q.lifelines) && q.lifelines.length ? q.lifelines.slice(0, 5) : d.lifelines,
     forgiveScores: typeof q.forgiveScores === 'boolean' ? q.forgiveScores : d.forgiveScores,
+    soundVolumes: obj(q.soundVolumes, {}),
     bribe: { enabled: !!(q.bribe && q.bribe.enabled), at: null }
   }
 }

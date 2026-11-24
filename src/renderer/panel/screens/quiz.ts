@@ -6,6 +6,7 @@ import {
   formatPoints,
   ladderBank,
   ladderSafe,
+  LIFELINE_ICONS,
   lastMiss,
   sameTarget,
   targetKey,
@@ -88,6 +89,11 @@ export function createQuizScreen(ctx: Ctx, game: Exclude<QuizGameId, 'estimacion
     const q = nextUnused(ctx, ref, slot()?.key)
     if (!q || !ref) return ctx.toast('No quedan preguntas sin usar en este banco')
     load(q, ref)
+  }
+
+  function showNext(): void {
+    send({ type: 'quizShowNext', now: Date.now() })
+    ctx.cue('opcion')
   }
 
   function showQuestion(): void {
@@ -234,14 +240,14 @@ export function createQuizScreen(ctx: Ctx, game: Exclude<QuizGameId, 'estimacion
       case 'ready':
         return { label: 'Mostrar pregunta', after: 'Después: mostrar opciones', run: showQuestion, step: 0, air: 'nada de esta pregunta' }
       case 'question':
-        return { label: `Mostrar opción ${optName(cur, 0)}`, after: 'Una a una con Espacio · o "Mostrar todas"', run: () => send({ type: 'quizShowNext', now: Date.now() }), step: 1, air: 'solo la pregunta' }
+        return { label: `Mostrar opción ${optName(cur, 0)}`, after: 'Una a una con Espacio · o "Mostrar todas"', run: () => showNext(), step: 1, air: 'solo la pregunta' }
       case 'options': {
         const n = cur.question.opciones.length
         if (cur.shown < n)
           return {
             label: `Mostrar opción ${optName(cur, cur.shown)}`,
             after: `Van ${cur.shown} de ${n} · ya puedes marcar las que se ven`,
-            run: () => send({ type: 'quizShowNext', now: Date.now() }),
+            run: () => showNext(),
             step: 1,
             air: `pregunta y ${cur.shown} de ${n} opciones`
           }
@@ -310,7 +316,7 @@ export function createQuizScreen(ctx: Ctx, game: Exclude<QuizGameId, 'estimacion
           gameLabel(game),
           airBadge(ctx, s, game)
         ]),
-        h('span', 'mut', { fontSize: 13 }, [`Banco «${info?.nombre ?? '-'}»${idx >= 0 ? ` · pregunta ${idx + 1} de ${qs.length}` : ''}${all && game !== 'escalera' ? ' · todos responden' : ''}`])
+        h('span', 'mut', { fontSize: 13 }, [game === 'escalera' ? `${s.quiz.ladder.plan.length} preguntas preparadas (de ${new Set(s.quiz.ladder.plan.map((p) => p.ref)).size} bancos)` : `Banco «${info?.nombre ?? '-'}»${idx >= 0 ? ` · pregunta ${idx + 1} de ${qs.length}` : ''}${all ? ' · todos responden' : ''}`])
       ]),
       h('span', 'spacer'),
       ...right
@@ -536,7 +542,8 @@ export function createQuizScreen(ctx: Ctx, game: Exclude<QuizGameId, 'estimacion
       h('span', 'mut', { fontSize: 12 }, [`Ganado ${formatPoints(ladderBank(l.levels, l.level))} · seguro ${formatPoints(ladderSafe(l.levels, l.level))}`]),
       h('span', 'spacer'),
       ...s.quiz.lifelines.map((x, i) => {
-        const b = btn([lifelineIcon(x, 16, '#ececef'), x.name], () => useLifeline(x.id), `b sm${l.used[x.id] ? ' on' : ''}`, String(i + 1))
+        // los iconos de texto (50:50) ya son el nombre: no repetirlo
+        const b = btn(LIFELINE_ICONS[x.icon]?.text ? [x.name] : [lifelineIcon(x, 16, '#ececef'), x.name], () => useLifeline(x.id), `b sm${l.used[x.id] ? ' on' : ''}`, String(i + 1))
         b.title = l.used[x.id] ? 'Usado: pulsa para devolverlo' : 'Sin usar'
         if (l.used[x.id]) b.style.textDecoration = 'line-through'
         b.disabled = !!l.outcome

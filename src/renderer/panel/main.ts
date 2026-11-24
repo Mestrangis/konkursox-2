@@ -4,9 +4,11 @@ import '../ds/components.css'
 import './panel.css'
 import type { CueId } from '../../shared/quiz'
 import { GAMES, SCENES, type GameId } from '../../shared/scene'
+import { effectIndexForKey, isNumpad, soundIndexForKey } from '../../shared/keys'
 import type { AudioLibrary, GameState } from '../../shared/types'
 import { autoReconnect, CaptureFeed } from '../common/feed'
 import { AudioEngine } from './audio'
+import { applyTheme } from '../common/theme'
 import { createCalibration } from './calibrate'
 import { createAirBar, createDock, createNav, createPeopleRow, goScene } from './chrome'
 import { createMediaScreen } from './screens/media'
@@ -61,7 +63,7 @@ const ctx: Ctx = {
   cue(id: CueId) {
     if (!state?.audio.autoSounds) return
     const file = state.quiz.sounds[id]
-    if (file && audioLib.sfx.includes(file)) audio.playSfx(file)
+    if (file && audioLib.sfx.includes(file)) audio.playSfx(file, state.quiz.soundVolumes[id] ?? 1)
   },
   go: (id) => go(id),
   openCalibration: () => calibration.open(),
@@ -120,6 +122,7 @@ function go(id: ScreenId): void {
 let epoch = -1
 let lastBribe: number | null = null
 function render(s: GameState): void {
+  applyTheme(s.plato.theme)
   // sonido del soborno (sale el rótulo en el plató)
   if (s.quiz.bribe.at && s.quiz.bribe.at !== lastBribe && state) ctx.cue('soborno')
   lastBribe = s.quiz.bribe.at
@@ -143,14 +146,21 @@ feed.onFrame = () => {
   if (calibration.isOpen) calibration.draw()
 }
 
+let timerEndedAt: number | null = null
 // tic-tac del temporizador (sonido automático)
 setInterval(() => {
   if (!state) return
   const t = state.quiz.timer
   const running = t.enabled && t.endsAt !== null && t.endsAt > Date.now()
   const file = state.quiz.sounds.reloj
-  if (running && state.audio.autoSounds && file && audioLib.sfx.includes(file)) audio.playLoop(file)
-  else audio.stopLoop()
+  if (running && state.audio.autoSounds && file && audioLib.sfx.includes(file)) audio.playLoop(file, 'reloj', state.quiz.soundVolumes.reloj ?? 1)
+  else audio.stopLoop('reloj')
+  // el temporizador llega a 0: "tiempo agotado" una vez
+  const ended = t.endsAt !== null && t.endsAt <= Date.now()
+  if (ended && timerEndedAt !== t.endsAt) {
+    timerEndedAt = t.endsAt
+    ctx.cue('tiempo')
+  }
 }, 200)
 
 // animaciones de la miniatura (temporizador, revelado de estimación)
@@ -177,13 +187,22 @@ window.addEventListener('keydown', (e) => {
   // la barra espaciadora no debe "pulsar" el botón que tenga el foco
   if (k === ' ' && (e.target as HTMLElement)?.tagName === 'BUTTON') (e.target as HTMLElement).blur()
   let done = true
+  const sound = soundIndexForKey(e)
+  const effect = effectIndexForKey(e)
   const sc = SCENES.find((x) => x.key === k)
   if (sc && !e.ctrlKey && !e.altKey) goScene(ctx, sc.id)
-  else if (e.ctrlKey && (k === 'F1' || k === 'F2' || k === 'F3')) ctx.send({ type: 'camsSet', patch: { plano: k === 'F1' ? 'juego' : k === 'F2' ? 'datos' : 'limpio' } })
+  else if (e.ctrlKey && (k === 'F1' || k === 'F2' || k === 'F3')) {
+    // plano de la escena en el aire: en Cámaras, el suyo; en el resto, el de Juego
+    if (state.scene === 'camaras') ctx.send({ type: 'camsSet', patch: { camsPlano: k === 'F1' ? 'marcos' : k === 'F2' ? 'datos' : 'limpio' } })
+    else ctx.send({ type: 'camsSet', patch: { plano: k === 'F1' ? 'juego' : k === 'F2' ? 'datos' : 'limpio' } })
+  }
   else if (k === 'F6') ctx.send({ type: 'camsPreset', preset: 'yo' })
   else if (k === 'F7') ctx.send({ type: 'camsPreset', preset: 'turno' })
   else if (k === 'F8') ctx.send({ type: 'camsPreset', preset: 'todos' })
-  else if (e.ctrlKey && /^[1-9]$/.test(k)) dock.fire(Number(k) - 1)
+  else if (sound !== null) dock.fire(sound)
+  else if (effect !== null) dock.fireEffect(effect)
+  // el resto del teclado numérico no dispara teclas de los juegos
+  else if (isNumpad(e) && /^[0-9]$/.test(k)) done = true
   else if (e.ctrlKey && (k === ' ' || e.code === 'Space')) audio.toggle()
   else if (e.ctrlKey && k.toLowerCase() === 'f') void audio.fade()
   else if (e.ctrlKey && k.toLowerCase() === 'z') ctx.send({ type: 'undo', game: isGame(current) ? current : state.liveGame })

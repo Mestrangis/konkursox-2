@@ -11,5 +11,5 @@ export function lifelineIcon(def: Pick<LifelineDef, 'icon' | 'name'>, size: numb
   }
   const ic = LIFELINE_ICONS[def.icon] ?? LIFELINE_ICONS.estrella
   if (ic.text) return h('span', '', { fontSize: Math.round(size * 0.62), fontWeight: 700, color, letterSpacing: '0.02em', lineHeight: 1, whiteSpace: 'nowrap' }, [ic.text])
-  return svg('0 0 24 24', { width: size, height: size }, `<path fill="${color}" fill-rule="evenodd" d="${ic.path}"></path>`)
+  return svg('0 0 24 24', { width: size, height: size }, `<path style="fill:${color}" fill-rule="evenodd" d="${ic.path}"></path>`)
 }

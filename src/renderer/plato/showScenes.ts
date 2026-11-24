@@ -38,14 +38,14 @@ export function buildFinalScene(s: GameState): Scene {
   const { standings, winners } = finalStandings(scoreboardEntries(s))
 
   // cabecera "Ganador/a de la noche"
-  const caption = h('span', 'k-caption', { fontSize: 26, letterSpacing: '0.34em', color: '#e6cb85', whiteSpace: 'nowrap' })
+  const caption = h('span', 'k-caption', { fontSize: 26, letterSpacing: '0.34em', color: 'var(--k-gold-400)', whiteSpace: 'nowrap' })
   root.append(
     h('div', 'k-headline', { left: 100, top: 40, width: 1100 }, [
-      h('span', 'k-headline__line', { background: 'linear-gradient(90deg, transparent, #c9a961)' }),
+      h('span', 'k-headline__line', { background: 'linear-gradient(90deg, transparent, var(--k-gold-500))' }),
       svg('0 0 10 10', { width: 18, height: 18 }, DIAMOND),
       caption,
       svg('0 0 10 10', { width: 18, height: 18 }, DIAMOND),
-      h('span', 'k-headline__line', { background: 'linear-gradient(90deg, #c9a961, transparent)' })
+      h('span', 'k-headline__line', { background: 'linear-gradient(90deg, var(--k-gold-500), transparent)' })
     ])
   )
 

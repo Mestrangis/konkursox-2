@@ -1,5 +1,5 @@
 // Motor de audio del panel: reproductor de música (lista de musica\) + efectos superpuestos + bucle del reloj.
-const mediaUrl = (kind: 'musica' | 'efectos', file: string) => `konk-media://audio/${kind}/${encodeURIComponent(file)}`
+const mediaUrl = (kind: 'musica' | 'efectos', file: string) => `konk-media://audio/${kind}/${file.split('/').map(encodeURIComponent).join('/')}`
 
 /** Rampa lineal de volumen. */
 function ramp(el: HTMLAudioElement, to: number, seconds: number, token: { id: number }): Promise<void> {
@@ -35,8 +35,6 @@ export class AudioEngine {
   private fadeToken = { id: 0 }
   private fadingOut = false
   private sfx = new Set<HTMLAudioElement>()
-  private loopEl: HTMLAudioElement | null = null
-  private loopName: string | null = null
   onChange: () => void = () => {}
 
   get current(): string | null {
@@ -168,9 +166,9 @@ export class AudioEngine {
   }
 
   // ---- efectos ----
-  playSfx(file: string): HTMLAudioElement {
+  playSfx(file: string, volume = 1): HTMLAudioElement {
     const el = new Audio(mediaUrl('efectos', file))
-    el.volume = this.sfxVolume
+    el.volume = Math.max(0, Math.min(1, this.sfxVolume * volume))
     this.sfx.add(el)
     el.addEventListener('ended', () => this.sfx.delete(el))
     el.play().catch((err) => {
@@ -188,24 +186,28 @@ export class AudioEngine {
     this.sfx.clear()
   }
 
-  // ---- bucle (tic-tac del temporizador) ----
-  playLoop(file: string): void {
-    if (this.loopName === file && this.loopEl) return
-    this.stopLoop()
+  // ---- bucles (tic-tac del temporizador, latido...) por canal ----
+  private loops = new Map<string, { el: HTMLAudioElement; file: string }>()
+  playLoop(file: string, channel = 'reloj', volume = 1): void {
+    const cur = this.loops.get(channel)
+    if (cur && cur.file === file) {
+      cur.el.volume = Math.max(0, Math.min(1, this.sfxVolume * volume))
+      return
+    }
+    this.stopLoop(channel)
     const el = new Audio(mediaUrl('efectos', file))
     el.loop = true
-    el.volume = this.sfxVolume
-    this.loopEl = el
-    this.loopName = file
+    el.volume = Math.max(0, Math.min(1, this.sfxVolume * volume))
+    this.loops.set(channel, { el, file })
     el.play().catch((err) => console.error('[audio] bucle', file, err))
   }
 
-  stopLoop(): void {
-    if (this.loopEl) {
-      this.loopEl.pause()
-      this.loopEl.src = ''
+  stopLoop(channel = 'reloj'): void {
+    const cur = this.loops.get(channel)
+    if (cur) {
+      cur.el.pause()
+      cur.el.src = ''
     }
-    this.loopEl = null
-    this.loopName = null
+    this.loops.delete(channel)
   }
 }

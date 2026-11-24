@@ -2,6 +2,7 @@
 import type { Gender } from './games'
 import type { QuizAction, QuizState } from './quiz'
 import type { RoscoAction, RoscoState } from './rosco'
+import type { EffectsAction, EffectsState } from './effects'
 import type { CamsScene, FxSlot, GameId, MediaState, Person, SceneAction, SceneId, ShowState } from './scene'
 
 export type ContestantId = 'c1' | 'c2' | 'c3' | 'c4'
@@ -61,6 +62,8 @@ export interface PlatoConfig {
   displayId: number | null
   windowed: boolean
   visible: boolean
+  /** tema del plató (archivo de Documentos\KONKURSOX\temas sin .json) */
+  theme: string
 }
 
 export interface AudioConfig {
@@ -74,6 +77,8 @@ export interface AudioConfig {
   autoSounds: boolean
   /** botonera de 9 efectos */
   fx: FxSlot[]
+  /** versión del juego de sonidos (2 = sonidos propios kx-*, 0.6.0) */
+  soundsRev?: number
 }
 
 export type CaptureHealth = 'idle' | 'starting' | 'ok' | 'lost'
@@ -118,6 +123,8 @@ export interface GameState {
   audio: AudioConfig
   quiz: QuizState
   rosco: RoscoState
+  /** efectos visuales del plató */
+  effects: EffectsState
   show: ShowState
   /** personas del grupo (opciones de "quién lo dijo" y juegos futuros) */
   people: Person[]
@@ -146,6 +153,7 @@ export type Action =
   | QuizAction
   | RoscoAction
   | SceneAction
+  | EffectsAction
 
 export interface CaptureSource {
   id: string

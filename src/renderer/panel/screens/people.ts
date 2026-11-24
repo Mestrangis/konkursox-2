@@ -3,7 +3,8 @@ import { sourceRectForFrame } from '../../../shared/crop'
 import { CONTESTANT_IDS, SLOT_IDS, type ContestantId, type GameState, type SlotId } from '../../../shared/types'
 import { activeContestants, camOf, camsLineup, playersInGame } from '../../../shared/scene'
 import { formatPoints } from '../../../shared/quiz'
-import { buildCamsScene, camsKey } from '../../plato/camsScene'
+import { buildScene, sceneKey } from '../../plato/scenes'
+import { CAMS_PLANOS } from '../../../shared/scene'
 import { LAYOUTS } from '../../../shared/layouts'
 import { drawFrames, type Scene } from '../../plato/scenes'
 import { askConfirm, btn, editableArea, h, seg, silhouette, sw, type Ctx, type Screen } from '../ui'
@@ -229,13 +230,14 @@ export function createCamerasScreen(ctx: Ctx): Screen {
     badge.textContent = live ? 'VISTA PREVIA · EN EL AIRE' : 'VISTA PREVIA'
     badge.classList.toggle('off', !live)
     // vista previa de la escena (aunque no esté en el aire)
-    const k = camsKey(s)
+    const ps: GameState = { ...s, scene: 'camaras' }
+    const k = sceneKey(ps)
     if (!scene || scene.key !== k) {
-      scene = buildCamsScene(s)
+      scene = buildScene(ps)
       scene.root.classList.remove('k-enter')
       stage.replaceChildren(scene.root)
-    } else scene.update(s)
-    drawFrames(ctx.feed, scene, s)
+    } else scene.update(ps)
+    drawFrames(ctx.feed, scene, ps)
     if (!camsLineup(s).length) stage.append(h('div', '', { position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#9a9aa3', fontSize: 40 }, ['Nadie seleccionado: el plató mostrará solo el fondo']))
 
     shortcuts.replaceChildren(
@@ -258,6 +260,15 @@ export function createCamerasScreen(ctx: Ctx): Screen {
         s.camsScene.transition,
         (v) => ctx.send({ type: 'camsSet', patch: { transition: v } })
       ),
+      h('div', '', { flexBasis: '100%', display: 'flex', alignItems: 'center', gap: 10, flexWrap: 'wrap' }, [
+        h('span', 'mut', { fontSize: 12 }, ['Plano']),
+        seg(
+          CAMS_PLANOS.map((pl) => ({ v: pl.id, t: pl.label })),
+          s.camsScene.camsPlano,
+          (v) => ctx.send({ type: 'camsSet', patch: { camsPlano: v } })
+        ),
+        h('span', 'mut', { fontSize: 11 }, ['Ctrl+F1/F2/F3 con la escena en el aire · "datos" son los del juego activo'])
+      ]),
       h('div', '', { flexBasis: '100%', display: 'flex', alignItems: 'center', gap: 10, flexWrap: 'wrap' }, [
         h('span', 'mut', { fontSize: 12 }, ['Distribución']),
         seg(
