@@ -91,6 +91,31 @@ export interface NamePlateEl {
 }
 
 /** Placa de nombre con puntos (o etiqueta a la derecha, p. ej. "Presentador"). */
+/**
+ * El nombre cabe siempre en su placa: primero baja la letra (hasta ~55 %) y, si aún no cabe,
+ * pasa a dos líneas. Nunca "CONC…".
+ */
+export function fitName(el: HTMLElement): void {
+  const run = () => {
+    if (!el.isConnected) return
+    const base = Number(el.dataset.base || (el.dataset.base = String(parseFloat(getComputedStyle(el).fontSize) || 30)))
+    el.style.whiteSpace = 'nowrap'
+    el.style.lineHeight = ''
+    el.style.fontSize = `${base}px`
+    let size = base
+    while (el.scrollWidth > el.clientWidth + 1 && size > base * 0.55) {
+      size -= 1
+      el.style.fontSize = `${size}px`
+    }
+    if (el.scrollWidth > el.clientWidth + 1) {
+      el.style.whiteSpace = 'normal'
+      el.style.lineHeight = '1.02'
+      el.style.fontSize = `${Math.max(size, base * 0.6)}px`
+    }
+  }
+  requestAnimationFrame(run)
+}
+
 export function namePlate(o: BarOpts & { nameSize?: number; tag?: string; nameOnly?: boolean }): NamePlateEl {
   const name = h('span', 'k-name', o.nameSize ? { fontSize: o.nameSize } : undefined)
   const children: Node[] = [name]
@@ -105,7 +130,9 @@ export function namePlate(o: BarOpts & { nameSize?: number; tag?: string; nameOn
   return {
     root,
     setName: (n) => {
-      if (name.textContent !== n) name.textContent = n
+      if (name.textContent === n) return
+      name.textContent = n
+      fitName(name)
     },
     setScore: (s) => {
       if (!score) return

@@ -6,7 +6,7 @@ import { formatPoints, ladderBank, targetKey, type LifelineDef, type Target } fr
 import { lifelineIcon } from '../ds/lifeline'
 import type { Box } from '../../shared/layouts'
 import type { ContestantId, GameState, SlotId } from '../../shared/types'
-import { bevelBar, camFrame, h, svg, type CamFrameEl } from '../ds/components'
+import { bevelBar, camFrame, fitName, h, svg, type CamFrameEl } from '../ds/components'
 import { buildEstimationScene, buildQuienScene } from './gameScenes'
 import type { Scene } from './scenes'
 
@@ -88,7 +88,10 @@ export function quizPlate(box: Box, c: number, nameSize?: number): PlateEl {
   return {
     root,
     set: (n, sc, ch, cls) => {
-      name.textContent = n
+      if (name.textContent !== n) {
+        name.textContent = n
+        fitName(name)
+      }
       score.textContent = sc ?? ''
       score.style.display = sc === null ? 'none' : ''
       if (ch === 'DIAMOND') chip.innerHTML = CHIP_DIAMOND

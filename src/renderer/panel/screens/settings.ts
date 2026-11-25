@@ -23,7 +23,18 @@ export function createSettingsScreen(ctx: Ctx): Screen {
   })
   let key = ''
 
-  const card = (title: string, ...children: Node[]) => h('section', 'pnl', { padding: '14px 16px', display: 'flex', flexDirection: 'column', gap: 10 }, [h('span', 'lbl', {}, [title]), ...children])
+  const card = (title: string, ...children: Node[]) =>
+    h(
+      'section',
+      'pnl',
+      {
+        padding: '14px 16px',
+        display: 'flex',
+        flexDirection: 'column',
+        gap: 10
+      },
+      [h('span', 'lbl', {}, [title]), ...children]
+    )
   const row = (...children: Node[]) => h('div', '', { display: 'flex', alignItems: 'center', gap: 10, flexWrap: 'wrap' }, children)
   const num = (value: number, set: (v: number) => void, width = 90) => {
     const i = h('input', 'inp', { width, textAlign: 'right' })
@@ -66,8 +77,30 @@ export function createSettingsScreen(ctx: Ctx): Screen {
       kind.append(new Option('50:50 automático', 'fifty'), new Option('Solo marcarlo', 'mark'))
       kind.value = l.kind
       kind.onchange = () => patch(i, { kind: kind.value as LifelineDef['kind'] })
-      const prev = h('span', '', { width: 44, height: 30, flex: 'none', display: 'flex', alignItems: 'center', justifyContent: 'center', borderRadius: 15, background: '#0d1530', boxShadow: '0 0 0 1px #8a6d32' }, [lifelineIcon(l, 18, '#e6cb85')])
-      return row(h('span', 'nm', {}, [String(i + 1)]), prev, name, iconSel, kind, btn('Quitar', () => save(list.filter((_, j) => j !== i)), 'b sm ghost'))
+      const prev = h(
+        'span',
+        '',
+        {
+          width: 44,
+          height: 30,
+          flex: 'none',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          borderRadius: 15,
+          background: '#0d1530',
+          boxShadow: '0 0 0 1px #8a6d32'
+        },
+        [lifelineIcon(l, 18, '#e6cb85')]
+      )
+      return row(
+        h('span', 'nm', {}, [String(i + 1)]),
+        prev,
+        name,
+        iconSel,
+        kind,
+        btn('Quitar', () => save(list.filter((_, j) => j !== i)), 'b sm ghost')
+      )
     })
     return card(
       'Comodines de la escalera',
@@ -90,7 +123,15 @@ export function createSettingsScreen(ctx: Ctx): Screen {
   void loadThemes()
   const themeSel = (s: GameState) => {
     const sel = h('select', 'inp', { width: 220 })
-    const list = themes.length ? themes : [{ id: s.plato.theme || 'clasico', nombre: s.plato.theme || 'Clásico', descripcion: '' }]
+    const list = themes.length
+      ? themes
+      : [
+          {
+            id: s.plato.theme || 'clasico',
+            nombre: s.plato.theme || 'Clásico',
+            descripcion: ''
+          }
+        ]
     for (const t of list) {
       const o = new Option(t.nombre, t.id)
       o.title = t.descripcion
@@ -105,11 +146,75 @@ export function createSettingsScreen(ctx: Ctx): Screen {
     el.style.gridColumn = '1 / -1'
     return el
   }
+  // pestañas de Ajustes
+  type STab = 'plato' | 'sonidos' | 'juegos' | 'personas' | 'programa'
+  let stab: STab = 'plato'
+  try {
+    const t = localStorage.getItem('konk.settingsTab') as STab
+    if (['plato', 'sonidos', 'juegos', 'personas', 'programa'].includes(t)) stab = t
+  } catch {
+    /* sin almacenamiento */
+  }
+  /** Marca una tarjeta con su pestaña (las de otras pestañas no se pintan). */
+  const T = (t: STab, el2: HTMLElement): HTMLElement => {
+    el2.dataset.tab = t
+    if (t !== stab) el2.style.display = 'none'
+    return el2
+  }
+  const tabBar = () =>
+    h(
+      'div',
+      'tabs',
+      {},
+      (
+        [
+          ['plato', 'Plató y temas'],
+          ['sonidos', 'Sonidos'],
+          ['juegos', 'Juegos'],
+          ['personas', 'Personas del grupo'],
+          ['programa', 'Programa']
+        ] as const
+      ).map(([t, label]) => {
+        const b = h('button', stab === t ? 'on' : '', {}, [label])
+        b.onclick = () => {
+          stab = t
+          try {
+            localStorage.setItem('konk.settingsTab', t)
+          } catch {
+            /* sin almacenamiento */
+          }
+          build(ctx.state)
+        }
+        return b
+      })
+    )
   const toggle = (label: string, on: boolean, flip: () => void) => h('span', '', { display: 'flex', alignItems: 'center', gap: 10 }, [sw(on, flip, label), label])
 
   const area = editableArea(el, () => build(ctx.state))
   function update(s: GameState): void {
-    const k = JSON.stringify([s.plato, s.audio, s.quiz.scoring, s.quiz.timer.seconds, s.quiz.lifelines, s.quiz.autoRotate, s.quiz.ladder.levels, s.quiz.ladder.awardToScore, s.quiz.estimation, s.quiz.sounds, s.quiz.soundVolumes, s.effects.sounds, s.effects.volumes, s.people, s.lowerThird, s.host, s.show, s.runtime.update, s.runtime.appVersion, ctx.audioLib, displays.length])
+    const k = JSON.stringify([
+      s.plato,
+      s.audio,
+      s.quiz.scoring,
+      s.quiz.timer.seconds,
+      s.quiz.lifelines,
+      s.quiz.autoRotate,
+      s.quiz.ladder.levels,
+      s.quiz.ladder.awardToScore,
+      s.quiz.estimation,
+      s.quiz.sounds,
+      s.quiz.soundVolumes,
+      s.effects.sounds,
+      s.effects.volumes,
+      s.people,
+      s.lowerThird,
+      s.host,
+      s.show,
+      s.runtime.update,
+      s.runtime.appVersion,
+      ctx.audioLib,
+      displays.length
+    ])
     const changed = k !== key
     key = k
     area.refresh(changed)
@@ -151,11 +256,15 @@ export function createSettingsScreen(ctx: Ctx): Screen {
         if (added[0]) setFile(added[0])
         else sl.value = file ?? ''
       }
-      const play = btn('▶', () => {
-        const f = sl.value && sl.value !== '__import' ? sl.value : null
-        if (f && sfx.includes(f)) ctx.audio.playSfx(f, Number(vol.value) / 100)
-        else ctx.toast('Sin sonido')
-      }, 'b sm ghost')
+      const play = btn(
+        '▶',
+        () => {
+          const f = sl.value && sl.value !== '__import' ? sl.value : null
+          if (f && sfx.includes(f)) ctx.audio.playSfx(f, Number(vol.value) / 100)
+          else ctx.toast('Sin sonido')
+        },
+        'b sm ghost'
+      )
       play.title = 'Escuchar'
       const vol = h('input', '', { width: 90, flex: 'none' })
       vol.type = 'range'
@@ -201,11 +310,24 @@ export function createSettingsScreen(ctx: Ctx): Screen {
     const levels = s.quiz.ladder.levels
     const levelRows = levels
       .map((lv, i) => {
-        const v = num(lv.value, (val) => send({ type: 'ladderSetLevels', levels: ctx.state.quiz.ladder.levels.map((x, j) => (j === i ? { ...x, value: val } : x)) }), 120)
+        const v = num(
+          lv.value,
+          (val) =>
+            send({
+              type: 'ladderSetLevels',
+              levels: ctx.state.quiz.ladder.levels.map((x, j) => (j === i ? { ...x, value: val } : x))
+            }),
+          120
+        )
         return row(
           h('span', 'mut', { width: 26, textAlign: 'right', fontWeight: 700 }, [String(i + 1)]),
           v,
-          toggle('Seguro', lv.safe, () => send({ type: 'ladderSetLevels', levels: ctx.state.quiz.ladder.levels.map((x, j) => (j === i ? { ...x, safe: !x.safe } : x)) }))
+          toggle('Seguro', lv.safe, () =>
+            send({
+              type: 'ladderSetLevels',
+              levels: ctx.state.quiz.ladder.levels.map((x, j) => (j === i ? { ...x, safe: !x.safe } : x))
+            })
+          )
         )
       })
       .reverse()
@@ -213,16 +335,27 @@ export function createSettingsScreen(ctx: Ctx): Screen {
     // personas del grupo
     const setPeople = (people: Person[]) => send({ type: 'setPeople', people })
     const peopleRows = s.people.map((p) => {
-      const img = h('img', '', { width: 34, height: 34, borderRadius: '50%', objectFit: 'cover', background: '#26262b', flex: 'none' })
+      const img = h('img', '', {
+        width: 34,
+        height: 34,
+        borderRadius: '50%',
+        objectFit: 'cover',
+        background: '#26262b',
+        flex: 'none'
+      })
       img.alt = ''
       if (p.photo) img.src = `konk-media://personas/${encodeURIComponent(p.photo)}`
       return row(
         img,
         text(p.name, (v) => setPeople(ctx.state.people.map((x) => (x.id === p.id ? { ...x, name: v } : x)))),
-        btn(p.photo ? 'Cambiar foto' : 'Foto', async () => {
-          const file = await window.konk.choosePhoto(p.name)
-          if (file) setPeople(ctx.state.people.map((x) => (x.id === p.id ? { ...x, photo: file } : x)))
-        }, 'b sm ghost'),
+        btn(
+          p.photo ? 'Cambiar foto' : 'Foto',
+          async () => {
+            const file = await window.konk.choosePhoto(p.name)
+            if (file) setPeople(ctx.state.people.map((x) => (x.id === p.id ? { ...x, photo: file } : x)))
+          },
+          'b sm ghost'
+        ),
         btn('Quitar', () => setPeople(ctx.state.people.filter((x) => x.id !== p.id)), 'b sm ghost danger')
       )
     })
@@ -250,131 +383,344 @@ export function createSettingsScreen(ctx: Ctx): Screen {
     const n = playedCount(s)
 
     el.replaceChildren(
-      h('div', 'head', {}, [h('div', 'title', {}, [h('b', '', {}, ['Ajustes']), h('span', 'mut', { fontSize: 13 }, ['Se guardan solos'])])]),
-      h('div', '', { display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(420px, 1fr))', gap: 14, alignItems: 'start' }, [
-        card(
-          'Plató',
-          row(h('span', 'fl', {}, ['Monitor']), disp),
-          row(toggle('En ventana (para pruebas)', s.plato.windowed, () => send({ type: 'setPlato', patch: { windowed: !ctx.state.plato.windowed } }))),
-          row(btn('Mostrar el plató', () => void window.konk.showPlato(), 'b'), btn('Ocultar el plató', () => send({ type: 'setPlato', patch: { visible: false } }), 'b ghost')),
-          row(btn('Cámaras: elegir ventana y calibrar', () => ctx.openCalibration(), 'b')),
-          row(h('span', 'fl', {}, ['Tema del plató']), themeSel(s), btn('Abrir la carpeta de temas', () => void window.konk.themesOpenDir(), 'b sm ghost'), btn('Recargar', () => void loadThemes(true), 'b sm ghost')),
-          h('span', 'mut', { fontSize: 12 }, ['Solo cambia lo que se ve en el plató (y sus vistas previas). Los temas son archivos en Documentos\\KONKURSOX\\temas: copia uno para crear otro.'])
-        ),
-        card(
-          'Juegos jugados',
-          row(
-            h('span', '', { fontSize: 22, fontWeight: 800 }, [String(n)]),
-            h('span', 'mut', { fontSize: 13 }, [`${n === 1 ? 'prueba jugada' : 'pruebas jugadas'} (cuentan para el marcador final)`]),
-            h('span', 'spacer'),
-            btn('−', () => send({ type: 'playedAdjust', delta: -1 }), 'pm'),
-            btn('+', () => send({ type: 'playedAdjust', delta: 1 }), 'pm')
-          ),
-          row(btn('Empezar programa nuevo (poner a 0)', async () => (await askConfirm('¿Poner a cero las pruebas jugadas?', '', 'Poner a 0', true)) && send({ type: 'playedReset' }), 'b ghost'))
-        ),
-        card(
-          'Audio',
-          row(h('span', 'mut', { fontSize: 12, flex: 1, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }, [ctx.audioLib.dir])),
-          row(
-            btn('Abrir la carpeta', () => void window.konk.audioOpenDir(), 'b sm'),
-            btn('Cambiar…', async () => {
-              await window.konk.audioChooseDir()
-              await ctx.reloadAudio()
-            }, 'b sm ghost'),
-            btn('Recargar', () => void ctx.reloadAudio(), 'b sm ghost')
-          ),
-          row(h('span', 'fl', {}, ['Volumen de efectos']), num(Math.round(s.audio.sfxVolume * 100), (v) => send({ type: 'setAudio', patch: { sfxVolume: Math.max(0, Math.min(100, v)) / 100 } }), 70), h('span', 'mut', {}, ['%'])),
-          row(h('span', 'fl', {}, ['Fundido de la música']), num(s.audio.fadeSeconds, (v) => send({ type: 'setAudio', patch: { fadeSeconds: Math.max(0, Math.min(10, v)) } }), 70), h('span', 'mut', {}, ['s']))
-        ),
-        wide(card(
-          'Sonidos',
-          h('span', 'mut', { fontSize: 12 }, ['Todos salen de la carpeta audio\\efectos (y su subcarpeta "alternativas"). ▶ para escucharlo; la barra es su volumen propio.']),
-          h('span', 'lbl', { marginTop: 4 }, ['Botonera (teclado numérico Num1-Num9, o Ctrl+1..9)']),
-          ...fxRows,
-          h('div', '', { display: 'flex', alignItems: 'center', gap: 10, marginTop: 8 }, [
-            h('span', 'lbl', { flex: 1 }, ['Automáticos del juego']),
-            toggle('Activados', s.audio.autoSounds, () => send({ type: 'setAudio', patch: { autoSounds: !ctx.state.audio.autoSounds } }))
-          ]),
-          ...cueRows,
-          h('span', 'lbl', { marginTop: 8 }, ['Efectos visuales (opcional)']),
-          ...effRows
-        )),
-        card(
-          'Puntuación y turnos',
-          row(h('span', 'fl', {}, ['Puntos por acierto']), num(s.quiz.scoring.pointsCorrect, (v) => send({ type: 'quizSetScoring', patch: { pointsCorrect: v } }))),
-          row(
-            toggle('Fallar resta', s.quiz.scoring.penalize, () => send({ type: 'quizSetScoring', patch: { penalize: !ctx.state.quiz.scoring.penalize } })),
-            num(s.quiz.scoring.pointsWrong, (v) => send({ type: 'quizSetScoring', patch: { pointsWrong: Math.abs(v) } }), 70)
-          ),
-          row(toggle('Sumar los puntos al revelar', s.quiz.scoring.autoAward, () => send({ type: 'quizSetScoring', patch: { autoAward: !ctx.state.quiz.scoring.autoAward } }))),
-          row(toggle('El turno pasa solo al siguiente con cada pregunta', s.quiz.autoRotate, () => send({ type: 'quizSetOptions', patch: { autoRotate: !ctx.state.quiz.autoRotate } }))),
-          row(
-            h('span', 'fl', {}, ['Duración del temporizador']),
-            num(s.quiz.timer.seconds, (v) => send({ type: 'timerConfig', patch: { seconds: v } }), 70),
-            h('span', 'mut', {}, ['s · se muestra y se arranca desde cada juego (T / Y)'])
-          )
-        ),
-        card(
-          'Estimación',
-          row(toggle('Precio justo (gana el más cercano sin pasarse)', s.quiz.estimation.priceIsRight, () => send({ type: 'quizSetEstimation', patch: { priceIsRight: !ctx.state.quiz.estimation.priceIsRight } }))),
-          row(
-            seg(
-              [
-                { v: 'closest', t: 'Solo el más cercano' },
-                { v: 'ranked', t: 'Escalonado por cercanía' }
-              ],
-              s.quiz.estimation.mode,
-              (v) => send({ type: 'quizSetEstimation', patch: { mode: v } })
+      h('div', 'head', {}, [h('div', 'title', {}, [h('b', '', {}, ['Ajustes'])])]),
+      tabBar(),
+      h(
+        'div',
+        'stgrid',
+        {
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fill, minmax(420px, 1fr))',
+          gap: 14,
+          alignItems: 'start'
+        },
+        [
+          T(
+            'programa',
+            card(
+              'Carpetas',
+              row(
+                btn('Preguntas', () => void window.konk.libOpenDir(), 'b sm'),
+                btn('Audio', () => void window.konk.audioOpenDir(), 'b sm'),
+                btn('Multimedia', () => void window.konk.mediaOpenDir(), 'b sm'),
+                btn('Temas', () => void window.konk.themesOpenDir(), 'b sm')
+              ),
+              h('span', 'mut', { fontSize: 12 }, ['Todo vive en Documentos\\KONKURSOX.'])
             )
           ),
-          row(
-            h('span', 'fl', {}, ['Puntos por puesto']),
-            (() => {
-              const i = h('input', 'inp', { width: 160 })
-              i.value = s.quiz.estimation.ranked.join(', ')
-              i.onchange = () => send({ type: 'quizSetEstimation', patch: { ranked: i.value.split(/[,;\s]+/).map(Number).filter(Number.isFinite) } })
-              return i
-            })(),
-            h('span', 'mut', { fontSize: 12 }, ['1º, 2º, 3º...'])
-          )
-        ),
-        card(
-          'Escalera',
-          row(toggle('Sumar el premio final a los puntos', s.quiz.ladder.awardToScore, () => send({ type: 'ladderSetAward', awardToScore: !ctx.state.quiz.ladder.awardToScore }))),
-          row(
-            btn('Añadir escalón', () => send({ type: 'ladderSetLevels', levels: [...levels, { value: (levels[levels.length - 1]?.value ?? 50) * 2, safe: false }] }), 'b sm'),
-            btn('Quitar el último', () => send({ type: 'ladderSetLevels', levels: levels.slice(0, -1) }), 'b sm ghost'),
-            btn('15 por defecto', () => send({ type: 'ladderSetLevels', levels: defaultLevels() }), 'b sm ghost')
+          T(
+            'plato',
+            card(
+              'Plató',
+              row(h('span', 'fl', {}, ['Monitor']), disp),
+              row(
+                toggle('En ventana (para pruebas)', s.plato.windowed, () =>
+                  send({
+                    type: 'setPlato',
+                    patch: { windowed: !ctx.state.plato.windowed }
+                  })
+                )
+              ),
+              row(
+                btn('Mostrar el plató', () => void window.konk.showPlato(), 'b'),
+                btn('Ocultar el plató', () => send({ type: 'setPlato', patch: { visible: false } }), 'b ghost')
+              ),
+              row(
+                h('span', 'fl', {}, ['Tema del plató']),
+                themeSel(s),
+                btn('Abrir la carpeta de temas', () => void window.konk.themesOpenDir(), 'b sm ghost'),
+                btn('Recargar', () => void loadThemes(true), 'b sm ghost')
+              ),
+              h('span', 'mut', { fontSize: 12 }, ['Solo cambia lo que se ve en el plató (y sus vistas previas). Los temas son archivos en Documentos\\KONKURSOX\\temas: copia uno para crear otro.'])
+            )
           ),
-          h('div', '', { display: 'flex', flexDirection: 'column', gap: 4, maxHeight: 300, overflow: 'auto' }, levelRows)
-        ),
-        lifelinesCard(s),
-        card(
-          'Personas del grupo',
-          h('span', 'mut', { fontSize: 12 }, ['Rellenan las opciones de "¿Quién lo dijo?" (y servirán para otros juegos).']),
-          ...peopleRows,
-          row(newPerson, btn('Añadir', addPerson, 'b sm acc'))
-        ),
-        card(
-          'Rótulo inferior y presentador',
-          row(toggle('Rótulo visible', s.lowerThird.visible, () => send({ type: 'setLowerThird', patch: { visible: !ctx.state.lowerThird.visible } }))),
-          h('label', 'field', {}, [h('span', 'fl', {}, ['Antetítulo']), text(s.lowerThird.kicker, (v) => send({ type: 'setLowerThird', patch: { kicker: v } }))]),
-          h('label', 'field', {}, [h('span', 'fl', {}, ['Título']), text(s.lowerThird.title, (v) => send({ type: 'setLowerThird', patch: { title: v } }))]),
-          h('label', 'field', {}, [h('span', 'fl', {}, ['Texto de la derecha']), text(s.lowerThird.right, (v) => send({ type: 'setLowerThird', patch: { right: v } }))]),
-          row(
-            h('label', 'field', { flex: 1 }, [h('span', 'fl', {}, ['Presentador']), text(s.host.name, (v) => send({ type: 'setHost', patch: { name: v } }))]),
-            h('label', 'field', { flex: 1 }, [h('span', 'fl', {}, ['Etiqueta']), text(s.host.label, (v) => send({ type: 'setHost', patch: { label: v } }))])
+          T(
+            'programa',
+            card(
+              'Juegos jugados',
+              row(
+                h('span', '', { fontSize: 22, fontWeight: 800 }, [String(n)]),
+                h('span', 'mut', { fontSize: 13 }, [`${n === 1 ? 'prueba jugada' : 'pruebas jugadas'} (cuentan para el marcador final)`]),
+                h('span', 'spacer'),
+                btn('−', () => send({ type: 'playedAdjust', delta: -1 }), 'pm'),
+                btn('+', () => send({ type: 'playedAdjust', delta: 1 }), 'pm')
+              ),
+              row(btn('Empezar programa nuevo (poner a 0)', async () => (await askConfirm('¿Poner a cero las pruebas jugadas?', '', 'Poner a 0', true)) && send({ type: 'playedReset' }), 'b ghost'))
+            )
+          ),
+          T(
+            'sonidos',
+            card(
+              'Audio',
+              row(
+                h(
+                  'span',
+                  'mut',
+                  {
+                    fontSize: 12,
+                    flex: 1,
+                    overflow: 'hidden',
+                    textOverflow: 'ellipsis',
+                    whiteSpace: 'nowrap'
+                  },
+                  [ctx.audioLib.dir]
+                )
+              ),
+              row(
+                btn('Abrir la carpeta', () => void window.konk.audioOpenDir(), 'b sm'),
+                btn(
+                  'Cambiar…',
+                  async () => {
+                    await window.konk.audioChooseDir()
+                    await ctx.reloadAudio()
+                  },
+                  'b sm ghost'
+                ),
+                btn('Recargar', () => void ctx.reloadAudio(), 'b sm ghost')
+              ),
+              row(
+                h('span', 'fl', {}, ['Volumen de efectos']),
+                num(
+                  Math.round(s.audio.sfxVolume * 100),
+                  (v) =>
+                    send({
+                      type: 'setAudio',
+                      patch: { sfxVolume: Math.max(0, Math.min(100, v)) / 100 }
+                    }),
+                  70
+                ),
+                h('span', 'mut', {}, ['%'])
+              ),
+              row(
+                h('span', 'fl', {}, ['Fundido de la música']),
+                num(
+                  s.audio.fadeSeconds,
+                  (v) =>
+                    send({
+                      type: 'setAudio',
+                      patch: { fadeSeconds: Math.max(0, Math.min(10, v)) }
+                    }),
+                  70
+                ),
+                h('span', 'mut', {}, ['s'])
+              )
+            )
+          ),
+          T(
+            'sonidos',
+            wide(
+              card(
+                'Sonidos',
+                h('span', 'mut', { fontSize: 12 }, ['Todos salen de la carpeta audio\\efectos (y su subcarpeta "alternativas"). ▶ para escucharlo; la barra es su volumen propio.']),
+                h('span', 'lbl', { marginTop: 4 }, ['Botonera (teclado numérico Num1-Num9, o Ctrl+1..9)']),
+                ...fxRows,
+                h(
+                  'div',
+                  '',
+                  {
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: 10,
+                    marginTop: 8
+                  },
+                  [
+                    h('span', 'lbl', { flex: 1 }, ['Automáticos del juego']),
+                    toggle('Activados', s.audio.autoSounds, () =>
+                      send({
+                        type: 'setAudio',
+                        patch: { autoSounds: !ctx.state.audio.autoSounds }
+                      })
+                    )
+                  ]
+                ),
+                ...cueRows,
+                h('span', 'lbl', { marginTop: 8 }, ['Efectos visuales (opcional)']),
+                ...effRows
+              )
+            )
+          ),
+          T(
+            'juegos',
+            card(
+              'Puntuación y turnos',
+              row(
+                h('span', 'fl', {}, ['Puntos por acierto']),
+                num(s.quiz.scoring.pointsCorrect, (v) => send({ type: 'quizSetScoring', patch: { pointsCorrect: v } }))
+              ),
+              row(
+                toggle('Fallar resta', s.quiz.scoring.penalize, () =>
+                  send({
+                    type: 'quizSetScoring',
+                    patch: { penalize: !ctx.state.quiz.scoring.penalize }
+                  })
+                ),
+                num(
+                  s.quiz.scoring.pointsWrong,
+                  (v) =>
+                    send({
+                      type: 'quizSetScoring',
+                      patch: { pointsWrong: Math.abs(v) }
+                    }),
+                  70
+                )
+              ),
+              row(
+                toggle('Sumar los puntos al revelar', s.quiz.scoring.autoAward, () =>
+                  send({
+                    type: 'quizSetScoring',
+                    patch: { autoAward: !ctx.state.quiz.scoring.autoAward }
+                  })
+                )
+              ),
+              row(
+                toggle('El turno pasa solo al siguiente con cada pregunta', s.quiz.autoRotate, () =>
+                  send({
+                    type: 'quizSetOptions',
+                    patch: { autoRotate: !ctx.state.quiz.autoRotate }
+                  })
+                )
+              ),
+              row(
+                h('span', 'fl', {}, ['Duración del temporizador']),
+                num(s.quiz.timer.seconds, (v) => send({ type: 'timerConfig', patch: { seconds: v } }), 70),
+                h('span', 'mut', {}, ['s · se muestra y se arranca desde cada juego (T / Y)'])
+              )
+            )
+          ),
+          T(
+            'juegos',
+            card(
+              'Estimación',
+              row(
+                toggle('Precio justo (gana el más cercano sin pasarse)', s.quiz.estimation.priceIsRight, () =>
+                  send({
+                    type: 'quizSetEstimation',
+                    patch: {
+                      priceIsRight: !ctx.state.quiz.estimation.priceIsRight
+                    }
+                  })
+                )
+              ),
+              row(
+                seg(
+                  [
+                    { v: 'closest', t: 'Solo el más cercano' },
+                    { v: 'ranked', t: 'Escalonado por cercanía' }
+                  ],
+                  s.quiz.estimation.mode,
+                  (v) => send({ type: 'quizSetEstimation', patch: { mode: v } })
+                )
+              ),
+              row(
+                h('span', 'fl', {}, ['Puntos por puesto']),
+                (() => {
+                  const i = h('input', 'inp', { width: 160 })
+                  i.value = s.quiz.estimation.ranked.join(', ')
+                  i.onchange = () =>
+                    send({
+                      type: 'quizSetEstimation',
+                      patch: {
+                        ranked: i.value
+                          .split(/[,;\s]+/)
+                          .map(Number)
+                          .filter(Number.isFinite)
+                      }
+                    })
+                  return i
+                })(),
+                h('span', 'mut', { fontSize: 12 }, ['1º, 2º, 3º...'])
+              )
+            )
+          ),
+          T(
+            'juegos',
+            card(
+              'Escalera',
+              row(
+                toggle('Sumar el premio final a los puntos', s.quiz.ladder.awardToScore, () =>
+                  send({
+                    type: 'ladderSetAward',
+                    awardToScore: !ctx.state.quiz.ladder.awardToScore
+                  })
+                )
+              ),
+              row(
+                btn(
+                  'Añadir escalón',
+                  () =>
+                    send({
+                      type: 'ladderSetLevels',
+                      levels: [
+                        ...levels,
+                        {
+                          value: (levels[levels.length - 1]?.value ?? 50) * 2,
+                          safe: false
+                        }
+                      ]
+                    }),
+                  'b sm'
+                ),
+                btn(
+                  'Quitar el último',
+                  () =>
+                    send({
+                      type: 'ladderSetLevels',
+                      levels: levels.slice(0, -1)
+                    }),
+                  'b sm ghost'
+                ),
+                btn('15 por defecto', () => send({ type: 'ladderSetLevels', levels: defaultLevels() }), 'b sm ghost')
+              ),
+              h(
+                'div',
+                '',
+                {
+                  display: 'flex',
+                  flexDirection: 'column',
+                  gap: 4,
+                  maxHeight: 300,
+                  overflow: 'auto'
+                },
+                levelRows
+              )
+            )
+          ),
+          T('juegos', lifelinesCard(s)),
+          T(
+            'personas',
+            card(
+              'Personas del grupo',
+              h('span', 'mut', { fontSize: 12 }, ['Rellenan las opciones de "¿Quién lo dijo?" (y servirán para otros juegos).']),
+              ...peopleRows,
+              row(newPerson, btn('Añadir', addPerson, 'b sm acc'))
+            )
+          ),
+          T(
+            'plato',
+            card(
+              'Textos del rótulo y presentador',
+              h('label', 'field', {}, [h('span', 'fl', {}, ['Antetítulo']), text(s.lowerThird.kicker, (v) => send({ type: 'setLowerThird', patch: { kicker: v } }))]),
+              h('label', 'field', {}, [h('span', 'fl', {}, ['Título']), text(s.lowerThird.title, (v) => send({ type: 'setLowerThird', patch: { title: v } }))]),
+              h('label', 'field', {}, [h('span', 'fl', {}, ['Texto de la derecha']), text(s.lowerThird.right, (v) => send({ type: 'setLowerThird', patch: { right: v } }))]),
+              row(
+                h('label', 'field', { flex: 1 }, [h('span', 'fl', {}, ['Presentador']), text(s.host.name, (v) => send({ type: 'setHost', patch: { name: v } }))]),
+                h('label', 'field', { flex: 1 }, [h('span', 'fl', {}, ['Etiqueta']), text(s.host.label, (v) => send({ type: 'setHost', patch: { label: v } }))])
+              )
+            )
+          ),
+          T(
+            'programa',
+            card(
+              'Actualizaciones',
+              row(h('span', '', { fontWeight: 600 }, [`Versión ${s.runtime.appVersion}`]), h('span', 'mut', { fontSize: 12 }, [upText[u.state] ?? ''])),
+              row(
+                btn('Buscar ahora', () => void window.konk.checkUpdate(), 'b sm'),
+                ...(u.state === 'ready' ? [btn('Reiniciar y actualizar', () => void window.konk.installUpdate(), 'b sm acc')] : [])
+              )
+            )
           )
-        ),
-        card(
-          'Actualizaciones',
-          row(h('span', '', { fontWeight: 600 }, [`Versión ${s.runtime.appVersion}`]), h('span', 'mut', { fontSize: 12 }, [upText[u.state] ?? ''])),
-          row(
-            btn('Buscar ahora', () => void window.konk.checkUpdate(), 'b sm'),
-            ...(u.state === 'ready' ? [btn('Reiniciar y actualizar', () => void window.konk.installUpdate(), 'b sm acc')] : [])
-          )
-        )
-      ])
+        ]
+      )
     )
   }
 

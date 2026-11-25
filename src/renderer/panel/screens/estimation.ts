@@ -15,16 +15,28 @@ export function createEstimationScreen(ctx: Ctx): Screen {
   const list = questionList(ctx, game, (q, ref) => load(q, ref))
   const go = goButton()
   const header = h('div', 'head')
-  const flow = h('div', '', { display: 'flex', gap: 18, alignItems: 'center', flexWrap: 'wrap' })
-  const qpanel = h('div', 'pnl', { padding: '18px 20px', display: 'flex', gap: 20, alignItems: 'center', flexWrap: 'wrap' })
-  const grid = h('div', '', { display: 'grid', gridTemplateColumns: 'repeat(2, minmax(0, 1fr))', gap: 10 })
+  const flow = h('div', '', {
+    display: 'flex',
+    gap: 18,
+    alignItems: 'center',
+    flexWrap: 'wrap'
+  })
+  const qpanel = h('div', 'pnl', {
+    padding: '18px 20px',
+    display: 'flex',
+    gap: 20,
+    alignItems: 'center',
+    flexWrap: 'wrap'
+  })
+  const grid = h('div', '', {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(2, minmax(0, 1fr))',
+    gap: 10
+  })
   const secondary = h('div', 'secrow')
-  const el = h('div', 'screen', {}, [
+  const el = h('div', 'screen gscreen', {}, [
     header,
-    h('div', '', { display: 'flex', gap: 18, minHeight: 0, flex: 1 }, [
-      h('div', '', { flex: 1, minWidth: 0, display: 'flex', flexDirection: 'column', gap: 12 }, [flow, qpanel, grid, h('span', 'spacer'), secondary, go.el]),
-      list.el
-    ])
+    h('div', 'gbody', {}, [h('div', 'gcol', {}, [h('div', 'gscroll', {}, [flow, qpanel, grid]), h('div', 'gfoot', {}, [go.el, secondary])]), list.el])
   ])
 
   // entradas persistentes (no se pierde lo que escribes al repintar)
@@ -32,7 +44,15 @@ export function createEstimationScreen(ctx: Ctx): Screen {
   const inputs = new Map<string, { input: HTMLInputElement; info: HTMLElement; card: HTMLElement }>()
 
   function load(q: Question, ref: string): void {
-    ctx.send({ type: 'quizLoad', key: questionKey(ref, q.id), bankFile: ref, question: q, now: Date.now(), stage: true, game })
+    ctx.send({
+      type: 'quizLoad',
+      key: questionKey(ref, q.id),
+      bankFile: ref,
+      question: q,
+      now: Date.now(),
+      stage: true,
+      game
+    })
   }
   function loadNext(): void {
     const ref = bankFor(ctx, game)
@@ -71,11 +91,31 @@ export function createEstimationScreen(ctx: Ctx): Screen {
     if (cur) send({ type: 'quizShowGuesses', show: !cur.showGuesses })
   }
 
-  function nextStep(s: GameState): { label: string; after: string; run: (() => void) | null; step: number; air: string } {
+  function nextStep(s: GameState): {
+    label: string
+    after: string
+    run: (() => void) | null
+    step: number
+    air: string
+  } {
     const cur = slot(s)
     const ref = bankFor(ctx, game)
-    if (!cur) return { label: 'Cargar pregunta', after: 'Después: mostrar pregunta', run: ref ? loadNext : null, step: 0, air: 'nada de esta pregunta' }
-    if (cur.phase === 'ready') return { label: 'Mostrar pregunta', after: 'Después: anotar cifras y revelar', run: showQuestion, step: 0, air: 'nada de esta pregunta' }
+    if (!cur)
+      return {
+        label: 'Cargar pregunta',
+        after: 'Después: mostrar pregunta',
+        run: ref ? loadNext : null,
+        step: 0,
+        air: 'nada de esta pregunta'
+      }
+    if (cur.phase === 'ready')
+      return {
+        label: 'Mostrar pregunta',
+        after: 'Después: anotar cifras y revelar',
+        run: showQuestion,
+        step: 0,
+        air: 'nada de esta pregunta'
+      }
     if (cur.phase !== 'revealed') {
       const n = Object.keys(cur.guesses).length
       return {
@@ -89,9 +129,21 @@ export function createEstimationScreen(ctx: Ctx): Screen {
     const pending = cur.attempts.filter((a) => !a.awarded && a.delta)
     if (pending.length) {
       const names = pending.map((a) => nameOf(s, a.target)).join(' y ')
-      return { label: `Sumar ${pending[0].delta} a ${names}`, after: 'Después: siguiente pregunta', run: () => send({ type: 'quizAward' }), step: 2, air: 'respuesta revelada' }
+      return {
+        label: `Sumar ${pending[0].delta} a ${names}`,
+        after: 'Después: siguiente pregunta',
+        run: () => send({ type: 'quizAward' }),
+        step: 2,
+        air: 'respuesta revelada'
+      }
     }
-    return { label: 'Siguiente pregunta', after: 'Después: mostrar pregunta', run: ref ? loadNext : null, step: 3, air: 'puntos sumados' }
+    return {
+      label: 'Siguiente pregunta',
+      after: 'Después: mostrar pregunta',
+      run: ref ? loadNext : null,
+      step: 3,
+      air: 'puntos sumados'
+    }
   }
 
   function renderGrid(s: GameState, cur: CurrentQuestion | null): void {
@@ -100,14 +152,20 @@ export function createEstimationScreen(ctx: Ctx): Screen {
     if (key !== gridKey) {
       gridKey = key
       inputs.clear()
+      grid.style.gridTemplateColumns = `repeat(${Math.max(1, Math.min(4, targets.length))}, minmax(0, 1fr))`
       grid.replaceChildren(
         ...targets.map((t, idx) => {
           const k = targetKey(t)
           const input = h('input', 'inp big')
           input.inputMode = 'decimal'
-          input.placeholder = 'Escribe su cifra'
+          input.placeholder = 'Cifra'
           input.id = `est-${k}`
-          const commit = () => send({ type: 'quizGuess', key: k, value: parseNumber(input.value) })
+          const commit = () =>
+            send({
+              type: 'quizGuess',
+              key: k,
+              value: parseNumber(input.value)
+            })
           input.onchange = commit
           input.onkeydown = (e) => {
             if (e.key === 'Enter') {
@@ -120,7 +178,8 @@ export function createEstimationScreen(ctx: Ctx): Screen {
           const info = h('span', '', { fontSize: 12, fontWeight: 600 })
           const label = h('label', '', { fontWeight: 600, fontSize: 15 }, [nameOf(s, t)])
           label.setAttribute('for', input.id)
-          const card = h('div', 'pc', {}, [h('div', '', { display: 'flex', alignItems: 'center', gap: 8 }, [label, h('span', 'spacer'), info]), input])
+          // nombre arriba y estado debajo: caben 4 en una fila sin cortar
+          const card = h('div', 'pc', { minWidth: 0 }, [h('div', '', { display: 'flex', flexDirection: 'column', gap: 1, minWidth: 0 }, [label, info]), input])
           inputs.set(k, { input, info, card })
           return card
         })
@@ -166,7 +225,10 @@ export function createEstimationScreen(ctx: Ctx): Screen {
     go.set(st.label, st.after, st.run)
 
     qpanel.replaceChildren()
-    if (!cur) qpanel.append(h('div', 'mut', { fontSize: 15 }, [ref ? 'Pulsa Espacio para cargar la siguiente pregunta sin usar, o elige una en la lista.' : 'No hay bancos de estimación: créalos en Biblioteca.']))
+    if (!cur)
+      qpanel.append(
+        h('div', 'mut', { fontSize: 15 }, [ref ? 'Pulsa Espacio para cargar la siguiente pregunta sin usar, o elige una en la lista.' : 'No hay bancos de estimación: créalos en Biblioteca.'])
+      )
     else {
       const q = cur.question
       qpanel.append(

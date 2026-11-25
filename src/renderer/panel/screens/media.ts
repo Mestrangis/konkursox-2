@@ -12,6 +12,9 @@ export function toMediaItem(it: LibMediaItem): MediaItem {
   return { kind: it.kind, src: fileUrl(it.src), title: it.title }
 }
 
+/** Para abrir Multimedia directamente en la música (desde el reproductor de la derecha). */
+export const mediaNav = { music: false }
+
 export function createMediaScreen(ctx: Ctx): Screen {
   let lib: MediaLibrary = { dir: '', folders: [''], items: [] }
   let folder = ''
@@ -288,7 +291,13 @@ export function createMediaScreen(ctx: Ctx): Screen {
         paintLib()
       }
     },
-    shown: () => void reload(),
+    shown: () => {
+      if (mediaNav.music) {
+        mediaNav.music = false
+        folder = MUSIC
+      }
+      void reload()
+    },
     onKey(e) {
       if (e.ctrlKey || e.altKey || e.metaKey) return false
       if (e.key === ' ') {

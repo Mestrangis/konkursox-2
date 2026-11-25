@@ -53,7 +53,7 @@ button {
   height: 100vh;
   display: grid;
   grid-template-columns: 200px minmax(0, 1fr) 340px;
-  grid-template-rows: 112px 88px minmax(0, 1fr);
+  grid-template-rows: 54px 46px minmax(0, 1fr);
   background: #111113;
   overflow: hidden;
 }
@@ -1846,4 +1846,410 @@ input[type='range'] {
 }
 .sndrow .fl {
   width: 230px !important;
+}
+
+/* ================= v0.7: cabecera compacta ================= */
+.airbar {
+  height: 54px;
+  padding: 0 10px;
+  gap: 10px;
+}
+.onair {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font: 700 10px 'Inter', sans-serif;
+  letter-spacing: 0.1em;
+  color: #ff7b7f;
+  flex: none;
+}
+.sc {
+  width: auto;
+  height: 38px;
+  flex-direction: row;
+  gap: 7px;
+  padding: 0 11px 0 8px;
+  font-size: 13px;
+  white-space: nowrap;
+  border-radius: 8px;
+}
+.sc .kb {
+  position: static;
+}
+.sc .sc-game {
+  font-weight: 500;
+  opacity: 0.8;
+  margin-left: 5px;
+  font-size: 12px;
+}
+.sc .sc-game::before {
+  content: '· ';
+}
+.sc .sc-caret {
+  position: static;
+  width: 20px;
+  height: 20px;
+  margin-right: -4px;
+}
+.sc.live {
+  box-shadow: 0 0 0 2px rgba(229, 72, 77, 0.25);
+}
+.thumb {
+  width: 80px;
+  height: 45px;
+  border-radius: 4px;
+}
+.thumb .stage {
+  transform: scale(0.0416667);
+}
+.thumb .tag {
+  display: none;
+}
+/* fila de realización (una línea) */
+.peoplerow {
+  height: 46px;
+  padding: 0 10px;
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
+}
+.pchip {
+  height: 32px;
+  padding: 0 10px 0 4px;
+  gap: 6px;
+  font-size: 12.5px;
+}
+.pchip.host {
+  padding-right: 4px;
+}
+.pcaret {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  height: 24px;
+  padding: 0 4px;
+  margin-left: 2px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.06);
+}
+.pcaret:hover {
+  background: rgba(255, 255, 255, 0.16);
+}
+.pmode {
+  font-size: 11px;
+  color: #f4c46b;
+}
+.psep {
+  width: 1px;
+  height: 24px;
+  background: #2f2f35;
+  margin: 0 4px;
+  flex: none;
+}
+.pseg button {
+  height: 30px;
+  padding: 0 10px;
+  font-size: 12.5px;
+}
+.pseg button:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+.peoplerow .b.sm {
+  height: 30px;
+}
+
+/* columna derecha: marcador compacto y pestañas */
+.dock {
+  overflow: hidden;
+}
+.dscore {
+  padding: 10px 12px;
+  gap: 4px;
+}
+.dscore .pl {
+  min-height: 38px;
+  padding: 2px 0;
+}
+.plname {
+  flex: 1;
+  min-width: 0;
+  font-weight: 600;
+  line-height: 1.15;
+  overflow-wrap: anywhere;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.dtabs {
+  display: flex;
+  gap: 4px;
+  padding: 8px 12px 0;
+  border-bottom: 1px solid #2a2a2f;
+}
+.dtabs button {
+  flex: 1;
+  height: 32px;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  background: transparent;
+  color: #9a9aa3;
+  font: 600 13px 'Inter', sans-serif;
+  cursor: pointer;
+}
+.dtabs button:hover {
+  color: #ececef;
+}
+.dtabs button.on {
+  color: #fff;
+  border-bottom-color: #4f7dff;
+}
+.dpane {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-height: 0;
+  overflow: auto;
+}
+.dpane .fx {
+  min-height: 56px;
+}
+
+/* pantallas de juego: zona con desplazamiento propio y botón principal fijo abajo */
+.main:has(> .gscreen) {
+  overflow: hidden;
+  padding: 12px 18px;
+}
+.gscreen {
+  height: 100%;
+  min-height: 0;
+  gap: 10px;
+}
+.gbody {
+  display: flex;
+  gap: 14px;
+  flex: 1;
+  min-height: 0;
+}
+.gcol {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-height: 0;
+}
+.gscroll {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.gfoot {
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.gscreen .go {
+  min-height: 68px;
+}
+.gscreen .qtext {
+  font-size: 23px;
+}
+.gscreen .op {
+  min-height: 50px;
+  padding: 7px 12px;
+}
+.gscreen .qlist {
+  min-height: 0;
+}
+
+/* pestañas (Cámaras, Ajustes) */
+.tabs {
+  display: flex;
+  gap: 4px;
+  border-bottom: 1px solid #2a2a2f;
+  flex: none;
+}
+.tabs button {
+  height: 36px;
+  padding: 0 16px;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  background: transparent;
+  color: #9a9aa3;
+  font: 600 14px 'Inter', sans-serif;
+  cursor: pointer;
+}
+.tabs button:hover {
+  color: #ececef;
+}
+.tabs button.on {
+  color: #fff;
+  border-bottom-color: #4f7dff;
+}
+/* escalera: bloque de escalón y comodines */
+.ladderbox {
+  padding: 12px 14px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+.lstep {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  min-width: 190px;
+}
+.lnum {
+  font-size: 20px;
+  font-weight: 800;
+}
+.lprize {
+  font-size: 26px;
+  font-weight: 800;
+  color: #f0dca6;
+  line-height: 1.1;
+}
+.lfrow {
+  flex: 1;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.lfb {
+  position: relative;
+  min-width: 92px;
+  height: 62px;
+  padding: 6px 12px 6px 10px;
+  border-radius: 10px;
+  border: 1px solid #5c4a24;
+  background: linear-gradient(180deg, #23211b, #1a1914);
+  color: #f0e6cc;
+  font: 700 13px 'Inter', sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+.lfb:hover {
+  border-color: #b8975a;
+}
+.lfb .kb {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  height: 15px;
+  min-width: 15px;
+  font-size: 9px;
+}
+.lfb.used {
+  opacity: 0.45;
+  text-decoration: line-through;
+}
+.lfb.walk {
+  border-color: #3a3a42;
+  background: #1d1d21;
+  color: #ececef;
+}
+.lfi {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+}
+.mini {
+  width: 22px;
+  height: 22px;
+  border-radius: 5px;
+  border: 1px solid #2f2f35;
+  background: transparent;
+  color: #9a9aa3;
+  font: 600 13px 'Inter', sans-serif;
+  cursor: pointer;
+  padding: 0;
+}
+.mini:hover {
+  color: #fff;
+  border-color: #55555d;
+}
+/* rosco más compacto */
+.gscreen .rc {
+  padding: 10px 14px;
+  gap: 14px;
+}
+.gscreen .big3 {
+  min-height: 74px;
+}
+.gscreen .inp.big {
+  font-size: 30px;
+  height: 58px;
+}
+.gscreen .go .lab b {
+  font-size: 20px;
+  line-height: 1.15;
+}
+.gscreen .go .lab span {
+  font-size: 12px;
+}
+.airbar .mut {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* estimación: tarjetas estrechas sin desbordar */
+.gscreen .pc {
+  min-width: 0;
+}
+.gscreen .pc label {
+  overflow-wrap: anywhere;
+  line-height: 1.15;
+}
+.gscreen .pc .inp.big {
+  width: 100%;
+  min-width: 0;
+}
+.gscroll {
+  overflow-x: hidden;
+}
+/* fila de realización más compacta (caben 5 personas, plano, rótulo y F6-F8 a 1464 px) */
+.peoplerow {
+  gap: 5px;
+  overflow: hidden;
+}
+.pchip {
+  padding: 0 8px 0 2px;
+  gap: 4px;
+  max-width: 170px;
+}
+.pchip .sw {
+  transform: scale(0.72);
+  margin: 0 -4px;
+}
+.pseg button {
+  padding: 0 8px;
+}
+.peoplerow .b.sm {
+  padding: 0 8px;
+  gap: 6px;
+}
+.peoplerow .b.sm .kb {
+  height: 16px;
+  font-size: 9.5px;
+  min-width: 16px;
+}
+.pchip {
+  overflow: hidden;
+  white-space: nowrap;
+}
+.gscreen .pc .inp.big {
+  font-size: 24px;
+  padding: 0 10px;
 }

@@ -11,7 +11,8 @@ import type { ContestantId, GameState } from './types'
 export type Target = { kind: 'contestant'; id: ContestantId } | { kind: 'team'; index: 0 | 1 }
 
 /** 'ready' = cargada pero aún no se ve en el plató */
-export type Phase = 'ready' | 'question' | 'options' | 'locked' | 'revealed'
+/** 'rebound': ha fallado y hay rebote; espera a que pulses "Rebote a X" (la correcta sigue oculta) */
+export type Phase = 'ready' | 'question' | 'options' | 'locked' | 'rebound' | 'revealed'
 
 export interface Attempt {
   target: Target | null
@@ -40,6 +41,8 @@ export interface CurrentQuestion {
   showImage: boolean
   /** escalón por el que se juega (solo en escalera) */
   ladderLevel: number | null
+  /** a quién pasa la pregunta si pulsas "Rebote a X" */
+  reboundTo?: Target | null
   /** 'turn' = responde quien tiene el turno; 'all' = todos responden */
   mode: 'turn' | 'all'
   /** respuestas de cada uno en "todos responden" (clave de targetKey) */
@@ -235,6 +238,7 @@ export type QuizAction = (
   | { type: 'ladderWalk' }
   | { type: 'ladderSetAward'; awardToScore: boolean }
   | { type: 'ladderSetLifelines'; lifelines: LifelineDef[] }
+  | { type: 'quizRebound' }
   | { type: 'quizSecondChance'; now: number }
   | { type: 'quizForgive'; now: number; key?: string }
   | { type: 'quizSetCorrect'; index: number }
@@ -492,7 +496,8 @@ function reveal(s: S, now: number): S {
     // queda alguien: rebote sin desvelar la correcta (si solo quedaba una opción, se desvela)
     const remaining = cur.question.opciones.length - cur.hidden.length - attempts.filter((a) => !a.correct).length
     if (nt && remaining > 1) {
-      current = { ...current, phase: 'options', picked: null, target: nt }
+      // sin desvelar: el botón principal ofrece "Rebote a X"
+      current = { ...current, phase: 'rebound', picked: null, reboundTo: nt, revealedAt: null }
     }
   }
 
@@ -542,7 +547,7 @@ function secondChance(s: S, now: number): S {
   next = r.s
   const attempts = [...cur.attempts.slice(0, -1), { ...r.a, awarded: true, retried: true }]
   if (cur.ladderLevel !== null && next.quiz.ladder.outcome?.kind === 'failed') next = reopenLadder(next)
-  next = withQuiz(next, { current: { ...cur, attempts, phase: 'options', picked: null, target: miss.target, revealedAt: null } })
+  next = withQuiz(next, { current: { ...cur, attempts, phase: 'options', picked: null, target: miss.target, reboundTo: null, revealedAt: null } })
   return bribed(next, now)
 }
 
@@ -634,6 +639,7 @@ const SLOT_ACTIONS = new Set<string>([
   'quizAward',
   'quizClear',
   'quizToggleImage',
+  'quizRebound',
   'quizSecondChance',
   'quizForgive',
   'quizSetCorrect',
@@ -780,6 +786,11 @@ function applyQuizInner(s: S, a: QuizAction): S {
     }
     case 'quizAward':
       return awardPending(s)
+    case 'quizRebound': {
+      const cur = q.current
+      if (!cur || cur.phase !== 'rebound' || !cur.reboundTo) return s
+      return withCurrent(s, { phase: 'options', target: cur.reboundTo, reboundTo: null, picked: null })
+    }
     case 'quizSecondChance':
       return secondChance(s, a.now)
     case 'quizForgive':

@@ -1,7 +1,7 @@
 // Escena Cámaras: 1 a 5 personas repartidas por el plató (presentador en medio si hay concursantes a ambos lados).
 import { formatPoints } from '../../shared/quiz'
 import { camsLineup, camsTemplate } from '../../shared/scene'
-import { arrangeFeatured, pipBox } from '../../shared/arrange'
+import { featured169, grid169, pip169 } from '../../shared/arrange'
 import { LAYOUTS, type Box } from '../../shared/layouts'
 import { contestantOrder } from '../../shared/order'
 import type { GameState, SlotId } from '../../shared/types'
@@ -16,7 +16,7 @@ export const camsKey = (s: GameState): string => {
   return `cams:${camsLineup(s).join(',')}:${s.camsScene.hostMode}:${s.camsScene.corner}`
 }
 
-interface Spot {
+export interface Spot {
   slot: SlotId
   cam: Box
   plate: Box
@@ -27,27 +27,32 @@ interface Spot {
 const AREA: Box = { x: 100, y: 56, w: 1720, h: 790 }
 
 /** Dónde va cada persona: plantilla fija, presentador destacado o en esquina, o reparto igual. */
-function spots(s: GameState): Spot[] {
+/** Placa de nombre encima del borde inferior del recuadro (tamaño según el recuadro). */
+function plateFor(slot: SlotId, cam: Box): Spot {
+  const small = cam.w < 520
+  const pw = Math.min(small ? 360 : 640, cam.w - 40)
+  const ph = small ? 46 : 56
+  return { slot, cam, plate: { x: cam.x + (cam.w - pw) / 2, y: cam.y + cam.h - Math.round(ph / 2), w: pw, h: ph }, c: small ? 18 : 24, nameSize: small ? 22 : 30 }
+}
+
+/** Recuadros de "Cámaras con marcos": plantilla fija del diseño o rejilla 16:9 (la proporción de la cámara). */
+export function camsSpots(s: GameState, area: Box = AREA): Spot[] {
   const t = camsTemplate(s)
   if (t) return LAYOUTS[t].slots(contestantOrder(s)).map((x) => ({ slot: x.slot, cam: x.cam, plate: x.bar, c: x.bar.c, nameSize: x.nameSize ?? 30 }))
   const all = camsLineup(s)
   const mode = s.camsScene.hostMode
-  const equal = (ids: SlotId[]): Spot[] =>
-    camsGeometry(ids.length).map((g, i) => ({ slot: ids[i], cam: { x: g.x, y: 56, w: g.w, h: 790 }, plate: { x: g.x + (g.w - g.plateW) / 2, y: 818, w: g.plateW, h: 58 }, c: 24, nameSize: g.nameSize }))
-  if (mode === 'destacado') {
-    const placed = arrangeFeatured(all, AREA)
-    if (placed)
-      return placed.map((p) => {
-        const pw = Math.min(p.small ? 440 : 700, p.cam.w - 50)
-        return { slot: p.slot, cam: p.cam, plate: { x: p.cam.x + (p.cam.w - pw) / 2, y: p.cam.y + p.cam.h - 28, w: pw, h: p.small ? 50 : 58 }, c: p.small ? 20 : 24, nameSize: p.small ? 24 : 30 }
-      })
+  const withHost = all.includes('host') && all.length > 1
+  const others = all.filter((x) => x !== 'host')
+  if (mode === 'destacado' && withHost) {
+    const g = featured169(others.length, area, 56)
+    return [plateFor('host', g.host), ...others.map((slot, i) => plateFor(slot, g.rest[i]))]
   }
-  if (mode === 'esquina' && all.includes('host') && all.length > 1) {
-    const b = pipBox(AREA, s.camsScene.corner)
-    return [...equal(all.filter((x) => x !== 'host')), { slot: 'host', cam: b, plate: { x: b.x + 30, y: b.y + b.h - 24, w: b.w - 60, h: 44 }, c: 18, nameSize: 20 }]
+  if (mode === 'esquina' && withHost) {
+    return [...grid169(others.length, area, 56).map((b, i) => plateFor(others[i], b)), plateFor('host', pip169(area, s.camsScene.corner, 380))]
   }
-  return equal(all)
+  return grid169(all.length, area, 56).map((b, i) => plateFor(all[i], b))
 }
+const spots = (s: GameState): Spot[] => camsSpots(s)
 
 /** Geometría de N recuadros en el lienzo 1920x1080 (misma estética que las plantillas del diseño). */
 export function camsGeometry(n: number): { x: number; w: number; plateW: number; nameSize: number }[] {

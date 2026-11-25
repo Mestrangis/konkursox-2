@@ -46,32 +46,48 @@ export interface CamsScene {
   corner: Corner
   /** plantilla fija de la escena Cámaras (null: reparto automático) */
   template: LayoutId | null
-  /** plano de la escena Juego: el juego, cámaras con datos encima o cámaras limpias */
-  plano: Plano
-  /** plano de la escena Cámaras (F2): con marcos, limpias o con los datos del juego activo */
+  /** último plano de cámaras usado (F2 vuelve a él) */
   camsPlano: CamsPlano
 }
 
-export type CamsPlano = 'marcos' | 'limpio' | 'datos'
-export const CAMS_PLANOS: { id: CamsPlano; label: string; key: string }[] = [
-  { id: 'marcos', label: 'Con marcos', key: 'Ctrl F1' },
-  { id: 'datos', label: 'Cámaras + datos', key: 'Ctrl F2' },
-  { id: 'limpio', label: 'Cámaras limpias', key: 'Ctrl F3' }
+/**
+ * Plano: un solo concepto. "Juego" es la escena Juego; los otros tres son la escena Cámaras con
+ * marcos, con los datos del juego activo o limpias. Ctrl+F1..F4 siempre en este orden.
+ */
+export type Plano = 'juego' | 'marcos' | 'datos' | 'limpio'
+export type CamsPlano = Exclude<Plano, 'juego'>
+export const PLANOS: { id: Plano; label: string; short: string; key: string }[] = [
+  { id: 'juego', label: 'Juego', short: 'Juego', key: 'Ctrl F1' },
+  { id: 'marcos', label: 'Cámaras con marcos', short: 'Marcos', key: 'Ctrl F2' },
+  { id: 'datos', label: 'Cámaras + datos', short: '+ Datos', key: 'Ctrl F3' },
+  { id: 'limpio', label: 'Cámaras limpias', short: 'Limpias', key: 'Ctrl F4' }
 ]
 
-/** Plano "de cámaras" que pinta el plató ahora (null: el de siempre de la escena). */
-export function activePlano(s: Pick<GameState, 'scene' | 'camsScene'>): 'datos' | 'limpio' | null {
-  if (s.scene === 'camaras') return s.camsScene.camsPlano === 'marcos' ? null : s.camsScene.camsPlano
-  if (s.scene === 'juego') return s.camsScene.plano === 'juego' ? null : s.camsScene.plano
+/** ¿Hay un juego en el aire con algo que enseñar? (sin él no se puede elegir el plano Juego) */
+export function hasLiveGame(s: Pick<GameState, 'liveGame' | 'rosco' | 'quiz'>): boolean {
+  if (s.liveGame === 'rosco') return s.rosco.players.length > 0
+  if (s.liveGame === 'escalera' && s.quiz.ladder.active) return true
+  return !!s.quiz.slots[s.liveGame]
+}
+
+/** El plano que está en el aire (null si la escena en el aire es otra: cabecera, marcador...). */
+export function currentPlano(s: Pick<GameState, 'scene' | 'camsScene'>): Plano | null {
+  if (s.scene === 'juego') return 'juego'
+  if (s.scene === 'camaras') return s.camsScene.camsPlano
   return null
 }
 
-export type Plano = 'juego' | 'datos' | 'limpio'
-export const PLANOS: { id: Plano; label: string; key: string }[] = [
-  { id: 'juego', label: 'Juego', key: 'Ctrl F1' },
-  { id: 'datos', label: 'Cámaras + datos', key: 'Ctrl F2' },
-  { id: 'limpio', label: 'Cámaras limpias', key: 'Ctrl F3' }
-]
+/** Plano de cámaras distinto del de marcos que pinta el plató ahora (null: la escena tal cual). */
+export function activePlano(s: Pick<GameState, 'scene' | 'camsScene'>): 'datos' | 'limpio' | null {
+  if (s.scene !== 'camaras') return null
+  return s.camsScene.camsPlano === 'marcos' ? null : s.camsScene.camsPlano
+}
+
+/** Poner un plano en el aire. */
+export function setPlano(s: GameState, plano: Plano): GameState {
+  if (plano === 'juego') return hasLiveGame(s) ? { ...s, scene: 'juego' } : s
+  return { ...s, scene: 'camaras', camsScene: { ...s.camsScene, camsPlano: plano } }
+}
 
 /** La plantilla elegida, si se puede usar con los concursantes que hay. */
 export function camsTemplate(s: GameState): LayoutId | null {
@@ -133,6 +149,7 @@ export type SceneAction =
   | { type: 'camsToggle'; slot: SlotId }
   | { type: 'camsPreset'; preset: CamsPreset }
   | { type: 'camsSet'; patch: Partial<Omit<CamsScene, 'on'>> }
+  | { type: 'setPlano'; plano: Plano }
   | { type: 'markPlayed'; game: GameId }
   | { type: 'playedAdjust'; delta: number }
   | { type: 'playedReset' }
@@ -155,6 +172,7 @@ export type SceneAction =
 
 export const SCENE_ACTIONS = new Set<string>([
   'setScene',
+  'setPlano',
   'setLiveGame',
   'camsToggle',
   'camsPreset',
@@ -179,7 +197,7 @@ export const SCENE_ACTIONS = new Set<string>([
 ])
 
 export function defaultCams(): CamsScene {
-  return { on: { host: false, c1: true, c2: true, c3: true, c4: true, publico: false }, names: true, scores: true, transition: 'fade', preset: null, rev: 2, hostMode: 'igual', corner: 'br', template: null, plano: 'juego', camsPlano: 'marcos' }
+  return { on: { host: false, c1: true, c2: true, c3: true, c4: true, publico: false }, names: true, scores: true, transition: 'fade', preset: null, rev: 2, hostMode: 'igual', corner: 'br', template: null, camsPlano: 'marcos' }
 }
 
 /** Botonera de sonidos (Num1..Num9). Juego de sonidos propio de la app (kx-*.wav). */
@@ -272,6 +290,8 @@ export function applySceneAction(s: GameState, a: SceneAction): GameState {
           media: { duration: a.duration ?? s.runtime.media.duration, error: a.error === undefined ? s.runtime.media.error : a.error }
         }
       }
+    case 'setPlano':
+      return setPlano(s, a.plano)
     case 'camsSet':
       return { ...s, camsScene: { ...s.camsScene, ...a.patch } }
     case 'markPlayed': {

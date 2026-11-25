@@ -7,6 +7,8 @@ import { app } from 'electron'
 export interface Theme {
   nombre: string
   descripcion?: string
+  /** versión del tema de serie (para actualizar los que no hayas tocado) */
+  version?: number
   /** variables CSS (--k-...) que cambia respecto al tema clásico */
   vars: Record<string, string>
 }
@@ -58,19 +60,46 @@ export const DEFAULT_THEMES: Record<string, Theme> = {
   },
   claro: {
     nombre: 'Claro',
-    descripcion: 'Escenario azul claro; rótulos oscuros para que el texto se lea',
+    descripcion: 'Todo claro: escenario, marcos, pregunta y opciones, con texto oscuro y dorados oscuros',
+    version: 4,
     vars: {
-      '--k-navy-1000': '#2a3d63',
-      '--k-navy-950': '#3a5181',
-      '--k-navy-800': '#6c86b8',
-      '--k-navy-750': '#7d97c6',
-      '--k-navy-550': '#c2d1ec',
-      '--k-navy-500': '#b4c6e6',
-      '--k-navy-350': '#4b6396',
-      '--k-navy-650': '#22355d',
-      '--k-silhouette': '#5f78a8',
-      '--k-text-muted': '#c8d2e6',
-      '--k-cam-shadow': '0 0 0 1px var(--k-gold-600), 0 0 0 5px #1d2c4f, 0 0 0 6px var(--k-gold-a45), 0 18px 40px rgba(10, 20, 45, 0.45)'
+      '--k-bg-stage': 'radial-gradient(ellipse 75% 60% at 50% 32%, #ffffff 0%, #e9eff8 45%, #c9d6ea 100%)',
+      '--k-bg-cover': 'radial-gradient(ellipse 60% 55% at 50% 50%, #ffffff 0%, #e6ecf7 45%, #c2cfe5 100%)',
+      '--k-bg-cam': 'radial-gradient(ellipse at 50% 38%, #e6ecf5, #bccadf 78%)',
+      '--k-silhouette': '#a3b3cd',
+      '--k-cam-vignette': 'radial-gradient(ellipse at center, transparent 62%, rgba(20, 32, 60, 0.16) 100%)',
+      '--k-cam-shadow': '0 0 0 1px var(--k-gold-600), 0 0 0 5px #ffffff, 0 0 0 6px var(--k-gold-a45), 0 16px 36px rgba(20, 32, 60, 0.28)',
+      '--k-bevel-fill': 'linear-gradient(180deg, #ffffff 0%, #f2f5fa 55%, #dde5f1 100%)',
+      '--k-bevel-edge': 'linear-gradient(90deg, #8a6a2f, #c9a961 50%, #8a6a2f)',
+      '--k-panel-fill': 'linear-gradient(180deg, rgba(255, 255, 255, 0.94), rgba(226, 233, 245, 0.96))',
+      '--k-text': '#13203b',
+      '--k-text-muted': '#5b6884',
+      '--k-text-quote': '#2a2412',
+      '--k-gold-900': '#3f2f0e',
+      '--k-gold-800': '#5a4415',
+      '--k-gold-600': '#8a6a2f',
+      '--k-gold-500': '#a07c35',
+      '--k-gold-450': '#8f6d27',
+      '--k-gold-400': '#866420',
+      '--k-gold-350': '#866420',
+      '--k-gold-300': '#6f5219',
+      '--k-gold-200': '#a07c35',
+      '--k-gold-150': '#c9a961',
+      '--k-gold-100': '#e6cb85',
+      '--k-gold-a07': 'rgba(138, 106, 47, 0.07)',
+      '--k-gold-a11': 'rgba(138, 106, 47, 0.11)',
+      '--k-gold-a18': 'rgba(138, 106, 47, 0.18)',
+      '--k-gold-a22': 'rgba(138, 106, 47, 0.22)',
+      '--k-gold-a45': 'rgba(138, 106, 47, 0.45)',
+      '--k-gold-a50': 'rgba(138, 106, 47, 0.5)',
+      '--k-gold-a60': 'rgba(138, 106, 47, 0.6)',
+      '--k-navy-875': '#ffffff',
+      '--k-rung': '#5a4415',
+      '--k-rung-safe': '#13203b',
+      '--k-rung-safe-n': '#13203b',
+      '--k-est-mark': '#2a3550',
+      '--k-ladder-bg': 'linear-gradient(180deg, rgba(255, 255, 255, 0.95), rgba(224, 231, 243, 0.97))',
+      '--k-life-bg': 'radial-gradient(ellipse at 50% 30%, #ffffff, #dce4f1 75%)'
     }
   },
   rojo: {
@@ -96,7 +125,9 @@ export function ensureThemes(): void {
   mkdirSync(dir, { recursive: true })
   for (const [id, t] of Object.entries(DEFAULT_THEMES)) {
     const f = join(dir, `${id}.json`)
-    if (!existsSync(f)) writeFileSync(f, JSON.stringify(t, null, 2) + '\n', 'utf8')
+    // el Claro de la 0.6 se rehízo: si sigue siendo el de entonces (sin versión), se actualiza
+    const old = existsSync(f) && id === 'claro' && !/"version": 4/.test(readFileSync(f, 'utf8'))
+    if (!existsSync(f) || old) writeFileSync(f, JSON.stringify(t, null, 2) + '\n', 'utf8')
   }
   const readme = join(dir, 'LEEME.txt')
   if (!existsSync(readme))

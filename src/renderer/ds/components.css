@@ -116,8 +116,8 @@
   text-transform: uppercase;
   white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis;
   min-width: 0;
+  flex: 1 1 auto;
 }
 .k-score {
   margin-left: auto;
@@ -407,7 +407,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: radial-gradient(ellipse at 50% 30%, #1f3160, #060c1a 75%);
+  background: var(--k-life-bg, radial-gradient(ellipse at 50% 30%, #1f3160, #060c1a 75%));
   box-shadow: 0 0 0 2px var(--k-gold-600), 0 8px 20px rgba(0, 0, 0, 0.5);
   transition: opacity 0.4s ease;
 }
@@ -429,7 +429,7 @@
   box-sizing: border-box;
   padding: 7px 0;
   border: 1px solid rgba(201, 169, 97, 0.5);
-  background: linear-gradient(180deg, rgba(16, 28, 56, 0.85), rgba(4, 8, 18, 0.92));
+  background: var(--k-ladder-bg, linear-gradient(180deg, rgba(16, 28, 56, 0.85), rgba(4, 8, 18, 0.92)));
   display: flex;
   flex-direction: column;
 }
@@ -440,7 +440,7 @@
   box-sizing: border-box;
   font-size: 25px;
   font-weight: 600;
-  color: #d6b874;
+  color: var(--k-rung, #d6b874);
   flex: 1;
   min-height: 0;
 }
@@ -465,10 +465,10 @@
   letter-spacing: 0.04em;
 }
 .k-rung.is-safe {
-  color: #fff;
+  color: var(--k-rung-safe, #fff);
 }
 .k-rung.is-safe .k-rung__n {
-  color: #cfd6e4;
+  color: var(--k-rung-safe-n, #cfd6e4);
 }
 .k-rung.is-cur {
   background: linear-gradient(90deg, var(--k-lock), var(--k-lock-hi) 50%, var(--k-lock));
@@ -710,7 +710,7 @@
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #cfd6e4;
+  color: var(--k-est-mark, #cfd6e4);
 }
 .k-est__mark svg {
   margin-top: 20px;
@@ -1182,4 +1182,41 @@
 .fxv-foco[data-focus='publico'] .k-cam[data-slot='publico'] {
   box-shadow: 0 0 0 2px var(--k-gold-300), 0 0 60px var(--k-gold-a60), 0 0 140px var(--k-gold-a45);
   z-index: 44;
+}
+.k-bar--center .k-name {
+  flex: 0 1 auto;
+  text-align: center;
+}
+
+/* rótulo de datos pegado a cada cámara (plano Cámaras + datos) */
+.k-camcap {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 8px 14px 9px;
+  background: var(--k-bevel-fill);
+  border-left: 3px solid var(--k-gold-500);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
+  font-family: var(--k-font-ui);
+  color: var(--k-text);
+  z-index: 3;
+}
+.k-capname {
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  line-height: 1.05;
+}
+.k-capdata {
+  color: var(--k-gold-300);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+.k-camcap {
+  box-sizing: border-box;
 }

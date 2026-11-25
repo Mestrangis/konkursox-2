@@ -79,6 +79,11 @@ describe('turnos y rebote', () => {
       { type: 'quizPick', index: 0, now: 0 },
       { type: 'quizReveal', now: 0 }
     )
+    // espera a "Rebote a X" sin desvelar
+    expect(s.quiz.current!.phase).toBe('rebound')
+    expect(s.quiz.current!.reboundTo).toEqual(c('c2'))
+    expect(run(s, { type: 'quizPick', index: 2, now: 0 }).quiz.current!.picked).toBeNull()
+    s = run(s, { type: 'quizRebound' })
     expect(s.quiz.current!.phase).toBe('options')
     expect(s.quiz.current!.target).toEqual(c('c2'))
     expect(score(s, 'c1')).toBe(-5)

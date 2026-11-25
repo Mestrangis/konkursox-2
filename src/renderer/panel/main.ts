@@ -3,7 +3,7 @@ import '../ds/tokens.css'
 import '../ds/components.css'
 import './panel.css'
 import type { CueId } from '../../shared/quiz'
-import { GAMES, SCENES, type GameId } from '../../shared/scene'
+import { GAMES, PLANOS, SCENES, type GameId } from '../../shared/scene'
 import { effectIndexForKey, isNumpad, soundIndexForKey } from '../../shared/keys'
 import type { AudioLibrary, GameState } from '../../shared/types'
 import { autoReconnect, CaptureFeed } from '../common/feed'
@@ -191,11 +191,8 @@ window.addEventListener('keydown', (e) => {
   const effect = effectIndexForKey(e)
   const sc = SCENES.find((x) => x.key === k)
   if (sc && !e.ctrlKey && !e.altKey) goScene(ctx, sc.id)
-  else if (e.ctrlKey && (k === 'F1' || k === 'F2' || k === 'F3')) {
-    // plano de la escena en el aire: en Cámaras, el suyo; en el resto, el de Juego
-    if (state.scene === 'camaras') ctx.send({ type: 'camsSet', patch: { camsPlano: k === 'F1' ? 'marcos' : k === 'F2' ? 'datos' : 'limpio' } })
-    else ctx.send({ type: 'camsSet', patch: { plano: k === 'F1' ? 'juego' : k === 'F2' ? 'datos' : 'limpio' } })
-  }
+  // plano: Ctrl+F1 Juego · F2 Cámaras con marcos · F3 Cámaras + datos · F4 Cámaras limpias
+  else if (e.ctrlKey && /^F[1-4]$/.test(k)) ctx.send({ type: 'setPlano', plano: PLANOS[Number(k[1]) - 1].id })
   else if (k === 'F6') ctx.send({ type: 'camsPreset', preset: 'yo' })
   else if (k === 'F7') ctx.send({ type: 'camsPreset', preset: 'turno' })
   else if (k === 'F8') ctx.send({ type: 'camsPreset', preset: 'todos' })

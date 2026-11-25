@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { parseRoscoText, splitBank, toFileBank } from '../src/shared/library'
 import { parseBank, type Bank, type Question } from '../src/shared/questions'
-import { camsLineup, restoreSnapshot, SCENES, snapshotOf, undoKey } from '../src/shared/scene'
+import { activePlano, camsLineup, currentPlano, PLANOS, restoreSnapshot, SCENES, snapshotOf, undoKey } from '../src/shared/scene'
 import { applyAction, defaultState, hydrate } from '../src/shared/state'
 import type { Action, GameState } from '../src/shared/types'
 
@@ -180,5 +180,41 @@ describe('migración de bancos a la biblioteca por tipo', () => {
       { letra: 'Ñ', modo: 'contiene', definicion: 'Período de doce meses', respuesta: 'Año' },
       { letra: 'Z', modo: 'empieza', definicion: 'Calzado', respuesta: 'Zapato' }
     ])
+  })
+})
+
+describe('plano: un solo concepto', () => {
+  const run = (s: GameState, ...a: Action[]) => a.reduce(applyAction, s)
+  const conJuego = (): GameState =>
+    run(defaultState(), { type: 'quizLoad', key: 'b::1', bankFile: 'b', question: { id: '1', tipo: 'test', enunciado: '¿?', opciones: ['a', 'b'], correcta: 0 }, now: 0, game: 'test' }, { type: 'setLiveGame', game: 'test' })
+
+  it('los cuatro planos en orden fijo (Ctrl+F1..F4)', () => {
+    expect(PLANOS.map((p) => p.id)).toEqual(['juego', 'marcos', 'datos', 'limpio'])
+  })
+
+  it('un plano de cámaras pone la escena Cámaras con ese plano', () => {
+    const s = run(conJuego(), { type: 'setPlano', plano: 'datos' })
+    expect(s.scene).toBe('camaras')
+    expect(currentPlano(s)).toBe('datos')
+    expect(activePlano(s)).toBe('datos')
+    expect(activePlano(run(s, { type: 'setPlano', plano: 'marcos' }))).toBeNull()
+  })
+
+  it('"Juego" vuelve a la escena Juego, solo si hay juego en el aire', () => {
+    expect(run(defaultState(), { type: 'setPlano', plano: 'juego' }).scene).toBe('cabecera')
+    const s = run(conJuego(), { type: 'setPlano', plano: 'limpio' }, { type: 'setPlano', plano: 'juego' })
+    expect(s.scene).toBe('juego')
+    expect(currentPlano(s)).toBe('juego')
+    expect(activePlano(s)).toBeNull()
+  })
+
+  it('F2 (escena Cámaras) recuerda el último plano de cámaras', () => {
+    let s = run(conJuego(), { type: 'setPlano', plano: 'limpio' }, { type: 'setPlano', plano: 'juego' })
+    s = run(s, { type: 'setScene', scene: 'camaras' })
+    expect(currentPlano(s)).toBe('limpio')
+  })
+
+  it('sin escena de cámaras o juego no hay plano en el aire', () => {
+    expect(currentPlano(run(defaultState(), { type: 'setScene', scene: 'marcador' }))).toBeNull()
   })
 })

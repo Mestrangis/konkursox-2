@@ -4,7 +4,7 @@ import { sameTarget, turnTargets, type Target } from '../../../shared/quiz'
 import { buildLetters, remainingMs, roscoPoints, roscoStats, roscoWaiting, roscoWinners, type RoscoAction, type RoscoPlayer } from '../../../shared/rosco'
 import type { GameState } from '../../../shared/types'
 import { askConfirm, btn, contextMenu, h, kbd, mmss, nameOf, sw, type Ctx, type Screen } from '../ui'
-import { airBadge, flowSteps, goButton, onAirLabel } from './common'
+import { airBadge, flowSteps, goButton } from './common'
 
 export function createRoscoScreen(ctx: Ctx): Screen {
   const S = () => ctx.state
@@ -12,8 +12,8 @@ export function createRoscoScreen(ctx: Ctx): Screen {
   let players: (Target | null)[] = [null, null]
 
   const header = h('div', 'head')
-  const body = h('div', 'screen', { minHeight: 0, gap: 14 })
-  const el = h('div', 'screen', {}, [header, body])
+  const body = h('div', 'gcol')
+  const el = h('div', 'screen gscreen', {}, [header, body])
 
   // ---------------------------------------------------------------- acciones
   function mark(res: 'ok' | 'ko' | 'pasa'): void {
@@ -80,33 +80,62 @@ export function createRoscoScreen(ctx: Ctx): Screen {
 
   // ---------------------------------------------------------------- pintado
   function ring(p: RoscoPlayer, isTurn: boolean, index: number): HTMLElement {
-    const box = h('div', '', { position: 'relative', width: 200, height: 200, flex: 'none' })
+    const box = h('div', '', {
+      position: 'relative',
+      width: 132,
+      height: 132,
+      flex: 'none'
+    })
     const N = p.letters.length || 27
     p.letters.forEach((l, i) => {
       const a = -Math.PI / 2 + (i * 2 * Math.PI) / N
       const cur = i === p.current && !p.done
-      const ld = h('span', `ld s-${cur ? 'cur' : l.status}`, { left: Math.round(100 + 88 * Math.cos(a)), top: Math.round(100 + 88 * Math.sin(a)) }, [l.letra])
+      const ld = h(
+        'span',
+        `ld s-${cur ? 'cur' : l.status}`,
+        {
+          left: Math.round(66 + 58 * Math.cos(a)),
+          top: Math.round(66 + 58 * Math.sin(a))
+        },
+        [l.letra]
+      )
       if (l.status === 'ko') {
         // clic en una letra fallada: convertirla en acierto o en pasapalabra
         ld.style.cursor = 'pointer'
         ld.title = 'Fallada: clic para corregirla'
-        ld.onclick = (e) => contextMenu(e.clientX, e.clientY, [
-          h('span', 'lbl', {}, [`Fallo en la ${l.letra}`]),
-          { label: 'Contar como acierto', run: () => fix(index, i, 'ok') },
-          { label: 'Dejarla en pasapalabra', run: () => fix(index, i, 'pasa') }
-        ])
+        ld.onclick = (e) =>
+          contextMenu(e.clientX, e.clientY, [
+            h('span', 'lbl', {}, [`Fallo en la ${l.letra}`]),
+            { label: 'Contar como acierto', run: () => fix(index, i, 'ok') },
+            {
+              label: 'Dejarla en pasapalabra',
+              run: () => fix(index, i, 'pasa')
+            }
+          ])
       }
       box.append(ld)
     })
     box.append(
-      h('div', '', { position: 'absolute', inset: 0, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }, [
-        (() => {
-          const t = h('span', 'rtime', { fontSize: 34, fontWeight: 800 }, [mmss(remainingMs(p, Date.now()) / 1000)])
-          t.dataset.i = String(index)
-          return t
-        })(),
-        h('span', 'mut', { fontSize: 11 }, [p.done ? 'terminado' : p.endsAt !== null ? 'corriendo' : 'en pausa'])
-      ])
+      h(
+        'div',
+        '',
+        {
+          position: 'absolute',
+          inset: 0,
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          justifyContent: 'center'
+        },
+        [
+          (() => {
+            const t = h('span', 'rtime', { fontSize: 24, fontWeight: 800 }, [mmss(remainingMs(p, Date.now()) / 1000)])
+            t.dataset.i = String(index)
+            return t
+          })(),
+          h('span', 'mut', { fontSize: 11 }, [p.done ? 'terminado' : p.endsAt !== null ? 'corriendo' : 'en pausa'])
+        ]
+      )
     )
     void isTurn
     return box
@@ -125,7 +154,11 @@ export function createRoscoScreen(ctx: Ctx): Screen {
         o.selected = b.ref === cur
         sel.append(o)
       }
-      sel.onchange = () => r({ type: 'roscoConfig', patch: i === 0 ? { bankFile: sel.value || null } : { bankFile2: sel.value || null } })
+      sel.onchange = () =>
+        r({
+          type: 'roscoConfig',
+          patch: i === 0 ? { bankFile: sel.value || null } : { bankFile2: sel.value || null }
+        })
       return sel
     }
     const targets = turnTargets(s)
@@ -169,37 +202,57 @@ export function createRoscoScreen(ctx: Ctx): Screen {
     }
     const ready = !!players[0] && !missing.length
     const go = goButton()
-    go.set(`Empezar el rosco${players[1] ? ' a dos' : ''}`, ready ? `${s.rosco.seconds} s cada uno · el reloj arranca al empezar` : 'Elige antes el rosco de cada concursante', ready ? () => void start() : null)
+    go.set(
+      `Empezar el rosco${players[1] ? ' a dos' : ''}`,
+      ready ? `${s.rosco.seconds} s cada uno · el reloj arranca al empezar` : 'Elige antes el rosco de cada concursante',
+      ready ? () => void start() : null
+    )
     const last = s.rosco.finished ? result(s) : null
     const n1 = players[0] ? nameOf(s, players[0]) : 'concursante 1'
     const n2 = players[1] ? nameOf(s, players[1]) : 'concursante 2'
     body.replaceChildren(
-      ...(last ? [last, ...lastKoBar(s)] : []),
-      ...(missing.length
-        ? [
-            h('div', 'banner bad', { display: 'flex', alignItems: 'center', gap: 12 }, [
-              h('span', '', { flex: 1 }, [missing.join(' ')]),
-              btn(banks.length ? 'Crear otro en Biblioteca' : 'Crear un rosco en Biblioteca', () => ctx.go('biblioteca'), 'b sm')
-            ])
+      h('div', 'gscroll', {}, [
+        ...(last ? [last, ...lastKoBar(s)] : []),
+        ...(missing.length
+          ? [
+              h('div', 'banner bad', { display: 'flex', alignItems: 'center', gap: 12 }, [
+                h('span', '', { flex: 1 }, [missing.join(' ')]),
+                btn(banks.length ? 'Crear otro en Biblioteca' : 'Crear un rosco en Biblioteca', () => ctx.go('biblioteca'), 'b sm')
+              ])
+            ]
+          : []),
+        h(
+          'div',
+          'pnl',
+          {
+            padding: '16px 18px',
+            display: 'flex',
+            flexDirection: 'column',
+            gap: 14
+          },
+          [
+            h('span', 'lbl', {}, ['Preparar el rosco']),
+            h('div', '', { display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }, [
+              h('label', 'field', {}, [h('span', 'fl', {}, ['Concursante 1']), who(0)]),
+              h('label', 'field', {}, [h('span', 'fl', {}, [`Rosco de ${n1}`]), bankSel(0)]),
+              h('label', 'field', {}, [h('span', 'fl', {}, ['Concursante 2 (se alternan)']), who(1)]),
+              players[1] ? h('label', 'field', {}, [h('span', 'fl', {}, [`Rosco de ${n2}`]), bankSel(1)]) : h('span')
+            ]),
+            h('div', '', { display: 'flex', gap: 12, flexWrap: 'wrap' }, [
+              num('Segundos por concursante', s.rosco.seconds, (n) =>
+                r({
+                  type: 'roscoConfig',
+                  patch: { seconds: Math.max(10, Math.round(n)) }
+                })
+              ),
+              num('Puntos por acierto', s.rosco.pointsPerHit, (n) => r({ type: 'roscoConfig', patch: { pointsPerHit: n } })),
+              num('Bote por completarlo (0 = sin bote)', s.rosco.jackpot, (n) => r({ type: 'roscoConfig', patch: { jackpot: Math.max(0, n) } }))
+            ]),
+            h('span', 'mut', { fontSize: 12 }, ['Cada concursante juega su propio rosco. Si eliges el mismo para los dos, tendrán las mismas definiciones.'])
           ]
-        : []),
-      h('div', 'pnl', { padding: '16px 18px', display: 'flex', flexDirection: 'column', gap: 14 }, [
-        h('span', 'lbl', {}, ['Preparar el rosco']),
-        h('div', '', { display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }, [
-          h('label', 'field', {}, [h('span', 'fl', {}, ['Concursante 1']), who(0)]),
-          h('label', 'field', {}, [h('span', 'fl', {}, [`Rosco de ${n1}`]), bankSel(0)]),
-          h('label', 'field', {}, [h('span', 'fl', {}, ['Concursante 2 (se alternan)']), who(1)]),
-          players[1] ? h('label', 'field', {}, [h('span', 'fl', {}, [`Rosco de ${n2}`]), bankSel(1)]) : h('span')
-        ]),
-        h('div', '', { display: 'flex', gap: 12, flexWrap: 'wrap' }, [
-          num('Segundos por concursante', s.rosco.seconds, (n) => r({ type: 'roscoConfig', patch: { seconds: Math.max(10, Math.round(n)) } })),
-          num('Puntos por acierto', s.rosco.pointsPerHit, (n) => r({ type: 'roscoConfig', patch: { pointsPerHit: n } })),
-          num('Bote por completarlo (0 = sin bote)', s.rosco.jackpot, (n) => r({ type: 'roscoConfig', patch: { jackpot: Math.max(0, n) } }))
-        ]),
-        h('span', 'mut', { fontSize: 12 }, ['Cada concursante juega su propio rosco. Si eliges el mismo para los dos, tendrán las mismas definiciones.'])
+        )
       ]),
-      h('span', 'spacer'),
-      go.el
+      h('div', 'gfoot', {}, [go.el])
     )
     goRun = ready ? () => void start() : null
   }
@@ -208,16 +261,26 @@ export function createRoscoScreen(ctx: Ctx): Screen {
     const ro = s.rosco
     const w = roscoWinners(ro)
     const pts = roscoPoints(ro)
-    return h('div', 'pnl', { padding: '14px 16px', display: 'flex', flexDirection: 'column', gap: 6 }, [
-      h('span', 'lbl ok', {}, [`Rosco terminado${ro.awarded ? ' · puntos sumados' : ''}`]),
-      ...ro.players.map((p, i) => {
-        const st = roscoStats(p)
-        return h('div', '', { fontSize: 15 }, [
-          h('b', '', {}, [nameOf(s, p.target)]),
-          ` · ${st.ok} aciertos · ${st.ko} fallos · ${pts[i]} puntos${w.includes(i) && ro.players.length > 1 ? ' · GANA' : ''}`
-        ])
-      })
-    ])
+    return h(
+      'div',
+      'pnl',
+      {
+        padding: '14px 16px',
+        display: 'flex',
+        flexDirection: 'column',
+        gap: 6
+      },
+      [
+        h('span', 'lbl ok', {}, [`Rosco terminado${ro.awarded ? ' · puntos sumados' : ''}`]),
+        ...ro.players.map((p, i) => {
+          const st = roscoStats(p)
+          return h('div', '', { fontSize: 15 }, [
+            h('b', '', {}, [nameOf(s, p.target)]),
+            ` · ${st.ok} aciertos · ${st.ko} fallos · ${pts[i]} puntos${w.includes(i) && ro.players.length > 1 ? ' · GANA' : ''}`
+          ])
+        })
+      ]
+    )
   }
 
   /** Barra del último fallo: perdonarlo con un clic (también se puede tocar cualquier letra fallada). */
@@ -234,7 +297,18 @@ export function createRoscoScreen(ctx: Ctx): Screen {
         btn('Contar como acierto', () => fix(lk.player, lk.index, 'ok'), 'b sm', 'G'),
         btn('Dejarla en pasapalabra', () => fix(lk.player, lk.index, 'pasa'), 'b sm', 'H'),
         h('span', 'spacer'),
-        h('span', '', { display: 'flex', alignItems: 'center', gap: 6, fontSize: 12 }, [sw(s.quiz.bribe.enabled, () => ctx.send({ type: 'quizSetForgive', patch: { bribe: !S().quiz.bribe.enabled } }), 'Rótulo de soborno'), 'Soborno']),
+        h('span', '', { display: 'flex', alignItems: 'center', gap: 6, fontSize: 12 }, [
+          sw(
+            s.quiz.bribe.enabled,
+            () =>
+              ctx.send({
+                type: 'quizSetForgive',
+                patch: { bribe: !S().quiz.bribe.enabled }
+              }),
+            'Rótulo de soborno'
+          ),
+          'Soborno'
+        ]),
         h('span', 'mut', { fontSize: 11 }, ['Puntos recalculados solos · clic en cualquier letra roja para corregirla'])
       ])
     ]
@@ -259,10 +333,29 @@ export function createRoscoScreen(ctx: Ctx): Screen {
       h('span', 'spacer'),
       ...(live
         ? [
-            h('span', '', { display: 'inline-flex', alignItems: 'center', gap: 8, height: 32, padding: '0 12px', borderRadius: 8, background: '#26314d', fontWeight: 600 }, [
-              h('span', '', { width: 8, height: 8, borderRadius: '50%', background: '#8fb0ff' }),
-              `Turno de ${nameOf(s, p.target)}`
-            ]),
+            h(
+              'span',
+              '',
+              {
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: 8,
+                height: 32,
+                padding: '0 12px',
+                borderRadius: 8,
+                background: '#26314d',
+                fontWeight: 600
+              },
+              [
+                h('span', '', {
+                  width: 8,
+                  height: 8,
+                  borderRadius: '50%',
+                  background: '#8fb0ff'
+                }),
+                `Turno de ${nameOf(s, p.target)}`
+              ]
+            ),
             ...(ro.players.length === 2 ? [btn('Cambiar turno', swap, 'b', 'Tab')] : [])
           ]
         : [])
@@ -279,31 +372,99 @@ export function createRoscoScreen(ctx: Ctx): Screen {
         ring(pl, isTurn, i),
         h('div', '', { display: 'flex', flexDirection: 'column', gap: 10, flex: 1 }, [
           h('div', '', { display: 'flex', alignItems: 'center', gap: 8 }, [
-            h('span', '', { fontSize: 18, fontWeight: 700 }, [nameOf(s, pl.target)]),
-            ...(isTurn ? [h('span', '', { fontSize: 10, fontWeight: 700, letterSpacing: '0.08em', padding: '3px 7px', borderRadius: 4, background: '#4f7dff' }, ['TURNO'])] : [])
+            h(
+              'span',
+              '',
+              {
+                fontSize: nameOf(s, pl.target).length > 14 ? 15 : 18,
+                fontWeight: 700,
+                lineHeight: 1.15,
+                overflowWrap: 'anywhere'
+              },
+              [nameOf(s, pl.target)]
+            ),
+            ...(isTurn
+              ? [
+                  h(
+                    'span',
+                    '',
+                    {
+                      fontSize: 10,
+                      fontWeight: 700,
+                      letterSpacing: '0.08em',
+                      padding: '3px 7px',
+                      borderRadius: 4,
+                      background: '#4f7dff'
+                    },
+                    ['TURNO']
+                  )
+                ]
+              : [])
           ]),
-          h('div', '', { display: 'grid', gridTemplateColumns: 'repeat(3, minmax(0, 1fr))', gap: 6 }, [
-            h('div', '', {}, [h('div', 'ok', { fontSize: 26, fontWeight: 800 }, [String(st.ok)]), h('div', 'mut', { fontSize: 11 }, ['Aciertos'])]),
-            h('div', '', {}, [h('div', '', { fontSize: 26, fontWeight: 800, color: '#ff8a3d' }, [String(st.ko)]), h('div', 'mut', { fontSize: 11 }, ['Fallos'])]),
-            h('div', '', {}, [h('div', '', { fontSize: 26, fontWeight: 800 }, [String(st.pending)]), h('div', 'mut', { fontSize: 11 }, ['Quedan'])])
-          ])
+          h(
+            'div',
+            '',
+            {
+              display: 'grid',
+              gridTemplateColumns: 'repeat(3, minmax(0, 1fr))',
+              gap: 6
+            },
+            [
+              h('div', '', {}, [h('div', 'ok', { fontSize: 26, fontWeight: 800 }, [String(st.ok)]), h('div', 'mut', { fontSize: 11 }, ['Aciertos'])]),
+              h('div', '', {}, [h('div', '', { fontSize: 26, fontWeight: 800, color: '#ff8a3d' }, [String(st.ko)]), h('div', 'mut', { fontSize: 11 }, ['Fallos'])]),
+              h('div', '', {}, [h('div', '', { fontSize: 26, fontWeight: 800 }, [String(st.pending)]), h('div', 'mut', { fontSize: 11 }, ['Quedan'])])
+            ]
+          )
         ])
       ])
     })
     const l = p.letters[p.current]
     const def = h('div', 'pnl', { padding: '20px 22px', display: 'flex', gap: 22, alignItems: 'stretch' }, [
-      h('div', '', { width: 104, flex: 'none', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 6, borderRadius: 10, background: '#111113' }, [
-        h('span', 'mut', { fontSize: 12 }, [l?.modo === 'contiene' ? 'Contiene la' : 'Empieza por']),
-        h('span', '', { fontSize: 64, fontWeight: 800, lineHeight: 1 }, [l?.letra ?? ''])
-      ]),
-      h('div', '', { flex: 1, display: 'flex', flexDirection: 'column', gap: 16, minWidth: 0 }, [
-        h('div', '', { fontSize: 24, fontWeight: 600, lineHeight: 1.35 }, [l?.definicion ?? '']),
-        h('div', '', { display: 'flex', alignItems: 'baseline', gap: 14, flexWrap: 'wrap' }, [
-          h('span', 'lbl', {}, ['Respuesta']),
-          h('span', 'ok', { fontSize: 44, fontWeight: 800, letterSpacing: '0.02em' }, [(l?.respuesta ?? '').toUpperCase()]),
-          h('span', 'mut', { fontSize: 12 }, [l?.status === 'pasa' ? 'Solo la ves tú · pasada en la vuelta anterior' : 'Solo la ves tú'])
-        ])
-      ])
+      h(
+        'div',
+        '',
+        {
+          width: 104,
+          flex: 'none',
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          justifyContent: 'center',
+          gap: 6,
+          borderRadius: 10,
+          background: '#111113'
+        },
+        [h('span', 'mut', { fontSize: 12 }, [l?.modo === 'contiene' ? 'Contiene la' : 'Empieza por']), h('span', '', { fontSize: 64, fontWeight: 800, lineHeight: 1 }, [l?.letra ?? ''])]
+      ),
+      h(
+        'div',
+        '',
+        {
+          flex: 1,
+          display: 'flex',
+          flexDirection: 'column',
+          gap: 16,
+          minWidth: 0
+        },
+        [
+          h('div', '', { fontSize: 27, fontWeight: 600, lineHeight: 1.3 }, [l?.definicion ?? '']),
+          h(
+            'div',
+            '',
+            {
+              display: 'flex',
+              alignItems: 'baseline',
+              gap: 14,
+              flexWrap: 'wrap'
+            },
+            [
+              h('span', 'lbl', {}, ['Respuesta']),
+              h('span', 'ok', { fontSize: 44, fontWeight: 800, letterSpacing: '0.02em' }, [(l?.respuesta ?? '').toUpperCase()]),
+              h('span', 'mut', { fontSize: 12 }, [l?.status === 'pasa' ? 'Solo la ves tú · pasada en la vuelta anterior' : 'Solo la ves tú'])
+            ]
+          )
+        ]
+      )
     ])
     const big = (cls: string, label: string, key: string, run: () => void) => {
       const b = h('button', `big3 ${cls}`, {}, [h('span', '', {}, [label]), kbd(key)])
@@ -320,19 +481,22 @@ export function createRoscoScreen(ctx: Ctx): Screen {
     const undoBtn = btn('Corregir la última letra', () => ctx.send({ type: 'undo', game: 'rosco' }), 'b ghost', 'Ctrl Z')
     undoBtn.disabled = !s.runtime.undo.rosco
     body.replaceChildren(
-      h('div', '', { display: 'flex', justifyContent: 'flex-end' }, [onAirLabel(s, 'rosco', 'el rosco')]),
-      h('div', '', { display: 'flex', gap: 12 }, cards),
-      ...lastKoBar(s),
-      ...(p.timeUp ? [h('div', 'banner bad', { fontSize: 15, fontWeight: 700 }, [`Tiempo agotado para ${nameOf(s, p.target)}${waiting ? ' · pulsa "Pasar turno" cuando quieras' : ''}`])] : []),
-      def,
-      ...(waiting ? [passGo.el] : []),
-      h('div', '', { display: 'flex', gap: 10 }, [big('ac', 'Acierto', 'A', () => mark('ok')), big('fa', 'Fallo', 'F', () => mark('ko')), big('pa', 'Pasapalabra', 'Espacio', () => mark('pasa'))]),
-      h('div', 'secrow', {}, [
-        clockBtn,
-        undoBtn,
-        btn('Terminar el rosco', async () => (await askConfirm('¿Dar el rosco por terminado?', 'Se suman los puntos.', 'Terminar')) && r({ type: 'roscoFinish' }), 'b ghost'),
-        h('span', 'spacer'),
-        h('span', 'mut', { fontSize: 12 }, [ro.players.length === 2 ? 'Fallo y Pasapalabra pasan el turno al otro concursante' : 'Fallo y Pasapalabra paran el reloj: sigue con P'])
+      h('div', 'gscroll', {}, [
+        h('div', '', { display: 'flex', gap: 12 }, cards),
+        ...lastKoBar(s),
+        ...(p.timeUp ? [h('div', 'banner bad', { fontSize: 15, fontWeight: 700 }, [`Tiempo agotado para ${nameOf(s, p.target)}${waiting ? ' · pulsa "Pasar turno" cuando quieras' : ''}`])] : []),
+        def
+      ]),
+      h('div', 'gfoot', {}, [
+        ...(waiting ? [passGo.el] : []),
+        h('div', '', { display: 'flex', gap: 10 }, [big('ac', 'Acierto', 'A', () => mark('ok')), big('fa', 'Fallo', 'F', () => mark('ko')), big('pa', 'Pasapalabra', 'Espacio', () => mark('pasa'))]),
+        h('div', 'secrow', {}, [
+          clockBtn,
+          undoBtn,
+          btn('Terminar el rosco', async () => (await askConfirm('¿Dar el rosco por terminado?', 'Se suman los puntos.', 'Terminar')) && r({ type: 'roscoFinish' }), 'b ghost'),
+          h('span', 'spacer'),
+          h('span', 'mut', { fontSize: 12 }, [ro.players.length === 2 ? 'Fallo y Pasapalabra pasan el turno al otro concursante' : 'Fallo y Pasapalabra paran el reloj: sigue con P'])
+        ])
       ])
     )
     void ROSCO_ALPHABET

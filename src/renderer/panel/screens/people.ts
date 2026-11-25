@@ -4,7 +4,7 @@ import { CONTESTANT_IDS, SLOT_IDS, type ContestantId, type GameState, type SlotI
 import { activeContestants, camOf, camsLineup, playersInGame } from '../../../shared/scene'
 import { formatPoints } from '../../../shared/quiz'
 import { buildScene, sceneKey } from '../../plato/scenes'
-import { CAMS_PLANOS } from '../../../shared/scene'
+import { PLANOS, type CamsPlano } from '../../../shared/scene'
 import { LAYOUTS } from '../../../shared/layouts'
 import { drawFrames, type Scene } from '../../plato/scenes'
 import { askConfirm, btn, editableArea, h, seg, silhouette, sw, type Ctx, type Screen } from '../ui'
@@ -63,17 +63,6 @@ export function createContestantsScreen(ctx: Ctx): Screen {
     thumbs.clear()
     const teams = s.layout === 'teams'
     const n = playersInGame(s)
-    const camOptions = (cur: SlotId, onPick: (v: SlotId) => void) => {
-      const sel = h('select', 'inp', { flex: 1, minWidth: 0 })
-      for (const c of SLOT_IDS) {
-        const o = h('option', '', {}, [`${camLabel(c)}${s.cameras.rects[c] ? '' : ' · sin recuadro'}`])
-        o.value = c
-        o.selected = c === cur
-        sel.append(o)
-      }
-      sel.onchange = () => onPick(sel.value as SlotId)
-      return sel
-    }
     const rows = CONTESTANT_IDS.slice(0, n).map((id, i) => {
       const c = s.contestants.find((x) => x.id === id)!
       const name = h('input', 'inp')
@@ -88,7 +77,12 @@ export function createContestantsScreen(ctx: Ctx): Screen {
         o.selected = c.team === t
         team.append(o)
       }
-      team.onchange = () => ctx.send({ type: 'setContestant', id, patch: { team: Number(team.value) as 0 | 1 } })
+      team.onchange = () =>
+        ctx.send({
+          type: 'setContestant',
+          id,
+          patch: { team: Number(team.value) as 0 | 1 }
+        })
       const pts = h('input', 'inp', { textAlign: 'right', fontWeight: 700 })
       pts.value = String(c.score)
       pts.inputMode = 'numeric'
@@ -97,7 +91,6 @@ export function createContestantsScreen(ctx: Ctx): Screen {
         const v = Number(pts.value)
         if (Number.isFinite(v)) ctx.send({ type: 'setScore', id, value: v })
       }
-      const cst = camState(s, c.cam)
       const x = h('button', 'x', {}, ['×'])
       x.setAttribute('aria-label', `Quitar a ${c.name}`)
       x.disabled = n <= 1 || teams
@@ -111,15 +104,15 @@ export function createContestantsScreen(ctx: Ctx): Screen {
             { v: 'f', t: 'Chica' }
           ],
           c.gender,
-          (v) => ctx.send({ type: 'setGender', id, gender: c.gender === v ? null : v })
+          (v) =>
+            ctx.send({
+              type: 'setGender',
+              id,
+              gender: c.gender === v ? null : v
+            })
         ),
         team,
         pts,
-        h('div', '', { display: 'flex', alignItems: 'center', gap: 10, minWidth: 0 }, [
-          camThumb(ctx, s, c.cam, true),
-          camOptions(c.cam, (v) => ctx.send({ type: 'setContestantCam', id, cam: v })),
-          h('span', '', { width: 8, height: 8, flex: 'none', borderRadius: '50%', background: cst.ok ? '#3ecf8e' : '#e8a23a' }, [])
-        ]),
         x
       ])
     })
@@ -134,7 +127,24 @@ export function createContestantsScreen(ctx: Ctx): Screen {
       const dec = btn('−', () => ctx.send({ type: 'addTeamScore', index: t, delta: -10 }), 'pm')
       const inc = btn('+', () => ctx.send({ type: 'addTeamScore', index: t, delta: 10 }), 'pm')
       return h('div', 'pnl tc', {}, [
-        h('div', '', { display: 'flex', alignItems: 'center', gap: 10 }, [name, h('span', 'spacer'), h('span', 'mut', { fontSize: 12 }, ['Total']), dec, h('span', '', { fontSize: 22, fontWeight: 800, minWidth: 60, textAlign: 'center' }, [formatPoints(s.teams[t].score)]), inc]),
+        h('div', '', { display: 'flex', alignItems: 'center', gap: 10 }, [
+          name,
+          h('span', 'spacer'),
+          h('span', 'mut', { fontSize: 12 }, ['Total']),
+          dec,
+          h(
+            'span',
+            '',
+            {
+              fontSize: 22,
+              fontWeight: 800,
+              minWidth: 60,
+              textAlign: 'center'
+            },
+            [formatPoints(s.teams[t].score)]
+          ),
+          inc
+        ]),
         ...activeContestants(s)
           .map((id) => s.contestants.find((c) => c.id === id)!)
           .filter((c) => c.team === t)
@@ -160,37 +170,53 @@ export function createContestantsScreen(ctx: Ctx): Screen {
       ]),
       h('div', 'pnl', { overflowX: 'auto' }, [
         h('div', '', { minWidth: 900 }, [
-          h('div', 'rowc hd', {}, ['#', 'Nombre', 'Chico / chica', 'Equipo', 'Puntos', 'Cámara', ''].map((t) => h('span', '', {}, [t]))),
+          h(
+            'div',
+            'rowc hd',
+            {},
+            ['#', 'Nombre', 'Chico / chica', 'Equipo', 'Puntos', ''].map((t) => h('span', '', {}, [t]))
+          ),
           ...rows,
-          h('div', '', { display: 'flex', alignItems: 'center', gap: 12, padding: '12px 14px' }, [
-            (() => {
-              const b = btn('+ Añadir concursante', () => ctx.send({ type: 'setPlayers', count: n + 1 }), 'b ghost')
-              b.disabled = n >= 4 || teams
-              return b
-            })(),
-            h('span', 'mut', { fontSize: 12 }, [n >= 4 ? 'Ya hay 4, el máximo' : teams ? '' : `${n} de 4`]),
-            h('span', 'spacer'),
-            ...(noSignal.length ? [h('span', 'warn', { fontSize: 12 }, [`La cámara de ${noSignal.map((c) => c.name).join(', ')} no da señal ahora mismo`])] : []),
-            (() => {
-              const a = h('a', '', { fontSize: 13 }, ['Revisar recuadros'])
-              a.onclick = () => ctx.openCalibration()
-              return a
-            })()
-          ])
+          h(
+            'div',
+            '',
+            {
+              display: 'flex',
+              alignItems: 'center',
+              gap: 12,
+              padding: '12px 14px'
+            },
+            [
+              (() => {
+                const b = btn('+ Añadir concursante', () => ctx.send({ type: 'setPlayers', count: n + 1 }), 'b ghost')
+                b.disabled = n >= 4 || teams
+                return b
+              })(),
+              h('span', 'mut', { fontSize: 12 }, [n >= 4 ? 'Ya hay 4, el máximo' : teams ? '' : `${n} de 4`]),
+              h('span', 'spacer'),
+              ...(noSignal.length ? [h('span', 'warn', { fontSize: 12 }, [`La cámara de ${noSignal.map((c) => c.name).join(', ')} no da señal ahora mismo`])] : []),
+              (() => {
+                const a = h('a', '', { fontSize: 13 }, ['Cámaras de cada uno'])
+                a.onclick = () => ctx.go('camaras')
+                return a
+              })()
+            ]
+          )
         ])
       ]),
       ...(teams ? [h('div', '', { display: 'flex', gap: 12, flexWrap: 'wrap' }, [teamCard(0), teamCard(1)])] : []),
-      h('div', 'pnl', { padding: '12px 14px', display: 'flex', alignItems: 'center', gap: 12, flexWrap: 'wrap' }, [
-        camThumb(ctx, s, s.host.cam, true),
-        hostName,
-        h('div', '', { flex: 1 }, [h('div', '', { fontWeight: 600 }, ['Presentador']), h('div', 'mut', { fontSize: 12 }, ['No suma puntos · sale en la escena Cámaras si lo activas'])]),
-        (() => {
-          const sel = camOptions(s.host.cam, (v) => ctx.send({ type: 'setContestantCam', id: 'host', cam: v }))
-          sel.style.width = '260px'
-          sel.style.flex = 'none'
-          return sel
-        })()
-      ])
+      h(
+        'div',
+        'pnl',
+        {
+          padding: '12px 14px',
+          display: 'flex',
+          alignItems: 'center',
+          gap: 12,
+          flexWrap: 'wrap'
+        },
+        [h('span', '', { fontWeight: 600 }, ['Presentador']), hostName, h('span', 'mut', { fontSize: 12 }, ['No suma puntos'])]
+      )
     )
   }
   return { el: body, update, shown: () => build(ctx.state) }
@@ -199,37 +225,123 @@ export function createContestantsScreen(ctx: Ctx): Screen {
 // ---------------------------------------------------------------- Escena Cámaras
 
 export function createCamerasScreen(ctx: Ctx): Screen {
+  type Tab = 'sale' | 'asignacion' | 'calibracion'
+  let tab: Tab = 'sale'
   const stage = h('div', 'stage')
   const badge = h('span', 'badge')
   const preview = h('div', 'preview', {}, [stage, badge])
-  const shortcuts = h('div', '', { display: 'flex', gap: 8 })
-  const options = h('div', 'pnl', { padding: '12px 14px', display: 'flex', gap: 18, alignItems: 'center', flexWrap: 'wrap' })
-  const people = h('div', '', { display: 'flex', flexDirection: 'column', gap: 8 })
-  const capture = h('div', 'p-col')
+  const options = h('div', 'pnl', {
+    padding: '12px 14px',
+    display: 'flex',
+    flexDirection: 'column',
+    gap: 12
+  })
+  const people = h('div', '', {
+    display: 'flex',
+    flexDirection: 'column',
+    gap: 8
+  })
   const head = h('div', 'head')
-  const el = h('div', 'screen', {}, [
-    head,
-    h('div', '', { display: 'flex', gap: 18, flexWrap: 'wrap', flex: 1, minHeight: 0 }, [
-      h('div', '', { flex: '1 1 520px', minWidth: 0, display: 'flex', flexDirection: 'column', gap: 12 }, [preview, shortcuts, options, capture]),
-      h('div', '', { flex: '1 1 300px', maxWidth: 360, display: 'flex', flexDirection: 'column', gap: 8 }, [h('span', 'lbl', {}, ['Quién sale']), people])
-    ])
+  const tabs = h('div', 'tabs')
+  const paneSale = h('div', '', { display: 'flex', gap: 16, minHeight: 0 }, [
+    h(
+      'div',
+      '',
+      {
+        flex: '1 1 0',
+        minWidth: 0,
+        display: 'flex',
+        flexDirection: 'column',
+        gap: 12
+      },
+      [preview, options]
+    ),
+    h(
+      'div',
+      '',
+      {
+        flex: '0 0 250px',
+        display: 'flex',
+        flexDirection: 'column',
+        gap: 8
+      },
+      [people]
+    )
   ])
+  const paneAsig = h('div', '', {
+    display: 'flex',
+    flexDirection: 'column',
+    gap: 10
+  })
+  const paneCal = h('div', '', {
+    display: 'flex',
+    flexDirection: 'column',
+    gap: 12
+  })
+  const el = h('div', 'screen', {}, [head, tabs, paneSale, paneAsig, paneCal])
   new ResizeObserver(() => (stage.style.transform = `scale(${preview.clientWidth / 1920})`)).observe(preview)
   let scene: Scene | null = null
+  let asigKey = ''
+
+  function paintTabs(): void {
+    tabs.replaceChildren(
+      ...(
+        [
+          ['sale', 'Quién sale'],
+          ['asignacion', 'Asignación'],
+          ['calibracion', 'Calibración']
+        ] as const
+      ).map(([t, label]) => {
+        const b = h('button', tab === t ? 'on' : '', {}, [label])
+        b.onclick = () => {
+          tab = t
+          asigKey = ''
+          update(ctx.state)
+        }
+        return b
+      })
+    )
+    paneSale.style.display = tab === 'sale' ? 'flex' : 'none'
+    paneAsig.style.display = tab === 'asignacion' ? 'flex' : 'none'
+    paneCal.style.display = tab === 'calibracion' ? 'flex' : 'none'
+  }
 
   function update(s: GameState): void {
     const live = s.scene === 'camaras'
     head.replaceChildren(
-      h('div', 'title', {}, [h('b', '', {}, ['Escena Cámaras']), h('span', 'mut', { fontSize: 13 }, ['Elige quién sale en el plató cuando está la escena Cámaras (F2)'])]),
-      h('span', 'spacer'),
-      live
-        ? h('span', 'air', { display: 'inline-flex', alignItems: 'center', gap: 8, fontSize: 13, fontWeight: 600 }, [h('span', 'dotlive', { width: 8, height: 8 }), 'En el aire: los cambios se ven al momento'])
-        : btn('Poner en el aire', () => ctx.send({ type: 'setScene', scene: 'camaras' }), 'b acc', 'F2')
+      h('div', 'title', {}, [
+        h('b', '', { display: 'flex', alignItems: 'center', gap: 10 }, [
+          'Cámaras',
+          live
+            ? h(
+                'span',
+                'air',
+                {
+                  fontSize: 11,
+                  fontWeight: 700,
+                  letterSpacing: '0.06em',
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: 5
+                },
+                [h('span', 'dotlive'), 'EN EL AIRE']
+              )
+            : btn('Poner en el aire', () => ctx.send({ type: 'setScene', scene: 'camaras' }), 'b sm acc', 'F2')
+        ])
+      ])
     )
+    paintTabs()
+    if (tab === 'sale') paintSale(s)
+    else if (tab === 'asignacion') paintAsig(s)
+    else paintCal(s)
+  }
+
+  // ---- Quién sale: vista previa, plano, distribución y personas
+  function paintSale(s: GameState): void {
+    const live = s.scene === 'camaras'
     preview.classList.toggle('live', live)
-    badge.textContent = live ? 'VISTA PREVIA · EN EL AIRE' : 'VISTA PREVIA'
+    badge.textContent = live ? 'EN EL AIRE' : 'VISTA PREVIA'
     badge.classList.toggle('off', !live)
-    // vista previa de la escena (aunque no esté en el aire)
     const ps: GameState = { ...s, scene: 'camaras' }
     const k = sceneKey(ps)
     if (!scene || scene.key !== k) {
@@ -238,94 +350,237 @@ export function createCamerasScreen(ctx: Ctx): Screen {
       stage.replaceChildren(scene.root)
     } else scene.update(ps)
     drawFrames(ctx.feed, scene, ps)
-    if (!camsLineup(s).length) stage.append(h('div', '', { position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#9a9aa3', fontSize: 40 }, ['Nadie seleccionado: el plató mostrará solo el fondo']))
-
-    shortcuts.replaceChildren(
-      ...([
-        ['yo', 'Solo yo', 'F6'],
-        ['turno', 'Solo el del turno', 'F7'],
-        ['todos', 'Todos', 'F8']
-      ] as const).map(([v, t, key]) => btn(t, () => ctx.send({ type: 'camsPreset', preset: v }), `sc3${s.camsScene.preset === v ? ' on' : ''}`, key))
-    )
+    if (!camsLineup(s).length)
+      stage.append(
+        h(
+          'div',
+          '',
+          {
+            position: 'absolute',
+            inset: 0,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            color: '#9a9aa3',
+            fontSize: 40
+          },
+          ['Nadie seleccionado']
+        )
+      )
+    const row = (label: string, ...kids: Node[]) =>
+      h('div', '', { display: 'flex', alignItems: 'center', gap: 10, flexWrap: 'wrap' }, [h('span', 'mut', { fontSize: 12, width: 84 }, [label]), ...kids])
     options.replaceChildren(
-      h('span', '', { display: 'flex', alignItems: 'center', gap: 10 }, ['Nombres', sw(s.camsScene.names, () => ctx.send({ type: 'camsSet', patch: { names: !ctx.state.camsScene.names } }), 'Mostrar nombres')]),
-      h('span', '', { display: 'flex', alignItems: 'center', gap: 10 }, ['Puntos', sw(s.camsScene.scores, () => ctx.send({ type: 'camsSet', patch: { scores: !ctx.state.camsScene.scores } }), 'Mostrar puntos')]),
-      h('span', 'spacer'),
-      h('span', 'mut', { fontSize: 12 }, ['Transición']),
-      seg(
-        [
-          { v: 'cut', t: 'Corte' },
-          { v: 'fade', t: 'Fundido' }
-        ],
-        s.camsScene.transition,
-        (v) => ctx.send({ type: 'camsSet', patch: { transition: v } })
-      ),
-      h('div', '', { flexBasis: '100%', display: 'flex', alignItems: 'center', gap: 10, flexWrap: 'wrap' }, [
-        h('span', 'mut', { fontSize: 12 }, ['Plano']),
+      row(
+        'Plano',
         seg(
-          CAMS_PLANOS.map((pl) => ({ v: pl.id, t: pl.label })),
+          PLANOS.filter((p) => p.id !== 'juego').map((pl) => ({
+            v: pl.id as CamsPlano,
+            t: pl.label
+          })),
           s.camsScene.camsPlano,
           (v) => ctx.send({ type: 'camsSet', patch: { camsPlano: v } })
-        ),
-        h('span', 'mut', { fontSize: 11 }, ['Ctrl+F1/F2/F3 con la escena en el aire · "datos" son los del juego activo'])
-      ]),
-      h('div', '', { flexBasis: '100%', display: 'flex', alignItems: 'center', gap: 10, flexWrap: 'wrap' }, [
-        h('span', 'mut', { fontSize: 12 }, ['Distribución']),
+        )
+      ),
+      row(
+        'Distribución',
         seg(
           [
             { v: 'auto', t: 'Automática' },
-            ...(['solo', 'duo', 'trio', 'quad'] as const).map((id) => ({ v: id, t: id === 'solo' ? '1 + yo' : String(LAYOUTS[id].count), disabled: activeContestants(s).length < LAYOUTS[id].count })),
+            ...(['solo', 'duo', 'trio', 'quad'] as const).map((id) => ({
+              v: id,
+              t: id === 'solo' ? '1 + yo' : String(LAYOUTS[id].count),
+              disabled: activeContestants(s).length < LAYOUTS[id].count
+            })),
             ...(s.layout === 'teams' ? [{ v: 'teams' as const, t: '2 contra 2' }] : [])
           ],
           s.camsScene.template ?? 'auto',
-          (v) => ctx.send({ type: 'camsSet', patch: { template: v === 'auto' ? null : v } })
-        ),
-        h('span', 'mut', { fontSize: 11 }, ['Las plantillas son las del diseño del plató; en Automática manda la fila "Quién sale".'])
-      ])
+          (v) =>
+            ctx.send({
+              type: 'camsSet',
+              patch: { template: v === 'auto' ? null : v }
+            })
+        )
+      ),
+      row(
+        'Rótulos',
+        h('span', '', { display: 'flex', alignItems: 'center', gap: 8 }, [
+          sw(
+            s.camsScene.names,
+            () =>
+              ctx.send({
+                type: 'camsSet',
+                patch: { names: !ctx.state.camsScene.names }
+              }),
+            'Mostrar nombres'
+          ),
+          'Nombres'
+        ]),
+        h('span', '', { display: 'flex', alignItems: 'center', gap: 8 }, [
+          sw(
+            s.camsScene.scores,
+            () =>
+              ctx.send({
+                type: 'camsSet',
+                patch: { scores: !ctx.state.camsScene.scores }
+              }),
+            'Mostrar puntos'
+          ),
+          'Puntos'
+        ]),
+        h('span', 'spacer'),
+        h('span', 'mut', { fontSize: 12 }, ['Transición']),
+        seg(
+          [
+            { v: 'cut', t: 'Corte' },
+            { v: 'fade', t: 'Fundido' }
+          ],
+          s.camsScene.transition,
+          (v) => ctx.send({ type: 'camsSet', patch: { transition: v } })
+        )
+      )
     )
     thumbs.clear()
-    const list: SlotId[] = ['host', ...activeContestants(s)]
+    const list: SlotId[] = ['host', ...activeContestants(s), ...(s.cameras.rects.publico ? (['publico'] as SlotId[]) : [])]
     people.replaceChildren(
       ...list.map((slot) => {
         const on = !!s.camsScene.on[slot]
         const cam = camOf(s, slot)
         const st = camState(s, cam)
-        const name = slot === 'host' ? s.host.name : s.contestants.find((c) => c.id === slot)!.name
-        const status = slot === 'host' ? `Presentador · ${camLabel(cam)}` : `${camLabel(cam)}${st.ok ? '' : ' · ' + st.text.toLowerCase()}`
+        const name = slot === 'host' ? s.host.name : slot === 'publico' ? 'Público' : s.contestants.find((c) => c.id === slot)!.name
         return h('div', `cr${on ? ' on' : ''}`, {}, [
           camThumb(ctx, s, cam),
-          h('div', '', { flex: 1, minWidth: 0 }, [h('div', '', { fontWeight: 600 }, [name]), h('div', '', { fontSize: 12, color: st.ok ? '#9a9aa3' : '#e8a23a' }, [status])]),
+          h('div', '', { flex: 1, minWidth: 0 }, [
+            h('div', '', { fontWeight: 600 }, [name]),
+            h('div', '', { fontSize: 12, color: st.ok ? '#9a9aa3' : '#e8a23a' }, [`${camLabel(cam)}${st.ok ? '' : ' · ' + st.text.toLowerCase()}`])
+          ]),
           sw(on, () => ctx.send({ type: 'camsToggle', slot }), `Mostrar a ${name}`)
         ])
-      }),
-      (() => {
-        const a = h('a', '', { fontSize: 13, marginTop: 4 }, ['Cambiar qué cámara corresponde a cada uno'])
-        a.onclick = () => ctx.go('concursantes')
-        return a
-      })()
-    )
-    const cap = s.runtime.capture
-    const lost = !!s.cameras.sourceId && (cap.plato === 'lost' || cap.panel === 'lost')
-    capture.replaceChildren(
-      ...(lost ? [h('div', 'banner bad', {}, [h('b', '', {}, ['Captura perdida.']), cap.error || 'Discord está minimizado o cerrado: los marcos muestran la silueta.'])] : []),
-      h('div', 'pnl', { padding: '12px 14px', display: 'flex', alignItems: 'center', gap: 12, flexWrap: 'wrap' }, [
-        h('div', '', { flex: 1, minWidth: 0 }, [
-          h('div', '', { fontWeight: 600 }, ['Ventana de Discord']),
-          h('div', 'mut', { fontSize: 12, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }, [s.cameras.sourceName ?? 'Sin elegir'])
-        ]),
-        btn('Calibrar recuadros', () => ctx.openCalibration(), 'b'),
-        btn('Reconectar', async () => {
-          await window.konk.resolveSource()
-          ctx.send({ type: 'restartCapture' })
-        }, 'b ghost')
-      ])
+      })
     )
   }
+
+  // ---- Asignación: qué recuadro es de quién
+  function paintAsig(s: GameState): void {
+    const k = JSON.stringify([s.contestants.map((c) => [c.id, c.name, c.cam]), s.host, s.cameras.rects, s.layout, s.runtime.capture])
+    if (k === asigKey || paneAsig.contains(document.activeElement)) return
+    asigKey = k
+    thumbs.clear()
+    const camSel = (cur: SlotId, onPick: (v: SlotId) => void) => {
+      const sel = h('select', 'inp', { width: 230 })
+      for (const c of SLOT_IDS) {
+        const o = h('option', '', {}, [`${camLabel(c)}${s.cameras.rects[c] ? '' : ' · sin recuadro'}`])
+        o.value = c
+        o.selected = c === cur
+        sel.append(o)
+      }
+      sel.onchange = () => onPick(sel.value as SlotId)
+      return sel
+    }
+    const rowOf = (name: string, role: string, cam: SlotId, pick: (v: SlotId) => void) => {
+      const st = camState(s, cam)
+      return h(
+        'div',
+        'pnl',
+        {
+          padding: '10px 14px',
+          display: 'flex',
+          alignItems: 'center',
+          gap: 14
+        },
+        [
+          camThumb(ctx, s, cam, true),
+          h('div', '', { flex: 1, minWidth: 0 }, [h('div', '', { fontWeight: 600 }, [name]), h('div', 'mut', { fontSize: 12 }, [role])]),
+          h('span', '', { fontSize: 12, color: st.ok ? '#3ecf8e' : '#e8a23a' }, [st.text]),
+          camSel(cam, pick)
+        ]
+      )
+    }
+    paneAsig.replaceChildren(
+      h('span', 'mut', { fontSize: 12 }, ['Cada persona sale con el recuadro de Discord que elijas aquí.']),
+      rowOf(s.host.name, 'Presentador', s.host.cam, (v) => ctx.send({ type: 'setContestantCam', id: 'host', cam: v })),
+      ...activeContestants(s).map((id) => {
+        const c = s.contestants.find((x) => x.id === id)!
+        return rowOf(c.name, 'Concursante', c.cam, (v) => ctx.send({ type: 'setContestantCam', id, cam: v }))
+      })
+    )
+  }
+
+  // ---- Calibración: ventana de Discord y recuadros
+  function paintCal(s: GameState): void {
+    const cap = s.runtime.capture
+    const lost = !!s.cameras.sourceId && (cap.plato === 'lost' || cap.panel === 'lost')
+    paneCal.replaceChildren(
+      ...(lost ? [h('div', 'banner bad', {}, [h('b', '', {}, ['Captura perdida. ']), cap.error || 'Discord está minimizado o cerrado: los marcos muestran la silueta.'])] : []),
+      h(
+        'div',
+        'pnl',
+        {
+          padding: '14px 16px',
+          display: 'flex',
+          alignItems: 'center',
+          gap: 12,
+          flexWrap: 'wrap'
+        },
+        [
+          h('div', '', { flex: 1, minWidth: 0 }, [
+            h('div', '', { fontWeight: 600 }, ['Ventana de Discord']),
+            h(
+              'div',
+              'mut',
+              {
+                fontSize: 12,
+                overflow: 'hidden',
+                textOverflow: 'ellipsis',
+                whiteSpace: 'nowrap'
+              },
+              [s.cameras.sourceName ?? 'Sin elegir']
+            )
+          ]),
+          btn('Elegir ventana y calibrar recuadros', () => ctx.openCalibration(), 'b acc'),
+          btn(
+            'Reconectar',
+            async () => {
+              await window.konk.resolveSource()
+              ctx.send({ type: 'restartCapture' })
+            },
+            'b ghost'
+          )
+        ]
+      ),
+      h(
+        'div',
+        'pnl',
+        {
+          padding: '12px 14px',
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))',
+          gap: 8
+        },
+        [
+          ...SLOT_IDS.map((c) =>
+            h('div', '', { display: 'flex', alignItems: 'center', gap: 8, fontSize: 13 }, [
+              h('span', '', {
+                width: 8,
+                height: 8,
+                borderRadius: '50%',
+                background: s.cameras.rects[c] ? '#3ecf8e' : '#55555d',
+                flex: 'none'
+              }),
+              `${camLabel(c)}${c === 'publico' ? ' (opcional)' : ''}: ${s.cameras.rects[c] ? 'con recuadro' : 'sin recuadro'}`
+            ])
+          )
+        ]
+      )
+    )
+  }
+
   return {
     el,
     update,
-    shown: () => update(ctx.state),
-    frame: (s: GameState) => drawFrames(ctx.feed, scene, s)
+    shown: () => {
+      asigKey = ''
+      update(ctx.state)
+    },
+    frame: (s: GameState) => tab === 'sale' && drawFrames(ctx.feed, scene, { ...s, scene: 'camaras' })
   }
 }
-

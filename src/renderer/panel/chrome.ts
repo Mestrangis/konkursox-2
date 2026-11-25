@@ -1,11 +1,12 @@
 // Barra "En el aire", navegación y dock de marcador/música/efectos (design/panel.html: componentes).
 import { formatPoints } from '../../shared/quiz'
-import { activeContestants, CAMS_PLANOS, currentTurn, gameLabel, GAMES, hasPublico, playedCount, PLANOS, SCENES } from '../../shared/scene'
+import { activeContestants, currentPlano, currentTurn, gameLabel, GAMES, hasLiveGame, hasPublico, playedCount, PLANOS, SCENES } from '../../shared/scene'
 import type { Corner, HostMode } from '../../shared/arrange'
 import { targetMembers } from '../../shared/order'
 import { NUMPAD_LAYOUT, soundKeyLabel } from '../../shared/keys'
 import { EFFECTS, type EffectId } from '../../shared/effects'
 import { turnSlots } from '../plato/quizScenes'
+import { mediaNav } from './screens/media'
 import type { GameState, SlotId } from '../../shared/types'
 import { buildScene, drawFrames, sceneKey, type Scene } from '../plato/scenes'
 import { askConfirm, askText, btn, contextMenu, h, icon, ICONS, kbd, mmss, sw, type Ctx, type ScreenId } from './ui'
@@ -23,20 +24,22 @@ export function goScene(ctx: Ctx, id: (typeof SCENES)[number]['id']): void {
 }
 
 export function createAirBar(ctx: Ctx) {
-  const gameName = h('span', '', { fontSize: 10, fontWeight: 600, opacity: 0.85, maxWidth: 104, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' })
+  const gameName = h('span', 'sc-game')
   const scenes = SCENES.map((sc) => {
     const label = h('span', '', {}, [sc.label])
-    const b = h('button', 'sc', {}, [kbd(sc.key), icon(ICONS[sc.id as keyof typeof ICONS], 22, '#9a9aa3'), label])
+    const b = h('button', 'sc', {}, [kbd(sc.key), icon(ICONS[sc.id as keyof typeof ICONS], 17, '#9a9aa3'), label])
     // el botón Cámaras abre su pantalla (F2 la pone en el aire sin cambiar de pantalla)
     b.onclick = () => (sc.id === 'camaras' ? ctx.go('camaras') : goScene(ctx, sc.id))
-    b.title = sc.id === 'camaras' ? 'Abrir la pantalla Cámaras (F2 la pone en el aire)' : sc.id === 'multimedia' ? 'Mostrar / ocultar lo elegido en Multimedia (F9)' : `Poner "${sc.label}" en el aire (${sc.key})`
+    b.title =
+      sc.id === 'camaras'
+        ? 'Abrir la pantalla Cámaras (F2 la pone en el aire)'
+        : sc.id === 'multimedia'
+          ? 'Mostrar / ocultar lo elegido en Multimedia (F9)'
+          : `Poner "${sc.label}" en el aire (${sc.key})`
     if (sc.id === 'juego') {
       // desplegable: elegir qué juego sale en la escena Juego
-      label.style.display = 'flex'
-      label.style.flexDirection = 'column'
-      label.style.alignItems = 'center'
       label.append(gameName)
-      const caret = h('span', 'sc-caret', {}, [icon(ICONS.caret, 16, '#ececef')])
+      const caret = h('span', 'sc-caret', {}, [icon(ICONS.caret, 14, '#ececef')])
       caret.title = 'Elegir qué juego sale en el aire'
       caret.onclick = (e) => {
         e.stopPropagation()
@@ -60,7 +63,13 @@ export function createAirBar(ctx: Ctx) {
   thumb.onclick = () => void window.konk.showPlato()
   let scene: Scene | null = null
 
-  const clock = h('span', '', { fontSize: 26, fontWeight: 700, letterSpacing: '-0.01em', cursor: 'pointer' })
+  const clock = h('span', '', {
+    fontSize: 17,
+    fontWeight: 700,
+    letterSpacing: '-0.01em',
+    cursor: 'pointer',
+    fontVariantNumeric: 'tabular-nums'
+  })
   clock.title = 'Reloj del programa (clic para ponerlo a cero)'
   const date = h('span', 'mut', { fontSize: 12 })
   const played = h('span', 'mut', { fontSize: 12 })
@@ -90,19 +99,32 @@ export function createAirBar(ctx: Ctx) {
   const d = new Date()
   date.textContent = `Programa del ${d.getDate()} ${months[d.getMonth()]}`
 
+  const onAir = h('span', 'onair', {}, [h('span', 'dotlive'), 'AIRE'])
+  onAir.title = 'Escena en el aire. Cambiar de escena no borra nada del juego.'
   const el = h('div', 'airbar ui', {}, [
-    h('div', '', { display: 'flex', flexDirection: 'column', gap: 6, width: 72 }, [
-      h('span', 'lbl air', { display: 'flex', alignItems: 'center', gap: 6 }, [
-        h('span', '', { width: 8, height: 8, borderRadius: '50%', background: '#ff5a5f', boxShadow: '0 0 8px #ff5a5f' }),
-        'En el aire'
-      ]),
-      h('span', 'mut', { fontSize: 11, lineHeight: 1.3 }, ['Cambiar de escena no borra el juego'])
-    ]),
-    h('div', '', { display: 'flex', gap: 8 }, scenes.map((x) => x.b)),
+    onAir,
+    h(
+      'div',
+      '',
+      { display: 'flex', gap: 6, minWidth: 0 },
+      scenes.map((x) => x.b)
+    ),
     h('span', 'spacer'),
     thumb,
-    h('div', '', { display: 'flex', flexDirection: 'column', gap: 4, width: 190 }, [clock, date, played])
+    h(
+      'div',
+      '',
+      {
+        display: 'flex',
+        flexDirection: 'column',
+        gap: 1,
+        width: 118,
+        lineHeight: 1.15
+      },
+      [clock, played]
+    )
   ])
+  void date
 
   return {
     el,
@@ -113,7 +135,8 @@ export function createAirBar(ctx: Ctx) {
       }
       gameName.textContent = gameLabel(s.liveGame)
       const n = playedCount(s)
-      played.textContent = `${n} ${n === 1 ? 'prueba jugada' : 'pruebas jugadas'} · ${gameLabel(s.liveGame)}`
+      played.textContent = `${n} ${n === 1 ? 'prueba' : 'pruebas'} · ${gameLabel(s.liveGame)}`
+      played.title = `${date.textContent} · ${n} ${n === 1 ? 'prueba jugada' : 'pruebas jugadas'} · juego en el aire: ${gameLabel(s.liveGame)}`
       const key = sceneKey(s)
       if (!scene || scene.key !== key) {
         scene = buildScene(s)
@@ -147,7 +170,7 @@ export function createNav(ctx: Ctx, onGo: (id: ScreenId) => void) {
     ...tools.map((x) => x.a),
     h('span', 'spacer'),
     settings.a,
-    h('span', 'mut', { fontSize: 11, padding: '8px 10px 0', lineHeight: 1.4 }, ['Navegar no cambia lo que sale en el plató.'])
+    h('span')
   ])
   el.setAttribute('aria-label', 'Secciones')
   return {
@@ -196,7 +219,12 @@ export function createDock(ctx: Ctx) {
   renderSteps()
 
   // música
-  const trackName = h('div', '', { fontWeight: 600, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' })
+  const trackName = h('div', '', {
+    fontWeight: 600,
+    overflow: 'hidden',
+    textOverflow: 'ellipsis',
+    whiteSpace: 'nowrap'
+  })
   const trackSub = h('div', 'mut', { fontSize: 12 })
   const fill = h('i', '', { width: '0%' })
   const knob = h('b', '', { left: '0%' })
@@ -243,7 +271,11 @@ export function createDock(ctx: Ctx) {
   vol.max = '100'
   vol.setAttribute('aria-label', 'Volumen de la música')
   vol.style.flex = '1'
-  vol.oninput = () => ctx.send({ type: 'setAudio', patch: { musicVolume: Number(vol.value) / 100 } })
+  vol.oninput = () =>
+    ctx.send({
+      type: 'setAudio',
+      patch: { musicVolume: Number(vol.value) / 100 }
+    })
   const tracks = h('div', 'tracks')
   tracks.title = 'Arrastra aquí canciones para añadirlas a la carpeta de música'
   // arrastrar archivos a la lista los añade
@@ -262,7 +294,11 @@ export function createDock(ctx: Ctx) {
   }
 
   // efectos
-  const fxGrid = h('div', '', { display: 'grid', gridTemplateColumns: 'repeat(3, minmax(0, 1fr))', gap: 6 })
+  const fxGrid = h('div', '', {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(3, minmax(0, 1fr))',
+    gap: 6
+  })
   let hit = -1
   let hitTimer = 0
   const fire = (i: number) => {
@@ -300,7 +336,10 @@ export function createDock(ctx: Ctx) {
           e.preventDefault()
           contextMenu(e.clientX, e.clientY, [
             h('span', 'lbl', {}, [`Sonido de "${f.label}"`]),
-            ...ctx.audioLib.sfx.map((file) => ({ label: (file === f.file ? '● ' : '') + file, run: () => ctx.send({ type: 'setFx', index: i, patch: { file } }) })),
+            ...ctx.audioLib.sfx.map((file) => ({
+              label: (file === f.file ? '● ' : '') + file,
+              run: () => ctx.send({ type: 'setFx', index: i, patch: { file } })
+            })),
             null,
             {
               label: 'Cambiar el nombre…',
@@ -309,8 +348,14 @@ export function createDock(ctx: Ctx) {
                 if (label) ctx.send({ type: 'setFx', index: i, patch: { label } })
               }
             },
-            { label: 'Quitar el sonido', run: () => ctx.send({ type: 'setFx', index: i, patch: { file: null } }) },
-            { label: 'Abrir la carpeta de efectos', run: () => void window.konk.audioOpenDir() }
+            {
+              label: 'Quitar el sonido',
+              run: () => ctx.send({ type: 'setFx', index: i, patch: { file: null } })
+            },
+            {
+              label: 'Abrir la carpeta de efectos',
+              run: () => void window.konk.audioOpenDir()
+            }
           ])
         }
         return b
@@ -327,7 +372,11 @@ export function createDock(ctx: Ctx) {
   }
 
   // efectos visuales del plató (Alt+1..9)
-  const effGrid = h('div', '', { display: 'grid', gridTemplateColumns: 'repeat(3, minmax(0, 1fr))', gap: 6 })
+  const effGrid = h('div', '', {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(3, minmax(0, 1fr))',
+    gap: 6
+  })
   const playEffectSound = (id: EffectId) => {
     const s = ctx.state
     const file = s.effects.sounds[id]
@@ -336,7 +385,7 @@ export function createDock(ctx: Ctx) {
     ctx.audio.playSfx(file, s.effects.volumes[id] ?? 1)
   }
   const people = (s: GameState): SlotId[] => ['host', ...activeContestants(s), ...(hasPublico(s) ? (['publico'] as SlotId[]) : [])]
-  const personName = (s: GameState, slot: SlotId) => (slot === 'host' ? s.host.name : slot === 'publico' ? 'Público' : s.contestants.find((c) => c.id === slot)?.name ?? slot)
+  const personName = (s: GameState, slot: SlotId) => (slot === 'host' ? s.host.name : slot === 'publico' ? 'Público' : (s.contestants.find((c) => c.id === slot)?.name ?? slot))
   /** Dispara un efecto. "Foco en uno" pregunta a quién (con teclado, al del turno). */
   const fireEffect = (i: number, ev?: MouseEvent) => {
     const e = EFFECTS[i]
@@ -344,11 +393,22 @@ export function createDock(ctx: Ctx) {
     const s = ctx.state
     if (e.id === 'foco' && !s.effects.on.foco) {
       const go = (slot: SlotId) => {
-        ctx.send({ type: 'fxvToggle', id: 'foco', now: Date.now(), focus: slot })
+        ctx.send({
+          type: 'fxvToggle',
+          id: 'foco',
+          now: Date.now(),
+          focus: slot
+        })
         playEffectSound('foco')
       }
       if (ev) {
-        contextMenu(ev.clientX, ev.clientY, [h('span', 'lbl', {}, ['Foco en…']), ...people(s).map((slot) => ({ label: personName(s, slot), run: () => go(slot) }))])
+        contextMenu(ev.clientX, ev.clientY, [
+          h('span', 'lbl', {}, ['Foco en…']),
+          ...people(s).map((slot) => ({
+            label: personName(s, slot),
+            run: () => go(slot)
+          }))
+        ])
         return
       }
       const turn = [...turnSlots(s)][0] ?? activeContestants(s)[0]
@@ -379,27 +439,68 @@ export function createDock(ctx: Ctx) {
   }
 
   const autoBox = h('span')
-  const el = h('aside', 'dock ui', {}, [
-    h('div', 'sec', {}, [h('div', '', { display: 'flex', alignItems: 'center', gap: 6 }, [h('span', 'lbl', { flex: 1 }, ['Marcador']), h('span', 'mut', { fontSize: 12 }, ['Paso']), steps]), players]),
-    h('div', 'sec', { gap: 10 }, [
-      h('span', 'lbl', {}, ['Música']),
-      h('div', '', { display: 'flex', alignItems: 'center', gap: 10 }, [
-        h('div', '', { width: 40, height: 40, borderRadius: 6, background: '#26314d', display: 'flex', alignItems: 'center', justifyContent: 'center', flex: 'none' }, [icon(ICONS.music, 18, '#8fb0ff')]),
-        h('div', '', { flex: 1, minWidth: 0 }, [trackName, trackSub])
-      ]),
-      h('div', '', { display: 'flex', flexDirection: 'column', gap: 4 }, [seek, h('div', 'mut', { display: 'flex', justifyContent: 'space-between', fontSize: 11 }, [tCur, tDur])]),
-      h('div', '', { display: 'flex', alignItems: 'center', gap: 6 }, [prevBtn, playBtn, nextBtn, h('span', 'spacer'), loopBtn, fadeBtn]),
-      h('div', '', { display: 'flex', alignItems: 'center', gap: 10 }, [icon(ICONS.vol, 18, '#9a9aa3'), vol]),
-      tracks
+  // pestañas: Sonidos | Efectos | Música (siempre a la vista, sin desplazar)
+  type Tab = 'sonidos' | 'efectos' | 'musica'
+  let tab: Tab = 'sonidos'
+  try {
+    const t = localStorage.getItem('konk.dockTab') as Tab
+    if (t === 'sonidos' || t === 'efectos' || t === 'musica') tab = t
+  } catch {
+    /* sin almacenamiento */
+  }
+  const tabBar = h('div', 'dtabs')
+  const panes: Record<Tab, HTMLElement> = {
+    sonidos: h('div', 'dpane', {}, [
+      fxGrid,
+      h('div', '', { display: 'flex', alignItems: 'center', gap: 8, marginTop: 4 }, [autoBox, h('span', '', { fontSize: 12.5, fontWeight: 600 }, ['Sonidos automáticos del juego'])])
     ]),
-    h('div', 'sec', {}, [h('span', 'lbl', {}, ['Sonidos']), fxGrid]),
-    h('div', 'sec', { borderBottom: 0 }, [h('span', 'lbl', {}, ['Efectos visuales']), effGrid]),
-    h('span', 'spacer'),
-    h('div', '', { padding: '12px 14px', borderTop: '1px solid #2a2a2f', display: 'flex', alignItems: 'center', gap: 10 }, [
-      h('div', '', { flex: 1 }, [h('div', '', { fontWeight: 600, fontSize: 13 }, ['Sonidos automáticos del juego']), h('div', 'mut', { fontSize: 11 }, ['Correcto y error suenan solos al revelar'])]),
-      autoBox
+    efectos: h('div', 'dpane', {}, [effGrid]),
+    musica: h('div', 'dpane', { gap: 10 }, [
+      h('div', '', { minWidth: 0 }, [trackName, trackSub]),
+      h('div', '', { display: 'flex', flexDirection: 'column', gap: 3 }, [seek, h('div', 'mut', { display: 'flex', justifyContent: 'space-between', fontSize: 11 }, [tCur, tDur])]),
+      h('div', '', { display: 'flex', alignItems: 'center', gap: 6 }, [prevBtn, playBtn, nextBtn, h('span', 'spacer'), loopBtn, fadeBtn]),
+      h('div', '', { display: 'flex', alignItems: 'center', gap: 10 }, [icon(ICONS.vol, 16, '#9a9aa3'), vol]),
+      btn(
+        'Lista de música (Multimedia)',
+        () => {
+          mediaNav.music = true
+          ctx.go('multimedia')
+        },
+        'b sm ghost'
+      )
     ])
+  }
+  const paintTabs = () => {
+    tabBar.replaceChildren(
+      ...(['sonidos', 'efectos', 'musica'] as Tab[]).map((t) => {
+        const b = h('button', tab === t ? 'on' : '', {}, [t === 'sonidos' ? 'Sonidos' : t === 'efectos' ? 'Efectos' : 'Música'])
+        b.title = t === 'sonidos' ? 'Botonera (Num1-9 o Ctrl+1..9)' : t === 'efectos' ? 'Efectos visuales del plató (Alt+1..9)' : 'Música de fondo (Ctrl+Espacio, Ctrl+F)'
+        b.onclick = () => {
+          tab = t
+          try {
+            localStorage.setItem('konk.dockTab', t)
+          } catch {
+            /* sin almacenamiento */
+          }
+          paintTabs()
+        }
+        return b
+      })
+    )
+    for (const [t, el2] of Object.entries(panes)) el2.style.display = t === tab ? '' : 'none'
+  }
+  paintTabs()
+  // arrastrar canciones a la pestaña Música las añade
+  panes.musica.ondragover = (e) => e.preventDefault()
+  panes.musica.ondrop = (e) => tracks.ondrop?.(e)
+  const el = h('aside', 'dock ui', {}, [
+    h('div', 'sec dscore', {}, [h('div', '', { display: 'flex', alignItems: 'center', gap: 6 }, [h('span', 'lbl', { flex: 1 }, ['Marcador']), steps]), players]),
+    tabBar,
+    panes.sonidos,
+    panes.efectos,
+    panes.musica
   ])
+  void tracks
   el.setAttribute('aria-label', 'Marcador y audio')
 
   function renderTracks(): void {
@@ -459,10 +560,20 @@ export function createDock(ctx: Ctx) {
       const turn = new Set(targetMembers(s, currentTurn(s)))
       const rows =
         s.layout === 'teams'
-          ? s.teams.map((t, i) => ({ name: t.name, score: t.score, turn: currentTurn(s)?.kind === 'team' && (currentTurn(s) as { index: number }).index === i, add: (d: number) => ctx.send({ type: 'addTeamScore', index: i as 0 | 1, delta: d }) }))
+          ? s.teams.map((t, i) => ({
+              name: t.name,
+              score: t.score,
+              turn: currentTurn(s)?.kind === 'team' && (currentTurn(s) as { index: number }).index === i,
+              add: (d: number) => ctx.send({ type: 'addTeamScore', index: i as 0 | 1, delta: d })
+            }))
           : activeContestants(s).map((id) => {
               const c = s.contestants.find((x) => x.id === id)!
-              return { name: c.name, score: c.score, turn: turn.has(id), add: (d: number) => ctx.send({ type: 'addScore', id, delta: d }) }
+              return {
+                name: c.name,
+                score: c.score,
+                turn: turn.has(id),
+                add: (d: number) => ctx.send({ type: 'addScore', id, delta: d })
+              }
             })
       players.replaceChildren(
         ...rows.map((r) => {
@@ -472,14 +583,21 @@ export function createDock(ctx: Ctx) {
           const inc = h('button', 'pm', {}, ['+'])
           inc.onclick = () => r.add(step)
           inc.setAttribute('aria-label', `Sumar a ${r.name}`)
+          // nombre completo: si es largo, letra más pequeña y hasta dos líneas
+          const long = r.name.length > 16
+          const nm = h('span', 'plname', { fontSize: long ? 12.5 : 14 }, [r.name])
+          nm.title = r.turn ? `${r.name} · tiene el turno` : r.name
           return h('div', 'pl', {}, [
-            h('span', '', { width: 6, height: 6, borderRadius: '50%', background: r.turn ? '#4f7dff' : 'transparent', flex: 'none' }),
-            h('span', '', { flex: 1, fontSize: 14, fontWeight: 600, minWidth: 0, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }, [
-              r.name,
-              ...(r.turn ? [h('span', 'mut', { fontWeight: 400, fontSize: 12 }, ['  · turno'])] : [])
-            ]),
+            h('span', '', {
+              width: 7,
+              height: 7,
+              borderRadius: '50%',
+              background: r.turn ? '#4f7dff' : 'transparent',
+              flex: 'none'
+            }),
+            nm,
             dec,
-            h('span', '', { width: 62, textAlign: 'center', fontSize: 20, fontWeight: 700 }, [formatPoints(r.score)]),
+            h('span', '', { width: 54, textAlign: 'center', fontSize: 19, fontWeight: 700 }, [formatPoints(r.score)]),
             inc
           ])
         })
@@ -494,7 +612,17 @@ export function createDock(ctx: Ctx) {
       loopBtn.classList.toggle('on', s.audio.loop)
       fadeBtn.firstChild!.textContent = `Fundido ${s.audio.fadeSeconds} s`
       fadeBtn.title = 'Fundido de la música (Ctrl+F)'
-      autoBox.replaceChildren(sw(s.audio.autoSounds, () => ctx.send({ type: 'setAudio', patch: { autoSounds: !ctx.state.audio.autoSounds } }), 'Sonidos automáticos'))
+      autoBox.replaceChildren(
+        sw(
+          s.audio.autoSounds,
+          () =>
+            ctx.send({
+              type: 'setAudio',
+              patch: { autoSounds: !ctx.state.audio.autoSounds }
+            }),
+          'Sonidos automáticos'
+        )
+      )
       renderFx()
     }
   }
@@ -503,27 +631,41 @@ export function createDock(ctx: Ctx) {
 // ---------------------------------------------------------------- fila "Quién sale" (siempre visible)
 
 export function createPeopleRow(ctx: Ctx) {
-  // cómo salgo yo: igual, destacado o en una esquina (un desplegable para que quepa en la fila)
-  const hostSelect = (s: GameState) => {
-    const sel = h('select', 'inp', { height: 32, width: 168, flex: 'none', fontSize: 13, padding: '0 6px' })
-    sel.title = 'Cómo sale el presentador en Cámaras y Juego'
-    const opts: [string, string][] = [
-      ['igual', 'Yo: igual'],
-      ['destacado', 'Yo: destacado'],
-      ['esquina:tl', 'Yo: esquina ↖'],
-      ['esquina:tr', 'Yo: esquina ↗'],
-      ['esquina:bl', 'Yo: esquina ↙'],
-      ['esquina:br', 'Yo: esquina ↘']
-    ]
-    for (const [v, t] of opts) sel.append(new Option(t, v))
-    sel.value = s.camsScene.hostMode === 'esquina' ? `esquina:${s.camsScene.corner}` : s.camsScene.hostMode
-    sel.onchange = () => {
-      const [mode, corner] = sel.value.split(':') as [HostMode, Corner | undefined]
-      ctx.send({ type: 'camsSet', patch: corner ? { hostMode: mode, corner } : { hostMode: mode } })
+  // cómo salgo yo: menú dentro de mi interruptor
+  const hostMenu = (e: MouseEvent) => {
+    e.stopPropagation()
+    const s = ctx.state
+    const set = (mode: HostMode, corner?: Corner) => {
+      ctx.send({
+        type: 'camsSet',
+        patch: corner ? { hostMode: mode, corner } : { hostMode: mode }
+      })
       // destacado o en esquina implica que salgo
       if (mode !== 'igual' && !ctx.state.camsScene.on.host) ctx.send({ type: 'camsToggle', slot: 'host' })
     }
-    return sel
+    const cur = s.camsScene.hostMode === 'esquina' ? `esquina:${s.camsScene.corner}` : s.camsScene.hostMode
+    const opt = (v: string, label: string, run: () => void) => ({
+      label: (cur === v ? '● ' : '') + label,
+      run
+    })
+    const r = (e.currentTarget as HTMLElement).getBoundingClientRect()
+    contextMenu(r.left, r.bottom + 4, [
+      h('span', 'lbl', {}, ['Cómo salgo yo']),
+      opt('igual', 'Igual que los demás', () => set('igual')),
+      opt('destacado', 'Destacado (grande)', () => set('destacado')),
+      opt('esquina:tl', 'En esquina ↖', () => set('esquina', 'tl')),
+      opt('esquina:tr', 'En esquina ↗', () => set('esquina', 'tr')),
+      opt('esquina:bl', 'En esquina ↙', () => set('esquina', 'bl')),
+      opt('esquina:br', 'En esquina ↘', () => set('esquina', 'br'))
+    ])
+  }
+  const MODE: Record<string, string> = {
+    igual: '',
+    destacado: 'destacado',
+    'esquina:tl': '↖',
+    'esquina:tr': '↗',
+    'esquina:bl': '↙',
+    'esquina:br': '↘'
   }
   const el = h('div', 'peoplerow ui')
   let key = ''
@@ -532,49 +674,77 @@ export function createPeopleRow(ctx: Ctx) {
     update(s: GameState): void {
       // la cámara del público aparece si está calibrada
       const people: SlotId[] = ['host', ...activeContestants(s), ...(hasPublico(s) ? (['publico'] as SlotId[]) : [])]
-      const k = JSON.stringify([s.camsScene.on, s.camsScene.preset, s.camsScene.hostMode, s.camsScene.corner, s.camsScene.template, s.camsScene.plano, s.camsScene.camsPlano, s.lowerThird.visible, s.scene, people, s.host.name, s.contestants.map((c) => c.name)])
+      const live = hasLiveGame(s)
+      const k = JSON.stringify([
+        s.camsScene.on,
+        s.camsScene.preset,
+        s.camsScene.hostMode,
+        s.camsScene.corner,
+        s.camsScene.template,
+        s.camsScene.camsPlano,
+        s.lowerThird.visible,
+        s.scene,
+        live,
+        people,
+        s.host.name,
+        s.contestants.map((c) => c.name)
+      ])
       if (k === key) return
       key = k
-      const chipOf = (on: boolean, label: string, title: string, run: () => void) => {
-        const chip = h('button', `pchip${on ? ' on' : ''}`, {}, [h('span', `sw${on ? ' on' : ''}`, { pointerEvents: 'none' }), label])
-        chip.setAttribute('aria-pressed', String(on))
-        chip.title = title
-        chip.onclick = run
-        return chip
+      const plano = currentPlano(s)
+      const chip = (on: boolean, label: (Node | string)[], title: string, run: () => void, cls = '') => {
+        const c = h('button', `pchip${on ? ' on' : ''}${cls ? ' ' + cls : ''}`, {}, [h('span', `sw${on ? ' on' : ''}`, { pointerEvents: 'none' }), ...label])
+        c.setAttribute('aria-pressed', String(on))
+        c.title = title
+        c.onclick = run
+        return c
       }
-      const row1 = h('div', 'prow')
-      const row2 = h('div', 'prow')
-      el.replaceChildren(row1, row2)
-      row2.append(
-        h('span', 'lbl', { flex: 'none', width: 74 }, ['Plano']),
-        // el plano es el de la escena en el aire: Cámaras (F2) tiene el suyo; el resto, el de Juego
-        ...(s.scene === 'camaras'
-          ? CAMS_PLANOS.map((pl) => btn(pl.label, () => ctx.send({ type: 'camsSet', patch: { camsPlano: pl.id } }), `b sm ghost${s.camsScene.camsPlano === pl.id ? ' on' : ''}`, pl.key))
-          : PLANOS.map((pl) => btn(pl.label, () => ctx.send({ type: 'camsSet', patch: { plano: pl.id } }), `b sm ghost${s.camsScene.plano === pl.id ? ' on' : ''}`, pl.key))),
-        h('span', 'mut', { fontSize: 11, flex: 'none' }, [s.scene === 'camaras' ? 'de la escena Cámaras' : 'de la escena Juego']),
-        chipOf(s.lowerThird.visible, 'Rótulo inferior', 'Mostrar u ocultar el texto de abajo del plató', () => ctx.send({ type: 'setLowerThird', patch: { visible: !ctx.state.lowerThird.visible } })),
-        h('span', 'spacer'),
-        ...([
-          ['yo', 'Solo yo', 'F6'],
-          ['turno', 'El del turno', 'F7'],
-          ['todos', 'Todos', 'F8']
-        ] as const).map(([v, t, key2]) => btn(t, () => ctx.send({ type: 'camsPreset', preset: v }), `b sm ghost${s.camsScene.preset === v ? ' on' : ''}`, key2))
-      )
-      row1.append(
-        h('span', 'lbl', { flex: 'none', width: 74 }, ['Quién sale']),
+      const mode = MODE[s.camsScene.hostMode === 'esquina' ? `esquina:${s.camsScene.corner}` : s.camsScene.hostMode]
+      el.replaceChildren(
+        // quién sale
         ...people.map((slot) => {
           const on = !!s.camsScene.on[slot]
-          const name = slot === 'host' ? `${s.host.name} (yo)` : slot === 'publico' ? 'Público' : s.contestants.find((c) => c.id === slot)?.name ?? slot
-          const chip = h('button', `pchip${on ? ' on' : ''}`, {}, [h('span', `sw${on ? ' on' : ''}`, { pointerEvents: 'none' }), name])
-          chip.setAttribute('aria-pressed', String(on))
-          chip.title = on ? `Quitar a ${name} del plató` : `Sacar a ${name} en el plató`
-          chip.onclick = () => ctx.send({ type: 'camsToggle', slot })
-          return chip
+          const name = slot === 'host' ? s.host.name : slot === 'publico' ? 'Público' : (s.contestants.find((c) => c.id === slot)?.name ?? slot)
+          if (slot !== 'host') return chip(on, [name], on ? `Quitar a ${name} del plató` : `Sacar a ${name} en el plató`, () => ctx.send({ type: 'camsToggle', slot }))
+          const caret = h('span', 'pcaret', {}, [mode ? h('span', 'pmode', {}, [mode]) : '', icon(ICONS.caret, 14, '#c9c9d0')])
+          caret.title = 'Cómo salgo yo: igual, destacado o en una esquina'
+          caret.onclick = hostMenu
+          return chip(on, [name, caret], `Yo (${name}): ${on ? 'salgo' : 'no salgo'} en el plató · ▾ para elegir cómo`, () => ctx.send({ type: 'camsToggle', slot }), 'host')
         }),
-        hostSelect(s),
-        ...(s.camsScene.template && s.scene === 'camaras' ? [h('span', 'nm warn', { flex: 'none' }, ['Plantilla fija'])] : [])
+        ...(s.camsScene.template && s.scene === 'camaras' ? [h('span', 'nm warn', { flex: 'none' }, ['Plantilla fija'])] : []),
+        h('span', 'psep'),
+        // plano: un solo selector (Ctrl+F1..F4)
+        h(
+          'div',
+          'seg pseg',
+          {},
+          PLANOS.map((pl) => {
+            const b = h('button', plano === pl.id ? 'on' : '', {}, [pl.short])
+            b.title = `${pl.label} (${pl.key})${pl.id === 'juego' && !live ? ' · no hay juego en el aire' : pl.id === 'datos' ? ' · datos del juego activo (o el marcador)' : ''}`
+            b.disabled = pl.id === 'juego' && !live
+            b.onclick = () => ctx.send({ type: 'setPlano', plano: pl.id })
+            return b
+          })
+        ),
+        chip(s.lowerThird.visible, ['Rótulo'], 'Mostrar u ocultar el rótulo inferior del plató', () =>
+          ctx.send({
+            type: 'setLowerThird',
+            patch: { visible: !ctx.state.lowerThird.visible }
+          })
+        ),
+        h('span', 'spacer'),
+        ...(
+          [
+            ['yo', 'Solo yo', 'F6'],
+            ['turno', 'Turno', 'F7'],
+            ['todos', 'Todos', 'F8']
+          ] as const
+        ).map(([v, t, key2]) => {
+          const b = btn(t, () => ctx.send({ type: 'camsPreset', preset: v }), `b sm ghost${s.camsScene.preset === v ? ' on' : ''}`, key2)
+          b.title = v === 'yo' ? 'Solo salgo yo' : v === 'turno' ? 'Solo el del turno' : 'Todos los concursantes'
+          return b
+        })
       )
-      void chipOf
     }
   }
 }
