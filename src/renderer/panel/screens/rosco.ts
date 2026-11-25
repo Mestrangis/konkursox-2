@@ -532,5 +532,16 @@ export function createRoscoScreen(ctx: Ctx): Screen {
     return true
   }
 
-  return { el, update, onKey }
+  return {
+    el,
+    update,
+    onKey,
+    goInfo: (s: GameState) => {
+      const ro = s.rosco
+      const live = ro.active && !ro.finished && ro.players.length > 0
+      if (!live) return { label: 'Empezar el rosco', after: 'Se prepara en el panel (roscos y concursantes)', enabled: !!goRun }
+      if (waitRun) return { label: 'Pasar turno', after: 'Su reloj arranca al pulsar', enabled: true }
+      return { label: 'Rosco en juego', after: '', enabled: false }
+    }
+  }
 }

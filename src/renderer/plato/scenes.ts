@@ -11,19 +11,8 @@ import { buildFinalScene, finalKey } from './showScenes'
 import { buildQuizScene, quizSceneKey, turnSlots } from './quizScenes'
 import { buildRoscoScene, roscoKey } from './roscoScene'
 import { buildPlanoScene, planoKey } from './planoScene'
-import {
-  camFrame,
-  emblem,
-  h,
-  infoBox,
-  lowerThird,
-  namePlate,
-  teamHeader,
-  teamScore,
-  versus,
-  type CamFrameEl,
-  type NamePlateEl
-} from '../ds/components'
+import { buildSalonScene, salonKey } from './salonScene'
+import { camFrame, emblem, h, infoBox, lowerThird, namePlate, teamHeader, teamScore, versus, type CamFrameEl, type NamePlateEl } from '../ds/components'
 
 export interface Scene {
   key: string
@@ -47,7 +36,7 @@ export function viewState(s: GameState): GameState {
   return { ...s, quiz: { ...s.quiz, current: s.quiz.slots[s.liveGame] ?? null } }
 }
 
-type Kind = 'cover' | 'cams' | 'marcador' | 'final' | 'rosco' | 'quiz' | 'media' | 'plano'
+type Kind = 'cover' | 'cams' | 'marcador' | 'final' | 'rosco' | 'quiz' | 'media' | 'plano' | 'salon'
 
 /** Qué pinta el plató según la escena en el aire. */
 function kindOf(s: GameState): Kind {
@@ -66,6 +55,11 @@ function kindOf(s: GameState): Kind {
     default: {
       // plano "Cámaras + datos" o "Cámaras limpias" (cualquier juego)
       if (activePlano(s)) return 'plano'
+      // plano Sin cámaras (modo salón): el juego sin marcos, más grande
+      if (s.camsScene.noCam && !(s.liveGame === 'escalera' && s.quiz.ladder.showResult && s.quiz.ladder.outcome)) {
+        if (s.liveGame === 'rosco') return s.rosco.players.length ? 'salon' : 'cover'
+        return s.quiz.current ? 'salon' : 'cover'
+      }
       if (s.liveGame === 'rosco') return s.rosco.players.length ? 'rosco' : 'cover'
       if (s.liveGame === 'escalera' && s.quiz.ladder.showResult && s.quiz.ladder.outcome) return 'quiz'
       return s.quiz.current ? 'quiz' : 'cover'
@@ -88,6 +82,8 @@ export function sceneKey(s0: GameState): string {
       return mediaKey(s)
     case 'plano':
       return planoKey(s)
+    case 'salon':
+      return salonKey(s)
     case 'quiz':
       return quizSceneKey(s)
     default:
@@ -124,13 +120,10 @@ function coverScene(): HTMLDivElement {
       right: 0,
       top: 539,
       height: 1,
-      background:
-        'linear-gradient(90deg, transparent 2%, rgba(214, 186, 120, 0.6) 14%, transparent 19%, transparent 81%, rgba(214, 186, 120, 0.6) 86%, transparent 98%)'
+      background: 'linear-gradient(90deg, transparent 2%, rgba(214, 186, 120, 0.6) 14%, transparent 19%, transparent 81%, rgba(214, 186, 120, 0.6) 86%, transparent 98%)'
     }),
     h('div', 'k-abs', { left: 0, right: 0, top: 404, display: 'flex', justifyContent: 'center' }, [emblem(44)]),
-    h('div', 'k-abs', { left: 0, right: 0, top: 470, display: 'flex', justifyContent: 'center' }, [
-      h('div', 'k-logo k-logo--hero', { fontSize: 132, lineHeight: '140px' }, ['KONKURSOX'])
-    ]),
+    h('div', 'k-abs', { left: 0, right: 0, top: 470, display: 'flex', justifyContent: 'center' }, [h('div', 'k-logo k-logo--hero', { fontSize: 132, lineHeight: '140px' }, ['KONKURSOX'])]),
     h('div', 'k-abs', {
       left: '50%',
       top: 646,
@@ -164,6 +157,8 @@ export function buildScene(s0: GameState): Scene {
       return buildMediaScene(s)
     case 'plano':
       return wrap(buildPlanoScene(s))
+    case 'salon':
+      return wrap(buildSalonScene(s))
     default:
       return wrap(buildMarcador(s))
   }

@@ -7,6 +7,7 @@ import { autoReconnect, CaptureFeed } from '../common/feed'
 import { buildScene, drawFrames, sceneKey, type Scene } from './scenes'
 import { applyTheme } from '../common/theme'
 import { createEffects } from './effects'
+import QRCode from 'qrcode'
 
 const stageEl = document.getElementById('stage') as HTMLDivElement
 
@@ -21,6 +22,22 @@ window.addEventListener('resize', fit)
 fit()
 
 let state: GameState
+
+// QR del mando en la esquina de la cabecera (para emparejar desde el sofá)
+const qr = document.createElement('div')
+qr.className = 'k-qr'
+qr.innerHTML = '<img alt=""><span>Mando · escanea con el móvil</span>'
+let qrLink = ''
+function paintQr(s: GameState): void {
+  const link = s.runtime.remote.link
+  const show = !!s.plato.showQr && !!link && s.scene === 'cabecera'
+  qr.style.display = show ? '' : 'none'
+  if (show && link !== qrLink) {
+    qrLink = link!
+    void QRCode.toDataURL(link!, { margin: 1, width: 400, color: { dark: '#0a0f1c', light: '#ffffff' } }).then((u) => ((qr.querySelector('img') as HTMLImageElement).src = u))
+  }
+  if (qr.parentElement !== stageEl || stageEl.lastElementChild !== qr) stageEl.append(qr)
+}
 const effects = createEffects(stageEl)
 let scene: Scene | null = null
 let epoch = -1
@@ -37,6 +54,7 @@ function render(s: GameState): void {
   const prev = state
   state = s
   applyTheme(s.plato.theme)
+  paintQr(s)
   queueMicrotask(() => effects.update(s))
   const key = sceneKey(s)
   if (!scene || scene.key !== key) {

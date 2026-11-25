@@ -844,7 +844,24 @@ export function createQuizScreen(ctx: Ctx, game: Exclude<QuizGameId, 'estimacion
     return true
   }
 
-  return { el, update, onKey }
+  return {
+    el,
+    update,
+    onKey,
+    goInfo: (s: GameState) => {
+      const st = nextStep(s)
+      return { label: st.label, after: st.after, enabled: !!st.run }
+    },
+    remoteLoad: (ref: string, id: string) => {
+      const pick = (bank: { preguntas: Question[] }) => {
+        const q = bank.preguntas.find((x) => x.id === id)
+        if (q) load(q, ref)
+      }
+      const b = ctx.lib.peek(ref)
+      if (b) pick(b)
+      else void ctx.lib.get(ref).then(pick)
+    }
+  }
 }
 
 export type { Target }

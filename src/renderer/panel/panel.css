@@ -2253,3 +2253,30 @@ input[type='range'] {
   font-size: 24px;
   padding: 0 10px;
 }
+
+/* botón del mando en la barra de arriba */
+.mandob {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  height: 32px;
+  padding: 0 12px;
+  border-radius: 16px;
+  border: 1px solid #2f2f35;
+  background: #1d1d21;
+  color: #c9c9d0;
+  font: 600 12.5px 'Inter', sans-serif;
+  cursor: pointer;
+  flex: none;
+}
+.mandob.on {
+  border-color: #2b6e4f;
+  background: #16261f;
+  color: #fff;
+}
+.mdot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #55555d;
+}

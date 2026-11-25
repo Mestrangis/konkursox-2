@@ -20,6 +20,10 @@ export interface Screen {
   shown?(): void
   /** en cada fotograma de la captura (vistas previas de cámara) */
   frame?(s: GameState): void
+  /** mando: qué dice el botón principal de este juego */
+  goInfo?(s: GameState): { label: string; after: string; enabled: boolean }
+  /** mando: cargar una pregunta concreta de un banco */
+  remoteLoad?(ref: string, id: string): void
 }
 
 export interface Ctx {

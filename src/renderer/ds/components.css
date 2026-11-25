@@ -1220,3 +1220,123 @@
 .k-camcap {
   box-sizing: border-box;
 }
+
+/* QR del mando en la cabecera */
+.k-qr {
+  position: absolute;
+  right: 48px;
+  bottom: 48px;
+  z-index: 60;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 14px 12px;
+  border-radius: 14px;
+  background: var(--k-panel-fill);
+  box-shadow: 0 0 0 1px var(--k-gold-600), 0 18px 40px rgba(0, 0, 0, 0.5);
+}
+.k-qr img {
+  width: 200px;
+  height: 200px;
+  border-radius: 6px;
+  background: #fff;
+}
+.k-qr span {
+  font: 600 18px var(--k-font-ui);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--k-gold-300);
+}
+
+/* ---------------------------------------------------------------- plano Sin cámaras (modo salón) */
+.k-salon .k-answer {
+  font-size: 46px;
+}
+.k-salon .k-opt--sino .k-sino {
+  font-size: 104px;
+}
+.k-salon .k-question {
+  line-height: 1.12;
+}
+.k-salon .k-quote {
+  line-height: 1.2;
+}
+.k-salon-plate .k-score {
+  font-size: 44px;
+  min-width: 90px !important;
+}
+.k-salon-plate .k-chip {
+  display: none;
+}
+.k-salon-plate .k-score {
+  margin-left: auto !important;
+}
+.k-salon-plate .k-name {
+  letter-spacing: 0.05em;
+}
+.k-salon-plate--chip .k-chip {
+  display: inline-flex;
+  transform: scale(1.3);
+}
+.k-salon-plate--chip .k-score {
+  margin-left: 40px !important;
+}
+.k-salon-badge {
+  position: absolute;
+  min-width: 64px;
+  background-color: #0a1430;
+  z-index: 2;
+  height: 64px;
+  padding: 0 14px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  opacity: 0;
+  transform: scale(0.7);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+.k-salon-badge.is-on {
+  opacity: 1;
+  transform: none;
+}
+.k-salon-badge.k-chip--lock {
+  background: var(--k-lock);
+}
+.k-salon-badge.k-chip--ok {
+  background: var(--k-ok);
+}
+.k-salon-badge.k-chip--ko {
+  background: var(--k-ko);
+}
+.k-salon-badge--num {
+  font-size: 30px;
+}
+.k-salon-plate {
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+.k-salon-turn {
+  transform: translateY(-10px);
+  filter: drop-shadow(0 0 22px rgba(240, 210, 140, 0.75));
+}
+.k-salon-tag {
+  position: absolute;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--k-gold-300);
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.k-salon-tag.is-on {
+  opacity: 1;
+  transform: none;
+}
+.k-salon-rosco {
+  transition: opacity 0.35s ease;
+}

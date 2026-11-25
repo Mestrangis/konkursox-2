@@ -7,6 +7,7 @@ import { NUMPAD_LAYOUT, soundKeyLabel } from '../../shared/keys'
 import { EFFECTS, type EffectId } from '../../shared/effects'
 import { turnSlots } from '../plato/quizScenes'
 import { mediaNav } from './screens/media'
+import { openPairing } from './remote'
 import type { GameState, SlotId } from '../../shared/types'
 import { buildScene, drawFrames, sceneKey, type Scene } from '../plato/scenes'
 import { askConfirm, askText, btn, contextMenu, h, icon, ICONS, kbd, mmss, sw, type Ctx, type ScreenId } from './ui'
@@ -99,6 +100,10 @@ export function createAirBar(ctx: Ctx) {
   const d = new Date()
   date.textContent = `Programa del ${d.getDate()} ${months[d.getMonth()]}`
 
+  // mando (móvil): estado y emparejar
+  const mandoDot = h('span', 'mdot')
+  const mando = h('button', 'mandob', {}, [mandoDot, 'Mando'])
+  mando.onclick = () => void openPairing(ctx)
   const onAir = h('span', 'onair', {}, [h('span', 'dotlive'), 'AIRE'])
   onAir.title = 'Escena en el aire. Cambiar de escena no borra nada del juego.'
   const el = h('div', 'airbar ui', {}, [
@@ -110,6 +115,7 @@ export function createAirBar(ctx: Ctx) {
       scenes.map((x) => x.b)
     ),
     h('span', 'spacer'),
+    mando,
     thumb,
     h(
       'div',
@@ -134,6 +140,10 @@ export function createAirBar(ctx: Ctx) {
         x.b.setAttribute('aria-pressed', String(s.scene === x.id))
       }
       gameName.textContent = gameLabel(s.liveGame)
+      const r = s.runtime.remote
+      mandoDot.style.background = r.connected ? '#3ecf8e' : r.status === 'ready' ? '#e8a23a' : r.status === 'error' ? '#e5484d' : '#55555d'
+      mando.title = r.connected ? `Mando conectado${r.connected > 1 ? ` (${r.connected})` : ''}` : r.status === 'ready' ? 'Mando: listo para emparejar (QR)' : r.status === 'error' ? `Mando sin conexión: ${r.error ?? ''}` : r.status === 'off' ? 'Mando: falta la clave de Ably (Ajustes → Programa)' : 'Mando: conectando…'
+      mando.classList.toggle('on', r.connected > 0)
       const n = playedCount(s)
       played.textContent = `${n} ${n === 1 ? 'prueba' : 'pruebas'} · ${gameLabel(s.liveGame)}`
       played.title = `${date.textContent} · ${n} ${n === 1 ? 'prueba jugada' : 'pruebas jugadas'} · juego en el aire: ${gameLabel(s.liveGame)}`
@@ -720,8 +730,8 @@ export function createPeopleRow(ctx: Ctx) {
           {},
           PLANOS.map((pl) => {
             const b = h('button', plano === pl.id ? 'on' : '', {}, [pl.short])
-            b.title = `${pl.label} (${pl.key})${pl.id === 'juego' && !live ? ' · no hay juego en el aire' : pl.id === 'datos' ? ' · datos del juego activo (o el marcador)' : ''}`
-            b.disabled = pl.id === 'juego' && !live
+            b.title = `${pl.label} (${pl.key})${(pl.id === 'juego' || pl.id === 'sincam') && !live ? ' · no hay juego en el aire' : pl.id === 'datos' ? ' · datos del juego activo (o el marcador)' : ''}`
+            b.disabled = (pl.id === 'juego' || pl.id === 'sincam') && !live
             b.onclick = () => ctx.send({ type: 'setPlano', plano: pl.id })
             return b
           })

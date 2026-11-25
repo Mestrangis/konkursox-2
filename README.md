@@ -15,7 +15,7 @@ Arriba del panel, la barra **En el aire**: Cabecera (F1), Cámaras (F2), Juego (
 
 La escena **Juego** enseña el juego que tiene el indicador **AIRE** en la navegación. Se elige con el desplegable del botón Juego, con el botón **Poner en el aire** de cada pantalla de juego, o al dar su primer paso visible (por ejemplo "Mostrar pregunta" o "Empezar el rosco"). Cada juego guarda su propia pregunta en curso: trabajar en uno no toca los demás.
 
-**Plano** (un solo concepto, en la fila de realización y con Ctrl+F1..F4 siempre igual): **Juego** (solo si hay un juego en el aire), **Cámaras con marcos**, **Cámaras + datos** (cada cámara con un rótulo pegado abajo con sus datos del juego activo: rosco, escalera o puntos) y **Cámaras limpias**. Los planos de cámaras usan recuadros con la proporción de la cámara (16:9): 1 grande, 2 lado a lado, 3-4 en rejilla, 5 = 3 arriba y 2 abajo. F2 pone el último plano de cámaras usado; el botón Cámaras de la barra abre la pantalla Cámaras.
+**Plano** (un solo concepto, en la fila de realización y con Ctrl+F1..F5 siempre igual): **Juego** (solo si hay un juego en el aire), **Cámaras con marcos**, **Cámaras + datos** (cada cámara con un rótulo pegado abajo con sus datos del juego activo: rosco, escalera o puntos), **Cámaras limpias** y **Sin cámaras** (modo salón: el juego sin marcos de cámara, con la pregunta y las opciones más grandes y una fila de placas con los puntos y el turno resaltado; en el rosco, los dos roscos grandes con sus datos; en la escalera, la escalera de premios y la placa del concursante). En **Ajustes → Plató → Plano por defecto** eliges si el programa arranca en Juego o en Sin cámaras. Los planos de cámaras usan recuadros con la proporción de la cámara (16:9): 1 grande, 2 lado a lado, 3-4 en rejilla, 5 = 3 arriba y 2 abajo. F2 pone el último plano de cámaras usado; el botón Cámaras de la barra abre la pantalla Cámaras.
 
 **Fila de realización** (debajo de las escenas, siempre a la vista): un interruptor por persona (tú, cada concursante y Público si está calibrada); en tu interruptor, ▾ elige cómo sales: igual, destacado o en una esquina. Después, el Plano, el Rótulo inferior y los preajustes Solo yo F6 / Turno F7 / Todos F8.
 
@@ -76,12 +76,23 @@ En **Ajustes → Plató** eliges el tema: Clásico (marino y oro), Noche, Claro 
 | Test, Sí o no, Escalera, ¿Quién lo dijo? | A-D, O, R, I | Marcar, ocultar/mostrar opciones, rebote, imagen |
 | Juegos de preguntas y Estimación | T, Y | Temporizador: mostrar/ocultar, arrancar/pausar |
 | Escalera | 1-5, X | Comodines, plantarse |
-| Siempre | Ctrl+F1 / F2 / F3 / F4 | Plano: Juego / Cámaras con marcos / Cámaras + datos / Cámaras limpias |
+| Siempre | Ctrl+F1 / F2 / F3 / F4 / F5 | Plano: Juego / Cámaras con marcos / Cámaras + datos / Cámaras limpias / Sin cámaras |
 | Estimación | C, T | Mostrar cifras en el plató, temporizador |
 | Multimedia | Espacio | Play / pausa del vídeo |
 | Rosco | A, F, Espacio, P, Tab | Acierto, fallo, pasapalabra, reloj, cambiar turno |
 
 Ningún atajo se dispara mientras escribes en un campo de texto, salvo las teclas F (escenas y cámaras), que funcionan siempre.
+
+### El móvil como mando (modo salón)
+
+El móvil hace de mando con los mismos botones del panel: escenas, plano y quién sale, el botón grande del siguiente paso, marcar respuestas (también "todos responden"), segunda oportunidad / seguir igualmente / soborno, cambiar la correcta (pulsación larga en una opción), comodines y plantarse, la cifra de cada uno en Estimación (teclado), el rosco (acierto, fallo, pasapalabra, reloj, cambiar turno y corregir un fallo), elegir la pregunta del banco, sonidos, efectos, música y el marcador con deshacer. Ve la respuesta correcta (solo él). La preparación (biblioteca, editar, calibrar, ajustes) se queda en el portátil.
+
+- **Una vez**: en **Ajustes → Programa → Mando (móvil)** pega la clave de Ably. Se guarda solo en este ordenador (`%APPDATA%\KONKURSOX\mando.json`), nunca en el repo ni en el instalador.
+- **Emparejar**: botón **Mando** de la barra superior (o Ajustes → Programa) → escanea el QR con la cámara del móvil. El enlace lleva un permiso temporal solo para el canal de esa partida (no la clave); el programa lo renueva mientras está abierto. "Copiar enlace" para mandarlo por otro lado; "QR en la cabecera del plató" lo enseña en la Cabecera.
+- **Instalar**: en el móvil, menú del navegador → "Añadir a pantalla de inicio" (KONKURSOX Mando). Recuerda el emparejamiento: al abrirla con el programa abierto se reconecta sola. Mantiene la pantalla encendida y vibra en las acciones importantes.
+- **Desconectar mando** cambia el canal: el móvil queda fuera y hay que volver a escanear.
+- El programa es la única fuente de verdad: el móvil manda órdenes y recibe el estado. Si chocan una orden del móvil y algo que acabas de hacer en el panel, manda el panel.
+- La app del mando está en `mando/` y se publica sola en GitHub Pages (https://mestrangis.github.io/konkursox-2/) con cada cambio en `main`.
 
 ### Cámaras desde Discord
 

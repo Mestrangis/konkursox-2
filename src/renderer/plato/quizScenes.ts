@@ -134,7 +134,7 @@ export function optionBar(key: string, box: Box, c: number, sino: boolean, upper
 }
 
 /** Comodín del plató: óvalo dorado con su icono (se encoge si hay más de 3). */
-function lifelineEl(def: LifelineDef, w: number): HTMLDivElement {
+export function lifelineEl(def: LifelineDef, w: number): HTMLDivElement {
   const hgt = Math.round(w * (80 / 140))
   const inner = lifelineIcon(def, Math.round(hgt * 0.5), 'var(--k-gold-400)')
   const slash = svg('0 0 140 80', { width: w, height: hgt, class: 'k-life__slash' }, '<line x1="30" y1="70" x2="110" y2="10" style="stroke:var(--k-gold-400)" stroke-width="4"></line>')

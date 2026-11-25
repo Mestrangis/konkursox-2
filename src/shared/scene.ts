@@ -48,19 +48,22 @@ export interface CamsScene {
   template: LayoutId | null
   /** último plano de cámaras usado (F2 vuelve a él) */
   camsPlano: CamsPlano
+  /** escena Juego sin marcos de cámara (para el salón: todos en la sala) */
+  noCam?: boolean
 }
 
 /**
  * Plano: un solo concepto. "Juego" es la escena Juego; los otros tres son la escena Cámaras con
  * marcos, con los datos del juego activo o limpias. Ctrl+F1..F4 siempre en este orden.
  */
-export type Plano = 'juego' | 'marcos' | 'datos' | 'limpio'
-export type CamsPlano = Exclude<Plano, 'juego'>
+export type Plano = 'juego' | 'marcos' | 'datos' | 'limpio' | 'sincam'
+export type CamsPlano = Exclude<Plano, 'juego' | 'sincam'>
 export const PLANOS: { id: Plano; label: string; short: string; key: string }[] = [
   { id: 'juego', label: 'Juego', short: 'Juego', key: 'Ctrl F1' },
   { id: 'marcos', label: 'Cámaras con marcos', short: 'Marcos', key: 'Ctrl F2' },
   { id: 'datos', label: 'Cámaras + datos', short: '+ Datos', key: 'Ctrl F3' },
-  { id: 'limpio', label: 'Cámaras limpias', short: 'Limpias', key: 'Ctrl F4' }
+  { id: 'limpio', label: 'Cámaras limpias', short: 'Limpias', key: 'Ctrl F4' },
+  { id: 'sincam', label: 'Sin cámaras', short: 'Sin cámaras', key: 'Ctrl F5' }
 ]
 
 /** ¿Hay un juego en el aire con algo que enseñar? (sin él no se puede elegir el plano Juego) */
@@ -72,7 +75,7 @@ export function hasLiveGame(s: Pick<GameState, 'liveGame' | 'rosco' | 'quiz'>): 
 
 /** El plano que está en el aire (null si la escena en el aire es otra: cabecera, marcador...). */
 export function currentPlano(s: Pick<GameState, 'scene' | 'camsScene'>): Plano | null {
-  if (s.scene === 'juego') return 'juego'
+  if (s.scene === 'juego') return s.camsScene.noCam ? 'sincam' : 'juego'
   if (s.scene === 'camaras') return s.camsScene.camsPlano
   return null
 }
@@ -85,7 +88,11 @@ export function activePlano(s: Pick<GameState, 'scene' | 'camsScene'>): 'datos' 
 
 /** Poner un plano en el aire. */
 export function setPlano(s: GameState, plano: Plano): GameState {
-  if (plano === 'juego') return hasLiveGame(s) ? { ...s, scene: 'juego' } : s
+  // Juego y Sin cámaras son la escena Juego (con o sin marcos); solo si hay juego en el aire
+  if (plano === 'juego' || plano === 'sincam') {
+    const camsScene = { ...s.camsScene, noCam: plano === 'sincam' }
+    return hasLiveGame(s) ? { ...s, scene: 'juego', camsScene } : { ...s, camsScene }
+  }
   return { ...s, scene: 'camaras', camsScene: { ...s.camsScene, camsPlano: plano } }
 }
 

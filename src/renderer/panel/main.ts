@@ -9,6 +9,7 @@ import type { AudioLibrary, GameState } from '../../shared/types'
 import { autoReconnect, CaptureFeed } from '../common/feed'
 import { AudioEngine } from './audio'
 import { applyTheme } from '../common/theme'
+import { initRemote } from './remote'
 import { createCalibration } from './calibrate'
 import { createAirBar, createDock, createNav, createPeopleRow, goScene } from './chrome'
 import { createMediaScreen } from './screens/media'
@@ -93,6 +94,7 @@ try {
   /* sin almacenamiento */
 }
 
+const remote = initRemote({ ctx, screens, dock: { fire: (i) => dock.fire(i), fireEffect: (i) => dock.fireEffect(i) }, goScene: (id) => goScene(ctx, id) })
 const air = createAirBar(ctx)
 const people = createPeopleRow(ctx)
 const nav = createNav(ctx, (id) => go(id))
@@ -129,6 +131,7 @@ function render(s: GameState): void {
   state = s
   air.update(s)
   people.update(s)
+  remote.render(s)
   nav.update(s, current)
   dock.update(s)
   screens[current].update(s)
@@ -192,7 +195,7 @@ window.addEventListener('keydown', (e) => {
   const sc = SCENES.find((x) => x.key === k)
   if (sc && !e.ctrlKey && !e.altKey) goScene(ctx, sc.id)
   // plano: Ctrl+F1 Juego · F2 Cámaras con marcos · F3 Cámaras + datos · F4 Cámaras limpias
-  else if (e.ctrlKey && /^F[1-4]$/.test(k)) ctx.send({ type: 'setPlano', plano: PLANOS[Number(k[1]) - 1].id })
+  else if (e.ctrlKey && /^F[1-5]$/.test(k)) ctx.send({ type: 'setPlano', plano: PLANOS[Number(k[1]) - 1].id })
   else if (k === 'F6') ctx.send({ type: 'camsPreset', preset: 'yo' })
   else if (k === 'F7') ctx.send({ type: 'camsPreset', preset: 'turno' })
   else if (k === 'F8') ctx.send({ type: 'camsPreset', preset: 'todos' })

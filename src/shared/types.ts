@@ -64,6 +64,10 @@ export interface PlatoConfig {
   visible: boolean
   /** tema del plató (archivo de Documentos\KONKURSOX\temas sin .json) */
   theme: string
+  /** plano con el que empieza la escena Juego al abrir el programa (salón: sin cámaras) */
+  defaultPlano?: 'juego' | 'sincam'
+  /** enseñar el QR del mando en la cabecera del plató */
+  showQr?: boolean
 }
 
 export interface AudioConfig {
@@ -101,6 +105,8 @@ export interface RuntimeState {
   undo: Partial<Record<GameId, number>>
   /** lo que informa el plató del vídeo en pantalla */
   media: { duration: number; error: string | null }
+  /** mando (móvil): conexión y enlace de emparejamiento */
+  remote: { status: 'off' | 'connecting' | 'ready' | 'error'; connected: number; link: string | null; error?: string }
 }
 
 export interface GameState {
@@ -150,6 +156,7 @@ export type Action =
   | { type: 'setCaptureHealth'; who: 'plato' | 'panel'; health: CaptureHealth; error?: string }
   | { type: 'setUpdate'; status: UpdateStatus }
   | { type: 'restartCapture' }
+  | { type: 'setRemote'; patch: Partial<RuntimeState['remote']> }
   | QuizAction
   | RoscoAction
   | SceneAction

@@ -47,7 +47,8 @@ export function defaultState(): GameState {
       appVersion: '0.0.0',
       captureEpoch: 0,
       undo: {},
-      media: { duration: 0, error: null }
+      media: { duration: 0, error: null },
+      remote: { status: 'off', connected: 0, link: null }
     }
   }
 }
@@ -111,6 +112,8 @@ export function applyAction(s: GameState, a: Action): GameState {
         ...s,
         runtime: { ...s.runtime, capture: { ...s.runtime.capture, [a.who]: a.health, error: a.error ?? s.runtime.capture.error } }
       }
+    case 'setRemote':
+      return { ...s, runtime: { ...s.runtime, remote: { ...s.runtime.remote, ...a.patch } } }
     case 'restartCapture':
       return { ...s, runtime: { ...s.runtime, captureEpoch: s.runtime.captureEpoch + 1 } }
     case 'setUpdate':
@@ -165,7 +168,11 @@ export function hydrate(saved: unknown): GameState {
     scene: s.scene && ['cabecera', 'camaras', 'juego', 'marcador', 'final', 'multimedia'].includes(s.scene) ? s.scene : 'cabecera',
     liveGame: s.liveGame && ['test', 'sino', 'escalera', 'estimacion', 'quien', 'rosco'].includes(s.liveGame) ? s.liveGame : 'test',
     // la fila "quién sale" cambió en la 0.4.1: los estados anteriores empiezan con todos los concursantes
-    camsScene: s.camsScene?.rev === 2 ? { ...d.camsScene, ...s.camsScene, on: { ...d.camsScene.on, ...s.camsScene.on } } : { ...d.camsScene, transition: s.camsScene?.transition ?? d.camsScene.transition },
+    camsScene: {
+      ...(s.camsScene?.rev === 2 ? { ...d.camsScene, ...s.camsScene, on: { ...d.camsScene.on, ...s.camsScene.on } } : { ...d.camsScene, transition: s.camsScene?.transition ?? d.camsScene.transition }),
+      // al abrir el programa, la escena Juego empieza con el plano por defecto (salón: sin cámaras)
+      noCam: s.plato?.defaultPlano === 'sincam'
+    },
     media: { ...d.media, ...(s.media ?? {}), playing: false },
     quiz: hydrateQuiz(s.quiz, s.audio?.soundsRev === 2),
     rosco: hydrateRosco(s.rosco),

@@ -188,8 +188,8 @@ describe('plano: un solo concepto', () => {
   const conJuego = (): GameState =>
     run(defaultState(), { type: 'quizLoad', key: 'b::1', bankFile: 'b', question: { id: '1', tipo: 'test', enunciado: '¿?', opciones: ['a', 'b'], correcta: 0 }, now: 0, game: 'test' }, { type: 'setLiveGame', game: 'test' })
 
-  it('los cuatro planos en orden fijo (Ctrl+F1..F4)', () => {
-    expect(PLANOS.map((p) => p.id)).toEqual(['juego', 'marcos', 'datos', 'limpio'])
+  it('los planos en orden fijo (Ctrl+F1..F5)', () => {
+    expect(PLANOS.map((p) => p.id)).toEqual(['juego', 'marcos', 'datos', 'limpio', 'sincam'])
   })
 
   it('un plano de cámaras pone la escena Cámaras con ese plano', () => {

@@ -7,6 +7,7 @@ import { soundKeyLabel } from '../../../shared/keys'
 import { newId, playedCount, type Person } from '../../../shared/scene'
 import type { DisplayInfo, GameState } from '../../../shared/types'
 import { askConfirm, btn, editableArea, h, seg, sw, type Ctx, type Screen } from '../ui'
+import { openPairing } from '../remote'
 
 export function createSettingsScreen(ctx: Ctx): Screen {
   const el = h('div', 'screen')
@@ -188,6 +189,41 @@ export function createSettingsScreen(ctx: Ctx): Screen {
         return b
       })
     )
+  // mando (móvil): clave de Ably (se guarda solo en este ordenador), QR y desconectar
+  let remoteInfo: { hasKey: boolean; keyMasked: string; channel: string | null; url: string } | null = null
+  void window.konk.remoteInfo().then((r) => (remoteInfo = r))
+  const mandoCard = (s: GameState) => {
+    const key = h('input', 'inp', { flex: 1, minWidth: 0 })
+    key.type = 'password'
+    key.placeholder = remoteInfo?.hasKey ? `Guardada: ${remoteInfo.keyMasked} (escribe otra para cambiarla)` : 'Pega aquí la clave de Ably'
+    key.autocomplete = 'off'
+    const r = s.runtime.remote
+    return card(
+      'Mando (móvil)',
+      h('span', 'mut', { fontSize: 12 }, ['La clave solo se guarda en este ordenador (%APPDATA%\\KONKURSOX), nunca en el instalador.']),
+      row(
+        h('span', 'fl', {}, ['Clave de Ably']),
+        key,
+        btn('Guardar', async () => {
+          if (!key.value.trim()) return
+          await window.konk.remoteSetKey(key.value.trim())
+          remoteInfo = await window.konk.remoteInfo()
+          key.value = ''
+          ctx.toast('Clave guardada: conectando…')
+          build(ctx.state)
+        }, 'b sm acc')
+      ),
+      row(
+        h('span', '', { fontSize: 13 }, [r.connected ? `Mando conectado${r.connected > 1 ? ` (${r.connected})` : ''}` : r.status === 'ready' ? 'Listo para emparejar' : r.status === 'error' ? `Sin conexión: ${r.error ?? ''}` : r.status === 'off' ? 'Sin clave' : 'Conectando…']),
+        h('span', 'spacer'),
+        btn('Emparejar (QR)', () => void openPairing(ctx), 'b sm'),
+        btn('Desconectar mando', () => void window.konk.remoteDisconnect(), 'b sm ghost'),
+        btn('Reconectar', () => void window.konk.remoteReconnect(), 'b sm ghost')
+      ),
+      row(toggle('Enseñar el QR en la cabecera del plató', !!s.plato.showQr, () => send({ type: 'setPlato', patch: { showQr: !ctx.state.plato.showQr } })))
+    )
+  }
+  const send = ctx.send
   const toggle = (label: string, on: boolean, flip: () => void) => h('span', '', { display: 'flex', alignItems: 'center', gap: 10 }, [sw(on, flip, label), label])
 
   const area = editableArea(el, () => build(ctx.state))
@@ -211,6 +247,8 @@ export function createSettingsScreen(ctx: Ctx): Screen {
       s.host,
       s.show,
       s.runtime.update,
+      s.runtime.remote.status,
+      s.runtime.remote.connected,
       s.runtime.appVersion,
       ctx.audioLib,
       displays.length
@@ -395,6 +433,7 @@ export function createSettingsScreen(ctx: Ctx): Screen {
           alignItems: 'start'
         },
         [
+          T('programa', mandoCard(s)),
           T(
             'programa',
             card(
@@ -413,6 +452,21 @@ export function createSettingsScreen(ctx: Ctx): Screen {
             card(
               'Plató',
               row(h('span', 'fl', {}, ['Monitor']), disp),
+              row(
+                h('span', 'fl', {}, ['Plano por defecto']),
+                seg(
+                  [
+                    { v: 'juego', t: 'Juego (con cámaras)' },
+                    { v: 'sincam', t: 'Sin cámaras (salón)' }
+                  ],
+                  s.plato.defaultPlano ?? 'juego',
+                  (v) => {
+                    ctx.send({ type: 'setPlato', patch: { defaultPlano: v } })
+                    // se aplica ya y cada vez que abras el programa
+                    ctx.send({ type: 'camsSet', patch: { noCam: v === 'sincam' } })
+                  }
+                )
+              ),
               row(
                 toggle('En ventana (para pruebas)', s.plato.windowed, () =>
                   send({

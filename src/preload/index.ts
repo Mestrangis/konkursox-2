@@ -28,6 +28,15 @@ const api = {
   audioImport: (paths: string[], kind: 'musica' | 'efectos'): Promise<string[]> => ipcRenderer.invoke('audio:import', paths, kind),
   audioChoose: (kind: 'musica' | 'efectos'): Promise<string[]> => ipcRenderer.invoke('audio:choose', kind),
   themesList: (): Promise<{ id: string; nombre: string; descripcion: string }[]> => ipcRenderer.invoke('themes:list'),
+  remoteInfo: (): Promise<{ hasKey: boolean; keyMasked: string; channel: string | null; url: string }> => ipcRenderer.invoke('remote:info'),
+  remoteSetKey: (key: string): Promise<void> => ipcRenderer.invoke('remote:setKey', key),
+  remoteDisconnect: (): Promise<void> => ipcRenderer.invoke('remote:disconnect'),
+  remoteReconnect: (): Promise<void> => ipcRenderer.invoke('remote:reconnect'),
+  remotePublish: (snap: unknown): void => ipcRenderer.send('remote:publish', snap),
+  remoteBank: (data: unknown): void => ipcRenderer.send('remote:bank', data),
+  onRemoteCmd: (fn: (env: unknown) => void): void => {
+    ipcRenderer.on('remote:cmd', (_e, env) => fn(env))
+  },
   themeGet: (id: string): Promise<{ nombre: string; vars: Record<string, string> } | null> => ipcRenderer.invoke('themes:get', id),
   themesOpenDir: (): Promise<string> => ipcRenderer.invoke('themes:openDir'),
 

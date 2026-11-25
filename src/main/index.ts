@@ -8,6 +8,7 @@ import type { Bank } from '../shared/questions'
 import { installDisplayMediaHandler, listWindowSources, resolveSource } from './capture'
 import { audioDir, audioLibrary, handleMediaProtocol, importAudio, registerMediaScheme, setAudioDir } from './media'
 import { ensureThemes, listThemes, readTheme, themesDir } from './themes'
+import { disconnectRemote, publishBank, publishState, remoteInfo, setRemoteKey, startRemote, stopRemote } from './remote'
 import { dispatch, flushSave, getState, initStore, onStateChange } from './store'
 import { checkForUpdates, initUpdater, installUpdate } from './updater'
 import { createPanel, createPlato, getPanel, listDisplays, placePlato, showPlato } from './windows'
@@ -44,6 +45,8 @@ if (!app.requestSingleInstanceLock()) {
     }
     installDisplayMediaHandler()
     registerIpc()
+    // mando (móvil) por Ably: solo si hay clave en la configuración local
+    void startRemote()
     // YouTube no deja reproducir incrustado sin "Referer" (desde file:// no hay ninguno)
     session.defaultSession.webRequest.onBeforeSendHeaders(
       { urls: ['*://*.youtube.com/*', '*://*.youtube-nocookie.com/*', '*://*.googlevideo.com/*', '*://*.ytimg.com/*'] },
@@ -80,7 +83,10 @@ if (!app.requestSingleInstanceLock()) {
     initUpdater()
   })
 
-  app.on('before-quit', flushSave)
+  app.on('before-quit', () => {
+    stopRemote()
+    flushSave()
+  })
   app.on('window-all-closed', () => app.quit())
 }
 
@@ -106,6 +112,12 @@ function registerIpc(): void {
     if (!res.canceled && res.filePaths[0]) setAudioDir(res.filePaths[0])
     return audioLibrary()
   })
+  ipcMain.handle('remote:info', () => remoteInfo())
+  ipcMain.handle('remote:setKey', (_e, key: string) => setRemoteKey(key))
+  ipcMain.handle('remote:disconnect', () => disconnectRemote())
+  ipcMain.handle('remote:reconnect', () => startRemote())
+  ipcMain.on('remote:publish', (_e, snap: unknown) => publishState(snap))
+  ipcMain.on('remote:bank', (_e, data: unknown) => publishBank(data))
   ipcMain.handle('themes:list', () => listThemes())
   ipcMain.handle('themes:get', (_e, id: string) => readTheme(id))
   ipcMain.handle('themes:openDir', () => {
