@@ -4,7 +4,7 @@ import { EFFECTS } from './effects'
 import { formatNumber } from './games'
 import { targetMembers } from './order'
 import { lastMiss, sameTarget, targetKey, turnTargets, type Target } from './quiz'
-import { remainingMs, roscoStats, roscoWaiting } from './rosco'
+import { roscoStats, roscoWaiting } from './rosco'
 import { activeContestants, currentPlano, currentTurn, hasLiveGame, type GameId, type Plano, type QuizGameId, type SceneId } from './scene'
 import type { Action, GameState, SlotId } from './types'
 
@@ -223,6 +223,24 @@ const nameOfTarget = (s: GameState, t: Target | null | undefined): string => {
 
 const LETTER_CODE: Record<string, string> = { pend: 'p', ok: 'o', ko: 'k', pasa: 's' }
 
+/**
+ * Lo que decide si hay que volver a mandar el estado. Fuera quedan la hora, la revisión y la posición
+ * de la música mientras suena: los relojes (rosco, temporizador, música) los cuenta el mando en local
+ * a partir de inicio/pausa/tiempo restante, así que no generan mensajes mientras corren.
+ */
+export function snapKey(snap: Snap): string {
+  const { now: _now, rev: _rev, music, ...rest } = snap
+  void _now
+  void _rev
+  return JSON.stringify({ ...rest, music: music.playing ? { ...music, current: 0 } : music })
+}
+
+/** Tiempo que le queda a un reloj (endsAt si corre, remainingMs si está parado). */
+export function clockLeft(c: { endsAt: number | null; remainingMs: number | null }, now: number, totalMs = 0): number {
+  if (c.endsAt !== null) return Math.max(0, c.endsAt - now)
+  return c.remainingMs ?? totalMs
+}
+
 /** Instantánea compacta del estado para el mando (incluye la respuesta correcta: solo la ve el presentador). */
 export function buildSnapshot(s: GameState, x: SnapExtras, now = Date.now()): Snap {
   const turn = currentTurn(s)
@@ -235,7 +253,7 @@ export function buildSnapshot(s: GameState, x: SnapExtras, now = Date.now()): Sn
       })
   const people: Snap['people'] = (['host', ...activeContestants(s), ...(s.cameras.rects.publico ? ['publico'] : [])] as SlotId[]).map((slot) => ({
     slot,
-    name: slot === 'host' ? s.host.name : slot === 'publico' ? 'Público' : s.contestants.find((c) => c.id === slot)?.name ?? slot,
+    name: slot === 'host' ? s.host.name : slot === 'publico' ? 'Público' : (s.contestants.find((c) => c.id === slot)?.name ?? slot),
     on: !!s.camsScene.on[slot]
   }))
   return {
@@ -261,11 +279,11 @@ export function buildSnapshot(s: GameState, x: SnapExtras, now = Date.now()): Sn
     music: x.music,
     fx: x.fx,
     bank: x.bank,
-    game: snapGame(s, now)
+    game: snapGame(s)
   }
 }
 
-function snapGame(s: GameState, now: number): SnapGame | null {
+function snapGame(s: GameState): SnapGame | null {
   const g = s.liveGame
   if (g === 'rosco') {
     const r = s.rosco
@@ -285,7 +303,8 @@ function snapGame(s: GameState, now: number): SnapGame | null {
           ok: st.ok,
           ko: st.ko,
           pend: st.pending,
-          remainingMs: remainingMs(pl, now),
+          // el reloj no se manda en cada tic: con endsAt el mando cuenta en local
+          remainingMs: pl.remainingMs,
           endsAt: pl.endsAt,
           done: pl.done,
           timeUp: !!pl.timeUp,
@@ -339,7 +358,16 @@ function snapGame(s: GameState, now: number): SnapGame | null {
     target: nameOfTarget(s, cur?.target ?? s.quiz.turn),
     reboundTo: cur?.reboundTo ? nameOfTarget(s, cur.reboundTo) : null,
     miss: miss ? { name: nameOfTarget(s, miss.target), pick: miss.pick } : null,
-    answers: cur ? Object.entries(cur.answers).map(([k, pick]) => ({ key: k, name: nameOfTarget(s, turnTargets(s).find((t) => targetKey(t) === k)), pick })) : [],
+    answers: cur
+      ? Object.entries(cur.answers).map(([k, pick]) => ({
+          key: k,
+          name: nameOfTarget(
+            s,
+            turnTargets(s).find((t) => targetKey(t) === k)
+          ),
+          pick
+        }))
+      : [],
     ladder:
       g === 'escalera' && l.active
         ? {

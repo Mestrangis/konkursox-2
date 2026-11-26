@@ -91,6 +91,8 @@ El móvil hace de mando con los mismos botones del panel: escenas, plano y quié
 - **Emparejar**: botón **Mando** de la barra superior (o Ajustes → Programa) → escanea el QR con la cámara del móvil. El enlace lleva un permiso temporal solo para el canal de esa partida (no la clave); el programa lo renueva mientras está abierto. "Copiar enlace" para mandarlo por otro lado; "QR en la cabecera del plató" lo enseña en la Cabecera.
 - **Instalar**: en el móvil, menú del navegador → "Añadir a pantalla de inicio" (KONKURSOX Mando). Recuerda el emparejamiento: al abrirla con el programa abierto se reconecta sola. Mantiene la pantalla encendida y vibra en las acciones importantes.
 - **Desconectar mando** cambia el canal: el móvil queda fuera y hay que volver a escanear.
+- **Mantener pulsado 1 segundo** (la barra se rellena en el botón) para lo que no se deshace fácil: plantarse, terminar la escalera, desconectar el mando (tocando el estado de la conexión, arriba) y cambiar de juego en el aire con una pregunta a medias.
+- Los relojes (rosco, temporizador, música) no se envían en cada tic: el programa manda inicio, pausa y tiempo restante, y el móvil cuenta en local. Los cambios muy seguidos se juntan (como mucho unos 3 envíos por segundo). En una partida normal son unos 15 mensajes por minuto, uno por paso.
 - El programa es la única fuente de verdad: el móvil manda órdenes y recibe el estado. Si chocan una orden del móvil y algo que acabas de hacer en el panel, manda el panel.
 - La app del mando está en `mando/` y se publica sola en GitHub Pages (https://mestrangis.github.io/konkursox-2/) con cada cambio en `main`.
 

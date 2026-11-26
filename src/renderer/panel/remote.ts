@@ -1,7 +1,7 @@
 // Mando (móvil): el panel ejecuta sus comandos con la misma lógica que el teclado y le publica el estado.
 import QRCode from 'qrcode'
 import { isPlayable } from '../../shared/questions'
-import { acceptRemote, buildSnapshot, cmdToActions, type RemoteCmd, type RemoteEnvelope } from '../../shared/remote'
+import { acceptRemote, buildSnapshot, cmdToActions, snapKey, type RemoteCmd, type RemoteEnvelope } from '../../shared/remote'
 import type { GameId, SceneId } from '../../shared/scene'
 import type { GameState } from '../../shared/types'
 import { bankFor, orderedQuestions, setBankFor } from './screens/common'
@@ -17,7 +17,16 @@ interface Deps {
 
 /** Evento de teclado falso para reutilizar las teclas de cada pantalla. */
 function fakeKey(key: string): KeyboardEvent {
-  return { key, code: key === ' ' ? 'Space' : key === 'Tab' ? 'Tab' : '', ctrlKey: false, altKey: false, metaKey: false, shiftKey: false, preventDefault() {}, target: document.body } as unknown as KeyboardEvent
+  return {
+    key,
+    code: key === ' ' ? 'Space' : key === 'Tab' ? 'Tab' : '',
+    ctrlKey: false,
+    altKey: false,
+    metaKey: false,
+    shiftKey: false,
+    preventDefault() {},
+    target: document.body
+  } as unknown as KeyboardEvent
 }
 
 export function initRemote(d: Deps): { render(s: GameState): void; openDialog(): void } {
@@ -40,38 +49,61 @@ export function initRemote(d: Deps): { render(s: GameState): void; openDialog():
     if (g !== 'rosco') {
       const ref = g === 'escalera' ? null : bankFor(ctx, tipoOf(g))
       const info = ctx.lib.info(ref)
-      const qs = ref ? ctx.lib.peek(ref)?.preguntas ?? [] : []
+      const qs = ref ? (ctx.lib.peek(ref)?.preguntas ?? []) : []
       const cur = s.quiz.slots[g]
-      bank = { ref, name: g === 'escalera' ? 'Escalera' : info?.nombre ?? '', index: cur ? qs.findIndex((q) => `${ref}::${q.id}` === cur.key) : -1, count: g === 'escalera' ? s.quiz.ladder.plan.length : qs.length }
+      bank = {
+        ref,
+        name: g === 'escalera' ? 'Escalera' : (info?.nombre ?? ''),
+        index: cur ? qs.findIndex((q) => `${ref}::${q.id}` === cur.key) : -1,
+        count: g === 'escalera' ? s.quiz.ladder.plan.length : qs.length
+      }
     }
     return {
       rev,
       go,
-      music: { track: ctx.audio.current ? ctx.audio.current.replace(/\.[^.]+$/, '') : null, playing: ctx.audio.playing, current: Math.round(pos.current), duration: Math.round(pos.duration), volume: s.audio.musicVolume },
+      music: {
+        track: ctx.audio.current ? ctx.audio.current.replace(/\.[^.]+$/, '') : null,
+        playing: ctx.audio.playing,
+        current: Math.round(pos.current),
+        duration: Math.round(pos.duration),
+        volume: s.audio.musicVolume
+      },
       fx: s.audio.fx.map((f) => f.label),
       bank
     }
   }
 
+  // la música, mientras suena, solo se reenvía si salta (otra posición): el mando la cuenta en local
+  let musicAnchor = 0
+  let lastPubAt = 0
   /** Publica el estado si ha cambiado (o siempre, si se pide). Solo con un mando conectado. */
   function publish(force = false): void {
     const s = ctx.state
     if (!s || s.runtime.remote.status !== 'ready') return
     if (!force && s.runtime.remote.connected < 1) return
     const snap = buildSnapshot(s, extras(s))
-    const k = JSON.stringify({ ...snap, now: 0 })
-    if (!force && k === lastSent) return
+    const k = snapKey(snap)
+    const anchor = snap.music.playing ? Date.now() - ctx.audio.position.current * 1000 : 0
+    const jumped = snap.music.playing && Math.abs(anchor - musicAnchor) > 2000
+    if (!force && k === lastSent && !jumped) return
     lastSent = k
+    musicAnchor = anchor
+    lastPubAt = Date.now()
     window.konk.remotePublish(snap)
   }
+  // los cambios muy seguidos se juntan: como mucho un envío cada 300 ms (unos 3 por segundo)
+  const MIN_GAP = 300
   const schedule = () => {
     if (timer) return
-    timer = window.setTimeout(() => {
-      timer = 0
-      publish()
-    }, 150)
+    timer = window.setTimeout(
+      () => {
+        timer = 0
+        publish()
+      },
+      Math.max(120, MIN_GAP - (Date.now() - lastPubAt))
+    )
   }
-  // latido: música y relojes se mantienen al día aunque no cambie nada más
+  // comprobación periódica (barata: no manda nada si no ha cambiado; detecta saltos de la música)
   setInterval(() => publish(), 5000)
   const prevOnChange = ctx.audio.onChange
   ctx.audio.onChange = () => {
@@ -140,7 +172,7 @@ export function initRemote(d: Deps): { render(s: GameState): void; openDialog():
         key(String(cmd.i + 1))
         break
       case 'walk':
-        // en el mando no hay confirmación: el botón ya dice con cuánto se planta
+        // la confirmación se hace en el mando (mantener pulsado 1 s)
         ctx.send({ type: 'ladderWalk', game: 'escalera' })
         ctx.send({ type: 'setLiveGame', game: 'escalera', scene: true })
         ctx.cue('plantarse')
@@ -210,8 +242,23 @@ export async function openPairing(ctx: Ctx): Promise<void> {
     const s = ctx.state
     const r = s.runtime.remote
     status.replaceChildren(
-      h('span', '', { display: 'inline-block', width: 8, height: 8, borderRadius: '50%', marginRight: 8, background: r.connected ? '#3ecf8e' : r.status === 'ready' ? '#e8a23a' : r.status === 'error' ? '#e5484d' : '#55555d' }),
-      !info.hasKey ? 'Falta la clave de Ably (Ajustes → Programa)' : r.status === 'error' ? `Sin conexión: ${r.error ?? ''}` : r.connected ? `Mando conectado${r.connected > 1 ? ` (${r.connected})` : ''}` : r.status === 'ready' ? 'Listo: escanea el QR con el móvil' : 'Conectando…'
+      h('span', '', {
+        display: 'inline-block',
+        width: 8,
+        height: 8,
+        borderRadius: '50%',
+        marginRight: 8,
+        background: r.connected ? '#3ecf8e' : r.status === 'ready' ? '#e8a23a' : r.status === 'error' ? '#e5484d' : '#55555d'
+      }),
+      !info.hasKey
+        ? 'Falta la clave de Ably (Ajustes → Programa)'
+        : r.status === 'error'
+          ? `Sin conexión: ${r.error ?? ''}`
+          : r.connected
+            ? `Mando conectado${r.connected > 1 ? ` (${r.connected})` : ''}`
+            : r.status === 'ready'
+              ? 'Listo: escanea el QR con el móvil'
+              : 'Conectando…'
     )
     if (r.link && r.link !== lastLink) {
       lastLink = r.link
@@ -228,16 +275,24 @@ export async function openPairing(ctx: Ctx): Promise<void> {
       qrBox,
       status,
       h('div', '', { display: 'flex', gap: 8, flexWrap: 'wrap' }, [
-        btn('Copiar enlace', async () => {
-          const l = ctx.state.runtime.remote.link
-          if (!l) return ctx.toast('Aún no hay enlace')
-          await navigator.clipboard.writeText(l)
-          ctx.toast('Enlace copiado')
-        }, 'b'),
-        btn('Desconectar mando', async () => {
-          await window.konk.remoteDisconnect()
-          ctx.toast('Mando desconectado: hay un QR nuevo')
-        }, 'b ghost'),
+        btn(
+          'Copiar enlace',
+          async () => {
+            const l = ctx.state.runtime.remote.link
+            if (!l) return ctx.toast('Aún no hay enlace')
+            await navigator.clipboard.writeText(l)
+            ctx.toast('Enlace copiado')
+          },
+          'b'
+        ),
+        btn(
+          'Desconectar mando',
+          async () => {
+            await window.konk.remoteDisconnect()
+            ctx.toast('Mando desconectado: hay un QR nuevo')
+          },
+          'b ghost'
+        ),
         h('span', '', { display: 'flex', alignItems: 'center', gap: 8, fontSize: 13, marginLeft: 'auto' }, [
           sw(!!ctx.state.plato.showQr, () => ctx.send({ type: 'setPlato', patch: { showQr: !ctx.state.plato.showQr } }), 'QR en el plató'),
           'QR en la cabecera del plató'

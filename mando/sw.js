@@ -1,5 +1,5 @@
 // Guarda la app para abrirla al instante; la conexión con el portátil siempre va por Ably.
-const CACHE = 'konk-mando-v1'
+const CACHE = 'konk-mando-v2'
 const SHELL = ['./', 'index.html', 'style.css', 'app.js', 'vendor/ably.min.js', 'fonts/inter-latin.woff2', 'manifest.webmanifest', 'icons/icon-192.png', 'icons/icon-512.png']
 self.addEventListener('install', (e) => {
   e.waitUntil(

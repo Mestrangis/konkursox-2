@@ -75,6 +75,62 @@ function longPress(el, fn) {
   )
   return el
 }
+/**
+ * Mantener pulsado (1 s, con la barra rellenándose en el botón) para lo que no se deshace fácil.
+ * Mientras se mantiene, la pantalla no se repinta (si llega estado nuevo, se pinta al soltar).
+ */
+function hold(el, fn, ms = 1000) {
+  el.classList.add('hold')
+  const bar = h('span', 'holdbar')
+  el.append(bar)
+  let t = 0
+  let done = false
+  const reset = () => {
+    clearTimeout(t)
+    t = 0
+    bar.style.transition = 'width 0.15s ease-out'
+    bar.style.width = '0'
+  }
+  const end = () => {
+    if (!S.holding) return
+    S.holding = false
+    if (S.dirty) {
+      S.dirty = false
+      setTimeout(render, 0)
+    }
+  }
+  el.addEventListener('pointerdown', () => {
+    if (el.disabled || t) return
+    done = false
+    S.holding = true
+    buzz(8)
+    bar.style.transition = 'none'
+    bar.style.width = '0'
+    void bar.offsetWidth
+    bar.style.transition = `width ${ms}ms linear`
+    bar.style.width = '100%'
+    t = setTimeout(() => {
+      t = 0
+      done = true
+      buzz([30, 60, 30])
+      fn()
+      end()
+    }, ms)
+  })
+  for (const ev of ['pointerup', 'pointerleave', 'pointercancel'])
+    el.addEventListener(ev, () => {
+      if (t) {
+        reset()
+        toast('Mantén pulsado 1 segundo')
+      }
+      end()
+    })
+  el.addEventListener('click', (e) => e.preventDefault())
+  el.addEventListener('contextmenu', (e) => e.preventDefault())
+  return el
+}
+const holdHint = (t) => h('small', 'holdhint', null, [t || 'mantén pulsado'])
+
 let toastTimer = 0
 function toast(msg) {
   document.querySelector('.toast')?.remove()
@@ -295,6 +351,10 @@ const app = document.getElementById('app')
 const snapNow = () => Date.now() + S.offset
 
 function render() {
+  if (S.holding) {
+    S.dirty = true
+    return
+  }
   const keep = document.querySelector('main')?.scrollTop || 0
   if (!S.pair) {
     app.replaceChildren(pairScreen())
@@ -329,14 +389,20 @@ function topBar() {
   const plano = s && s.plano ? (PLANOS.find((p) => p[0] === s.plano) || ['', s.plano])[1] : null
   const chip = tap(h('button', 'planchip', null, [plano ? 'Plano: ' + plano : 'Plano', icon(I.caret, 10, '#9a9aa3')]), () => openSheet(planoSheet))
   return h('div', 'mtop ui', null, [
-    h('div', 'mstat', null, [
-      h('span', 'dot', { background: ok ? '#3ecf8e' : S.conn === 'failed' ? '#e5484d' : '#e8a23a' }),
-      h('span', '', { fontSize: 12, fontWeight: 600 }, [ok ? 'Conectado' : S.conn === 'failed' ? 'Sin conexión' : 'Conectando…']),
-      h('span', 'mut', { fontSize: 12, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }, ['· portátil']),
-      h('span', 'spacer'),
-      chip,
-      h('span', 'lbl air', { fontSize: 10 }, ['En el aire'])
-    ]),
+    tap(
+      h('div', 'mstat', null, [
+        h('span', 'dot', { background: ok ? '#3ecf8e' : S.conn === 'failed' ? '#e5484d' : '#e8a23a' }),
+        h('span', '', { fontSize: 12, fontWeight: 600 }, [ok ? 'Conectado' : S.conn === 'failed' ? 'Sin conexión' : 'Conectando…']),
+        h('span', 'mut', { fontSize: 12, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }, ['· portátil']),
+        h('span', 'spacer'),
+        chip,
+        h('span', 'lbl air', { fontSize: 10 }, ['En el aire'])
+      ]),
+      (e) => {
+        if (e.target.closest('.planchip')) return
+        openSheet(connSheet)
+      }
+    ),
     h(
       'div',
       'scenes',
@@ -352,6 +418,24 @@ function topBar() {
       })
     )
   ])
+}
+
+/** Conexión: desconectar este mando (mantener pulsado). */
+function connSheet(sheet, close) {
+  add(
+    sheet,
+    h('div', '', { fontSize: 16, fontWeight: 700 }, ['Conexión']),
+    h('div', 'mut', { fontSize: 13, lineHeight: 1.45 }, [S.conn === 'connected' ? 'Conectado con el portátil del salón.' : 'Sin conexión con el portátil.']),
+    hold(
+      h('button', 'b', { minHeight: 56, fontSize: 15, flexDirection: 'column', gap: 2 }, ['Desconectar este mando', holdHint('mantén pulsado 1 segundo: luego hay que volver a escanear el QR')]),
+      () => {
+        close()
+        forget()
+        toast('Mando desconectado')
+      }
+    ),
+    tap(h('button', 'b ghost', { minHeight: 44 }, ['Cerrar']), close)
+  )
 }
 
 // ---- barra inferior (MTabs); deslizar hacia arriba abre los sonidos rápidos
@@ -404,6 +488,10 @@ function goButton(extraStyle) {
   const label = go.label || '—'
   const b = h('button', 'next', extraStyle, [icon(I.play, 24, '#fff'), h('span', '', { textAlign: 'left', fontSize: label.length > 24 ? '18px' : '' }, [label, h('small', null, null, [after])])])
   b.disabled = !go.enabled
+  if (/^Terminar la escalera/.test(label)) {
+    b.querySelector('small').textContent = 'Mantén pulsado 1 segundo'
+    return hold(b, () => send({ t: 'go' }))
+  }
   return tap(b, () => send({ t: 'go' }), true)
 }
 function scoreRow(name) {
@@ -641,7 +729,8 @@ function ladderScreen(m, g) {
   const val = (l.levels[Math.min(l.level, l.levels.length - 1)] || { v: 0 }).v
   const walk = h('button', 'b', { width: 96, minHeight: 78, borderRadius: 16, flexDirection: 'column', gap: 2, fontSize: 14, flex: 'none' }, [
     'Se planta',
-    h('span', 'mut', { fontSize: 11 }, ['con ' + fmt(bank(l.level))])
+    h('span', 'mut', { fontSize: 11 }, ['con ' + fmt(bank(l.level))]),
+    holdHint()
   ])
   walk.disabled = !!l.outcome
   add(
@@ -678,7 +767,7 @@ function ladderScreen(m, g) {
     missRow(g),
     h('span', 'spacer'),
     g.text ? marksGrid(g) : null,
-    h('div', '', { display: 'flex', gap: 8 }, [goButton({ flex: '1' }), tap(walk, () => send({ t: 'walk' }), true)])
+    h('div', '', { display: 'flex', gap: 8 }, [goButton({ flex: '1' }), hold(walk, () => send({ t: 'walk' }))])
   )
 }
 
@@ -968,7 +1057,7 @@ function musicCard(compact) {
       playBtn,
       h('div', '', { flex: 1, minWidth: 0 }, [
         h('div', '', { fontWeight: 600, fontSize: 14, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }, [mu.track || 'Sin música']),
-        h('div', '', { height: 4, borderRadius: 2, background: '#2e2e34', marginTop: 6 }, [h('div', '', { width: pct + '%', height: '100%', borderRadius: 2, background: '#ececef' })])
+        h('div', '', { height: 4, borderRadius: 2, background: '#2e2e34', marginTop: 6 }, [h('div', 'mfill', { width: pct + '%', height: '100%', borderRadius: 2, background: '#ececef' })])
       ]),
       tap(h('button', 'b', { minHeight: 40 }, ['Fundido']), () => send({ t: 'music', op: 'fade' }))
     ])
@@ -981,8 +1070,10 @@ function musicCard(compact) {
       ])
     ]),
     h('div', '', { display: 'flex', alignItems: 'center', gap: 8 }, [
-      h('span', 'mut', { fontSize: 11 }, [mmss(cur * 1000)]),
-      h('div', '', { flex: 1, height: 6, borderRadius: 3, background: '#2e2e34', position: 'relative' }, [h('div', '', { width: pct + '%', height: '100%', borderRadius: 3, background: '#ececef' })]),
+      h('span', 'mut mcur', { fontSize: 11 }, [mmss(cur * 1000)]),
+      h('div', '', { flex: 1, height: 6, borderRadius: 3, background: '#2e2e34', position: 'relative' }, [
+        h('div', 'mfill', { width: pct + '%', height: '100%', borderRadius: 3, background: '#ececef' })
+      ]),
       h('span', 'mut', { fontSize: 11 }, [mu.duration ? mmss(mu.duration * 1000) : '—'])
     ]),
     h('div', '', { display: 'flex', alignItems: 'center', gap: 4 }, [
@@ -1171,10 +1262,29 @@ function planoSheet(sheet, close) {
       'div',
       '',
       { display: 'grid', gridTemplateColumns: 'repeat(2, minmax(0, 1fr))', gap: 6 },
-      GAMES.map(([id, t]) => tap(h('button', 'vx' + (s.liveGame === id ? ' on' : ''), null, [t]), () => pick({ t: 'liveGame', game: id })))
+      GAMES.map(([id, t]) => {
+        const b = h('button', 'vx' + (s.liveGame === id ? ' on' : ''), null, [t])
+        if (id === s.liveGame) return b
+        // con una pregunta a medias, cambiar de juego en el aire pide mantener pulsado
+        if (midQuestion(s)) {
+          b.append(holdHint())
+          return hold(b, () => pick({ t: 'liveGame', game: id }))
+        }
+        return tap(b, () => pick({ t: 'liveGame', game: id }))
+      })
     )
   )
 }
+/** ¿Hay una pregunta (o un rosco) a medias en el juego en el aire? */
+function midQuestion(s) {
+  const g = s.game
+  if (!g) return false
+  if (g.kind === 'quiz') return ['question', 'options', 'locked', 'rebound'].includes(g.phase) || (g.ladder && !g.ladder.outcome && g.ladder.level > 0)
+  if (g.kind === 'estimacion') return !g.revealed && g.rows.some((r) => r.value !== null)
+  if (g.kind === 'rosco') return !g.finished && g.players.some((p) => p.ok + p.ko > 0 || p.endsAt !== null)
+  return false
+}
+
 /** Turno: un botón por concursante + Todos, y el rebote. */
 function turnSheet(sheet, close) {
   const s = S.snap
@@ -1283,6 +1393,15 @@ function stopScan() {
   scanStream = null
 }
 
+// la música: posición contada en local desde el último estado
+setInterval(() => {
+  const mu = S.snap && S.snap.music
+  if (!mu || !mu.playing || !mu.duration) return
+  const cur = Math.min(mu.duration, mu.current + (Date.now() - S.snapAt) / 1000)
+  document.querySelectorAll('.mfill').forEach((el) => (el.style.width = Math.min(100, (cur / mu.duration) * 100) + '%'))
+  document.querySelectorAll('.mcur').forEach((el) => (el.textContent = mmss(cur * 1000)))
+}, 500)
+
 // relojes del rosco y barra de la música en vivo, sin repintar todo
 setInterval(() => {
   if (!S.snap || S.tab !== 'juego' || !S.snap.game || S.snap.game.kind !== 'rosco') return
@@ -1300,5 +1419,13 @@ if (readPairFromUrl() || (S.pair = store.get('konk.pair'))) {
   store.set('konk.lastPair', S.pair)
   connect()
 }
+// un enlace nuevo con la app ya abierta solo cambia el # (no recarga): emparejar igual
+window.addEventListener('hashchange', () => {
+  if (readPairFromUrl()) {
+    store.set('konk.lastPair', S.pair)
+    S.snap = null
+    connect()
+  }
+})
 render()
 if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(() => {})
