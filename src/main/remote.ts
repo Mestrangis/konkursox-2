@@ -2,36 +2,27 @@
 // en el instalador). Cada partida tiene un canal privado; el móvil recibe un token con permiso solo para ese
 // canal, que el programa renueva mientras está abierto. El programa es la única fuente de verdad: el móvil
 // manda comandos, el panel los ejecuta y publica una instantánea del estado.
-import { existsSync, readFileSync, writeFileSync } from 'node:fs'
-import { join } from 'node:path'
 import { randomBytes } from 'node:crypto'
 import { app } from 'electron'
 import * as Ably from 'ably'
 import { dispatch } from './store'
 import { getPanel } from './windows'
+import { deleteRemoteCfg, patchRemoteCfg, readRemoteCfg, type RemoteCfg } from './remoteCfg'
 
 /** Dirección pública de la app del mando (GitHub Pages). */
 export const MANDO_URL = 'https://mestrangis.github.io/konkursox-2/'
 const TOKEN_TTL = 24 * 3600 * 1000
 const RENEW_EVERY = 20 * 60 * 1000
 
-interface Cfg {
-  ablyKey?: string
-  channel?: string
-  /** para pruebas: otra dirección de la app del mando */
-  mandoUrl?: string
-}
+const dataDir = () => app.getPath('userData')
+const readCfg = (): RemoteCfg => readRemoteCfg(dataDir())
 
-const cfgFile = () => join(app.getPath('userData'), 'mando.json')
-function readCfg(): Cfg {
-  try {
-    return existsSync(cfgFile()) ? (JSON.parse(readFileSync(cfgFile(), 'utf8').replace(/^﻿/, '')) as Cfg) : {}
-  } catch {
-    return {}
-  }
-}
-function writeCfg(c: Cfg): void {
-  writeFileSync(cfgFile(), JSON.stringify(c, null, 2) + '\n', 'utf8')
+/** Para exportar / importar / borrar todo. */
+export const remoteCfgRaw = (): RemoteCfg => readCfg()
+export function replaceRemoteCfg(c: RemoteCfg | null): void {
+  stopRemote()
+  deleteRemoteCfg(dataDir())
+  if (c && Object.keys(c).length) patchRemoteCfg(dataDir(), c)
 }
 
 let rt: Ably.Realtime | null = null
@@ -50,9 +41,7 @@ export function remoteInfo(): { hasKey: boolean; keyMasked: string; channel: str
 }
 
 export function setRemoteKey(key: string): void {
-  const c = readCfg()
-  c.ablyKey = key.trim() || undefined
-  writeCfg(c)
+  patchRemoteCfg(dataDir(), { ablyKey: key.trim() || undefined })
   void startRemote()
 }
 
@@ -89,10 +78,7 @@ export async function startRemote(): Promise<void> {
     dispatch({ type: 'setRemote', patch: { status: 'off', connected: 0, link: null, error: undefined } })
     return
   }
-  if (!c.channel) {
-    c.channel = newChannel()
-    writeCfg(c)
-  }
+  if (!c.channel) c.channel = patchRemoteCfg(dataDir(), { channel: newChannel() }).channel as string
   dispatch({ type: 'setRemote', patch: { status: 'connecting', error: undefined } })
   try {
     rt = new Ably.Realtime({ key: c.ablyKey, clientId: 'programa', echoMessages: false })
@@ -131,6 +117,17 @@ async function attach(channel: string): Promise<void> {
   void update()
 }
 
+/** Avisar al móvil de que se desconecta y parar (borrar los datos de este ordenador). */
+export async function byeRemote(): Promise<void> {
+  try {
+    await ch?.publish('bye', {})
+  } catch {
+    /* da igual */
+  }
+  stopRemote()
+  dispatch({ type: 'setRemote', patch: { status: 'off', connected: 0, link: null } })
+}
+
 export function stopRemote(): void {
   if (renewTimer) clearInterval(renewTimer)
   renewTimer = null
@@ -160,9 +157,7 @@ export async function disconnectRemote(): Promise<void> {
   } catch {
     /* da igual */
   }
-  const c = readCfg()
-  c.channel = newChannel()
-  writeCfg(c)
+  patchRemoteCfg(dataDir(), { channel: newChannel() })
   dispatch({ type: 'setRemote', patch: { connected: 0 } })
   await startRemote()
 }

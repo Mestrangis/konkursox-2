@@ -28,6 +28,17 @@ const api = {
   audioImport: (paths: string[], kind: 'musica' | 'efectos'): Promise<string[]> => ipcRenderer.invoke('audio:import', paths, kind),
   audioChoose: (kind: 'musica' | 'efectos'): Promise<string[]> => ipcRenderer.invoke('audio:choose', kind),
   themesList: (): Promise<{ id: string; nombre: string; descripcion: string }[]> => ipcRenderer.invoke('themes:list'),
+  firstRun: () => ipcRenderer.invoke('app:firstRun') as Promise<boolean>,
+  firstRunDone: () => ipcRenderer.invoke('app:firstRunDone') as Promise<void>,
+  portableSize: () => ipcRenderer.invoke('portable:size') as Promise<{ files: number; bytes: number }>,
+  portableExport: () => ipcRenderer.invoke('portable:export') as Promise<{ file: string; files: number; bytes: number; hasKey: boolean } | null>,
+  portableShowFile: (file: string) => ipcRenderer.invoke('portable:showFile', file) as Promise<void>,
+  portableChooseImport: () =>
+    ipcRenderer.invoke('portable:chooseImport') as Promise<
+      null | { error: string } | { file: string; info: { createdAt: string; appVersion: string; files: number; bytes: number; hasKey: boolean }; here: { files: number; bytes: number }; docs: string }
+    >,
+  portableImport: (file: string) => ipcRenderer.invoke('portable:import', file) as Promise<string | null>,
+  portableWipe: () => ipcRenderer.invoke('portable:wipe') as Promise<void>,
   remoteInfo: (): Promise<{ hasKey: boolean; keyMasked: string; channel: string | null; url: string }> => ipcRenderer.invoke('remote:info'),
   remoteSetKey: (key: string): Promise<void> => ipcRenderer.invoke('remote:setKey', key),
   remoteDisconnect: (): Promise<void> => ipcRenderer.invoke('remote:disconnect'),

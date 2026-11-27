@@ -2280,3 +2280,18 @@ input[type='range'] {
   border-radius: 50%;
   background: #55555d;
 }
+
+/* trabajando (exportar / importar) */
+.spin {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 3px solid rgba(255, 255, 255, 0.15);
+  border-top-color: var(--acc, #4f7dff);
+  animation: konk-spin 0.9s linear infinite;
+}
+@keyframes konk-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

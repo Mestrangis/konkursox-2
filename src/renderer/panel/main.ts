@@ -10,6 +10,7 @@ import { autoReconnect, CaptureFeed } from '../common/feed'
 import { AudioEngine } from './audio'
 import { applyTheme } from '../common/theme'
 import { initRemote } from './remote'
+import { firstRunWelcome } from './portable'
 import { createCalibration } from './calibrate'
 import { createAirBar, createDock, createNav, createPeopleRow, goScene } from './chrome'
 import { createMediaScreen } from './screens/media'
@@ -95,6 +96,8 @@ try {
 }
 
 const remote = initRemote({ ctx, screens, dock: { fire: (i) => dock.fire(i), fireEffect: (i) => dock.fireEffect(i) }, goScene: (id) => goScene(ctx, id) })
+// primera vez en este ordenador: ofrecer importar un concurso
+setTimeout(() => void firstRunWelcome(ctx), 600)
 const air = createAirBar(ctx)
 const people = createPeopleRow(ctx)
 const nav = createNav(ctx, (id) => go(id))

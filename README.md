@@ -96,6 +96,17 @@ El móvil hace de mando con los mismos botones del panel: escenas, plano y quié
 - El programa es la única fuente de verdad: el móvil manda órdenes y recibe el estado. Si chocan una orden del móvil y algo que acabas de hacer en el panel, manda el panel.
 - La app del mando está en `mando/` y se publica sola en GitHub Pages (https://mestrangis.github.io/konkursox-2/) con cada cambio en `main`.
 
+### Llevar el concurso a otro ordenador
+
+En **Ajustes → Programa**:
+
+- **Exportar todo**: un único archivo `.konkursox` (un zip) con toda la carpeta `Documentos\KONKURSOX` (preguntas, imágenes, audio, multimedia, temas; también la música si la tienes en otra carpeta) y toda la configuración del programa (ajustes, concursantes, personas, sonidos asignados, comodines, temas, plano por defecto), **incluida la clave del mando**. Siempre lo exporta todo. Guárdalo en sitio seguro.
+- **Importar…**: abre un `.konkursox`, enseña de cuándo es y cuánto ocupa, avisa de que sustituye lo de este ordenador y lo restaura todo (también la clave). Primero lo descomprime aparte, así que si el archivo está mal no se toca nada. Después el programa se reinicia.
+- Al abrir el programa por primera vez en un ordenador sin datos, ofrece directamente **Importar desde un archivo**.
+- **Borrar mis datos de este ordenador** (hay que escribir BORRAR): elimina `Documentos\KONKURSOX`, toda la configuración y la clave del mando, y desconecta el móvil. El programa se reinicia como recién instalado.
+
+La configuración vive en `%APPDATA%\KONKURSOX` (`konkursox-state.json` y `mando.json` con la clave del mando, guardada de forma atómica y con copia `.bak`). Esa carpeta no cambia entre versiones y el instalador no la borra al actualizar.
+
 ### Cámaras desde Discord
 
 Se captura solo la ventana de Discord (Windows Graphics Capture: funciona aunque esté tapada). En **Cámaras → Calibrar recuadros** dibujas un recuadro por cámara; se guardan en coordenadas relativas, así que mover o redimensionar Discord no los descuadra. En **Concursantes** eliges qué cámara corresponde a cada uno. Si Discord se minimiza o se cierra, los marcos muestran la silueta y la navegación avisa; si Discord se reabre, se reconecta solo.

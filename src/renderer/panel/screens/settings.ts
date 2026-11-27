@@ -8,6 +8,7 @@ import { newId, playedCount, type Person } from '../../../shared/scene'
 import type { DisplayInfo, GameState } from '../../../shared/types'
 import { askConfirm, btn, editableArea, h, seg, sw, type Ctx, type Screen } from '../ui'
 import { openPairing } from '../remote'
+import { exportFlow, importFlow, wipeFlow } from '../portable'
 
 export function createSettingsScreen(ctx: Ctx): Screen {
   const el = h('div', 'screen')
@@ -189,6 +190,20 @@ export function createSettingsScreen(ctx: Ctx): Screen {
         return b
       })
     )
+  // llevar el concurso a otro ordenador
+  const portableCard = () =>
+    card(
+      'Llevar el concurso a otro ordenador',
+      h('span', 'mut', { fontSize: 12, lineHeight: '1.4' }, [
+        'Un único archivo .konkursox con toda la carpeta Documentos\\KONKURSOX y toda la configuración, también la clave del mando. En el otro ordenador, Importar (o al abrir el programa por primera vez).'
+      ]),
+      row(
+        btn('Exportar todo', () => void exportFlow(ctx), 'b acc'),
+        btn('Importar…', () => void importFlow(ctx), 'b'),
+        h('span', 'spacer'),
+        btn('Borrar mis datos de este ordenador', () => void wipeFlow(), 'b danger')
+      )
+    )
   // mando (móvil): clave de Ably (se guarda solo en este ordenador), QR y desconectar
   let remoteInfo: { hasKey: boolean; keyMasked: string; channel: string | null; url: string } | null = null
   void window.konk.remoteInfo().then((r) => (remoteInfo = r))
@@ -204,17 +219,31 @@ export function createSettingsScreen(ctx: Ctx): Screen {
       row(
         h('span', 'fl', {}, ['Clave de Ably']),
         key,
-        btn('Guardar', async () => {
-          if (!key.value.trim()) return
-          await window.konk.remoteSetKey(key.value.trim())
-          remoteInfo = await window.konk.remoteInfo()
-          key.value = ''
-          ctx.toast('Clave guardada: conectando…')
-          build(ctx.state)
-        }, 'b sm acc')
+        btn(
+          'Guardar',
+          async () => {
+            if (!key.value.trim()) return
+            await window.konk.remoteSetKey(key.value.trim())
+            remoteInfo = await window.konk.remoteInfo()
+            key.value = ''
+            ctx.toast('Clave guardada: conectando…')
+            build(ctx.state)
+          },
+          'b sm acc'
+        )
       ),
       row(
-        h('span', '', { fontSize: 13 }, [r.connected ? `Mando conectado${r.connected > 1 ? ` (${r.connected})` : ''}` : r.status === 'ready' ? 'Listo para emparejar' : r.status === 'error' ? `Sin conexión: ${r.error ?? ''}` : r.status === 'off' ? 'Sin clave' : 'Conectando…']),
+        h('span', '', { fontSize: 13 }, [
+          r.connected
+            ? `Mando conectado${r.connected > 1 ? ` (${r.connected})` : ''}`
+            : r.status === 'ready'
+              ? 'Listo para emparejar'
+              : r.status === 'error'
+                ? `Sin conexión: ${r.error ?? ''}`
+                : r.status === 'off'
+                  ? 'Sin clave'
+                  : 'Conectando…'
+        ]),
         h('span', 'spacer'),
         btn('Emparejar (QR)', () => void openPairing(ctx), 'b sm'),
         btn('Desconectar mando', () => void window.konk.remoteDisconnect(), 'b sm ghost'),
@@ -434,6 +463,7 @@ export function createSettingsScreen(ctx: Ctx): Screen {
         },
         [
           T('programa', mandoCard(s)),
+          T('programa', portableCard()),
           T(
             'programa',
             card(

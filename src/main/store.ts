@@ -74,6 +74,13 @@ function scheduleSave(): void {
   saveTimer = setTimeout(flushSave, 300)
 }
 
+/** Deja de guardar (antes de importar o borrar los datos y reiniciar el programa). */
+export function freezeStore(): void {
+  if (saveTimer) clearTimeout(saveTimer)
+  saveTimer = null
+  filePath = ''
+}
+
 export function flushSave(): void {
   if (saveTimer) clearTimeout(saveTimer)
   saveTimer = null
