@@ -1,0 +1,6204 @@
+{
+  "formato": "konkursox-banco",
+  "version": 1,
+  "nombre": "Trivia",
+  "grupo": "Trivia",
+  "licencia": "Preguntas de Open Trivia Database (opentdb.com), licencia CC BY-SA 4.0, traducidas y adaptadas al español. Este banco se distribuye con la misma licencia (CC BY-SA 4.0).",
+  "preguntas": [
+    {
+      "id": "o4688",
+      "tipo": "sino",
+      "enunciado": "¿Son carnívoros los conejos?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Animales"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4731",
+      "tipo": "sino",
+      "enunciado": "¿Es el ornitorrinco un mamífero?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Animales"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4679",
+      "tipo": "sino",
+      "enunciado": "¿Puede el ajolote regenerar sus extremidades?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Animales"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4681",
+      "tipo": "sino",
+      "enunciado": "¿Pueden los conejos ver lo que tienen detrás sin girar la cabeza?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Animales"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4685",
+      "tipo": "sino",
+      "enunciado": "¿Son los conejos roedores?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Animales"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4693",
+      "tipo": "sino",
+      "enunciado": "¿Debe su nombre el navegador Firefox al panda rojo?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Animales"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4694",
+      "tipo": "sino",
+      "enunciado": "¿Son las cebras blancas con rayas negras?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Animales"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4699",
+      "tipo": "sino",
+      "enunciado": "¿Es la orca un tipo de delfín?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Animales"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4703",
+      "tipo": "sino",
+      "enunciado": "¿Guardan los canguros comida en la bolsa junto a sus crías?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Animales"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4708",
+      "tipo": "sino",
+      "enunciado": "¿Es cierto que los elefantes no pueden saltar?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Animales"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4725",
+      "tipo": "sino",
+      "enunciado": "¿Pueden tener corazón las esponjas de mar?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Animales"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4733",
+      "tipo": "sino",
+      "enunciado": "¿Puede un pulpo pasar por cualquier agujero más grande que su pico?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Animales"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4748",
+      "tipo": "sino",
+      "enunciado": "¿Se puede saber la edad de una mariquita contando sus puntos?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Animales"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4678",
+      "tipo": "sino",
+      "enunciado": "¿Es cierto que los osos no defecan durante la hibernación?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Animales"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4680",
+      "tipo": "sino",
+      "enunciado": "¿Pasó el panda gigante en 2016 de «en peligro» a «vulnerable» según la UICN?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Animales"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4682",
+      "tipo": "sino",
+      "enunciado": "¿Es verde la sangre de las babosas?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Animales"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4704",
+      "tipo": "sino",
+      "enunciado": "¿Tiene una oruga más músculos que una persona?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Animales"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4706",
+      "tipo": "sino",
+      "enunciado": "¿Es cierto que los conejos no pueden vomitar?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Animales"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4713",
+      "tipo": "sino",
+      "enunciado": "¿Puede el ajolote pasar toda su vida en estado larvario?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Animales"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4727",
+      "tipo": "sino",
+      "enunciado": "¿Tienen los tigres la piel de un solo color pese al pelaje a rayas?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Animales"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4734",
+      "tipo": "sino",
+      "enunciado": "¿Es el equidna un monotrema?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Animales"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4742",
+      "tipo": "sino",
+      "enunciado": "¿Están las hienas más emparentadas con los gatos que con los perros?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Animales"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5001",
+      "tipo": "sino",
+      "enunciado": "¿Es una chica el protagonista de «Naruto»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Anime y manga"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4992",
+      "tipo": "sino",
+      "enunciado": "¿Se niega el Pikachu de Ash a meterse en la Poké Ball?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Anime y manga"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5021",
+      "tipo": "sino",
+      "enunciado": "¿Es Gosho Aoyama el autor de «Detective Conan»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Anime y manga"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5051",
+      "tipo": "sino",
+      "enunciado": "¿Ganó «El viaje de Chihiro» el Óscar a la mejor película de animación en 2003?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Anime y manga"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5003",
+      "tipo": "sino",
+      "enunciado": "¿Debe su nombre el ataque «Kamehameha» de Dragon Ball a un famoso rey de Hawái?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Anime y manga"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5041",
+      "tipo": "sino",
+      "enunciado": "¿Hizo el Studio Ghibli «Los niños lobo» y «El niño y la bestia»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Anime y manga"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4569",
+      "tipo": "sino",
+      "enunciado": "¿Es falso que Leonardo da Vinci pintara la Mona Lisa?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Arte"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4590",
+      "tipo": "sino",
+      "enunciado": "¿Es Picasso uno de los padres del cubismo?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Arte"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4579",
+      "tipo": "sino",
+      "enunciado": "¿Es cierto que la Mona Lisa no tiene cejas?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Arte"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4603",
+      "tipo": "sino",
+      "enunciado": "¿Representa la Venus de Willendorf a los planetas Marte y Venus abrazados en el cielo?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Arte"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4616",
+      "tipo": "sino",
+      "enunciado": "¿Es típico del expresionismo deformar la realidad para transmitir emociones?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Arte"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4617",
+      "tipo": "sino",
+      "enunciado": "¿Recibió el impresionismo su nombre de la crítica burlona de un cuadro de Monet?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Arte"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4620",
+      "tipo": "sino",
+      "enunciado": "¿Se llama oficialmente la Estatua de la Libertad «La Libertad iluminando el mundo»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Arte"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4622",
+      "tipo": "sino",
+      "enunciado": "¿Pintaban de colores sus estatuas los escultores griegos y romanos?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Arte"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2882",
+      "tipo": "sino",
+      "enunciado": "¿Es la celiaquía una enfermedad del corazón que impide comer carne?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2887",
+      "tipo": "sino",
+      "enunciado": "¿Puede una persona normal pasar dos semanas sin beber agua?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2889",
+      "tipo": "sino",
+      "enunciado": "¿Tiene núcleo un átomo?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2897",
+      "tipo": "sino",
+      "enunciado": "Sin contar dentaduras postizas, ¿tiene una persona dos denticiones en su vida?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2899",
+      "tipo": "sino",
+      "enunciado": "¿Se considera el Sol una estrella?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2905",
+      "tipo": "sino",
+      "enunciado": "¿Es la Tierra una esfera perfecta?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2911",
+      "tipo": "sino",
+      "enunciado": "¿Tienen la Tierra y la Luna más o menos la misma masa?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2912",
+      "tipo": "sino",
+      "enunciado": "¿Giran alrededor del Sol todos los planetas del sistema solar?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2922",
+      "tipo": "sino",
+      "enunciado": "¿Está la sal compuesta al 100 % de sodio?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2942",
+      "tipo": "sino",
+      "enunciado": "¿Da la Tierra una vuelta al Sol en un año?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2961",
+      "tipo": "sino",
+      "enunciado": "¿Es la psicología la ciencia del comportamiento y la mente?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2972",
+      "tipo": "sino",
+      "enunciado": "¿Contiene grasa el azúcar?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3025",
+      "tipo": "sino",
+      "enunciado": "¿Puede uno quemarse con el sol en un día nublado?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3090",
+      "tipo": "sino",
+      "enunciado": "¿Puede viajar el sonido por el vacío?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2929",
+      "tipo": "sino",
+      "enunciado": "¿Es una unidad astronómica la distancia entre la Tierra y la Luna?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2954",
+      "tipo": "sino",
+      "enunciado": "¿Se forman las rocas ígneas por calor y presión excesivos?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2957",
+      "tipo": "sino",
+      "enunciado": "¿Se llama anual una planta cuyo ciclo de vida dura más de un año?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2967",
+      "tipo": "sino",
+      "enunciado": "¿Hierve el agua siempre a 100 °C, estés donde estés?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2978",
+      "tipo": "sino",
+      "enunciado": "¿Es el acero una aleación de hierro y carbono?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3003",
+      "tipo": "sino",
+      "enunciado": "En la tabla periódica, ¿es K el símbolo del potasio?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3006",
+      "tipo": "sino",
+      "enunciado": "¿Se debe la diabetes de tipo 1 a un mal funcionamiento del hígado?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3018",
+      "tipo": "sino",
+      "enunciado": "¿Sirve un desfibrilador para poner en marcha un corazón que se ha parado del todo?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3024",
+      "tipo": "sino",
+      "enunciado": "¿Es la hipopotomonstrosesquipedaliofobia el miedo a las palabras largas?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3064",
+      "tipo": "sino",
+      "enunciado": "¿Tiene Marte dos lunas?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3065",
+      "tipo": "sino",
+      "enunciado": "¿Es la estrella polar la más brillante del cielo nocturno del hemisferio norte?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3068",
+      "tipo": "sino",
+      "enunciado": "¿Eran los neandertales antepasados directos de los humanos actuales?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3072",
+      "tipo": "sino",
+      "enunciado": "¿Se llama taquicardia a un ritmo cardiaco en reposo cercano o superior a 100 pulsaciones por minuto?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3080",
+      "tipo": "sino",
+      "enunciado": "¿Desarrollaron Louis Pasteur y Émile Roux la primera vacuna contra la rabia en 1885?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3095",
+      "tipo": "sino",
+      "enunciado": "¿Se llama «acción cartilar» a que el agua suba por una toalla seca?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3104",
+      "tipo": "sino",
+      "enunciado": "¿Ganó Albert Einstein el Nobel por su teoría de la relatividad?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3169",
+      "tipo": "sino",
+      "enunciado": "¿Ganaron Frederick Banting y John Macleod el Nobel por sus aportaciones a la mecánica cuántica?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3178",
+      "tipo": "sino",
+      "enunciado": "¿Debe el litio su nombre a Lituania?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2940",
+      "tipo": "sino",
+      "enunciado": "¿Es una reacción exotérmica la que libera energía irradiando electricidad?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2960",
+      "tipo": "sino",
+      "enunciado": "¿Lleva el afloramiento oceánico agua fría y rica en nutrientes a la superficie?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2975",
+      "tipo": "sino",
+      "enunciado": "¿Es la fuerza centrípeta una fuerza aparente que empuja hacia fuera a un cuerpo que gira?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2988",
+      "tipo": "sino",
+      "enunciado": "¿Se aplica el efecto Doppler a la luz?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3015",
+      "tipo": "sino",
+      "enunciado": "¿Pueden nadar hacia atrás las gambas?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3066",
+      "tipo": "sino",
+      "enunciado": "¿Es parpadear la actividad inconsciente que más repite el cuerpo humano?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3092",
+      "tipo": "sino",
+      "enunciado": "¿Se cruzaron también los Homo sapiens con los denisovanos, como con los neandertales?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3098",
+      "tipo": "sino",
+      "enunciado": "¿Es «neumonoultramicroscopicosilicovolcanoconiosis» un sinónimo de la silicosis?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3170",
+      "tipo": "sino",
+      "enunciado": "¿Es distinta una Caloría (con mayúscula) de una caloría?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o634",
+      "tipo": "sino",
+      "enunciado": "¿Es Chewbacca, el copiloto de Han Solo, un ewok?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o671",
+      "tipo": "sino",
+      "enunciado": "¿Es Brandon Routh el protagonista de «John Wick»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o675",
+      "tipo": "sino",
+      "enunciado": "¿Se estrenó «2001: Una odisea del espacio» el 31 de diciembre de 2000?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o596",
+      "tipo": "sino",
+      "enunciado": "¿Viene la palabra inglesa «inception» de la película «Origen» (Inception) de 2010?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o605",
+      "tipo": "sino",
+      "enunciado": "En la «La guerra de las galaxias» original, ¿dispara Han Solo primero en su conversación con Greedo?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o646",
+      "tipo": "sino",
+      "enunciado": "¿Dirigió George Lucas las tres películas de la trilogía original de Star Wars?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o650",
+      "tipo": "sino",
+      "enunciado": "En «El renacido», ¿persigue el personaje de DiCaprio al asesino de su hijo?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o663",
+      "tipo": "sino",
+      "enunciado": "¿Es «La red social» (2010) una película sobre Tom Anderson, el fundador de MySpace?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o665",
+      "tipo": "sino",
+      "enunciado": "¿Se hizo toda «Pesadilla antes de Navidad» con muñecos y objetos físicos (stop motion)?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o674",
+      "tipo": "sino",
+      "enunciado": "¿Interpretó Matt Damon a un astronauta abandonado en otro planeta tanto en «Interstellar» como en «Marte»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o688",
+      "tipo": "sino",
+      "enunciado": "En la trilogía original de Star Wars, ¿ponía Alec Guinness la voz de Darth Vader?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o689",
+      "tipo": "sino",
+      "enunciado": "¿Ganó Leonardo DiCaprio el Óscar al mejor actor por «El aviador» (2004)?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o703",
+      "tipo": "sino",
+      "enunciado": "¿Tiene sangre ácida el xenomorfo de «Alien»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o813",
+      "tipo": "sino",
+      "enunciado": "¿Eran azul y amarilla las pastillas de «Matrix»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o603",
+      "tipo": "sino",
+      "enunciado": "¿Usaban las máquinas a los humanos como potencia de cálculo, y no como pilas, en el guion original de «Matrix»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o621",
+      "tipo": "sino",
+      "enunciado": "¿Llevaba el sable láser de Samuel L. Jackson en Star Wars grabada la frase «Bad Motherf*cker»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o628",
+      "tipo": "sino",
+      "enunciado": "¿Salía Shaquille O'Neal en «Space Jam» (1996)?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o639",
+      "tipo": "sino",
+      "enunciado": "¿Usó Hitchcock sirope de chocolate como sangre en la famosa escena de la ducha de «Psicosis»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o669",
+      "tipo": "sino",
+      "enunciado": "¿Es cierto que Ewan McGregor no supo el título del episodio II de Star Wars ni durante ni después del rodaje?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o697",
+      "tipo": "sino",
+      "enunciado": "¿Era David Prowse quien se ponía el traje de Darth Vader en la trilogía original?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o715",
+      "tipo": "sino",
+      "enunciado": "¿Empieza «The Rocky Horror Picture Show» con unos enormes labios flotantes cantando?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o755",
+      "tipo": "sino",
+      "enunciado": "¿Terminaba el final original de «La tienda de los horrores» con las plantas conquistando el mundo?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o827",
+      "tipo": "sino",
+      "enunciado": "¿Terminaba originalmente «¿Teléfono rojo? Volamos hacia Moscú» con una guerra de tartas en la sala de guerra?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o830",
+      "tipo": "sino",
+      "enunciado": "¿Rechazó Sean Connery salir en «Indiana Jones y el reino de la calavera de cristal» porque disfrutaba demasiado de su jubilación?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o856",
+      "tipo": "sino",
+      "enunciado": "¿Era una .44 Automag el arma de Clint Eastwood en «Harry el Sucio»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4880",
+      "tipo": "sino",
+      "enunciado": "¿Es Slade Wilson la identidad de Deadpool?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cómics"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4867",
+      "tipo": "sino",
+      "enunciado": "¿Nació el meme de la rana Pepe en el cómic «Boy's Club», de Matt Furie?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cómics"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o15",
+      "tipo": "sino",
+      "enunciado": "¿El cáncer es, en sí mismo, una enfermedad contagiosa?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o35",
+      "tipo": "sino",
+      "enunciado": "¿Es zurda aproximadamente el 40 % de la población mundial?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o45",
+      "tipo": "sino",
+      "enunciado": "¿Se llama Tim Apple el consejero delegado de Apple que sucedió a Steve Jobs?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o46",
+      "tipo": "sino",
+      "enunciado": "¿Es el perro un mamífero?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o51",
+      "tipo": "sino",
+      "enunciado": "¿Es el rumano una lengua romance, como el francés, el español, el portugués y el italiano?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o58",
+      "tipo": "sino",
+      "enunciado": "¿Es el metro de Nueva York el más antiguo del mundo?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o59",
+      "tipo": "sino",
+      "enunciado": "¿Nació Adolf Hitler en Australia?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o74",
+      "tipo": "sino",
+      "enunciado": "¿Son las mitocondrias la «central de energía» de la célula?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o86",
+      "tipo": "sino",
+      "enunciado": "¿Es el francés lengua oficial de Canadá?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o128",
+      "tipo": "sino",
+      "enunciado": "¿Es el pasodoble una salsa italiana para la pasta?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o172",
+      "tipo": "sino",
+      "enunciado": "¿Compró Facebook YouTube por 1650 millones de dólares en acciones?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o180",
+      "tipo": "sino",
+      "enunciado": "¿Sale el Sol por el norte?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o184",
+      "tipo": "sino",
+      "enunciado": "¿Es Plutón un planeta?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o208",
+      "tipo": "sino",
+      "enunciado": "¿Son rojas todas las fresas?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o322",
+      "tipo": "sino",
+      "enunciado": "¿Usa Ecuador el peso mexicano como moneda?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o419",
+      "tipo": "sino",
+      "enunciado": "¿Existe de verdad el idioma luxemburgués?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o32",
+      "tipo": "sino",
+      "enunciado": "¿Inventó Michael Jackson el moonwalk?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o48",
+      "tipo": "sino",
+      "enunciado": "¿Fabrica la Nutella la empresa alemana Ferrero?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o66",
+      "tipo": "sino",
+      "enunciado": "¿Es el monóxido de dihidrógeno una sustancia química peligrosa?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o67",
+      "tipo": "sino",
+      "enunciado": "¿Es la bandera de Vietnam una estrella roja sobre fondo amarillo?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o113",
+      "tipo": "sino",
+      "enunciado": "¿Atrae el color rojo a los toros?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o141",
+      "tipo": "sino",
+      "enunciado": "¿Votó Escocia a favor de la independencia en el referéndum de septiembre de 2014?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o162",
+      "tipo": "sino",
+      "enunciado": "¿Debe su nombre el color naranja a la fruta?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o178",
+      "tipo": "sino",
+      "enunciado": "¿Es Eslovaquia miembro de la Unión Europea?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o191",
+      "tipo": "sino",
+      "enunciado": "¿Se conoce el 10 de marzo como el «Día de Mario» (MAR10)?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o192",
+      "tipo": "sino",
+      "enunciado": "¿Se ve la Gran Muralla china desde la Luna?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o212",
+      "tipo": "sino",
+      "enunciado": "¿Se llama «Club de los 27» a la lista de artistas famosos que murieron a los 27 años?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o231",
+      "tipo": "sino",
+      "enunciado": "¿Es el 911 el teléfono de emergencias de EE. UU. por los atentados del 11 de septiembre?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o239",
+      "tipo": "sino",
+      "enunciado": "¿Debe su nombre el biquini al atolón Bikini, donde EE. UU. hizo pruebas con bombas atómicas?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o240",
+      "tipo": "sino",
+      "enunciado": "¿Tenía Albert Einstein problemas con las matemáticas en el colegio?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o241",
+      "tipo": "sino",
+      "enunciado": "¿Se dice «vaso» en francés «glace»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o243",
+      "tipo": "sino",
+      "enunciado": "¿Es la berenjena, botánicamente, una verdura?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o248",
+      "tipo": "sino",
+      "enunciado": "¿Se empezó a poner pepinillo en las hamburguesas porque una ley sanitaria de EE. UU. exigía vitamina C en la comida rápida?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o252",
+      "tipo": "sino",
+      "enunciado": "¿Es el pepino normalmente más de un 90 % agua?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o260",
+      "tipo": "sino",
+      "enunciado": "¿Se llama aurora austral la aurora del hemisferio sur?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o273",
+      "tipo": "sino",
+      "enunciado": "¿Conduce bien la electricidad el agua pura?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o277",
+      "tipo": "sino",
+      "enunciado": "¿Es simplemente agua el vapor de los cigarrillos electrónicos?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o313",
+      "tipo": "sino",
+      "enunciado": "¿Existe una variedad de melón llamada «piel de sapo» o «Santa Claus»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o314",
+      "tipo": "sino",
+      "enunciado": "¿Es la mujer media unos 13 centímetros más baja que el hombre medio?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o347",
+      "tipo": "sino",
+      "enunciado": "¿Es de grafito, y no de plomo, la mina de un lápiz?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o352",
+      "tipo": "sino",
+      "enunciado": "¿Tiene un día 86 400 segundos?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o368",
+      "tipo": "sino",
+      "enunciado": "¿Era verde la Coca-Cola original?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o371",
+      "tipo": "sino",
+      "enunciado": "¿Es solo un pequeño porcentaje de la población mundial intolerante a la lactosa?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o382",
+      "tipo": "sino",
+      "enunciado": "¿Se puede vender el alma en eBay?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o389",
+      "tipo": "sino",
+      "enunciado": "¿Viene la palabra inglesa «news» de las iniciales de los cuatro puntos cardinales?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o432",
+      "tipo": "sino",
+      "enunciado": "¿Es la samhainofobia el miedo anormal y persistente a Halloween?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o452",
+      "tipo": "sino",
+      "enunciado": "¿Se escribe así: «Supercalifragilisticexpialidocious»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o89",
+      "tipo": "sino",
+      "enunciado": "En arquitectura, ¿es un «pecklesteiner» un juego de puertas que se solapan al cerrarse y se cierran con una sola llave?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o95",
+      "tipo": "sino",
+      "enunciado": "¿Es «ananás» la palabra más usada para la piña en otros idiomas?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o110",
+      "tipo": "sino",
+      "enunciado": "¿Es el unicornio el animal nacional de Escocia?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o116",
+      "tipo": "sino",
+      "enunciado": "¿Nació el ping-pong en Inglaterra?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o150",
+      "tipo": "sino",
+      "enunciado": "¿Se compuso «Jingle Bells» en un principio para el Día de Acción de Gracias?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o186",
+      "tipo": "sino",
+      "enunciado": "Si lloras en el espacio, ¿se te quedan las lágrimas pegadas a la cara?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o203",
+      "tipo": "sino",
+      "enunciado": "¿Se fundó el Grupo LEGO en 1932?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o236",
+      "tipo": "sino",
+      "enunciado": "¿Salió Furby a la venta en 1998?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o259",
+      "tipo": "sino",
+      "enunciado": "¿Puede quitar dos años de esperanza de vida pasar más de tres horas sentado al día?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o285",
+      "tipo": "sino",
+      "enunciado": "¿Murió Francis Bacon de una neumonía cuando intentaba conservar carne rellenando un pollo de nieve?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o316",
+      "tipo": "sino",
+      "enunciado": "¿Se come tradicionalmente haggis en la Noche de Burns, en Escocia?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o318",
+      "tipo": "sino",
+      "enunciado": "¿Significa ITV, la cadena británica, «International Television»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o319",
+      "tipo": "sino",
+      "enunciado": "¿Existía la palabra «spam» antes que la carne enlatada Spam?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o335",
+      "tipo": "sino",
+      "enunciado": "¿Suman 666 todos los números de una ruleta de casino?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o337",
+      "tipo": "sino",
+      "enunciado": "¿Eran nabos vaciados las primeras calabazas de Halloween («jack-o'-lanterns»)?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o358",
+      "tipo": "sino",
+      "enunciado": "«Buffalo buffalo Buffalo buffalo buffalo buffalo Buffalo buffalo», ¿es una frase gramaticalmente correcta en inglés?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o374",
+      "tipo": "sino",
+      "enunciado": "¿Creó el dibujante Harvey Ball la carita sonriente amarilla?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o384",
+      "tipo": "sino",
+      "enunciado": "¿Inventó Frederick W. Rueckheim las palomitas en 1871 en Chicago?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o400",
+      "tipo": "sino",
+      "enunciado": "¿Significa NCIS «Navy Corps Investigative Service»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o407",
+      "tipo": "sino",
+      "enunciado": "¿Aprobó el Gobierno de Nueva Zelanda que un niño se llamara «Number 16 Bus Shelter» (Marquesina del bus 16)?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o439",
+      "tipo": "sino",
+      "enunciado": "¿Usa la «teoría de las cucharas» las cucharas como metáfora de la energía disponible en un día?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3529",
+      "tipo": "sino",
+      "enunciado": "En el fútbol, ¿es un saque de esquina la forma de reanudar el juego tras un gol?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3571",
+      "tipo": "sino",
+      "enunciado": "¿Es Roger Federer un famoso futbolista?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3614",
+      "tipo": "sino",
+      "enunciado": "¿Usa la Fórmula E coches híbridos?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3636",
+      "tipo": "sino",
+      "enunciado": "¿Ha abierto Cristiano Ronaldo un museo dedicado a sí mismo?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3651",
+      "tipo": "sino",
+      "enunciado": "¿Estuvo el monopatín en los Juegos Olímpicos de Tokio 2020?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5206",
+      "tipo": "sino",
+      "enunciado": "¿Pone Eddie Murphy la voz original de Asno en «Shrek»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Dibujos animados"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5192",
+      "tipo": "sino",
+      "enunciado": "¿Es Bill Cipher el bueno en «Gravity Falls»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Dibujos animados"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5198",
+      "tipo": "sino",
+      "enunciado": "¿Era negro Waylon Smithers en su primera aparición en «Los Simpson»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Dibujos animados"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4626",
+      "tipo": "sino",
+      "enunciado": "¿Murió Tupac Shakur por las heridas de un apuñalamiento?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Famosos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4671",
+      "tipo": "sino",
+      "enunciado": "¿Se llama Lady Gaga en realidad Stefani Joanne Angelina Germanotta?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Famosos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4667",
+      "tipo": "sino",
+      "enunciado": "¿Era Terry Gilliam el único estadounidense de los Monty Python?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Famosos"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3697",
+      "tipo": "sino",
+      "enunciado": "¿Es África un país?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3716",
+      "tipo": "sino",
+      "enunciado": "¿Es la Ciudad del Vaticano un país?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3727",
+      "tipo": "sino",
+      "enunciado": "¿Es Malta el microestado más pequeño del mundo?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3734",
+      "tipo": "sino",
+      "enunciado": "¿Formó parte del Imperio romano el territorio del actual Portugal?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3755",
+      "tipo": "sino",
+      "enunciado": "¿Es Toronto la capital de Canadá?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3760",
+      "tipo": "sino",
+      "enunciado": "¿Está Bosnia y Herzegovina en la región del Báltico?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3792",
+      "tipo": "sino",
+      "enunciado": "¿Es Hungría el único país del mundo que empieza por H?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3794",
+      "tipo": "sino",
+      "enunciado": "¿Debe Colombia su nombre a Cristóbal Colón?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3804",
+      "tipo": "sino",
+      "enunciado": "¿Se llama archipiélago a un grupo de islas?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3815",
+      "tipo": "sino",
+      "enunciado": "¿Es Tokio la capital de Japón?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3838",
+      "tipo": "sino",
+      "enunciado": "¿Es Seúl la capital de Corea del Norte?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3905",
+      "tipo": "sino",
+      "enunciado": "¿Es Río de Janeiro la capital de Brasil?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3956",
+      "tipo": "sino",
+      "enunciado": "¿Existe una isla llamada Java?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3712",
+      "tipo": "sino",
+      "enunciado": "¿Es Bali la capital de Indonesia?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3730",
+      "tipo": "sino",
+      "enunciado": "¿Es Ottawa la capital de Canadá?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3751",
+      "tipo": "sino",
+      "enunciado": "¿Se considera Washington D. C. un estado de EE. UU.?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3753",
+      "tipo": "sino",
+      "enunciado": "¿Es San Marino el único país completamente rodeado por otro país?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3768",
+      "tipo": "sino",
+      "enunciado": "¿Es Alaska el estado más grande de EE. UU.?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3774",
+      "tipo": "sino",
+      "enunciado": "¿Hay una ciudad llamada Roma en todos los continentes?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3777",
+      "tipo": "sino",
+      "enunciado": "¿Es Groenlandia casi tan grande como África?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3791",
+      "tipo": "sino",
+      "enunciado": "¿Viene el nombre de Argentina del latín «argentum», plata?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3802",
+      "tipo": "sino",
+      "enunciado": "¿Está Groenlandia cubierta de hierba e Islandia de hielo?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3807",
+      "tipo": "sino",
+      "enunciado": "¿Hay una isla en Japón, Ōkunoshima, llamada «la isla de los conejos» por la cantidad que tiene?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3861",
+      "tipo": "sino",
+      "enunciado": "¿Está el desierto de Sonora en el este de África?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3881",
+      "tipo": "sino",
+      "enunciado": "¿Es Gotemburgo la capital de Suecia?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3889",
+      "tipo": "sino",
+      "enunciado": "¿Se conduce por la izquierda en Japón?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3894",
+      "tipo": "sino",
+      "enunciado": "¿Es Vietnam el único país del mundo que empieza por V?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3908",
+      "tipo": "sino",
+      "enunciado": "¿Tiene Noruega más superficie que Suecia?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3911",
+      "tipo": "sino",
+      "enunciado": "¿Es la Antártida el mayor desierto del mundo?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3913",
+      "tipo": "sino",
+      "enunciado": "¿Es Tartu la capital de Estonia?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3928",
+      "tipo": "sino",
+      "enunciado": "¿Formó Mongolia parte de la Unión Soviética?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3950",
+      "tipo": "sino",
+      "enunciado": "¿Es Tasmania un estado insular de Australia?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3965",
+      "tipo": "sino",
+      "enunciado": "¿Es Australia más grande que Groenlandia?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3974",
+      "tipo": "sino",
+      "enunciado": "¿Recorre la Ruta 66 Estados Unidos de costa a costa, de California a Nueva York?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4024",
+      "tipo": "sino",
+      "enunciado": "¿Son los flamencos y los valones los dos grandes grupos de Bélgica?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4068",
+      "tipo": "sino",
+      "enunciado": "¿Es el inglés una de las cuatro lenguas nacionales de Suiza?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3764",
+      "tipo": "sino",
+      "enunciado": "¿Es California más grande que Japón?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3765",
+      "tipo": "sino",
+      "enunciado": "¿Tiene Sudáfrica más de una capital?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3782",
+      "tipo": "sino",
+      "enunciado": "¿Se llamaba Siam Laos hasta 1939?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3829",
+      "tipo": "sino",
+      "enunciado": "¿Tiene Rusia frontera terrestre con Corea del Norte?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3839",
+      "tipo": "sino",
+      "enunciado": "¿Va Israel siete horas por delante de Nueva York?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3845",
+      "tipo": "sino",
+      "enunciado": "¿Es la superficie de Rusia algo mayor que la del planeta enano Plutón?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3852",
+      "tipo": "sino",
+      "enunciado": "¿Es Colombia el tercer país más grande de Sudamérica?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3924",
+      "tipo": "sino",
+      "enunciado": "¿Se podría ir andando de Noruega a Corea del Norte pasando solo por Rusia?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3925",
+      "tipo": "sino",
+      "enunciado": "¿Es cierto que Liechtenstein no tiene aeropuerto?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3938",
+      "tipo": "sino",
+      "enunciado": "¿Está la isla de Borneo repartida entre tres países?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4070",
+      "tipo": "sino",
+      "enunciado": "¿Tiene Japón 47 prefecturas?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4083",
+      "tipo": "sino",
+      "enunciado": "¿Declaró Estados Unidos su independencia del Imperio británico el 4 de julio de 1776?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4097",
+      "tipo": "sino",
+      "enunciado": "¿Fue la Ilustración una época de ideas, avances y teorías científicas para mejorar la sociedad?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4126",
+      "tipo": "sino",
+      "enunciado": "¿Fue Estados Unidos el primer país en mandar a un hombre al espacio?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4150",
+      "tipo": "sino",
+      "enunciado": "¿Asesinaron a John F. Kennedy en Atlanta?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4080",
+      "tipo": "sino",
+      "enunciado": "¿Fue Adolf Hitler soldado alemán en la Primera Guerra Mundial?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4122",
+      "tipo": "sino",
+      "enunciado": "¿Fue juzgado Adolf Hitler en los juicios de Núremberg?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4136",
+      "tipo": "sino",
+      "enunciado": "¿Acabó la Guerra Fría con la muerte de Stalin?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4147",
+      "tipo": "sino",
+      "enunciado": "¿Fueron las protestas de la plaza de Tiananmén de 1989 en Hong Kong?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4163",
+      "tipo": "sino",
+      "enunciado": "¿Usó Reino Unido tanques hinchables en la Segunda Guerra Mundial para despistar a Hitler antes del desembarco de Normandía?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4168",
+      "tipo": "sino",
+      "enunciado": "¿Ayudó Francia a Estados Unidos a independizarse de Reino Unido?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4169",
+      "tipo": "sino",
+      "enunciado": "¿Fueron los vikingos los primeros europeos en llegar a América del Norte?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4202",
+      "tipo": "sino",
+      "enunciado": "¿Fue Brasil un imperio?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4258",
+      "tipo": "sino",
+      "enunciado": "¿Admitieron a Hitler en la Academia de Bellas Artes de Viena?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4294",
+      "tipo": "sino",
+      "enunciado": "¿Duró la guerra de los Cien Años más de cien años?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4423",
+      "tipo": "sino",
+      "enunciado": "¿Ganaron los emús la «Gran Guerra del Emú» de Australia en 1932?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4426",
+      "tipo": "sino",
+      "enunciado": "¿Fue la batalla de Trafalgar el 23 de octubre de 1805?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4432",
+      "tipo": "sino",
+      "enunciado": "¿Estaba Japón en el bando aliado en la Primera Guerra Mundial?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4088",
+      "tipo": "sino",
+      "enunciado": "¿Era Kublai Kan nieto de Gengis Kan?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4098",
+      "tipo": "sino",
+      "enunciado": "¿Inventó el fontanero Thomas Crapper el retrete con cisterna?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4125",
+      "tipo": "sino",
+      "enunciado": "¿Fue Estados Unidos miembro de la Sociedad de Naciones?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4174",
+      "tipo": "sino",
+      "enunciado": "¿Se llamaban «romanos» a sí mismos la mayoría de los habitantes del Imperio bizantino?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4184",
+      "tipo": "sino",
+      "enunciado": "¿Es de Voltaire la frase «No estoy de acuerdo con lo que dices, pero defenderé con mi vida tu derecho a decirlo»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4192",
+      "tipo": "sino",
+      "enunciado": "¿Era Augusto primo de Julio César?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4199",
+      "tipo": "sino",
+      "enunciado": "¿Es la Universidad de Oxford más antigua que el Imperio azteca?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4242",
+      "tipo": "sino",
+      "enunciado": "¿Cedió Francia Canadá a Reino Unido en el Tratado de París de 1763?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4284",
+      "tipo": "sino",
+      "enunciado": "¿Terminó la guerra de Corea en 1953 sin ningún alto el fuego?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4289",
+      "tipo": "sino",
+      "enunciado": "¿Hay una forma de agarrar una espada larga por la hoja sin cortarse?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4311",
+      "tipo": "sino",
+      "enunciado": "¿Tiene el calendario etíope 13 meses?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4350",
+      "tipo": "sino",
+      "enunciado": "¿Se llamaban «Little Man» y «Fat Boy» las bombas atómicas lanzadas sobre Japón?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4356",
+      "tipo": "sino",
+      "enunciado": "¿Nacieron Martin Luther King y Ana Frank el mismo año?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4360",
+      "tipo": "sino",
+      "enunciado": "¿Nació el Imperio otomano en 1299?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4376",
+      "tipo": "sino",
+      "enunciado": "¿Fue Francisco José I el último emperador de Austria?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4408",
+      "tipo": "sino",
+      "enunciado": "¿Era falsa la cuarta chimenea del Titanic, puesta para que pareciera más potente y simétrico?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4458",
+      "tipo": "sino",
+      "enunciado": "¿Se llamaba Aaron Burr el hombre que mató a Alexander Hamilton en un duelo?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4459",
+      "tipo": "sino",
+      "enunciado": "En la guerra de Invierno, ¿murieron o desaparecieron cinco veces más soldados soviéticos que finlandeses?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4466",
+      "tipo": "sino",
+      "enunciado": "¿Se llamaba Stalin en realidad Ioseb Besarionis dze Jughashvili?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3185",
+      "tipo": "sino",
+      "enunciado": "¿Es una campana el logotipo de Snapchat?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3187",
+      "tipo": "sino",
+      "enunciado": "¿Se creó Linux como alternativa a Windows XP?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3239",
+      "tipo": "sino",
+      "enunciado": "¿Significa RAM «memoria de acceso aleatorio»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3179",
+      "tipo": "sino",
+      "enunciado": "En la mayoría de lenguajes de programación, ¿equivale el operador ++ a «+= 1»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3186",
+      "tipo": "sino",
+      "enunciado": "¿Salió Windows ME en el año 2000?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3188",
+      "tipo": "sino",
+      "enunciado": "¿Se llama así la NVIDIA GTX 1080 porque solo puede mostrar imagen a 1920 × 1080?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3198",
+      "tipo": "sino",
+      "enunciado": "¿Es cierto que un Mac no es un PC?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3200",
+      "tipo": "sino",
+      "enunciado": "¿Significa HTML «Hypertext Markup Language»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3202",
+      "tipo": "sino",
+      "enunciado": "¿Se basa Python en una versión modificada de JavaScript?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3212",
+      "tipo": "sino",
+      "enunciado": "¿Deriva JavaScript de una versión posterior de Java?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3229",
+      "tipo": "sino",
+      "enunciado": "¿Se considera a Ada Lovelace la primera programadora de la historia?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3249",
+      "tipo": "sino",
+      "enunciado": "¿Fue una polilla dentro de un ordenador Harvard Mark II el primer «bug» informático registrado?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3250",
+      "tipo": "sino",
+      "enunciado": "¿Está macOS basado en Linux?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3260",
+      "tipo": "sino",
+      "enunciado": "¿Fue un cable defectuoso el primer «bug» informático?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3282",
+      "tipo": "sino",
+      "enunciado": "¿Representa el valor booleano «0» la palabra «falso»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3318",
+      "tipo": "sino",
+      "enunciado": "¿Tienen las versiones de Android nombres en orden alfabético?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3324",
+      "tipo": "sino",
+      "enunciado": "¿Se crearon los ordenadores Raspberry Pi en Estados Unidos?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3191",
+      "tipo": "sino",
+      "enunciado": "¿Es cierto que el C original no tenía punteros y que se añadieron después en C++?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3203",
+      "tipo": "sino",
+      "enunciado": "¿Debe su nombre el lenguaje Python al grupo cómico Monty Python?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3232",
+      "tipo": "sino",
+      "enunciado": "¿Salió el primer IBM PC en 1981?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3244",
+      "tipo": "sino",
+      "enunciado": "¿Creó Linus Torvalds Linux y Git?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3367",
+      "tipo": "sino",
+      "enunciado": "¿Estaba Apple al borde de la quiebra en 1997 y la salvó Microsoft?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2821",
+      "tipo": "sino",
+      "enunciado": "¿Ganan con facilidad los mejores jugadores humanos a los mejores ordenadores al ajedrez?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Juegos de mesa"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2814",
+      "tipo": "sino",
+      "enunciado": "Al colocar el tablero de ajedrez, ¿va el rey en una casilla de su mismo color?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Juegos de mesa"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2854",
+      "tipo": "sino",
+      "enunciado": "¿Tiene el go más posiciones legales posibles que átomos hay en el universo visible?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Juegos de mesa"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2823",
+      "tipo": "sino",
+      "enunciado": "¿Se creó el juego de serpientes y escaleras en la India?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Juegos de mesa"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2834",
+      "tipo": "sino",
+      "enunciado": "¿Lleva monóculo el señor del Monopoly (Rich Uncle Pennybags)?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Juegos de mesa"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o478",
+      "tipo": "sino",
+      "enunciado": "¿Es cierto que la frase «Elemental, querido Watson» no aparece nunca en los libros de Sherlock Holmes de Conan Doyle?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o480",
+      "tipo": "sino",
+      "enunciado": "¿Se publicó «1984» en 1949?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o498",
+      "tipo": "sino",
+      "enunciado": "¿Superan entre todos los libros de Harry Potter el millón de palabras?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o574",
+      "tipo": "sino",
+      "enunciado": "¿Nació Harry Potter el 31 de julio de 1980?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o502",
+      "tipo": "sino",
+      "enunciado": "¿Escribió Stephen Chbosky «Las ventajas de ser un marginado»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o506",
+      "tipo": "sino",
+      "enunciado": "En la novela de Bram Stoker, ¿destruye la luz del sol a Drácula?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o507",
+      "tipo": "sino",
+      "enunciado": "¿Es Shub-Niggurath una criatura creada por Tolkien en «El señor de los anillos»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o542",
+      "tipo": "sino",
+      "enunciado": "¿Iba a ser negro, en un principio, el Charlie de «Charlie y la fábrica de chocolate»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o577",
+      "tipo": "sino",
+      "enunciado": "En «Las reliquias de la Muerte», ¿destruye Hermione el cuarto horrocrux con la espada de Gryffindor?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3387",
+      "tipo": "sino",
+      "enunciado": "¿Es impar la suma de dos números impares?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3394",
+      "tipo": "sino",
+      "enunciado": "¿Tiene un triángulo isósceles dos lados iguales, y no tres?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3396",
+      "tipo": "sino",
+      "enunciado": "¿Miden siempre 60° todos los ángulos de un triángulo equilátero?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3425",
+      "tipo": "sino",
+      "enunciado": "¿Dice el teorema de Pitágoras que el cuadrado de la hipotenusa es igual al producto de los cuadrados de los catetos?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3426",
+      "tipo": "sino",
+      "enunciado": "¿Es E = mc³?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3371",
+      "tipo": "sino",
+      "enunciado": "¿Tiene un triángulo escaleno dos lados iguales?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3375",
+      "tipo": "sino",
+      "enunciado": "¿Tiene solución el problema de la cuadratura del círculo?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3416",
+      "tipo": "sino",
+      "enunciado": "¿Es cero el factorial de cero?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3424",
+      "tipo": "sino",
+      "enunciado": "¿Se puede hacer la raíz cuadrada de un número negativo con el número imaginario i?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3410",
+      "tipo": "sino",
+      "enunciado": "¿Es 111 111 111 × 111 111 111 = 12 345 678 987 654 321?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3435",
+      "tipo": "sino",
+      "enunciado": "Si pudieras doblar un papel por la mitad 50 veces, ¿tendría un grosor de unas tres cuartas partes de la distancia de la Tierra al Sol?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3450",
+      "tipo": "sino",
+      "enunciado": "En la mitología griega, ¿se llama Marte el dios de la guerra?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Mitología"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3458",
+      "tipo": "sino",
+      "enunciado": "En la mitología griega, ¿controla Zeus los rayos?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Mitología"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3472",
+      "tipo": "sino",
+      "enunciado": "En la mitología griega, ¿convierte la gorgona en piedra a quien la mira?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Mitología"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3485",
+      "tipo": "sino",
+      "enunciado": "¿Era el dios romano Júpiter el que los griegos llamaban Zeus?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Mitología"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3460",
+      "tipo": "sino",
+      "enunciado": "¿Es un guiverno lo mismo que un dragón?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Mitología"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3467",
+      "tipo": "sino",
+      "enunciado": "En la mitología griega, ¿era Atlas un dios olímpico?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Mitología"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3470",
+      "tipo": "sino",
+      "enunciado": "En la mitología nórdica, ¿se disfrazó Thor una vez de mujer?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Mitología"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3478",
+      "tipo": "sino",
+      "enunciado": "En la mitología griega, ¿es Hera la diosa de la cosecha?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Mitología"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3511",
+      "tipo": "sino",
+      "enunciado": "¿Era Jano el dios romano de las puertas y los pasos?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Mitología"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3499",
+      "tipo": "sino",
+      "enunciado": "Según la mitología nórdica, ¿es Loki madre?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Mitología"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3512",
+      "tipo": "sino",
+      "enunciado": "¿Es Skadi la diosa nórdica del esquí, las montañas, el invierno y la caza con arco?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Mitología"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o892",
+      "tipo": "sino",
+      "enunciado": "¿Compuso John Williams la música de «La guerra de las galaxias»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o991",
+      "tipo": "sino",
+      "enunciado": "¿Es Daft Punk de Francia?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1000",
+      "tipo": "sino",
+      "enunciado": "¿Para ser un «one-hit wonder» basta con publicar una sola canción al año?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o970",
+      "tipo": "sino",
+      "enunciado": "¿Es el saxofón un instrumento de metal?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o975",
+      "tipo": "sino",
+      "enunciado": "¿Es Muse un grupo de rock inglés?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o981",
+      "tipo": "sino",
+      "enunciado": "¿Fue «Video Killed the Radio Star» de The Buggles el primer videoclip emitido en la MTV?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o984",
+      "tipo": "sino",
+      "enunciado": "¿Tiene de verdad un doctorado el rapero Dr. Dre?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o995",
+      "tipo": "sino",
+      "enunciado": "¿Cambió Prince en 1993 su nombre por un símbolo impronunciable por su descontento con Warner Bros.?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1010",
+      "tipo": "sino",
+      "enunciado": "¿Debutó el grupo de K-pop BTS en 2013?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1221",
+      "tipo": "sino",
+      "enunciado": "¿Es cierto que «My Way» (1969) no la escribió Frank Sinatra?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o894",
+      "tipo": "sino",
+      "enunciado": "¿Es Stevland Hardaway Morris el nombre real de Stevie Wonder?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o910",
+      "tipo": "sino",
+      "enunciado": "¿Es el eurobeat un género sobre todo italiano?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o922",
+      "tipo": "sino",
+      "enunciado": "¿Tiene nueve miembros el grupo surcoreano TWICE?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o947",
+      "tipo": "sino",
+      "enunciado": "¿Sacó Daft Punk su nombre de una crítica negativa que recibieron?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1029",
+      "tipo": "sino",
+      "enunciado": "¿Escribió Michael Jackson la canción de Los Simpson «Do the Bartman»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1051",
+      "tipo": "sino",
+      "enunciado": "¿Es Halsey el nombre artístico de Ashley Frangipane?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1052",
+      "tipo": "sino",
+      "enunciado": "¿Representa la «Obertura 1812» de Chaikovski la guerra de 1812 entre EE. UU. y Gran Bretaña?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1066",
+      "tipo": "sino",
+      "enunciado": "¿Fue Pete Townshend el primer músico en destrozar su instrumento en directo?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1117",
+      "tipo": "sino",
+      "enunciado": "¿Es Cordozar Calvin Broadus Jr. el nombre real de Snoop Dogg?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1120",
+      "tipo": "sino",
+      "enunciado": "¿Grabó Dave Grohl él solo el primer disco de Foo Fighters?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1165",
+      "tipo": "sino",
+      "enunciado": "¿Se considera «American Idiot» de Green Day una «ópera punk rock»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1389",
+      "tipo": "sino",
+      "enunciado": "¿Escribió William Shakespeare «Las brujas de Salem» (The Crucible)?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Musicales y teatro"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1393",
+      "tipo": "sino",
+      "enunciado": "En «Edipo rey», ¿mata Edipo a su padre por celos porque ama a su madre?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Musicales y teatro"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4496",
+      "tipo": "sino",
+      "enunciado": "¿Fue «Yes We Can» uno de los lemas de campaña de Barack Obama?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Política"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4498",
+      "tipo": "sino",
+      "enunciado": "¿Prometió Donald Trump en la campaña de 2016 construir un muro en la frontera con México?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Política"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4505",
+      "tipo": "sino",
+      "enunciado": "¿Tiene Dinamarca monarquía?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Política"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4507",
+      "tipo": "sino",
+      "enunciado": "¿Votó Reino Unido en 2016 seguir en la Unión Europea?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Política"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4502",
+      "tipo": "sino",
+      "enunciado": "¿Comparten todos los países escandinavos el mismo monarca?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Política"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4510",
+      "tipo": "sino",
+      "enunciado": "¿Ganó Donald Trump en voto popular las elecciones de 2016?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Política"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4517",
+      "tipo": "sino",
+      "enunciado": "¿Es la Ciudad del Vaticano miembro de pleno derecho de la ONU?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Política"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4530",
+      "tipo": "sino",
+      "enunciado": "¿Fue Theresa May la primera mujer primera ministra de Reino Unido?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Política"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4494",
+      "tipo": "sino",
+      "enunciado": "¿Fue Berlín capital de dos países durante unos 40 años?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Política"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4535",
+      "tipo": "sino",
+      "enunciado": "¿Se llama oficialmente Taiwán «República de China»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Política"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4946",
+      "tipo": "sino",
+      "enunciado": "¿Fue el iPhone 3G la segunda generación de iPhone?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Tecnología"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4951",
+      "tipo": "sino",
+      "enunciado": "¿Significa NFC «Near-Field Control»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Tecnología"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4948",
+      "tipo": "sino",
+      "enunciado": "¿Se puede usar un micrófono para emitir sonido, como un altavoz?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Tecnología"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1491",
+      "tipo": "sino",
+      "enunciado": "En «Star Trek», ¿son los klingon alienígenas?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1454",
+      "tipo": "sino",
+      "enunciado": "¿Debe su nombre la familia Simpson a la familia real de Matt Groening?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1513",
+      "tipo": "sino",
+      "enunciado": "En «Futurama», ¿es Philip J. Fry su propio abuelo?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4793",
+      "tipo": "sino",
+      "enunciado": "¿Es Honda una empresa japonesa?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Vehículos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4778",
+      "tipo": "sino",
+      "enunciado": "¿Es BMW M la filial de BMW dedicada a los coches de altas prestaciones?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Vehículos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4796",
+      "tipo": "sino",
+      "enunciado": "¿Significa BMW «Fábrica Bávara de Motores»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Vehículos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4818",
+      "tipo": "sino",
+      "enunciado": "¿Era Bugatti una marca italiana?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Vehículos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4822",
+      "tipo": "sino",
+      "enunciado": "¿Fue el Benz Patent-Motorwagen de 1886 el primer automóvil de verdad?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Vehículos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4830",
+      "tipo": "sino",
+      "enunciado": "¿Fabricaba coches BMW cuando se fundó en 1916?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Vehículos"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1628",
+      "tipo": "sino",
+      "enunciado": "¿Es Luigi más alto que Mario?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1692",
+      "tipo": "sino",
+      "enunciado": "¿Se llama Morgan Freeman el protagonista de Half-Life?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1720",
+      "tipo": "sino",
+      "enunciado": "¿Se llama Zelda el protagonista de «The Legend of Zelda»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1918",
+      "tipo": "sino",
+      "enunciado": "¿Transcurre «Battlefield 1» en la Primera Guerra Mundial?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1931",
+      "tipo": "sino",
+      "enunciado": "¿Fue Super Mario Bros. el primer videojuego de la historia?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1625",
+      "tipo": "sino",
+      "enunciado": "¿Es Sans el protagonista de «Undertale»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1652",
+      "tipo": "sino",
+      "enunciado": "En Super Mario, ¿es Pauline una princesa como Peach?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1667",
+      "tipo": "sino",
+      "enunciado": "¿Es «Undertale» un juego de rol de Toby Fox de 2015?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1699",
+      "tipo": "sino",
+      "enunciado": "¿Creó Activision Battlefield 1?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1727",
+      "tipo": "sino",
+      "enunciado": "¿Se desarrolló «Doki Doki Literature Club» en Japón?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1739",
+      "tipo": "sino",
+      "enunciado": "¿Tratan los juegos de Tony Hawk de hacer trucos de BMX?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1784",
+      "tipo": "sino",
+      "enunciado": "¿Es Tetris el videojuego más vendido de todos los tiempos?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1785",
+      "tipo": "sino",
+      "enunciado": "En «Need for Speed: Porsche Unleashed», ¿solo se pueden conducir Porsche?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1787",
+      "tipo": "sino",
+      "enunciado": "¿Superó Minecraft en ventas a Tetris en 2019 y se convirtió en el juego más vendido del mundo?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1815",
+      "tipo": "sino",
+      "enunciado": "¿Comparten universo las sagas Portal y Half-Life de Valve?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1860",
+      "tipo": "sino",
+      "enunciado": "¿Desarrolla Codemasters la saga Gran Turismo?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1878",
+      "tipo": "sino",
+      "enunciado": "¿Se llama «tetris» cada pieza del Tetris?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1886",
+      "tipo": "sino",
+      "enunciado": "En Metal Gear Solid, ¿es Solid Snake un clon creado con el ADN de Big Boss?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1897",
+      "tipo": "sino",
+      "enunciado": "¿Se puede jugar a Minecraft con gafas de realidad virtual?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1930",
+      "tipo": "sino",
+      "enunciado": "¿Es Waluigi un personaje jugable en «Mario Kart 64»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1937",
+      "tipo": "sino",
+      "enunciado": "¿Es Niko Bellic el protagonista de GTA IV?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1969",
+      "tipo": "sino",
+      "enunciado": "En Pokémon, ¿evoluciona Arbok a Seviper?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2004",
+      "tipo": "sino",
+      "enunciado": "¿Es «Resident Evil 7» el primer Resident Evil en primera persona?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2018",
+      "tipo": "sino",
+      "enunciado": "¿Es Ryuji Sakamoto un personaje de Final Fantasy?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2021",
+      "tipo": "sino",
+      "enunciado": "¿Es el código Konami: arriba, arriba, abajo, abajo, izquierda, derecha, derecha, izquierda, B, A, Start?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2103",
+      "tipo": "sino",
+      "enunciado": "En Resident Evil, ¿es Leon S. Kennedy miembro de los S.T.A.R.S.?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2115",
+      "tipo": "sino",
+      "enunciado": "¿Tuvo Minecraft otro nombre antes de llamarse así?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2231",
+      "tipo": "sino",
+      "enunciado": "¿Salió Super Mario Bros. en 1990?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2233",
+      "tipo": "sino",
+      "enunciado": "En la saga BioShock, ¿se llama Little Sisters a las que recogen el ADAM?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2387",
+      "tipo": "sino",
+      "enunciado": "¿Compró Amazon Twitch en agosto de 2014 por 970 millones de dólares?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2421",
+      "tipo": "sino",
+      "enunciado": "¿Empezó Nintendo fabricando naipes?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2508",
+      "tipo": "sino",
+      "enunciado": "¿Se considera «Through the Fire and Flames» de DragonForce la canción más difícil de Guitar Hero?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2519",
+      "tipo": "sino",
+      "enunciado": "¿Se puede jugar al baloncesto en Rocket League?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2607",
+      "tipo": "sino",
+      "enunciado": "En Minecraft, ¿son más rápidas las herramientas de oro que las de diamante?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2796",
+      "tipo": "sino",
+      "enunciado": "¿Salió el primer «Metal Gear» para la primera PlayStation?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1630",
+      "tipo": "sino",
+      "enunciado": "En «Super Mario 64», ¿te da una vida reunir 100 monedas en un nivel?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1688",
+      "tipo": "sino",
+      "enunciado": "¿Es un monstruo el protagonista de «Undertale»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1694",
+      "tipo": "sino",
+      "enunciado": "¿Iba a ser Donkey Kong, en un principio, una recreativa de Popeye?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1834",
+      "tipo": "sino",
+      "enunciado": "¿Funciona «Half-Life 2» con el motor Source?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1932",
+      "tipo": "sino",
+      "enunciado": "En el universo de Sonic, ¿es Miles Prower el nombre real de Tails?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1936",
+      "tipo": "sino",
+      "enunciado": "¿Fundó Peter Molyneux Bullfrog Productions?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1956",
+      "tipo": "sino",
+      "enunciado": "¿Era la PlayStation en un principio un proyecto conjunto de Sega y Sony?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1957",
+      "tipo": "sino",
+      "enunciado": "En Super Mario Bros., ¿tienen las nubes y los arbustos el mismo dibujo con distinto color?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2001",
+      "tipo": "sino",
+      "enunciado": "¿Se le ocurrió Pac-Man a Toru Iwatani mientras comía pizza?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    }
+  ]
+}

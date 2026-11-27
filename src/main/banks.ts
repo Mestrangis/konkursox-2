@@ -3,17 +3,17 @@
 import { copyFileSync, existsSync, mkdirSync, readdirSync, readFileSync, renameSync, rmSync, statSync, writeFileSync } from 'node:fs'
 import { basename, dirname, extname, join } from 'node:path'
 import { app, net } from 'electron'
-import { bankRef, LIB_TYPES, newBankFile, newQuestionId, parseRef, splitBank, toFileBank, type LibBankInfo, type LibType } from '../shared/library'
+import { bankRef, LIB_TYPES, newBankFile, parseRef, splitBank, toFileBank, type LibBankInfo, type LibType } from '../shared/library'
 import { convertLegacy, isPlayable, parseBank, slugify, type Bank, type QuestionType } from '../shared/questions'
+import { mergeTrivia, oldTriviaBank, type TriviaPackMeta } from '../shared/trivia'
 
 const IMAGE_EXT = new Set(['.jpg', '.jpeg', '.png', '.webp', '.gif', '.avif'])
 const LEGACY_MARKER = '.legacy-importado'
 const EXAMPLES_MARKER = '.ejemplos-v3'
 const LIBRARY_MARKER = '.biblioteca-v4'
 const LADDER_MARKER = '.escalera-ejemplo'
-const TRIVIA_MARKER_V1 = '.trivia-opentdb-v1'
-const TRIVIA_MARKER = '.trivia-opentdb-v2'
-const TRIVIA_DIFS = ['facil', 'media', 'dificil'] as const
+const TRIVIA_OLD_MARKERS = ['.trivia-opentdb-v1', '.trivia-opentdb-v2']
+const TRIVIA_MARKER = '.trivia-opentdb-v3'
 
 export const banksDir = (): string => join(app.getPath('documents'), 'KONKURSOX', 'preguntas')
 export const imagesDir = (): string => join(banksDir(), 'imagenes')
@@ -24,74 +24,77 @@ const examplesDir = () => (app.isPackaged ? join(process.resourcesPath, 'ejemplo
 const triviaDir = () => (app.isPackaged ? join(process.resourcesPath, 'trivia') : join(app.getAppPath(), 'resources', 'trivia'))
 
 /**
- * Packs de Open Trivia DB (traducidos y guardados como archivos): un banco por categoría en test\ y sino\,
- * en el grupo «Trivia». Si ya existe un banco con el mismo nombre de archivo no se toca (por si lo has editado).
+ * Pack de Trivia (Open Trivia DB traducido y guardado como archivos): un banco «Trivia» en test\ y otro en
+ * sino\ (la categoría va como etiqueta), más «Trivia · descartadas» con las que casi nadie sabría aquí.
  *
- * v1 traía un banco por categoría y dificultad (opentdb-<cat>-<dif>.json). Al pasar a v2 se juntan los tres
- * que tengas instalados en uno, conservando TU versión de cada pregunta (usadas, ediciones, las que añadiste)
- * y sin recuperar las que borraste. Los archivos viejos se guardan en preguntas\_antiguos\trivia-v1\.
+ * Si tenías una versión anterior (v1: un banco por categoría y dificultad; v2: uno por categoría), se juntan
+ * en los nuevos conservando TU versión de cada pregunta (usadas, ediciones, las que añadiste) y sin recuperar
+ * las que borraste. Los archivos viejos se guardan en preguntas\_antiguos\trivia-v2\ (o trivia-v1\).
  */
 function ensureTrivia(): void {
   const root = banksDir()
   if (existsSync(join(root, TRIVIA_MARKER))) return
-  const hadV1 = existsSync(join(root, TRIVIA_MARKER_V1))
-  const backup = join(root, '_antiguos', 'trivia-v1')
-  const moved = new Map<string, string>() // ref viejo -> ref nuevo
+  const meta = JSON.parse(readFileSync(join(triviaDir(), 'pack.json'), 'utf8')) as TriviaPackMeta
+  const hadOld = TRIVIA_OLD_MARKERS.some((m) => existsSync(join(root, m)))
+  const backup = join(root, '_antiguos', existsSync(join(root, TRIVIA_OLD_MARKERS[1])) ? 'trivia-v2' : 'trivia-v1')
+  const readJsonBank = (path: string, name: string) => parseBank(JSON.parse(readFileSync(path, 'utf8').replace(/^\uFEFF/, '')), name, true)
+  const moved = new Map<string, { ref: string; id: string }>() // "ref viejo#id viejo" -> nuevo
   let n = 0
   for (const t of ['test', 'sino'] as const) {
+    const names = meta.archivos[t]
+    if (!names) continue
     const from = join(triviaDir(), t)
-    for (const f of jsonFiles(from)) {
-      const to = join(typeDir(t), f)
-      if (existsSync(to)) continue
-      const base = basename(f, '.json')
-      const olds = TRIVIA_DIFS.map((d) => `${base}-${d}.json`).filter((o) => existsSync(join(typeDir(t), o)))
-      // si tenías el pack y borraste esos bancos, no vuelven
-      if (hadV1 && !olds.length) continue
-      if (!olds.length) {
-        copyFileSync(join(from, f), to)
-        n++
-        continue
-      }
-      const pack = parseBank(JSON.parse(readFileSync(join(from, f), 'utf8').replace(/^﻿/, '')), base, true)
-      const merged: Bank = { ...pack, preguntas: [] }
-      const ids = new Set<string>()
-      for (const o of olds) {
-        const old = parseBank(JSON.parse(readFileSync(join(typeDir(t), o), 'utf8').replace(/^﻿/, '')), o, true)
-        const dif = o.slice(base.length + 1, -5) as (typeof TRIVIA_DIFS)[number]
-        for (const q of old.preguntas) {
-          const copy = { ...q, dificultad: q.dificultad ?? dif }
-          if (ids.has(copy.id)) copy.id = newQuestionId(merged, 'm')
-          ids.add(copy.id)
-          merged.preguntas.push(copy)
-        }
-        moved.set(`${t}/${o}`, `${t}/${f}`)
-      }
-      writeJson(to, toFileBank(merged))
-      mkdirSync(join(backup, t), { recursive: true })
-      for (const o of olds) renameSync(join(typeDir(t), o), join(backup, t, o))
-      n++
+    const targets = [names.trivia, names.descartadas]
+    if (targets.some((f) => existsSync(join(typeDir(t), f)))) continue
+    const olds = jsonFiles(typeDir(t)).filter((f) => oldTriviaBank(f, meta))
+    if (!olds.length) {
+      // si tenías el pack y borraste todos sus bancos, no vuelve
+      if (hadOld) continue
+      for (const f of targets) if (existsSync(join(from, f))) (copyFileSync(join(from, f), join(typeDir(t), f)), n++)
+      continue
     }
+    const pack = { trivia: readJsonBank(join(from, names.trivia), 'Trivia'), descartadas: readJsonBank(join(from, names.descartadas), 'Trivia · descartadas') }
+    const old = olds.flatMap((file) => {
+      try {
+        return [{ file, bank: readJsonBank(join(typeDir(t), file), file) }]
+      } catch (err) {
+        console.error('[biblioteca] trivia antigua ilegible', file, err)
+        return []
+      }
+    })
+    const r = mergeTrivia(pack, meta, old, names)
+    if (r.trivia) (writeJson(join(typeDir(t), names.trivia), toFileBank(r.trivia)), n++)
+    if (r.descartadas) (writeJson(join(typeDir(t), names.descartadas), toFileBank(r.descartadas)), n++)
+    mkdirSync(join(backup, t), { recursive: true })
+    for (const { file } of old) {
+      let dest = join(backup, t, file)
+      for (let i = 2; existsSync(dest); i++) dest = join(backup, t, file.replace(/\.json$/, `-${i}.json`))
+      renameSync(join(typeDir(t), file), dest)
+    }
+    for (const [k, v] of r.moved) moved.set(`${t}/${k}`, { ref: `${t}/${v.file}`, id: v.id })
   }
-  // las partidas mezcladas apuntan a la pregunta original para marcarla usada: pasa el banco al nuevo
+  // las partidas mezcladas apuntan a la pregunta original para marcarla usada: pásalas al banco nuevo
   if (moved.size)
     for (const t of ['test', 'sino', 'escalera'] as const)
       for (const f of jsonFiles(typeDir(t))) {
         const path = join(typeDir(t), f)
         try {
-          const raw = JSON.parse(readFileSync(path, 'utf8').replace(/^﻿/, ''))
+          const raw = JSON.parse(readFileSync(path, 'utf8').replace(/^\uFEFF/, ''))
           if (!raw?.mezcla || !Array.isArray(raw.preguntas)) continue
           let changed = false
-          for (const q of raw.preguntas)
-            if (q?.origen?.ref && moved.has(q.origen.ref)) {
-              q.origen.ref = moved.get(q.origen.ref)
+          for (const q of raw.preguntas) {
+            const to = q?.origen?.ref ? moved.get(`${q.origen.ref}#${q.origen.id}`) : undefined
+            if (to) {
+              q.origen = { ref: to.ref, id: to.id }
               changed = true
             }
+          }
           if (changed) writeJson(path, raw)
         } catch {
           /* un banco roto no para el resto */
         }
       }
-  writeFileSync(join(root, TRIVIA_MARKER), `Packs de Open Trivia DB (uno por categoría) el ${new Date().toISOString()} (${n} bancos)\n`, 'utf8')
+  writeFileSync(join(root, TRIVIA_MARKER), `Pack de Trivia (un banco por tipo) el ${new Date().toISOString()} (${n} bancos)\n`, 'utf8')
 }
 
 const listImages = (): string[] => (existsSync(imagesDir()) ? readdirSync(imagesDir()).filter((f) => IMAGE_EXT.has(extname(f).toLowerCase())) : [])

@@ -7,6 +7,7 @@ import { DIF_LABEL, DIFICULTADES, isPlayable, missingImage, normText, parseNumbe
 import { formatNumber } from '../../../shared/games'
 import { LIB_TYPES, newQuestionId, parseRoscoText, QTYPE_OF, sortRosco, toFileBank, type LibBankInfo, type LibType } from '../../../shared/library'
 import { findDuplicates, parseImport, questionsToCsv, type ImportResult } from '../../../shared/importer'
+import { TRIVIA_DISCARDED_FILE } from '../../../shared/trivia'
 import type { GameState } from '../../../shared/types'
 import { askConfirm, askText, btn, h, icon, ICONS, openDialog, type Ctx, type Screen } from '../ui'
 
@@ -39,7 +40,8 @@ export function createLibraryScreen(ctx: Ctx): Screen {
   let search = ''
   const open = new Set<LibType>(['test'])
   const openGroups = new Set<string>()
-  const filt = { tag: '', dif: '' as '' | Dificultad | 'none', estado: '' as Estado, text: '' }
+  /** cats: categorías elegidas con los chips de la Trivia (vacío = todas) */
+  const filt = { tag: '', dif: '' as '' | Dificultad | 'none', estado: '' as Estado, text: '', cats: new Set<string>() }
   const checked = new Set<string>()
   let lastClicked = -1
   let quick: string | null = null
@@ -215,7 +217,7 @@ export function createLibraryScreen(ctx: Ctx): Screen {
       const groups = [...new Set(banks.map((b) => b.grupo).filter(Boolean) as string[])].sort((a, b) => Number(a === TRIVIA) - Number(b === TRIVIA))
       for (const g of groups) {
         const gk = `${t.id}|${g}`
-        const inGroup = banks.filter((b) => b.grupo === g)
+        const inGroup = banks.filter((b) => b.grupo === g).sort((a, b) => Number(a.file === TRIVIA_DISCARDED_FILE) - Number(b.file === TRIVIA_DISCARDED_FILE))
         const gOpen = openGroups.has(gk) || inGroup.some((b) => b.ref === ref)
         const head = h('a', 'tg bank', { fontWeight: 600 }, [
           icon(gOpen ? ICONS.triDown : ICONS.triRight, 10, '#9a9aa3'),
@@ -229,7 +231,7 @@ export function createLibraryScreen(ctx: Ctx): Screen {
         }
         if (g === TRIVIA) {
           navEl.append(h('div', 'tg-sep'))
-          head.title = 'Packs de preguntas incluidos (Open Trivia DB, CC BY-SA 4.0): uno por categoría, con la dificultad en cada pregunta'
+          head.title = 'Pack de preguntas incluido (Open Trivia DB, CC BY-SA 4.0): la categoría va como etiqueta y la dificultad en cada pregunta. Las que casi nadie sabría están en «descartadas».'
         }
         navEl.append(head)
         if (gOpen) for (const b of inGroup) navEl.append(bankLink(b, true))
@@ -248,8 +250,12 @@ export function createLibraryScreen(ctx: Ctx): Screen {
     for (const r of banksInScope()) for (const q of ctx.lib.peek(r)?.preguntas ?? []) for (const t of q.etiquetas ?? []) set.add(t)
     return [...set].sort((a, b) => a.localeCompare(b, 'es'))
   }
-  function matches(q: Question): boolean {
-    if (filt.tag && !(q.etiquetas ?? []).includes(filt.tag)) return false
+  /** el banco abierto es de la Trivia: se filtra con chips de categoría y dificultad */
+  const inTrivia = (): boolean => !!ref && ref !== ALL && ctx.lib.info(ref)?.grupo === TRIVIA
+  function matches(q: Question, skipCats = false): boolean {
+    if (inTrivia()) {
+      if (!skipCats && filt.cats.size && !(q.etiquetas ?? []).some((t) => filt.cats.has(t))) return false
+    } else if (filt.tag && !(q.etiquetas ?? []).includes(filt.tag)) return false
     if (filt.dif === 'none' ? !!q.dificultad : filt.dif && q.dificultad !== filt.dif) return false
     switch (filt.estado) {
       case 'sinusar':
@@ -274,7 +280,7 @@ export function createLibraryScreen(ctx: Ctx): Screen {
     }
     return true
   }
-  const filtering = () => !!(filt.tag || filt.dif || filt.estado || filt.text)
+  const filtering = () => !!((inTrivia() ? filt.cats.size : filt.tag) || filt.dif || filt.estado || filt.text)
   function rows(): Row[] {
     const out: Row[] = []
     for (const r of banksInScope()) (ctx.lib.peek(r)?.preguntas ?? []).forEach((q, i) => matches(q) && out.push({ ref: r, q, i }))
@@ -283,7 +289,7 @@ export function createLibraryScreen(ctx: Ctx): Screen {
 
   function filterBar(): HTMLElement {
     const sel = (label: string, value: string, opts: [string, string][], set: (v: string) => void) => {
-      const s = h('select', 'inp', { height: 30, fontSize: 12, flex: 1, minWidth: 0 })
+      const s = h('select', 'inp', { height: 30, fontSize: 12, flex: 1, minWidth: 96 })
       s.setAttribute('aria-label', label)
       for (const [v, t] of opts) {
         const o = h('option', '', {}, [t])
@@ -298,7 +304,7 @@ export function createLibraryScreen(ctx: Ctx): Screen {
       }
       return s
     }
-    const text = h('input', 'inp', { height: 30, fontSize: 12 })
+    const text = h('input', 'inp', { height: 30, fontSize: 12, flex: 1, minWidth: 0 })
     text.placeholder = 'Filtrar por texto'
     text.value = filt.text
     text.oninput = () => {
@@ -313,8 +319,37 @@ export function createLibraryScreen(ctx: Ctx): Screen {
       })
     }
     const tags = tagsInScope()
+    const refresh = () => {
+      checked.clear()
+      render()
+    }
+    // Trivia: una fila de chips por categoría (varias a la vez) y otra por dificultad
+    const triviaChips = (): HTMLElement[] => {
+      const qs = ctx.lib.peek(ref!)?.preguntas ?? []
+      const count = new Map<string, number>()
+      for (const q of qs) if (matches(q, true)) for (const t of q.etiquetas ?? []) count.set(t, (count.get(t) ?? 0) + 1)
+      const chip = (label: string, on: boolean, n: number | null, act: () => void) => {
+        const c = h('button', `chip${on ? ' on' : ''}`, {}, [label, ...(n === null ? [] : [h('span', 'chip-n', {}, [String(n)])])])
+        c.onclick = () => {
+          act()
+          refresh()
+        }
+        return c
+      }
+      return [
+        h('div', 'chips', {}, [
+          chip('Todas', !filt.cats.size, null, () => filt.cats.clear()),
+          ...tags.map((t) => chip(t, filt.cats.has(t), count.get(t) ?? 0, () => (filt.cats.has(t) ? filt.cats.delete(t) : filt.cats.add(t))))
+        ]),
+        h('div', 'chips', {}, [
+          chip('Cualquier dificultad', !filt.dif, null, () => (filt.dif = '')),
+          ...DIFICULTADES.map((d) => chip(DIF_LABEL[d], filt.dif === d, null, () => (filt.dif = filt.dif === d ? '' : d)))
+        ])
+      ]
+    }
     return h('div', 'libfilters', { display: 'flex', flexDirection: 'column', gap: 6 }, [
-      h('div', '', { display: 'flex', gap: 6 }, [
+      ...(inTrivia() ? triviaChips() : []),
+      h('div', '', { display: inTrivia() ? 'none' : 'flex', gap: 6 }, [
         sel('Etiqueta', filt.tag, [['', 'Todas las etiquetas'], ...tags.map((t) => [t, t] as [string, string])], (v) => (filt.tag = v)),
         sel(
           'Dificultad',
@@ -622,7 +657,7 @@ export function createLibraryScreen(ctx: Ctx): Screen {
       (close) => {
         const s = h('select', 'inp')
         for (const b of opts) {
-          const o = h('option', '', {}, [`${LIB_TYPES.find((t) => t.id === b.tipo)?.label} · ${b.grupo ? b.grupo + ' · ' : ''}${b.nombre} (${b.count})`])
+          const o = h('option', '', {}, [`${LIB_TYPES.find((t) => t.id === b.tipo)?.label} · ${b.grupo && !b.nombre.startsWith(b.grupo) ? b.grupo + ' · ' : ''}${b.nombre} (${b.count})`])
           o.value = b.ref
           s.append(o)
         }
@@ -1421,7 +1456,7 @@ export function createLibraryScreen(ctx: Ctx): Screen {
           s.append(o)
         }
         mk('', `Banco nuevo «${(source || 'Importadas').replace(/\.[a-z]+$/i, '')}»`)
-        for (const b of banks) mk(b.ref, `${b.grupo ? b.grupo + ' · ' : ''}${b.nombre} (${b.count})`)
+        for (const b of banks) mk(b.ref, `${b.grupo && !b.nombre.startsWith(b.grupo) ? b.grupo + ' · ' : ''}${b.nombre} (${b.count})`)
         s.onchange = () => chosen.set(lt, s.value)
         targets.append(h('div', '', { display: 'flex', gap: 8, alignItems: 'center' }, [h('span', '', { width: 150, fontSize: 13 }, [`${n} de ${LIB_TYPES.find((x) => x.id === lt)?.label} →`]), s]))
       }

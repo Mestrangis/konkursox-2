@@ -1,57 +1,58 @@
 Packs de preguntas de Open Trivia Database (https://opentdb.com), licencia Creative Commons
 Atribución-CompartirIgual 4.0 (CC BY-SA 4.0): https://creativecommons.org/licenses/by-sa/4.0/deed.es
 
-Traducidas al español de España y adaptadas (se descartaron las que solo tienen sentido en
-EE. UU. o pierden el sentido al traducirse). Las de verdadero/falso están en Sí o no.
+Traducidas al español de España y adaptadas. La dificultad está reclasificada a mano pensando en un
+grupo de amigos españoles de 20-25 años; las que casi nadie sabría aquí están en «Trivia · descartadas».
+Las de verdadero/falso están en Sí o no. La categoría de cada pregunta va como etiqueta.
 Estos bancos se distribuyen con la misma licencia CC BY-SA 4.0.
 
-sino	Animales	25
-test	Animales	62
-test	Anime y manga	54
-sino	Anime y manga	9
-test	Arte	45
-sino	Arte	8
-sino	Ciencia y naturaleza	46
-test	Ciencia y naturaleza	230
-test	Cine	238
-sino	Cine	31
-test	Cómics	36
-sino	Cómics	3
-test	Cultura general	315
-sino	Cultura general	72
-test	Deportes	120
-sino	Deportes	13
-test	Dibujos animados	60
-sino	Dibujos animados	10
-test	Famosos	33
-sino	Famosos	4
-sino	Geografía	50
-test	Geografía	257
-sino	Historia	45
-test	Historia	290
-sino	Informática	35
-test	Informática	123
-test	Juegos de mesa	41
-sino	Juegos de mesa	9
-sino	Libros	10
-test	Libros	96
-sino	Matemáticas	17
-test	Matemáticas	54
-sino	Mitología	13
-test	Mitología	57
-test	Música	384
-sino	Música	50
-sino	Musicales y teatro	4
-test	Musicales y teatro	30
-test	Política	36
-sino	Política	13
-test	Tecnología	29
-sino	Tecnología	5
-test	Televisión	135
-sino	Televisión	20
-sino	Vehículos	18
-test	Vehículos	47
-test	Videojuegos	636
-sino	Videojuegos	122
+Tipo test	Animales	8 fáciles, 20 medias, 13 difíciles, 21 descartadas
+Tipo test	Anime y manga	3 fáciles, 22 medias, 15 difíciles, 14 descartadas
+Tipo test	Arte	13 fáciles, 13 medias, 11 difíciles, 8 descartadas
+Tipo test	Ciencia y naturaleza	44 fáciles, 82 medias, 72 difíciles, 32 descartadas
+Tipo test	Cine	34 fáciles, 74 medias, 80 difíciles, 50 descartadas
+Tipo test	Cómics	7 fáciles, 9 medias, 8 difíciles, 12 descartadas
+Tipo test	Cultura general	83 fáciles, 111 medias, 95 difíciles, 26 descartadas
+Tipo test	Deportes	27 fáciles, 25 medias, 17 difíciles, 51 descartadas
+Tipo test	Dibujos animados	11 fáciles, 17 medias, 9 difíciles, 23 descartadas
+Tipo test	Famosos	0 fáciles, 6 medias, 9 difíciles, 18 descartadas
+Tipo test	Geografía	45 fáciles, 92 medias, 75 difíciles, 45 descartadas
+Tipo test	Historia	51 fáciles, 94 medias, 72 difíciles, 73 descartadas
+Tipo test	Informática	8 fáciles, 29 medias, 30 difíciles, 56 descartadas
+Tipo test	Juegos de mesa	4 fáciles, 10 medias, 6 difíciles, 21 descartadas
+Tipo test	Libros	14 fáciles, 33 medias, 36 difíciles, 13 descartadas
+Tipo test	Matemáticas	19 fáciles, 16 medias, 12 difíciles, 7 descartadas
+Tipo test	Mitología	15 fáciles, 24 medias, 12 difíciles, 6 descartadas
+Tipo test	Música	23 fáciles, 71 medias, 110 difíciles, 180 descartadas
+Tipo test	Musicales y teatro	0 fáciles, 5 medias, 6 difíciles, 19 descartadas
+Tipo test	Política	5 fáciles, 12 medias, 8 difíciles, 11 descartadas
+Tipo test	Tecnología	5 fáciles, 11 medias, 4 difíciles, 9 descartadas
+Tipo test	Televisión	11 fáciles, 21 medias, 24 difíciles, 79 descartadas
+Tipo test	Vehículos	8 fáciles, 20 medias, 5 difíciles, 14 descartadas
+Tipo test	Videojuegos	32 fáciles, 111 medias, 96 difíciles, 397 descartadas
+Sí o no	Animales	2 fáciles, 11 medias, 9 difíciles, 3 descartadas
+Sí o no	Anime y manga	1 fáciles, 3 medias, 2 difíciles, 3 descartadas
+Sí o no	Arte	2 fáciles, 3 medias, 3 difíciles, 0 descartadas
+Sí o no	Ciencia y naturaleza	14 fáciles, 18 medias, 9 difíciles, 5 descartadas
+Sí o no	Cine	3 fáciles, 11 medias, 11 difíciles, 6 descartadas
+Sí o no	Cómics	0 fáciles, 1 medias, 1 difíciles, 1 descartadas
+Sí o no	Cultura general	16 fáciles, 31 medias, 21 difíciles, 4 descartadas
+Sí o no	Deportes	2 fáciles, 3 medias, 0 difíciles, 8 descartadas
+Sí o no	Dibujos animados	1 fáciles, 2 medias, 0 difíciles, 7 descartadas
+Sí o no	Famosos	0 fáciles, 2 medias, 1 difíciles, 1 descartadas
+Sí o no	Geografía	13 fáciles, 23 medias, 11 difíciles, 3 descartadas
+Sí o no	Historia	4 fáciles, 13 medias, 19 difíciles, 9 descartadas
+Sí o no	Informática	3 fáciles, 14 medias, 5 difíciles, 13 descartadas
+Sí o no	Juegos de mesa	1 fáciles, 2 medias, 2 difíciles, 4 descartadas
+Sí o no	Libros	0 fáciles, 4 medias, 5 difíciles, 1 descartadas
+Sí o no	Matemáticas	5 fáciles, 4 medias, 2 difíciles, 6 descartadas
+Sí o no	Mitología	4 fáciles, 5 medias, 2 difíciles, 2 descartadas
+Sí o no	Música	3 fáciles, 7 medias, 11 difíciles, 29 descartadas
+Sí o no	Musicales y teatro	0 fáciles, 2 medias, 0 difíciles, 2 descartadas
+Sí o no	Política	4 fáciles, 4 medias, 2 difíciles, 3 descartadas
+Sí o no	Tecnología	0 fáciles, 2 medias, 1 difíciles, 2 descartadas
+Sí o no	Televisión	1 fáciles, 0 medias, 2 difíciles, 17 descartadas
+Sí o no	Vehículos	1 fáciles, 4 medias, 1 difíciles, 12 descartadas
+Sí o no	Videojuegos	5 fáciles, 30 medias, 9 difíciles, 78 descartadas
 
 Total: 4040 preguntas de 5295 originales.

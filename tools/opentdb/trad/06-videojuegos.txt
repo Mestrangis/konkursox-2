@@ -58,7 +58,7 @@
 1679|¿Cuál de estos mapas NO está en CS:GO?|Oilrig|Assault|Mirage|Cache
 1680|¿Cuál de estos NO es protagonista del modo historia de GTA V?|Tommy Vercetti|Michael De Santa|Franklin Clinton|Trevor Philips
 1681|En Pokémon, ¿qué Pokémon tiene en exclusiva la habilidad Superguarda?|Shedinja|Sableye|Spiritomb|Silvally
-1682|¿En qué año salió «Metal Gear Solid» en Norteamérica?|1998|1987|2001|2004
+1682|¿En qué año salió «Metal Gear Solid» para PlayStation?|1998|1987|2001|2004
 1683|¿En qué empresa trabajaba Gabe Newell antes de fundar Valve?|Microsoft|Apple|Google|Yahoo
 1684|¿Cuál fue el primer juego de la saga Battlefield?|Battlefield 1942|Battlefield Vietnam|Battlefield 2|Battlefield 1
 1685|¿Cuándo salió Portal 2?|2011|2014|2009|2007

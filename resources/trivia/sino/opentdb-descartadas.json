@@ -1,0 +1,3294 @@
+{
+  "formato": "konkursox-banco",
+  "version": 1,
+  "nombre": "Trivia · descartadas",
+  "grupo": "Trivia",
+  "licencia": "Preguntas de Open Trivia Database (opentdb.com), licencia CC BY-SA 4.0, traducidas y adaptadas al español. Este banco se distribuye con la misma licencia (CC BY-SA 4.0).",
+  "preguntas": [
+    {
+      "id": "o4724",
+      "tipo": "sino",
+      "enunciado": "¿Es el «pollo de montaña» (mountain chicken) un pollo?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Animales"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4732",
+      "tipo": "sino",
+      "enunciado": "¿Se usaban los perros lapones finlandeses para pastorear renos?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Animales"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4740",
+      "tipo": "sino",
+      "enunciado": "¿Tienen las nutrias una especie de bolsillo bajo las patas delanteras para guardar comida y piedras?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Animales"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5013",
+      "tipo": "sino",
+      "enunciado": "En la película «Akira» (1988), ¿acaba Tetsuo destruyendo Tokio?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Anime y manga"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5028",
+      "tipo": "sino",
+      "enunciado": "¿Iba a ser Clefairy el primer Pokémon de Ash en el episodio piloto?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Anime y manga"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5169",
+      "tipo": "sino",
+      "enunciado": "¿Es cierto que en todo «Dragon Ball Z» Goku solo mata a dos personajes: Yakon y Kid Buu?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Anime y manga"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2880",
+      "tipo": "sino",
+      "enunciado": "¿Hacen a veces los grandes tiburones blancos un «golpe y mordisco» de prueba a sus víctimas?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3038",
+      "tipo": "sino",
+      "enunciado": "¿Hacen el pino los pandas macho al orinar en los árboles?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3049",
+      "tipo": "sino",
+      "enunciado": "¿Es el «gympie stinger» la planta más mortal del mundo?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3079",
+      "tipo": "sino",
+      "enunciado": "¿Mataron sin querer unos científicos a un molusco de 507 años, el ser vivo más viejo conocido entonces?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3153",
+      "tipo": "sino",
+      "enunciado": "¿Se llegó a creer que inyectar cartílago de tiburón evitaba el cáncer?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o654",
+      "tipo": "sino",
+      "enunciado": "¿Se estrenó «Los Minions» el 10 de junio de 2015?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o661",
+      "tipo": "sino",
+      "enunciado": "¿Estuvo en prisión el actor Tommy Chong?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o735",
+      "tipo": "sino",
+      "enunciado": "¿Salía Joan Cusack en la película de catástrofes «2012» (2009)?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o807",
+      "tipo": "sino",
+      "enunciado": "¿Estuvo «Tron» nominada al Óscar a los mejores efectos visuales?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o823",
+      "tipo": "sino",
+      "enunciado": "¿Es cierto que en «La venganza de los Sith» no hay ningún clon interpretado por un actor real (todos son digitales)?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o843",
+      "tipo": "sino",
+      "enunciado": "¿Dirigió la misma persona «Cube», «Cube 2: Hypercube» y «Cube Zero»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4922",
+      "tipo": "sino",
+      "enunciado": "¿Se pensaron Tormenta y Rondador Nocturno de los X-Men en principio para la Legión de Superhéroes de DC?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cómics"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o144",
+      "tipo": "sino",
+      "enunciado": "¿Se asociaron en 2010 Twitter y la Biblioteca del Congreso de EE. UU. para archivar todos los tuits de los estadounidenses?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o300",
+      "tipo": "sino",
+      "enunciado": "¿Inventó el canadiense Edward Asselbergs el puré de patatas instantáneo en 1962?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o357",
+      "tipo": "sino",
+      "enunciado": "¿Significa CAMRA, la organización británica, «Campaign for Real Ale»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o380",
+      "tipo": "sino",
+      "enunciado": "¿Lleva el Cheez Whiz de Kraft cultivo de queso pero no queso de verdad?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3535",
+      "tipo": "sino",
+      "enunciado": "¿Metió Shaquille O'Neal un solo triple en toda su carrera?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3578",
+      "tipo": "sino",
+      "enunciado": "¿Tuvo la temporada 2016 de Fórmula 1 un total de 20 carreras?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3588",
+      "tipo": "sino",
+      "enunciado": "En 2008, ¿batió Usain Bolt el récord de los 100 metros con un cordón desatado?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3600",
+      "tipo": "sino",
+      "enunciado": "¿Pueden los espectadores comprar en Wimbledon las pelotas usadas en los partidos?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3606",
+      "tipo": "sino",
+      "enunciado": "¿Se jugaban antes torneos de la ATP en moqueta, retirada para evitar lesiones?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3610",
+      "tipo": "sino",
+      "enunciado": "¿Se llamó antes «raquetbol» al tenis?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3626",
+      "tipo": "sino",
+      "enunciado": "¿Es la pista de tenis olímpica una enorme pantalla verde?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3635",
+      "tipo": "sino",
+      "enunciado": "¿Anotó Wilt Chamberlain sus famosos 100 puntos contra los New York Knicks en 1962?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5229",
+      "tipo": "sino",
+      "enunciado": "En «Avatar» y «La leyenda de Korra», ¿es la lava-control una técnica del fuego-control?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Dibujos animados"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5252",
+      "tipo": "sino",
+      "enunciado": "¿Aparece la suite de «El cascanueces» en «Fantasía» (1940), de Disney?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Dibujos animados"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5254",
+      "tipo": "sino",
+      "enunciado": "¿Aparece «Una noche en el monte pelado» en «Fantasía» (1940)?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Dibujos animados"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5258",
+      "tipo": "sino",
+      "enunciado": "¿Rechazó Nickelodeon el piloto de «Hora de aventuras»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Dibujos animados"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5260",
+      "tipo": "sino",
+      "enunciado": "¿Hizo el Pato Donald de Bob Cratchit en el «Cuento de Navidad» de Disney de 1983?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Dibujos animados"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5263",
+      "tipo": "sino",
+      "enunciado": "¿Aparece «El Danubio azul» en «Fantasía» (1940)?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Dibujos animados"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5277",
+      "tipo": "sino",
+      "enunciado": "¿Se estrenó el primer episodio de «Padre de familia» el 1 de enero de 2002?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Dibujos animados"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4644",
+      "tipo": "sino",
+      "enunciado": "¿Tuvo Michael Jackson una pitón llamada «Crusher»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Famosos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3963",
+      "tipo": "sino",
+      "enunciado": "¿Está el volcán Krakatoa al oeste de Java, y no al este como decía el título de una película de 1969?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3978",
+      "tipo": "sino",
+      "enunciado": "¿Tiene la bandera de Sudáfrica siete colores?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4009",
+      "tipo": "sino",
+      "enunciado": "¿Tiene la bandera de Bielorrusia un bordado rojo y blanco junto al mástil?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4107",
+      "tipo": "sino",
+      "enunciado": "¿Murieron los presidentes John Adams y Thomas Jefferson con pocas horas de diferencia?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4128",
+      "tipo": "sino",
+      "enunciado": "¿Nació el avión Spitfire de un avión de carreras?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4181",
+      "tipo": "sino",
+      "enunciado": "¿Fue Brézhnev el quinto líder de la URSS?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4213",
+      "tipo": "sino",
+      "enunciado": "¿Duró la cuarta cruzada de 1095 a 1099?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4290",
+      "tipo": "sino",
+      "enunciado": "¿Se abrió el canal de Panamá menos de 30 días después de empezar la Primera Guerra Mundial?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4340",
+      "tipo": "sino",
+      "enunciado": "¿Publicó una revista en 1967 un falso método para sacar alucinógenos de los plátanos, para abrir el debate sobre prohibir las drogas?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4342",
+      "tipo": "sino",
+      "enunciado": "¿Es cierto que Isaac Newton fue diputado y que la única vez que habló fue para quejarse de una corriente de aire?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4441",
+      "tipo": "sino",
+      "enunciado": "¿Llegó el tenedor a Italia antes que a ningún otro país europeo?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4475",
+      "tipo": "sino",
+      "enunciado": "¿Tuvo el reino de Prusia tierras en Estonia durante un tiempo?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3209",
+      "tipo": "sino",
+      "enunciado": "¿Viene el nombre del lenguaje AWK de las iniciales de sus creadores, Aho, Weinberger y Kernighan?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3215",
+      "tipo": "sino",
+      "enunciado": "¿Tuvo Windows 7 seis ediciones principales?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3253",
+      "tipo": "sino",
+      "enunciado": "¿Significa FLAC «Free Lossless Audio Condenser»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3258",
+      "tipo": "sino",
+      "enunciado": "¿Fue Windows 98 el último Windows basado en el núcleo 9x?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3259",
+      "tipo": "sino",
+      "enunciado": "¿Desarrolló originalmente el chip ARM la empresa Acorn Computers?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3269",
+      "tipo": "sino",
+      "enunciado": "¿Es Linus Sebastian el creador del núcleo Linux?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3288",
+      "tipo": "sino",
+      "enunciado": "¿Se publicó el estándar HTML5 en 2014?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3302",
+      "tipo": "sino",
+      "enunciado": "Para esquivar las leyes de exportación de EE. UU., ¿publicó el creador de PGP todo su código en forma de libro?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3307",
+      "tipo": "sino",
+      "enunciado": "¿Hay que compilar todo programa en un ejecutable que luego funciona en cualquier máquina?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3309",
+      "tipo": "sino",
+      "enunciado": "¿Iba la primera RAM soldada a la placa base, sin poder quitarse con facilidad?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3311",
+      "tipo": "sino",
+      "enunciado": "¿Fabricó AMD el primer procesador de 64 bits para el gran público?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3322",
+      "tipo": "sino",
+      "enunciado": "¿Fue el Intel Pentium D el primer procesador de doble núcleo?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3349",
+      "tipo": "sino",
+      "enunciado": "¿Significa DHCP «Dynamic Host Configuration Port»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2808",
+      "tipo": "sino",
+      "enunciado": "¿Existe un juego de mesa de Donald Trump hecho en 1989?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Juegos de mesa"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2811",
+      "tipo": "sino",
+      "enunciado": "¿Ganó el juego de cartas Munchkin el premio Origins de 2001 al mejor juego de cartas tradicional?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Juegos de mesa"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2818",
+      "tipo": "sino",
+      "enunciado": "En Dungeons & Dragons, ¿es Beshaba la diosa de la mala suerte?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Juegos de mesa"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2839",
+      "tipo": "sino",
+      "enunciado": "¿Se hicieron las casas y hoteles originales del Monopoly con restos de molduras de madera?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Juegos de mesa"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o469",
+      "tipo": "sino",
+      "enunciado": "¿Está escrito «Huevos verdes con jamón», del Dr. Seuss, con solo 50 palabras distintas?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3374",
+      "tipo": "sino",
+      "enunciado": "¿Existe un conjunto universal, un conjunto que contenga a todos los conjuntos?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3404",
+      "tipo": "sino",
+      "enunciado": "¿Es álef cero el cardinal del conjunto de los números naturales?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3413",
+      "tipo": "sino",
+      "enunciado": "¿Es numerable el conjunto de los números algebraicos?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3442",
+      "tipo": "sino",
+      "enunciado": "En topología, ¿es cerrado el complementario de un conjunto abierto?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3444",
+      "tipo": "sino",
+      "enunciado": "¿Equivale el número binario 101001101 al decimal 334?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3447",
+      "tipo": "sino",
+      "enunciado": "¿Fue L'Hôpital el matemático que creó la regla que lleva su nombre?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3495",
+      "tipo": "sino",
+      "enunciado": "¿Consiguió el dios japonés Izanagi sacar a su esposa Izanami del inframundo?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Mitología"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3517",
+      "tipo": "sino",
+      "enunciado": "¿Era Rannamaari un demonio marino de las Maldivas al que se ofrecía cada mes una doncella?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Mitología"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o926",
+      "tipo": "sino",
+      "enunciado": "¿Publicó el grupo They Might Be Giants su disco «Flood» en 1990?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o972",
+      "tipo": "sino",
+      "enunciado": "¿Se llamaba John Paul Larkin el cantante Scatman John?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o997",
+      "tipo": "sino",
+      "enunciado": "¿Se publicó «Friday», de Rebecca Black, el 10 de febrero de 2011?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1021",
+      "tipo": "sino",
+      "enunciado": "¿Estudió en Harvard Rivers Cuomo, el cantante de Weezer?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1037",
+      "tipo": "sino",
+      "enunciado": "¿Detuvieron a tres miembros de 2 Live Crew por tocar en directo canciones de «As Nasty As They Wanna Be»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1072",
+      "tipo": "sino",
+      "enunciado": "¿Aparece la central eléctrica de Battersea en la portada de «Animals» de Pink Floyd?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1075",
+      "tipo": "sino",
+      "enunciado": "¿Colaboró Metallica con Mr. Bean en un sencillo benéfico de 1992?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1082",
+      "tipo": "sino",
+      "enunciado": "¿Tiene 15 canciones el disco «Reputation» de Taylor Swift?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1083",
+      "tipo": "sino",
+      "enunciado": "¿Es «Rumble» de Link Wray la única canción instrumental prohibida en la radio de EE. UU.?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1101",
+      "tipo": "sino",
+      "enunciado": "¿Ganó «Crank That» de Soulja Boy el Grammy a la mejor canción de rap en 2007?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1114",
+      "tipo": "sino",
+      "enunciado": "¿Es «The Division Bell» el último disco de Pink Floyd?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1128",
+      "tipo": "sino",
+      "enunciado": "¿Llevó una campaña de Facebook «Killing in the Name» de Rage Against the Machine al número uno navideño británico de 2009?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1134",
+      "tipo": "sino",
+      "enunciado": "¿Firma el sello Monstercat canciones sueltas en vez de artistas?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1155",
+      "tipo": "sino",
+      "enunciado": "¿Es el productor escocés Calvin Harris de Dumfries?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1192",
+      "tipo": "sino",
+      "enunciado": "¿Ganó «The Suburbs» de Arcade Fire el Grammy al disco del año en 2011?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1195",
+      "tipo": "sino",
+      "enunciado": "¿Existe de verdad un grupo llamado «Neutral Milk Hotel»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1207",
+      "tipo": "sino",
+      "enunciado": "¿Es Nick Mason el único miembro que aparece en todos los discos de Pink Floyd?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1212",
+      "tipo": "sino",
+      "enunciado": "¿Ha publicado Panic! at the Disco solo cuatro discos?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1216",
+      "tipo": "sino",
+      "enunciado": "¿Colaboró Future con Kendrick Lamar en la canción «Mask Off»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1219",
+      "tipo": "sino",
+      "enunciado": "¿Sale un Volkswagen Escarabajo al fondo de la portada de «Abbey Road»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1262",
+      "tipo": "sino",
+      "enunciado": "¿Es de Twenty One Pilots la canción «The Motion» con Sampha?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1276",
+      "tipo": "sino",
+      "enunciado": "¿Escribió Shel Silverstein la canción country «A Boy Named Sue»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1290",
+      "tipo": "sino",
+      "enunciado": "¿Publicó Kygo una remezcla de «Sexual Healing» de Marvin Gaye?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1295",
+      "tipo": "sino",
+      "enunciado": "¿Se inspiró el nombre de los Beatles en el grupo The Crickets?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1310",
+      "tipo": "sino",
+      "enunciado": "¿Salió «Scatman's World» después de «Scatman (Ski-Ba-Bop-Ba-Dop-Bop)»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1321",
+      "tipo": "sino",
+      "enunciado": "¿Nació en Corea del Sur Myoui Mina, la japonesa de TWICE?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1326",
+      "tipo": "sino",
+      "enunciado": "¿Publicó «Mystery Train» el grupo Little Junior's Blue Flames en 1953?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1329",
+      "tipo": "sino",
+      "enunciado": "¿Se conocía también a Billie Holiday como «Lady Day»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1348",
+      "tipo": "sino",
+      "enunciado": "¿Transcurre «White City: A Novel», disco en solitario de Pete Townshend, en Chicago?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1385",
+      "tipo": "sino",
+      "enunciado": "¿Significa IMAX «Image Maximum»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Musicales y teatro"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1413",
+      "tipo": "sino",
+      "enunciado": "En «¿Quién teme a Virginia Woolf?», ¿se llaman George y Martha por George Washington y su mujer?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Musicales y teatro"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4518",
+      "tipo": "sino",
+      "enunciado": "¿Fue Helen Clark primera ministra de Australia?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Política"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4528",
+      "tipo": "sino",
+      "enunciado": "¿Hace falta en Francia licencia de caza o de tiro deportivo para comprar cualquier arma de fuego?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Política"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4553",
+      "tipo": "sino",
+      "enunciado": "¿Se rindió la Alemania nazi el día del cumpleaños de Harry Truman, siendo él presidente?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Política"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4975",
+      "tipo": "sino",
+      "enunciado": "¿Salió la aspiradora robot Roomba por primera vez en 2002?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Tecnología"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4981",
+      "tipo": "sino",
+      "enunciado": "¿Tuvo el fusil M16 fama de poco fiable al principio de la guerra de Vietnam?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Tecnología"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1445",
+      "tipo": "sino",
+      "enunciado": "En «Battlestar Galactica» (2004), ¿crearon los humanos a los cylones como trabajadores y soldados?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1474",
+      "tipo": "sino",
+      "enunciado": "¿Expresan los klingon sus emociones en el arte mediante la ópera y la poesía?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1492",
+      "tipo": "sino",
+      "enunciado": "En «Doctor Who», ¿consiguió el Doctor su TARDIS robándola?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1499",
+      "tipo": "sino",
+      "enunciado": "¿Fue Bob Ross piloto de las Fuerzas Aéreas de EE. UU.?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1501",
+      "tipo": "sino",
+      "enunciado": "¿Escribió el autor de la novela «Leaving Las Vegas» un episodio de «Rugrats»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1504",
+      "tipo": "sino",
+      "enunciado": "¿Hay un episodio de «Los Simpson» dedicado al trapo de la barra de Moe?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1515",
+      "tipo": "sino",
+      "enunciado": "¿Tuvieron los klingon un periodo democrático al que llamaron «los Tiempos Oscuros»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1519",
+      "tipo": "sino",
+      "enunciado": "¿Se emitió «Doctor Who» por primera vez en 1963?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1525",
+      "tipo": "sino",
+      "enunciado": "En «Enano Rojo», ¿es el nombre completo de Kryten «Kryten 2X4B-523P»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1528",
+      "tipo": "sino",
+      "enunciado": "¿Era el Ranger Blanco el líder de los Power Rangers?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1538",
+      "tipo": "sino",
+      "enunciado": "¿Respetan los klingon a sus compañeros discapacitados, viejos, heridos o indefensos?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1541",
+      "tipo": "sino",
+      "enunciado": "En «The Walking Dead», ¿aparecen Rick, Carl, Daryl, Morgan, Carol y Maggie desde la primera temporada?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1553",
+      "tipo": "sino",
+      "enunciado": "En «Star Trek: La nueva generación», ¿es Data el único androide que existe?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1554",
+      "tipo": "sino",
+      "enunciado": "¿Se canceló «La isla de Gilligan» por falta de audiencia?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1556",
+      "tipo": "sino",
+      "enunciado": "En «Star Trek», ¿se llama habitualmente a los klingon «elfos negros»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1557",
+      "tipo": "sino",
+      "enunciado": "¿Admiran los klingon a Shakespeare, hasta el punto de sospechar que tenía sangre klingon?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1606",
+      "tipo": "sino",
+      "enunciado": "¿Es Qo'noS el planeta natal de los klingon?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4784",
+      "tipo": "sino",
+      "enunciado": "¿Fue Mazda en 1991 la primera marca japonesa en ganar Le Mans?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Vehículos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4808",
+      "tipo": "sino",
+      "enunciado": "¿Fue el GM EV1 el primer coche eléctrico de serie homologado para la calle?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Vehículos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4809",
+      "tipo": "sino",
+      "enunciado": "¿Inventó el canadiense Joseph-Armand Bombardier la moto de nieve en 1937?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Vehículos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4814",
+      "tipo": "sino",
+      "enunciado": "¿Ha llevado siempre el Chevrolet Corvette motores V8?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Vehículos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4816",
+      "tipo": "sino",
+      "enunciado": "¿Superó el Shinkansen japonés el récord de velocidad del TGV francés?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Vehículos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4820",
+      "tipo": "sino",
+      "enunciado": "¿Es cierto que Ferrari nunca ha hecho un motor V10?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Vehículos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4831",
+      "tipo": "sino",
+      "enunciado": "¿Ha tenido Mitsubishi una colaboración de 30 años con Jackie Chan, cuyas películas lucen sus coches?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Vehículos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4836",
+      "tipo": "sino",
+      "enunciado": "¿Se fabrican en China la mayoría de los Subaru?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Vehículos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4840",
+      "tipo": "sino",
+      "enunciado": "¿Es Arriva propiedad de Deutsche Bahn?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Vehículos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4845",
+      "tipo": "sino",
+      "enunciado": "¿Se originó en Ferrari el término «GTO»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Vehículos"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4857",
+      "tipo": "sino",
+      "enunciado": "¿Probó Saab en 1993 a cambiar el volante por un joystick en un Saab 9000?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Vehículos"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4863",
+      "tipo": "sino",
+      "enunciado": "¿Existe un modelo de Rolls-Royce llamado Spectre?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Vehículos"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1629",
+      "tipo": "sino",
+      "enunciado": "En «Super Mario 3D World», ¿nació la Doble Cereza de un error de desarrollo que dejaba controlar a dos personajes?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1645",
+      "tipo": "sino",
+      "enunciado": "¿Fue «Undertale» (2015) la tercera aparición de la canción «Megalovania» de Toby Fox?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1647",
+      "tipo": "sino",
+      "enunciado": "¿Creó «Jetpack Joyride» el estudio Redbrick Studios?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1656",
+      "tipo": "sino",
+      "enunciado": "¿Se llama Chuck Greene el protagonista de Dead Rising 3?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1660",
+      "tipo": "sino",
+      "enunciado": "¿Es Big the Cat un personaje jugable en «Sonic Generations»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1662",
+      "tipo": "sino",
+      "enunciado": "En Animal Crossing, ¿se llaman Timmy y Jimmy los primos de Tom Nook?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1663",
+      "tipo": "sino",
+      "enunciado": "En la saga S.T.A.L.K.E.R., ¿quiere la facción Libertad destruir la Zona?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1664",
+      "tipo": "sino",
+      "enunciado": "¿Es «la Mente Maestra» el villano principal de Saints Row IV?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1671",
+      "tipo": "sino",
+      "enunciado": "En Pokémon, ¿es Bulbasaur el único inicial de tipo planta/veneno?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1673",
+      "tipo": "sino",
+      "enunciado": "¿Duran más de media hora los créditos finales de GTA V?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1674",
+      "tipo": "sino",
+      "enunciado": "¿Aparece la escopeta en todos los Resident Evil numerados?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1677",
+      "tipo": "sino",
+      "enunciado": "En RuneScape, ¿hay que completar «Dragon Slayer» para llevar las grebas de runa?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1678",
+      "tipo": "sino",
+      "enunciado": "En «Subnautica», ¿te ataca el pez espada (Spadefish)?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1686",
+      "tipo": "sino",
+      "enunciado": "En Resident Evil 4, ¿tiene munición infinita la Chicago Typewriter?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1696",
+      "tipo": "sino",
+      "enunciado": "En «Sonic Adventure», ¿puedes convertirte en Super Sonic a voluntad tras acabar la historia principal?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1703",
+      "tipo": "sino",
+      "enunciado": "En Splatoon, ¿se llaman Tako y Yaki las Calamarciñas (Squid Sisters)?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1704",
+      "tipo": "sino",
+      "enunciado": "En Dead by Daylight, ¿se llama «La Forma» al asesino Michael Myers?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1707",
+      "tipo": "sino",
+      "enunciado": "¿Es el lema de la tienda Mann Co. de Team Fortress 2 «Contratamos mercenarios y nos peleamos»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1716",
+      "tipo": "sino",
+      "enunciado": "En «Tony Hawk's Underground», ¿se llama Jeff Sampson el amigo del protagonista que se vuelve su rival?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1742",
+      "tipo": "sino",
+      "enunciado": "¿Se dice que Gordon Freeman, de Half-Life, llevó coleta?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1763",
+      "tipo": "sino",
+      "enunciado": "En Terraria, ¿se puede fabricar el teléfono móvil antes del modo difícil?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1780",
+      "tipo": "sino",
+      "enunciado": "¿Es «¡La justicia llueve del cielo!» la frase de la habilidad definitiva de Pharah en Overwatch?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1789",
+      "tipo": "sino",
+      "enunciado": "¿Llegó Ana a Overwatch el 19 de julio de 2016?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1794",
+      "tipo": "sino",
+      "enunciado": "¿Fundó el músico Gary Numan el estudio de videojuegos Facepunch Studios en 2009?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1811",
+      "tipo": "sino",
+      "enunciado": "En Pokémon Sol y Luna, ¿puede evolucionar un Salandit macho a Salazzle?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1813",
+      "tipo": "sino",
+      "enunciado": "¿Iba a tener «Sonic the Hedgehog 2» un sistema de viajes en el tiempo?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1819",
+      "tipo": "sino",
+      "enunciado": "¿Se llamaba Luigi originalmente «Mario verde»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1831",
+      "tipo": "sino",
+      "enunciado": "¿Quebró el estudio Cing, de «Hotel Dusk» y «Last Window», el 1 de marzo de 2010?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1836",
+      "tipo": "sino",
+      "enunciado": "¿Se comportan de forma completamente distinta los fantasmas de «Pac-Man» y «Ms. Pac-Man»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1838",
+      "tipo": "sino",
+      "enunciado": "En Destiny, ¿son Danzante de filo, Acechador nocturno y Cantasol las tres subclases del Cazador?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1839",
+      "tipo": "sino",
+      "enunciado": "En Dead Space 2, ¿es el «Hand Cannon» un enorme dedo de gomaespuma?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1856",
+      "tipo": "sino",
+      "enunciado": "¿Falta el World Trade Center en Deus Ex (2000) porque, según la historia del juego, lo destruyó un atentado?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1867",
+      "tipo": "sino",
+      "enunciado": "En Splatoon, ¿iban a ser conejos en vez de calamares los personajes jugables?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1921",
+      "tipo": "sino",
+      "enunciado": "En Monster Hunter, ¿se pueden capturar los dragones ancianos?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1923",
+      "tipo": "sino",
+      "enunciado": "¿Salió «Metal Gear Solid 3: Snake Eater» en 2004?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1934",
+      "tipo": "sino",
+      "enunciado": "En Until Dawn, ¿es imposible que mueran Sam y Mike antes del capítulo final?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1943",
+      "tipo": "sino",
+      "enunciado": "En Team Fortress 2, ¿es el arma «Tu recompensa eterna» una referencia a la película «Aladdín» (1992)?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1949",
+      "tipo": "sino",
+      "enunciado": "En Mortal Kombat, ¿forman Shang Tsung y Quan Chi la «Alianza Mortal»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1983",
+      "tipo": "sino",
+      "enunciado": "En Half-Life, ¿significa H.E.V. «Hazardous Evasiveness Vest»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1987",
+      "tipo": "sino",
+      "enunciado": "¿Desarrolló Chris Sawyer RollerCoaster Tycoon 1 y 2?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1991",
+      "tipo": "sino",
+      "enunciado": "En Kingdom Hearts, ¿se dice que el fruto paopu une para siempre el destino de dos personas?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1992",
+      "tipo": "sino",
+      "enunciado": "¿Es Watch Dogs 2 una precuela?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2010",
+      "tipo": "sino",
+      "enunciado": "¿Parpadean varios personajes de «Super Mario 64», incluido Mario?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2036",
+      "tipo": "sino",
+      "enunciado": "¿Fue David Baszucki uno de los fundadores de Roblox?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2069",
+      "tipo": "sino",
+      "enunciado": "¿Salió Tony Hawk's Pro Skater en 1999?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2079",
+      "tipo": "sino",
+      "enunciado": "En la historia de Warcraft, ¿fue Thrall el primero en empuñar el Martillo Maldito?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2086",
+      "tipo": "sino",
+      "enunciado": "En TF2, ¿pone Gary Schwartz, la voz del Heavy, también la voz del Demoman?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2089",
+      "tipo": "sino",
+      "enunciado": "¿Debe en parte su nombre Carmen Sandiego a la actriz brasileña Carmen Miranda?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2100",
+      "tipo": "sino",
+      "enunciado": "¿Salió la primera PlayStation en EE. UU. el 3 de diciembre de 1994?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2139",
+      "tipo": "sino",
+      "enunciado": "¿Iba a ser Resident Evil 4 en un principio exclusivo de GameCube?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2197",
+      "tipo": "sino",
+      "enunciado": "¿Transcurre «Metal Gear Solid 3: Snake Eater» en la isla Shadow Moses?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2207",
+      "tipo": "sino",
+      "enunciado": "¿Estuvo a punto de basarse Mortal Kombat en una película de Jean-Claude Van Damme?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2219",
+      "tipo": "sino",
+      "enunciado": "¿Se pensó en el futuro Dr. Eggman como nueva mascota de Sega antes que en Sonic?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2223",
+      "tipo": "sino",
+      "enunciado": "¿Fue «Los Sims» (2000) el primer juego de Maxis con el idioma inventado «simlish»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2252",
+      "tipo": "sino",
+      "enunciado": "A febrero de 2019, ¿se habían publicado solo cinco juegos de Donkey Kong Country (sin contar remakes)?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2290",
+      "tipo": "sino",
+      "enunciado": "¿Usa la saga Titanfall el motor Unreal Engine?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2311",
+      "tipo": "sino",
+      "enunciado": "¿Iba a ser Fortnite en un principio un juego de terror?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2318",
+      "tipo": "sino",
+      "enunciado": "¿Usó Garry's Mod en sus inicios recursos y código del mod JBMod de Half-Life 2?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2375",
+      "tipo": "sino",
+      "enunciado": "En «Super Mario World», ¿debe su nombre el rinoceronte Reznor al cantante de Nine Inch Nails?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2384",
+      "tipo": "sino",
+      "enunciado": "¿Es POLYBIUS una recreativa que en realidad es una leyenda urbana?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2408",
+      "tipo": "sino",
+      "enunciado": "En Portal, ¿tienen conciencia los cubos de compañía?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2410",
+      "tipo": "sino",
+      "enunciado": "¿Usa «Metal Gear Solid V: The Phantom Pain» el motor Fox Engine?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2415",
+      "tipo": "sino",
+      "enunciado": "¿Es «Return to Castle Wolfenstein» el único Wolfenstein donde no eres B. J. Blazkowicz?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2417",
+      "tipo": "sino",
+      "enunciado": "¿Iba a transcurrir en la antigua Roma un Call of Duty cancelado?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2445",
+      "tipo": "sino",
+      "enunciado": "En Half-Life 2, si reproduces al revés lo que dicen los zombis, ¿hablan en inglés comprensible?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2502",
+      "tipo": "sino",
+      "enunciado": "En el juego «Transistor», ¿se llama Red la protagonista?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2528",
+      "tipo": "sino",
+      "enunciado": "Durante la preproducción de Super Mario Bros., ¿iba a disparar balas Mario?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2616",
+      "tipo": "sino",
+      "enunciado": "¿Se planeó también el primer GTA para Nintendo 64?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2642",
+      "tipo": "sino",
+      "enunciado": "¿Ponen voz a Mario y a Paarthurnax (Skyrim) el mismo actor?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2647",
+      "tipo": "sino",
+      "enunciado": "¿Empezó Unturned como un juego de Roblox?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2648",
+      "tipo": "sino",
+      "enunciado": "¿Salió Stellaris, de Paradox, en 2016?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2664",
+      "tipo": "sino",
+      "enunciado": "En Kingdom Hearts, ¿se llaman las llaves espada de Roxas «Guardajuramentos» y «Olvido»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2675",
+      "tipo": "sino",
+      "enunciado": "¿Traía el disco de «Tony Hawk's Pro Skater 5» solo el tutorial?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2692",
+      "tipo": "sino",
+      "enunciado": "¿Salían en «Danganronpa 2: Goodbye Despair» todos los supervivientes del primer juego?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2723",
+      "tipo": "sino",
+      "enunciado": "En la saga Los Sims, ¿es ocho el número máximo de miembros de un hogar?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2764",
+      "tipo": "sino",
+      "enunciado": "¿Es GTA V la decimoquinta entrega de la saga Grand Theft Auto?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2767",
+      "tipo": "sino",
+      "enunciado": "En Portal 2, ¿empezó Cave Johnson con Aperture Science como empresa de cortinas de ducha?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2795",
+      "tipo": "sino",
+      "enunciado": "¿Empezó McCree, de Overwatch, como personaje de un StarCraft cancelado?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    }
+  ]
+}

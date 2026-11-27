@@ -41,7 +41,7 @@
 2787|¿A qué se dedicaba John Tanner, protagonista de Driver, antes de ser policía infiltrado?|Piloto de carreras|Taxista|Repartidor|Conductor de fugas
 2788|¿Qué lenguaje de programación usa el motor Source?|C++|Python|Java|Lua
 2789|¿Cuál es la canción principal de «Sonic Adventure 2»?|Live and Learn|Open Your Heart|Can You Feel the Sunshine?|His World
-2794|¿Cuándo salió Pokémon GO en Norteamérica?|6 de julio de 2016|5 de junio de 2016|24 de mayo de 2016|2 de enero de 2017
+2794|¿En qué año salió Pokémon GO?|2016|2015|2017|2014
 2795|¿Empezó McCree, de Overwatch, como personaje de un StarCraft cancelado?|Sí
 2796|¿Salió el primer «Metal Gear» para la primera PlayStation?|No
 2798|¿Cuándo salió Minecraft 1.0?|18 de noviembre de 2011|17 de mayo de 2009|10 de diciembre de 2014|13 de septiembre de 2012

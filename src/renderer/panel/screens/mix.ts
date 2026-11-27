@@ -2,11 +2,13 @@
 // las del grupo") y sacar una lista barajada sin repetir usadas. En la escalera, de fácil a difícil.
 import { DIF_LABEL, DIFICULTADES, isPlayable, normText, type Dificultad, type Question } from '../../../shared/questions'
 import type { LibBankInfo, LibType } from '../../../shared/library'
+import { TRIVIA_DISCARDED_FILE, TRIVIA_GROUP } from '../../../shared/trivia'
 import { btn, h, openDialog, type Ctx } from '../ui'
 
 export type MixKind = 'test' | 'sino' | 'escalera'
 interface MixRow {
-  /** "*" cualquier banco, "b:<ref>" un banco, "g:<grupo>" un grupo, "t:<etiqueta>" una etiqueta */
+  /** "*" cualquier banco, "b:<ref>" un banco, "g:<grupo>" un grupo, "t:<etiqueta>" una etiqueta,
+   *  "c:<categoría>" una categoría de la Trivia ("c:*" toda la Trivia) */
   src: string
   dif: '' | Dificultad
   /** null = todas */
@@ -52,14 +54,22 @@ function shuffle<T>(a: T[]): T[] {
 }
 
 /** Preguntas jugables y sin usar que cumplen una fila. */
+const isTrivia = (b: LibBankInfo) => b.grupo === TRIVIA_GROUP
+/** las descartadas solo salen si eliges ese banco */
+const isDiscarded = (b: LibBankInfo) => isTrivia(b) && b.file === TRIVIA_DISCARDED_FILE
+
 function pool(ctx: Ctx, banks: LibBankInfo[], row: MixRow): { ref: string; q: Question }[] {
   const out: { ref: string; q: Question }[] = []
+  const cat = row.src.startsWith('c:') ? row.src.slice(2) : null
   for (const b of banks) {
     if (row.src.startsWith('b:') && row.src.slice(2) !== b.ref) continue
+    if (!row.src.startsWith('b:') && isDiscarded(b)) continue
     if (row.src.startsWith('g:') && b.grupo !== row.src.slice(2)) continue
+    if (cat !== null && !isTrivia(b)) continue
     for (const q of ctx.lib.peek(b.ref)?.preguntas ?? []) {
       if (!isPlayable(q) || q.usada) continue
       if (row.src.startsWith('t:') && !(q.etiquetas ?? []).includes(row.src.slice(2))) continue
+      if (cat && cat !== '*' && !(q.etiquetas ?? []).includes(cat)) continue
       if (row.dif && q.dificultad !== row.dif) continue
       out.push({ ref: b.ref, q })
     }
@@ -96,8 +106,25 @@ export async function mixDialog(ctx: Ctx, kind: MixKind): Promise<{ ref: string;
   const levels = ctx.state.quiz.ladder.levels.length
   const key = `konk.mix.${kind}`
   let rows: MixRow[] = store.get(key) ?? [{ src: '*', dif: '', count: kind === 'escalera' ? levels : 20 }]
-  const tags = [...new Set(banks.flatMap((b) => (ctx.lib.peek(b.ref)?.preguntas ?? []).flatMap((q) => q.etiquetas ?? [])))].sort((a, b) => a.localeCompare(b, 'es'))
-  const groups = [...new Set(banks.map((b) => b.grupo).filter(Boolean) as string[])]
+  const tagsOf = (bs: LibBankInfo[]) => [...new Set(bs.flatMap((b) => (ctx.lib.peek(b.ref)?.preguntas ?? []).flatMap((q) => q.etiquetas ?? [])))].sort((a, b) => a.localeCompare(b, 'es'))
+  // tus etiquetas aparte; las de la Trivia son sus categorías
+  const tags = tagsOf(banks.filter((b) => !isTrivia(b)))
+  const cats = tagsOf(banks.filter((b) => isTrivia(b) && !isDiscarded(b)))
+  const groups = [...new Set(banks.map((b) => b.grupo).filter((g) => g && g !== TRIVIA_GROUP) as string[])]
+  // filas guardadas de versiones anteriores: la Trivia era un grupo y sus categorías, etiquetas o bancos sueltos
+  rows = rows.map((r) => {
+    const v = r.src.slice(2)
+    let src = r.src
+    if (r.src === `g:${TRIVIA_GROUP}`) src = 'c:*'
+    else if (r.src.startsWith('t:') && !tags.includes(v) && cats.includes(v)) src = `c:${v}`
+    const ok =
+      src === '*' ||
+      (src.startsWith('b:') && banks.some((b) => b.ref === src.slice(2))) ||
+      (src.startsWith('g:') && groups.includes(src.slice(2))) ||
+      (src.startsWith('t:') && tags.includes(src.slice(2))) ||
+      (src.startsWith('c:') && (src === 'c:*' || cats.includes(src.slice(2))))
+    return { ...r, src: ok ? src : '*' }
+  })
   const list = h('div', '', { display: 'flex', flexDirection: 'column', gap: 8 })
   const total = h('div', '', { fontSize: 13 })
   let result: { ref: string; q: Question }[] | null = null
@@ -119,9 +146,17 @@ export async function mixDialog(ctx: Ctx, kind: MixKind): Promise<{ ref: string;
           for (const g of groups) opt(`g:${g}`, g, og)
           src.append(og)
         }
+        if (cats.length) {
+          const oc = h('optgroup')
+          oc.label = 'Trivia'
+          opt('c:*', 'Trivia · todas las categorías', oc)
+          for (const c of cats) opt(`c:${c}`, `Trivia · ${c}`, oc)
+          src.append(oc)
+        }
         const ob = h('optgroup')
         ob.label = 'Bancos'
-        for (const b of banks) opt(`b:${b.ref}`, `${kind === 'escalera' ? (b.tipo === 'sino' ? 'Sí o no · ' : 'Test · ') : ''}${b.grupo ? b.grupo + ' · ' : ''}${b.nombre}`, ob)
+        for (const b of banks)
+          opt(`b:${b.ref}`, `${kind === 'escalera' ? (b.tipo === 'sino' ? 'Sí o no · ' : 'Test · ') : ''}${b.grupo && !b.nombre.startsWith(b.grupo) ? b.grupo + ' · ' : ''}${b.nombre}`, ob)
         src.append(ob)
         if (tags.length) {
           const ot = h('optgroup')
@@ -181,7 +216,7 @@ export async function mixDialog(ctx: Ctx, kind: MixKind): Promise<{ ref: string;
       h('span', 'mut', { fontSize: 12, lineHeight: '1.45' }, [
         kind === 'escalera'
           ? 'Elige de dónde sacar las preguntas (por ejemplo, 5 fáciles + 5 medias + 5 difíciles). Se ordenan de fácil a difícil.'
-          : 'Elige de dónde sacar las preguntas (por ejemplo, 10 de Videojuegos difíciles + 5 de Deportes medias + todas las del grupo). Sale un banco "Partida mezclada" barajado; al usar una pregunta se marca también en su banco.'
+          : 'Elige de dónde sacar las preguntas (por ejemplo, 10 de Trivia · Videojuegos difíciles + 5 de Trivia · Cine medias + todas las de un banco tuyo). Sale un banco "Partida mezclada" barajado; al usar una pregunta se marca también en su banco.'
       ]),
       list,
       h('div', '', { display: 'flex', gap: 8 }, [btn('+ Añadir', () => (rows.push({ src: '*', dif: '', count: 5 }), paint()), 'b sm')]),
