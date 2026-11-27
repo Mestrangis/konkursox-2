@@ -1,0 +1,417 @@
+{
+  "formato": "konkursox-banco",
+  "version": 1,
+  "nombre": "Anime y manga · Fácil",
+  "grupo": "Open Trivia DB",
+  "licencia": "Preguntas de Open Trivia Database (opentdb.com), licencia CC BY-SA 4.0, traducidas y adaptadas al español. Este banco se distribuye con la misma licencia (CC BY-SA 4.0).",
+  "preguntas": [
+    {
+      "id": "o4984",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama el corgi de «Cowboy Bebop»?",
+      "opciones": [
+        "Edward",
+        "Ein",
+        "Rocket",
+        "Joel"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Anime y manga"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4985",
+      "tipo": "test",
+      "enunciado": "¿Quién es el autor del manga «Astro Boy»?",
+      "opciones": [
+        "Takao Saito",
+        "Akira Toriyama",
+        "Mitsuteru Yokoyama",
+        "Osamu Tezuka"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Anime y manga"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4986",
+      "tipo": "test",
+      "enunciado": "¿Cuántos años tiene Ash Ketchum cuando empieza su viaje Pokémon?",
+      "opciones": [
+        "9",
+        "12",
+        "11",
+        "10"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Anime y manga"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4995",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama la canción de cabecera de «Neon Genesis Evangelion»?",
+      "opciones": [
+        "God Knows",
+        "A Cruel Angel's Thesis",
+        "Requiem for a Dream",
+        "Stardust Crusaders"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Anime y manga"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4996",
+      "tipo": "test",
+      "enunciado": "¿Qué anime tiene mucha música eurobeat?",
+      "opciones": [
+        "Initial D",
+        "Cowboy Bebop",
+        "Kino no Tabi",
+        "Wangan Midnight"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Anime y manga"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5005",
+      "tipo": "test",
+      "enunciado": "¿Quién es la verdadera princesa de la Luna en «Sailor Moon»?",
+      "opciones": [
+        "Sailor Mars",
+        "Sailor Venus",
+        "Sailor Moon",
+        "Sailor Júpiter"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Anime y manga"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5006",
+      "tipo": "test",
+      "enunciado": "¿Qué actor puso voz en el doblaje inglés de «El castillo ambulante» (2004)?",
+      "opciones": [
+        "Joseph Gordon-Levitt",
+        "Matt Damon",
+        "Christian Bale",
+        "Willem Dafoe"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Anime y manga"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5007",
+      "tipo": "test",
+      "enunciado": "¿Cómo se apellidan Edward y Alphonse en «Fullmetal Alchemist»?",
+      "opciones": [
+        "Elric",
+        "Ellis",
+        "Eliek",
+        "Elwood"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Anime y manga"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5012",
+      "tipo": "test",
+      "enunciado": "En «Fairy Tail», ¿cuál es el apodo de Natsu Dragneel?",
+      "opciones": [
+        "El Dragón",
+        "El Cazadragones",
+        "El Demonio",
+        "La Salamandra"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Anime y manga"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5014",
+      "tipo": "test",
+      "enunciado": "En «My Hero Academia», ¿qué personaje puede manipular la gravedad?",
+      "opciones": [
+        "Bakugo",
+        "Asui",
+        "Deku",
+        "Uraraka"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Anime y manga"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5020",
+      "tipo": "test",
+      "enunciado": "¿Quién es el titán acorazado en «Ataque a los titanes»?",
+      "opciones": [
+        "Reiner Braun",
+        "Eren Jaeger",
+        "Mikasa Ackerman",
+        "Armin Arlert"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Anime y manga"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5023",
+      "tipo": "test",
+      "enunciado": "¿Quién es el titán colosal en «Ataque a los titanes»?",
+      "opciones": [
+        "Reiner",
+        "Sasha",
+        "Bertolt Hoover",
+        "Eren"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Anime y manga"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5024",
+      "tipo": "test",
+      "enunciado": "¿En qué año se estrenó el anime «Ataque a los titanes»?",
+      "opciones": [
+        "2014",
+        "2015",
+        "2013",
+        "2012"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Anime y manga"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5026",
+      "tipo": "test",
+      "enunciado": "¿Qué nombre recibe Chihiro en «El viaje de Chihiro» (2001)?",
+      "opciones": [
+        "Sen («mil»)",
+        "Hyaku («cien»)",
+        "Juu («diez»)",
+        "Ichiman («diez mil»)"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Anime y manga"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5029",
+      "tipo": "test",
+      "enunciado": "¿Quién recibe el título de «Fullmetal» en «Fullmetal Alchemist»?",
+      "opciones": [
+        "Van Hohenheim",
+        "Edward Elric",
+        "Alphonse Elric",
+        "Izumi Curtis"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Anime y manga"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5034",
+      "tipo": "test",
+      "enunciado": "En «Miss Kobayashi's Dragon Maid», ¿quién es la doncella de Kobayashi?",
+      "opciones": [
+        "Kanna",
+        "Tohru",
+        "Lucoa",
+        "Elma"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Anime y manga"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5035",
+      "tipo": "test",
+      "enunciado": "En «Inuyasha», ¿qué intentan reunir los protagonistas?",
+      "opciones": [
+        "Los fragmentos de la Perla",
+        "Las piedras Rave",
+        "Las bolas de dragón",
+        "Las piedras sagradas"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Anime y manga"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5038",
+      "tipo": "test",
+      "enunciado": "En 2013, ¿con qué cadena de pizzerías tuvo un patrocinio la cantante virtual Hatsune Miku?",
+      "opciones": [
+        "Papa John's",
+        "Telepizza",
+        "Pizza Hut",
+        "Domino's"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Anime y manga"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5040",
+      "tipo": "test",
+      "enunciado": "En «One Piece», ¿de qué color es la nariz de Tony Tony Chopper?",
+      "opciones": [
+        "Roja",
+        "Gris",
+        "Negra",
+        "Azul"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Anime y manga"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5042",
+      "tipo": "test",
+      "enunciado": "¿Cuál fue el segundo Pokémon de Ash?",
+      "opciones": [
+        "Pidgey",
+        "Pikachu",
+        "Caterpie",
+        "Charmander"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Anime y manga"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5043",
+      "tipo": "test",
+      "enunciado": "¿Qué Pokémon y sus evoluciones dejaron de salir como protagonistas tras el episodio de los destellos de 1997?",
+      "opciones": [
+        "Magnemite",
+        "Jynx",
+        "Porygon",
+        "Pikachu"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Anime y manga"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5045",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos nació como manga?",
+      "opciones": [
+        "Akira",
+        "Neon Genesis Evangelion",
+        "Gurren Lagann",
+        "Cowboy Bebop"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Anime y manga"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5046",
+      "tipo": "test",
+      "enunciado": "¿De qué anime son protagonistas Kirito y Asuna?",
+      "opciones": [
+        "Sword Art Online",
+        "Death Note",
+        "Fairy Tail",
+        "One Piece"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Anime y manga"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5047",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama el protagonista rubio de «Naruto»?",
+      "opciones": [
+        "Sasuke",
+        "Naruto",
+        "Kakashi",
+        "Tenten"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Anime y manga"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    }
+  ]
+}

@@ -1,0 +1,179 @@
+{
+  "formato": "konkursox-banco",
+  "version": 1,
+  "nombre": "Cómics · Fácil",
+  "grupo": "Open Trivia DB",
+  "licencia": "Preguntas de Open Trivia Database (opentdb.com), licencia CC BY-SA 4.0, traducidas y adaptadas al español. Este banco se distribuye con la misma licencia (CC BY-SA 4.0).",
+  "preguntas": [
+    {
+      "id": "o4864",
+      "tipo": "test",
+      "enunciado": "¿Qué superhéroe es famoso por su supervelocidad?",
+      "opciones": [
+        "Spider-Man",
+        "Batman",
+        "Superman",
+        "Flash"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cómics"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4866",
+      "tipo": "test",
+      "enunciado": "¿Quién es Batman?",
+      "opciones": [
+        "Tony Stark",
+        "Barry Allen",
+        "Bruce Wayne",
+        "Clark Kent"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cómics"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4868",
+      "tipo": "test",
+      "enunciado": "En el cómic «The Superior Spider-Man», ¿quién se apodera del cuerpo de Peter Parker?",
+      "opciones": [
+        "Otto Octavius (Doctor Octopus)",
+        "Eddie Brock",
+        "Mary Jane",
+        "Norman Osborn"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cómics"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4870",
+      "tipo": "test",
+      "enunciado": "¿Quién creó el cómic «The Walking Dead»?",
+      "opciones": [
+        "Robert Kirkman",
+        "Malcolm Wheeler-Nicholson",
+        "Robert Crumb",
+        "Stan Lee"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cómics"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4872",
+      "tipo": "test",
+      "enunciado": "¿Cuál es la identidad secreta de Superman?",
+      "opciones": [
+        "Bruce Wayne",
+        "John Jones",
+        "Clark Kent",
+        "Arthur Curry"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cómics"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4874",
+      "tipo": "test",
+      "enunciado": "¿A qué superhéroe de Marvel se le llama «el hombre sin miedo»?",
+      "opciones": [
+        "Daredevil",
+        "Thor",
+        "Hulk",
+        "Lobezno"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cómics"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4876",
+      "tipo": "test",
+      "enunciado": "¿De qué planeta viene Superman?",
+      "opciones": [
+        "Oa",
+        "Krypton",
+        "Avalon",
+        "Xolnar"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cómics"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4879",
+      "tipo": "test",
+      "enunciado": "Según su apodo de siempre, ¿qué tipo de dúo son Batman y Robin?",
+      "opciones": [
+        "El Dúo Dinámico",
+        "El Dúo Peligroso",
+        "El Dúo Dinástico",
+        "El Dúo Delirante"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cómics"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4882",
+      "tipo": "test",
+      "enunciado": "¿A qué teólogo debe su nombre el protagonista de «Calvin y Hobbes»?",
+      "opciones": [
+        "Calvin Coolidge",
+        "Juan Calvino",
+        "Calvin Klein",
+        "Felipe Calvino"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cómics"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4883",
+      "tipo": "test",
+      "enunciado": "¿Cuándo se fundó Marvel Comics?",
+      "opciones": [
+        "1951",
+        "1932",
+        "1939",
+        "1936"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cómics"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    }
+  ]
+}

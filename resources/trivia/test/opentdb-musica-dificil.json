@@ -1,0 +1,1131 @@
+{
+  "formato": "konkursox-banco",
+  "version": 1,
+  "nombre": "Música · Difícil",
+  "grupo": "Open Trivia DB",
+  "licencia": "Preguntas de Open Trivia Database (opentdb.com), licencia CC BY-SA 4.0, traducidas y adaptadas al español. Este banco se distribuye con la misma licencia (CC BY-SA 4.0).",
+  "preguntas": [
+    {
+      "id": "o1297",
+      "tipo": "test",
+      "enunciado": "¿Cuál fue el primer sencillo de Rush?",
+      "opciones": [
+        "Tom Sawyer",
+        "Not Fade Away",
+        "Working Man",
+        "Owner of a Lonely Heart"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1299",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama en inglés británico la semifusa (1/64)?",
+      "opciones": [
+        "Demisemiquaver",
+        "Semiquaver",
+        "Semihemidemisemiquaver",
+        "Hemidemisemiquaver"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1300",
+      "tipo": "test",
+      "enunciado": "¿Con qué famoso guitarrista colaboró Pete Townshend en la Brixton Academy en 1985?",
+      "opciones": [
+        "Mark Knopfler",
+        "Jimmy Page",
+        "Eric Clapton",
+        "David Gilmour"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1301",
+      "tipo": "test",
+      "enunciado": "¿En qué disco de M83 está «Midnight City»?",
+      "opciones": [
+        "Saturdays = Youth",
+        "Before the Dawn Heals Us",
+        "Junk",
+        "Hurry Up, We're Dreaming"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1302",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama la mixtape de 2016 del productor venezolano Arca?",
+      "opciones": [
+        "&&&&&&",
+        "Xen",
+        "Sheep",
+        "Entrañas"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1305",
+      "tipo": "test",
+      "enunciado": "Long John Baldry, la voz del Dr. Robotnik en una serie de Sonic, tuvo un grupo en los 60 con ¿qué músico?",
+      "opciones": [
+        "Elton John",
+        "Paul McCartney",
+        "Johnny Cash",
+        "Freddie Mercury"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1306",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llamaba el grupo de rock de Nobuo Uematsu que tocaba canciones de Final Fantasy?",
+      "opciones": [
+        "The Rock Summoners",
+        "The Espers",
+        "The Black Mages",
+        "The Final Fantasies"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1307",
+      "tipo": "test",
+      "enunciado": "¿Qué canción de «The Life of Pablo» de Kanye West tiene a Rihanna?",
+      "opciones": [
+        "Highlights",
+        "Ultralight Beam",
+        "Famous",
+        "Wolves"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1311",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estas canciones NO es de Tatsuro Yamashita?",
+      "opciones": [
+        "Love Talkin'",
+        "Lucky Lady Feel So Good",
+        "Merry-Go-Round",
+        "Let's Dance Baby"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1312",
+      "tipo": "test",
+      "enunciado": "¿En qué ciudad transcurre la historia de «good kid, m.A.A.d city» (2012) de Kendrick Lamar?",
+      "opciones": [
+        "Detroit",
+        "Baltimore",
+        "Compton",
+        "Nueva York"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1313",
+      "tipo": "test",
+      "enunciado": "¿Qué suceso inspiró la canción «Zombie» de The Cranberries?",
+      "opciones": [
+        "Los atentados del 7 de julio",
+        "Los atentados del 11-S",
+        "Los atentados de Warrington",
+        "El atentado del Manchester Arena"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1315",
+      "tipo": "test",
+      "enunciado": "¿Qué canción de los Bee Gees de 1978 versionaron los Steps veinte años después?",
+      "opciones": [
+        "Night Fever",
+        "Tragedy",
+        "You Should Be Dancing",
+        "Stayin' Alive"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1316",
+      "tipo": "test",
+      "enunciado": "¿Qué discoteca de Mánchester fue el centro de la escena «Madchester» a finales de los 80?",
+      "opciones": [
+        "The Liar's Club",
+        "The Haçienda",
+        "The Warehouse Project",
+        "LIV"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1317",
+      "tipo": "test",
+      "enunciado": "¿En qué disco de los Beatles está «Eleanor Rigby»?",
+      "opciones": [
+        "Rubber Soul",
+        "Revolver",
+        "Help!",
+        "Abbey Road"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1318",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estas canciones salió en 1996?",
+      "opciones": [
+        "1973 (James Blunt)",
+        "1999 (Prince)",
+        "1979 (The Smashing Pumpkins)",
+        "1984 (David Bowie)"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1320",
+      "tipo": "test",
+      "enunciado": "¿En qué año nació Min Yoongi, de BTS?",
+      "opciones": [
+        "1992",
+        "1993",
+        "1995",
+        "1994"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1322",
+      "tipo": "test",
+      "enunciado": "¿Quién era el batería de blink-182 antes que Travis Barker?",
+      "opciones": [
+        "Ilan Rubin",
+        "Scott Raynor",
+        "Atom Willard",
+        "Derek Grant"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1323",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos alias NO ha usado Aphex Twin?",
+      "opciones": [
+        "Burial",
+        "Bradley Strider",
+        "Caustic Window",
+        "GAK"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1324",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama el grupo que creó en 2016 Dallon Weekes, exbajista de Panic! at the Disco?",
+      "opciones": [
+        "Where Did You All Come From?",
+        "Cheats at Hide and Seek",
+        "Run Away from the People",
+        "I Don't Know How But They Found Me"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1327",
+      "tipo": "test",
+      "enunciado": "¿Qué grupo de rock debe su nombre a un profesor de gimnasia del instituto de sus miembros?",
+      "opciones": [
+        "Jefferson Airplane",
+        "The Byrds",
+        "Pink Floyd",
+        "Lynyrd Skynyrd"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1328",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estas canciones NO está en la banda sonora de «Escuadrón suicida»?",
+      "opciones": [
+        "Fortunate Son (Creedence Clearwater Revival)",
+        "Without Me (Eminem)",
+        "Heathens (Twenty One Pilots)",
+        "Skies on Fire (AC/DC)"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1331",
+      "tipo": "test",
+      "enunciado": "¿Qué artista NO remezcló «Faded» de Alan Walker?",
+      "opciones": [
+        "Dash Berlin",
+        "Slushii",
+        "Skrillex",
+        "Tiësto"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1332",
+      "tipo": "test",
+      "enunciado": "¿Cuántas integrantes tiene el grupo de idols «µ's» (Love Live!)?",
+      "opciones": [
+        "9",
+        "3",
+        "6",
+        "48"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1333",
+      "tipo": "test",
+      "enunciado": "En Slipknot, ¿qué miembro es el número 6?",
+      "opciones": [
+        "Shawn Crahan (Clown)",
+        "Mick Thomson",
+        "Corey Taylor",
+        "Sid Wilson"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1335",
+      "tipo": "test",
+      "enunciado": "¿Qué canción, la de las palabras «Numa Numa», protagonizó un vídeo viral en 2004?",
+      "opciones": [
+        "Gangnam Style",
+        "Dragostea din tei",
+        "Aserejé",
+        "Despacito"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1336",
+      "tipo": "test",
+      "enunciado": "¿Qué tipo de instrumento es la «caixa», muy usada en la música brasileña?",
+      "opciones": [
+        "Cencerro",
+        "Maraca",
+        "Caja (tambor)",
+        "Bombo"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1337",
+      "tipo": "test",
+      "enunciado": "¿Quién fue el primer batería de los Beatles?",
+      "opciones": [
+        "Pete Best",
+        "Ringo Starr",
+        "Tommy Moore",
+        "Stuart Sutcliffe"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1338",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llamaba la banda que acompañaba a Prince?",
+      "opciones": [
+        "The Revolution",
+        "The Paupers",
+        "The Heartbreakers",
+        "The Wailers"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1339",
+      "tipo": "test",
+      "enunciado": "¿De qué grupo de metal alternativo es cantante Chino Moreno?",
+      "opciones": [
+        "Deftones",
+        "Tool",
+        "Type O Negative",
+        "Korn"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1340",
+      "tipo": "test",
+      "enunciado": "¿Cuál fue el primer sencillo de Daft Punk?",
+      "opciones": [
+        "Around the World",
+        "The New Wave",
+        "Da Funk",
+        "Discovery"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1341",
+      "tipo": "test",
+      "enunciado": "¿Qué disco de Michael Jackson ha vendido más?",
+      "opciones": [
+        "Off the Wall",
+        "Thriller",
+        "Dangerous",
+        "Bad"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1342",
+      "tipo": "test",
+      "enunciado": "¿Con qué nombre publican música juntos Boys Noize y Skrillex?",
+      "opciones": [
+        "Dog Blood",
+        "What So Not",
+        "Jack Ü",
+        "Noisia"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1343",
+      "tipo": "test",
+      "enunciado": "¿Quién fue pionero de la música minimalista en los 60?",
+      "opciones": [
+        "Brian Eno",
+        "Wolfgang Amadeus Mozart",
+        "Steve Reich",
+        "Sigur Rós"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1344",
+      "tipo": "test",
+      "enunciado": "¿Qué cantante de la época soviética tiene una canción en GTA IV y un muro en su memoria en Moscú?",
+      "opciones": [
+        "Brian Jones",
+        "Jimi Hendrix",
+        "Víktor Tsoi",
+        "Vladímir Vysotski"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1345",
+      "tipo": "test",
+      "enunciado": "¿Cuándo murió el rapero Eazy-E?",
+      "opciones": [
+        "11 de julio de 1992",
+        "26 de marzo de 1995",
+        "14 de febrero de 1993",
+        "21 de octubre de 1994"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1346",
+      "tipo": "test",
+      "enunciado": "¿Qué versión de «The Tide Is High» salió primero?",
+      "opciones": [
+        "La de Blondie",
+        "La de The Paragons",
+        "La de Kardinal Offishall",
+        "La de Atomic Kitten"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1347",
+      "tipo": "test",
+      "enunciado": "¿Qué artista NO participa en «Humanz», de Gorillaz?",
+      "opciones": [
+        "Snoop Dogg",
+        "Pusha T",
+        "Vince Staples",
+        "Danny Brown"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1349",
+      "tipo": "test",
+      "enunciado": "¿Qué miembro de The xx publicó en 2015 el disco en solitario «In Colour»?",
+      "opciones": [
+        "Oliver Sim",
+        "Romy Madley Croft",
+        "Baria Qureshi",
+        "Jamie xx"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1350",
+      "tipo": "test",
+      "enunciado": "«Old Town Road» de Lil Nas X samplea «34 Ghosts IV» de ¿qué grupo?",
+      "opciones": [
+        "Death Grips",
+        "Iron Maiden",
+        "Animal Collective",
+        "Nine Inch Nails"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1352",
+      "tipo": "test",
+      "enunciado": "¿De quién es la canción «You Know You Like It»?",
+      "opciones": [
+        "Major Lazer",
+        "DJ Snake",
+        "Steve Aoki",
+        "AlunaGeorge"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1354",
+      "tipo": "test",
+      "enunciado": "¿Quién grabó en 1975 el disco «Captain Fantastic and the Brown Dirt Cowboy»?",
+      "opciones": [
+        "Billy Joel",
+        "Joe Cocker",
+        "John Denver",
+        "Elton John"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1355",
+      "tipo": "test",
+      "enunciado": "¿Qué artista NO actuó en el Live Aid de Wembley en 1985?",
+      "opciones": [
+        "David Bowie",
+        "Elton John",
+        "The Rolling Stones",
+        "Queen"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1356",
+      "tipo": "test",
+      "enunciado": "¿Qué grupo británico ganó la primera edición de los Brit Awards, en 1977?",
+      "opciones": [
+        "The Who",
+        "The Rolling Stones",
+        "The Beatles",
+        "Pink Floyd"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1357",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama la canción de Beyoncé y Alejandro Fernández de 2007?",
+      "opciones": [
+        "Amor gitano",
+        "Hasta dónde estés",
+        "Rocket",
+        "La última vez"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1358",
+      "tipo": "test",
+      "enunciado": "¿En qué disco de The Shins está «New Slang»?",
+      "opciones": [
+        "Oh, Inverted World",
+        "Port of Morrow",
+        "Chutes Too Narrow",
+        "Wincing the Night Away"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1359",
+      "tipo": "test",
+      "enunciado": "¿Qué éxito de Elton John empieza con «When are you gonna come down»?",
+      "opciones": [
+        "Bennie and the Jets",
+        "Goodbye Yellow Brick Road",
+        "Crocodile Rock",
+        "Rocket Man"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1361",
+      "tipo": "test",
+      "enunciado": "¿Cuál fue el primer disco de estudio publicado en Internet con precio libre («paga lo que quieras»)?",
+      "opciones": [
+        "The Help Album",
+        "Blackstar",
+        "In Rainbows",
+        "Skrillex and Diplo Present Jack Ü"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1362",
+      "tipo": "test",
+      "enunciado": "¿Quién fue el primer músico de jazz en ganar el Pulitzer de Música?",
+      "opciones": [
+        "Joe Henderson",
+        "Michael Brecker",
+        "Wynton Marsalis",
+        "Herbie Hancock"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1364",
+      "tipo": "test",
+      "enunciado": "¿Con qué nombre se conoce al rapero Artis Leon Ivey Jr.?",
+      "opciones": [
+        "Dr. Dre",
+        "Coolio",
+        "Ice-T",
+        "Snoop Dogg"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1365",
+      "tipo": "test",
+      "enunciado": "¿Dónde nació Nicki Minaj?",
+      "opciones": [
+        "Granada",
+        "Trinidad y Tobago",
+        "Haití",
+        "Santa Lucía"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1366",
+      "tipo": "test",
+      "enunciado": "¿Quién triunfó en 1981 con «Japanese Boy»?",
+      "opciones": [
+        "Madonna",
+        "Aneka",
+        "Toyah",
+        "Sandra"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1367",
+      "tipo": "test",
+      "enunciado": "¿Qué disco, hoy considerado de los mejores de la historia, fue un fracaso comercial al salir?",
+      "opciones": [
+        "Led Zeppelin IV",
+        "Abbey Road",
+        "The Velvet Underground & Nico",
+        "Pet Sounds"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1368",
+      "tipo": "test",
+      "enunciado": "¿Cuál es el primer disco de Justin Bieber?",
+      "opciones": [
+        "Baby",
+        "U Smile",
+        "My World 2.0",
+        "Purpose"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1369",
+      "tipo": "test",
+      "enunciado": "¿En qué ópera de Mozart salen Pamina y Papageno?",
+      "opciones": [
+        "Las bodas de Fígaro",
+        "La flauta mágica",
+        "El empresario",
+        "La oca del Cairo"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1370",
+      "tipo": "test",
+      "enunciado": "¿Qué disco publicó Kanye West en 2013?",
+      "opciones": [
+        "My Beautiful Dark Twisted Fantasy",
+        "Yeezus",
+        "The Life of Pablo",
+        "Watch the Throne"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1371",
+      "tipo": "test",
+      "enunciado": "¿De qué ciudad inglesa es Black Sabbath?",
+      "opciones": [
+        "Londres",
+        "Birmingham",
+        "Mánchester",
+        "Newcastle"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1373",
+      "tipo": "test",
+      "enunciado": "¿Qué famosa portada muestra en el centro las ondas del púlsar CP 1919?",
+      "opciones": [
+        "London Calling",
+        "The Dark Side of the Moon",
+        "Unknown Pleasures (Joy Division)",
+        "The Velvet Underground & Nico"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1374",
+      "tipo": "test",
+      "enunciado": "¿En qué año salió «Money for Nothing» de Dire Straits?",
+      "opciones": [
+        "1973",
+        "1980",
+        "1991",
+        "1985"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1375",
+      "tipo": "test",
+      "enunciado": "¿Qué estudio hizo la animación del videoclip «Sledgehammer» (1986) de Peter Gabriel?",
+      "opciones": [
+        "HIT Entertainment",
+        "VIZ Media",
+        "Illumination",
+        "Aardman Animations"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1376",
+      "tipo": "test",
+      "enunciado": "¿Cuál fue el último disco de Aphex Twin antes de su parón de diez años?",
+      "opciones": [
+        "Selected Ambient Works 85-92",
+        "Windowlicker",
+        "Syro",
+        "Drukqs"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1377",
+      "tipo": "test",
+      "enunciado": "¿Quién NO estuvo en The Smiths?",
+      "opciones": [
+        "Mike Joyce",
+        "Andy Rourke",
+        "Morrissey",
+        "Martin Chambers"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1380",
+      "tipo": "test",
+      "enunciado": "¿Qué grupo lleva más tiempo en activo sin parones ni cambios de formación?",
+      "opciones": [
+        "The Rolling Stones",
+        "Rush",
+        "U2",
+        "Radiohead"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1381",
+      "tipo": "test",
+      "enunciado": "¿En qué año salió el disco «Floral Shoppe» de Macintosh Plus?",
+      "opciones": [
+        "2011",
+        "2012",
+        "2013",
+        "2014"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1382",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llamaba el grupo de hip hop de Kanye West a finales de los 90?",
+      "opciones": [
+        "The Go-Getters",
+        "The Beat-Busters",
+        "The Kickstarters",
+        "The Jumpers"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1383",
+      "tipo": "test",
+      "enunciado": "¿Cuántos sostenidos tiene la armadura de sol sostenido menor?",
+      "opciones": [
+        "5",
+        "7",
+        "0",
+        "3"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1384",
+      "tipo": "test",
+      "enunciado": "¿Con qué nombre artístico se conoce a la cantante neozelandesa Phillipa «Pip» Brown?",
+      "opciones": [
+        "Kesha",
+        "Ladyhawke",
+        "Anika Moa",
+        "Lorde"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    }
+  ]
+}

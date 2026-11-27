@@ -3,8 +3,9 @@
 import { EFFECTS } from './effects'
 import { formatNumber } from './games'
 import { targetMembers } from './order'
-import { lastMiss, sameTarget, targetKey, turnTargets, type Target } from './quiz'
+import { lastMiss, sameTarget, targetKey, turnTargets, type CurrentQuestion, type Target } from './quiz'
 import { roscoStats, roscoWaiting } from './rosco'
+import { imageView } from './questionImage'
 import { activeContestants, currentPlano, currentTurn, hasLiveGame, type GameId, type Plano, type QuizGameId, type SceneId } from './scene'
 import type { Action, GameState, SlotId } from './types'
 
@@ -44,6 +45,7 @@ export type RemoteCmd =
   | { t: 'load'; ref: string; id: string }
   | { t: 'bank'; ref?: string }
   | { t: 'lowerThird' }
+  | { t: 'image'; op: 'q' | 'a' | 'full' }
 
 /** Un comando del mando llega con la versión del estado que vio (rev). */
 export interface RemoteEnvelope {
@@ -117,6 +119,9 @@ export function cmdToActions(cmd: RemoteCmd, s: GameState, now = Date.now()): Ac
       return [{ type: 'setAudio', patch: { autoSounds: !s.audio.autoSounds } }]
     case 'lowerThird':
       return [{ type: 'setLowerThird', patch: { visible: !s.lowerThird.visible } }]
+    case 'image':
+      if (!isQuizGame(g)) return []
+      return [(cmd.op === 'full' ? { type: 'quizImageFull', game: g } : { type: 'quizToggleImage', which: cmd.op, game: g }) as Action]
     case 'answer':
       return isQuizGame(g) ? [{ type: 'quizAnswerAll', key: cmd.key, index: cmd.i, game: g } as Action] : []
     case 'guess':
@@ -178,9 +183,21 @@ export interface Snap {
   game: SnapGame | null
 }
 
+/** Imágenes de la pregunta (el mando no las ve: solo las enciende y apaga). */
+export interface SnapImage {
+  q: boolean
+  a: boolean
+  qOn: boolean
+  aOn: boolean
+  full: boolean
+  /** descripción de la imagen que falta */
+  missing: string | null
+}
+
 export type SnapGame =
   | {
       kind: 'quiz'
+      image?: SnapImage
       tipo: string
       text: string
       author?: string
@@ -199,6 +216,7 @@ export type SnapGame =
     }
   | {
       kind: 'estimacion'
+      image?: SnapImage
       text: string
       value: number
       unit: string
@@ -283,6 +301,15 @@ export function buildSnapshot(s: GameState, x: SnapExtras, now = Date.now()): Sn
   }
 }
 
+function snapImage(cur: CurrentQuestion | null): SnapImage | undefined {
+  if (!cur) return undefined
+  const q = cur.question
+  const missing = (!q.imagen && q.imagen_sugerida) || (!q.imagen_respuesta && q.imagen_respuesta_sugerida) || null
+  if (!q.imagen && !q.imagen_respuesta && !missing) return undefined
+  const v = imageView({ ...cur, showAnswerImage: cur.showAnswerImage ?? null })
+  return { q: !!q.imagen, a: !!q.imagen_respuesta, qOn: v.which === 'q', aOn: v.which === 'a', full: v.full, missing }
+}
+
 function snapGame(s: GameState): SnapGame | null {
   const g = s.liveGame
   if (g === 'rosco') {
@@ -325,6 +352,7 @@ function snapGame(s: GameState): SnapGame | null {
     const res = cur.estimation
     return {
       kind: 'estimacion',
+      image: snapImage(cur),
       text: cur.question.enunciado,
       value: cur.question.valor ?? 0,
       unit: cur.question.unidad ?? '',
@@ -342,6 +370,7 @@ function snapGame(s: GameState): SnapGame | null {
   const miss = lastMiss(cur)
   return {
     kind: 'quiz',
+    image: snapImage(cur),
     tipo: q?.tipo ?? 'test',
     text: q?.enunciado ?? '',
     author: q?.tipo === 'quien' ? q.autor : undefined,

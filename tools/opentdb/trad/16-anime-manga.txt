@@ -1,0 +1,64 @@
+# Anime y manga (Entertainment: Japanese Anime & Manga) — solo las conocidas
+4984|¿Cómo se llama el corgi de «Cowboy Bebop»?|Ein|Edward|Rocket|Joel
+4985|¿Quién es el autor del manga «Astro Boy»?|Osamu Tezuka|Mitsuteru Yokoyama|Takao Saito|Akira Toriyama
+4986|¿Cuántos años tiene Ash Ketchum cuando empieza su viaje Pokémon?|10|11|12|9
+4992|¿Se niega el Pikachu de Ash a meterse en la Poké Ball?|Sí
+4995|¿Cómo se llama la canción de cabecera de «Neon Genesis Evangelion»?|A Cruel Angel's Thesis|Stardust Crusaders|Requiem for a Dream|God Knows
+4996|¿Qué anime tiene mucha música eurobeat?|Initial D|Wangan Midnight|Kino no Tabi|Cowboy Bebop
+5001|¿Es una chica el protagonista de «Naruto»?|No
+5003|¿Debe su nombre el ataque «Kamehameha» de Dragon Ball a un famoso rey de Hawái?|Sí
+5005|¿Quién es la verdadera princesa de la Luna en «Sailor Moon»?|Sailor Moon|Sailor Venus|Sailor Mars|Sailor Júpiter
+5006|¿Qué actor puso voz en el doblaje inglés de «El castillo ambulante» (2004)?|Christian Bale|Matt Damon|Joseph Gordon-Levitt|Willem Dafoe
+5007|¿Cómo se apellidan Edward y Alphonse en «Fullmetal Alchemist»?|Elric|Ellis|Eliek|Elwood
+5012|En «Fairy Tail», ¿cuál es el apodo de Natsu Dragneel?|La Salamandra|El Cazadragones|El Dragón|El Demonio
+5013|En la película «Akira» (1988), ¿acaba Tetsuo destruyendo Tokio?|Sí
+5014|En «My Hero Academia», ¿qué personaje puede manipular la gravedad?|Uraraka|Bakugo|Deku|Asui
+5020|¿Quién es el titán acorazado en «Ataque a los titanes»?|Reiner Braun|Armin Arlert|Mikasa Ackerman|Eren Jaeger
+5021|¿Es Gosho Aoyama el autor de «Detective Conan»?|Sí
+5023|¿Quién es el titán colosal en «Ataque a los titanes»?|Bertolt Hoover|Reiner|Eren|Sasha
+5024|¿En qué año se estrenó el anime «Ataque a los titanes»?|2013|2014|2012|2015
+5026|¿Qué nombre recibe Chihiro en «El viaje de Chihiro» (2001)?|Sen («mil»)|Hyaku («cien»)|Ichiman («diez mil»)|Juu («diez»)
+5028|¿Iba a ser Clefairy el primer Pokémon de Ash en el episodio piloto?|Sí
+5029|¿Quién recibe el título de «Fullmetal» en «Fullmetal Alchemist»?|Edward Elric|Alphonse Elric|Van Hohenheim|Izumi Curtis
+5034|En «Miss Kobayashi's Dragon Maid», ¿quién es la doncella de Kobayashi?|Tohru|Lucoa|Kanna|Elma
+5035|En «Inuyasha», ¿qué intentan reunir los protagonistas?|Los fragmentos de la Perla|Las bolas de dragón|Las piedras Rave|Las piedras sagradas
+5038|En 2013, ¿con qué cadena de pizzerías tuvo un patrocinio la cantante virtual Hatsune Miku?|Domino's|Papa John's|Pizza Hut|Telepizza
+5040|En «One Piece», ¿de qué color es la nariz de Tony Tony Chopper?|Azul|Negra|Gris|Roja
+5041|¿Hizo el Studio Ghibli «Los niños lobo» y «El niño y la bestia»?|No
+5042|¿Cuál fue el segundo Pokémon de Ash?|Caterpie|Charmander|Pikachu|Pidgey
+5043|¿Qué Pokémon y sus evoluciones dejaron de salir como protagonistas tras el episodio de los destellos de 1997?|Porygon|Pikachu|Jynx|Magnemite
+5045|¿Cuál de estos nació como manga?|Akira|Cowboy Bebop|Gurren Lagann|Neon Genesis Evangelion
+5046|¿De qué anime son protagonistas Kirito y Asuna?|Sword Art Online|One Piece|Death Note|Fairy Tail
+5047|¿Cómo se llama el protagonista rubio de «Naruto»?|Naruto|Tenten|Sasuke|Kakashi
+5050|¿En qué año se estrenó «Sailor Moon» en Japón?|1992|1989|1990|1994
+5051|¿Ganó «El viaje de Chihiro» el Óscar a la mejor película de animación en 2003?|Sí
+5053|¿Quién creó el manga «One Piece»?|Eiichiro Oda|Yoshihiro Togashi|Hayao Miyazaki|Masashi Kishimoto
+5054|¿Quién escribió y dirigió «El viaje de Chihiro» (2001)?|Hayao Miyazaki|Isao Takahata|Mamoru Hosoda|Makoto Shinkai
+5057|¿Cuál de estas películas NO dirigió Hayao Miyazaki?|Los niños lobo|La princesa Mononoke|El viaje de Chihiro|Nicky, la aprendiz de bruja
+5066|¿Cómo se llama el protagonista de «One-Punch Man»?|Saitama|Genos|Sonic|King
+5072|En «Fullmetal Alchemist», ¿a quién llaman «el Alquimista de la Llama»?|Roy Mustang|Edward Elric|Maes Hughes|Ling Yao
+5073|En «Sailor Moon», ¿cuál es el nombre civil de Sailor Júpiter?|Makoto Kino|Minako Aino|Usagi Tsukino|Rei Hino
+5074|¿En qué año salió la cantante virtual Hatsune Miku?|2007|2000|2008|2010
+5076|¿Qué estudio animó «Fullmetal Alchemist»?|Bones|Trigger|Pierrot|Xebec
+5081|¿Qué estudio hizo «Cowboy Bebop»?|Sunrise|Bones|Madhouse|Pierrot
+5083|En «Fullmetal Alchemist», ¿cuál es el mayor tabú para los alquimistas?|La transmutación humana|Convertir plomo en oro|Crear quimeras|Usar la piedra filosofal
+5092|¿Quién es el protagonista de «One Piece»?|Luffy|Shanks|Zoro|Smoker
+5093|¿Cuál de estos mangas tiene más tomos publicados?|Golgo 13|JoJo's Bizarre Adventure|Detective Conan|One Piece
+5096|¿Qué deporte se juega en el anime «Eyeshield 21»?|Fútbol americano|Béisbol|Fútbol|Baloncesto
+5104|¿Cuándo se estrenó el primer episodio de «Soul Eater»?|2008|2003|2005|2011
+5112|¿De qué colores es el pelo del protagonista del anime original de «Yu-Gi-Oh!»?|Rojo, negro y amarillo|Rojo, amarillo y verde|Rojo, blanco y azul|Negro, morado y blanco
+5119|¿Por qué se censuró el episodio 35 del anime original de Pokémon?|Por el uso de armas|Por imágenes con destellos|Por Jynx|Por violencia
+5122|En «Dragon Ball Z», ¿quién fue el primero en transformarse en Super Saiyan 2?|Gohan|Goku|Vegeta|Trunks
+5124|¿Qué nombre de superhéroe usa Midoriya, el protagonista de «My Hero Academia»?|Deku|All Might|Saitama|Kona
+5138|¿Cuál de estos animes tiene más de 7500 episodios?|Sazae-san|Naruto|One Piece|Chibi Maruko-chan
+5146|¿Qué mangaka de terror creó «Uzumaki»?|Junji Ito|Kazuo Umezu|Shintaro Kago|Sui Ishida
+5147|En el manga de «Naruto», ¿cuál es el apellido de Tsunade?|Senju|Haruno|Uzumaki|Yamanaka
+5150|En «Hunter x Hunter», ¿a qué se dedica la familia de Killua?|Son asesinos|Son bandidos|Son cazadores|Son ninjas
+5156|¿Quién dirigió «La tumba de las luciérnagas» (1988)?|Isao Takahata|Hayao Miyazaki|Satoshi Kon|Sunao Katabuchi
+5165|¿Cómo se llama el protagonista de «Hunter x Hunter»?|Gon|Gin|Gan|Gen
+5167|En «One-Punch Man», ¿cuál es el nombre de héroe del protagonista?|Calvo con Capa|Puño Fuerte|Boxeador Loco|Puño de la Justicia
+5169|¿Es cierto que en todo «Dragon Ball Z» Goku solo mata a dos personajes: Yakon y Kid Buu?|Sí
+5175|¿De qué anime es la decimosexta canción de apertura «Silhouette», de Kana-Boon?|Naruto Shippuden|One Piece|Bleach|Boruto
+5177|¿Qué estudio animó «Psycho-Pass»?|Production I.G|Kyoto Animation|Shaft|Trigger
+5178|¿Qué estudio produjo «Sword Art Online»?|A-1 Pictures|Production I.G|Silver Link|Kyoto Animation
+5179|En «Dragon Ball», ¿cómo se llama el hermano de Goku?|Raditz|Gohan|Vegeta|Bardock

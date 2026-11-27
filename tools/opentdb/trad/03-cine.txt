@@ -1,0 +1,133 @@
+# Cine (Entertainment: Film)
+589|¿En qué película se dice «Saluda a mi pequeño amigo»?|El precio del poder (Scarface)|Reservoir Dogs|Heat|Uno de los nuestros
+590|¿Cuál fue el primer largometraje de animación hecho íntegramente por ordenador?|Toy Story|Tron|El rey león|101 dálmatas
+591|¿De qué película de James Bond escribió y cantó la canción Adele?|Skyfall|Casino Royale|Quantum of Solace|Spectre
+592|¿Cuál de estas películas NO transcurre en Los Ángeles?|RoboCop|Blade Runner|Terminator|Depredador 2
+593|¿Cómo se llama el droide naranja y blanco de «Star Wars: El despertar de la Fuerza»?|BB-8|BB-3|AA-A|R2-D2
+594|¿Quién NO formaba parte de «Los siete magníficos» (1960)?|Clint Eastwood|Steve McQueen|Charles Bronson|Robert Vaughn
+595|En «Vengadores: Infinity War», ¿quién custodiaba la Gema de la Realidad (el Éter)?|El Coleccionista|Doctor Strange|El Gran Maestro|La Bruja Escarlata
+596|¿Viene la palabra inglesa «inception» de la película «Origen» (Inception) de 2010?|No
+597|¿De qué raza era Marley en «Una pareja de tres» (Marley & Me, 2008)?|Labrador|Golden retriever|Dálmata|Shiba inu
+598|En «Las dos torres», ¿adónde llevan los orcos a los hobbits?|A Isengard|A Rivendel|A Mordor|A Moria
+599|¿Qué actriz baila el twist con John Travolta en «Pulp Fiction»?|Uma Thurman|Kathy Griffin|Pam Grier|Bridget Fonda
+600|¿En qué película se dice «Nadie arrincona a Baby»?|Dirty Dancing|Tres hombres y un bebé|Todo en un día|La chica de rosa
+601|¿Qué película suele considerar la crítica la mejor de la historia?|Ciudadano Kane|Avatar|El padrino II|The Room
+602|«La primera regla es: no se habla de él». ¿De qué película es?|El club de la lucha|La isla|Sin control|American Pie
+603|¿Usaban las máquinas a los humanos como potencia de cálculo, y no como pilas, en el guion original de «Matrix»?|Sí
+604|¿Qué película de 2016 enfrenta a Superman y Batman?|Batman v Superman: El amanecer de la justicia|Batman v Superman: Superapocalipsis|Batman v Superman: El caballero negro|Batman v Superman: La caída del caballero
+605|En la «La guerra de las galaxias» original, ¿dispara Han Solo primero en su conversación con Greedo?|Sí
+606|¿A qué villano de Batman pone voz Mark Hamill?|Al Joker|A Dos Caras|A Bane|A Hush
+607|¿Cuándo transcurre «Rogue One» dentro de la saga Star Wars?|Entre los episodios III y IV|Después del episodio VI|Antes del episodio I|Entre los episodios IV y V
+608|¿Quién dirigió «E.T., el extraterrestre» (1982)?|Steven Spielberg|Stanley Kubrick|James Cameron|Tim Burton
+609|¿En qué película de 1986 suena la canción de Queen «A Kind of Magic»?|Los inmortales (Highlander)|Flash Gordon|Dentro del laberinto|Howard, un nuevo héroe
+610|¿Qué nombre le pone Tom Hanks a su balón de voleibol en «Náufrago»?|Wilson|Viernes|Jones|Billy
+611|¿Qué frase dice Ash (Bruce Campbell) al ponerse la motosierra en la mano en «Posesión infernal 2»?|Groovy|Gnarly|Perfect|Nice
+612|En «Gremlins», ¿a partir de qué hora no hay que dar de comer a un mogwai?|Medianoche|Atardecer|Mañana|Mediodía
+613|En «Lorax: En busca de la trúfula perdida» (2012), ¿quién es el villano?|Aloysius O'Hare|Ted Wiggins|El Once-ler|La abuela Norma
+614|¿Quién interpretó a Bruce Wayne en el «Batman» de Tim Burton (1989)?|Michael Keaton|George Clooney|Val Kilmer|Adam West
+615|¿Cuál de estos personajes NO es una chica Bond?|Vanessa Kensington|Pam Bouvier|Mary Goodnight|Wai Lin
+617|¿Cuál fue la primera película de James Bond?|Agente 007 contra el Dr. No|James Bond contra Goldfinger|Desde Rusia con amor|Operación Trueno
+618|¿Qué película de animación fue la primera en tener a un famoso como actor de doblaje protagonista?|Aladdín|Toy Story|James y el melocotón gigante|El jorobado de Notre Dame
+619|¿Quién interpretó al alguacil Samuel Gerard en «El fugitivo» (1993)?|Tommy Lee Jones|Harrison Ford|Harvey Keitel|Martin Landau
+620|¿Cuál es el apellido de Dorothy en «El mago de Oz»?|Gale|Perkins|Day|Parker
+621|¿Llevaba el sable láser de Samuel L. Jackson en Star Wars grabada la frase «Bad Motherf*cker»?|Sí
+622|¿En qué película se dice «Siento la necesidad... ¡la necesidad de velocidad!»?|Top Gun|Días de trueno|El color del dinero|Cocktail
+623|¿En qué estado de EE. UU. transcurre sobre todo «Fargo» (1996)?|Minnesota|Dakota del Norte|Dakota del Sur|Wisconsin
+624|Max Schreck, actor del cine mudo alemán, interpretó a un famoso monstruo en una película de 1922. ¿Cuál?|Nosferatu|Frankenstein|El jinete sin cabeza|Häxan
+625|¿Quién dirigió «La forma del agua» (2017)?|Guillermo del Toro|Steven Spielberg|James Cameron|Martin Scorsese
+626|¿Con qué saga se hizo famoso en todo el mundo Daniel Radcliffe?|Harry Potter|Ted|Spy Kids|Piratas del Caribe
+627|¿Qué superhéroe han interpretado en el cine Michael Keaton, Val Kilmer, George Clooney y Christian Bale?|Batman|Superman|Iron Man|Spider-Man
+628|¿Salía Shaquille O'Neal en «Space Jam» (1996)?|No
+629|¿Cuál de estas películas NO se estrenó en 1996?|Gladiator|Independence Day|La roca|Misión imposible
+630|¿Cuál de estos actores solo ha trabajado una vez con Quentin Tarantino como director?|John Travolta|Christoph Waltz|Harvey Keitel|Samuel L. Jackson
+631|¿Quién protagonizó «Operación Dragón» (1973)?|Bruce Lee|Jackie Chan|Jet Li|Chow Yun-fat
+632|¿Cuál es el largometraje de Disney más antiguo?|Blancanieves y los siete enanitos|Pinocho|Dumbo|Fantasía
+633|¿Cuál fue el primer monstruo que apareció junto a Godzilla?|Anguirus|King Kong|Mothra|King Ghidorah
+634|¿Es Chewbacca, el copiloto de Han Solo, un ewok?|No
+635|¿Cuál de estas películas NO se basa en una novela de Stephen King?|La cosa|Carrie|Misery|La milla verde
+636|En «Pulp Fiction», ¿quién explica que en Europa no sabrían qué es un «cuarto de libra» porque usan el sistema métrico?|Vincent Vega|Jules Winnfield|Jimmie Dimmick|Butch Coolidge
+637|¿Quién dirigió «El renacido» (2015)?|Alejandro G. Iñárritu|Christopher Nolan|David Fincher|Wes Anderson
+638|¿Qué tenía Harrison Ford durante el rodaje de la persecución de El Cairo en «En busca del arca perdida»?|Disentería|Anemia|Estreñimiento|Reflujo
+639|¿Usó Hitchcock sirope de chocolate como sangre en la famosa escena de la ducha de «Psicosis»?|Sí
+640|¿Quién pone la voz original de Po en «Kung Fu Panda»?|Jack Black|Seth Rogen|Dustin Hoffman|Jackie Chan
+641|¿En qué cultura se basa la película de Disney «Vaiana» (2016)?|La polinesia|La de los nativos americanos|La japonesa|La nórdica
+643|¿En qué año se publicó el primer YouTube Rewind oficial?|2010|2012|2011|2013
+644|¿Dónde transcurre la primera «Viernes 13»?|En el campamento de Crystal Lake|En Packanack|En Higgins Haven|En el campamento Forest Green
+645|¿Quién dirigió «Pulp Fiction», «Reservoir Dogs» y «Django desencadenado»?|Quentin Tarantino|Martin Scorsese|Steven Spielberg|James Cameron
+646|¿Dirigió George Lucas las tres películas de la trilogía original de Star Wars?|No
+647|¿Quién interpreta a Obi-Wan Kenobi en los episodios I, II y III de Star Wars?|Ewan McGregor|Alec Guinness|Hayden Christensen|Liam Neeson
+648|En «La loca historia de las galaxias», ¿qué intentan robar del planeta Druidia?|El aire|El Schwartz|A la princesa|Albóndigas
+649|¿Quién interpreta a Ethan Hunt en la saga «Misión imposible»?|Tom Cruise|Johnny Depp|Sean Connery|Pierce Brosnan
+650|En «El renacido», ¿persigue el personaje de DiCaprio al asesino de su hijo?|Sí
+651|¿Quién dirigió las películas de «Kill Bill»?|Quentin Tarantino|Arnold Schwarzenegger|David Lean|Stanley Kubrick
+652|¿Quién es el villano principal de «El caballero oscuro: La leyenda renace» (2012)?|Bane|El Joker|La CIA|Enigma
+653|¿Cuál de estos actores NO sale en «Salvar al soldado Ryan» (1998)?|Ralph Fiennes|Tom Hanks|Vin Diesel|Matt Damon
+654|¿Se estrenó «Los Minions» el 10 de junio de 2015?|No
+655|En «Jurassic World», ¿cómo se llama el dinosaurio híbrido creado genéticamente?|Indominus rex|Mosasaurus|Pteranodon|Tiranosaurio rex
+656|En «Vengadores: Infinity War», ¿dónde estaba la Gema del Alma?|En Vormir|En Xandar|En Sapiencial|En Asgard
+657|¿Cuál era el nombre real de ALF?|Gordon Shumway|Gordon Milipp|Gordon Foster|Gordon von Gam
+659|¿Quién interpretó a Han Solo en la saga principal de Star Wars?|Harrison Ford|Peter Cushing|Mark Hamill|Alec Guinness
+660|¿En cuál de estas películas NO sale Jeff Bridges?|Los odiosos ocho|Tron: Legacy|The Giver|Valor de ley
+661|¿Estuvo en prisión el actor Tommy Chong?|Sí
+662|¿Quién acaba congelado al final de «GoldenEye»?|Boris Grishenko|James Bond|Natalya Simonova|Alec Trevelyan
+663|¿Es «La red social» (2010) una película sobre Tom Anderson, el fundador de MySpace?|No
+664|¿Quién interpreta a Jack Burton en «Golpe en la pequeña China»?|Kurt Russell|Patrick Swayze|John Cusack|Harrison Ford
+665|¿Se hizo toda «Pesadilla antes de Navidad» con muñecos y objetos físicos (stop motion)?|Sí
+666|¿Cuál de estos actores NO ha interpretado a Spider-Man en el cine?|Michael Cera|Tobey Maguire|Andrew Garfield|Tom Holland
+667|En «Blade Runner», ¿cómo se llama a los androides de aspecto humano?|Replicantes|Cylons|Sintéticos|Pellejudos
+668|¿Para promocionar qué película se convirtieron tiendas 7-Eleven en Badulaques (Kwik-E-Mart)?|Los Simpson: la película|Spider-Man 3|Shrek tercero|Ratatouille
+669|¿Es cierto que Ewan McGregor no supo el título del episodio II de Star Wars ni durante ni después del rodaje?|Sí
+670|¿En qué país europeo transcurre sobre todo «28 días después» (2002)?|Reino Unido|Francia|Italia|Alemania
+671|¿Es Brandon Routh el protagonista de «John Wick»?|No
+672|En «Ultimátum a la Tierra» (1951), ¿en qué ciudad aterriza la nave alienígena?|Washington D. C.|Los Ángeles|Nueva York|Filadelfia
+673|¿En qué película aparece un enorme espíritu parecido a un conejo que hace crecer árboles?|Mi vecino Totoro|Hop|El origen de los guardianes|Alicia en el país de las maravillas
+674|¿Interpretó Matt Damon a un astronauta abandonado en otro planeta tanto en «Interstellar» como en «Marte»?|Sí
+675|¿Se estrenó «2001: Una odisea del espacio» el 31 de diciembre de 2000?|No
+676|¿Quién es el protagonista de «Regreso al futuro» (1985)?|Marty McFly|Emmett «Doc» Brown|Biff Tannen|George McFly
+677|¿En qué película con Bruce Willis se dice «En ocasiones veo muertos»?|El sexto sentido|El quinto elemento|Jungla de cristal|Armageddon
+679|¿En qué época histórica se centra la película «Assassin's Creed» (2016)?|La Inquisición española|La Inglaterra victoriana|La Revolución francesa|La América colonial
+680|¿Quién fue la protagonista femenina de «King Kong» (1933)?|Fay Wray|Jean Harlow|Vivien Leigh|Mae West
+681|¿Quién NO forma parte del reparto de «Escuadrón suicida» (2016)?|Scarlett Johansson|Jared Leto|Will Smith|Margot Robbie
+682|¿En qué película se dice «Houston, tenemos un problema»?|Apolo 13|Elegidos para la gloria|Capricornio Uno|Atrapados en el espacio
+683|¿Cómo se titulaba la primera película de Bond, de 1962?|Agente 007 contra el Dr. No|Desde Rusia con amor|James Bond contra Goldfinger|Operación Trueno
+684|Al final de «Ratas a la carrera» (2001), ¿en el concierto de qué grupo se cuelan los concursantes?|Smash Mouth|Bowling for Soup|Sum 41|Linkin Park
+685|¿En qué año se estrenó «Con Air»?|1997|1985|1999|1990
+686|En «Big Hero 6», ¿de qué ciudad imaginaria son los protagonistas?|San Fransokio|San Tokio|Tokisisco|Sankio
+687|En «El ejército de las tinieblas» (1992), ¿cómo llama Ash a su escopeta de dos cañones?|Boomstick|Bloomstick|Blastbranch|Two-Pump Chump
+688|En la trilogía original de Star Wars, ¿ponía Alec Guinness la voz de Darth Vader?|No
+689|¿Ganó Leonardo DiCaprio el Óscar al mejor actor por «El aviador» (2004)?|No
+690|¿Quién dirigió «Vengadores: Endgame»?|Los hermanos Russo|Zack Snyder|Joss Whedon|Kevin Feige
+691|En «V de Vendetta», ¿qué fecha pide «V» que se recuerde?|El 5 de noviembre|El 6 de noviembre|El 4 de noviembre|El 5 de septiembre
+692|¿En qué película dice Humphrey Bogart «Brindo por ti, pequeña»?|Casablanca|El halcón maltés|El tesoro de Sierra Madre|Ciudadano Kane
+693|¿Quién interpreta a Alice en las películas de «Resident Evil»?|Milla Jovovich|Michelle Rodríguez|Sienna Guillory|Ali Larter
+695|¿Quién escribió y dirigió «Platoon» (1986)?|Oliver Stone|Francis Ford Coppola|Stanley Kubrick|Michael Cimino
+696|En «Chicas malas», ¿quién dice que sus pechos saben cuándo va a llover?|Karen Smith|Gretchen Wieners|Janis Ian|Cady Heron
+697|¿Era David Prowse quien se ponía el traje de Darth Vader en la trilogía original?|Sí
+698|¿Cómo se llama la isla donde se construye Parque Jurásico?|Isla Nublar|Isla Sorna|Isla Muerta|Isla Pena
+699|En «Super Mario Bros.: La película» (2023), ¿quién pone la voz original de Toad?|Keegan-Michael Key|Seth Rogen|Charlie Day|Jack Black
+701|¿Quién interpretó a Thanos en «Infinity War» y «Endgame»?|Josh Brolin|Tom Hiddleston|Adam Sandler|Sean Gunn
+703|¿Tiene sangre ácida el xenomorfo de «Alien»?|Sí
+704|En el universo de «Parque Jurásico», ¿cómo se llama la isla del Sitio B de InGen?|Isla Sorna|Isla Nublar|Isla Pena|Isla Muerta
+705|¿Qué actor dirigió y protagonizó con Emily Blunt la película de terror «Un lugar tranquilo» (2018)?|John Krasinski|Keanu Reeves|Willem Dafoe|Josh Brolin
+706|Después de la India, ¿qué país produce más películas al año?|Nigeria|Estados Unidos|China|Francia
+707|¿Cómo se llama el protagonista de «Commando» (1985)?|John Matrix|Ben Richards|Douglas Quaid|Harry Tasker
+708|Según Star Wars, ¿cuál es el planeta natal de Han Solo?|Corellia|Tatooine|Naboo|Coruscant
+709|¿En qué año se estrenó «Loca academia de policía»?|1984|1986|1985|1983
+710|¿Quién interpretó a Willy Wonka en «Un mundo de fantasía» (1971)?|Gene Wilder|Shia LaBeouf|Peter Ostrum|Johnny Depp
+711|¿Qué actor interpreta a Tommy Jarvis en «Viernes 13: Capítulo final» (1984)?|Corey Feldman|Macaulay Culkin|Mel Gibson|Mark Hamill
+712|En «Réquiem por un sueño», ¿a qué droga se engancha el personaje de Jared Leto?|Heroína|Cocaína|Marihuana|Oxicodona
+713|¿Quién dirigió «El silencio de los corderos» (1991)?|Jonathan Demme|Stanley Kubrick|Frank Darabont|Michael Bay
+714|¿Qué actor protagonizó «Top Gun», «Jerry Maguire» y «Nacido el 4 de julio»?|Tom Cruise|Kelly McGillis|John Travolta|George Clooney
+715|¿Empieza «The Rocky Horror Picture Show» con unos enormes labios flotantes cantando?|Sí
+717|¿A qué superhéroe de Marvel interpretó Chris Evans antes que al Capitán América?|La Antorcha Humana|Cíclope|El Hombre de Hielo|Daredevil
+718|En «Speed» (1994), ¿a qué velocidad mínima debe ir el autobús para que no explote la bomba?|50 millas por hora (80 km/h)|60 millas por hora|40 millas por hora|70 millas por hora
+719|¿En qué película intercambian sus vidas Eddie Murphy y Dan Aykroyd?|Entre pillos anda el juego|Cazafantasmas|El príncipe de Zamunda|The Blues Brothers
+720|¿Cuál es el nombre real de Michael Caine?|Maurice Micklewhite|Morris Coleman|Carl Myers|Martin Michaels
+721|En «Regreso al futuro II», ¿a qué fecha del futuro viajan Marty y Doc?|21 de octubre de 2015|28 de agosto de 2015|20 de julio de 2015|25 de enero de 2015
+722|Velma Kelly y Roxie Hart son las protagonistas de ¿qué película ganadora del Óscar?|Chicago|Dreamgirls|Cabaret|All That Jazz
+723|¿Quién dirigió «Scott Pilgrim contra el mundo» (2010)?|Edgar Wright|Phil Lord|Chris Miller|Seth Rogen
+724|¿Qué personaje protagoniza «Harry el ejecutor», «Impacto súbito» y «La lista negra»?|Harry el Sucio|Indiana Jones|James Bond|Harry Potter
+725|¿Qué actor y experto en artes marciales interpretó al coronel Guile en «Street Fighter» (1994)?|Jean-Claude Van Damme|Chuck Norris|Steven Seagal|Scott Adkins
+726|¿Qué comedia de culto de los 90 tiene cameos de Meat Loaf, Alice Cooper y Chris Farley?|Wayne's World|Las alucinantes aventuras de Bill y Ted|Dos tontos muy tontos|Austin Powers
+727|¿Qué superhéroe de DC NO aparece en «Liga de la Justicia» (2017)?|Flecha Verde|Batman|Cyborg|Wonder Woman
+728|¿Durante el rodaje de qué película cogió una neumonía Susan Sarandon?|The Rocky Horror Picture Show|Thelma y Louise|Pena de muerte|Encantada

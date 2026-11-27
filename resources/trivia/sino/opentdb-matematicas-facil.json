@@ -1,0 +1,99 @@
+{
+  "formato": "konkursox-banco",
+  "version": 1,
+  "nombre": "Matemáticas · Fácil",
+  "grupo": "Open Trivia DB",
+  "licencia": "Preguntas de Open Trivia Database (opentdb.com), licencia CC BY-SA 4.0, traducidas y adaptadas al español. Este banco se distribuye con la misma licencia (CC BY-SA 4.0).",
+  "preguntas": [
+    {
+      "id": "o3371",
+      "tipo": "sino",
+      "enunciado": "¿Tiene un triángulo escaleno dos lados iguales?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3374",
+      "tipo": "sino",
+      "enunciado": "¿Existe un conjunto universal, un conjunto que contenga a todos los conjuntos?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3375",
+      "tipo": "sino",
+      "enunciado": "¿Tiene solución el problema de la cuadratura del círculo?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3387",
+      "tipo": "sino",
+      "enunciado": "¿Es impar la suma de dos números impares?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3394",
+      "tipo": "sino",
+      "enunciado": "¿Tiene un triángulo isósceles dos lados iguales, y no tres?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3396",
+      "tipo": "sino",
+      "enunciado": "¿Miden siempre 60° todos los ángulos de un triángulo equilátero?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    }
+  ]
+}

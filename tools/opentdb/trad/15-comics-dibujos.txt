@@ -1,0 +1,112 @@
+# Cómics (Entertainment: Comics)
+4864|¿Qué superhéroe es famoso por su supervelocidad?|Flash|Superman|Batman|Spider-Man
+4866|¿Quién es Batman?|Bruce Wayne|Clark Kent|Barry Allen|Tony Stark
+4867|¿Nació el meme de la rana Pepe en el cómic «Boy's Club», de Matt Furie?|Sí
+4868|En el cómic «The Superior Spider-Man», ¿quién se apodera del cuerpo de Peter Parker?|Otto Octavius (Doctor Octopus)|Norman Osborn|Mary Jane|Eddie Brock
+4870|¿Quién creó el cómic «The Walking Dead»?|Robert Kirkman|Stan Lee|Malcolm Wheeler-Nicholson|Robert Crumb
+4872|¿Cuál es la identidad secreta de Superman?|Clark Kent|Bruce Wayne|Arthur Curry|John Jones
+4874|¿A qué superhéroe de Marvel se le llama «el hombre sin miedo»?|Daredevil|Thor|Lobezno|Hulk
+4876|¿De qué planeta viene Superman?|Krypton|Avalon|Xolnar|Oa
+4879|Según su apodo de siempre, ¿qué tipo de dúo son Batman y Robin?|El Dúo Dinámico|El Dúo Peligroso|El Dúo Dinástico|El Dúo Delirante
+4880|¿Es Slade Wilson la identidad de Deadpool?|No
+4882|¿A qué teólogo debe su nombre el protagonista de «Calvin y Hobbes»?|Juan Calvino|Calvin Klein|Calvin Coolidge|Felipe Calvino
+4883|¿Cuándo se fundó Marvel Comics?|1939|1932|1951|1936
+4886|¿En quién se inspiró Hergé para crear al profesor Tornasol de Tintín?|Auguste Piccard|Jacques Piccard|Albert Einstein|Marie Curie
+4887|En los cómics de Marvel, ¿cuál de estas NO es una Gema del Infinito?|Energía|Tiempo|Poder|Alma
+4888|¿Cuál es el verdadero nombre de Hellboy?|Anung Un Rama|Mano Derecha del Destino|Ogdru Jahad|Azzael
+4889|¿De qué mundo viene Thor?|Asgard|Midgard|Jotunheim|Sovngarde
+4890|¿Qué compañero de Batman es hijo de Talia al Ghul?|Damian Wayne|Dick Grayson|Tim Drake|Jason Todd
+4891|¿Cuál es el nombre completo del Capitán América?|Steven Grant Rogers|Steven John Rogers|Steven Peggy Rogers|Steven William Rogers
+4896|¿Cuál es el nombre real de Magneto?|Max Eisenhardt|Charles Xavier|Pietro Maximoff|Johann Schmidt
+4898|¿Cómo se llama el metal casi indestructible que recubre los huesos y las garras de Lobezno?|Adamantium|Vibranium|Uru|Carbonadium
+4899|¿Cómo se llama el cómic de un niño y un tigre que en realidad es un peluche?|Calvin y Hobbes|Winnie the Pooh|Mafalda|Snoopy
+4900|¿A qué filósofo debe su nombre el tigre de peluche de «Calvin y Hobbes»?|Thomas Hobbes|David Hume|John Locke|Nathaniel Hobbes
+4901|El éxito de «La Cosa del Pantano» y «Sandman» llevó a DC a crear en 1993 ¿qué sello?|Vertigo|Wildstorm|Image|Black Label
+4902|¿Quién creó a Ultrón en los cómics de Marvel?|Henry Pym|Amadeus Cho|Tony Stark|Reed Richards
+4906|¿Quién escribió el cómic de Batman «La broma asesina»?|Alan Moore|Bill Finger|Frank Miller|Jerry Siegel
+4912|¿Cómo se llamaban los padres de Batman?|Thomas y Martha|Joey y Jackie|Jason y Sarah|Todd y Mira
+4915|¿Con cuál de estos superhéroes NO ha tenido una relación Wonder Woman?|Flecha Verde|Superman|Batman|Steve Trevor
+4917|¿Qué número de Tierra recibe el Universo Cinematográfico de Marvel?|Tierra-199999|Tierra-616|Tierra-10005|Tierra-2008
+4918|¿Quién fue el primer Robin en los cómics de Batman?|Dick Grayson|Bruce Wayne|Jason Todd|Tim Drake
+4919|¿Quién creó «Las aventuras de Tintín»?|Hergé|Edgar P. Jacobs|Goscinny|Franquin
+4920|En «Watchmen», ¿quién es el segundo en llevar el traje de Búho Nocturno?|Daniel Dreiberg|Nelson Gardner|Hollis Mason|Adrian Veidt
+4922|¿Se pensaron Tormenta y Rondador Nocturno de los X-Men en principio para la Legión de Superhéroes de DC?|Sí
+4924|¿Cuándo se publicó por primera vez Garfield?|1978|1982|1973|1988
+4929|En los cómics de Batman, ¿con qué otro nombre se conoce al doctor Jonathan Crane?|El Espantapájaros|Bane|El Hombre Calendario|Barro
+4935|En 1978, Superman se unió a ¿qué famoso para frenar una invasión alienígena?|Muhammad Ali|Mike Tyson|Sylvester Stallone|Arnold Schwarzenegger
+4937|¿En qué año salió el primer cómic de «The Walking Dead»?|2003|2001|2006|1999
+4940|En el universo Marvel, ¿qué raza vive en el planeta Svartalfheim?|Los elfos oscuros|Los gigantes de hielo|Los kronanos|Los skrulls
+4941|¿En qué año se celebró la primera Comic-Con de San Diego?|1970|2000|1990|1985
+4942|Más conocido como Logan, ¿cuál es el nombre de nacimiento de Lobezno?|James Howlett|Logan Wolf|Thomas Wilde|John Savage
+
+# Dibujos animados (Entertainment: Cartoon & Animations)
+5187|En «Avatar: la leyenda de Aang», ¿qué elemento empieza a aprender Aang tras ser descongelado?|El agua|El aire|La tierra|El fuego
+5189|¿En qué serie de dibujos sale el doctor Heinz Doofenshmirtz?|Phineas y Ferb|Ren y Stimpy|Ben 10|Batman: la serie animada
+5190|¿Cómo se llama la bruja del mar de «La sirenita» (1989)?|Úrsula|Mim|Maléfica|Lady Tremaine
+5191|¿Qué nombre de niña significa «perdido» en hawaiano y protagoniza una película de 2002 con el alienígena Stitch?|Lilo|Lolo|Lucy|Lulú
+5192|¿Es Bill Cipher el bueno en «Gravity Falls»?|No
+5194|En «Los Simpson», ¿en qué guerra sirvió Seymour Skinner como boina verde?|Vietnam|La Segunda Guerra Mundial|La Primera Guerra Mundial|Corea
+5195|¿Cuál de estos NO es un personaje de «Los Picapiedra»?|Lord Rockingham IX|El señor Rajuela|El Gran Gazoo|Pablo Mármol
+5196|¿Cuál fue la primera película de Disney en usar imágenes por ordenador?|Taron y el caldero mágico|Tron|Toy Story|Fantasía
+5198|¿Era negro Waylon Smithers en su primera aparición en «Los Simpson»?|Sí
+5200|En «My Little Pony», ¿cómo se llama la hermana pequeña de Applejack?|Apple Bloom|Red Delicious|Apple Sweets|Apple Fritter
+5202|En «South Park», ¿cómo se apellida Stan?|Marsh|Stotch|Broflovski|Tweak
+5203|En «Toy Story», ¿cómo se llama el niño dueño de los juguetes?|Andy|Edward|Danny|Matt
+5204|¿Cómo se llama el burro melancólico amigo de Winnie the Pooh?|Ígor|Piglet|Tigger|Kanga
+5205|¿Qué Tortuga Ninja lleva tradicionalmente la cinta naranja?|Michelangelo|Leonardo|Donatello|Raphael
+5206|¿Pone Eddie Murphy la voz original de Asno en «Shrek»?|Sí
+5207|¿Qué personaje de «Padre de familia» tuvo su propia serie en 2009?|Cleveland Brown|Glenn Quagmire|Joe Swanson|Stewie Griffin
+5209|¿Cuál de estos NO es un personaje de Disney?|El Pato Lucas|El Pato Donald|La Pata Daisy|El Tío Gilito
+5210|¿Qué personaje de «Bob Esponja» vive en una piña bajo el mar?|Bob Esponja|Patricio Estrella|Calamardo|Arenita
+5211|¿Quién creó la serie «Hora de aventuras»?|Pendleton Ward|J. G. Quintel|Ben Bocquelet|Rebecca Sugar
+5213|¿Quién puso la voz original al Genio de «Aladdin»?|Robin Williams|Billy Crystal|Adam Sandler|Jim Carrey
+5215|¿Qué animal es Bambi?|Un ciervo|Un elefante|Un lobo|Un ratón
+5216|¿En qué ciudad viven «Los Picapiedra»?|Piedradura|Rocaville|Pedrópolis|Ciudad Roca
+5218|¿Cuál de estos personajes de «Bob Esponja» NO es un calamar?|Gary|Orvillie|Calamardo|Squidette
+5219|¿Cuál de estos vehículos NO salía en «Los autos locos»?|El Carro Dragón|El Troncomóvil|El Súper Chatarra Special|El Compact Pussycat
+5220|¿Qué actor de doblaje ha puesto voz en todas las películas de Pixar?|John Ratzenberger|Tom Hanks|Dave Foley|Geoffrey Rush
+5221|¿Qué familia de dibujos vive en el 742 de Evergreen Terrace, en Springfield?|Los Simpson|Los Hill|Los Picapiedra|Los Griffin
+5222|¿Quién creó la serie «Historias corrientes» (Regular Show)?|J. G. Quintel|Ben Bocquelet|Pendleton Ward|Rebecca Sugar
+5223|¿En qué serie de dibujos salen Butters Stotch, Pip Pirrup y Wendy Testaburger?|South Park|Los Simpson|Padre de familia|Futurama
+5225|¿Qué relación tienen Rick y Morty?|Abuelo y nieto|Padre e hijo|Mejores amigos|Compañeros de trabajo
+5226|¿Quién es el villano de «El rey león»?|Scar|Fred|Jafar|Hades
+5228|¿Cuántos episodios tuvo la quinta temporada de «Samurái Jack»?|10|12|11|13
+5229|En «Avatar» y «La leyenda de Korra», ¿es la lava-control una técnica del fuego-control?|No
+5231|¿Cuál es el nombre real de Dipper en «Gravity Falls»?|Mason Pines|Mabel Pines|Jason Pines|Mark Pines
+5232|¿Qué personaje de Sanrio apareció en 1996?|Pompompurin|My Melody|Badtz-Maru|Keroppi
+5235|En «My Little Pony: la magia de la amistad», ¿qué pony representa la honestidad?|Applejack|Twilight Sparkle|Pinkie Pie|Rarity
+5237|¿Quién creó la serie de animación «Robot Chicken»?|Seth Green|Seth MacFarlane|Seth Rogen|Seth Rollins
+5238|¿Cuál es la velocidad estándar de la animación, en fotogramas por segundo?|24|12|30|60
+5240|En «El increíble mundo de Gumball», ¿quién es el director del colegio de Elmore?|El director Brown|El director Small|El director Brawn|El director Simian
+5245|¿Cómo se llama el perro de Sid en «Toy Story»?|Scud|Buster|Whiskers|Mr. Jones
+5247|¿A qué grupo pertenece Nickelodeon?|Viacom (Paramount)|CBS|Fox|ABC
+5249|¿Qué serie de Cartoon Network se estrenó el 4 de noviembre de 2013?|Steven Universe|Historias corrientes|Hora de aventuras|El increíble mundo de Gumball
+5250|¿A qué personaje de «Toy Story» ponía voz Don Rickles en la versión original?|Mr. Potato|Slinky|Hamm|Rex
+5252|¿Aparece la suite de «El cascanueces» en «Fantasía» (1940), de Disney?|Sí
+5254|¿Aparece «Una noche en el monte pelado» en «Fantasía» (1940)?|Sí
+5256|En «Los Simpson», ¿dónde se conocieron Homer y Marge?|En un campamento de verano|En el instituto|En la iglesia|En el 742 de Evergreen Terrace
+5258|¿Rechazó Nickelodeon el piloto de «Hora de aventuras»?|Sí
+5259|En «Bob Esponja», ¿cómo se llama la casa de Arenita?|La cúpula de Arenita|«La Cúpula»|La burbuja de Arenita|El laboratorio acuático
+5260|¿Hizo el Pato Donald de Bob Cratchit en el «Cuento de Navidad» de Disney de 1983?|No
+5261|¿Cómo se llama a los personajes animales que andan a dos patas y hablan, como Bugs Bunny?|Antropomorfos|Antropológicos|Antropófagos|Andrógenos
+5262|¿Cuál es el nombre real de Scooby-Doo?|Scoobert|Scooter|Scrappy|Shooby
+5263|¿Aparece «El Danubio azul» en «Fantasía» (1940)?|No
+5265|¿Cuándo se emitió el último episodio de «Futurama» antes de su regreso en 2023?|El 4 de septiembre de 2013|El 25 de diciembre de 2010|El 28 de marzo de 1999|El 4 de noviembre de 2021
+5268|En «Del revés (Inside Out)», ¿qué ciudad critica Ira por estropear la pizza?|San Francisco|Minnesota|Washington|California
+5269|¿De qué ciudad de dibujos era alcalde Adam West?|Quahog|Springfield|South Park|Langley Falls
+5270|¿En qué año se estrenó «Goofy e hijo» (A Goofy Movie)?|1995|1999|2001|1997
+5271|Antes de liderar a los Autobots, ¿cómo se llamaba Optimus Prime en Cybertron?|Orion Pax|Long Haul|P-138|Teletran-1
+5272|¿De cuál de estas películas fue Don Bluth guionista, director y productor?|Todos los perros van al cielo|Titan A.E.|Anastasia|En busca del valle encantado
+5274|¿Quién puso la voz al perro de Stan en el episodio de «South Park» del barco gay?|George Clooney|Jay Leno|Matt Stone|Robert Smith
+5276|¿Cómo se llamaba el perro de Jonny Quest?|Bandit|Lucky|Rocky|Max
+5277|¿Se estrenó el primer episodio de «Padre de familia» el 1 de enero de 2002?|No
+5281|¿Cuál de estas novias de dibujos apareció antes que su novio?|Olivia (de Popeye)|Minnie Mouse|Lola Bunny|La Pata Daisy
+5282|En el universo de «Star Wars», ¿de qué especie es el gran almirante Thrawn?|Chiss|Gungan|Pantorano|Twi'lek
+5283|¿Quién puso la voz original a Hipo en «Cómo entrenar a tu dragón»?|Jay Baruchel|Jack Black|John Powell|Gerard Butler
+5284|Benny, Brain, Fancy-Fancy, Spook y Choo-Choo eran la pandilla de ¿qué personaje de Hanna-Barbera?|Don Gato|El Oso Yogui|Leoncio|Scooby-Doo
+5286|En «Rick y Morty», ¿de qué dimensión son Rick y Morty?|C-137|J1977|C-136|C500-a
+5287|¿Qué familia de dibujos vive en el 31 de Spooner Street, en Quahog?|Los Griffin|Los Simpson|Los Supersónicos|Los Hill
+5291|En «Rick y Morty», ¿qué significa «Wubba Lubba Dub Dub» en el idioma de Persona Pájaro?|Sufro mucho, ayúdame|Me lo paso genial|Adiós, amigo|Soy el más listo
+5292|En «Los autos locos», ¿cómo se llamaba la pareja de cavernícolas del Troncomóvil?|Los Hermanos Macana|Los Hermanos Piedra|Los Hermanos Roca|Los Hermanos Garrote
+5293|¿Cuándo se estrenó el primer episodio de «Las Supernenas»?|El 18 de noviembre de 1998|El 25 de junio de 1999|El 28 de julio de 2000|El 14 de abril de 2001
+5294|¿Cuál es el nombre completo de Scooby-Doo?|Scoobert Doo|Scooter Doo|Scooby Dooby Doo|Scoobity Doo

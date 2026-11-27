@@ -1,0 +1,143 @@
+# Matemáticas (Science: Mathematics)
+3371|¿Tiene un triángulo escaleno dos lados iguales?|No
+3372|¿Cuál es el número mínimo de lados que puede tener un polígono?|3|1|2|7
+3373|¿Cuántos grados tiene una circunferencia completa?|360|180|90|720
+3374|¿Existe un conjunto universal, un conjunto que contenga a todos los conjuntos?|No
+3375|¿Tiene solución el problema de la cuadratura del círculo?|No
+3376|En números romanos, ¿cuánto vale XL?|40|60|15|90
+3377|¿Cuántas caras cuadradas tiene un cubo?|6|4|8|10
+3378|En español, ¿qué viene después del millón, el billón y el trillón?|Cuatrillón|Sextillón|Quintillón|Septillón
+3379|¿Cómo se llama un polígono de nueve lados?|Eneágono|Hexágono|Octógono|Heptágono
+3380|¿Qué número primo viene después del 19?|23|25|21|27
+3381|¿Cuántos lados tiene un heptágono?|7|5|4|9
+3383|¿Quién demostró el último teorema de Fermat?|Andrew Wiles|Leonhard Euler|Carl Friedrich Gauss|Srinivasa Ramanujan
+3384|¿Cuál es el orden correcto de las operaciones?|Paréntesis, potencias, multiplicación y división, suma y resta|Suma, multiplicación, paréntesis, potencias|Potencias, paréntesis, suma, multiplicación|De izquierda a derecha sin más
+3385|¿Cómo se llama un polígono de ocho lados?|Octógono|Hexágono|Nonágono|Heptágono
+3386|¿Cuál es la raíz cuadrada de 49?|7|4|12|9
+3387|¿Es impar la suma de dos números impares?|No
+3388|¿Cuál de estos NO es uno de los siete problemas del milenio?|La conjetura de Navier|La conjetura de Birch y Swinnerton-Dyer|La hipótesis de Riemann|La conjetura de Poincaré
+3389|¿Cuál es la fórmula del volumen de una esfera?|(4/3)πr³|4πr²|(1/3)πhr²|πr⁴
+3390|¿Cuántos lados tiene un pentágono?|5|9|6|4
+3391|¿Cuántos lados tiene un trapecio?|4|3|5|6
+3392|¿Cuántas caras tiene una banda de Möbius?|1|2|3|4
+3393|¿Qué dos hombres descubrieron por separado el cálculo diferencial?|Newton y Leibniz|Platón y Aristóteles|Asimov y Rutherford|Dvorak y Smith
+3394|¿Tiene un triángulo isósceles dos lados iguales, y no tres?|Sí
+3395|¿Cuál era el nombre de pila del matemático Euler?|Leonhard|Lionel|Andrin|Ajan
+3396|¿Miden siempre 60° todos los ángulos de un triángulo equilátero?|Sí
+3397|¿Cuántas veces más pequeña que la unidad hace una medida el prefijo «atto-»?|Una trillonésima|Una milmillonésima|Una milbillonésima|Una cuatrillonésima
+3398|¿Cómo se llama un ángulo de más de 90°?|Obtuso|Agudo|Recto|Llano
+3399|Con π = 3,1415, ¿cuál es el área de un círculo de 20 cm de diámetro?|314,15 cm²|380,12 cm²|3141,5 cm²|1256,6 cm²
+3400|¿Cuántos ceros tiene un gúgol?|100|10|1000|1 000 000
+3401|Redondeando, ¿cuántos radianes tiene una circunferencia completa?|6|3|4|5
+3402|En el sistema hexadecimal, ¿qué viene después del 9?|La letra A|El 10|El 0|El 16
+3403|¿Qué números forman la quinta fila del triángulo de Pascal?|1 4 6 4 1|1 3 3 1|1 5 10 10 5 1|1 6 15 20 15 6 1
+3404|¿Es álef cero el cardinal del conjunto de los números naturales?|Sí
+3405|¿Qué matemático rechazó la Medalla Fields?|Grigori Perelmán|Andrew Wiles|Terence Tao|Edward Witten
+3406|¿Cuáles son las seis primeras cifras del número pi?|3,14159|3,14169|3,12423|3,25812
+3408|¿Con qué letra se representa la unidad imaginaria?|i|e|n|x
+3409|¿Qué forma dibujan en una gráfica sen(x) o cos(x)?|Ondas|Una parábola|Una recta|Zigzags
+3410|¿Es 111 111 111 × 111 111 111 = 12 345 678 987 654 321?|Sí
+3411|¿Cuántos libros tienen los «Elementos» de Euclides?|13|8|10|17
+3412|¿Cuál de estos dados NO es un sólido platónico?|El de 10 caras|El de 12 caras|El de 20 caras|El de 8 caras
+3413|¿Es numerable el conjunto de los números algebraicos?|Sí
+3414|En el plano complejo, ¿cuántos grados gira en sentido antihorario algo al multiplicarlo por i?|90|180|270|0
+3415|¿Qué matemático griego corrió desnudo por Siracusa gritando «¡Eureka!»?|Arquímedes|Euclides|Herón|Pitágoras
+3416|¿Es cero el factorial de cero?|No
+3418|¿Qué letra griega representa el sumatorio?|Sigma|Delta|Alfa|Omega
+3419|¿Cuál de estas distribuciones de probabilidad NO es discreta?|La normal|La binomial|La de Poisson|La hipergeométrica
+3420|¿Cómo se escribe 500 en números romanos?|D|L|C|X
+3421|¿Cuál es la derivada de sen(x)?|cos(x)|csc(x)|−cos(x)|−sen(x)
+3422|¿Con qué letra griega se suele representar el número áureo?|Φ (fi)|π (pi)|Ψ (psi)|τ (tau)
+3424|¿Se puede hacer la raíz cuadrada de un número negativo con el número imaginario i?|Sí
+3425|¿Dice el teorema de Pitágoras que el cuadrado de la hipotenusa es igual al producto de los cuadrados de los catetos?|No
+3426|¿Es E = mc³?|No
+3427|En una distribución normal, ¿a cuántas desviaciones típicas de la media está el 95 % de los datos?|2|1|3|4
+3428|¿Qué tipo de función es x² + 2x + 1?|Cuadrática|Racional|Lineal|Exponencial
+3430|¿Qué famoso matemático murió en un duelo a los 20 años?|Galois|Abel|Euler|Gauss
+3431|¿La integración es la operación inversa de cuál?|La derivación|La división|La desviación típica|La multiplicación
+3432|¿Cuál es el valor aproximado del número e?|2,72|3,14|1,62|1,41
+3433|¿Cuál de estos matemáticos hizo grandes aportaciones a la teoría de juegos?|John von Neumann|Carl Friedrich Gauss|Leonhard Euler|Stefan Banach
+3434|¿A qué filósofo inglés se atribuye la paradoja del «conjunto de todos los conjuntos que no se contienen a sí mismos»?|Bertrand Russell|Francis Bacon|John Locke|Thomas Hobbes
+3435|Si pudieras doblar un papel por la mitad 50 veces, ¿tendría un grosor de unas tres cuartas partes de la distancia de la Tierra al Sol?|Sí
+3437|¿Por qué es conocido sobre todo el matemático francés Évariste Galois?|Por la teoría de Galois|Por las fracciones continuas de Galois|Por un método para ecuaciones en derivadas parciales|Por las integrales abelianas
+3438|¿Cómo se escribe el número decimal 31 en hexadecimal?|1F|3D|2E|1B
+3440|¿Cómo se llama la derivada de la aceleración respecto al tiempo?|Tirón (jerk)|Cambio|Golpe|Deslizamiento
+3441|¿Cuál es la cuarta cifra de π (3,14...)?|1|2|3|4
+3442|En topología, ¿es cerrado el complementario de un conjunto abierto?|Sí
+3443|¿Cuál es el número más pequeño que puede escribirse de dos formas distintas como suma de dos cubos positivos?|1729|91|561|4104
+3444|¿Equivale el número binario 101001101 al decimal 334?|No
+3445|¿Cuántos zeptómetros hay en un femtómetro?|1 000 000|10|1 000 000 000|1000
+3446|¿Cuál es el único problema del milenio resuelto hasta ahora?|La conjetura de Poincaré|P frente a NP|La hipótesis de Riemann|La conjetura de Fermat
+3447|¿Fue L'Hôpital el matemático que creó la regla que lleva su nombre?|No
+3448|¿Cómo se llama la curva que propuso Descartes para poner a prueba los métodos de Fermat?|Folium de Descartes|Paraboloide de Descartes|Cartesiana de Fermat|Elipse de Descartes
+# Mitología (Mythology)
+3450|En la mitología griega, ¿se llama Marte el dios de la guerra?|No
+3451|¿Qué diosa griega da nombre al planeta enano que provocó la discordia sobre si Plutón era planeta?|Eris|Caronte|Ceres|Disnomia
+3452|¿De qué era dios Poseidón?|Del mar|De la guerra|Del sol|Del fuego
+3453|¿De qué mitología es el dios Apolo?|Griega y romana|Romana y española|Griega y china|Griega, romana y nórdica
+3454|¿Qué criatura mitológica es mitad hombre y mitad caballo?|El centauro|El minotauro|Pegaso|La gorgona
+3455|La marca Nike toma su nombre de la diosa griega ¿de qué?|De la victoria|Del valor|De la fuerza|Del honor
+3456|¿Qué criaturas mitológicas tienen cara de mujer y cuerpo de buitre?|Las arpías|Las sirenas|Las ninfas|Lilith
+3457|¿Cómo se conocía al dios romano de la guerra?|Marte|Júpiter|Juno|Ares
+3458|En la mitología griega, ¿controla Zeus los rayos?|Sí
+3459|¿Cuántas cabezas tiene Cerbero?|3|2|1|5
+3460|¿Es un guiverno lo mismo que un dragón?|No
+3461|¿Qué personaje griego bajó al inframundo para devolver a la vida a su esposa Eurídice?|Orfeo|Hércules|Perseo|Dédalo
+3462|En la mitología griega, ¿quién es el dios del vino?|Dioniso|Hefesto|Deméter|Apolo
+3463|¿Qué punto débil de Aquiles aprovechó el príncipe troyano Paris?|El talón|El cuello|La espalda|La pantorrilla
+3464|¿Qué dios griego mantuvo su nombre en Roma?|Apolo|Deméter|Zeus|Atenea
+3465|En la mitología griega, ¿quién dirigió a los argonautas en busca del vellocino de oro?|Jasón|Cástor|Dédalo|Odiseo
+3467|En la mitología griega, ¿era Atlas un dios olímpico?|No
+3468|¿Qué significa el jeroglífico egipcio anj?|Vida|Amor|Odio|Veneno
+3469|¿Qué dios grecorromano lo era de la música, la verdad, la profecía, la curación, el sol, la peste y la poesía?|Apolo|Afrodita|Artemisa|Atenea
+3470|En la mitología nórdica, ¿se disfrazó Thor una vez de mujer?|Sí
+3471|¿Quién era el rey de los dioses en la mitología griega?|Zeus|Apolo|Hermes|Poseidón
+3472|En la mitología griega, ¿convierte la gorgona en piedra a quien la mira?|Sí
+3473|En la mayoría de las tradiciones, ¿quién era la esposa de Zeus?|Hera|Afrodita|Atenea|Hestia
+3474|¿Con qué animal se acostó la reina Pasífae antes de dar a luz al Minotauro?|Un toro|Un cerdo|Un buey|Un caballo
+3475|¿Qué semillas comió Perséfone, lo que la obliga a volver al inframundo?|De granada|De girasol|De naranja|De higo
+3476|¿De qué es diosa Hera?|Del matrimonio|De la agricultura|Del mar|De la guerra
+3477|¿Qué dios lanzó en el banquete de los dioses una manzana de oro con las palabras «para la más bella»?|Eris|Hades|Ares|Artemisa
+3478|En la mitología griega, ¿es Hera la diosa de la cosecha?|No
+3479|Según el folclore japonés, ¿cuál es la comida favorita del kappa?|Los pepinos|La calabaza|La berenjena|La soba
+3480|¿Qué divinidad griega lo es, entre otras cosas, de la estrategia militar?|Atenea|Ares|Artemisa|Apolo
+3481|¿Cómo se llama el hombre salvaje del que se hace amigo Gilgamesh?|Enkidu|Ishtar|Inanna|Agga
+3482|En la mitología griega, ¿quién mató a Aquiles?|Paris|Héctor|Helena|Pericles
+3483|¿Quién es hijo del dios Loki?|Fenrir|Odín|Hel|Sigyn
+3484|¿Cómo se llama el dios griego de la muerte serena?|Tánatos|Tártaro|Hades|Moros
+3485|¿Era el dios romano Júpiter el que los griegos llamaban Zeus?|Sí
+3486|¿Cuál de estos dioses romanos no tiene equivalente griego?|Jano|Vulcano|Juno|Marte
+3487|En la mitología nórdica, ¿cómo se llama el «árbol de la vida»?|Yggdrasil|Ymir|Árbol de la Tierra|Raíces de Odín
+3488|¿Cómo se llama el dios griego de los herreros?|Hefesto|Dintos|Vulcano|Artagatus
+3489|En la mitología nórdica, ¿cómo se llama el primer ser humano?|Ask|Asmund|Ake|Asger
+3490|En la mitología africana, ¿qué forma tiene Anansi, el embaucador y cuentacuentos?|Araña|Perro salvaje|Mono|Cocodrilo
+3491|Según los maoríes, ¿qué país insular fundó Kupe, que lo descubrió bajo una larga nube blanca?|Nueva Zelanda|Vanuatu|Fiyi|Hawái
+3492|En la mitología nórdica, ¿de qué planta era la lanza con la que Loki mató a Baldr?|Muérdago|Acónito|Espino cerval|Cicuta
+3493|¿Cuál era el nombre griego de Neptuno?|Poseidón|Ares|Zeus|Apolo
+3494|¿Quién es el padre de Ícaro, que voló demasiado cerca del sol?|Dédalo|Minos|Perseo|Zeus
+3495|¿Consiguió el dios japonés Izanagi sacar a su esposa Izanami del inframundo?|No
+3496|¿Quién era el dios romano del fuego?|Vulcano|Apolo|Júpiter|Mercurio
+3497|¿Cuál de estos personajes mesopotámicos NO era un dios?|Enkidu|Enki|Enlil|Enkimdu
+3498|El hipogrifo tiene la parte delantera de águila y la trasera de...|Caballo|Dragón|Tigre|León
+3499|Según la mitología nórdica, ¿es Loki madre?|Sí
+3500|¿Cuál de estos NO es una de las Moiras griegas?|Narciso|Cloto|Átropos|Láquesis
+3501|Según el mito egipcio de Osiris, ¿quién lo asesinó?|Set|Horus|Ra|Anhur
+3502|¿Quién es el dios de la guerra en la mitología polinesia?|'Oro|Hina|Kohara|Maui
+3503|El minotauro es mitad humano y mitad...|Toro|Vaca|Caballo|Águila
+3504|Odín tiene dos cuervos, Hugin y Munin. ¿Qué significan sus nombres?|Pensamiento y memoria|Poder y paz|Guerra y saber|Sueño y vigilia
+3505|¿De qué personaje de la mitología nórdica era hija Hel?|De Loki|De Thor|De Odín|De Balder
+3506|¿Cuál de estos NO es un dios de la mitología nórdica?|Jens|Loki|Tyr|Snotra
+3507|¿De qué isla era protector Talos, el gigante mítico de bronce?|Creta|Cerdeña|Sicilia|Chipre
+3508|¿Cuál fue el castigo de Sísifo por su astucia?|Empujar una roca cuesta arriba por toda la eternidad|Estar atado a una roca mientras los pájaros le picoteaban|Estar en un lago sin poder beber|Sostener el cielo
+3509|¿A quién venció Hipómenes en una carrera?|A Atalanta|A Peleo|A Teseo|A Jasón
+3510|¿Qué dios menor era protector e inventor de artes como hacer queso o criar abejas?|Aristeo|Autónoe|Carme|Cefiso
+3511|¿Era Jano el dios romano de las puertas y los pasos?|Sí
+3512|¿Es Skadi la diosa nórdica del esquí, las montañas, el invierno y la caza con arco?|Sí
+3513|Según el folclore algonquino, ¿cómo se convierte uno en wendigo?|Practicando el canibalismo|Mutilando cadáveres de animales|Con un ritual|Al morir de frío
+3514|¿Qué es Yggdrasil en la mitología nórdica?|Un árbol|Una montaña|Un templo|Un castillo
+3515|En la mitología nórdica, ¿cómo se llama la serpiente que roe las raíces del fresno Yggdrasil?|Nidhogg|Bragi|Odín|Ymir
+3516|¿Cuál es el dios egipcio de la fertilidad y de la lechuga?|Min|Menu|Mut|Meret
+3517|¿Era Rannamaari un demonio marino de las Maldivas al que se ofrecía cada mes una doncella?|Sí
+3518|En la mitología griega, ¿quién era la hija del rey Minos?|Ariadna|Atenea|Ariel|Alana
+3519|¿De qué mitología es la criatura Nidhogg?|Nórdica|Egipcia|Griega|Hindú
+3520|¿Qué dios nórdico tiene un caballo llamado Sleipnir?|Odín|Thor|Frigg|Balder

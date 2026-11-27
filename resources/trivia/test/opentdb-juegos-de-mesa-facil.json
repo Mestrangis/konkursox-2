@@ -1,0 +1,281 @@
+{
+  "formato": "konkursox-banco",
+  "version": 1,
+  "nombre": "Juegos de mesa · Fácil",
+  "grupo": "Open Trivia DB",
+  "licencia": "Preguntas de Open Trivia Database (opentdb.com), licencia CC BY-SA 4.0, traducidas y adaptadas al español. Este banco se distribuye con la misma licencia (CC BY-SA 4.0).",
+  "preguntas": [
+    {
+      "id": "o2802",
+      "tipo": "test",
+      "enunciado": "¿En qué ciudad francesa se inspira el juego Carcassonne?",
+      "opciones": [
+        "París",
+        "Carcasona",
+        "Marsella",
+        "Clermont-Ferrand"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Juegos de mesa"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2803",
+      "tipo": "test",
+      "enunciado": "¿Cuál es el nivel máximo de una sola clase en Dungeons & Dragons (5.ª edición)?",
+      "opciones": [
+        "15",
+        "25",
+        "30",
+        "20"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Juegos de mesa"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2804",
+      "tipo": "test",
+      "enunciado": "En el Monopoly, ¿de qué color son las dos calles más baratas?",
+      "opciones": [
+        "Amarillo",
+        "Azul",
+        "Verde",
+        "Marrón"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Juegos de mesa"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2806",
+      "tipo": "test",
+      "enunciado": "¿Cuántas casillas tiene el tablero estándar del Monopoly?",
+      "opciones": [
+        "55",
+        "28",
+        "36",
+        "40"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Juegos de mesa"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2807",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estas NO es una clase de Dungeons & Dragons 5.ª edición?",
+      "opciones": [
+        "Guerrero",
+        "Bardo",
+        "Paladín",
+        "Ingeniero"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Juegos de mesa"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2809",
+      "tipo": "test",
+      "enunciado": "¿Cuántas piezas hay en el tablero al empezar una partida de ajedrez?",
+      "opciones": [
+        "36",
+        "20",
+        "16",
+        "32"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Juegos de mesa"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2810",
+      "tipo": "test",
+      "enunciado": "En ajedrez, ¿qué caracteriza al gambito de rey?",
+      "opciones": [
+        "Sacrificar un peón",
+        "Enrocar en corto",
+        "Mover el rey en la segunda jugada",
+        "Sacrificar el rey por una dama"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Juegos de mesa"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2812",
+      "tipo": "test",
+      "enunciado": "¿Cuántos puntos suman todas las caras de un dado normal?",
+      "opciones": [
+        "18",
+        "15",
+        "21",
+        "24"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Juegos de mesa"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2813",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama informalmente una regla añadida o cambiada que solo se usa en un grupo o en una casa?",
+      "opciones": [
+        "Regla de cambio",
+        "Regla de la casa",
+        "Regla extra",
+        "Regla personalizada"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Juegos de mesa"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2815",
+      "tipo": "test",
+      "enunciado": "¿Cuántos dados se usan en el Yahtzee?",
+      "opciones": [
+        "Cinco",
+        "Seis",
+        "Ocho",
+        "Cuatro"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Juegos de mesa"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2816",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos juegos NO usa dados normales de seis caras?",
+      "opciones": [
+        "El juego de la vida (Life)",
+        "Serpientes y escaleras",
+        "Monopoly",
+        "Risk"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Juegos de mesa"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2817",
+      "tipo": "test",
+      "enunciado": "¿En qué juego aparece la frase «No pase por la casilla de salida, no cobre 200»?",
+      "opciones": [
+        "Pay Day",
+        "Coppit",
+        "Monopoly",
+        "Cluedo"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Juegos de mesa"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2819",
+      "tipo": "test",
+      "enunciado": "En Dungeons & Dragons 5.ª edición, ¿qué característica se suele sumar a la tirada de iniciativa?",
+      "opciones": [
+        "Destreza",
+        "Velocidad",
+        "Sabiduría",
+        "Fuerza"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Juegos de mesa"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2820",
+      "tipo": "test",
+      "enunciado": "¿Cuándo salió a la venta el Twister?",
+      "opciones": [
+        "Abril de 1966",
+        "Septiembre de 1965",
+        "Febrero de 1966",
+        "Enero de 1969"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Juegos de mesa"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2825",
+      "tipo": "test",
+      "enunciado": "¿De qué ciudad estadounidense toma los nombres de sus calles el Monopoly original?",
+      "opciones": [
+        "Atlantic City (Nueva Jersey)",
+        "Las Vegas",
+        "Duluth",
+        "Charleston"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Juegos de mesa"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2826",
+      "tipo": "test",
+      "enunciado": "En el Monopoly, ¿qué casilla está en diagonal enfrente de la salida?",
+      "opciones": [
+        "Parking gratuito",
+        "Vaya a la cárcel",
+        "La cárcel",
+        "La compañía eléctrica"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Juegos de mesa"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    }
+  ]
+}

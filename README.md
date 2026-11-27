@@ -44,6 +44,16 @@ Tipo test, Sí o no, Escalera, Estimación, ¿Quién lo dijo? y Rosco. Cada pant
 
 Cada tipo de juego tiene sus bancos en su carpeta: `Documentos\KONKURSOX\preguntas\<tipo>\` (`test`, `sino`, `escalera`, `estimacion`, `quien`, `rosco`). El editor del panel permite crear, editar, duplicar, eliminar, marcar sin usar y poner imagen; el del rosco es una cuadrícula de 27 letras con **Importar desde texto** (`A: definición = RESPUESTA`, `Ñ (contiene): ... = ...`). Todo se guarda solo. En la escalera el editor enseña el escalón de cada pregunta, se reordena arrastrando y **Traer de Tipo test** copia preguntas de tus bancos de test; la primera vez se crea una "Escalera de ejemplo" con tus preguntas de test. Un banco eliminado va a `preguntas\_papelera\`.
 
+**Organizar.** Cada pregunta tiene etiquetas y dificultad (fácil, media, difícil). La lista se filtra por banco (o «Todas»), etiqueta, dificultad, estado (sin usar, usadas, sin revisar, falta imagen, con imagen) y texto. Con las casillas, Ctrl+clic o Mayús+clic se eligen varias para moverlas o copiarlas a otro banco, cambiarles la etiqueta o la dificultad, marcarlas revisadas o borrarlas. También se pueden arrastrar a un banco de la izquierda (con Ctrl, se copian). Doble clic en una pregunta para editarla rápido en la lista. Avisa si una pregunta ya existe en otro banco; las importadas salen como «Sin revisar» hasta que pulses **Revisada**.
+
+**Imágenes.** Cada pregunta puede llevar una imagen de pista y otra de respuesta. Se arrastran (un archivo o una imagen de una web) o se pegan con Ctrl+V, y se copian solas a `preguntas\imagenes\`. En el plató salen en un marco a un lado, **siempre después del texto**: la de pista sola (modo Automática) o cuando la pidas (Manual, tecla I); la de respuesta al revelar (U para mostrarla antes). F la pone a pantalla completa. Todo esto también desde el mando. Si una pregunta tiene «imagen sugerida» y no tiene archivo, sale como **Falta imagen**, con un botón **Buscar** que abre Google Imágenes.
+
+**Importar y exportar.** **Importar…** acepta `.json`, `.csv`, lo pegado desde Excel o Google Sheets (columnas: pregunta, correcta, incorrecta1-3, etiqueta, dificultad; con una sola incorrecta es de Sí o no) y texto libre (`+` correcta, `-` incorrectas, `#` etiquetas y dificultad), con vista previa y aviso de repetidas. **Exportar…** saca un banco a `.json` o `.csv`.
+
+**Packs de Open Trivia DB.** El programa trae ya instaladas 4040 preguntas de [Open Trivia Database](https://opentdb.com), traducidas al español de España, en bancos por categoría y dificultad (grupo «Open Trivia DB»). Licencia [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.es); se editan y borran como cualquier otro banco. No hace falta internet ni ninguna API. Las traducciones y el script que genera los bancos están en `tools/opentdb/`.
+
+**Partida mezclada.** En Tipo test, Sí o no y Escalera, **Mezclar…** junta preguntas de varios sitios (por ejemplo, 10 de Videojuegos difíciles + 5 de Deportes medias + las del grupo) en un banco nuevo, barajadas, sin repetir ni usar las ya usadas. En la escalera van de fácil a difícil.
+
 Los bancos de versiones anteriores (mezclados en `preguntas\`) se reparten por tipo al arrancar y los originales se guardan en `preguntas\_antiguos\`. Un rosco con varias definiciones por letra se parte en varios roscos.
 
 ### Audio (siempre a la derecha)
@@ -73,7 +83,8 @@ En **Ajustes → Plató** eliges el tema: Clásico (marino y oro), Noche, Claro 
 | Siempre | Ctrl+Espacio / Ctrl+F | Música: play-pausa / fundido |
 | Siempre | Ctrl+Z | Deshacer el último paso del juego |
 | Pantalla de juego | Espacio | Siguiente paso |
-| Test, Sí o no, Escalera, ¿Quién lo dijo? | A-D, O, R, I | Marcar, ocultar/mostrar opciones, rebote, imagen |
+| Test, Sí o no, Escalera, ¿Quién lo dijo? | A-D, O, R | Marcar, ocultar/mostrar opciones, rebote |
+| Juegos de preguntas y Estimación | I, U, F | Imagen, imagen de la respuesta, pantalla completa |
 | Juegos de preguntas y Estimación | T, Y | Temporizador: mostrar/ocultar, arrancar/pausar |
 | Escalera | 1-5, X | Comodines, plantarse |
 | Siempre | Ctrl+F1 / F2 / F3 / F4 / F5 | Plano: Juego / Cámaras con marcos / Cámaras + datos / Cámaras limpias / Sin cámaras |

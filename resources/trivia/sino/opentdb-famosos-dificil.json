@@ -1,0 +1,24 @@
+{
+  "formato": "konkursox-banco",
+  "version": 1,
+  "nombre": "Famosos · Difícil",
+  "grupo": "Open Trivia DB",
+  "licencia": "Preguntas de Open Trivia Database (opentdb.com), licencia CC BY-SA 4.0, traducidas y adaptadas al español. Este banco se distribuye con la misma licencia (CC BY-SA 4.0).",
+  "preguntas": [
+    {
+      "id": "o4671",
+      "tipo": "sino",
+      "enunciado": "¿Se llama Lady Gaga en realidad Stefani Joanne Angelina Germanotta?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Famosos"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    }
+  ]
+}

@@ -1,0 +1,191 @@
+# Musicales y teatro (Entertainment: Musicals & Theatres)
+1385|¿Significa IMAX «Image Maximum»?|Sí
+1386|¿Quién escribió el premiado musical «In the Heights»?|Lin-Manuel Miranda|Stephen Sondheim|Francis Scott Key|John Philip Sousa
+1387|¿Quién escribió la obra «Ángeles en América»?|Tony Kushner|Tom Stoppard|Matthew Lopez|Anthony Neilson
+1388|En «Julio César» de Shakespeare, ¿cuáles son las últimas palabras de César?|«Et tu, Brute?»|«Alea iacta est»|«Veni, vidi, vici»|«Aegri somnia vana»
+1389|¿Escribió William Shakespeare «Las brujas de Salem» (The Crucible)?|No
+1390|¿Qué obra de Shakespeare inspiró el musical «West Side Story»?|Romeo y Julieta|Hamlet|Macbeth|Otelo
+1391|¿Cuántas obras se suele considerar que escribió Shakespeare?|37|18|54|25
+1392|¿Qué obra de Shakespeare interpretó David Tennant, de «Doctor Who»?|Hamlet|La tempestad|Otelo|La fierecilla domada
+1393|En «Edipo rey», ¿mata Edipo a su padre por celos porque ama a su madre?|No
+1394|¿Cuál es el primer número de preso de Jean Valjean?|24601|9430|1729|32769
+1395|¿Quién escribió el musical «Hamilton»?|Lin-Manuel Miranda|Andrew Lloyd Webber|Nell Benjamin|Tom Kitt
+1396|¿Cuándo se escribió «Macbeth»?|1606|1605|1723|1628
+1397|¿En qué ciudad italiana transcurre el campeonato mundial de ajedrez del primer acto del musical «Chess»?|Merano|Venecia|Milán|Roma
+1398|¿En el libro de poemas de qué autor se basa el musical «Cats»?|T. S. Eliot|Andrew Lloyd Webber|Emily Dickinson|Robert Frost
+1399|¿Cuál de estos musicales ganó el premio Tony al mejor musical?|Rent|El color púrpura|American Idiot|Newsies
+1400|¿Cuál de estos NO es un número de «West Side Story»?|The Back Alley|Maria|Tonight|Mambo
+1401|¿En qué obra de Shakespeare se suicida Ofelia?|Hamlet|Macbeth|Otelo|El rey Lear
+1402|¿Quién interpretó a Lafayette y a Thomas Jefferson en el estreno de «Hamilton» en Broadway?|Daveed Diggs|Lin-Manuel Miranda|Javier Muñoz|Wayne Brady
+1403|En el musical «La guerra de los mundos» de Jeff Wayne, las probabilidades de que venga algo de Marte son...|Una entre un millón|Una entre mil millones|Una entre un billón|Una entre cien
+1404|¿Cuál fue la última ópera de Georges Bizet?|Carmen|Don Rodrigue|Grisélidis|Los pescadores de perlas
+1405|¿En qué país transcurre el musical «Dirty Rotten Scoundrels» (Un par de seductores)?|Francia|Estados Unidos|Alemania|Suecia
+1406|¿De qué obra es la frase «el infierno son los otros»?|A puerta cerrada|El diablo y Dios|Los secuestrados de Altona|Las moscas
+1407|¿Qué musical ha ganado más premios Tony?|Los productores|Hamilton|Chicago|El fantasma de la ópera
+1408|¿En qué obra de Shakespeare dice Marcelo «algo huele a podrido en Dinamarca»?|Hamlet|Macbeth|El rey Lear|Noche de reyes
+1409|¿Quién es el director musical de «Hamilton»?|Alex Lacamoire|Lin-Manuel Miranda|Renée Elise Goldsberry|Leslie Odom Jr.
+1410|¿Qué obra de Shakespeare tiene la acotación «Entra un mensajero con dos cabezas y una mano»?|Tito Andrónico|Otelo|Macbeth|El rey Lear
+1411|¿Quién escribió las letras de «West Side Story» (1957), de Leonard Bernstein?|Stephen Sondheim|El propio Bernstein|Oscar Hammerstein|Richard Rodgers
+1412|¿Qué obra se estrenó tras el suicidio de su autora?|4.48 Psicosis|Hamilton|Mucho ruido y pocas nueces|La fiesta de cumpleaños
+1413|En «¿Quién teme a Virginia Woolf?», ¿se llaman George y Martha por George Washington y su mujer?|Sí
+1415|En «Macbeth», ¿de qué animal son los ojos que echan las brujas al caldero?|De tritón|Humanos|De tiburón|De calamar
+1416|Después de Inglaterra, ¿en qué país actual transcurren más obras de Shakespeare?|Italia|Estados Unidos|Grecia|Francia
+1417|¿Qué actor NO ha interpretado a Billy Flynn en el musical «Chicago»?|Christopher Walken|David Hasselhoff|Jerry Springer|Patrick Swayze
+1418|¿Cuál fue el primer musical de Broadway que estuvo mucho tiempo en cartel?|The Elves|Wicked|Hamilton|The Book of Mormon
+1420|En «Romeo y Julieta», ¿quién recita el prólogo?|El coro|Montesco|El estribillo|Capuleto
+# Televisión (Entertainment: Television)
+1421|En «Dragon Ball Z», ¿cómo se llama el ataque más poderoso de Cell?|Kame Hame Ha solar|Súper Kame Hame Ha|Kame Hame Ha de Cell|Kame Hame Ha androide
+1422|¿Quién fue el primer actor en interpretar al Doctor en «Doctor Who»?|William Hartnell|David Tennant|Peter Capaldi|Tom Baker
+1424|En la serie «Community», ¿de quién era la coletilla «Pop! Pop!»?|Magnitude|Star-Burns|Leonard|Señor Chang
+1425|¿Cuántas temporadas tuvo «Stargate Atlantis»?|5|10|2|7
+1426|¿Cómo se llamaba el primer episodio de «Doctor Who», de 1963?|An Unearthly Child|The Daleks|The Aztecs|The Edge of Destruction
+1427|¿Cómo se llamaba el policía de «Don Gato y su pandilla»?|Matute (Dibble)|Barbrady|Mahoney|Murphy
+1429|En «Breaking Bad», ¿qué cáncer le diagnostican a Walter White?|De pulmón|De próstata|Cerebral|Testicular
+1430|¿En qué país transcurre «Cory en la Casa Blanca»?|Estados Unidos|Canadá|Venezuela|Inglaterra
+1431|¿Cómo se llamaba la bruja adolescente de Melissa Joan Hart que vivía con sus tías Hilda y Zelda?|Sabrina|Hermione|Dorothy|Dalia
+1432|¿En qué pueblo costero británico transcurría «Hotel Fawlty»?|Torquay|Blackpool|Bournemouth|Great Yarmouth
+1433|¿Qué serie trata de un abuelo que arrastra a su nieto a todo tipo de aventuras?|Rick y Morty|Padre de familia|South Park|American Dad
+1434|En «Tengen Toppa Gurren Lagann», ¿cómo se llama el que obliga a todos a vivir bajo tierra?|Lordgenome|Kingloname|Lord Genome|King Loname
+1435|En la primera temporada de «House of Cards», ¿qué cargo tiene Frank Underwood?|Jefe de disciplina de la mayoría en la Cámara|Fiscal general|Presidente|Jefe de gabinete
+1436|¿Cuál de estas series de Disney es un anime?|Stitch!|Cory en la Casa Blanca|Las nuevas locuras del emperador|Hannah Montana
+1437|¿Quién es el protagonista de «Burn Notice»?|Michael Westen|Sam Axe|Fiona Glenanne|Madeline Westen
+1438|En «M*A*S*H», ¿qué apodo tenía el cabo Walter O'Reilly?|Radar|Ojo de Halcón|Labios Ardientes|Trampero
+1439|En el «Star Trek» original, ¿cuál era el segundo nombre del capitán James T. Kirk?|Tiberius|Trevor|Travis|Tyrone
+1440|¿Quién es el protagonista de «Breaking Bad»?|Walter White|Saul Goodman|Jesse Pinkman|Skyler White
+1441|¿Qué personaje de «Stranger Things» tiene telequinesis?|Once|Mike|Lucas|Karen
+1442|¿A qué personaje interpretaba Dustin Diamond en «Salvados por la campana»?|Screech|Zack|El señor Belding|A. C. Slater
+1443|¿En qué estado de EE. UU. nació y se crio el príncipe de Bel-Air?|Pensilvania|Florida|California|Nueva Jersey
+1444|¿Qué premio NO tienen Matt Stone y Trey Parker?|Óscar|Emmy|Tony|Grammy
+1445|En «Battlestar Galactica» (2004), ¿crearon los humanos a los cylones como trabajadores y soldados?|Sí
+1446|¿En qué serie dos personajes intentan venderle a la NBC una comedia «sobre nada»?|Seinfeld|Frasier|Becker|Friends
+1447|¿Cuántas temporadas tuvo «Stargate Universe»?|2|10|5|3
+1448|En «Dos hombres y medio», ¿cómo se llama el hijo de Alan Harper?|Jake|John|Jeremy|James
+1449|¿Quién interpretó al agente Fox Mulder en «Expediente X»?|David Duchovny|Gillian Anderson|Robert Patrick|Mitch Pileggi
+1450|¿Cómo se llama el protagonista de la serie «The Flash»?|Barry Allen|Oliver Queen|Bart Allen|Bruce Wayne
+1452|En «Bob Esponja», ¿qué significaban las siglas M.A.L.O. (E.V.I.L.)?|Every Villain Is Lemons|Every Villain Is Lemonade|Every Villain Is Limes|Each Villain Is Lemonade
+1453|¿Qué actor interpreta a Walter White en «Breaking Bad»?|Bryan Cranston|Andrew Lincoln|Aaron Paul|RJ Mitte
+1454|¿Debe su nombre la familia Simpson a la familia real de Matt Groening?|Sí
+1455|En «Futurama», ¿cuál es el nombre completo de Fry?|Philip J. Fry|Fry J. Philip|Fry Rodríguez|Fry Philip
+1458|En «Todo el mundo odia a Chris», ¿cómo se llama el hermano de Chris?|Drew|Jerome|Greg|Joe
+1461|En «Sobrenatural», ¿cómo se llama el hermano de Sam?|Dean|Dave|Steve|Mike
+1463|¿Qué empresa tiene la exclusiva de «The Grand Tour»?|Amazon|Netflix|BBC|CCTV
+1465|En «The Walking Dead», ¿cómo llaman a los zombis?|Caminantes|Rastreros|Gusanos|Cerdos del infierno
+1466|¿A qué superhéroe interpreta Grant Gustin en la serie de The CW con el mismo nombre?|The Flash|Arrow|Canario Negro|Daredevil
+1467|¿Quién hacía de camarera en el sketch del Spam de los Monty Python?|Terry Jones|Eric Idle|Graham Chapman|John Cleese
+1468|En «Juego de tronos», ¿qué continente está al otro lado del mar Angosto, frente a Poniente?|Essos|Easteros|Westereast|Esuntos
+1469|¿Cuántas temporadas tuvo «Stargate SG-1»?|10|3|7|12
+1471|En «Star Trek: La nueva generación», ¿cómo se llama el gato de Data?|Spot|Mittens|Tom|Kitty
+1472|En «Star Trek: Voyager», ¿en qué episodio se comunica la Voyager en tiempo real con la Flota Estelar?|Pathfinder|Message in a Bottle|Someone to Watch Over Me|Counterpoint
+1473|En «Rick y Morty», episodio «Total Rickall», ¿quién era un parásito?|Pencilvester|Beth Smith|Summer Smith|Mr. Poopybutthole
+1474|¿Expresan los klingon sus emociones en el arte mediante la ópera y la poesía?|Sí
+1475|En «Rick y Morty», ¿quién dispara a Mr. Poopybutthole en «Total Rickall»?|Beth|Rick|Jerry|Morty
+1476|¿Cuál de estos personajes de «BoJack Horseman» es humano?|Todd Chavez|Lennie Turtletaub|Princess Carolyn|Tom Jumbo-Grumbo
+1477|¿De qué planeta es el Doctor de «Doctor Who»?|Gallifrey|Sontar|Skaro|Mondas
+1478|En Star Trek, ¿de qué color es la sangre vulcana?|Verde|Azul|Roja|Morada
+1479|¿A qué personaje interpreta el actor británico David Morrissey en «The Walking Dead»?|El Gobernador|Negan|Rick Grimes|Daryl Dixon
+1480|¿Qué especie de Star Trek avanza asimilando a otras?|Los borg|Los vulcanos|Los betazoides|Los klingon
+1481|En «Breaking Bad», ¿cómo se llama en la calle la droga de Walter y Jesse?|Blue Sky|Baby Blue|Rock Candy|Pure Glass
+1482|¿Cuándo se estrenó «Rick y Morty» en Adult Swim?|2013|2014|2016|2015
+1483|¿En qué serie salían unas señoras mayores llamadas Blanche, Rose, Dorothy y Sophia?|Las chicas de oro|Cheers|Aquellos maravillosos años|Enredos de familia
+1484|¿Qué serie es famosa por las canciones «You Are a Pirate», «Cooking by the Book» y «We Are Number One»?|LazyTown|La princesa Sofía|Patoaventuras|Tom y Jerry
+1485|En «Patoaventuras», ¿cómo se llama la ciudad donde viven los protagonistas?|Patolandia (Duckburg)|Duckwing|Tailspin|Wingford
+1486|¿Cuál es el nombre real del famoso humorista sevillano El Risitas?|Juan Joya Borja|Gabriel García Márquez|Jesús Quintero|Ernesto Guevara
+1487|En «Juego de tronos», ¿cuál es el nombre real de Meñique?|Petyr Baelish|Podrick Payne|Lancel Lannister|Torrhen Karstark
+1488|En «Mad Men», ¿cuál era el nombre de nacimiento de Don Draper?|Richard «Dick» Whitman|Donald Draper|John Ashbury|Michael Wilhelm
+1489|¿En qué saga de libros se basa la serie «Juego de tronos»?|Canción de hielo y fuego|La rueda del tiempo|Harry Potter|El diario de Noa
+1490|En «Doctor Who», ¿qué significan las siglas TARDIS?|Time And Relative Dimension In Space|Time And Resting Dimensions In Space|Time And Relative Dimensions In Style|Toilet Aid Rope Dog Is Soup
+1491|En «Star Trek», ¿son los klingon alienígenas?|Sí
+1492|En «Doctor Who», ¿consiguió el Doctor su TARDIS robándola?|Sí
+1493|En «Stranger Things», ¿cuál es el desayuno favorito de Once?|Gofres Eggo|Tostadas|Cereales Captain Crunch|Huevos con beicon
+1494|En «LazyTown», ¿quién es el actor que interpreta a Robbie Rotten?|Stefán Karl Stefánsson|Adam Sandler|Magnús Scheving|Stephen Carl
+1499|¿Fue Bob Ross piloto de las Fuerzas Aéreas de EE. UU.?|No
+1500|¿Cómo se titula el instrumental de The Allman Brothers Band que era la sintonía de «Top Gear»?|Jessica|Angela|Erica|Sandra
+1501|¿Escribió el autor de la novela «Leaving Las Vegas» un episodio de «Rugrats»?|Sí
+1503|En «Los Simpson», ¿cuál es el nombre real del dependiente de la tienda de cómics?|Jeff Albertson|Comic Book Guy|Edward Stone|Jack Richardson
+1504|¿Hay un episodio de «Los Simpson» dedicado al trapo de la barra de Moe?|Sí
+1507|¿Dónde transcurre la serie «Parks and Recreation»?|Pawnee (Indiana)|Eagleton (Indiana)|Pasadena (California)|Londres
+1508|¿Quién protagonizaba la serie «24»?|Kiefer Sutherland|Kevin Bacon|Hugh Laurie|Rob Lowe
+1509|¿Quién interpreta a Dennis Reynolds en «Colgados en Filadelfia»?|Glenn Howerton|Rob McElhenney|Charlie Day|Danny DeVito
+1510|¿Cuál es el apellido de Daryl en «The Walking Dead»?|Dixon|Grimes|Dickinson|Dicketson
+1511|En «Star Trek», ¿cuál es la primera Regla de Adquisición de los ferengi?|«Cuando tienes su dinero, no lo devuelvas nunca»|«No antepongas nunca la amistad al beneficio»|«La codicia es eterna»|«No dejes que la familia se interponga en una oportunidad»
+1512|¿De qué serie es el personaje James Doakes?|Dexter|Daredevil|Boardwalk Empire|The Walking Dead
+1513|En «Futurama», ¿es Philip J. Fry su propio abuelo?|Sí
+1515|¿Tuvieron los klingon un periodo democrático al que llamaron «los Tiempos Oscuros»?|Sí
+1516|¿En qué año se estrenó «The Big Bang Theory» en la CBS?|2007|2008|2006|2009
+1519|¿Se emitió «Doctor Who» por primera vez en 1963?|Sí
+1520|¿En qué universidad trabajan Wolowitz, Cooper, Hofstadter y Koothrappali en «The Big Bang Theory»?|Caltech|UCLA|MIT|Berkeley
+1522|¿Cómo se llamaba Nickelodeon en sus orígenes?|Pinwheel|MTVKids|KidsTV|Splat!
+1523|¿Qué canción de Massive Attack es la sintonía de «House»?|Teardrop|Protection|Angel|Black Milk
+1524|¿Cuándo se emitió por primera vez «Bob Esponja»?|1 de mayo de 1999|20 de julio de 2000|6 de febrero de 2003|27 de junio de 1997
+1525|En «Enano Rojo», ¿es el nombre completo de Kryten «Kryten 2X4B-523P»?|Sí
+1526|¿Cómo se llama el caballo de carreras al que se encariña Tony Soprano?|Pie-O-My|Man o' War|Bada Bing|Honest Earnings
+1527|¿Cómo se llamaba el mono de Ross en «Friends»?|Marcel|Jojo|George|Champ
+1528|¿Era el Ranger Blanco el líder de los Power Rangers?|Sí
+1529|¿Qué actor NO era protagonista de «Freaks and Geeks»?|Jonah Hill|Jason Segel|Seth Rogen|James Franco
+1530|El Toyota Corolla AE86 de 1985 es el coche del protagonista de ¿qué anime?|Initial D|Wangan Midnight|Ghost MF|eX-Driver
+1531|¿Qué actor interpreta a Hoban «Wash» Washburne en «Firefly»?|Alan Tudyk|Adam Baldwin|Nathan Fillion|Sean Maher
+1532|En «Person of Interest», ¿quién interpreta a Harold Finch?|Michael Emerson|Jim Caviezel|Taraji P. Henson|Kevin Chapman
+1533|¿A qué personaje NO pone voz la actriz Tara Strong?|Burbuja (2016)|Twilight Sparkle|Timmy Turner|Harley Quinn
+1534|En «Stranger Things», ¿qué canción se cantaba Will cuando estaba desaparecido?|Should I Stay or Should I Go|Love Will Tear Us Apart|This Charming Man|Africa
+1535|En «Star Trek», ¿en qué consiste el ritual klingon ante la muerte?|Mirar al cielo y gritar con fuerza|Besar la frente antes del entierro|Lanzar el cuerpo al espacio en un torpedo|Repartir las ganancias del difunto
+1537|¿Cómo se llama la serie derivada de «The Flash» y «Arrow» con un equipo de personajes de ambas?|Legends of Tomorrow|Heroes of Tomorrow|The Justice Society of America|The Justice Society
+1538|¿Respetan los klingon a sus compañeros discapacitados, viejos, heridos o indefensos?|No
+1539|¿A qué personaje puso voz Alan Reed?|Pedro Picapiedra|Bugs Bunny|Fangface|G. I. Joe
+1541|En «The Walking Dead», ¿aparecen Rick, Carl, Daryl, Morgan, Carol y Maggie desde la primera temporada?|No
+1542|¿En qué año se estrenó «El equipo A» en EE. UU. y el Reino Unido?|1983|1981|1985|1987
+1543|¿A qué villano de Batman interpretaba César Romero en la serie de los 60?|El Joker|El Pingüino|Enigma|Mr. Freeze
+1544|En «Community», ¿cuál era el nombre real de Star-Burns?|Alex|Todd|Neal|Grimus
+1546|¿En qué año se fundó Netflix?|1997|1999|2004|2001
+1547|En «Doctor Who», ¿cuántas veces puede regenerarse normalmente un Señor del Tiempo?|12|11|13|15
+1548|¿De qué héroe de dibujos es archienemigo el barón Silas Greenback?|Danger Mouse|Bananaman|SuperTed|Captain Star
+1549|¿Qué guionista británico escribió para «Doctor Who» y «Sherlock»?|Steven Moffat|Phil Ford|Russell T Davies|Toby Whithouse
+1550|¿Qué es grosero y deshonroso para un klingon?|Quitarle su d'k tahg|Insultarle y reírse de él en la mesa|Coger comida de su plato|Darle un puñetazo y quitarle el puesto
+1551|En «Breaking Bad», ¿a quién se refieren las iniciales W. W.?|Walter White|William Wolf|Willy Wonka|Wally Walrus
+1553|En «Star Trek: La nueva generación», ¿es Data el único androide que existe?|No
+1554|¿Se canceló «La isla de Gilligan» por falta de audiencia?|No
+1555|En «Padre de familia», ¿cuál es el nombre completo de Meg?|Megatron Griffin|Who-Cares Griffin|Neil Griffin|Megan Griffin
+1556|En «Star Trek», ¿se llama habitualmente a los klingon «elfos negros»?|No
+1557|¿Admiran los klingon a Shakespeare, hasta el punto de sospechar que tenía sangre klingon?|Sí
+1559|En el «Doctor Who» clásico, ¿cuánto medía la bufanda del cuarto Doctor, Tom Baker?|7 metros|10 metros|2 metros|5 metros
+1560|¿Quién fue el actor de voz original de Shaggy en Scooby-Doo?|Casey Kasem|Dante Basco|Billy West|Frank Welker
+1561|¿Qué compositor trabajó en la serie «Battlestar Galactica» (2003)?|Bear McCreary|Ramin Djawadi|Jeremy Soule|Harry Gregson-Williams
+1562|En el episodio «Bandersnatch» de «Black Mirror», ¿qué significa PAC-MAN?|Program And Control Man|Postgraduate Applications Centre Man|Political Action Committee Man|Physics & Astronomy Classification Man
+1563|En «Naruto Shippuden», ¿cuál de estos elementos es un «Kekkei Tōta»?|Estilo Polvo (partículas)|Cualquier dōjutsu|Estilo Sombra|Estilo Hielo
+1565|¿Por cuánto vende Bart su alma en el episodio «Bart vende su alma»?|5 dólares|Una copia de Bonestorm 2|100 dólares|Un caramelo gigante
+1566|¿Quién compuso la sintonía de «Los Simpson»?|Danny Elfman|John Williams|Hans Zimmer|Ennio Morricone
+1567|En «Battlestar Galactica» (2004), ¿cómo se llama la presidenta de las Doce Colonias?|Laura Roslin|William Adama|Tricia Helfer|Harry Stills
+1568|En «Juego de tronos», ¿cómo se llama la espada de Jon Nieve?|Garra|Guardajuramentos|Lamento de Viuda|Aguja
+1569|¿Cómo se llama el científico loco dueño de Planet Express en «Futurama»?|Hubert J. Farnsworth|Philip J. Fry|Rick Sánchez|Ogden Wernstrom
+1571|¿En qué año lanzó oficialmente la BBC su canal BBC One?|1936|1948|1932|1955
+1572|En «Bob Esponja», ¿cuál es el nombre completo de Don Cangrejo?|Eugene H. Krabs|Eugene G. Krabs|Eugene J. Krabs|Eugene D. Krabs
+1574|¿Cómo se llaman los antagonistas de «Battlestar Galactica»?|Los cylones|El Colectivo|La Federación|Los rebeldes
+1575|En «The Big Bang Theory», ¿qué nombre usa Howard Wolowitz en World of Warcraft?|Wolowizard|Sheldor|Rajesh|Priya
+1576|¿De qué raza es Scooby-Doo?|Gran danés|Pitbull|Bóxer|Dóberman
+1577|En «The Office», ¿con quién acaba Michael Scott?|Holly Flax|Angela Martin|Jan Levinson|Pam Beesly
+1578|¿Qué programa de televisión hizo mirar a todo el público debajo de su asiento?|El de Oprah|El de Jimmy Fallon|Saturday Night Live|El de Larry Rubert
+1579|¿En qué episodio de «Mr. Bean» intenta que nadie lo vea desnudo?|Mr. Bean en la habitación 426|Mr. Bean va a la ciudad|Los problemas de Mr. Bean|Mr. Bean vuelve al colegio
+1580|¿Cuál de estos autobots de las películas de Michael Bay NO estaba en los dibujos de los 80?|Mudflap|Skids|Sideswipe|Ratchet
+1581|En «Breaking Bad», ¿qué protagonista iba a morir en la primera temporada y se salvó porque al creador le gustaba el actor?|Jesse Pinkman|Saul Goodman|Gus Fring|Hank Schrader
+1582|¿En qué año se emitió «ReBoot», la primera serie de animación por ordenador de media hora?|1994|1993|1998|1999
+1583|¿En qué serie aparece la película ficticia «Rochelle, Rochelle»?|Seinfeld|Frasier|Cheers|Friends
+1584|En «Doctor Who», ¿quién interpreta al décimo Doctor?|David Tennant|William Hartnell|Peter Capaldi|Peter Davison
+1586|En 2008, ¿qué accidente cree Gordon Ramsay que casi le cuesta la vida mientras rodaba en Islandia?|Resbaló por un acantilado y casi se ahoga en agua helada|Un aterrizaje forzoso en Keflavík|Un accidente de coche en una tormenta de nieve|Le sirvieron pollo poco hecho en el hotel
+1587|¿Cómo se conoce el escándalo de trampas de «¿Quién quiere ser millonario?» en el Reino Unido?|El mayor que tosía (Coughing Major)|Major Fraud|Ingram Cheater|Millionaire Crime
+1590|¿Cuál es el nombre de pila del Dr. Doofenshmirtz?|Heinz|Hans|Hank|Heidi
+1591|En «Doctor Who», ¿qué modelo de cápsula del tiempo robó el Doctor?|TT Tipo 40, Mark 3 (TARDIS)|TT Tipo 1, Mark 3|TT Tipo 40, Mark 5|TT Tipo 1, Mark 5
+1593|¿Cuál era el indicativo del comandante William Adama en «Battlestar Galactica» (2004)?|Husker|Starbuck|Apollo|Crashdown
+1595|¿Cómo se llama el más allá de los klingon?|Sto-vo-kor|Valhalla|Karon'gahk|Nueva Jersey
+1596|¿Cómo se llama el pirata que canta la entrada de «Bob Esponja»?|Painty|Patchy|Lloyd|Larry
+1597|En «Star Trek», ¿qué especie disfruta de un vaso de baghol caliente?|Los klingon|Los vulcanos|Los humanos|Los botha
+1599|En «Star Trek», ¿quién fundó el Imperio klingon y su filosofía?|Kahless el Inolvidable|Lady Lukara|Molor el Implacable|Kor, maestro dahar
+1600|¿Cuándo se emitió el primer episodio de «My Little Pony: La magia de la amistad»?|10 de octubre de 2010|6 de noviembre de 2010|14 de abril de 1984|18 de mayo de 2015
+1601|En «Star Trek», ¿de qué está hecho el gagh, el manjar klingon?|De gusanos serpiente|De lombrices|De espaguetis|De gusanos klingon
+1602|En «Star Trek», ¿qué salsa suelen poner los klingon al pulmón de bregit?|Salsa grapok|Pudin de Gazorpazorp|Salsa de chile dulce|Salsa grapork
+1603|¿Cuál de estas voces NO podía elegirse para la casa inteligente de «La casa-árbol del terror» (House of Whacks)?|George Clooney|Matthew Perry|Dennis Miller|Pierce Brosnan
+1604|¿Cuál de estas NO es comida klingon?|Hors d'oeuvre|Racht|Gagh|Vino de sangre
+1605|¿Qué actor interpretó al noveno Doctor en «Doctor Who»?|Christopher Eccleston|David Tennant|Matt Smith|Tom Baker
+1606|¿Es Qo'noS el planeta natal de los klingon?|Sí
+1607|¿Quién compuso la sintonía de «Doctor Who»?|Ron Grainer|Murray Gold|Delia Derbyshire|Peter Howell
+1609|¿Quién era el bebé sol de los Teletubbies originales?|Jessica Smith|Pui Fan Lee|Sue Monroe|Lisa Brockwell
+1611|En «Star Trek», ¿cómo se llama el padre de Spock?|Sarek|Tuvok|T'Pal|Surak
+1612|¿Qué actor de «The Young Ones» interpretó a Lord Flashheart en un episodio de «La víbora negra II»?|Rik Mayall|Adrian Edmondson|Nigel Planer|Christopher Ryan

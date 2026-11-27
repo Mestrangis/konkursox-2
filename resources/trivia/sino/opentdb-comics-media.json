@@ -1,0 +1,24 @@
+{
+  "formato": "konkursox-banco",
+  "version": 1,
+  "nombre": "Cómics · Media",
+  "grupo": "Open Trivia DB",
+  "licencia": "Preguntas de Open Trivia Database (opentdb.com), licencia CC BY-SA 4.0, traducidas y adaptadas al español. Este banco se distribuye con la misma licencia (CC BY-SA 4.0).",
+  "preguntas": [
+    {
+      "id": "o4922",
+      "tipo": "sino",
+      "enunciado": "¿Se pensaron Tormenta y Rondador Nocturno de los X-Men en principio para la Legión de Superhéroes de DC?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cómics"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    }
+  ]
+}

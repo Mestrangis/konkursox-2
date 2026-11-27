@@ -1,0 +1,145 @@
+{
+  "formato": "konkursox-banco",
+  "version": 1,
+  "nombre": "Musicales y teatro · Fácil",
+  "grupo": "Open Trivia DB",
+  "licencia": "Preguntas de Open Trivia Database (opentdb.com), licencia CC BY-SA 4.0, traducidas y adaptadas al español. Este banco se distribuye con la misma licencia (CC BY-SA 4.0).",
+  "preguntas": [
+    {
+      "id": "o1386",
+      "tipo": "test",
+      "enunciado": "¿Quién escribió el premiado musical «In the Heights»?",
+      "opciones": [
+        "John Philip Sousa",
+        "Stephen Sondheim",
+        "Lin-Manuel Miranda",
+        "Francis Scott Key"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Musicales y teatro"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1387",
+      "tipo": "test",
+      "enunciado": "¿Quién escribió la obra «Ángeles en América»?",
+      "opciones": [
+        "Tony Kushner",
+        "Tom Stoppard",
+        "Anthony Neilson",
+        "Matthew Lopez"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Musicales y teatro"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1388",
+      "tipo": "test",
+      "enunciado": "En «Julio César» de Shakespeare, ¿cuáles son las últimas palabras de César?",
+      "opciones": [
+        "«Et tu, Brute?»",
+        "«Alea iacta est»",
+        "«Aegri somnia vana»",
+        "«Veni, vidi, vici»"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Musicales y teatro"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1390",
+      "tipo": "test",
+      "enunciado": "¿Qué obra de Shakespeare inspiró el musical «West Side Story»?",
+      "opciones": [
+        "Otelo",
+        "Romeo y Julieta",
+        "Hamlet",
+        "Macbeth"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Musicales y teatro"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1391",
+      "tipo": "test",
+      "enunciado": "¿Cuántas obras se suele considerar que escribió Shakespeare?",
+      "opciones": [
+        "25",
+        "18",
+        "37",
+        "54"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Musicales y teatro"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1392",
+      "tipo": "test",
+      "enunciado": "¿Qué obra de Shakespeare interpretó David Tennant, de «Doctor Who»?",
+      "opciones": [
+        "Otelo",
+        "La tempestad",
+        "Hamlet",
+        "La fierecilla domada"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Musicales y teatro"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1394",
+      "tipo": "test",
+      "enunciado": "¿Cuál es el primer número de preso de Jean Valjean?",
+      "opciones": [
+        "9430",
+        "24601",
+        "1729",
+        "32769"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Musicales y teatro"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1395",
+      "tipo": "test",
+      "enunciado": "¿Quién escribió el musical «Hamilton»?",
+      "opciones": [
+        "Nell Benjamin",
+        "Lin-Manuel Miranda",
+        "Andrew Lloyd Webber",
+        "Tom Kitt"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Musicales y teatro"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    }
+  ]
+}

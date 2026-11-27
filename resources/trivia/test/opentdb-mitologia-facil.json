@@ -1,0 +1,298 @@
+{
+  "formato": "konkursox-banco",
+  "version": 1,
+  "nombre": "Mitología · Fácil",
+  "grupo": "Open Trivia DB",
+  "licencia": "Preguntas de Open Trivia Database (opentdb.com), licencia CC BY-SA 4.0, traducidas y adaptadas al español. Este banco se distribuye con la misma licencia (CC BY-SA 4.0).",
+  "preguntas": [
+    {
+      "id": "o3451",
+      "tipo": "test",
+      "enunciado": "¿Qué diosa griega da nombre al planeta enano que provocó la discordia sobre si Plutón era planeta?",
+      "opciones": [
+        "Ceres",
+        "Caronte",
+        "Eris",
+        "Disnomia"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Mitología"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3452",
+      "tipo": "test",
+      "enunciado": "¿De qué era dios Poseidón?",
+      "opciones": [
+        "Del sol",
+        "De la guerra",
+        "Del mar",
+        "Del fuego"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Mitología"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3453",
+      "tipo": "test",
+      "enunciado": "¿De qué mitología es el dios Apolo?",
+      "opciones": [
+        "Romana y española",
+        "Griega y romana",
+        "Griega y china",
+        "Griega, romana y nórdica"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Mitología"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3454",
+      "tipo": "test",
+      "enunciado": "¿Qué criatura mitológica es mitad hombre y mitad caballo?",
+      "opciones": [
+        "El minotauro",
+        "El centauro",
+        "Pegaso",
+        "La gorgona"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Mitología"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3455",
+      "tipo": "test",
+      "enunciado": "La marca Nike toma su nombre de la diosa griega ¿de qué?",
+      "opciones": [
+        "Del honor",
+        "De la fuerza",
+        "Del valor",
+        "De la victoria"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Mitología"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3456",
+      "tipo": "test",
+      "enunciado": "¿Qué criaturas mitológicas tienen cara de mujer y cuerpo de buitre?",
+      "opciones": [
+        "Lilith",
+        "Las ninfas",
+        "Las sirenas",
+        "Las arpías"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Mitología"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3457",
+      "tipo": "test",
+      "enunciado": "¿Cómo se conocía al dios romano de la guerra?",
+      "opciones": [
+        "Júpiter",
+        "Juno",
+        "Ares",
+        "Marte"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Mitología"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3459",
+      "tipo": "test",
+      "enunciado": "¿Cuántas cabezas tiene Cerbero?",
+      "opciones": [
+        "2",
+        "5",
+        "1",
+        "3"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Mitología"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3461",
+      "tipo": "test",
+      "enunciado": "¿Qué personaje griego bajó al inframundo para devolver a la vida a su esposa Eurídice?",
+      "opciones": [
+        "Dédalo",
+        "Perseo",
+        "Hércules",
+        "Orfeo"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Mitología"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3462",
+      "tipo": "test",
+      "enunciado": "En la mitología griega, ¿quién es el dios del vino?",
+      "opciones": [
+        "Deméter",
+        "Dioniso",
+        "Apolo",
+        "Hefesto"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Mitología"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3463",
+      "tipo": "test",
+      "enunciado": "¿Qué punto débil de Aquiles aprovechó el príncipe troyano Paris?",
+      "opciones": [
+        "La pantorrilla",
+        "La espalda",
+        "El talón",
+        "El cuello"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Mitología"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3464",
+      "tipo": "test",
+      "enunciado": "¿Qué dios griego mantuvo su nombre en Roma?",
+      "opciones": [
+        "Atenea",
+        "Zeus",
+        "Apolo",
+        "Deméter"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Mitología"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3465",
+      "tipo": "test",
+      "enunciado": "En la mitología griega, ¿quién dirigió a los argonautas en busca del vellocino de oro?",
+      "opciones": [
+        "Jasón",
+        "Odiseo",
+        "Dédalo",
+        "Cástor"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Mitología"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3468",
+      "tipo": "test",
+      "enunciado": "¿Qué significa el jeroglífico egipcio anj?",
+      "opciones": [
+        "Veneno",
+        "Vida",
+        "Amor",
+        "Odio"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Mitología"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3469",
+      "tipo": "test",
+      "enunciado": "¿Qué dios grecorromano lo era de la música, la verdad, la profecía, la curación, el sol, la peste y la poesía?",
+      "opciones": [
+        "Afrodita",
+        "Atenea",
+        "Apolo",
+        "Artemisa"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Mitología"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3471",
+      "tipo": "test",
+      "enunciado": "¿Quién era el rey de los dioses en la mitología griega?",
+      "opciones": [
+        "Zeus",
+        "Apolo",
+        "Poseidón",
+        "Hermes"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Mitología"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3473",
+      "tipo": "test",
+      "enunciado": "En la mayoría de las tradiciones, ¿quién era la esposa de Zeus?",
+      "opciones": [
+        "Hestia",
+        "Hera",
+        "Afrodita",
+        "Atenea"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Mitología"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    }
+  ]
+}

@@ -1,0 +1,213 @@
+{
+  "formato": "konkursox-banco",
+  "version": 1,
+  "nombre": "Mitología · Difícil",
+  "grupo": "Open Trivia DB",
+  "licencia": "Preguntas de Open Trivia Database (opentdb.com), licencia CC BY-SA 4.0, traducidas y adaptadas al español. Este banco se distribuye con la misma licencia (CC BY-SA 4.0).",
+  "preguntas": [
+    {
+      "id": "o3506",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos NO es un dios de la mitología nórdica?",
+      "opciones": [
+        "Loki",
+        "Tyr",
+        "Snotra",
+        "Jens"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Mitología"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3507",
+      "tipo": "test",
+      "enunciado": "¿De qué isla era protector Talos, el gigante mítico de bronce?",
+      "opciones": [
+        "Cerdeña",
+        "Sicilia",
+        "Chipre",
+        "Creta"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Mitología"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3508",
+      "tipo": "test",
+      "enunciado": "¿Cuál fue el castigo de Sísifo por su astucia?",
+      "opciones": [
+        "Estar atado a una roca mientras los pájaros le picoteaban",
+        "Sostener el cielo",
+        "Estar en un lago sin poder beber",
+        "Empujar una roca cuesta arriba por toda la eternidad"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Mitología"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3509",
+      "tipo": "test",
+      "enunciado": "¿A quién venció Hipómenes en una carrera?",
+      "opciones": [
+        "A Jasón",
+        "A Peleo",
+        "A Teseo",
+        "A Atalanta"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Mitología"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3510",
+      "tipo": "test",
+      "enunciado": "¿Qué dios menor era protector e inventor de artes como hacer queso o criar abejas?",
+      "opciones": [
+        "Cefiso",
+        "Carme",
+        "Autónoe",
+        "Aristeo"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Mitología"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3513",
+      "tipo": "test",
+      "enunciado": "Según el folclore algonquino, ¿cómo se convierte uno en wendigo?",
+      "opciones": [
+        "Al morir de frío",
+        "Con un ritual",
+        "Practicando el canibalismo",
+        "Mutilando cadáveres de animales"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Mitología"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3514",
+      "tipo": "test",
+      "enunciado": "¿Qué es Yggdrasil en la mitología nórdica?",
+      "opciones": [
+        "Un árbol",
+        "Un castillo",
+        "Un templo",
+        "Una montaña"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Mitología"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3515",
+      "tipo": "test",
+      "enunciado": "En la mitología nórdica, ¿cómo se llama la serpiente que roe las raíces del fresno Yggdrasil?",
+      "opciones": [
+        "Nidhogg",
+        "Ymir",
+        "Odín",
+        "Bragi"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Mitología"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3516",
+      "tipo": "test",
+      "enunciado": "¿Cuál es el dios egipcio de la fertilidad y de la lechuga?",
+      "opciones": [
+        "Mut",
+        "Min",
+        "Meret",
+        "Menu"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Mitología"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3518",
+      "tipo": "test",
+      "enunciado": "En la mitología griega, ¿quién era la hija del rey Minos?",
+      "opciones": [
+        "Atenea",
+        "Alana",
+        "Ariadna",
+        "Ariel"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Mitología"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3519",
+      "tipo": "test",
+      "enunciado": "¿De qué mitología es la criatura Nidhogg?",
+      "opciones": [
+        "Hindú",
+        "Egipcia",
+        "Nórdica",
+        "Griega"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Mitología"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3520",
+      "tipo": "test",
+      "enunciado": "¿Qué dios nórdico tiene un caballo llamado Sleipnir?",
+      "opciones": [
+        "Odín",
+        "Thor",
+        "Balder",
+        "Frigg"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Mitología"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    }
+  ]
+}

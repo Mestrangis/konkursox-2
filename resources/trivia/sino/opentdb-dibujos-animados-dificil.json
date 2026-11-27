@@ -1,0 +1,24 @@
+{
+  "formato": "konkursox-banco",
+  "version": 1,
+  "nombre": "Dibujos animados · Difícil",
+  "grupo": "Open Trivia DB",
+  "licencia": "Preguntas de Open Trivia Database (opentdb.com), licencia CC BY-SA 4.0, traducidas y adaptadas al español. Este banco se distribuye con la misma licencia (CC BY-SA 4.0).",
+  "preguntas": [
+    {
+      "id": "o5277",
+      "tipo": "sino",
+      "enunciado": "¿Se estrenó el primer episodio de «Padre de familia» el 1 de enero de 2002?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Dibujos animados"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    }
+  ]
+}

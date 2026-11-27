@@ -1,0 +1,102 @@
+# Cultura general (General Knowledge) · idx|pregunta|correcta|incorrecta1|incorrecta2|incorrecta3  ·  V/F: idx|pregunta|Sí/No
+0|¿Qué cadena de comida rápida tiene un payaso como mascota?|McDonald's|Burger King|KFC|Telepizza
+2|¿Cuántas cartas tiene una baraja francesa estándar (la del póker)?|52|32|40|64
+3|¿De qué aerolínea era el avión que se estrelló frente a la costa de Nueva Escocia (Canadá) en 1998?|Swissair|Air France|British Airways|TWA
+4|¿Cuál es la moneda de la India y de Pakistán, entre otros países asiáticos?|Rupia|Riyal|Peso|Dinar
+5|¿Cuál de estos juegos de cartas gira en torno a números y colores?|UNO|Munchkin|Twister|Dixit
+6|¿Qué juego musical desarrolló Harmonix?|Rock Band|Beatmania|Guitar Hero Live|Dance Dance Revolution
+7|¿Cómo llaman los marineros al lado derecho de un barco?|Estribor|Babor|Popa|Proa
+8|¿Qué empresa desarrolló a la vocaloid Hatsune Miku?|Crypton Future Media|Sega|Sony|Yamaha
+10|¿Cómo se dice «sombrero» en francés?|Chapeau|Bonnet|Écharpe|Casque
+11|¿Cómo se llama el pedal de más que tiene un coche con cambio manual?|Embrague|Palanca|Servofreno|Freno de mano
+13|¿Cuál es el primer libro del Antiguo Testamento?|Génesis|Éxodo|Levítico|Números
+14|¿Los restos de qué explorador inglés de Australia se encontraron en Londres en enero de 2019?|Matthew Flinders|William Burke|Abel Tasman|Dirk Hartog
+15|¿El cáncer es, en sí mismo, una enfermedad contagiosa?|No
+16|¿Qué fase de la respiración celular produce la mayor parte del ATP?|Fosforilación oxidativa|Glucólisis|Oxidación del piruvato|Ciclo de Calvin
+18|¿Qué país desarrolló el fusil de asalto AK-47?|Unión Soviética|Irán|Israel|Polonia
+19|¿Qué representa el símbolo del signo del zodiaco Géminis?|Los gemelos|Los peces|La balanza|La virgen
+20|¿Quién fue el primer presidente de México?|Guadalupe Victoria|Benito Juárez|Miguel Hidalgo y Costilla|Vicente Guerrero
+21|¿Qué fruta lleva tradicionalmente la tarta Selva Negra?|Cerezas|Albaricoques|Pasas|Manzanas
+22|«A3», «B1» y «Legal» son nombres de tamaños de...|Papel|Aviones|Libros de leyes|Pantallas de móvil
+23|¿Cuál de estas universidades NO es de la Ivy League?|Stanford|Pensilvania|Harvard|Princeton
+24|Cuando alguien todavía no tiene experiencia, se dice que está...|Verde|Rojo|Azul|Amarillo
+25|¿En qué estado de EE. UU. está el Área 51?|Nevada|Arizona|Nuevo México|Utah
+26|¿Con qué empresa colaboró Valve para crear las gafas de realidad virtual Vive?|HTC|Oculus|Google|Razer
+27|¿Qué significa la «S» de la tarjeta SIM?|Subscriber (abonado)|Single (única)|Secure (segura)|Solid (sólida)
+28|Según el Génesis, ¿cuántos días tardó Dios en crear el mundo?|Seis|Siete|Uno|Doce
+29|¿Sobre qué camina un funambulista?|Una cuerda floja|Cristales rotos|Pelotas|La Luna
+30|¿Cuál es el planeta más cercano al Sol?|Mercurio|Marte|Júpiter|La Tierra
+31|¿De qué están hechos los sombreros de Panamá?|Paja toquilla|Seda|Cáñamo|Lino
+32|¿Inventó Michael Jackson el moonwalk?|No
+34|¿Por qué el cielo nocturno es oscuro?|Porque el universo tiene una edad y un tamaño finitos|Porque las nubes de polvo absorben la luz|Porque el corrimiento al rojo no deja ver las estrellas lejanas|Por la mecánica cuántica
+35|¿Es zurda aproximadamente el 40 % de la población mundial?|No
+36|¿Cuándo salió Pong?|29 de noviembre de 1972|29 de marzo de 2017|29 de noviembre de 1970|14 de diciembre de 1974
+37|¿Cuál de estos meses tiene más días?|Diciembre|Abril|Septiembre|Noviembre
+38|¿Cuál es el código IATA del aeropuerto de Mánchester?|MAN|EGLL|LHR|EGCC
+39|¿Cuántos colores tiene el arcoíris?|7|8|9|10
+40|¿Cuál de estas fiestas NO se celebra normalmente en diciembre?|Acción de Gracias|Navidad|Kwanzaa|Janucá
+41|¿Qué fruto seco se usa para hacer mazapán?|Almendras|Cacahuetes|Nueces|Pistachos
+43|¿Qué componente de la sangre forma un tapón en las heridas?|Plaquetas|Glóbulos rojos|Glóbulos blancos|Plasma
+44|¿Cuál de estos países NO combatió en la Primera Guerra Mundial?|Dinamarca|Portugal|Grecia|Rumanía
+45|¿Se llama Tim Apple el consejero delegado de Apple que sucedió a Steve Jobs?|No
+46|¿Es el perro un mamífero?|Sí
+48|¿Fabrica la Nutella la empresa alemana Ferrero?|No
+49|En Half-Life, ¿cómo se llama el alienígena que se engancha a la cabeza?|Headcrab|Bullsquid|Vortigaunt|Facehugger
+50|¿Quién aparece en el billete de 100 dólares estadounidense?|Benjamin Franklin|George Washington|Abraham Lincoln|Thomas Jefferson
+51|¿Es el rumano una lengua romance, como el francés, el español, el portugués y el italiano?|Sí
+52|¿De qué religión abrahámica es libro sagrado el Corán?|Islam|Cristianismo|Judaísmo|Rastafarismo
+53|¿Cuándo salió a la venta la PlayStation 3?|11 de noviembre de 2006|8 de enero de 2007|25 de diciembre de 2007|16 de julio de 2006
+56|¿Qué bebida alcohólica, hecha de patata o de cereales, es originaria de Polonia y Rusia?|Vodka|Absenta|Ron|Sake
+57|¿Cuál es el idioma oficial y más hablado de Cuba?|Español|Portugués|Francés|Italiano
+58|¿Es el metro de Nueva York el más antiguo del mundo?|No
+59|¿Nació Adolf Hitler en Australia?|No
+60|¿Cómo se llama el símbolo «&»?|Ampersand|Ochobarra|Signo de suma|Óbelo
+62|¿Cuál de estos colores NO aparece en el logotipo de Google?|Rosa|Amarillo|Azul|Verde
+63|Si vas a 80 km/h, ¿cuánto tardas en recorrer 80 km?|60 minutos|90 minutos|30 minutos|50 minutos
+64|¿Qué país ha tenido primeros ministros llamados Eden, Major, Peel, Law, Brown y Heath?|Reino Unido|Australia|Nueva Zelanda|Canadá
+66|¿Es el monóxido de dihidrógeno una sustancia química peligrosa?|No
+67|¿Es la bandera de Vietnam una estrella roja sobre fondo amarillo?|No
+68|¿A qué tiene miedo una persona con cinofobia?|A los perros|A los pájaros|A volar|A los gérmenes
+69|¿Cuánto mide el Burj Khalifa de Dubái?|828 metros|728 metros|628 metros|921 metros
+70|La tripofobia es el miedo a...|Los grupos de agujeros|Nadar en aguas profundas|Hablar en público|Comer demasiado
+71|¿Cuál es el mes más corto del año?|Febrero|Diciembre|Abril|Septiembre
+72|Cuando alguien tiene envidia, se dice que se pone ¿de qué color?|Verde|Rojo|Azul|Amarillo
+73|¿Con qué grupo cómico británico trabajó como animador Terry Gilliam?|Monty Python|The Goodies|The League of Gentlemen|The Penny Dreadfuls
+74|¿Son las mitocondrias la «central de energía» de la célula?|Sí
+75|¿Qué empresa es la dueña de Outlook?|Microsoft|Google|Apple|Yahoo
+76|¿Dónde está la estación de tren de Llanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogoch?|Gales|Moldavia|República Checa|Dinamarca
+77|¿A quién se considera el «padre de la filosofía moderna»?|René Descartes|Platón|Albert Einstein|Antoine Lavoisier
+78|¿Cuál de los tres astronautas del Apolo 11 NO pisó la Luna?|Michael Collins|Buzz Aldrin|Neil Armstrong|Ninguno de ellos
+79|En una diana de dardos, ¿qué número está justo enfrente del 1?|19|20|12|15
+80|¿Quién interpretó al general Aladeen en El dictador?|Sacha Baron Cohen|Johnny Depp|James Franco|Leonardo DiCaprio
+81|¿Cuál es la letra que más se usa en español?|E|A|O|S
+82|¿Cuántas estrellas tiene la bandera de la Unión Europea?|12|10|14|16
+83|¿Qué cubierto es el más adecuado para tomar sopa?|Cuchara|Tenedor|Cuchillo|Palillos
+84|¿De qué país europeo es el queso gouda?|Países Bajos|Bélgica|Alemania|Francia
+85|¿Cómo se llama el protagonista de la saga Dead Space?|Isaac Clarke|Ellen Ripley|Comandante Shepard|Capitán Kirk
+86|¿Es el francés lengua oficial de Canadá?|Sí
+87|¿Por qué producto es famosa la marca estadounidense Campbell's?|Sopas en lata|Chocolate|Refrescos|Salchichas
+88|¿Cómo se dice «pez» en francés?|Poisson|Fiche|Escargot|Mer
+89|En arquitectura, ¿es un «pecklesteiner» un juego de puertas que se solapan al cerrarse y se cierran con una sola llave?|No
+90|En Shrek, ¿qué cómico pone la voz original de Asno?|Eddie Murphy|Chris Rock|Richard Pryor|Bernie Mac
+91|¿Cuántos meses del año empiezan por J?|Dos|Tres|Cuatro|Uno
+93|¿Qué canal une el mar Mediterráneo con el mar Rojo?|Canal de Suez|Canal de Panamá|Canal del Sinaí|Canal de Karakum
+95|¿Es «ananás» la palabra más usada para la piña en otros idiomas?|Sí
+96|¿Qué idioma es el más hablado en Suiza?|Alemán|Francés|Italiano|Suizo
+97|¿Por qué punto cardinal sale el Sol?|Este|Oeste|Norte|Sur
+98|¿Qué planeta no lleva el nombre de un dios griego o romano?|La Tierra|Júpiter|Marte|Mercurio
+100|¿Cómo llaman los marineros a la parte delantera de un barco?|Proa|Popa|Babor|Estribor
+101|¿Cuál es el órgano más grande del cuerpo humano?|La piel|El corazón|El intestino grueso|El hígado
+103|¿Qué tecnología lleva el nombre de un rey de Dinamarca y Noruega del siglo X?|Bluetooth|Wi-Fi|GPS|Internet
+106|¿Qué presidente estadounidense aparece en el billete de un dólar?|George Washington|Thomas Jefferson|Abraham Lincoln|Benjamin Franklin
+107|En aerodinámica, ¿qué fuerza empuja un objeto hacia arriba?|Sustentación|Resistencia|Peso|Empuje
+109|¿Qué se expone en el museo Madame Tussauds de Londres?|Figuras de cera|Ropa de diseño|Películas inéditas|Coches antiguos
+110|¿Es el unicornio el animal nacional de Escocia?|Sí
+111|¿Cómo llaman los marineros a la parte trasera de un barco?|Popa|Proa|Estribor|Babor
+112|¿Qué forma tienen normalmente las señales de stop?|Octógono|Hexágono|Círculo|Triángulo
+113|¿Atrae el color rojo a los toros?|No
+115|¿Cuántas sílabas tiene un haiku?|17|15|10|21
+116|¿Nació el ping-pong en Inglaterra?|Sí
+117|¿Qué es Tasmania?|Un estado de Australia|Un sabor de helado de Ben & Jerry's|Un trastorno psicológico|Un personaje de Warner Bros.
+118|¿Qué palabra representa la letra T en el alfabeto fonético de la OTAN?|Tango|Target|Taxi|Turkey
+119|¿Quién fabricó la primera tableta de chocolate, en 1847?|Joseph Fry|Andrew Johnson|John Cadbury|John Tyler

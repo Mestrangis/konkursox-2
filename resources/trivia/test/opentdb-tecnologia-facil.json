@@ -1,0 +1,230 @@
+{
+  "formato": "konkursox-banco",
+  "version": 1,
+  "nombre": "Tecnología · Fácil",
+  "grupo": "Open Trivia DB",
+  "licencia": "Preguntas de Open Trivia Database (opentdb.com), licencia CC BY-SA 4.0, traducidas y adaptadas al español. Este banco se distribuye con la misma licencia (CC BY-SA 4.0).",
+  "preguntas": [
+    {
+      "id": "o4943",
+      "tipo": "test",
+      "enunciado": "¿Quién acuñó el término «batería» para un dispositivo que almacena electricidad?",
+      "opciones": [
+        "Benjamin Franklin",
+        "Luigi Galvani",
+        "Alessandro Volta",
+        "Nikola Tesla"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Tecnología"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4944",
+      "tipo": "test",
+      "enunciado": "¿Cuál es la unidad de resistencia eléctrica en el Sistema Internacional?",
+      "opciones": [
+        "El voltio",
+        "El siemens",
+        "El ohmio",
+        "El amperio"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Tecnología"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4945",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama la máquina simple formada por una barra rígida que gira sobre un punto fijo?",
+      "opciones": [
+        "La polea",
+        "El tornillo",
+        "La palanca",
+        "La cuña"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Tecnología"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4947",
+      "tipo": "test",
+      "enunciado": "¿Cuándo se inventó el DVD?",
+      "opciones": [
+        "1995",
+        "1980",
+        "1990",
+        "2000"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Tecnología"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4949",
+      "tipo": "test",
+      "enunciado": "¿Qué palabra usó Apple para justificar la eliminación de la toma de auriculares?",
+      "opciones": [
+        "Audacia",
+        "Valor (courage)",
+        "Innovación",
+        "Revolución"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Tecnología"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4950",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos NO es un tipo de ratón de ordenador?",
+      "opciones": [
+        "El ratón de tambor",
+        "El ratón óptico",
+        "El ratón batido",
+        "El ratón de bola (trackball)"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Tecnología"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4952",
+      "tipo": "test",
+      "enunciado": "¿Qué significa GPS?",
+      "opciones": [
+        "Sistema de Posicionamiento Global",
+        "Sistema Personal Global",
+        "Satélite Personal General",
+        "Sistema de Posicionamiento General"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Tecnología"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4953",
+      "tipo": "test",
+      "enunciado": "¿En qué año salió el primer iPhone?",
+      "opciones": [
+        "2007",
+        "2005",
+        "2004",
+        "2006"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Tecnología"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4954",
+      "tipo": "test",
+      "enunciado": "¿Qué asistente virtual es de Amazon?",
+      "opciones": [
+        "Siri",
+        "Alexa",
+        "Asistente de Google",
+        "Cortana"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Tecnología"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4955",
+      "tipo": "test",
+      "enunciado": "¿Cuándo salió el Tamagotchi?",
+      "opciones": [
+        "1992",
+        "1996",
+        "1989",
+        "1990"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Tecnología"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4956",
+      "tipo": "test",
+      "enunciado": "¿Cuándo empezó a venderse el CD?",
+      "opciones": [
+        "1972",
+        "1992",
+        "1982",
+        "1962"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Tecnología"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4958",
+      "tipo": "test",
+      "enunciado": "¿Qué significa SSD en almacenamiento informático?",
+      "opciones": [
+        "Unidad de estado sólido",
+        "Dispositivo de almacenamiento por software",
+        "Datos de súper velocidad",
+        "Disco de sistema seguro"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Tecnología"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4959",
+      "tipo": "test",
+      "enunciado": "¿Qué videoconsola es de Sony?",
+      "opciones": [
+        "Xbox",
+        "PlayStation",
+        "Atari",
+        "Nintendo Switch"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Tecnología"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    }
+  ]
+}

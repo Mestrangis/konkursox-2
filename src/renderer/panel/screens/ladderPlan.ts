@@ -2,6 +2,7 @@
 import { isPlayable, type Question } from '../../../shared/questions'
 import type { LadderPick } from '../../../shared/quiz'
 import { btn, h, openDialog, type Ctx } from '../ui'
+import { mixDialog } from './mix'
 
 /** Pregunta de una entrada del plan (null si ya no existe o el banco no se ha leído). */
 export function planQuestion(ctx: Ctx, pick: LadderPick): Question | null {
@@ -31,7 +32,7 @@ export async function editLadderPlan(ctx: Ctx): Promise<void> {
         const row = h('div', 'pnl', { padding: '6px 8px', display: 'flex', alignItems: 'center', gap: 8, cursor: 'grab', background: i < levels ? '' : '#2a1d1d' }, [
           h('span', 'nm', { flex: 'none' }, [`${i + 1}`]),
           h('span', '', { flex: 1, minWidth: 0, fontSize: 13, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }, [q?.enunciado ?? '(pregunta borrada)']),
-          h('span', 'mut', { fontSize: 11, flex: 'none' }, [q?.tipo === 'sino' ? 'Sí/No' : ctx.lib.info(p.ref)?.nombre ?? '']),
+          h('span', 'mut', { fontSize: 11, flex: 'none' }, [q?.tipo === 'sino' ? 'Sí/No' : (ctx.lib.info(p.ref)?.nombre ?? '')]),
           (() => {
             const x = h('button', 'x', {}, ['×'])
             x.title = 'Quitar de la escalera'
@@ -57,7 +58,8 @@ export async function editLadderPlan(ctx: Ctx): Promise<void> {
         return row
       })
     )
-    if (!plan.length) listEl.append(h('div', 'mut', { padding: 12, fontSize: 13 }, ['Añade preguntas desde la derecha, o carga un banco de escalera guardado. Arrastra para ordenarlas (1 = la más fácil).']))
+    if (!plan.length)
+      listEl.append(h('div', 'mut', { padding: 12, fontSize: 13 }, ['Añade preguntas desde la derecha, o carga un banco de escalera guardado. Arrastra para ordenarlas (1 = la más fácil).']))
   }
 
   function paintPick(): void {
@@ -70,12 +72,16 @@ export async function editLadderPlan(ctx: Ctx): Promise<void> {
         const added = inPlan.has(`${srcRef}::${q.id}`)
         return h('div', '', { display: 'flex', alignItems: 'center', gap: 8, padding: '4px 2px' }, [
           h('span', '', { flex: 1, minWidth: 0, fontSize: 13, opacity: added || q.usada ? 0.5 : 1 }, [q.enunciado, q.usada ? ' (usada)' : '']),
-          btn(added ? 'Añadida' : 'Añadir', () => {
-            if (added) return
-            plan.push({ ref: srcRef, id: q.id })
-            paintPlan()
-            paintPick()
-          }, added ? 'b sm ghost' : 'b sm acc')
+          btn(
+            added ? 'Añadida' : 'Añadir',
+            () => {
+              if (added) return
+              plan.push({ ref: srcRef, id: q.id })
+              paintPlan()
+              paintPick()
+            },
+            added ? 'b sm ghost' : 'b sm acc'
+          )
         ])
       })
     )
@@ -127,21 +133,43 @@ export async function editLadderPlan(ctx: Ctx): Promise<void> {
           count,
           listEl,
           h('div', '', { display: 'flex', gap: 8 }, [
-            btn('Vaciar', () => {
-              plan = []
-              paintPlan()
-              paintPick()
-            }, 'b sm ghost')
+            btn(
+              'Mezclar…',
+              async () => {
+                // la mezcla abre su propio diálogo: este se cierra y se vuelve a abrir con el plan nuevo
+                close()
+                const picks = await mixDialog(ctx, 'escalera')
+                if (picks?.length) {
+                  ctx.send({ type: 'ladderSetPlan', plan: picks.map((x) => ({ ref: x.ref, id: x.q.id })) })
+                  ctx.toast(`Escalera: ${picks.length} preguntas de fácil a difícil`)
+                } else if (picks) ctx.toast('No hay preguntas sin usar que cumplan eso')
+                void editLadderPlan(ctx)
+              },
+              'b sm acc'
+            ),
+            btn(
+              'Vaciar',
+              () => {
+                plan = []
+                paintPlan()
+                paintPick()
+              },
+              'b sm ghost'
+            )
           ])
         ]),
         h('div', '', { display: 'flex', flexDirection: 'column', gap: 8, minWidth: 0 }, [h('span', 'lbl', {}, ['Añadir de Tipo test o Sí o no']), srcSel, search, pickEl])
       ]),
       h('div', 'dlg-actions', {}, [
         btn('Cancelar', close, 'b'),
-        btn('Guardar', () => {
-          ctx.send({ type: 'ladderSetPlan', plan })
-          close()
-        }, 'b acc')
+        btn(
+          'Guardar',
+          () => {
+            ctx.send({ type: 'ladderSetPlan', plan })
+            close()
+          },
+          'b acc'
+        )
       ])
     ],
     1040

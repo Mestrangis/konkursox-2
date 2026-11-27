@@ -4,6 +4,7 @@ import { camsLineup } from '../../shared/scene'
 import { arrangeFeatured, pipBox } from '../../shared/arrange'
 import { formatPoints, ladderBank, targetKey, type LifelineDef, type Target } from '../../shared/quiz'
 import { lifelineIcon } from '../ds/lifeline'
+import { imageView } from '../../shared/questionImage'
 import type { Box } from '../../shared/layouts'
 import type { ContestantId, GameState, SlotId } from '../../shared/types'
 import { bevelBar, camFrame, fitName, h, svg, type CamFrameEl } from '../ds/components'
@@ -166,30 +167,62 @@ export function liveTimer(x: number, y: number, scale = 1) {
       root.style.display = show ? '' : 'none'
       if (!show) return
       const total = t.seconds * 1000
-      const left = t.endsAt !== null ? Math.max(0, t.endsAt - Date.now()) : t.remainingMs ?? total
+      const left = t.endsAt !== null ? Math.max(0, t.endsAt - Date.now()) : (t.remainingMs ?? total)
       const secs = Math.ceil(left / 1000)
       if (value.textContent !== String(secs)) value.textContent = String(secs)
       arc.setAttribute('stroke-dashoffset', (len * (1 - left / total)).toFixed(1))
-      arc.style.stroke = (left <= 5000 && left > 0 ? '#f4b552' : left === 0 ? '#d4483b' : 'var(--k-gold-400)')
+      arc.style.stroke = left <= 5000 && left > 0 ? '#f4b552' : left === 0 ? '#d4483b' : 'var(--k-gold-400)'
     }
   }
 }
 
+/** Retraso de la imagen respecto al texto de la pregunta (primero se lee el texto). */
+const AFTER_TEXT_MS = 1100
+
+/**
+ * Imagen de la pregunta en un marco a un lado (sin tapar la pregunta ni las opciones) y, si se pide,
+ * a pantalla completa. Sale siempre después del texto: si el texto acaba de aparecer, espera un poco.
+ */
 export function imageBox(box: Box) {
   const img = h('img')
   img.alt = ''
-  const root = h('div', 'k-qimage is-off', { left: box.x, top: box.y, width: box.w, height: box.h }, [img])
+  const tag = h('span', 'k-qimage__tag')
+  const root = h('div', 'k-qimage is-off', { left: box.x, top: box.y, width: box.w, height: box.h }, [img, tag])
+  const fullImg = h('img')
+  fullImg.alt = ''
+  const full = h('div', 'k-qimage-full is-off', {}, [h('div', 'k-qimage-full__frame', {}, [fullImg])])
   let src = ''
+  let textAt = 0
+  let textWas = false
+  let shown = false
+  const setSrc = (file: string | null) => {
+    const next = file ? `konk-media://imagenes/${encodeURIComponent(file)}` : ''
+    if (next === src) return
+    src = next
+    for (const el of [img, fullImg]) {
+      if (next) el.src = next
+      else el.removeAttribute('src')
+    }
+  }
   return {
     root,
-    set(file: string | undefined, visible: boolean) {
-      const next = file ? `konk-media://imagenes/${encodeURIComponent(file)}` : ''
-      if (next !== src) {
-        src = next
-        if (next) img.src = next
-        else img.removeAttribute('src')
-      }
-      root.classList.toggle('is-off', !(visible && !!file))
+    full,
+    set(st: GameState) {
+      const cur = st.quiz.current
+      const v = imageView(cur ? { ...cur, showAnswerImage: cur.showAnswerImage ?? null } : null)
+      const textNow = !!cur && cur.phase !== 'ready'
+      if (textNow && !textWas) textAt = Date.now()
+      textWas = textNow
+      if (v.file) setSrc(v.file)
+      const on = !!v.file && !v.full
+      // primero el texto: si acaba de salir, la imagen espera
+      const wait = on && !shown ? Math.max(0, AFTER_TEXT_MS - (Date.now() - textAt)) : 0
+      root.style.transitionDelay = wait ? `${wait}ms` : ''
+      root.classList.toggle('is-off', !on)
+      shown = on
+      tag.textContent = v.which === 'a' ? 'Respuesta' : ''
+      tag.style.display = v.which === 'a' ? '' : 'none'
+      full.classList.toggle('is-off', !v.full)
     }
   }
 }
@@ -220,11 +253,21 @@ export function camGeometry(s: GameState, kind: Kind, camH0?: number, plateY0?: 
     if (placed)
       return placed.map((p) => {
         const pw = Math.min(p.small ? 420 : 600, p.cam.w - 40)
-        return { slot: p.slot, cam: p.cam, plate: { x: p.cam.x + (p.cam.w - pw) / 2, y: p.cam.y + p.cam.h - 28, w: pw, h: p.small ? 48 : 56 }, c: p.small ? 20 : 24, nameSize: p.small ? 22 : undefined }
+        return {
+          slot: p.slot,
+          cam: p.cam,
+          plate: { x: p.cam.x + (p.cam.w - pw) / 2, y: p.cam.y + p.cam.h - 28, w: pw, h: p.small ? 48 : 56 },
+          c: p.small ? 20 : 24,
+          nameSize: p.small ? 22 : undefined
+        }
       })
   }
   if (mode === 'esquina' && all.includes('host') && all.length > 1) {
-    const rest = equalGeometry(all.filter((x) => x !== 'host'), camH, plateY)
+    const rest = equalGeometry(
+      all.filter((x) => x !== 'host'),
+      camH,
+      plateY
+    )
     const b = pipBox(area, s.camsScene.corner)
     return [...rest, { slot: 'host', cam: b, plate: { x: b.x + 30, y: b.y + b.h - 24, w: b.w - 60, h: 44 }, c: 18, nameSize: 20 }]
   }
@@ -256,7 +299,7 @@ export function setLineupPlate(st: GameState, slot: SlotId, plate: PlateEl): voi
   if (slot === 'publico') return plate.set('Público', null, '', '')
   const c = st.contestants.find((x) => x.id === slot)
   const chip = chipFor(st, slot)
-  const score = st.layout === 'teams' && c ? st.teams[c.team].score : c?.score ?? 0
+  const score = st.layout === 'teams' && c ? st.teams[c.team].score : (c?.score ?? 0)
   plate.set(c?.name ?? '', formatPoints(score), chip.text, chip.cls)
 }
 
@@ -366,7 +409,8 @@ export function buildQuizScene(s: GameState): Scene {
       ep.set(b.slot === 'host' ? s.host.name : 'Público', null, '', '')
       root.append(ep.root)
     }
-    imgBox = { x: 100, y: 40, w: 1180, h: 600 }
+    // a un lado, sobre las cámaras: nunca tapa la pregunta, las opciones ni la escalera
+    imgBox = { x: 740, y: 50, w: 540, h: 560 }
 
     const lifeRow = h('div', 'k-abs', { left: 1340, top: 40, width: 480, display: 'flex', justifyContent: 'space-between' })
     const defs = s.quiz.lifelines
@@ -379,11 +423,7 @@ export function buildQuizScene(s: GameState): Scene {
     const levels = s.quiz.ladder.levels
     const rungs = levels
       .map((_, i) => {
-        const r = h('div', 'k-rung', {}, [
-          h('span', 'k-rung__n', {}, [String(i + 1)]),
-          h('span', 'k-rung__d', {}, [svg('0 0 10 10', { width: 10, height: 10 }, DIAMOND)]),
-          h('span', 'k-rung__v')
-        ])
+        const r = h('div', 'k-rung', {}, [h('span', 'k-rung__n', {}, [String(i + 1)]), h('span', 'k-rung__d', {}, [svg('0 0 10 10', { width: 10, height: 10 }, DIAMOND)]), h('span', 'k-rung__v')])
         r.style.fontSize = levels.length > 18 ? '19px' : ''
         return r
       })
@@ -400,7 +440,7 @@ export function buildQuizScene(s: GameState): Scene {
       plates.push({ slots: [g.slot], plate })
       root.append(f.root, plate.root)
     }
-    imgBox = { x: 460, y: 40, w: 1000, h: kind === 'sino' ? 560 : 600 }
+    imgBox = { x: 1240, y: 50, w: 580, h: kind === 'sino' ? 500 : 540 }
   }
 
   // pregunta + opciones
@@ -413,25 +453,22 @@ export function buildQuizScene(s: GameState): Scene {
   } else {
     root.append(h('div', 'k-track', { top: 751 }), h('div', 'k-track', { top: 866 }), h('div', 'k-track', { top: 960 }))
     root.append(bevelBar({ box: { x: 100, y: 700, w: 1720, h: 104 }, c: 44, center: true }, [qText]))
-    opts = Array.from({ length: Math.min(4, nOpts) }, (_, i) =>
-      optionBar('ABCD'[i], { x: i % 2 ? 970 : 100, y: i < 2 ? 828 : 922, w: 850, h: 78 }, 34, false)
-    )
+    opts = Array.from({ length: Math.min(4, nOpts) }, (_, i) => optionBar('ABCD'[i], { x: i % 2 ? 970 : 100, y: i < 2 ? 828 : 922, w: 850, h: 78 }, 34, false))
   }
   root.append(...opts.map((o) => o.root))
 
   const image = imageBox(imgBox)
-  root.append(image.root)
+  root.append(image.root, image.full)
 
   const n = camsLineup(s).length
-  const timer =
-    kind === 'ladder' ? liveTimer(1160, 520) : n === 2 ? liveTimer(900, 560) : liveTimer(1702, sino ? 680 : 710, 0.8)
+  const timer = kind === 'ladder' ? liveTimer(1160, 520) : n === 2 ? liveTimer(900, 560) : liveTimer(1702, sino ? 680 : 710, 0.8)
   root.append(timer.root)
 
   const update = (st: GameState) => {
     const cur = st.quiz.current
     qText.textContent = cur && cur.phase !== 'ready' ? cur.question.enunciado : ''
     optionStates(st).forEach((o, i) => opts[i]?.set(o.text, o.state, o.visible))
-    image.set(cur?.question.imagen, !!cur?.showImage && cur.phase !== 'ready')
+    image.set(st)
     const turn = turnSlots(st)
     for (const [slot, f] of frames) f.root.classList.toggle('is-turn', turn.has(slot))
 
@@ -469,7 +506,13 @@ function buildResultScene(s: GameState, key: string): Scene {
   const root = h('div', 'k-stage k-enter')
   const l = s.quiz.ladder
   const members = membersOf(s, l.target)
-  const cams = members.length === 2 ? [{ x: 100, w: 545 }, { x: 655, w: 545 }] : [{ x: 100, w: 1100 }]
+  const cams =
+    members.length === 2
+      ? [
+          { x: 100, w: 545 },
+          { x: 655, w: 545 }
+        ]
+      : [{ x: 100, w: 1100 }]
   members.slice(0, cams.length).forEach((slot, i) => {
     const f = camFrame({ x: cams[i].x, y: 100, w: cams[i].w, h: 700 }, slot)
     f.root.classList.add('is-winner')
@@ -509,11 +552,9 @@ function buildResultScene(s: GameState, key: string): Scene {
   const title = h('span', 'k-lower__title')
   root.append(
     h('div', 'k-track', { top: 968 }),
-    bevelBar({ box: { x: 100, y: 920, w: 1720, h: 98 }, c: 40 }, [
-      h('span', 'k-logo', { fontSize: 36 }, ['KONKURSOX']),
-      h('span', 'k-lower__sep'),
-      h('div', 'k-lower__titles', {}, [kicker, title])
-    ], { gap: 32 })
+    bevelBar({ box: { x: 100, y: 920, w: 1720, h: 98 }, c: 40 }, [h('span', 'k-logo', { fontSize: 36 }, ['KONKURSOX']), h('span', 'k-lower__sep'), h('div', 'k-lower__titles', {}, [kicker, title])], {
+      gap: 32
+    })
   )
 
   const update = (st: GameState) => {
@@ -532,13 +573,7 @@ function buildResultScene(s: GameState, key: string): Scene {
     level.textContent = `${reached} de ${lad.levels.length}`
     kicker.textContent = 'Escalera de premios'
     title.textContent =
-      o?.kind === 'won'
-        ? `${who} completa la escalera`
-        : o?.kind === 'walked'
-          ? `${who} se planta con ${amount} puntos`
-          : o?.kind === 'failed'
-            ? `${who} se lleva ${amount} puntos`
-            : who
+      o?.kind === 'won' ? `${who} completa la escalera` : o?.kind === 'walked' ? `${who} se planta con ${amount} puntos` : o?.kind === 'failed' ? `${who} se lleva ${amount} puntos` : who
   }
   update(s)
   return { key, root, frames, update }

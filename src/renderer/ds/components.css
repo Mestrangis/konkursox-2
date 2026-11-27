@@ -306,7 +306,9 @@
   height: 120px;
   border-radius: 50%;
   background: radial-gradient(circle, var(--k-navy-600), var(--k-navy-925) 70%);
-  box-shadow: 0 0 0 1px var(--k-gold-900), 0 10px 30px rgba(0, 0, 0, 0.6);
+  box-shadow:
+    0 0 0 1px var(--k-gold-900),
+    0 10px 30px rgba(0, 0, 0, 0.6);
 }
 .k-timer svg {
   position: absolute;
@@ -361,12 +363,19 @@
   transition: box-shadow 0.35s ease;
 }
 .k-cam.is-turn {
-  box-shadow: 0 0 0 2px var(--k-gold-400), 0 0 0 8px var(--k-navy-875), 0 0 0 9px rgba(230, 203, 133, 0.5), 0 0 80px rgba(230, 203, 133, 0.18), 0 30px 70px rgba(0, 0, 0, 0.6);
+  box-shadow:
+    0 0 0 2px var(--k-gold-400),
+    0 0 0 8px var(--k-navy-875),
+    0 0 0 9px rgba(230, 203, 133, 0.5),
+    0 0 80px rgba(230, 203, 133, 0.18),
+    0 30px 70px rgba(0, 0, 0, 0.6);
 }
 
 /* Opción de respuesta: aparece al mostrarse */
 .k-opt {
-  transition: opacity 0.35s ease, transform 0.35s ease;
+  transition:
+    opacity 0.35s ease,
+    transform 0.35s ease;
 }
 .k-opt.is-off {
   opacity: 0;
@@ -408,7 +417,9 @@
   align-items: center;
   justify-content: center;
   background: var(--k-life-bg, radial-gradient(ellipse at 50% 30%, #1f3160, #060c1a 75%));
-  box-shadow: 0 0 0 2px var(--k-gold-600), 0 8px 20px rgba(0, 0, 0, 0.5);
+  box-shadow:
+    0 0 0 2px var(--k-gold-600),
+    0 8px 20px rgba(0, 0, 0, 0.5);
   transition: opacity 0.4s ease;
 }
 .k-life__slash {
@@ -485,8 +496,14 @@
   overflow: hidden;
   border-radius: 4px;
   background: radial-gradient(ellipse at 50% 38%, var(--k-navy-350), var(--k-navy-925) 78%);
-  box-shadow: 0 0 0 2px var(--k-gold-400), 0 0 0 8px var(--k-navy-875), 0 0 0 9px rgba(230, 203, 133, 0.5), 0 30px 70px rgba(0, 0, 0, 0.7);
-  transition: opacity 0.4s ease, transform 0.4s ease;
+  box-shadow:
+    0 0 0 2px var(--k-gold-400),
+    0 0 0 8px var(--k-navy-875),
+    0 0 0 9px rgba(230, 203, 133, 0.5),
+    0 30px 70px rgba(0, 0, 0, 0.7);
+  transition:
+    opacity 0.4s ease,
+    transform 0.4s ease;
   z-index: 5;
 }
 .k-qimage img {
@@ -513,7 +530,12 @@
   height: 1px;
 }
 .k-cam.is-winner {
-  box-shadow: 0 0 0 2px var(--k-gold-400), 0 0 0 8px var(--k-navy-875), 0 0 0 9px rgba(230, 203, 133, 0.5), 0 0 80px rgba(230, 203, 133, 0.18), 0 30px 70px rgba(0, 0, 0, 0.6);
+  box-shadow:
+    0 0 0 2px var(--k-gold-400),
+    0 0 0 8px var(--k-navy-875),
+    0 0 0 9px rgba(230, 203, 133, 0.5),
+    0 0 80px rgba(230, 203, 133, 0.18),
+    0 30px 70px rgba(0, 0, 0, 0.6);
 }
 .k-timer {
   z-index: 6;
@@ -534,7 +556,11 @@
   font-size: 34px;
   font-weight: 700;
   box-sizing: border-box;
-  transition: background 0.3s ease, border-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  transition:
+    background 0.3s ease,
+    border-color 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
 }
 .k-lt--pend {
   background: radial-gradient(circle at 50% 30%, #22386a, #0a1530 75%);
@@ -560,7 +586,9 @@
   background: radial-gradient(circle at 50% 30%, #fff1cc, #e0b45c 70%);
   border: 2px solid var(--k-gold-100);
   color: var(--k-lock-ink);
-  box-shadow: 0 0 0 6px rgba(240, 220, 166, 0.18), 0 0 34px rgba(240, 220, 166, 0.55);
+  box-shadow:
+    0 0 0 6px rgba(240, 220, 166, 0.18),
+    0 0 34px rgba(240, 220, 166, 0.55);
   width: 76px;
   height: 76px;
   margin: -38px 0 0 -38px;
@@ -660,7 +688,9 @@
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--k-text-muted);
-  transition: opacity 0.5s ease, transform 0.5s ease;
+  transition:
+    opacity 0.5s ease,
+    transform 0.5s ease;
 }
 .k-quien__meta.is-off {
   opacity: 0;
@@ -856,7 +886,11 @@
   overflow: hidden;
   border-radius: 4px;
   background: #000;
-  box-shadow: 0 0 0 2px var(--k-gold-400), 0 0 0 8px var(--k-navy-875), 0 0 0 9px rgba(230, 203, 133, 0.5), 0 30px 70px rgba(0, 0, 0, 0.7);
+  box-shadow:
+    0 0 0 2px var(--k-gold-400),
+    0 0 0 8px var(--k-navy-875),
+    0 0 0 9px rgba(230, 203, 133, 0.5),
+    0 30px 70px rgba(0, 0, 0, 0.7);
 }
 .k-media img,
 .k-media video {
@@ -891,7 +925,9 @@
 }
 .k-cleanname {
   position: absolute;
-  font: 600 26px/1 'Barlow Condensed', sans-serif;
+  font:
+    600 26px/1 'Barlow Condensed',
+    sans-serif;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: #fff;
@@ -944,11 +980,15 @@
   align-items: center;
   gap: 6px;
   background: linear-gradient(180deg, rgba(12, 22, 48, 0.96), rgba(6, 12, 28, 0.96));
-  box-shadow: 0 0 0 3px var(--k-gold-500), 0 30px 80px rgba(0, 0, 0, 0.7);
+  box-shadow:
+    0 0 0 3px var(--k-gold-500),
+    0 30px 80px rgba(0, 0, 0, 0.7);
   clip-path: polygon(40px 0, calc(100% - 40px) 0, 100% 50%, calc(100% - 40px) 100%, 40px 100%, 0 50%);
   opacity: 0;
   transform: scale(0.8) rotate(-2deg);
-  transition: opacity 0.25s ease, transform 0.35s cubic-bezier(0.2, 1.6, 0.4, 1);
+  transition:
+    opacity 0.25s ease,
+    transform 0.35s cubic-bezier(0.2, 1.6, 0.4, 1);
   pointer-events: none;
 }
 .k-bribe.is-on {
@@ -956,13 +996,17 @@
   transform: scale(1) rotate(-2deg);
 }
 .k-bribe__kicker {
-  font: 600 26px/1 'Barlow Condensed', sans-serif;
+  font:
+    600 26px/1 'Barlow Condensed',
+    sans-serif;
   letter-spacing: 0.3em;
   text-transform: uppercase;
   color: var(--k-gold-400);
 }
 .k-bribe__title {
-  font: 700 110px/1 'Barlow Condensed', sans-serif;
+  font:
+    700 110px/1 'Barlow Condensed',
+    sans-serif;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   background: linear-gradient(180deg, #fff4d2, var(--k-gold-400) 55%, #b08a3e);
@@ -993,7 +1037,9 @@
   transition: filter 0.4s ease;
 }
 .k-stage > * {
-  transition: filter 0.5s ease, opacity 0.5s ease;
+  transition:
+    filter 0.5s ease,
+    opacity 0.5s ease;
 }
 
 /* Tensión: viñeta */
@@ -1180,7 +1226,10 @@
 .fxv-foco[data-focus='c4'] .k-cam[data-slot='c4'],
 .fxv-foco[data-focus='host'] .k-cam[data-slot='host'],
 .fxv-foco[data-focus='publico'] .k-cam[data-slot='publico'] {
-  box-shadow: 0 0 0 2px var(--k-gold-300), 0 0 60px var(--k-gold-a60), 0 0 140px var(--k-gold-a45);
+  box-shadow:
+    0 0 0 2px var(--k-gold-300),
+    0 0 60px var(--k-gold-a60),
+    0 0 140px var(--k-gold-a45);
   z-index: 44;
 }
 .k-bar--center .k-name {
@@ -1234,7 +1283,9 @@
   padding: 14px 14px 12px;
   border-radius: 14px;
   background: var(--k-panel-fill);
-  box-shadow: 0 0 0 1px var(--k-gold-600), 0 18px 40px rgba(0, 0, 0, 0.5);
+  box-shadow:
+    0 0 0 1px var(--k-gold-600),
+    0 18px 40px rgba(0, 0, 0, 0.5);
 }
 .k-qr img {
   width: 200px;
@@ -1296,7 +1347,9 @@
   font-size: 36px;
   opacity: 0;
   transform: scale(0.7);
-  transition: opacity 0.25s ease, transform 0.25s ease;
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease;
 }
 .k-salon-badge.is-on {
   opacity: 1;
@@ -1315,7 +1368,9 @@
   font-size: 30px;
 }
 .k-salon-plate {
-  transition: transform 0.3s ease, filter 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    filter 0.3s ease;
 }
 .k-salon-turn {
   transform: translateY(-10px);
@@ -1331,7 +1386,9 @@
   color: var(--k-gold-300);
   opacity: 0;
   transform: translateY(8px);
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
 }
 .k-salon-tag.is-on {
   opacity: 1;
@@ -1339,4 +1396,57 @@
 }
 .k-salon-rosco {
   transition: opacity 0.35s ease;
+}
+
+/* imagen de la pregunta: etiqueta "Respuesta" y pantalla completa */
+.k-qimage__tag {
+  position: absolute;
+  left: 50%;
+  bottom: 14px;
+  transform: translateX(-50%);
+  padding: 6px 18px;
+  border-radius: 999px;
+  background: rgba(6, 10, 22, 0.82);
+  border: 1px solid var(--k-gold-500);
+  color: var(--k-gold-300);
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+.k-qimage-full {
+  position: absolute;
+  inset: 0;
+  z-index: 40;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(3, 6, 14, 0.86);
+  transition: opacity 0.45s ease;
+}
+.k-qimage-full.is-off {
+  opacity: 0;
+  pointer-events: none;
+}
+.k-qimage-full__frame {
+  width: 1640px;
+  height: 920px;
+  border-radius: 6px;
+  background: radial-gradient(ellipse at 50% 38%, var(--k-navy-350), var(--k-navy-925) 78%);
+  box-shadow:
+    0 0 0 3px var(--k-gold-400),
+    0 0 0 12px var(--k-navy-875),
+    0 0 0 13px rgba(230, 203, 133, 0.5),
+    0 40px 90px rgba(0, 0, 0, 0.75);
+  transform: scale(1);
+  transition: transform 0.45s ease;
+}
+.k-qimage-full.is-off .k-qimage-full__frame {
+  transform: scale(0.94);
+}
+.k-qimage-full__frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
 }

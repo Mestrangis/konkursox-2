@@ -1,0 +1,1131 @@
+{
+  "formato": "konkursox-banco",
+  "version": 1,
+  "nombre": "Historia · Fácil",
+  "grupo": "Open Trivia DB",
+  "licencia": "Preguntas de Open Trivia Database (opentdb.com), licencia CC BY-SA 4.0, traducidas y adaptadas al español. Este banco se distribuye con la misma licencia (CC BY-SA 4.0).",
+  "preguntas": [
+    {
+      "id": "o4081",
+      "tipo": "test",
+      "enunciado": "Al alfabeto romano original le faltaban estas letras EXCEPTO una. ¿Cuál tenía?",
+      "opciones": [
+        "X",
+        "W",
+        "U",
+        "J"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4084",
+      "tipo": "test",
+      "enunciado": "En 1939, Reino Unido y Francia declararon la guerra a Alemania tras invadir qué país?",
+      "opciones": [
+        "Austria",
+        "Hungría",
+        "Checoslovaquia",
+        "Polonia"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4085",
+      "tipo": "test",
+      "enunciado": "¿En qué guerra se lanzaron las bombas atómicas sobre Hiroshima y Nagasaki?",
+      "opciones": [
+        "La Primera Guerra Mundial",
+        "La guerra ruso-japonesa",
+        "La primera guerra sino-japonesa",
+        "La Segunda Guerra Mundial"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4086",
+      "tipo": "test",
+      "enunciado": "¿Cuál fue la moneda oficial de Alemania hasta 2002?",
+      "opciones": [
+        "La libra esterlina",
+        "El franco",
+        "El chelín",
+        "El marco"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4087",
+      "tipo": "test",
+      "enunciado": "¿Cuándo cayó el Imperio bizantino?",
+      "opciones": [
+        "1498",
+        "1299",
+        "1353",
+        "1453"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4089",
+      "tipo": "test",
+      "enunciado": "¿Qué país actual ocupa la región que en la Antigüedad se llamaba Frigia?",
+      "opciones": [
+        "Grecia",
+        "Turquía",
+        "Egipto",
+        "Siria"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4090",
+      "tipo": "test",
+      "enunciado": "¿Qué día empezó la batalla del Somme?",
+      "opciones": [
+        "El 2 de julio de 1916",
+        "El 1 de julio de 1916",
+        "El 30 de junio de 1916",
+        "El 1 de agosto de 1916"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4091",
+      "tipo": "test",
+      "enunciado": "¿Quién descubrió la penicilina?",
+      "opciones": [
+        "Alfred Nobel",
+        "Louis Pasteur",
+        "Alexander Fleming",
+        "Marie Curie"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4092",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos países NO formó parte del Eje en la Segunda Guerra Mundial?",
+      "opciones": [
+        "Alemania",
+        "Japón",
+        "La Unión Soviética",
+        "Italia"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4093",
+      "tipo": "test",
+      "enunciado": "¿En qué año se produjo el crac de Wall Street?",
+      "opciones": [
+        "1925",
+        "1929",
+        "1930",
+        "1932"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4094",
+      "tipo": "test",
+      "enunciado": "¿En qué año se hundió el Titanic?",
+      "opciones": [
+        "1941",
+        "1912",
+        "1917",
+        "1930"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4095",
+      "tipo": "test",
+      "enunciado": "¿Qué dos países formaron una mancomunidad entre los siglos XVI y XVIII?",
+      "opciones": [
+        "España y Portugal",
+        "Polonia y Lituania",
+        "Suecia y Finlandia",
+        "Austria y Hungría"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4096",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estas NO fue una playa del desembarco de Normandía?",
+      "opciones": [
+        "Silver",
+        "Sword",
+        "Gold",
+        "Juno"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4099",
+      "tipo": "test",
+      "enunciado": "¿En qué guerra se alistó como voluntario George Orwell, y casi murió?",
+      "opciones": [
+        "La Primera Guerra Mundial",
+        "La guerra civil española",
+        "La guerra civil rusa",
+        "La Segunda Guerra Mundial"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4100",
+      "tipo": "test",
+      "enunciado": "¿Qué país africano resistió con más éxito la colonización?",
+      "opciones": [
+        "Costa de Marfil",
+        "Etiopía",
+        "Namibia",
+        "Congo"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4101",
+      "tipo": "test",
+      "enunciado": "¿De qué casa real fue Enrique VIII el segundo monarca?",
+      "opciones": [
+        "Tudor",
+        "Estuardo",
+        "York",
+        "Lancaster"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4102",
+      "tipo": "test",
+      "enunciado": "¿Cómo fue ejecutado Sócrates?",
+      "opciones": [
+        "Con veneno (cicuta)",
+        "Fusilado",
+        "Decapitado",
+        "Crucificado"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4104",
+      "tipo": "test",
+      "enunciado": "¿Tras perder qué guerra se disolvió el Imperio otomano?",
+      "opciones": [
+        "La guerra de Crimea",
+        "La revolución serbia",
+        "La Primera Guerra Mundial",
+        "La segunda guerra de los Balcanes"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4105",
+      "tipo": "test",
+      "enunciado": "¿De qué país fue colonia Brasil?",
+      "opciones": [
+        "Portugal",
+        "España",
+        "Países Bajos",
+        "Francia"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4106",
+      "tipo": "test",
+      "enunciado": "¿Quién era primer ministro de Japón cuando declaró la guerra a EE. UU.?",
+      "opciones": [
+        "Hideki Tojo",
+        "Hirohito",
+        "Isoroku Yamamoto",
+        "Fumimaro Konoe"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4108",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llamaban las antiguas rutas comerciales que unían Oriente y Occidente?",
+      "opciones": [
+        "La Ruta del Barro",
+        "La Ruta de la Sal",
+        "La Ruta de las Especias",
+        "La Ruta de la Seda"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4109",
+      "tipo": "test",
+      "enunciado": "¿De qué país fue dictador Pol Pot?",
+      "opciones": [
+        "Laos",
+        "Corea del Norte",
+        "Vietnam",
+        "Camboya"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4110",
+      "tipo": "test",
+      "enunciado": "¿Cuál fue el primer deporte que se practicó en la Luna?",
+      "opciones": [
+        "El tenis",
+        "El fútbol americano",
+        "El fútbol",
+        "El golf"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4111",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos países NO formó parte de las Potencias Centrales en la Primera Guerra Mundial?",
+      "opciones": [
+        "Alemania",
+        "Austria-Hungría",
+        "Turquía",
+        "España"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4112",
+      "tipo": "test",
+      "enunciado": "¿Qué mariscal de campo alemán era conocido como «el Zorro del Desierto»?",
+      "opciones": [
+        "Wilhelm List",
+        "Ernst Busch",
+        "Wolfram von Richthofen",
+        "Erwin Rommel"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4113",
+      "tipo": "test",
+      "enunciado": "¿Qué día son los idus de marzo?",
+      "opciones": [
+        "El 31 de marzo",
+        "El 1 de marzo",
+        "El 14 de marzo",
+        "El 15 de marzo"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4114",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos pueblos antiguos NO era griego (heleno)?",
+      "opciones": [
+        "Los aqueos",
+        "Los ilirios",
+        "Los jonios",
+        "Los dorios"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4115",
+      "tipo": "test",
+      "enunciado": "¿Cuántos alunizajes tripulados ha habido?",
+      "opciones": [
+        "3",
+        "7",
+        "6",
+        "1"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4116",
+      "tipo": "test",
+      "enunciado": "¿En qué año salió Nelson Mandela de la cárcel?",
+      "opciones": [
+        "1992",
+        "1980",
+        "1990",
+        "1994"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4118",
+      "tipo": "test",
+      "enunciado": "¿Qué país entró en la Unión Europea en 2013?",
+      "opciones": [
+        "Turquía",
+        "Croacia",
+        "Eslovenia",
+        "Bulgaria"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4119",
+      "tipo": "test",
+      "enunciado": "¿A quién se atribuye la frase «Que coman pasteles», aunque probablemente nunca la dijo?",
+      "opciones": [
+        "Isabel I",
+        "María Antonieta",
+        "Napoleón",
+        "El zar Nicolás II"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4120",
+      "tipo": "test",
+      "enunciado": "¿Cuánto duró la Segunda Guerra Mundial?",
+      "opciones": [
+        "6 años",
+        "7 años",
+        "4 años",
+        "5 años"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4123",
+      "tipo": "test",
+      "enunciado": "¿Qué país sudamericano se enfrentó a Reino Unido por las Malvinas en 1982?",
+      "opciones": [
+        "Brasil",
+        "Venezuela",
+        "Argentina",
+        "Chile"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4124",
+      "tipo": "test",
+      "enunciado": "¿Cuál era el apodo de Manfred von Richthofen?",
+      "opciones": [
+        "El As de las Alturas",
+        "El Barón Rojo",
+        "El Halcón Negro",
+        "La Serpiente Azul"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4129",
+      "tipo": "test",
+      "enunciado": "¿De qué religión son textos sagrados los Vedas?",
+      "opciones": [
+        "El judaísmo",
+        "El islam",
+        "El hinduismo",
+        "El budismo"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4130",
+      "tipo": "test",
+      "enunciado": "¿Quién murió en el accidente de avión de Smolensk (Rusia) en 2010?",
+      "opciones": [
+        "El presidente de Polonia",
+        "El papa Juan Pablo II",
+        "El presidente de Rusia",
+        "El primer ministro de Ucrania"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4131",
+      "tipo": "test",
+      "enunciado": "¿Quién fue el general de los confederados en la guerra de Secesión?",
+      "opciones": [
+        "Robert E. Lee",
+        "George A. Custer",
+        "Ulysses S. Grant",
+        "George B. McClellan"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4132",
+      "tipo": "test",
+      "enunciado": "¿Qué general cruzó los Alpes con elefantes durante la segunda guerra púnica?",
+      "opciones": [
+        "Alejandro Magno",
+        "Aníbal",
+        "Germánico",
+        "Escipión"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4133",
+      "tipo": "test",
+      "enunciado": "¿En qué calle empezó el gran incendio de Londres de 1666?",
+      "opciones": [
+        "Abbey Road",
+        "Oxford Street",
+        "Baker Street",
+        "Pudding Lane"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4134",
+      "tipo": "test",
+      "enunciado": "¿En qué año empezó la Primera Guerra Mundial?",
+      "opciones": [
+        "1905",
+        "1919",
+        "1925",
+        "1914"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4135",
+      "tipo": "test",
+      "enunciado": "Según la leyenda, ¿qué animal de madera construyeron los griegos para entrar en Troya?",
+      "opciones": [
+        "Un elefante",
+        "Una cabra",
+        "Un lobo",
+        "Un caballo"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4137",
+      "tipo": "test",
+      "enunciado": "¿Cuál fue la batalla más larga de la Primera Guerra Mundial, de unos 300 días?",
+      "opciones": [
+        "Passchendaele",
+        "El Marne",
+        "Amiens",
+        "Verdún"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4139",
+      "tipo": "test",
+      "enunciado": "¿Quién fue el primer presidente de Estados Unidos?",
+      "opciones": [
+        "Thomas Jefferson",
+        "George Washington",
+        "Abraham Lincoln",
+        "James Madison"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4143",
+      "tipo": "test",
+      "enunciado": "¿Cuál se considera la civilización más antigua conocida?",
+      "opciones": [
+        "Fenicia",
+        "Sumeria",
+        "Asiria",
+        "Babilonia"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4144",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llamaba antes Sri Lanka?",
+      "opciones": [
+        "Siam",
+        "Ceilán",
+        "Formosa",
+        "Birmania"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4145",
+      "tipo": "test",
+      "enunciado": "En 1945, Estados Unidos lanzó bombas atómicas sobre Hiroshima y ¿qué otra ciudad?",
+      "opciones": [
+        "Nagasaki",
+        "Kagoshima",
+        "Kawasaki",
+        "Tokio"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4146",
+      "tipo": "test",
+      "enunciado": "¿En qué año invadió Irak Kuwait?",
+      "opciones": [
+        "1986",
+        "1992",
+        "1990",
+        "1988"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4148",
+      "tipo": "test",
+      "enunciado": "¿Con qué nombre es más conocido William Frederick Cody?",
+      "opciones": [
+        "Billy el Niño",
+        "Buffalo Bill",
+        "Toro Sentado",
+        "Wild Bill Hickok"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4149",
+      "tipo": "test",
+      "enunciado": "¿En qué país se construyó la Estatua de la Libertad?",
+      "opciones": [
+        "Francia",
+        "Alemania",
+        "Inglaterra",
+        "España"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4153",
+      "tipo": "test",
+      "enunciado": "¿En qué año terminó la Gran Guerra del Norte entre Rusia y Suecia?",
+      "opciones": [
+        "1726",
+        "1727",
+        "1721",
+        "1724"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4154",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos países se mantuvo neutral en la Segunda Guerra Mundial?",
+      "opciones": [
+        "Suiza",
+        "Reino Unido",
+        "Francia",
+        "Italia"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4155",
+      "tipo": "test",
+      "enunciado": "¿Cuántos barcos gemelos tuvo el Titanic?",
+      "opciones": [
+        "2",
+        "4",
+        "3",
+        "1"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4157",
+      "tipo": "test",
+      "enunciado": "¿Quién fue el primer presidente de Kenia?",
+      "opciones": [
+        "Tom Mboya",
+        "Jomo Kenyatta",
+        "Daniel arap Moi",
+        "Oginga Odinga"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4158",
+      "tipo": "test",
+      "enunciado": "¿Qué ciudad importante cayó en 1453?",
+      "opciones": [
+        "Roma",
+        "Hamburgo",
+        "Atenas",
+        "Constantinopla"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4159",
+      "tipo": "test",
+      "enunciado": "¿En qué año fue el accidente nuclear de Chernóbil?",
+      "opciones": [
+        "1975",
+        "1991",
+        "1998",
+        "1986"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4160",
+      "tipo": "test",
+      "enunciado": "¿Quién sucedió a Stalin al frente de la Unión Soviética?",
+      "opciones": [
+        "Gueorgui Malenkov",
+        "Lavrenti Beria",
+        "Viacheslav Mólotov",
+        "Nikita Jruschov"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4161",
+      "tipo": "test",
+      "enunciado": "¿Cuántos años tenía Hitler cuando murió?",
+      "opciones": [
+        "47",
+        "43",
+        "65",
+        "56"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4162",
+      "tipo": "test",
+      "enunciado": "El Titanic se hundió en su viaje inaugural de Southampton a ¿qué ciudad?",
+      "opciones": [
+        "Filadelfia",
+        "Washington",
+        "Boston",
+        "Nueva York"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4164",
+      "tipo": "test",
+      "enunciado": "¿Quién encabezó la revolución comunista en Rusia?",
+      "opciones": [
+        "Trotski",
+        "Gorbachov",
+        "Lenin",
+        "Stalin"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4165",
+      "tipo": "test",
+      "enunciado": "¿En qué país nació Stalin?",
+      "opciones": [
+        "Alemania",
+        "Polonia",
+        "Georgia",
+        "Rusia"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4167",
+      "tipo": "test",
+      "enunciado": "¿Quién formuló y desarrolló las ideas del socialismo científico?",
+      "opciones": [
+        "Hegel",
+        "Karl Marx",
+        "Stalin",
+        "Lenin"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4170",
+      "tipo": "test",
+      "enunciado": "¿En qué año se disolvió la Unión Soviética?",
+      "opciones": [
+        "1990",
+        "1992",
+        "1991",
+        "1989"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4171",
+      "tipo": "test",
+      "enunciado": "¿Quién fue el primer gobernante de Haití tras la independencia?",
+      "opciones": [
+        "Toussaint Louverture",
+        "Alexandre Pétion",
+        "Jean-Jacques Dessalines",
+        "Henri Christophe"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4173",
+      "tipo": "test",
+      "enunciado": "¿Qué país se conoce como «el cementerio de los imperios»?",
+      "opciones": [
+        "China",
+        "Afganistán",
+        "Rusia",
+        "Irak"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4175",
+      "tipo": "test",
+      "enunciado": "¿En qué año terminó la Segunda Guerra Mundial?",
+      "opciones": [
+        "1945",
+        "1950",
+        "1943",
+        "1947"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4176",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos monumentos NO está entre las siete maravillas del mundo antiguo?",
+      "opciones": [
+        "La Gran Pirámide de Guiza",
+        "El Coloso de Rodas",
+        "La Gran Muralla china",
+        "El Faro de Alejandría"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    }
+  ]
+}

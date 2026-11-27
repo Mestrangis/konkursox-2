@@ -1,0 +1,414 @@
+{
+  "formato": "konkursox-banco",
+  "version": 1,
+  "nombre": "Música · Media",
+  "grupo": "Open Trivia DB",
+  "licencia": "Preguntas de Open Trivia Database (opentdb.com), licencia CC BY-SA 4.0, traducidas y adaptadas al español. Este banco se distribuye con la misma licencia (CC BY-SA 4.0).",
+  "preguntas": [
+    {
+      "id": "o1037",
+      "tipo": "sino",
+      "enunciado": "¿Detuvieron a tres miembros de 2 Live Crew por tocar en directo canciones de «As Nasty As They Wanna Be»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1051",
+      "tipo": "sino",
+      "enunciado": "¿Es Halsey el nombre artístico de Ashley Frangipane?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1052",
+      "tipo": "sino",
+      "enunciado": "¿Representa la «Obertura 1812» de Chaikovski la guerra de 1812 entre EE. UU. y Gran Bretaña?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1066",
+      "tipo": "sino",
+      "enunciado": "¿Fue Pete Townshend el primer músico en destrozar su instrumento en directo?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1072",
+      "tipo": "sino",
+      "enunciado": "¿Aparece la central eléctrica de Battersea en la portada de «Animals» de Pink Floyd?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1075",
+      "tipo": "sino",
+      "enunciado": "¿Colaboró Metallica con Mr. Bean en un sencillo benéfico de 1992?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1082",
+      "tipo": "sino",
+      "enunciado": "¿Tiene 15 canciones el disco «Reputation» de Taylor Swift?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1083",
+      "tipo": "sino",
+      "enunciado": "¿Es «Rumble» de Link Wray la única canción instrumental prohibida en la radio de EE. UU.?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1101",
+      "tipo": "sino",
+      "enunciado": "¿Ganó «Crank That» de Soulja Boy el Grammy a la mejor canción de rap en 2007?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1114",
+      "tipo": "sino",
+      "enunciado": "¿Es «The Division Bell» el último disco de Pink Floyd?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1117",
+      "tipo": "sino",
+      "enunciado": "¿Es Cordozar Calvin Broadus Jr. el nombre real de Snoop Dogg?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1120",
+      "tipo": "sino",
+      "enunciado": "¿Grabó Dave Grohl él solo el primer disco de Foo Fighters?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1128",
+      "tipo": "sino",
+      "enunciado": "¿Llevó una campaña de Facebook «Killing in the Name» de Rage Against the Machine al número uno navideño británico de 2009?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1134",
+      "tipo": "sino",
+      "enunciado": "¿Firma el sello Monstercat canciones sueltas en vez de artistas?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1155",
+      "tipo": "sino",
+      "enunciado": "¿Es el productor escocés Calvin Harris de Dumfries?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1165",
+      "tipo": "sino",
+      "enunciado": "¿Se considera «American Idiot» de Green Day una «ópera punk rock»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1192",
+      "tipo": "sino",
+      "enunciado": "¿Ganó «The Suburbs» de Arcade Fire el Grammy al disco del año en 2011?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1195",
+      "tipo": "sino",
+      "enunciado": "¿Existe de verdad un grupo llamado «Neutral Milk Hotel»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1207",
+      "tipo": "sino",
+      "enunciado": "¿Es Nick Mason el único miembro que aparece en todos los discos de Pink Floyd?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1212",
+      "tipo": "sino",
+      "enunciado": "¿Ha publicado Panic! at the Disco solo cuatro discos?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1216",
+      "tipo": "sino",
+      "enunciado": "¿Colaboró Future con Kendrick Lamar en la canción «Mask Off»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1219",
+      "tipo": "sino",
+      "enunciado": "¿Sale un Volkswagen Escarabajo al fondo de la portada de «Abbey Road»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1221",
+      "tipo": "sino",
+      "enunciado": "¿Es cierto que «My Way» (1969) no la escribió Frank Sinatra?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1262",
+      "tipo": "sino",
+      "enunciado": "¿Es de Twenty One Pilots la canción «The Motion» con Sampha?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1276",
+      "tipo": "sino",
+      "enunciado": "¿Escribió Shel Silverstein la canción country «A Boy Named Sue»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1290",
+      "tipo": "sino",
+      "enunciado": "¿Publicó Kygo una remezcla de «Sexual Healing» de Marvin Gaye?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1295",
+      "tipo": "sino",
+      "enunciado": "¿Se inspiró el nombre de los Beatles en el grupo The Crickets?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    }
+  ]
+}

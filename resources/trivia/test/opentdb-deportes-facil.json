@@ -1,0 +1,672 @@
+{
+  "formato": "konkursox-banco",
+  "version": 1,
+  "nombre": "Deportes · Fácil",
+  "grupo": "Open Trivia DB",
+  "licencia": "Preguntas de Open Trivia Database (opentdb.com), licencia CC BY-SA 4.0, traducidas y adaptadas al español. Este banco se distribuye con la misma licencia (CC BY-SA 4.0).",
+  "preguntas": [
+    {
+      "id": "o3521",
+      "tipo": "test",
+      "enunciado": "¿Qué país organizó el Mundial de fútbol de 2018?",
+      "opciones": [
+        "Alemania",
+        "Rusia",
+        "Arabia Saudí",
+        "Estados Unidos"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3525",
+      "tipo": "test",
+      "enunciado": "¿Quién ganó la Liga de Campeones en 2016?",
+      "opciones": [
+        "Atlético de Madrid",
+        "Bayern de Múnich",
+        "Real Madrid",
+        "Manchester City"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3527",
+      "tipo": "test",
+      "enunciado": "¿Cuántos futbolistas tiene que haber en el campo a la vez?",
+      "opciones": [
+        "20",
+        "22",
+        "24",
+        "26"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3530",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos deportes NO forma parte del triatlón?",
+      "opciones": [
+        "La natación",
+        "El ciclismo",
+        "La equitación",
+        "La carrera a pie"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3531",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama el estadio del Manchester United?",
+      "opciones": [
+        "Anfield",
+        "Etihad Stadium",
+        "St James' Park",
+        "Old Trafford"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3532",
+      "tipo": "test",
+      "enunciado": "¿De qué ciudad eran originalmente los Dodgers de Los Ángeles?",
+      "opciones": [
+        "Las Vegas",
+        "Seattle",
+        "Boston",
+        "Brooklyn (Nueva York)"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3534",
+      "tipo": "test",
+      "enunciado": "¿Qué club de fútbol inglés tiene el apodo de «los zorros» (The Foxes)?",
+      "opciones": [
+        "West Bromwich Albion",
+        "Bradford City",
+        "Northampton Town",
+        "Leicester City"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3536",
+      "tipo": "test",
+      "enunciado": "¿Quién ganó el Mundial de Fórmula 1 de pilotos en 2017?",
+      "opciones": [
+        "Sebastian Vettel",
+        "Nico Rosberg",
+        "Max Verstappen",
+        "Lewis Hamilton"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3537",
+      "tipo": "test",
+      "enunciado": "¿Cuántos jugadores tiene un equipo de fútbol en el campo?",
+      "opciones": [
+        "8",
+        "9",
+        "11",
+        "10"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3538",
+      "tipo": "test",
+      "enunciado": "¿Qué país ganó el Mundial de Rusia 2018?",
+      "opciones": [
+        "Francia",
+        "Inglaterra",
+        "Bélgica",
+        "Croacia"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3539",
+      "tipo": "test",
+      "enunciado": "¿Qué boxeador fue sancionado por arrancarle un trozo de oreja de un mordisco a Evander Holyfield en 1997?",
+      "opciones": [
+        "Mike Tyson",
+        "Lennox Lewis",
+        "Evander Holyfield",
+        "Roy Jones Jr."
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3541",
+      "tipo": "test",
+      "enunciado": "En los bolos, ¿cómo se llama hacer tres plenos seguidos?",
+      "opciones": [
+        "Birdie",
+        "Pavo (turkey)",
+        "Eagle",
+        "Flamenco"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3542",
+      "tipo": "test",
+      "enunciado": "¿De qué equipo es el estadio «Stadium of Light»?",
+      "opciones": [
+        "París Saint-Germain",
+        "Sunderland",
+        "Manchester United",
+        "Barcelona"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3543",
+      "tipo": "test",
+      "enunciado": "¿Qué selección ganó el Mundial de Brasil 2014?",
+      "opciones": [
+        "Países Bajos",
+        "Argentina",
+        "Alemania",
+        "Brasil"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3545",
+      "tipo": "test",
+      "enunciado": "¿Qué selección ganó la primera Liga de Naciones de la UEFA?",
+      "opciones": [
+        "Países Bajos",
+        "Portugal",
+        "Suiza",
+        "Inglaterra"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3546",
+      "tipo": "test",
+      "enunciado": "¿Quién ganó la Liga de Campeones en 2017?",
+      "opciones": [
+        "Atlético de Madrid",
+        "Real Madrid",
+        "Juventus",
+        "Mónaco"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3547",
+      "tipo": "test",
+      "enunciado": "¿Qué país organizó los Juegos Olímpicos de verano de 2020?",
+      "opciones": [
+        "Alemania",
+        "Japón",
+        "China",
+        "Australia"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3548",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama el palo con el que se golpea la bola en el billar?",
+      "opciones": [
+        "Taco",
+        "Mazo",
+        "Raqueta",
+        "Bate"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3550",
+      "tipo": "test",
+      "enunciado": "¿De qué continente son los clubes que juegan la Liga de Campeones de la UEFA?",
+      "opciones": [
+        "América del Sur",
+        "África",
+        "Europa",
+        "Asia"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3552",
+      "tipo": "test",
+      "enunciado": "En el Mundial 2014, ¿cómo acabó el Brasil-Alemania?",
+      "opciones": [
+        "1-5",
+        "1-7",
+        "1-6",
+        "2-6"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3553",
+      "tipo": "test",
+      "enunciado": "¿Qué equipo ganó la Premier League 2015-2016 tras una temporada de cuento?",
+      "opciones": [
+        "Leicester City",
+        "Watford",
+        "Tottenham Hotspur",
+        "Stoke City"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3554",
+      "tipo": "test",
+      "enunciado": "¿Cuándo se jugó el primer partido internacional oficial de fútbol?",
+      "opciones": [
+        "1872",
+        "1863",
+        "1880",
+        "1865"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3555",
+      "tipo": "test",
+      "enunciado": "En béisbol, ¿cuántas bolas malas hacen falta para que el bateador pase a primera base?",
+      "opciones": [
+        "1",
+        "2",
+        "4",
+        "3"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3556",
+      "tipo": "test",
+      "enunciado": "¿Cuántos puntos anotó LeBron James en su primer partido de la NBA?",
+      "opciones": [
+        "19",
+        "69",
+        "41",
+        "25"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3557",
+      "tipo": "test",
+      "enunciado": "¿Con qué equipo ganó Steven Gerrard la Liga de Campeones?",
+      "opciones": [
+        "Real Madrid",
+        "Manchester City",
+        "Chelsea",
+        "Liverpool"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3561",
+      "tipo": "test",
+      "enunciado": "¿De qué país son futbolistas como Cafú, Roberto Carlos y Pelé?",
+      "opciones": [
+        "Argentina",
+        "Portugal",
+        "España",
+        "Brasil"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3562",
+      "tipo": "test",
+      "enunciado": "¿En qué año ganó Jenson Button su único Mundial de Fórmula 1?",
+      "opciones": [
+        "2006",
+        "2007",
+        "2009",
+        "2010"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3563",
+      "tipo": "test",
+      "enunciado": "¿Cuándo se fundó el Schalke 04?",
+      "opciones": [
+        "1904",
+        "1999",
+        "2008",
+        "1909"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3564",
+      "tipo": "test",
+      "enunciado": "¿Qué jugador afroamericano contribuyó a acabar con la segregación en las Grandes Ligas de béisbol?",
+      "opciones": [
+        "Jackie Robinson",
+        "Satchel Paige",
+        "Roy Campanella",
+        "Curt Flood"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3566",
+      "tipo": "test",
+      "enunciado": "¿A qué selección ganó Inglaterra en la final del Mundial de 1966?",
+      "opciones": [
+        "Portugal",
+        "Alemania Occidental",
+        "Brasil",
+        "Unión Soviética"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3567",
+      "tipo": "test",
+      "enunciado": "¿En qué deporte se usan los términos «love», «deuce», «match» y «volley»?",
+      "opciones": [
+        "Baloncesto",
+        "Curling",
+        "Tenis",
+        "Críquet"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3568",
+      "tipo": "test",
+      "enunciado": "¿Qué país organizó el Mundial de fútbol de 2022?",
+      "opciones": [
+        "Suiza",
+        "Estados Unidos",
+        "Catar",
+        "Japón"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3569",
+      "tipo": "test",
+      "enunciado": "¿Quién ganó el Mundial de Fórmula 1 de 2016?",
+      "opciones": [
+        "Nico Rosberg",
+        "Lewis Hamilton",
+        "Kimi Räikkönen",
+        "Max Verstappen"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3572",
+      "tipo": "test",
+      "enunciado": "En golf, ¿cómo se llama hacer un hoyo con dos golpes menos del par?",
+      "opciones": [
+        "Eagle",
+        "Albatros",
+        "Birdie",
+        "Bogey"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3573",
+      "tipo": "test",
+      "enunciado": "¿En qué deporte se usa un volante (pluma)?",
+      "opciones": [
+        "Críquet",
+        "Tenis de mesa",
+        "Bádminton",
+        "Rugby"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3575",
+      "tipo": "test",
+      "enunciado": "¿Quién ganó el Mundial de Fórmula 1 de 2015?",
+      "opciones": [
+        "Nico Rosberg",
+        "Lewis Hamilton",
+        "Sebastian Vettel",
+        "Jenson Button"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3576",
+      "tipo": "test",
+      "enunciado": "¿Qué día fue la ceremonia de clausura de los Juegos Olímpicos de Río 2016?",
+      "opciones": [
+        "23 de agosto",
+        "21 de agosto",
+        "19 de agosto",
+        "17 de agosto"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3579",
+      "tipo": "test",
+      "enunciado": "¿Qué piloto ha sido campeón del mundo de Fórmula 1 siete veces, todo un récord compartido?",
+      "opciones": [
+        "Fernando Alonso",
+        "Ayrton Senna",
+        "Michael Schumacher",
+        "Jim Clark"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3580",
+      "tipo": "test",
+      "enunciado": "¿A quién se suele llamar «el Maestro» en el tenis masculino?",
+      "opciones": [
+        "Bill Tilden",
+        "Boris Becker",
+        "Roger Federer",
+        "Pete Sampras"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    }
+  ]
+}

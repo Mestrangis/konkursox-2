@@ -1,0 +1,1947 @@
+{
+  "formato": "konkursox-banco",
+  "version": 1,
+  "nombre": "Cultura general · Media",
+  "grupo": "Open Trivia DB",
+  "licencia": "Preguntas de Open Trivia Database (opentdb.com), licencia CC BY-SA 4.0, traducidas y adaptadas al español. Este banco se distribuye con la misma licencia (CC BY-SA 4.0).",
+  "preguntas": [
+    {
+      "id": "o215",
+      "tipo": "test",
+      "enunciado": "¿Cuáles son los edificios gemelos más altos del mundo, con 452 metros?",
+      "opciones": [
+        "Emirates Towers (Emiratos Árabes)",
+        "Torres Huaguoyuan (China)",
+        "Torres Petronas (Malasia)",
+        "Palm Towers (Catar)"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o216",
+      "tipo": "test",
+      "enunciado": "¿Qué arquitecto, fallecido en 2019 a los 102 años, diseñó la pirámide de cristal del Louvre?",
+      "opciones": [
+        "Pascale Guédot",
+        "Frank Gehry",
+        "I. M. Pei",
+        "Wang Shu"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o217",
+      "tipo": "test",
+      "enunciado": "¿De dónde es originaria la piña?",
+      "opciones": [
+        "Sudamérica",
+        "Hawái",
+        "Europa",
+        "Asia"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o218",
+      "tipo": "test",
+      "enunciado": "¿De qué se hace el auténtico haggis escocés?",
+      "opciones": [
+        "Corazón, hígado y pulmones de oveja",
+        "Corazón, riñones y pulmones de oveja",
+        "Hígado, riñones y ojos de oveja",
+        "Una oveja entera"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o219",
+      "tipo": "test",
+      "enunciado": "¿Quién inventó el pastafarismo?",
+      "opciones": [
+        "Bobby Henderson",
+        "Bill Nye",
+        "Eric Tignor",
+        "Zach Soldi"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o220",
+      "tipo": "test",
+      "enunciado": "¿Cómo se dice «tomate» en italiano?",
+      "opciones": [
+        "Cipolla",
+        "Peperoncino",
+        "Aglio",
+        "Pomodoro"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o221",
+      "tipo": "test",
+      "enunciado": "¿En qué año se fundó McDonald's?",
+      "opciones": [
+        "1964",
+        "1951",
+        "1947",
+        "1955"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o223",
+      "tipo": "test",
+      "enunciado": "¿Qué montaña tiene la cumbre más alta de Norteamérica?",
+      "opciones": [
+        "Pico de Orizaba (México)",
+        "Monte San Elías (EE. UU. y Canadá)",
+        "Monte Logan (Canadá)",
+        "Denali (EE. UU.)"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o226",
+      "tipo": "test",
+      "enunciado": "¿Qué prenda suele llevar un escocés en una boda?",
+      "opciones": [
+        "Vestido",
+        "Kilt",
+        "Túnica",
+        "Falda larga"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o227",
+      "tipo": "test",
+      "enunciado": "¿Cuánto medía Kingda Ka, la montaña rusa más alta del mundo de 2005 a 2024?",
+      "opciones": [
+        "131 metros",
+        "121 metros",
+        "139 metros",
+        "152 metros"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o228",
+      "tipo": "test",
+      "enunciado": "¿Qué bebida alcohólica se hace sobre todo con bayas de enebro?",
+      "opciones": [
+        "Ron",
+        "Tequila",
+        "Ginebra",
+        "Vodka"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o229",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos refrescos salió antes?",
+      "opciones": [
+        "Dr Pepper",
+        "Mountain Dew",
+        "Sprite",
+        "Coca-Cola"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o230",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama el primer vídeo que se subió a YouTube?",
+      "opciones": [
+        "Her new puppy",
+        "Me at the zoo",
+        "Carrie rides a truck",
+        "Tribute"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o232",
+      "tipo": "test",
+      "enunciado": "¿Qué es un «dead mall» (centro comercial muerto)?",
+      "opciones": [
+        "Uno con muchos locales vacíos y poca gente",
+        "Uno fuera del horario de apertura",
+        "Uno sin ninguna tienda",
+        "Uno declarado en ruina"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o237",
+      "tipo": "test",
+      "enunciado": "¿Adónde iba el desaparecido vuelo MH370?",
+      "opciones": [
+        "Pekín",
+        "Tokio",
+        "Kuala Lumpur",
+        "Singapur"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o238",
+      "tipo": "test",
+      "enunciado": "¿En qué país se celebraron los Juegos Olímpicos de verano de 1992?",
+      "opciones": [
+        "España",
+        "Estados Unidos",
+        "Rusia",
+        "Corea del Sur"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o242",
+      "tipo": "test",
+      "enunciado": "¿Cómo se dice «invierno» en ruso (transcrito)?",
+      "opciones": [
+        "Zima",
+        "Leto",
+        "Vesna",
+        "Osen"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o245",
+      "tipo": "test",
+      "enunciado": "¿Qué signo del zodiaco tiene alguien nacido el 14 de febrero?",
+      "opciones": [
+        "Capricornio",
+        "Escorpio",
+        "Piscis",
+        "Acuario"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o246",
+      "tipo": "test",
+      "enunciado": "¿De qué país europeo es originaria la ensalada coleslaw?",
+      "opciones": [
+        "Reino Unido",
+        "Dinamarca",
+        "Alemania",
+        "Países Bajos"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o247",
+      "tipo": "test",
+      "enunciado": "Un doctor con un «PhD» es doctor ¿en qué, literalmente?",
+      "opciones": [
+        "En Frenología",
+        "En Psicología",
+        "En Fisioterapia",
+        "En Filosofía"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o249",
+      "tipo": "test",
+      "enunciado": "¿De qué tipo de cáncer murió Steve Jobs?",
+      "opciones": [
+        "De huesos",
+        "De estómago",
+        "De hígado",
+        "De páncreas"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o250",
+      "tipo": "test",
+      "enunciado": "¿Qué palabra representa la letra M en el alfabeto fonético de la OTAN?",
+      "opciones": [
+        "Mark",
+        "Max",
+        "Matthew",
+        "Mike"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o253",
+      "tipo": "test",
+      "enunciado": "«Ser un accidente esperando a ocurrir» es un ejemplo de...",
+      "opciones": [
+        "Metáfora",
+        "Analogía",
+        "Frase hecha",
+        "Símil"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o254",
+      "tipo": "test",
+      "enunciado": "¿Qué montaña tiene la cumbre más alta de Australia?",
+      "opciones": [
+        "Monte Zeil",
+        "Monte Kosciuszko",
+        "Monte Bartle Frere",
+        "Monte Ossa"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o255",
+      "tipo": "test",
+      "enunciado": "¿Qué montaña tiene la cumbre más alta de Europa?",
+      "opciones": [
+        "Mont Blanc (Francia)",
+        "Elbrús (Rusia)",
+        "Ararat (Turquía)",
+        "Shjara (Georgia)"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o256",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estas webs es la más visitada?",
+      "opciones": [
+        "Google",
+        "Facebook",
+        "Wikipedia",
+        "YouTube"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o257",
+      "tipo": "test",
+      "enunciado": "¿Qué cóctel se hace con whisky escocés y Drambuie?",
+      "opciones": [
+        "Rusty Nail",
+        "Sex on the Beach",
+        "Manhattan",
+        "Destornillador"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o261",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estas empresas NO fabrica coches?",
+      "opciones": [
+        "Ducati",
+        "Nissan",
+        "Fiat",
+        "GMC"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o262",
+      "tipo": "test",
+      "enunciado": "¿Qué empresa compró Compaq por 25 000 millones de dólares en 2002?",
+      "opciones": [
+        "Hewlett-Packard",
+        "Dell",
+        "Toshiba",
+        "Asus"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o263",
+      "tipo": "test",
+      "enunciado": "En la antigua Grecia, si tu oficio era «hippeus», ¿qué tendrías?",
+      "opciones": [
+        "Un caballo",
+        "Un barco",
+        "Un telar",
+        "Una lira"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o264",
+      "tipo": "test",
+      "enunciado": "¿Qué es un gallardete?",
+      "opciones": [
+        "Una cuerda",
+        "Una ventana",
+        "Una bandera",
+        "Un tipo de comida"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o265",
+      "tipo": "test",
+      "enunciado": "¿Cuál es la especia más cara del mundo a igualdad de peso?",
+      "opciones": [
+        "Canela",
+        "Cardamomo",
+        "Azafrán",
+        "Vainilla"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o266",
+      "tipo": "test",
+      "enunciado": "¿Qué analiza la web «Shut Up & Sit Down»?",
+      "opciones": [
+        "Juegos de mesa",
+        "Series de televisión",
+        "Videojuegos",
+        "Películas"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o267",
+      "tipo": "test",
+      "enunciado": "¿Qué símbolo se llegó a considerar la letra número 27 del alfabeto inglés?",
+      "opciones": [
+        "Ampersand (&)",
+        "Interrobang (‽)",
+        "Tilde (~)",
+        "Calderón (¶)"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o268",
+      "tipo": "test",
+      "enunciado": "¿Cuáles son los tres Pokémon iniciales de Pokémon Blanco y Negro?",
+      "opciones": [
+        "Snivy, Tepig y Oshawott",
+        "Chespin, Tepig y Froakie",
+        "Snivy, Fennekin y Froakie",
+        "Chespin, Fennekin y Oshawott"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o269",
+      "tipo": "test",
+      "enunciado": "¿Cómo se dice «ventana» en sueco?",
+      "opciones": [
+        "Skärm",
+        "Fönster",
+        "Hål",
+        "Ruta"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o270",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos cantautores estadounidenses ganó el Nobel de Literatura?",
+      "opciones": [
+        "Buddy Holly",
+        "Johnny Cash",
+        "Alice Cooper",
+        "Bob Dylan"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o271",
+      "tipo": "test",
+      "enunciado": "Si el pelo de alguien es «rubio Tiziano», ¿de qué color es?",
+      "opciones": [
+        "Castaño",
+        "Rubio platino",
+        "Negro",
+        "Pelirrojo"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o272",
+      "tipo": "test",
+      "enunciado": "¿En qué estilo arquitectónico fue una figura clave Le Corbusier?",
+      "opciones": [
+        "Neogótico",
+        "Neoclasicismo",
+        "Barroco",
+        "Movimiento moderno"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o274",
+      "tipo": "test",
+      "enunciado": "¿Cuántos años se cumplen en las bodas de cristal?",
+      "opciones": [
+        "10",
+        "25",
+        "20",
+        "15"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o275",
+      "tipo": "test",
+      "enunciado": "¿Qué frase latina significa más o menos «aprovecha el momento»?",
+      "opciones": [
+        "Plus ultra",
+        "Sic semper tyrannis",
+        "Memento mori",
+        "Carpe diem"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o276",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llamaba a los dictadores militares que gobernaron Japón entre los siglos XII y XIX?",
+      "opciones": [
+        "Samurái",
+        "Shinobi",
+        "Sogún",
+        "Ninja"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o279",
+      "tipo": "test",
+      "enunciado": "¿Cuál es la última letra del alfabeto griego?",
+      "opciones": [
+        "Kappa",
+        "Omega",
+        "Épsilon",
+        "Mu"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o280",
+      "tipo": "test",
+      "enunciado": "¿Qué tipo de cerveza es la mexicana Corona?",
+      "opciones": [
+        "Pilsner negra",
+        "Lager clara",
+        "Porter báltica",
+        "India Pale Ale"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o281",
+      "tipo": "test",
+      "enunciado": "¿En qué país se fundó la marca de neumáticos Michelin en 1889?",
+      "opciones": [
+        "Francia",
+        "Italia",
+        "Alemania",
+        "Reino Unido"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o282",
+      "tipo": "test",
+      "enunciado": "Además del español, ¿qué otra lengua es oficial en Barcelona?",
+      "opciones": [
+        "Francés",
+        "Euskera",
+        "Catalán",
+        "Gallego"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o283",
+      "tipo": "test",
+      "enunciado": "¿Con qué se aromatiza el té negro Earl Grey?",
+      "opciones": [
+        "Lavanda",
+        "Miel",
+        "Aceite de bergamota",
+        "Vainilla"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o284",
+      "tipo": "test",
+      "enunciado": "¿En qué año salió el primer iPod de Apple?",
+      "opciones": [
+        "2000",
+        "2001",
+        "1998",
+        "1999"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o286",
+      "tipo": "test",
+      "enunciado": "¿Cuál es el nombre real del gato del meme «Grumpy Cat»?",
+      "opciones": [
+        "Tardar Sauce",
+        "Colonel Meow",
+        "Lil Bub",
+        "Maru"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o288",
+      "tipo": "test",
+      "enunciado": "¿Cómo se dice «cuchara» en alemán?",
+      "opciones": [
+        "Gabel",
+        "Essstäbchen",
+        "Löffel",
+        "Messer"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o289",
+      "tipo": "test",
+      "enunciado": "En una entrevista de 1994, ¿qué truco hizo Bill Gates ante la cámara?",
+      "opciones": [
+        "Saltar de espaldas por encima de una mesa",
+        "Ponerse de cabeza",
+        "Saltar por encima de una silla de oficina",
+        "Escribir en un teclado haciendo el pino"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o290",
+      "tipo": "test",
+      "enunciado": "¿Qué montaña tiene la cumbre más alta de África?",
+      "opciones": [
+        "Monte Kenia (Kenia)",
+        "Kilimanjaro (Tanzania)",
+        "Monte Stanley (Congo y Uganda)",
+        "Monte Speke (Uganda)"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o291",
+      "tipo": "test",
+      "enunciado": "¿Quién fundó el Grupo LEGO?",
+      "opciones": [
+        "Ole Kirk Christiansen",
+        "Jens Niels Christiansen",
+        "Kirstine Christiansen",
+        "Gerhardt Kirk Christiansen"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o292",
+      "tipo": "test",
+      "enunciado": "Apple puso nombres de grandes felinos a seis versiones de Mac OS X. ¿Cuál fue el de la de 2007?",
+      "opciones": [
+        "Leopard",
+        "Panther",
+        "Tiger",
+        "Puma"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o293",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama la técnica japonesa de medicina alternativa cuyo nombre significa «presión con los dedos»?",
+      "opciones": [
+        "Majime",
+        "Shiatsu",
+        "Ukiyo",
+        "Ikigai"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o294",
+      "tipo": "test",
+      "enunciado": "¿Hacia dónde mira la Estatua de la Libertad?",
+      "opciones": [
+        "Al suroeste",
+        "Al noroeste",
+        "Al sureste",
+        "Al noreste"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o295",
+      "tipo": "test",
+      "enunciado": "¿Qué red de metro tiene más estaciones del mundo, con 472?",
+      "opciones": [
+        "Metro de Shanghái",
+        "Metro de Londres",
+        "U-Bahn de Berlín",
+        "Metro de Nueva York"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o296",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos cuatro edificios es el más alto, con 381 metros?",
+      "opciones": [
+        "Hotel Gevora (Emiratos Árabes)",
+        "Torre del Banco de China (Hong Kong)",
+        "Torre Federación (Rusia)",
+        "Empire State (EE. UU.)"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o297",
+      "tipo": "test",
+      "enunciado": "¿En qué deporte destacaron los hermanos Bob y Mike Bryan?",
+      "opciones": [
+        "Béisbol",
+        "Baloncesto",
+        "Fútbol americano",
+        "Tenis"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o298",
+      "tipo": "test",
+      "enunciado": "¿En qué año se lanzó Facebook?",
+      "opciones": [
+        "2003",
+        "2006",
+        "2005",
+        "2004"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o301",
+      "tipo": "test",
+      "enunciado": "El cometa Halley no volverá hasta 2061. ¿En qué año se acercó a la Tierra la última vez?",
+      "opciones": [
+        "1942",
+        "1909",
+        "1986",
+        "2001"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o302",
+      "tipo": "test",
+      "enunciado": "¿Qué río pasa por Glasgow?",
+      "opciones": [
+        "Clyde",
+        "Tweed",
+        "Dee",
+        "Tay"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o303",
+      "tipo": "test",
+      "enunciado": "¿Qué fabricante italiano de coches se hizo con el control de Chrysler en 2011?",
+      "opciones": [
+        "Ferrari",
+        "Fiat",
+        "Alfa Romeo",
+        "Maserati"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o305",
+      "tipo": "test",
+      "enunciado": "¿En qué año solo el 9 % de los hogares de EE. UU. tenía televisor?",
+      "opciones": [
+        "1950",
+        "1913",
+        "1969",
+        "1965"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o308",
+      "tipo": "test",
+      "enunciado": "¿A principios de qué década nació la subcultura gótica?",
+      "opciones": [
+        "Los 90",
+        "Los 70",
+        "Los 80",
+        "Los 2000"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o309",
+      "tipo": "test",
+      "enunciado": "¿Cuál es el orden de las palabras en japonés?",
+      "opciones": [
+        "Sujeto, verbo, objeto",
+        "Sujeto, objeto, verbo",
+        "Verbo, objeto, sujeto",
+        "Verbo, sujeto, objeto"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o310",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos cuatro edificios es el más alto, con 541 metros?",
+      "opciones": [
+        "One World Trade Center (EE. UU.)",
+        "Taipei 101 (Taiwán)",
+        "Torre Jin Mao (China)",
+        "Torre Willis (EE. UU.)"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o311",
+      "tipo": "test",
+      "enunciado": "¿En qué año se fundó WhatsApp?",
+      "opciones": [
+        "2009",
+        "2010",
+        "2007",
+        "2012"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o315",
+      "tipo": "test",
+      "enunciado": "¿En qué año se fundó Apple?",
+      "opciones": [
+        "1976",
+        "1978",
+        "1980",
+        "1974"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o317",
+      "tipo": "test",
+      "enunciado": "¿Cómo llaman los neerlandeses a su idioma?",
+      "opciones": [
+        "Nederlands",
+        "Deutsch",
+        "Dansk",
+        "Hollander"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o320",
+      "tipo": "test",
+      "enunciado": "¿Qué prohibió Cataluña en 2010, con efecto desde 2012?",
+      "opciones": [
+        "El flamenco",
+        "Las fiestas mayores",
+        "Los castells",
+        "Las corridas de toros"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o321",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos cuatro edificios es el más alto, con 828 metros?",
+      "opciones": [
+        "Ping An Finance Centre (China)",
+        "Torre de Shanghái (China)",
+        "Lotte World Tower (Corea del Sur)",
+        "Burj Khalifa (Emiratos Árabes)"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o324",
+      "tipo": "test",
+      "enunciado": "¿Qué disciplina se conoce a veces como «la ciencia lúgubre»?",
+      "opciones": [
+        "La política",
+        "La física",
+        "La filosofía",
+        "La economía"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o325",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama el famoso pez cantarín animatrónico que cantaba «Don't Worry, Be Happy»?",
+      "opciones": [
+        "Singing Fish",
+        "Big Billy Bass",
+        "Sardeen",
+        "Big Mouth Billy Bass"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o326",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estas lenguas NO es indoeuropea?",
+      "opciones": [
+        "Griego",
+        "Ruso",
+        "Letón",
+        "Húngaro"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o327",
+      "tipo": "test",
+      "enunciado": "¿Cuándo aprobó el Segundo Congreso Continental la Declaración de Independencia de EE. UU.?",
+      "opciones": [
+        "2 de julio de 1776",
+        "4 de julio de 1776",
+        "4 de junio de 1776",
+        "4 de mayo de 1776"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o328",
+      "tipo": "test",
+      "enunciado": "¿Cuál es la moneda de Laos?",
+      "opciones": [
+        "Dólar",
+        "Kip",
+        "Konra",
+        "Rublo"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o329",
+      "tipo": "test",
+      "enunciado": "¿Cuántas estrellas Michelin puede tener como máximo un restaurante?",
+      "opciones": [
+        "Cinco",
+        "Tres",
+        "Seis",
+        "Cuatro"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o330",
+      "tipo": "test",
+      "enunciado": "En la baraja francesa, ¿cuál es el único rey sin bigote?",
+      "opciones": [
+        "El de corazones",
+        "El de diamantes",
+        "El de tréboles",
+        "El de picas"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o331",
+      "tipo": "test",
+      "enunciado": "¿Qué caracteriza a una persona hirsuta?",
+      "opciones": [
+        "Que es graciosa",
+        "Que es alta",
+        "Que tiene mucho pelo",
+        "Que es maleducada"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o332",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llamaba al principio el buscador Google?",
+      "opciones": [
+        "Netscape Navigator",
+        "SearchPro",
+        "BackRub",
+        "CatMassage"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o333",
+      "tipo": "test",
+      "enunciado": "¿Qué país tiene más cervecerías trapenses?",
+      "opciones": [
+        "Países Bajos",
+        "Bélgica",
+        "Estados Unidos",
+        "Francia"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o336",
+      "tipo": "test",
+      "enunciado": "Linus Pauling ganó dos premios Nobel: el de Química y ¿cuál más?",
+      "opciones": [
+        "El de la Paz",
+        "El de Medicina",
+        "El de Física",
+        "El de Economía"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o338",
+      "tipo": "test",
+      "enunciado": "¿En qué país se conduce por la izquierda?",
+      "opciones": [
+        "Alemania",
+        "China",
+        "Japón",
+        "Rusia"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o339",
+      "tipo": "test",
+      "enunciado": "¿Cuál es la moneda de Polonia?",
+      "opciones": [
+        "Rublo",
+        "Esloti",
+        "Euro",
+        "Corona"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o340",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estas NO es una fábula de Esopo?",
+      "opciones": [
+        "Tod y Toby (El zorro y el sabueso)",
+        "La zorra y las uvas",
+        "La liebre y la tortuga",
+        "La rana y el buey"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o342",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llamaba la Pepsi cuando salió?",
+      "opciones": [
+        "Carolina Cola",
+        "Brad's Drink",
+        "Pepsin Pop",
+        "Pepsin Syrup"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o343",
+      "tipo": "test",
+      "enunciado": "¿Cuál es el título oficial completo del primer ministro británico?",
+      "opciones": [
+        "Duque de Cambridge",
+        "Leal Oposición de Su Majestad",
+        "Primer Lord del Tesoro",
+        "Administrador de la Corona"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o346",
+      "tipo": "test",
+      "enunciado": "¿Quién es uno de los fundadores de Spotify?",
+      "opciones": [
+        "Michael Breidenbruecker",
+        "Sean Parker",
+        "Felix Miller",
+        "Daniel Ek"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o348",
+      "tipo": "test",
+      "enunciado": "¿Cuándo se fundó Nintendo?",
+      "opciones": [
+        "4 de marzo de 1887",
+        "27 de diciembre de 1894",
+        "19 de octubre de 1891",
+        "23 de septiembre de 1889"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o349",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama la comida india cocinada con carbón en un horno de barro?",
+      "opciones": [
+        "Pani puri",
+        "Biryani",
+        "Tikka masala",
+        "Tandoori"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o351",
+      "tipo": "test",
+      "enunciado": "All Souls y Merton son colegios de ¿qué universidad?",
+      "opciones": [
+        "Leeds",
+        "Cambridge",
+        "Mánchester",
+        "Oxford"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o353",
+      "tipo": "test",
+      "enunciado": "¿En qué está especializada Rolex?",
+      "opciones": [
+        "Ordenadores",
+        "Relojes",
+        "Material deportivo",
+        "Coches"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o354",
+      "tipo": "test",
+      "enunciado": "La goma arábiga es la savia endurecida de ¿qué árbol?",
+      "opciones": [
+        "La acacia",
+        "El ficus",
+        "El eucalipto",
+        "La palmera"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o355",
+      "tipo": "test",
+      "enunciado": "¿En qué año nació Walt Disney?",
+      "opciones": [
+        "1903",
+        "1900",
+        "1901",
+        "1902"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o356",
+      "tipo": "test",
+      "enunciado": "¿Qué condimento se conoce también como «rábano picante japonés»?",
+      "opciones": [
+        "Karashi",
+        "Ponzu",
+        "Wasabi",
+        "Mentsuyu"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o361",
+      "tipo": "test",
+      "enunciado": "¿Cómo se escribe «Brasil» en portugués?",
+      "opciones": [
+        "Brasíl",
+        "Brazil",
+        "Brasil",
+        "Brasilia"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o363",
+      "tipo": "test",
+      "enunciado": "¿Qué atracción de Disneyland California cerró en 2017 para convertirse en una de Guardianes de la Galaxia?",
+      "opciones": [
+        "La Mansión Encantada",
+        "Twilight Zone Tower of Terror",
+        "El vuelo de Peter Pan",
+        "Piratas del Caribe"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o367",
+      "tipo": "test",
+      "enunciado": "¿Qué montaña tiene la cumbre más alta de Sudamérica?",
+      "opciones": [
+        "Ojos del Salado (Argentina y Chile)",
+        "Monte Pissis (Argentina)",
+        "Aconcagua (Argentina)",
+        "Huascarán (Perú)"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o369",
+      "tipo": "test",
+      "enunciado": "¿Cada cuántos años se entrega la Medalla Fields de matemáticas?",
+      "opciones": [
+        "4",
+        "3",
+        "5",
+        "6"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o370",
+      "tipo": "test",
+      "enunciado": "En código Morse, ¿qué letra son tres puntos?",
+      "opciones": [
+        "C",
+        "O",
+        "A",
+        "S"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o372",
+      "tipo": "test",
+      "enunciado": "¿Qué cadena de comida rápida tiene más locales en el mundo?",
+      "opciones": [
+        "McDonald's",
+        "KFC",
+        "Starbucks",
+        "Subway"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o373",
+      "tipo": "test",
+      "enunciado": "¿A qué tiene miedo una persona con astrafobia?",
+      "opciones": [
+        "Al viento",
+        "A la nieve",
+        "A la lluvia",
+        "A los truenos"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o375",
+      "tipo": "test",
+      "enunciado": "¿En qué año se acuñó la palabra «científico» (scientist) en inglés?",
+      "opciones": [
+        "1942",
+        "1933",
+        "1796",
+        "1833"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o376",
+      "tipo": "test",
+      "enunciado": "¿En qué museo de Londres hay una estatua de Charles Darwin?",
+      "opciones": [
+        "Tate",
+        "Museo de la Ciencia",
+        "Museo Británico",
+        "Museo de Historia Natural"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o377",
+      "tipo": "test",
+      "enunciado": "¿Qué falacia consiste en atacar a la persona en vez de a sus argumentos?",
+      "opciones": [
+        "Ad populum",
+        "Ad hominem",
+        "Tu quoque",
+        "Post hoc ergo propter hoc"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o378",
+      "tipo": "test",
+      "enunciado": "¿Qué país produce alrededor del 40 % de la vainilla del mundo?",
+      "opciones": [
+        "China",
+        "Madagascar",
+        "México",
+        "Indonesia"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o381",
+      "tipo": "test",
+      "enunciado": "¿Cómo se dice «universidad» en japonés (transcrito)?",
+      "opciones": [
+        "Shokudō",
+        "Jimusho",
+        "Daigaku",
+        "Toshokan"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o383",
+      "tipo": "test",
+      "enunciado": "¿Qué es una «dakimakura»?",
+      "opciones": [
+        "Un plato chino de pescado",
+        "Una almohada abrazable de cuerpo entero",
+        "Una pareja que se quiere de verdad",
+        "Una postura de yoga"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o386",
+      "tipo": "test",
+      "enunciado": "¿Qué fabrica y vende un sombrerero?",
+      "opciones": [
+        "Zapatos",
+        "Camisas",
+        "Sombreros",
+        "Cinturones"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o387",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos cuatro edificios es el más alto, con 452 metros?",
+      "opciones": [
+        "Torre Zifeng (China)",
+        "Torre Al Hamra (Kuwait)",
+        "Torres Petronas (Malasia)",
+        "Trump International Hotel & Tower (EE. UU.)"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o388",
+      "tipo": "test",
+      "enunciado": "¿Cuál es la lengua más hablada del hemisferio sur?",
+      "opciones": [
+        "Inglés",
+        "Portugués",
+        "Francés",
+        "Español"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o390",
+      "tipo": "test",
+      "enunciado": "¿Cuál es el nombre de pub más común en el Reino Unido?",
+      "opciones": [
+        "Red Lion",
+        "White Hart",
+        "Royal Oak",
+        "King's Head"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o391",
+      "tipo": "test",
+      "enunciado": "¿Qué famoso edificio diseñó Frank Lloyd Wright?",
+      "opciones": [
+        "La Ópera de Sídney",
+        "El Guggenheim de Nueva York",
+        "La Villa Savoye",
+        "La Space Needle"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    }
+  ]
+}

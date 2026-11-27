@@ -7,6 +7,9 @@ export class LibStore {
   private cache = new Map<string, Bank>()
   private timers = new Map<string, number>()
   private listeners: (() => void)[] = []
+  // lecturas en curso: cada banco se pide una sola vez aunque muchos lo miren a la vez
+  private loading = new Map<string, Promise<Bank>>()
+  private emitQueued = false
 
   onChange(fn: () => void): void {
     this.listeners.push(fn)
@@ -39,10 +42,33 @@ export class LibStore {
   async get(ref: string): Promise<Bank> {
     const hit = this.cache.get(ref)
     if (hit) return hit
-    const b = await window.konk.libGet(ref)
-    this.cache.set(ref, b)
-    this.emit()
-    return b
+    const busy = this.loading.get(ref)
+    if (busy) return busy
+    const p = window.konk.libGet(ref).then(
+      (b) => {
+        this.loading.delete(ref)
+        // si mientras tanto se editó, manda lo que hay en caché
+        if (!this.cache.has(ref)) this.cache.set(ref, b)
+        this.emitSoon()
+        return this.cache.get(ref) ?? b
+      },
+      (e) => {
+        this.loading.delete(ref)
+        throw e
+      }
+    )
+    this.loading.set(ref, p)
+    return p
+  }
+
+  /** Avisa una sola vez aunque lleguen muchos bancos seguidos. */
+  private emitSoon(): void {
+    if (this.emitQueued) return
+    this.emitQueued = true
+    setTimeout(() => {
+      this.emitQueued = false
+      this.emit()
+    }, 30)
   }
 
   /** Cambia un banco y lo guarda solo (con un poco de retraso para no escribir en cada tecla). */
@@ -53,6 +79,8 @@ export class LibStore {
       this.list[i] = {
         ...this.list[i],
         nombre: bank.nombre,
+        grupo: bank.grupo,
+        mezcla: bank.mezcla,
         count: bank.preguntas.length,
         used: bank.preguntas.filter((q) => q.usada).length,
         letters: this.list[i].tipo === 'rosco' ? new Set(bank.preguntas.filter((q) => q.enunciado && q.respuesta).map((q) => q.letra)).size : undefined
@@ -76,6 +104,10 @@ export class LibStore {
     const today = new Date().toISOString().slice(0, 10)
     const set = new Set(ids)
     this.update(ref, { ...b, preguntas: b.preguntas.map((q): Question => (set.has(q.id) ? { ...q, usada: used ? today : undefined } : q)) })
+    // copias (partida mezclada): también la pregunta original
+    const origins = new Map<string, string[]>()
+    for (const q of b.preguntas) if (set.has(q.id) && q.origen && q.origen.ref !== ref) origins.set(q.origen.ref, [...(origins.get(q.origen.ref) ?? []), q.origen.id])
+    for (const [r, oids] of origins) if (this.list.some((x) => x.ref === r)) void this.get(r).then(() => this.markUsed(r, oids, used))
   }
 
   async create(tipo: LibType, nombre: string): Promise<string> {

@@ -1,0 +1,1998 @@
+{
+  "formato": "konkursox-banco",
+  "version": 1,
+  "nombre": "Cine · Media",
+  "grupo": "Open Trivia DB",
+  "licencia": "Preguntas de Open Trivia Database (opentdb.com), licencia CC BY-SA 4.0, traducidas y adaptadas al español. Este banco se distribuye con la misma licencia (CC BY-SA 4.0).",
+  "preguntas": [
+    {
+      "id": "o704",
+      "tipo": "test",
+      "enunciado": "En el universo de «Parque Jurásico», ¿cómo se llama la isla del Sitio B de InGen?",
+      "opciones": [
+        "Isla Muerta",
+        "Isla Pena",
+        "Isla Sorna",
+        "Isla Nublar"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o705",
+      "tipo": "test",
+      "enunciado": "¿Qué actor dirigió y protagonizó con Emily Blunt la película de terror «Un lugar tranquilo» (2018)?",
+      "opciones": [
+        "Josh Brolin",
+        "John Krasinski",
+        "Willem Dafoe",
+        "Keanu Reeves"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o706",
+      "tipo": "test",
+      "enunciado": "Después de la India, ¿qué país produce más películas al año?",
+      "opciones": [
+        "Nigeria",
+        "Francia",
+        "China",
+        "Estados Unidos"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o707",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama el protagonista de «Commando» (1985)?",
+      "opciones": [
+        "John Matrix",
+        "Douglas Quaid",
+        "Harry Tasker",
+        "Ben Richards"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o708",
+      "tipo": "test",
+      "enunciado": "Según Star Wars, ¿cuál es el planeta natal de Han Solo?",
+      "opciones": [
+        "Corellia",
+        "Naboo",
+        "Coruscant",
+        "Tatooine"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o709",
+      "tipo": "test",
+      "enunciado": "¿En qué año se estrenó «Loca academia de policía»?",
+      "opciones": [
+        "1986",
+        "1983",
+        "1984",
+        "1985"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o710",
+      "tipo": "test",
+      "enunciado": "¿Quién interpretó a Willy Wonka en «Un mundo de fantasía» (1971)?",
+      "opciones": [
+        "Shia LaBeouf",
+        "Johnny Depp",
+        "Gene Wilder",
+        "Peter Ostrum"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o711",
+      "tipo": "test",
+      "enunciado": "¿Qué actor interpreta a Tommy Jarvis en «Viernes 13: Capítulo final» (1984)?",
+      "opciones": [
+        "Corey Feldman",
+        "Macaulay Culkin",
+        "Mark Hamill",
+        "Mel Gibson"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o712",
+      "tipo": "test",
+      "enunciado": "En «Réquiem por un sueño», ¿a qué droga se engancha el personaje de Jared Leto?",
+      "opciones": [
+        "Heroína",
+        "Cocaína",
+        "Oxicodona",
+        "Marihuana"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o713",
+      "tipo": "test",
+      "enunciado": "¿Quién dirigió «El silencio de los corderos» (1991)?",
+      "opciones": [
+        "Jonathan Demme",
+        "Michael Bay",
+        "Stanley Kubrick",
+        "Frank Darabont"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o714",
+      "tipo": "test",
+      "enunciado": "¿Qué actor protagonizó «Top Gun», «Jerry Maguire» y «Nacido el 4 de julio»?",
+      "opciones": [
+        "George Clooney",
+        "Tom Cruise",
+        "Kelly McGillis",
+        "John Travolta"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o717",
+      "tipo": "test",
+      "enunciado": "¿A qué superhéroe de Marvel interpretó Chris Evans antes que al Capitán América?",
+      "opciones": [
+        "La Antorcha Humana",
+        "Cíclope",
+        "El Hombre de Hielo",
+        "Daredevil"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o718",
+      "tipo": "test",
+      "enunciado": "En «Speed» (1994), ¿a qué velocidad mínima debe ir el autobús para que no explote la bomba?",
+      "opciones": [
+        "50 millas por hora (80 km/h)",
+        "60 millas por hora",
+        "40 millas por hora",
+        "70 millas por hora"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o719",
+      "tipo": "test",
+      "enunciado": "¿En qué película intercambian sus vidas Eddie Murphy y Dan Aykroyd?",
+      "opciones": [
+        "El príncipe de Zamunda",
+        "Entre pillos anda el juego",
+        "Cazafantasmas",
+        "The Blues Brothers"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o720",
+      "tipo": "test",
+      "enunciado": "¿Cuál es el nombre real de Michael Caine?",
+      "opciones": [
+        "Carl Myers",
+        "Maurice Micklewhite",
+        "Morris Coleman",
+        "Martin Michaels"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o721",
+      "tipo": "test",
+      "enunciado": "En «Regreso al futuro II», ¿a qué fecha del futuro viajan Marty y Doc?",
+      "opciones": [
+        "20 de julio de 2015",
+        "28 de agosto de 2015",
+        "21 de octubre de 2015",
+        "25 de enero de 2015"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o722",
+      "tipo": "test",
+      "enunciado": "Velma Kelly y Roxie Hart son las protagonistas de ¿qué película ganadora del Óscar?",
+      "opciones": [
+        "Cabaret",
+        "Dreamgirls",
+        "All That Jazz",
+        "Chicago"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o723",
+      "tipo": "test",
+      "enunciado": "¿Quién dirigió «Scott Pilgrim contra el mundo» (2010)?",
+      "opciones": [
+        "Seth Rogen",
+        "Phil Lord",
+        "Chris Miller",
+        "Edgar Wright"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o724",
+      "tipo": "test",
+      "enunciado": "¿Qué personaje protagoniza «Harry el ejecutor», «Impacto súbito» y «La lista negra»?",
+      "opciones": [
+        "Indiana Jones",
+        "Harry Potter",
+        "James Bond",
+        "Harry el Sucio"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o725",
+      "tipo": "test",
+      "enunciado": "¿Qué actor y experto en artes marciales interpretó al coronel Guile en «Street Fighter» (1994)?",
+      "opciones": [
+        "Steven Seagal",
+        "Scott Adkins",
+        "Chuck Norris",
+        "Jean-Claude Van Damme"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o726",
+      "tipo": "test",
+      "enunciado": "¿Qué comedia de culto de los 90 tiene cameos de Meat Loaf, Alice Cooper y Chris Farley?",
+      "opciones": [
+        "Austin Powers",
+        "Dos tontos muy tontos",
+        "Las alucinantes aventuras de Bill y Ted",
+        "Wayne's World"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o727",
+      "tipo": "test",
+      "enunciado": "¿Qué superhéroe de DC NO aparece en «Liga de la Justicia» (2017)?",
+      "opciones": [
+        "Cyborg",
+        "Batman",
+        "Wonder Woman",
+        "Flecha Verde"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o728",
+      "tipo": "test",
+      "enunciado": "¿Durante el rodaje de qué película cogió una neumonía Susan Sarandon?",
+      "opciones": [
+        "Encantada",
+        "Pena de muerte",
+        "The Rocky Horror Picture Show",
+        "Thelma y Louise"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o729",
+      "tipo": "test",
+      "enunciado": "En «Bichos», ¿cómo se llama la mascota de la reina?",
+      "opciones": [
+        "Dot",
+        "Afi",
+        "Hopper",
+        "Flik"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o730",
+      "tipo": "test",
+      "enunciado": "¿En qué película debutó Johnny Depp en el cine?",
+      "opciones": [
+        "Viernes 13",
+        "Pesadilla en Elm Street",
+        "La noche de Halloween",
+        "San Valentín sangriento"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o731",
+      "tipo": "test",
+      "enunciado": "En «Mulán» (1998), ¿quién es el líder de los hunos?",
+      "opciones": [
+        "Shan Yu",
+        "Li Shang",
+        "Fa Zhou",
+        "Chien-Po"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o732",
+      "tipo": "test",
+      "enunciado": "¿En qué película de 1958 interpretaban Kirk Douglas y Tony Curtis a los hermanastros Einar y Eric?",
+      "opciones": [
+        "Los vikingos",
+        "El príncipe valiente",
+        "Espartaco",
+        "Los drakkars"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o733",
+      "tipo": "test",
+      "enunciado": "¿Por qué papel en una película de terror de 1931 es famoso Bela Lugosi?",
+      "opciones": [
+        "La criatura de la Laguna Negra",
+        "El hombre lobo",
+        "El conde Drácula",
+        "El doctor Frankenstein"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o734",
+      "tipo": "test",
+      "enunciado": "¿En qué película de 1973 Yul Brynner es un vaquero robot que se estropea y empieza a matar?",
+      "opciones": [
+        "Runaway",
+        "The Terminators",
+        "Almas de metal (Westworld)",
+        "Android"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o736",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos actores hizo una prueba para ser Luke Skywalker?",
+      "opciones": [
+        "Kurt Russell",
+        "Christopher Lambert",
+        "James Remar",
+        "Laurence Fishburne"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o737",
+      "tipo": "test",
+      "enunciado": "¿En cuál de estas películas NO sale Brendan Fraser?",
+      "opciones": [
+        "Titanic",
+        "Mrs. Winterbourne",
+        "Monkeybone",
+        "Mi amigo el cavernícola"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o739",
+      "tipo": "test",
+      "enunciado": "¿Cómo se escribe el nombre del protagonista del libro de «La historia interminable» (1984)?",
+      "opciones": [
+        "Atrayu",
+        "Atraeyu",
+        "Atreyu",
+        "Atraiyu"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o740",
+      "tipo": "test",
+      "enunciado": "¿Quién pone la voz original de Blu en «Río» (2011)?",
+      "opciones": [
+        "Michael Cera",
+        "Jonah Hill",
+        "Jesse Eisenberg",
+        "Zach Galifianakis"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o741",
+      "tipo": "test",
+      "enunciado": "¿Por qué vuelve John Wick de su retiro?",
+      "opciones": [
+        "Le matan al perro y le roban el coche",
+        "Le dan un puñetazo",
+        "Le atracan",
+        "Necesita dinero"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o742",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos clásicos de Disney se estrenó en 1970?",
+      "opciones": [
+        "Los aristogatos",
+        "101 dálmatas",
+        "Tod y Toby",
+        "La sirenita"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o743",
+      "tipo": "test",
+      "enunciado": "¿Qué animales mutantes son los monstruos de «La noche del conejo» (Night of the Lepus)?",
+      "opciones": [
+        "Ratas",
+        "Conejos",
+        "Perros",
+        "Murciélagos"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o744",
+      "tipo": "test",
+      "enunciado": "¿Qué personaje de Winnie the Pooh añadió Disney y no está en los libros originales?",
+      "opciones": [
+        "Los Pelifantes",
+        "Topo (Gopher)",
+        "Tigger",
+        "Conejo"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o745",
+      "tipo": "test",
+      "enunciado": "¿Qué músico tiene un papel destacado en «Kingsman: El círculo de oro» (2017)?",
+      "opciones": [
+        "Lady Gaga",
+        "Rihanna",
+        "Elton John",
+        "Justin Bieber"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o746",
+      "tipo": "test",
+      "enunciado": "¿Qué modelo eran los vehículos de la visita en la película «Parque Jurásico» (1993)?",
+      "opciones": [
+        "Jeep Wrangler YJ de 1992",
+        "Toyota Land Cruiser de 1992",
+        "Ford Explorer XLT de 1992",
+        "Mercedes Clase M"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o747",
+      "tipo": "test",
+      "enunciado": "¿Quién protagonizó «Eduardo Manostijeras» (1990)?",
+      "opciones": [
+        "Ben Stiller",
+        "Clint Eastwood",
+        "Leonardo DiCaprio",
+        "Johnny Depp"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o748",
+      "tipo": "test",
+      "enunciado": "¿En qué país se rodó toda la trilogía de «El señor de los anillos» de Peter Jackson?",
+      "opciones": [
+        "Escocia",
+        "Islandia",
+        "Canadá",
+        "Nueva Zelanda"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o749",
+      "tipo": "test",
+      "enunciado": "¿En qué película de los Teleñecos se interpretaba a sí mismo Ed Koch, alcalde de Nueva York en 1984?",
+      "opciones": [
+        "Los Teleñecos en Cuento de Navidad",
+        "La película de los Teleñecos",
+        "El gran golpe de los Teleñecos",
+        "Los Teleñecos conquistan Manhattan"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o750",
+      "tipo": "test",
+      "enunciado": "En «Tron: Legacy», Kevin Flynn creó un programa para hacer el sistema perfecto. ¿Cómo se llamaba?",
+      "opciones": [
+        "Quorra",
+        "CPM",
+        "Tron",
+        "Clu"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o751",
+      "tipo": "test",
+      "enunciado": "¿Qué personaje del libro NO aparece en la película «La Comunidad del Anillo»?",
+      "opciones": [
+        "Cebadilla Mantecona",
+        "Trancos",
+        "Celeborn",
+        "Tom Bombadil"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o752",
+      "tipo": "test",
+      "enunciado": "¿A qué protagonista de videojuego interpretó Mark Wahlberg en una película de 2008?",
+      "opciones": [
+        "Hitman",
+        "Alan Wake",
+        "Kratos",
+        "Max Payne"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o753",
+      "tipo": "test",
+      "enunciado": "¿Cuál es el apellido de Lilo en «Lilo y Stitch»?",
+      "opciones": [
+        "Kuʻulei",
+        "Pelekai",
+        "Kealoha",
+        "Anoaʻi"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o754",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estas películas NO forma parte del Universo Cinematográfico de Marvel?",
+      "opciones": [
+        "Capitana Marvel (2019)",
+        "Cuatro Fantásticos (2015)",
+        "El increíble Hulk (2008)",
+        "Spider-Man: Homecoming (2017)"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o756",
+      "tipo": "test",
+      "enunciado": "¿Por qué película ganó Leonardo DiCaprio su primer Óscar al mejor actor?",
+      "opciones": [
+        "El renacido",
+        "Shutter Island",
+        "Origen",
+        "El lobo de Wall Street"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o757",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos actores NO sale en «Sospechosos habituales»?",
+      "opciones": [
+        "Benicio del Toro",
+        "Gabriel Byrne",
+        "Steve Buscemi",
+        "Kevin Spacey"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o758",
+      "tipo": "test",
+      "enunciado": "En «Terminator» (1984), ¿qué modelo es el Terminator de Schwarzenegger?",
+      "opciones": [
+        "T-1000",
+        "T-888",
+        "T-800",
+        "I-950"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o759",
+      "tipo": "test",
+      "enunciado": "¿Quién interpretó al barón Frankenstein en «La maldición de Frankenstein» (1957), de la Hammer?",
+      "opciones": [
+        "Boris Karloff",
+        "Lon Chaney Jr.",
+        "Peter Cushing",
+        "Vincent Price"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o760",
+      "tipo": "test",
+      "enunciado": "En Star Wars, ¿cómo se llama el gobierno que se crea tras la caída del Imperio Galáctico?",
+      "opciones": [
+        "La Nueva República",
+        "La Alianza Rebelde",
+        "La Primera Orden",
+        "Amanecer Carmesí"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o761",
+      "tipo": "test",
+      "enunciado": "¿En qué película se dice «Me encanta el olor del napalm por la mañana»?",
+      "opciones": [
+        "Apocalypse Now",
+        "Platoon",
+        "La chaqueta metálica",
+        "El cazador"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o762",
+      "tipo": "test",
+      "enunciado": "¿Quién compuso la banda sonora del «Blade Runner» original?",
+      "opciones": [
+        "Vangelis",
+        "Enya",
+        "Kitaro",
+        "Yanni"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o764",
+      "tipo": "test",
+      "enunciado": "En «Buscando a Nemo», ¿cómo se llamaba la madre de Nemo?",
+      "opciones": [
+        "Sandy",
+        "Shelly",
+        "Coral",
+        "Perla"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o765",
+      "tipo": "test",
+      "enunciado": "¿Qué película de Stanley Kubrick es una adaptación de una novela de Stephen King?",
+      "opciones": [
+        "¿Teléfono rojo? Volamos hacia Moscú",
+        "2001: Una odisea del espacio",
+        "El resplandor",
+        "Eyes Wide Shut"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o766",
+      "tipo": "test",
+      "enunciado": "¿Qué lleva puesto el asesino de «San Valentín sangriento» (1981)?",
+      "opciones": [
+        "Un equipo de minero",
+        "Un disfraz de payaso",
+        "Un traje de Papá Noel",
+        "Un uniforme de policía"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o767",
+      "tipo": "test",
+      "enunciado": "En la saga «Viernes 13», ¿cómo se llama la madre de Jason?",
+      "opciones": [
+        "Pamela",
+        "Mary",
+        "Christine",
+        "Angeline"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o768",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama el técnico de sonido que creó el rugido de Chewbacca y los pitidos de R2-D2?",
+      "opciones": [
+        "Ralph McQuarrie",
+        "Ben Burtt",
+        "Ken Burns",
+        "John Williams"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o769",
+      "tipo": "test",
+      "enunciado": "¿En qué película el personaje de Robin Williams tiene que disfrazarse de mujer?",
+      "opciones": [
+        "Jumanji",
+        "Señora Doubtfire",
+        "Este cuerpo no es el mío",
+        "Despertares"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o770",
+      "tipo": "test",
+      "enunciado": "¿Quién cantó la canción de «James Bond contra Goldfinger»?",
+      "opciones": [
+        "John Barry",
+        "Tom Jones",
+        "Shirley Bassey",
+        "Sheena Easton"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o771",
+      "tipo": "test",
+      "enunciado": "¿A qué cantante interpretó Kevin Spacey en «Beyond the Sea» (2004)?",
+      "opciones": [
+        "Frank Sinatra",
+        "Louis Armstrong",
+        "Bobby Darin",
+        "Dean Martin"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o772",
+      "tipo": "test",
+      "enunciado": "¿Qué secuela recaudó más que su película original?",
+      "opciones": [
+        "Sin City: Una dama por la que matar",
+        "El hijo de la Máscara",
+        "Speed 2",
+        "Toy Story 2"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o773",
+      "tipo": "test",
+      "enunciado": "En «El hobbit», ¿quién dirige el Concilio Blanco?",
+      "opciones": [
+        "Galadriel",
+        "Elrond",
+        "Gandalf",
+        "Saruman"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o774",
+      "tipo": "test",
+      "enunciado": "¿Quién dirigió «El laberinto del fauno»?",
+      "opciones": [
+        "Alejandro González Iñárritu",
+        "Alejandro Jodorowsky",
+        "Alfonso Cuarón",
+        "Guillermo del Toro"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o775",
+      "tipo": "test",
+      "enunciado": "¿Cuánto recaudó en el mundo «Vengadores: Endgame» (2019) en su primer fin de semana récord?",
+      "opciones": [
+        "392 millones de dólares",
+        "456 millones de dólares",
+        "640 millones de dólares",
+        "1200 millones de dólares"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o777",
+      "tipo": "test",
+      "enunciado": "En «Birdman» (2014), ¿cuál es el instrumento principal de la banda sonora?",
+      "opciones": [
+        "El saxofón",
+        "El violín",
+        "Pájaros cantando de verdad",
+        "La batería"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o778",
+      "tipo": "test",
+      "enunciado": "En «Indiana Jones y el templo maldito», ¿de qué estaban hechos los sesos de mono helados?",
+      "opciones": [
+        "Sorbete de frambuesa",
+        "Natillas y salsa de frambuesa",
+        "Yogur de cereza",
+        "Helado de fresa"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o779",
+      "tipo": "test",
+      "enunciado": "¿Qué antiguo actor de Star Trek dirigió «Tres hombres y un bebé» (1987)?",
+      "opciones": [
+        "James Doohan",
+        "Leonard Nimoy",
+        "George Takei",
+        "William Shatner"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o780",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama el robot de «Ultimátum a la Tierra» (1951)?",
+      "opciones": [
+        "Gort",
+        "Colossus",
+        "Box",
+        "Robby"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o781",
+      "tipo": "test",
+      "enunciado": "¿Cuál fue la primera película de Star Wars en estrenarse?",
+      "opciones": [
+        "Una nueva esperanza",
+        "El despertar de la Fuerza",
+        "La venganza de los Sith",
+        "La amenaza fantasma"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o782",
+      "tipo": "test",
+      "enunciado": "En «El mago de Oz» (1939) hay un caballo que cambia de color. ¿Qué usaron para conseguirlo?",
+      "opciones": [
+        "Efectos por ordenador",
+        "Pintura",
+        "Gelatina",
+        "Tinte"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o783",
+      "tipo": "test",
+      "enunciado": "¿Quién resulta ser el villano al final de la primera película de imagen real de Scooby-Doo?",
+      "opciones": [
+        "Fred",
+        "Los del telediario local",
+        "Scrappy-Doo",
+        "El viejo Mason"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o784",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estas películas de acción está rodada entera en una sola toma?",
+      "opciones": [
+        "Ip Man 2",
+        "Victoria",
+        "León: el profesional",
+        "El legado de Bourne"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o785",
+      "tipo": "test",
+      "enunciado": "¿Qué ciudad ataca el monstruo de «Monstruoso» (Cloverfield)?",
+      "opciones": [
+        "Nueva York",
+        "Las Vegas",
+        "Orlando",
+        "Chicago"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o786",
+      "tipo": "test",
+      "enunciado": "¿Qué otro título se propuso para «Regreso al futuro»?",
+      "opciones": [
+        "El astronauta de Plutón",
+        "El hombre con suerte",
+        "Los viajeros de Hill Valley",
+        "Los viajeros del tiempo"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o788",
+      "tipo": "test",
+      "enunciado": "En «Jurassic World», ¿qué empresa compra InGen y crea el parque?",
+      "opciones": [
+        "Biology Synthetics Technologies",
+        "International Genetic Technologies",
+        "Masrani Global",
+        "International Genetics Incorporated"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o789",
+      "tipo": "test",
+      "enunciado": "¿Quién es el protagonista de «El gigante de hierro»?",
+      "opciones": [
+        "Kent Mansley",
+        "Annie Hughes",
+        "Hogarth Hughes",
+        "Dean McCoppin"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o790",
+      "tipo": "test",
+      "enunciado": "¿Qué actor se dice que se quedó fuera del montaje de «E.T., el extraterrestre»?",
+      "opciones": [
+        "Harrison Ford",
+        "Michael J. Fox",
+        "Arnold Schwarzenegger",
+        "Andy Kaufman"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o791",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama el personaje de Nicolas Cage en «La búsqueda» (National Treasure)?",
+      "opciones": [
+        "Benjamin Franklin Gates",
+        "Thomas Jefferson Walker",
+        "George Washington Swanson",
+        "John Quincy Beckett"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o792",
+      "tipo": "test",
+      "enunciado": "¿En qué año se estrenó «Napoleon Dynamite»?",
+      "opciones": [
+        "2003",
+        "2004",
+        "2002",
+        "2005"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o794",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estas frases NO es de «Casablanca» (1942)?",
+      "opciones": [
+        "«De todos los bares de todas las ciudades del mundo, tenía que entrar en el mío»",
+        "«Brindo por ti, pequeña»",
+        "«Francamente, querida, me importa un bledo»",
+        "«Detengan a los sospechosos habituales»"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o795",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos villanos de James Bond NO pertenece a SPECTRE?",
+      "opciones": [
+        "Rosa Klebb",
+        "El doctor No",
+        "Auric Goldfinger",
+        "Emilio Largo"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o796",
+      "tipo": "test",
+      "enunciado": "¿En qué año se estrenó «Titanic», de James Cameron?",
+      "opciones": [
+        "1997",
+        "1996",
+        "1998",
+        "1999"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o797",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estas películas NO dirigió Quentin Tarantino?",
+      "opciones": [
+        "Jackie Brown",
+        "Reservoir Dogs",
+        "Pulp Fiction",
+        "Abierto hasta el amanecer"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o798",
+      "tipo": "test",
+      "enunciado": "¿Quién interpretó a Batman en «Batman y Robin» (1997)?",
+      "opciones": [
+        "Val Kilmer",
+        "Christian Bale",
+        "Michael Keaton",
+        "George Clooney"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o800",
+      "tipo": "test",
+      "enunciado": "¿En qué ciudad transcurre la película de Disney «Ahí va ese bólido» (The Love Bug, 1968)?",
+      "opciones": [
+        "Sacramento",
+        "Los Ángeles",
+        "San José",
+        "San Francisco"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o802",
+      "tipo": "test",
+      "enunciado": "En «Regreso al futuro», ¿a qué velocidad tiene que ir el DeLorean para viajar en el tiempo?",
+      "opciones": [
+        "77 millas por hora",
+        "70 millas por hora",
+        "100 millas por hora",
+        "88 millas por hora"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o803",
+      "tipo": "test",
+      "enunciado": "¿Quién pone la voz original del dragón Draco en «Dragonheart» (1996)?",
+      "opciones": [
+        "Brian Thompson",
+        "Sean Connery",
+        "Pete Postlethwaite",
+        "Dennis Quaid"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o805",
+      "tipo": "test",
+      "enunciado": "¿Qué significan las siglas TIE de los cazas TIE de Star Wars?",
+      "opciones": [
+        "Twin Ion Engine (motor iónico doble)",
+        "Twin Interceptor Engine",
+        "Twin Inception Engine",
+        "Twin Iron Engine"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o806",
+      "tipo": "test",
+      "enunciado": "¿Qué cómico pone la voz original del loro Iago en «Aladdín» (1992)?",
+      "opciones": [
+        "Pauly Shore",
+        "Jonathan Freeman",
+        "Gilbert Gottfried",
+        "Robin Williams"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o808",
+      "tipo": "test",
+      "enunciado": "¿A qué película destronó «Avatar» como la más taquillera de la historia?",
+      "opciones": [
+        "Tiburón",
+        "Titanic",
+        "Lo que el viento se llevó",
+        "La guerra de las galaxias"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o809",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama el recurso de los personajes secundarios que mueren para mostrar lo peligroso que es un monstruo?",
+      "opciones": [
+        "Camisa roja",
+        "Esbirros",
+        "Carne de cañón",
+        "Prescindibles"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o810",
+      "tipo": "test",
+      "enunciado": "¿En qué país africano transcurre sobre todo «Diamante de sangre» (2006)?",
+      "opciones": [
+        "Sierra Leona",
+        "República Centroafricana",
+        "Liberia",
+        "Burkina Faso"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o811",
+      "tipo": "test",
+      "enunciado": "En «Con faldas y a lo loco», ¿cómo se llama el personaje de Marilyn Monroe?",
+      "opciones": [
+        "Sugar",
+        "Candy",
+        "Honey",
+        "Caramel"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o812",
+      "tipo": "test",
+      "enunciado": "¿Quién compuso e interpretó la mayoría de las canciones de «Spirit: El corcel indomable»?",
+      "opciones": [
+        "Smash Mouth",
+        "Air Supply",
+        "Bryan Adams",
+        "Oasis"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o815",
+      "tipo": "test",
+      "enunciado": "¿Quién dirigió «Alien, el octavo pasajero»?",
+      "opciones": [
+        "Ridley Scott",
+        "Christopher Nolan",
+        "James Cameron",
+        "Michael Bay"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o816",
+      "tipo": "test",
+      "enunciado": "¿En qué año se estrenó la primera película de Transformers (la de animación)?",
+      "opciones": [
+        "1984",
+        "1986",
+        "2007",
+        "2009"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o817",
+      "tipo": "test",
+      "enunciado": "En «La vida de Brian», ¿cuál es la forma correcta del latinajo «Romanes eunt domus»?",
+      "opciones": [
+        "Roxani ite domum",
+        "Romani ite domum",
+        "Romans go home",
+        "Tomate ite domum"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o818",
+      "tipo": "test",
+      "enunciado": "¿Cuál es el nombre real de Michael Keaton?",
+      "opciones": [
+        "Michael Fox",
+        "Michael Richards",
+        "Michael Douglas",
+        "Michael Kane"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o819",
+      "tipo": "test",
+      "enunciado": "¿En qué película de 1955 interpreta Frank Sinatra a Nathan Detroit?",
+      "opciones": [
+        "De aquí a la eternidad",
+        "Levando anclas",
+        "Ellos y ellas",
+        "Alta sociedad"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o820",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estas películas NO se basa en un libro?",
+      "opciones": [
+        "Ciudadano Kane",
+        "El padrino",
+        "Forrest Gump",
+        "Parque Jurásico"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o821",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llamaba la perra que interpretó a Toto en «El mago de Oz» (1939)?",
+      "opciones": [
+        "Tommy",
+        "Terry",
+        "Teddy",
+        "Toto"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o822",
+      "tipo": "test",
+      "enunciado": "En «Mad Max», ¿qué coche es el Interceptor de Max?",
+      "opciones": [
+        "Chrysler Valiant Charger",
+        "Pontiac Firebird",
+        "Holden Monaro",
+        "Ford Falcon"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o824",
+      "tipo": "test",
+      "enunciado": "¿Cuál es la frase exacta de Darth Vader al revelarle a Luke quién es?",
+      "opciones": [
+        "«La verdad es que yo soy tu padre.»",
+        "«Te equivocas. Yo soy tu padre.»",
+        "«Luke, yo soy tu padre.»",
+        "«No. Yo soy tu padre.»"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o825",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estas películas está rodada entera en una sola toma?",
+      "opciones": [
+        "Birdman",
+        "El indomable Will Hunting",
+        "La lista de Schindler",
+        "El arca rusa"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o826",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama el sistema de inteligencia artificial de «Juegos de guerra» (1983)?",
+      "opciones": [
+        "Self Evolving Thought Helix",
+        "Programa de Control Maestro",
+        "West Campus Analog Computer",
+        "WOPR (War Operation Plan Response)"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o828",
+      "tipo": "test",
+      "enunciado": "¿En qué película se dice «Lo que tenemos aquí es un fallo de comunicación»?",
+      "opciones": [
+        "En el calor de la noche",
+        "La leyenda del indomable",
+        "El graduado",
+        "Bonnie y Clyde"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o829",
+      "tipo": "test",
+      "enunciado": "¿Qué queso, el favorito de Wallace y Gromit, subió de ventas gracias a sus cortos?",
+      "opciones": [
+        "Wensleydale",
+        "Queso lunar",
+        "Edam",
+        "Cheddar"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o831",
+      "tipo": "test",
+      "enunciado": "¿Quién dirigió «American Graffiti» (1973)?",
+      "opciones": [
+        "Steven Spielberg",
+        "Francis Ford Coppola",
+        "George Lucas",
+        "Ron Howard"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o832",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama el personaje de James Dean en «Rebelde sin causa» (1955)?",
+      "opciones": [
+        "Frank Stark",
+        "Jim Kane",
+        "Jim Stark",
+        "Ned Stark"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o833",
+      "tipo": "test",
+      "enunciado": "¿Quién interpretó al cenobita «Pinhead» en las películas originales de «Hellraiser»?",
+      "opciones": [
+        "Doug Benson",
+        "Doug Bradley",
+        "Doug Savant",
+        "Doug Jones"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o834",
+      "tipo": "test",
+      "enunciado": "¿Qué actor interpreta al villano de «Un golpe de altura» (Tower Heist, 2011)?",
+      "opciones": [
+        "Alan Alda",
+        "Eddie Murphy",
+        "Kevin Nealon",
+        "Alec Baldwin"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o835",
+      "tipo": "test",
+      "enunciado": "En la nueva versión de «Pesadilla en Elm Street» (2010), ¿quién interpretó a Freddy Krueger?",
+      "opciones": [
+        "Jackie Earle Haley",
+        "Gunnar Hansen",
+        "Tyler Mane",
+        "Derek Mears"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o837",
+      "tipo": "test",
+      "enunciado": "¿Quién interpretó al sargento Elias en «Platoon» (1986)?",
+      "opciones": [
+        "Charlie Sheen",
+        "Johnny Depp",
+        "Willem Dafoe",
+        "Matt Damon"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o838",
+      "tipo": "test",
+      "enunciado": "¿Quién interpreta a Bruce Wayne en «El caballero oscuro» (2008)?",
+      "opciones": [
+        "Heath Ledger",
+        "Michael Caine",
+        "Christian Bale",
+        "Ron Dean"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o840",
+      "tipo": "test",
+      "enunciado": "En «El club de la lucha», ¿cuál de estas NO es una regla del club?",
+      "opciones": [
+        "Llevar siempre camiseta",
+        "No se habla del club de la lucha",
+        "Las peleas duran lo que tengan que durar",
+        "Las peleas son de uno contra uno"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    }
+  ]
+}

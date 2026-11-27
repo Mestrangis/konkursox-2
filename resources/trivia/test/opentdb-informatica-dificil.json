@@ -1,0 +1,400 @@
+{
+  "formato": "konkursox-banco",
+  "version": 1,
+  "nombre": "Informática · Difícil",
+  "grupo": "Open Trivia DB",
+  "licencia": "Preguntas de Open Trivia Database (opentdb.com), licencia CC BY-SA 4.0, traducidas y adaptadas al español. Este banco se distribuye con la misma licencia (CC BY-SA 4.0).",
+  "preguntas": [
+    {
+      "id": "o3328",
+      "tipo": "test",
+      "enunciado": "¿Quién fundó Palantir?",
+      "opciones": [
+        "Peter Thiel",
+        "Marc Benioff",
+        "Mark Zuckerberg",
+        "Jack Dorsey"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3329",
+      "tipo": "test",
+      "enunciado": "¿Cuál es el nombre en clave de la octava generación de Intel Core, de octubre de 2017?",
+      "opciones": [
+        "Skylake",
+        "Sandy Bridge",
+        "Coffee Lake",
+        "Broadwell"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3331",
+      "tipo": "test",
+      "enunciado": "¿Qué significan las siglas CMOS?",
+      "opciones": [
+        "Semiconductor magnético complementario",
+        "Sistema operativo complementario",
+        "Óxido metálico conmutado",
+        "Semiconductor complementario de óxido metálico"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3332",
+      "tipo": "test",
+      "enunciado": "¿Qué motor de juegos creó el informático neerlandés Mark Overmars?",
+      "opciones": [
+        "Stencyl",
+        "Torque 2D",
+        "Construct",
+        "Game Maker"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3333",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estas NO es una capa del modelo OSI?",
+      "opciones": [
+        "Física",
+        "Transporte",
+        "Aplicación",
+        "Conexión"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3334",
+      "tipo": "test",
+      "enunciado": "¿De qué país del Pacífico es el dominio .fm?",
+      "opciones": [
+        "Islas Marshall",
+        "Tuvalu",
+        "Fiyi",
+        "Micronesia"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3336",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos ordenadores salió antes?",
+      "opciones": [
+        "Apple III",
+        "ZX Spectrum",
+        "TRS-80",
+        "Commodore 64"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3337",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos NO es un algoritmo de ordenación?",
+      "opciones": [
+        "Quicksort",
+        "Float sort",
+        "Merge sort",
+        "Bubble sort"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3340",
+      "tipo": "test",
+      "enunciado": "¿Qué protocolo de internet se documentó en el RFC 1459?",
+      "opciones": [
+        "HTTPS",
+        "IRC",
+        "FTP",
+        "HTTP"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3341",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llamaba la vulnerabilidad de Bash descubierta en 2014?",
+      "opciones": [
+        "Stagefright",
+        "Bashbug",
+        "Shellshock",
+        "Heartbleed"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3344",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llamó el fallo descubierto en abril de 2014 en la biblioteca OpenSSL?",
+      "opciones": [
+        "Heartbleed",
+        "Shellshock",
+        "Shellscript",
+        "Corrupted Blood"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3346",
+      "tipo": "test",
+      "enunciado": "¿A qué estructura de datos se aplica «el primero en entrar es el último en salir»?",
+      "opciones": [
+        "El árbol",
+        "La pila",
+        "La cola",
+        "El montículo"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3347",
+      "tipo": "test",
+      "enunciado": "¿Qué tipo de RAID se asocia a la duplicación de datos en espejo?",
+      "opciones": [
+        "RAID 1",
+        "RAID 5",
+        "RAID 0",
+        "RAID 10"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3352",
+      "tipo": "test",
+      "enunciado": "Según las leyes de De Morgan, ¿a qué equivale (AB)'?",
+      "opciones": [
+        "A' + B'",
+        "A'B'",
+        "A'B + B'A",
+        "AB' + AB"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3354",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama la capa 4 del modelo OSI?",
+      "opciones": [
+        "Enlace de datos",
+        "Sesión",
+        "Transporte",
+        "Red"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3356",
+      "tipo": "test",
+      "enunciado": "¿Qué nombre de animal tuvo Mac OS X 10.0 (2001)?",
+      "opciones": [
+        "Puma",
+        "Leopard",
+        "Tiger",
+        "Cheetah"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3360",
+      "tipo": "test",
+      "enunciado": "¿En qué puerto funciona HTTP?",
+      "opciones": [
+        "53",
+        "443",
+        "23",
+        "80"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3361",
+      "tipo": "test",
+      "enunciado": "¿A cuántos hercios funciona el estándar de vídeo PAL?",
+      "opciones": [
+        "25",
+        "60",
+        "50",
+        "59"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3363",
+      "tipo": "test",
+      "enunciado": "¿En qué año compró Lenovo la división de ordenadores personales de IBM, incluida la gama ThinkPad?",
+      "opciones": [
+        "2005",
+        "2008",
+        "2002",
+        "1999"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3364",
+      "tipo": "test",
+      "enunciado": "¿Cómo llama el Sistema Internacional de Magnitudes a 1024 bytes?",
+      "opciones": [
+        "Kibibyte",
+        "Kilobyte",
+        "Kelobyte",
+        "Kylobyte"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3366",
+      "tipo": "test",
+      "enunciado": "¿Qué lenguaje de programación usa sobre todo Unreal Engine 4?",
+      "opciones": [
+        "ECMAScript",
+        "C#",
+        "C++",
+        "Ensamblador"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3368",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos NO es un valor del manifiesto ágil?",
+      "opciones": [
+        "Documentación exhaustiva",
+        "Individuos e interacciones",
+        "Respuesta ante el cambio",
+        "Colaboración con el cliente"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3370",
+      "tipo": "test",
+      "enunciado": "¿Cuál es el valor máximo de un entero con signo de 32 bits?",
+      "opciones": [
+        "9 223 372 036 854 775 807",
+        "2 147 483 647",
+        "255",
+        "2048"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    }
+  ]
+}

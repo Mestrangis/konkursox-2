@@ -1,0 +1,24 @@
+{
+  "formato": "konkursox-banco",
+  "version": 1,
+  "nombre": "Libros · Media",
+  "grupo": "Open Trivia DB",
+  "licencia": "Preguntas de Open Trivia Database (opentdb.com), licencia CC BY-SA 4.0, traducidas y adaptadas al español. Este banco se distribuye con la misma licencia (CC BY-SA 4.0).",
+  "preguntas": [
+    {
+      "id": "o542",
+      "tipo": "sino",
+      "enunciado": "¿Iba a ser negro, en un principio, el Charlie de «Charlie y la fábrica de chocolate»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    }
+  ]
+}

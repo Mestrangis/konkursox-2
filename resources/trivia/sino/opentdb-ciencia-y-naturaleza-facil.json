@@ -1,0 +1,279 @@
+{
+  "formato": "konkursox-banco",
+  "version": 1,
+  "nombre": "Ciencia y naturaleza · Fácil",
+  "grupo": "Open Trivia DB",
+  "licencia": "Preguntas de Open Trivia Database (opentdb.com), licencia CC BY-SA 4.0, traducidas y adaptadas al español. Este banco se distribuye con la misma licencia (CC BY-SA 4.0).",
+  "preguntas": [
+    {
+      "id": "o2880",
+      "tipo": "sino",
+      "enunciado": "¿Hacen a veces los grandes tiburones blancos un «golpe y mordisco» de prueba a sus víctimas?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2882",
+      "tipo": "sino",
+      "enunciado": "¿Es la celiaquía una enfermedad del corazón que impide comer carne?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2887",
+      "tipo": "sino",
+      "enunciado": "¿Puede una persona normal pasar dos semanas sin beber agua?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2889",
+      "tipo": "sino",
+      "enunciado": "¿Tiene núcleo un átomo?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2897",
+      "tipo": "sino",
+      "enunciado": "Sin contar dentaduras postizas, ¿tiene una persona dos denticiones en su vida?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2899",
+      "tipo": "sino",
+      "enunciado": "¿Se considera el Sol una estrella?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2905",
+      "tipo": "sino",
+      "enunciado": "¿Es la Tierra una esfera perfecta?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2911",
+      "tipo": "sino",
+      "enunciado": "¿Tienen la Tierra y la Luna más o menos la misma masa?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2912",
+      "tipo": "sino",
+      "enunciado": "¿Giran alrededor del Sol todos los planetas del sistema solar?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2922",
+      "tipo": "sino",
+      "enunciado": "¿Está la sal compuesta al 100 % de sodio?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2929",
+      "tipo": "sino",
+      "enunciado": "¿Es una unidad astronómica la distancia entre la Tierra y la Luna?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2940",
+      "tipo": "sino",
+      "enunciado": "¿Es una reacción exotérmica la que libera energía irradiando electricidad?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2942",
+      "tipo": "sino",
+      "enunciado": "¿Da la Tierra una vuelta al Sol en un año?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2954",
+      "tipo": "sino",
+      "enunciado": "¿Se forman las rocas ígneas por calor y presión excesivos?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2957",
+      "tipo": "sino",
+      "enunciado": "¿Se llama anual una planta cuyo ciclo de vida dura más de un año?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2960",
+      "tipo": "sino",
+      "enunciado": "¿Lleva el afloramiento oceánico agua fría y rica en nutrientes a la superficie?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2961",
+      "tipo": "sino",
+      "enunciado": "¿Es la psicología la ciencia del comportamiento y la mente?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2967",
+      "tipo": "sino",
+      "enunciado": "¿Hierve el agua siempre a 100 °C, estés donde estés?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    }
+  ]
+}

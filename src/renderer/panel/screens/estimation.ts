@@ -4,7 +4,7 @@ import { parseNumber, questionKey, type Question } from '../../../shared/questio
 import { targetKey, turnTargets, type CurrentQuestion, type QuizAction } from '../../../shared/quiz'
 import type { GameState } from '../../../shared/types'
 import { askText, btn, h, icon, ICONS, nameOf, type Ctx, type Screen } from '../ui'
-import { airBadge, askSaveFix, bankFor, flowSteps, goButton, nextUnused, onAirLabel, questionList, timerControls, toGame } from './common'
+import { airBadge, askSaveFix, bankFor, flowSteps, goButton, nextUnused, onAirLabel, questionList, timerControls, toGame, imageButtons } from './common'
 
 export function createEstimationScreen(ctx: Ctx): Screen {
   const game = 'estimacion' as const
@@ -247,6 +247,7 @@ export function createEstimationScreen(ctx: Ctx): Screen {
     secondary.replaceChildren(
       btn(cur?.showGuesses ? 'Ocultar cifras en el plató' : 'Mostrar cifras en el plató', toggleGuesses, `b${cur?.showGuesses ? ' on' : ''}`, 'C'),
       timer.el,
+      ...imageButtons(ctx, cur, send),
       h('span', 'spacer'),
       btn('Deshacer', () => ctx.send({ type: 'undo', game }), 'b ghost', 'Ctrl Z')
     )
@@ -261,6 +262,9 @@ export function createEstimationScreen(ctx: Ctx): Screen {
     const k = e.key.length === 1 ? e.key.toLowerCase() : e.key
     if (k === ' ') nextStep(S()).run?.()
     else if (k === 'c') toggleGuesses()
+    else if (k === 'i') send({ type: 'quizToggleImage', which: 'q' })
+    else if (k === 'u') send({ type: 'quizToggleImage', which: 'a' })
+    else if (k === 'f') send({ type: 'quizImageFull' })
     else if (k === 't') timer.toggleShow()
     else if (k === 'y') timer.togglePlay()
     else return false

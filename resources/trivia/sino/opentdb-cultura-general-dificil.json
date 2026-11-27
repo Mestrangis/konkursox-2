@@ -1,0 +1,99 @@
+{
+  "formato": "konkursox-banco",
+  "version": 1,
+  "nombre": "Cultura general · Difícil",
+  "grupo": "Open Trivia DB",
+  "licencia": "Preguntas de Open Trivia Database (opentdb.com), licencia CC BY-SA 4.0, traducidas y adaptadas al español. Este banco se distribuye con la misma licencia (CC BY-SA 4.0).",
+  "preguntas": [
+    {
+      "id": "o400",
+      "tipo": "sino",
+      "enunciado": "¿Significa NCIS «Navy Corps Investigative Service»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o407",
+      "tipo": "sino",
+      "enunciado": "¿Aprobó el Gobierno de Nueva Zelanda que un niño se llamara «Number 16 Bus Shelter» (Marquesina del bus 16)?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o419",
+      "tipo": "sino",
+      "enunciado": "¿Existe de verdad el idioma luxemburgués?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o432",
+      "tipo": "sino",
+      "enunciado": "¿Es la samhainofobia el miedo anormal y persistente a Halloween?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o439",
+      "tipo": "sino",
+      "enunciado": "¿Usa la «teoría de las cucharas» las cucharas como metáfora de la energía disponible en un día?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o452",
+      "tipo": "sino",
+      "enunciado": "¿Se escribe así: «Supercalifragilisticexpialidocious»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "formato": "konkursox-banco",
+  "version": 1,
+  "nombre": "Matemáticas · Difícil",
+  "grupo": "Open Trivia DB",
+  "licencia": "Preguntas de Open Trivia Database (opentdb.com), licencia CC BY-SA 4.0, traducidas y adaptadas al español. Este banco se distribuye con la misma licencia (CC BY-SA 4.0).",
+  "preguntas": [
+    {
+      "id": "o3435",
+      "tipo": "sino",
+      "enunciado": "Si pudieras doblar un papel por la mitad 50 veces, ¿tendría un grosor de unas tres cuartas partes de la distancia de la Tierra al Sol?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3442",
+      "tipo": "sino",
+      "enunciado": "En topología, ¿es cerrado el complementario de un conjunto abierto?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3444",
+      "tipo": "sino",
+      "enunciado": "¿Equivale el número binario 101001101 al decimal 334?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3447",
+      "tipo": "sino",
+      "enunciado": "¿Fue L'Hôpital el matemático que creó la regla que lleva su nombre?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    }
+  ]
+}

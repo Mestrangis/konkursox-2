@@ -1,0 +1,944 @@
+{
+  "formato": "konkursox-banco",
+  "version": 1,
+  "nombre": "Cultura general · Difícil",
+  "grupo": "Open Trivia DB",
+  "licencia": "Preguntas de Open Trivia Database (opentdb.com), licencia CC BY-SA 4.0, traducidas y adaptadas al español. Este banco se distribuye con la misma licencia (CC BY-SA 4.0).",
+  "preguntas": [
+    {
+      "id": "o392",
+      "tipo": "test",
+      "enunciado": "¿Qué significa la palabra «astasia»?",
+      "opciones": [
+        "No poder tomar decisiones",
+        "No poder concentrarse",
+        "No poder mantenerse en pie",
+        "Un deseo febril de arrancarse la ropa"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o393",
+      "tipo": "test",
+      "enunciado": "Si plantas semillas de Quercus robur, ¿qué crece?",
+      "opciones": [
+        "Hortalizas",
+        "Cereales",
+        "Árboles",
+        "Flores"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o394",
+      "tipo": "test",
+      "enunciado": "En aviación, ¿qué significan las siglas TCAS?",
+      "opciones": [
+        "Sistema anticolisión de tráfico",
+        "Sistema de alerta de comunicación",
+        "Sistema de configuración de tráfico",
+        "Sistema de abreviatura de indicativos"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o396",
+      "tipo": "test",
+      "enunciado": "¿De las lenguas de qué país vienen las palabras «bungalow» y «champú»?",
+      "opciones": [
+        "Etiopía",
+        "China",
+        "Papúa Nueva Guinea",
+        "India"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o397",
+      "tipo": "test",
+      "enunciado": "El color chartreuse está entre el amarillo y...",
+      "opciones": [
+        "El negro",
+        "El morado",
+        "El rojo",
+        "El verde"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o398",
+      "tipo": "test",
+      "enunciado": "¿Cómo se dice «luna» en árabe (transcrito)?",
+      "opciones": [
+        "Kawkab",
+        "Najma",
+        "Shams",
+        "Qamar"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o399",
+      "tipo": "test",
+      "enunciado": "¿Qué estrella de cine tiene una estatua en Leicester Square (Londres)?",
+      "opciones": [
+        "Rowan Atkinson",
+        "Paul Newman",
+        "Alfred Hitchcock",
+        "Charlie Chaplin"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o402",
+      "tipo": "test",
+      "enunciado": "¿A qué familia de lenguas pertenece el kazajo?",
+      "opciones": [
+        "Indoeuropea",
+        "Túrquica",
+        "Urálica",
+        "Mongólica"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o403",
+      "tipo": "test",
+      "enunciado": "El malva, que debe su nombre a esa flor, es un tono de...",
+      "opciones": [
+        "Morado",
+        "Marrón",
+        "Rosa",
+        "Rojo"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o404",
+      "tipo": "test",
+      "enunciado": "¿Qué sustancia hay en las semillas de la berenjena?",
+      "opciones": [
+        "Cianuro",
+        "Psilocibina",
+        "Nicotina",
+        "Mescalina"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o405",
+      "tipo": "test",
+      "enunciado": "¿A qué color tiene miedo una persona con xantofobia?",
+      "opciones": [
+        "Al rojo",
+        "Al verde",
+        "Al amarillo",
+        "Al azul"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o409",
+      "tipo": "test",
+      "enunciado": "¿Cuál es el puente más largo del mundo?",
+      "opciones": [
+        "Gran Puente Danyang-Kunshan (China)",
+        "Puente Sultán Abdul Halim (Malasia)",
+        "Calzada del lago Pontchartrain (EE. UU.)",
+        "Puente Rey Fahd (Arabia Saudí)"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o410",
+      "tipo": "test",
+      "enunciado": "En lingüística, ¿cuál de estas NO es una de las máximas de Grice?",
+      "opciones": [
+        "Modo",
+        "Calidad",
+        "Extensión",
+        "Relación"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o411",
+      "tipo": "test",
+      "enunciado": "Si alguien dice que eres «olente» (olid), ¿qué quiere decir?",
+      "opciones": [
+        "Que estás en baja forma",
+        "Que no se te entiende",
+        "Que hueles fatal",
+        "Que eres feo"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o412",
+      "tipo": "test",
+      "enunciado": "¿Cuál es la moneda de Etiopía?",
+      "opciones": [
+        "Dírham",
+        "Birr",
+        "Rand",
+        "Dólar estadounidense"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o414",
+      "tipo": "test",
+      "enunciado": "¿Qué presidente de EE. UU. inauguró oficialmente el canal de Panamá?",
+      "opciones": [
+        "Woodrow Wilson",
+        "Herbert Hoover",
+        "Calvin Coolidge",
+        "Theodore Roosevelt"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o415",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estas familias existe en Los Sims?",
+      "opciones": [
+        "Los Simoleón",
+        "Los Ghoul (Goth)",
+        "La Familia",
+        "Los Proud"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o416",
+      "tipo": "test",
+      "enunciado": "¿Cuántas calorías tiene una lata de 355 ml de Pepsi?",
+      "opciones": [
+        "200",
+        "100",
+        "150",
+        "155"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o417",
+      "tipo": "test",
+      "enunciado": "¿A qué tiene miedo una persona con esciofobia?",
+      "opciones": [
+        "A comer",
+        "A las luces fuertes",
+        "A las sombras",
+        "A los transportes"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o418",
+      "tipo": "test",
+      "enunciado": "¿El interior de qué iglesia del Vaticano diseñaron en el Renacimiento Bramante, Miguel Ángel y Bernini?",
+      "opciones": [
+        "La basílica de San Pedro",
+        "La catedral de Catania",
+        "La basílica de San Marcos",
+        "El Duomo de Florencia"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o420",
+      "tipo": "test",
+      "enunciado": "¿Qué vendía Nokia en sus orígenes?",
+      "opciones": [
+        "Ordenadores",
+        "Papel",
+        "Teléfonos",
+        "Procesadores"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o424",
+      "tipo": "test",
+      "enunciado": "El productor Kygo se hizo famoso con una remezcla. ¿De qué canción?",
+      "opciones": [
+        "Take On Me (a-ha)",
+        "Sexual Healing (Marvin Gaye)",
+        "Midnight (Coldplay)",
+        "I See Fire (Ed Sheeran)"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o426",
+      "tipo": "test",
+      "enunciado": "¿Qué empresaria ghanesa fue pionera de los microcréditos?",
+      "opciones": [
+        "Ama Ata Aidoo",
+        "Sionne Neely",
+        "Farida Bedwei",
+        "Esther Afua Ocloo"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o427",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estas lenguas NO tiene género gramatical?",
+      "opciones": [
+        "Danés",
+        "Turco",
+        "Polaco",
+        "Alemán"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o428",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos NO es otro nombre de la berenjena?",
+      "opciones": [
+        "Calabaza de Guinea",
+        "Melongena",
+        "Potimarron",
+        "Brinjal"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o429",
+      "tipo": "test",
+      "enunciado": "¿Cuál es el sustantivo más usado en inglés?",
+      "opciones": [
+        "Water (agua)",
+        "Man (hombre)",
+        "Time (tiempo)",
+        "Home (hogar)"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o431",
+      "tipo": "test",
+      "enunciado": "¿Qué significa la frase latina «Veni, vidi, vici»?",
+      "opciones": [
+        "Pasado, presente y futuro",
+        "Llegué, vi, vencí",
+        "Vida, libertad y felicidad",
+        "No veo, no oigo, no hablo"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o433",
+      "tipo": "test",
+      "enunciado": "¿Qué término anatómico se refiere a la parte de la cola de un animal?",
+      "opciones": [
+        "Caudal",
+        "Coronal",
+        "Ventral",
+        "Proximal"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o434",
+      "tipo": "test",
+      "enunciado": "¿En qué año salió el robot de juguete RoboSapien?",
+      "opciones": [
+        "2006",
+        "2000",
+        "2004",
+        "2001"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o435",
+      "tipo": "test",
+      "enunciado": "¿Cuántas pepitas de manzana, más o menos, habría que tragar para una dosis mortal de cianuro?",
+      "opciones": [
+        "20",
+        "20 000",
+        "200",
+        "2000"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o436",
+      "tipo": "test",
+      "enunciado": "¿Qué cofundador de Oculus VR murió en un extraño accidente de coche en 2013?",
+      "opciones": [
+        "Nate Mitchell",
+        "Palmer Luckey",
+        "Andrew Scott Reisse",
+        "Jack McCauley"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o440",
+      "tipo": "test",
+      "enunciado": "¿Dónde tiene su sede Apple?",
+      "opciones": [
+        "Redmond (Washington)",
+        "Cupertino (California)",
+        "Redwood City (California)",
+        "Santa Mónica (California)"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o441",
+      "tipo": "test",
+      "enunciado": "¿En qué año nació la reina Isabel II?",
+      "opciones": [
+        "1923",
+        "1929",
+        "1926",
+        "1930"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o442",
+      "tipo": "test",
+      "enunciado": "En el Código Internacional de Señales, ¿qué bandera significa «necesito ayuda (no es socorro)»?",
+      "opciones": [
+        "Papa",
+        "Kilo",
+        "Victor",
+        "Delta"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o443",
+      "tipo": "test",
+      "enunciado": "¿Cuál fue el tercer país en tener un McDonald's?",
+      "opciones": [
+        "Costa Rica",
+        "Japón",
+        "Francia",
+        "Australia"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o444",
+      "tipo": "test",
+      "enunciado": "De Eemhof, Port Zélande y Het Heijderbos son parques vacacionales de ¿qué empresa?",
+      "opciones": [
+        "Center Parcs",
+        "Yelloh Village",
+        "Keycamp",
+        "Villa Plus"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o445",
+      "tipo": "test",
+      "enunciado": "El Teniente, en Chile, es la mayor mina subterránea del mundo de ¿qué metal?",
+      "opciones": [
+        "Níquel",
+        "Cobre",
+        "Hierro",
+        "Plata"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o446",
+      "tipo": "test",
+      "enunciado": "¿Qué músico colaboró con Porter Robinson en la canción «Shelter» (2016)?",
+      "opciones": [
+        "deadmau5",
+        "Zedd",
+        "Mat Zo",
+        "Madeon"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o447",
+      "tipo": "test",
+      "enunciado": "¿Qué significa la palabra sueca «grunka»?",
+      "opciones": [
+        "Lugar",
+        "Gente",
+        "Piña",
+        "Cosa"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o448",
+      "tipo": "test",
+      "enunciado": "¿Qué es el Quadrangularis Reversum?",
+      "opciones": [
+        "Una jugada de ajedrez",
+        "Un edificio de Oxford",
+        "Un teorema geométrico",
+        "Un instrumento de percusión"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o449",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estas empresas suecas se fundó en 1943?",
+      "opciones": [
+        "Clas Ohlson",
+        "H&M",
+        "Lindex",
+        "IKEA"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o450",
+      "tipo": "test",
+      "enunciado": "¿Cómo se dice «avión» en chino (transcrito)?",
+      "opciones": [
+        "Qìchē",
+        "Huǒjiàn",
+        "Zǒngxiàn",
+        "Fēijī"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o451",
+      "tipo": "test",
+      "enunciado": "¿Quién fundó la Khan Academy?",
+      "opciones": [
+        "Kitt Khan",
+        "Adel Khan",
+        "Ben Khan",
+        "Sal Khan"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o453",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llamaba en su fundación el Bank of America?",
+      "opciones": [
+        "Bank of Pennsylvania",
+        "Bank of Charlotte",
+        "Bank of Italy",
+        "Bank of Long Island"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o454",
+      "tipo": "test",
+      "enunciado": "¿Qué significa la palabra «abulia»?",
+      "opciones": [
+        "No poder concentrarse",
+        "Un deseo febril de arrancarse la ropa",
+        "Falta de voluntad para decidir o actuar",
+        "No poder mantenerse en pie"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o456",
+      "tipo": "test",
+      "enunciado": "¿En qué consiste la nefelococcigia?",
+      "opciones": [
+        "En nadar en agua helada",
+        "En buscar formas en las nubes",
+        "En romper cristales con la voz",
+        "En dormir con los ojos abiertos"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o458",
+      "tipo": "test",
+      "enunciado": "¿Cómo se dice «corazón» (el órgano) en coreano (transcrito)?",
+      "opciones": [
+        "Simjang",
+        "Segseu",
+        "Aejeong",
+        "Jeongsin"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o459",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos monarcas británicos nunca apareció en una moneda de libra en circulación?",
+      "opciones": [
+        "Victoria",
+        "Carlos II",
+        "Eduardo VIII",
+        "Jorge VI"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o460",
+      "tipo": "test",
+      "enunciado": "¿Cuándo se fundó YouTube?",
+      "opciones": [
+        "22 de mayo de 2004",
+        "19 de julio de 2009",
+        "14 de febrero de 2005",
+        "12 de septiembre de 2005"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o461",
+      "tipo": "test",
+      "enunciado": "El coquelicot, que también significa amapola, es un tono de...",
+      "opciones": [
+        "Verde",
+        "Rojo",
+        "Rosa",
+        "Azul"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o462",
+      "tipo": "test",
+      "enunciado": "¿En qué municipio de A Coruña tiene su sede Inditex, el mayor grupo de moda del mundo?",
+      "opciones": [
+        "Arteixo",
+        "Sanxenxo",
+        "Ordes",
+        "Muxía"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o463",
+      "tipo": "test",
+      "enunciado": "Según Monty Python, ¿a qué velocidad vuela una golondrina sin carga?",
+      "opciones": [
+        "39 km/h",
+        "320 km/h",
+        "24 km/h",
+        "32 km/h"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o464",
+      "tipo": "test",
+      "enunciado": "¿Cuántas teclas tiene un piano de cola estándar?",
+      "opciones": [
+        "108",
+        "88",
+        "98",
+        "78"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o465",
+      "tipo": "test",
+      "enunciado": "¿Qué significa la palabra «aprosexia»?",
+      "opciones": [
+        "No poder tomar decisiones",
+        "Un deseo febril de arrancarse la ropa",
+        "No poder concentrarse en nada",
+        "No poder mantenerse en pie"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o467",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estas lenguas de la India NO es indoeuropea?",
+      "opciones": [
+        "Tamil",
+        "Hindi",
+        "Panyabí",
+        "Urdu"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    }
+  ]
+}

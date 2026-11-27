@@ -1,0 +1,164 @@
+# Juegos de mesa (Entertainment: Board Games)
+2802|¿En qué ciudad francesa se inspira el juego Carcassonne?|Carcasona|París|Marsella|Clermont-Ferrand
+2803|¿Cuál es el nivel máximo de una sola clase en Dungeons & Dragons (5.ª edición)?|20|30|15|25
+2804|En el Monopoly, ¿de qué color son las dos calles más baratas?|Marrón|Verde|Amarillo|Azul
+2806|¿Cuántas casillas tiene el tablero estándar del Monopoly?|40|28|55|36
+2807|¿Cuál de estas NO es una clase de Dungeons & Dragons 5.ª edición?|Ingeniero|Guerrero|Paladín|Bardo
+2808|¿Existe un juego de mesa de Donald Trump hecho en 1989?|Sí
+2809|¿Cuántas piezas hay en el tablero al empezar una partida de ajedrez?|32|16|20|36
+2810|En ajedrez, ¿qué caracteriza al gambito de rey?|Sacrificar un peón|Sacrificar el rey por una dama|Enrocar en corto|Mover el rey en la segunda jugada
+2811|¿Ganó el juego de cartas Munchkin el premio Origins de 2001 al mejor juego de cartas tradicional?|Sí
+2812|¿Cuántos puntos suman todas las caras de un dado normal?|21|24|15|18
+2813|¿Cómo se llama informalmente una regla añadida o cambiada que solo se usa en un grupo o en una casa?|Regla de la casa|Regla personalizada|Regla extra|Regla de cambio
+2814|Al colocar el tablero de ajedrez, ¿va el rey en una casilla de su mismo color?|No
+2815|¿Cuántos dados se usan en el Yahtzee?|Cinco|Cuatro|Seis|Ocho
+2816|¿Cuál de estos juegos NO usa dados normales de seis caras?|El juego de la vida (Life)|Monopoly|Risk|Serpientes y escaleras
+2817|¿En qué juego aparece la frase «No pase por la casilla de salida, no cobre 200»?|Monopoly|Pay Day|Cluedo|Coppit
+2818|En Dungeons & Dragons, ¿es Beshaba la diosa de la mala suerte?|Sí
+2819|En Dungeons & Dragons 5.ª edición, ¿qué característica se suele sumar a la tirada de iniciativa?|Destreza|Velocidad|Fuerza|Sabiduría
+2820|¿Cuándo salió a la venta el Twister?|Abril de 1966|Septiembre de 1965|Enero de 1969|Febrero de 1966
+2821|¿Ganan con facilidad los mejores jugadores humanos a los mejores ordenadores al ajedrez?|No
+2823|¿Se creó el juego de serpientes y escaleras en la India?|Sí
+2825|¿De qué ciudad estadounidense toma los nombres de sus calles el Monopoly original?|Atlantic City (Nueva Jersey)|Las Vegas|Duluth|Charleston
+2826|En el Monopoly, ¿qué casilla está en diagonal enfrente de la salida?|Parking gratuito|Vaya a la cárcel|La cárcel|La compañía eléctrica
+2828|¿Quién fue el primer campeón mundial oficial de ajedrez?|Wilhelm Steinitz|José Raúl Capablanca|Emanuel Lasker|Bobby Fischer
+2831|En Catan, ¿qué número en los dados activa al ladrón?|7|3|10|1
+2832|¿Qué personaje NO está en el Cluedo?|Señor Índigo|Coronel Mostaza|Reverendo Verde|Señorita Escarlata
+2834|¿Lleva monóculo el señor del Monopoly (Rich Uncle Pennybags)?|No
+2835|¿Qué enviaron los creadores de Cards Against Humanity en su pack de Black Friday?|Excrementos de toro|Una expansión|Un juguete racista|Orina de gato
+2836|¿Cuántos muelles Slinky se vendieron más o menos en sus primeros 60 años (1945-2005)?|300 millones|100 millones|450 millones|1000 millones
+2837|¿Con qué letra se llama al maná azul en Magic: The Gathering?|U|B|L|E
+2838|¿Cuál de estos juegos de mesa es el más antiguo?|El go|El ajedrez|El mahjong|El shogi
+2839|¿Se hicieron las casas y hoteles originales del Monopoly con restos de molduras de madera?|Sí
+2841|¿Cuál de estos NO es un color de maná en Magic: The Gathering?|Amarillo|Blanco|Verde|Azul
+2843|¿Cuántos puntos vale la ficha de la Z en el Scrabble (en inglés)?|10|8|5|6
+2844|¿En qué año salió el juego de cartas Magic: The Gathering?|1993|1987|1998|2003
+2847|Al empezar una partida de Monopoly, si sacas un doble seis, ¿en qué casilla caes?|La compañía eléctrica|La compañía de aguas|Suerte|Caja de comunidad
+2848|¿Quién fue campeón mundial de ajedrez entre 1894 y 1921?|Emanuel Lasker|José Raúl Capablanca|Wilhelm Steinitz|Bobby Fischer
+2850|En el Monopoly, ¿qué pasa si sacas tres dobles seguidos?|Vas a la cárcel|Cobras 200|Pagas 200|Vas al parking gratuito
+2851|En póker, ¿qué significa «EV»?|Valor esperado (Expected Value)|Valor de equidad|Variación equivalente|Variación de equidad
+2852|En ajedrez, ¿qué dos piezas combina el movimiento de la dama?|Alfil y torre|Torre y rey|Caballo y alfil|Rey y caballo
+2854|¿Tiene el go más posiciones legales posibles que átomos hay en el universo visible?|Sí
+2856|¿Qué juego de mesa salió el 6 de febrero de 1935?|Monopoly|Risk|Cluedo|Candy Land
+2857|¿Cuál de estas ciudades NO aparece en el juego de mesa Pandemic?|Berlín|Ciudad Ho Chi Minh|Lagos|Karachi
+2860|¿Quién diseñó el juego de mesa «Ra»?|Reiner Knizia|Bruno Cathala|Uwe Rosenberg|Allison Kline
+2862|¿Cuál es el juego de mesa más antiguo del mundo?|El senet|El ajedrez|Las damas|El go
+2864|¿De qué juego de mesa es una variante el Monopoly?|The Landlord's Game|Territorial Dispute|Property Feud|The Monopolist's Game
+2866|En Dungeons & Dragons 5.ª edición, ¿qué clase obtiene sus poderes de un pacto con un ser superior?|Brujo|Mago|Hechicero|Clérigo
+2869|Sin contar pasillos ni escaleras, ¿cuántas habitaciones hay en el tablero del Cluedo?|9|1|6|10
+2872|En el mahjong riichi, ¿qué se dice al robar tú mismo la ficha ganadora?|Tsumo|Ron|Riichi|Kan
+2875|¿Qué Pokémon es el n.º 39 de la Pokédex nacional?|Jigglypuff|Pikachu|Psyduck|Fearow
+2876|¿Cuál es el monstruo más difícil del Manual de Monstruos de Dungeons & Dragons 5.ª edición?|Tarrasque|Contemplador|Bestia trastocadora|Liche
+# Ciencia y naturaleza (Science & Nature)
+2880|¿Hacen a veces los grandes tiburones blancos un «golpe y mordisco» de prueba a sus víctimas?|Sí
+2881|¿Cuál es la unidad de temperatura del Sistema Internacional?|Kelvin|Fahrenheit|Celsius|Rankine
+2882|¿Es la celiaquía una enfermedad del corazón que impide comer carne?|No
+2883|¿Cuál es el primer elemento de la tabla periódica?|Hidrógeno|Helio|Oxígeno|Litio
+2884|¿Qué animal aparece en el famoso experimento mental de Schrödinger?|Un gato|Un perro|Un murciélago|Una mariposa
+2885|¿De qué isótopo se compone sobre todo el uranio natural?|238|235|239|233
+2886|¿Cuál es la unidad de la resistencia eléctrica?|El ohmio|El mho|El tesla|El julio
+2887|¿Puede una persona normal pasar dos semanas sin beber agua?|No
+2888|¿Cuál es el peso atómico estándar del plutonio?|244|94|481|128
+2889|¿Tiene núcleo un átomo?|Sí
+2890|¿Qué elemento tiene el símbolo químico Fe?|Hierro|Oro|Plata|Estaño
+2891|¿Cuál es la unidad de longitud del Sistema Internacional?|El metro|El ángstrom|El pie|La braza
+2892|¿Cuál es el planeta más caliente del sistema solar?|Venus|Júpiter|Mercurio|Marte
+2893|¿Cuántas leyes de la termodinámica hay?|Cuatro|Tres|Dos|Cinco
+2894|¿Cuál es la unidad de tiempo del Sistema Internacional?|El segundo|El minuto|La hora|El día
+2895|¿Qué significan las siglas ADN?|Ácido desoxirribonucleico|Ácido desoxirribogenético|Átomos desoxirribogenéticos|Ácido detóxico
+2896|¿Qué porcentaje de la superficie de la Tierra es agua, más o menos?|70 %|30 %|50 %|90 %
+2897|Sin contar dentaduras postizas, ¿tiene una persona dos denticiones en su vida?|Sí
+2898|¿Sobre qué parte del cuerpo es la rinoplastia?|La nariz|Las orejas|La barbilla|El cuello
+2899|¿Se considera el Sol una estrella?|Sí
+2900|¿Cuántos planetas hay en el sistema solar?|Ocho|Nueve|Siete|Diez
+2901|¿Cuántas copias de cada gen suelen tener las células humanas?|2|1|4|3
+2902|¿Cuántos pares de cromosomas tienen las células del cuerpo humano?|23|21|22|24
+2903|¿Cuántos huesos tiene el cuerpo humano adulto?|206|203|209|200
+2904|¿Cuál de estos elementos es un metaloide?|Antimonio|Estaño|Bromo|Rubidio
+2905|¿Es la Tierra una esfera perfecta?|No
+2906|¿Cuál es el elemento más abundante del universo?|Hidrógeno|Helio|Litio|Oxígeno
+2907|¿Cuál es la unidad de masa del Sistema Internacional?|El kilogramo|La tonelada|La libra|El gramo
+2908|¿Qué significa la S de NASA?|Space (espacio)|Science (ciencia)|Society (sociedad)|Star (estrella)
+2909|¿Cuál es el nombre común del «monóxido de dihidrógeno»?|Agua|Metano|Amoniaco|Gas de la risa
+2910|¿Entre qué dos planetas está el cinturón de asteroides?|Marte y Júpiter|Júpiter y Saturno|Mercurio y Venus|La Tierra y Marte
+2911|¿Tienen la Tierra y la Luna más o menos la misma masa?|No
+2912|¿Giran alrededor del Sol todos los planetas del sistema solar?|Sí
+2913|¿Qué hay en el centro de nuestra galaxia?|Un agujero negro|Un agujero de gusano|Una supernova|Un cuásar
+2915|¿Qué significan las siglas LÁSER?|Amplificación de luz por emisión estimulada de radiación|Luz analizada por estéreo|Luz amplificada por energía de radio|Antimateria luminosa
+2917|¿Cómo se llamaba el primer satélite artificial, que lanzó la Unión Soviética en 1957?|Sputnik 1|Soyuz 7K-OK|Zenit-2|Vosjod 3KV
+2918|¿Qué elemento hace roja la sangre humana?|El hierro|El cobre|El iridio|El cobalto
+2919|Las estrellas están hechas sobre todo de hidrógeno y ¿qué otro gas?|Helio|Oxígeno|Argón|Nitrógeno
+2920|¿Cuál es el hueso más largo del cuerpo humano?|El fémur|La escápula|El peroné|El cúbito
+2921|¿Qué usó Gregor Mendel para estudiar los cruces genéticos?|Guisantes|Gatos|Flores|Loros
+2922|¿Está la sal compuesta al 100 % de sodio?|No
+2923|¿De qué sustancia es el hielo seco la forma sólida?|Dióxido de carbono|Nitrógeno|Amoniaco|Oxígeno
+2924|¿Cuál es el planeta más grande del sistema solar?|Júpiter|Saturno|La Tierra|Marte
+2925|¿Cómo se llama en inglés a todas las crías de marsupial?|Joey|Calf|Pup|Cub
+2927|¿Cuál de estos NO es un grupo de la tabla periódica?|Los flúores|Los metales alcalinos|Los halógenos|Los gases nobles
+2928|¿Cuál es la principal sustancia adictiva del tabaco?|Nicotina|Catinona|Efedrina|Glaucina
+2929|¿Es una unidad astronómica la distancia entre la Tierra y la Luna?|No
+2930|¿Qué misión Apolo fue la primera en llegar a la Luna?|Apolo 11|Apolo 10|Apolo 9|Apolo 13
+2931|¿Cuál es la fórmula química del agua?|H2O|C12H6O2|CO2|H
+2932|¿Cuál es el símbolo químico del mercurio?|Hg|Me|Mc|Hy
+2933|¿Qué elemento tiene el punto de fusión más alto?|Carbono|Wolframio|Platino|Osmio
+2934|¿Cuál es la masa atómica del carbono?|12|14|16|10
+2935|¿Cómo se llama la capa más externa y fina de la Tierra?|Corteza|Exosfera|Manto|Núcleo externo
+2936|¿Qué da el color verde a la mayoría de las hojas?|La clorofila|La refracción de la luz|Pigmentos naturales|La radiación ultravioleta
+2937|¿En honor de quién se llama el elemento curio?|Marie y Pierre Curie|El róver Curiosity|Jorge el Curioso|Stephen Curry
+2938|¿Cuántas lunas tiene la Tierra?|1|0|2|3
+2939|¿Cuál de estas enfermedades la causa una bacteria?|El cólera|El sarampión|El sida|La tiña
+2940|¿Es una reacción exotérmica la que libera energía irradiando electricidad?|No
+2941|¿Cuál es el animal más grande que existe hoy?|La ballena azul|La orca|El calamar colosal|La jirafa
+2942|¿Da la Tierra una vuelta al Sol en un año?|Sí
+2943|¿Quién descubrió la ley de la gravitación universal?|Isaac Newton|Galileo Galilei|Charles Darwin|Albert Einstein
+2945|¿Qué elemento, sometido a enorme calor y presión, forma diamantes?|Carbono|Nitrógeno|Oxígeno|Hidrógeno
+2946|¿Cómo se llama la estrella más cercana al polo norte celeste?|Polaris (la estrella polar)|Erídano|Gamma Cephei|Iota Cephei
+2947|¿Qué gas forma alrededor del 78 % de la atmósfera terrestre?|Nitrógeno|Oxígeno|Argón|Dióxido de carbono
+2948|¿Qué tipo de roca se forma por calor y presión intensos?|Metamórfica|Sedimentaria|Ígnea|Diamante
+2949|¿Qué parte del cuerpo afecta sobre todo el alzhéimer?|El cerebro|Los pulmones|La piel|El corazón
+2950|¿Cuántas cavidades tiene el corazón humano?|4|2|6|3
+2951|¿Cuántas lunas tiene Plutón?|Cinco|Dos|Tres|Una
+2952|¿Qué gas noble tiene el número atómico más bajo?|Helio|Neón|Argón|Kriptón
+2953|¿Cuál es la «central energética» de la célula eucariota animal?|La mitocondria|El núcleo|El cloroplasto|El retículo endoplasmático
+2954|¿Se forman las rocas ígneas por calor y presión excesivos?|No
+2955|¿Cuál de estos vasos sanguíneos lleva sangre sin oxígeno?|La arteria pulmonar|La vena pulmonar|La aorta|La arteria coronaria
+2956|¿Cuál de estos huesos es el más difícil de romper?|El fémur|El cráneo|El húmero|La tibia
+2957|¿Se llama anual una planta cuyo ciclo de vida dura más de un año?|No
+2958|¿Cuál es la velocidad de la luz en el vacío?|299 792 458 m/s|50 461 m/s|308 215 043 m/s|751 665 014 151 m/s
+2959|¿Cuál es la mayor diferencia entre una célula eucariota y una procariota?|Tener o no núcleo|El tamaño|Tener o no ciertos orgánulos|La pared celular
+2960|¿Lleva el afloramiento oceánico agua fría y rica en nutrientes a la superficie?|Sí
+2961|¿Es la psicología la ciencia del comportamiento y la mente?|Sí
+2962|¿Cuál de estos huesos NO está en la pierna?|El radio|La rótula|La tibia|El peroné
+2963|¿Cuál es el término médico del ombligo?|Umbilicus|Nevus|Nares|Paxillus
+2966|¿Cuál es el símbolo químico del helio?|He|H|Hg|Hs
+2967|¿Hierve el agua siempre a 100 °C, estés donde estés?|No
+2968|¿En qué se mide la dosis de radiación absorbida?|En grays|En vatios|En decibelios|En kelvin
+2969|¿Cuál es el término científico del sentido del gusto?|Percepción gustativa|Olfato|Somatosensación|Percepción auditiva
+2970|¿Qué parte del cuerpo afecta la osteoporosis?|Los huesos|La piel|El cerebro|El corazón
+2971|¿Cuáles son los vasos sanguíneos más pequeños del cuerpo?|Los capilares|Las arteriolas|Las vénulas|Los linfáticos
+2972|¿Contiene grasa el azúcar?|No
+2973|¿Cuál es la parte masculina de la flor, que produce el polen?|El estambre|El sépalo|El pistilo|El pétalo
+2974|¿Cuál es el ser vivo más grande que se conoce?|Un hongo de miel (Armillaria)|La ballena azul|La secuoya|El arrecife de coral
+2975|¿Es la fuerza centrípeta una fuerza aparente que empuja hacia fuera a un cuerpo que gira?|No
+2976|¿Qué elemento químico tiene el punto de ebullición más bajo?|Helio|Hidrógeno|Neón|Nitrógeno
+2977|¿Cuál es el término médico del azúcar bajo en sangre?|Hipoglucemia|Hipotiroidismo|Hipotermia|Hipoxia
+2978|¿Es el acero una aleación de hierro y carbono?|Sí
+2979|¿Cuál es el periodo de semidesintegración del uranio-235?|Unos 704 millones de años|Unos 4300 millones de años|Unos 1260 millones de años|Es un isótopo estable
+2981|¿Cuál de estos metales NO es líquido a temperatura ambiente o cerca de ella?|Berilio|Galio|Cesio|Mercurio
+2982|¿Qué articulación forman el húmero, el radio y el cúbito?|El codo|La rodilla|El hombro|El tobillo
+2983|¿Qué estudia la entomología?|Los insectos|Los humanos|El cerebro|Los peces
+2984|¿Qué transbordador espacial de la NASA se desintegró al volver a la atmósfera el 1 de febrero de 2003?|Columbia|Challenger|Discovery|Endeavour
+2985|¿Cuál de estas naves NUNCA tocó la Luna?|Mariner 4|Apolo 11|Luna 2|SMART-1
+2986|¿Quién descubrió los rayos X?|Wilhelm Conrad Röntgen|Thomas Alva Edison|James Watt|Albert Einstein
+2987|¿Con qué polímero se hacen los CD, las gafas de seguridad y los escudos antidisturbios?|Policarbonato|Caucho|Nailon|Baquelita
+2988|¿Se aplica el efecto Doppler a la luz?|Sí
+2989|¿Qué elemento químico se llamó en un principio «alabamio»?|Astato|Selenio|Antimonio|Molibdeno
+2990|¿Qué causa la enfermedad de Lyme?|Una bacteria|Un virus|Un gusano parásito|Una ameba
+2991|¿Qué elemento es Au en la tabla periódica?|Oro|Plata|Oxígeno|Níquel
+2992|En aeronáutica, ¿qué controlan los flaps y los slats de un avión?|La sustentación|El empuje|La resistencia|El peso
+2994|¿Alrededor de qué planeta giran las lunas Miranda, Ariel, Umbriel, Titania y Oberón?|Urano|Júpiter|Venus|Neptuno
+2995|¿Qué es la hipernatremia?|Exceso de sodio en sangre|Falta de potasio en sangre|Exceso de glucosa en sangre|Falta de hierro en sangre
+2996|¿En qué desierto crece de forma natural el cactus saguaro?|El de Sonora|El de Gobi|El de Yuma|El de Arabia
+2997|¿Cuál es el símbolo químico del plomo?|Pb|Ld|Le|Pm
+2998|¿Cuál es el nombre científico del manzano común?|Malus pumila|Malus americana|Pomus domestica|Appelus delectica
+2999|¿Qué edad tiene el universo?|13 800 millones de años|4500 millones de años|7900 millones de años|16 200 millones de años

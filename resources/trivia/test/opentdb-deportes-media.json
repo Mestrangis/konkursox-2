@@ -1,0 +1,1029 @@
+{
+  "formato": "konkursox-banco",
+  "version": 1,
+  "nombre": "Deportes · Media",
+  "grupo": "Open Trivia DB",
+  "licencia": "Preguntas de Open Trivia Database (opentdb.com), licencia CC BY-SA 4.0, traducidas y adaptadas al español. Este banco se distribuye con la misma licencia (CC BY-SA 4.0).",
+  "preguntas": [
+    {
+      "id": "o3583",
+      "tipo": "test",
+      "enunciado": "¿Cuánto mide exactamente una recta de la calle 1 de una pista olímpica de atletismo?",
+      "opciones": [
+        "100 m exactos más la curva",
+        "91,44 m",
+        "100 m",
+        "84,39 m"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3585",
+      "tipo": "test",
+      "enunciado": "¿Qué marca ganó las 24 Horas de Le Mans en 2017?",
+      "opciones": [
+        "Toyota",
+        "Audi",
+        "Chevrolet",
+        "Porsche"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3586",
+      "tipo": "test",
+      "enunciado": "¿Quién era el máximo goleador de la selección inglesa (hasta Harry Kane)?",
+      "opciones": [
+        "David Beckham",
+        "Steven Gerrard",
+        "Michael Owen",
+        "Wayne Rooney"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3589",
+      "tipo": "test",
+      "enunciado": "¿Sobre qué superficie mide un estimpómetro la velocidad de la bola?",
+      "opciones": [
+        "Un campo de críquet",
+        "Un green de golf",
+        "Una mesa de pinball",
+        "Un campo de fútbol"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3590",
+      "tipo": "test",
+      "enunciado": "¿Qué jugador de dardos ha ganado más Mundiales?",
+      "opciones": [
+        "Raymond van Barneveld",
+        "Phil Taylor",
+        "Eric Bristow",
+        "Michael van Gerwen"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3591",
+      "tipo": "test",
+      "enunciado": "¿Quién ha jugado más partidos con la selección brasileña de fútbol?",
+      "opciones": [
+        "Roberto Carlos",
+        "Kaká",
+        "Cafú",
+        "Ronaldo"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3592",
+      "tipo": "test",
+      "enunciado": "En 1988, McLaren ganó todas las carreras de F1 menos una. ¿Cuál?",
+      "opciones": [
+        "El GP de Mónaco",
+        "El GP de Brasil",
+        "El GP de Italia",
+        "El GP de Japón"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3595",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estas pruebas NO está en el decatlón olímpico masculino?",
+      "opciones": [
+        "Lanzamiento de peso",
+        "Lanzamiento de martillo",
+        "Salto con pértiga",
+        "Salto de longitud"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3596",
+      "tipo": "test",
+      "enunciado": "¿Quién ganó la Liga de Campeones en 1999?",
+      "opciones": [
+        "Liverpool",
+        "Manchester United",
+        "Barcelona",
+        "Bayern de Múnich"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3597",
+      "tipo": "test",
+      "enunciado": "¿Qué país organizó el Mundial de fútbol de 2006?",
+      "opciones": [
+        "Sudáfrica",
+        "Reino Unido",
+        "Alemania",
+        "Brasil"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3598",
+      "tipo": "test",
+      "enunciado": "¿De qué isla portuguesa es Cristiano Ronaldo?",
+      "opciones": [
+        "Porto Santo",
+        "Terceira",
+        "Madeira",
+        "Santa María"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3599",
+      "tipo": "test",
+      "enunciado": "¿Cuántos partidos estuvo invicto el Arsenal en la Premier League 2003-2004?",
+      "opciones": [
+        "51",
+        "38",
+        "22",
+        "49"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3601",
+      "tipo": "test",
+      "enunciado": "¿Qué entrenador ganó más títulos en el Manchester United?",
+      "opciones": [
+        "Louis van Gaal",
+        "Sir Alex Ferguson",
+        "David Moyes",
+        "José Mourinho"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3602",
+      "tipo": "test",
+      "enunciado": "¿Qué selección ganó la Copa América 2015?",
+      "opciones": [
+        "Chile",
+        "Brasil",
+        "Argentina",
+        "Paraguay"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3603",
+      "tipo": "test",
+      "enunciado": "¿Quién fue el MVP de la NBA en la temporada 1999-2000?",
+      "opciones": [
+        "Kobe Bryant",
+        "Allen Iverson",
+        "Shaquille O'Neal",
+        "Paul Pierce"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3604",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos clubes ingleses es de Liverpool?",
+      "opciones": [
+        "West Ham United",
+        "Crystal Palace",
+        "Everton",
+        "Arsenal"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3608",
+      "tipo": "test",
+      "enunciado": "¿Cuál fue el promedio de bateo de Donald Bradman en partidos test de críquet?",
+      "opciones": [
+        "44,78",
+        "69,51",
+        "100",
+        "99,94"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3609",
+      "tipo": "test",
+      "enunciado": "¿Qué país organizó los Juegos Olímpicos de invierno de 2014?",
+      "opciones": [
+        "Estados Unidos",
+        "Alemania",
+        "Canadá",
+        "Rusia"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3611",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos torneos de Grand Slam se juega el último del año?",
+      "opciones": [
+        "Wimbledon",
+        "Roland Garros",
+        "El Abierto de Australia",
+        "El Abierto de EE. UU."
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3612",
+      "tipo": "test",
+      "enunciado": "¿Qué deporte practica la alemana Fanny Chmelar?",
+      "opciones": [
+        "Esquí",
+        "Gimnasia",
+        "Saltos ecuestres",
+        "Natación"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3613",
+      "tipo": "test",
+      "enunciado": "¿Qué piloto de Fórmula 1 tenía el apodo de «el Profesor»?",
+      "opciones": [
+        "Alain Prost",
+        "Emerson Fittipaldi",
+        "Niki Lauda",
+        "Ayrton Senna"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3616",
+      "tipo": "test",
+      "enunciado": "¿En qué puente empieza la regata anual Oxford-Cambridge?",
+      "opciones": [
+        "Vauxhall",
+        "Battersea",
+        "Putney",
+        "Hammersmith"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3617",
+      "tipo": "test",
+      "enunciado": "¿Cuál es la mejor tarjeta de la carrera de Tiger Woods?",
+      "opciones": [
+        "63",
+        "67",
+        "61",
+        "65"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3618",
+      "tipo": "test",
+      "enunciado": "¿Qué selección ganó la Eurocopa de 2016?",
+      "opciones": [
+        "Portugal",
+        "Francia",
+        "Inglaterra",
+        "Alemania"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3619",
+      "tipo": "test",
+      "enunciado": "¿Por qué suceso trágico se recuerda la temporada 1994 de Fórmula 1?",
+      "opciones": [
+        "El choque decisivo en Australia",
+        "La muerte de Ayrton Senna en Imola",
+        "La descalificación de Schumacher",
+        "El incendio de Verstappen en Alemania"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3620",
+      "tipo": "test",
+      "enunciado": "¿De qué país es originario el kabaddi, un deporte de contacto?",
+      "opciones": [
+        "Camboya",
+        "India",
+        "Australia",
+        "Turquía"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3621",
+      "tipo": "test",
+      "enunciado": "¿De qué legendario futbolista es el nombre completo Edson Arantes do Nascimento?",
+      "opciones": [
+        "Pelé",
+        "Ronaldinho",
+        "Romário",
+        "Zico"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3622",
+      "tipo": "test",
+      "enunciado": "¿En qué año ganó el Steaua de Bucarest la Copa de Europa contra el Barcelona?",
+      "opciones": [
+        "1989",
+        "1990",
+        "1986",
+        "1982"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3623",
+      "tipo": "test",
+      "enunciado": "¿Cuántos Roland Garros ganó Björn Borg?",
+      "opciones": [
+        "2",
+        "4",
+        "6",
+        "9"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3624",
+      "tipo": "test",
+      "enunciado": "¿Quién fue el máximo goleador del Mundial 2014?",
+      "opciones": [
+        "Thomas Müller",
+        "James Rodríguez",
+        "Neymar",
+        "Lionel Messi"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3625",
+      "tipo": "test",
+      "enunciado": "¿Quién fue el primer futbolista en marcar 200 goles en la Premier League?",
+      "opciones": [
+        "Wayne Rooney",
+        "Alan Shearer",
+        "Robbie Fowler",
+        "Thierry Henry"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3628",
+      "tipo": "test",
+      "enunciado": "¿Quién ganó el GP de San Marino de 1994, la carrera en la que murió Ayrton Senna?",
+      "opciones": [
+        "Gerhard Berger",
+        "Nicola Larini",
+        "Michael Schumacher",
+        "Mika Häkkinen"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3629",
+      "tipo": "test",
+      "enunciado": "¿Cuántas zonas de puntuación tiene una diana de dardos normal?",
+      "opciones": [
+        "62",
+        "42",
+        "82",
+        "102"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3630",
+      "tipo": "test",
+      "enunciado": "¿En qué país está Sochi, sede de los Juegos de invierno de 2014?",
+      "opciones": [
+        "Corea del Sur",
+        "Rusia",
+        "Noruega",
+        "Canadá"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3634",
+      "tipo": "test",
+      "enunciado": "¿Qué país organizó el Mundial de 2022?",
+      "opciones": [
+        "Uganda",
+        "Vietnam",
+        "Bolivia",
+        "Catar"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3637",
+      "tipo": "test",
+      "enunciado": "¿Qué deporte NO se practica tradicionalmente en el festival mongol del Naadam?",
+      "opciones": [
+        "El fútbol americano",
+        "Las carreras de caballos",
+        "El tiro con arco",
+        "La lucha"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3639",
+      "tipo": "test",
+      "enunciado": "¿Qué equipo de baloncesto ha jugado más finales de la NBA?",
+      "opciones": [
+        "Philadelphia 76ers",
+        "Los Angeles Lakers",
+        "Golden State Warriors",
+        "Boston Celtics"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3640",
+      "tipo": "test",
+      "enunciado": "¿Quién ganó la NBA en la temporada 2014-2015?",
+      "opciones": [
+        "Atlanta Hawks",
+        "Houston Rockets",
+        "Golden State Warriors",
+        "Cleveland Cavaliers"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3641",
+      "tipo": "test",
+      "enunciado": "¿Quién se considera el mejor futbolista rumano de la historia?",
+      "opciones": [
+        "Nicolae Dobrin",
+        "Gheorghe Popescu",
+        "Gheorghe Hagi",
+        "Cristian Chivu"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3642",
+      "tipo": "test",
+      "enunciado": "¿Para qué torneo de 1996 se hizo la canción «Three Lions»?",
+      "opciones": [
+        "La Eurocopa",
+        "La Copa Confederaciones",
+        "La Liga de Campeones",
+        "El Mundial"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3643",
+      "tipo": "test",
+      "enunciado": "¿Qué marca ganó las 24 Horas de Le Mans en 2016?",
+      "opciones": [
+        "Ferrari",
+        "Porsche",
+        "Audi",
+        "Toyota"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3644",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estas selecciones se clasificó para el Mundial de Rusia 2018?",
+      "opciones": [
+        "Países Bajos",
+        "Túnez",
+        "Estados Unidos",
+        "Italia"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3645",
+      "tipo": "test",
+      "enunciado": "¿Qué piloto de Fórmula 1 cambió de equipo a mitad de la temporada 2017?",
+      "opciones": [
+        "Rio Haryanto",
+        "Carlos Sainz",
+        "Daniil Kvyat",
+        "Jolyon Palmer"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3647",
+      "tipo": "test",
+      "enunciado": "¿Con qué equipo debutó Michael Schumacher en la Fórmula 1, en el GP de Bélgica de 1991?",
+      "opciones": [
+        "Mercedes",
+        "Benetton",
+        "Jordan",
+        "Ferrari"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3648",
+      "tipo": "test",
+      "enunciado": "En críquet, ¿cómo se llama quedar eliminado sin haber anotado?",
+      "opciones": [
+        "Bye",
+        "Pato (duck)",
+        "Carry",
+        "Beamer"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3649",
+      "tipo": "test",
+      "enunciado": "¿Qué jugador marcó un triplete en su debut con el Manchester United?",
+      "opciones": [
+        "Cristiano Ronaldo",
+        "Wayne Rooney",
+        "David Beckham",
+        "Robin van Persie"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3650",
+      "tipo": "test",
+      "enunciado": "¿Cuántas Premier League ganó Sir Alex Ferguson con el Manchester United?",
+      "opciones": [
+        "20",
+        "13",
+        "11",
+        "22"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3652",
+      "tipo": "test",
+      "enunciado": "¿Tras el accidente mortal de qué piloto se introdujo el coche de seguridad virtual en la Fórmula 1?",
+      "opciones": [
+        "Roland Ratzenberger",
+        "Ayrton Senna",
+        "Jules Bianchi",
+        "Gilles Villeneuve"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3653",
+      "tipo": "test",
+      "enunciado": "¿De qué marca alemana de ropa deportiva es el logotipo «Formstripe»?",
+      "opciones": [
+        "Nike",
+        "Adidas",
+        "Puma",
+        "Reebok"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3654",
+      "tipo": "test",
+      "enunciado": "¿Quién ha jugado más partidos con la selección alemana de fútbol?",
+      "opciones": [
+        "Miroslav Klose",
+        "Lothar Matthäus",
+        "Philipp Lahm",
+        "Oliver Kahn"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3655",
+      "tipo": "test",
+      "enunciado": "¿Quién es el máximo goleador de la historia de la Premier League?",
+      "opciones": [
+        "Wayne Rooney",
+        "Alan Shearer",
+        "Lionel Messi",
+        "Didier Drogba"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3656",
+      "tipo": "test",
+      "enunciado": "En el snooker, ¿qué bola vale 3 puntos?",
+      "opciones": [
+        "La azul",
+        "La marrón",
+        "La amarilla",
+        "La verde"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3658",
+      "tipo": "test",
+      "enunciado": "¿De qué ciudad eran los Lakers antes de mudarse a Los Ángeles?",
+      "opciones": [
+        "Filadelfia",
+        "Chicago",
+        "San Francisco",
+        "Mineápolis"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3659",
+      "tipo": "test",
+      "enunciado": "¿Cuál es el cinturón más alto en taekwondo?",
+      "opciones": [
+        "El blanco",
+        "El rojo",
+        "El verde",
+        "El negro"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3661",
+      "tipo": "test",
+      "enunciado": "¿Qué selección ganó la Copa América Centenario de 2016?",
+      "opciones": [
+        "Colombia",
+        "Argentina",
+        "Brasil",
+        "Chile"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3662",
+      "tipo": "test",
+      "enunciado": "¿Quién es el máximo goleador del Manchester United en la Premier League?",
+      "opciones": [
+        "Wayne Rooney",
+        "Ryan Giggs",
+        "David Beckham",
+        "Bobby Charlton"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3664",
+      "tipo": "test",
+      "enunciado": "¿Quién ganó el GP de Mónaco de 2018?",
+      "opciones": [
+        "Lewis Hamilton",
+        "Kimi Räikkönen",
+        "Daniel Ricciardo",
+        "Sebastian Vettel"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3665",
+      "tipo": "test",
+      "enunciado": "En 2016, ¿qué escudería ganó por tercer año seguido el Mundial de constructores de Fórmula 1?",
+      "opciones": [
+        "McLaren Honda",
+        "Red Bull",
+        "Mercedes",
+        "Ferrari"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3666",
+      "tipo": "test",
+      "enunciado": "¿Qué jugador ha disputado más partidos en la historia de la NBA (hasta 2016)?",
+      "opciones": [
+        "Robert Parish",
+        "Kobe Bryant",
+        "Kevin Garnett",
+        "Kareem Abdul-Jabbar"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3667",
+      "tipo": "test",
+      "enunciado": "¿Quién ganó la NBA en la temporada 2015-2016?",
+      "opciones": [
+        "Cleveland Cavaliers",
+        "Oklahoma City Thunder",
+        "Toronto Raptors",
+        "Golden State Warriors"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    }
+  ]
+}

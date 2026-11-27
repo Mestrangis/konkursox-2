@@ -1,0 +1,164 @@
+3000|¿Cuál es la unidad de la capacidad eléctrica?|El faradio|El gauss|El henrio|El vatio
+3001|¿Quién desarrolló la primera vacuna eficaz contra la polio en los años 50?|Jonas Salk|John F. Enders|Thomas Weller|Frederick Robbins
+3002|¿De dónde es originaria la raza de perro chihuahua?|México|Francia|España|Rusia
+3003|En la tabla periódica, ¿es K el símbolo del potasio?|Sí
+3004|¿Qué elemento tiene el número atómico 7?|Nitrógeno|Oxígeno|Hidrógeno|Neón
+3005|¿Qué término psicológico describe el malestar de tener creencias contradictorias?|Disonancia cognitiva|Síndrome del vaivén|Cerebro dividido|Visión ciega
+3006|¿Se debe la diabetes de tipo 1 a un mal funcionamiento del hígado?|No
+3007|¿En qué misión se desintegró el transbordador Columbia al volver a la atmósfera?|STS-107|STS-51-L|STS-61-C|STS-109
+3008|¿En qué fase pasa la mayor parte de su vida la mayoría de las células eucariotas?|Interfase|Profase|Estasis|Telofase
+3009|¿De qué color es la sangre sin oxigenar?|Roja|Azul|Morada|Verde
+3010|¿Cuántos dientes de leche tiene un niño en total?|20|10|15|25
+3011|¿Cuál es la unidad de corriente eléctrica del Sistema Internacional?|El amperio|El voltio|El ohmio|El vatio
+3012|¿Cuántos lóbulos tiene el pulmón derecho?|3|4|2|1
+3013|¿Cuál de estos es un reflejo tendinoso profundo?|El reflejo aquíleo|El reflejo nauseoso|El reflejo pupilar|El reflejo de rascado
+3014|¿Cuántos dientes tiene un adulto, contando las muelas del juicio?|32|36|20|28
+3015|¿Pueden nadar hacia atrás las gambas?|Sí
+3016|¿Qué científico hizo el experimento de la lámina de oro que demostró que el átomo es casi todo espacio vacío?|Ernest Rutherford|Joseph John Thomson|Arquímedes|Niels Bohr
+3017|¿Cómo se llama la capa más baja de la atmósfera?|Troposfera|Estratosfera|Mesosfera|Termosfera
+3018|¿Sirve un desfibrilador para poner en marcha un corazón que se ha parado del todo?|No
+3019|¿Qué parte de la planta de marihuana produce el THC?|La flor femenina|Las hojas|La flor masculina|La raíz
+3020|¿Qué órgano produce la insulina?|El páncreas|El riñón|El hígado|El estómago
+3021|¿Cuál de estos NO es un componente eléctrico pasivo?|El transistor|La resistencia|El condensador|La bobina
+3022|¿Con qué término se asocia sobre todo a Sigmund Freud?|El psicoanálisis|La terapia cognitivo-conductual|La teoría de la gravedad|La terapia dialéctica conductual
+3023|¿Qué edad tiene la Tierra, más o menos?|4500 millones de años|3500 millones de años|2500 millones de años|5500 millones de años
+3024|¿Es la hipopotomonstrosesquipedaliofobia el miedo a las palabras largas?|Sí
+3025|¿Puede uno quemarse con el sol en un día nublado?|Sí
+3026|¿De qué continente es originaria la batata (boniato)?|América del Sur|Asia|África|Europa
+3027|¿Cuánto dura un año en Urano, más o menos?|84 años terrestres|47 años terrestres|62 años terrestres|109 años terrestres
+3028|¿De qué elemento es isótopo el deuterio?|Hidrógeno|Nitrógeno|Helio|Neón
+3029|¿De qué planeta envió imágenes de la superficie la sonda Viking 1 a partir de 1976?|Marte|Saturno|Júpiter|Venus
+3030|¿Cuántos corazones tiene un pulpo?|Tres|Uno|Dos|Cuatro
+3031|¿Cuál de estas estrellas es la más grande?|UY Scuti|VY Canis Majoris|Betelgeuse|RW Cephei
+3032|¿Cuál de estas NO es una fase de la mitosis?|Diplofase|Metafase|Anafase|Telofase
+3034|Redondeando al minuto, ¿cuánto tarda la luz del Sol en llegar a la Tierra?|8 minutos|6 minutos|2 minutos|12 minutos
+3035|¿De qué planeta es Ganímedes la luna más grande?|Júpiter|Urano|Neptuno|Marte
+3036|¿Cuál de estos científicos NO tiene un elemento químico con su nombre?|Isaac Newton|Albert Einstein|Niels Bohr|Enrico Fermi
+3037|¿Cuál es la fórmula de la ley de Ohm?|V = I × R|I = V × R|R = V × I|V = I / R
+3038|¿Hacen el pino los pandas macho al orinar en los árboles?|Sí
+3039|¿De qué están hechas las uñas humanas?|Queratina|Hueso|Quitina|Calcio
+3040|En psicología, ¿qué necesidad está más arriba en la pirámide de Maslow?|Reconocimiento (estima)|Afiliación (amor)|Seguridad|Fisiológicas
+3041|¿De qué partícula es antipartícula el positrón?|El electrón|El neutrón|El protón|El fotón
+3043|¿Cuál es el símbolo del estaño en la tabla periódica?|Sn|Ti|Ni|Na
+3044|¿Cuántos grados Fahrenheit son 100 grados Celsius?|212|326|100|451
+3045|¿Qué medicamento se usó antes como veneno para ratas?|La warfarina|La aspirina|El apixabán|El paracetamol
+3046|¿Para qué catástrofe natural creó una escala el científico Tetsuya Fujita?|Los tornados|Los huracanes|Los terremotos|Los volcanes
+3047|¿Cuándo se clonó con éxito el primer mamífero?|1996|2009|1999|1985
+3049|¿Es el «gympie stinger» la planta más mortal del mundo?|No
+3050|¿De qué articulación forma parte el menisco medial?|La rodilla|El codo|El tobillo|El hombro
+3051|¿Cómo se llama el estudio de los tejidos de plantas y animales?|Histología|Microbiología|Anatomía|Bioquímica
+3052|¿Qué planeta del sistema solar es el más cercano al Sol?|Mercurio|La Tierra|Marte|Venus
+3053|¿Cuál de estos elementos es un gas noble?|Neón|Potasio|Yodo|Cobalto
+3054|¿Cuál es la fórmula química del amoniaco?|NH3|CO2|NO3|CH4
+3055|¿Qué porcentaje aproximado de la atmósfera es oxígeno?|21 %|54 %|78 %|7 %
+3057|¿Qué significan las siglas RCP de la maniobra que se hace ante una parada cardiaca?|Reanimación cardiopulmonar|Recuperación cardiaca progresiva|Respiración controlada pulmonar|Reflejo cardiaco primario
+3058|¿Qué parte del cerebro debe su nombre a la palabra griega para «caballito de mar»?|El hipocampo|El cerebelo|El tálamo|La amígdala
+3059|¿De qué dos elementos se compone sobre todo el Sol?|Hidrógeno y helio|Hidrógeno y nitrógeno|Carbono y nitrógeno|Carbono y helio
+3060|¿Qué color no se consigue en las rosas ni siquiera con modificación genética?|Azul|Negro|Naranja|Marrón
+3061|¿A qué profundidad se hace la parada de seguridad en una inmersión normal con botella?|5 metros|7,5 metros|15 metros|23 metros
+3062|¿Qué es la miopía?|No ver bien de lejos|No ver bien de cerca|Ver doble|Ver borroso
+3063|¿Cuántos planetas enanos oficiales llevan nombre de dioses polinesios?|2|0|1|5
+3064|¿Tiene Marte dos lunas?|Sí
+3065|¿Es la estrella polar la más brillante del cielo nocturno del hemisferio norte?|No
+3066|¿Es parpadear la actividad inconsciente que más repite el cuerpo humano?|No
+3068|¿Eran los neandertales antepasados directos de los humanos actuales?|No
+3069|¿Qué otro nombre tiene el trastorno de personalidad múltiple?|Trastorno de identidad disociativo|Trastorno de identidad de la integridad corporal|Crisis de identidad|Esquizofrenia
+3070|¿Cuántas horas dura aproximadamente un ritmo circadiano?|24|8|16|32
+3071|¿Qué psicólogo suizo es sinónimo de los conceptos de introvertido y extrovertido?|Carl Jung|Jean Piaget|Alice Miller|Hermann Rorschach
+3072|¿Se llama taquicardia a un ritmo cardiaco en reposo cercano o superior a 100 pulsaciones por minuto?|Sí
+3073|¿Cuál de estos huesos NO está en el brazo?|La tibia|El húmero|El cúbito|El radio
+3074|¿En qué parte del cuerpo está la tibia?|En la pierna|En el brazo|En la mano|En la cabeza
+3075|¿Qué parte del cuerpo afecta el glaucoma?|Los ojos|La garganta|El estómago|La sangre
+3076|¿Cómo se llama el sesgo por el que alguien poco hábil en algo se cree mejor de lo que es?|Efecto Dunning-Kruger|Efecto Myers-Briggs|Efecto placebo|Efecto Mandela
+3078|¿Cuál es el número atómico del estroncio?|38|73|47|11
+3079|¿Mataron sin querer unos científicos a un molusco de 507 años, el ser vivo más viejo conocido entonces?|Sí
+3080|¿Desarrollaron Louis Pasteur y Émile Roux la primera vacuna contra la rabia en 1885?|Sí
+3081|¿Cómo se llama el agujero negro supermasivo del centro de la Vía Láctea?|Sagitario A*|Messier 87|Alfa Centauri|Andrómeda
+3082|En el vuelo de prueba del Falcon Heavy, ¿qué fue lo único que falló?|El aterrizaje del núcleo central|El aterrizaje de los propulsores laterales|El despliegue del Starman|El encendido de la segunda fase
+3083|¿Hacia dónde tiende a moverse un organismo «heliotrópico»?|Hacia la luz|Hacia el agua|Hacia los árboles|Hacia el polen
+3084|¿Cuántos isómeros tiene el butanol (C4H9OH)?|4|3|5|6
+3086|¿Qué mineral tiene el número más bajo en la escala de Mohs?|El talco|El cuarzo|El diamante|El yeso
+3087|¿Qué categoría tuvo el huracán Katrina (2005) en la escala Saffir-Simpson?|Categoría 5|Categoría 1|Categoría 4|Categoría 2
+3088|¿Una copia extra de qué cromosoma suele causar el síndrome de Down?|El 21|El 23|El 15|El 24
+3089|¿Cuál es el número atómico del uranio?|92|235|17|167
+3090|¿Puede viajar el sonido por el vacío?|No
+3091|¿De qué ciudad danesa toma el nombre el elemento 72 de la tabla periódica (hafnio)?|Copenhague|Odense|Herning|Skagen
+3092|¿Se cruzaron también los Homo sapiens con los denisovanos, como con los neandertales?|Sí
+3094|¿Cuál fue el primer ser vivo en el espacio?|Moscas de la fruta|Un mono|Un perro|Un ratón
+3095|¿Se llama «acción cartilar» a que el agua suba por una toalla seca?|No
+3096|¿Qué orgánulo se conoce como «la central energética de la célula»?|La mitocondria|El núcleo|El aparato de Golgi|El retículo endoplasmático
+3097|¿Cuál de estos NO forma parte de una neurona típica?|Los islotes de Langerhans|El nódulo de Ranvier|La célula de Schwann|La vaina de mielina
+3098|¿Es «neumonoultramicroscopicosilicovolcanoconiosis» un sinónimo de la silicosis?|Sí
+3099|Además del oxígeno, ¿qué elemento es el principal responsable de que el cielo se vea azul?|Nitrógeno|Helio|Carbono|Hidrógeno
+3100|¿Cuál de estos líquidos es el menos viscoso a 25 °C?|Acetona|Agua|Mercurio|Benceno
+3101|¿Qué luna es el único satélite del sistema solar con una atmósfera densa?|Titán|Europa|Miranda|Calisto
+3102|¿Qué elemento se suele usar para dopar el silicio de los semiconductores?|Boro|Oxígeno|Carbono|Hierro
+3103|¿Cómo se llaman los orgánulos largos que forman las fibras musculares?|Miofibrillas|Epimisio|Miofilamentos|Miocardio
+3104|¿Ganó Albert Einstein el Nobel por su teoría de la relatividad?|No
+3105|¿Cómo se llama la complicación por una gasa olvidada dentro del paciente tras una operación?|Gossypiboma|Gongoozler|Jentacular|Meupareunia
+3106|¿Cuál de estos es un codón de parada en el ADN?|TAA|ACT|ACA|GTA
+3109|¿Cuál es el nombre químico del H2O?|Monóxido de dihidrógeno|Cloruro de amonio|Carbonato de sodio anhidro|Dióxido de manganeso
+3110|¿Qué temperatura puede alcanzar el núcleo del Sol?|15 millones de °C|521 093 °C|4400 millones de °C|El cero absoluto
+3111|En la escala Scoville, ¿cuál es la sustancia más picante?|Resiniferatoxina|Capsaicina|Dihidrocapsaicina|Tinyatoxina
+3112|¿En qué órgano están los islotes de Langerhans?|En el páncreas|En el riñón|En el hígado|En el cerebro
+3113|La palabra «ciencia» viene del latín «scire». ¿Qué significa?|Saber|Medir|Vivir|Contar
+3114|¿Qué plástico se usa mucho en marcos de ventanas, canalones y tuberías?|PVC (policloruro de vinilo)|Polietileno|Polipropileno|Poliestireno
+3115|¿Qué país consiguió por primera vez criar atún rojo en granja, en 1979?|Japón|Francia|Estados Unidos|Filipinas
+3116|¿Con qué nombre se conoce el ácido isobutilfenilpropanoico?|Ibuprofeno|Morfina|Ketamina|Aspirina
+3117|¿Cuál es la fórmula del ozono?|O3|C6H2O6|N2O|SO4
+3118|¿Cuál de estos animales pertenece a la clase de los condrictios (peces cartilaginosos)?|El tiburón blanco|El pulpo|La orca|El siluro
+3120|¿Qué unidad científica debe su nombre a un noble italiano?|El voltio|El pascal|El ohmio|El hercio
+3121|¿Qué grupo funcional hace que un compuesto orgánico sea un alcohol?|El hidroxilo|El carbonilo|El alquilo|El aldehído
+3122|¿Cuál es el nombre científico del gorila occidental de llanura?|Gorilla gorilla gorilla|Gorilla gorilla diehli|Gorilla beringei graueri|Gorilla beringei beringei
+3123|¿Cuál fue el primer compuesto orgánico sintetizado a partir de compuestos inorgánicos?|La urea|El propano|El etanol|El formaldehído
+3124|¿Qué extinción masiva, causada por un asteroide, acabó con la mayoría de los dinosaurios?|La del Cretácico-Paleógeno|La del Triásico-Jurásico|La del Pérmico-Triásico|La del Ordovícico-Silúrico
+3125|¿Cómo se llama comúnmente el síndrome de estrés tibial medial?|Periostitis tibial|Codo de tenista|Túnel carpiano|Rodilla de fregona
+3126|¿Cuál de estos es un músculo importante de la espalda?|El trapecio|El trapezoide (hueso)|El trapecio (hueso)|El piramidal
+3127|¿Cuál es el nombre científico de la rótula?|Patella|Fémur|Foramen magnum|Escápula
+3128|Botánicamente, ¿cuál de estas frutas NO es una baya?|La fresa|El arándano|El plátano|La uva
+3129|¿Qué temperatura es igual en grados Celsius y Fahrenheit?|−40|32|−39|−42
+3130|¿Con qué base nitrogenada se empareja la guanina?|Citosina|Timina|Adenina|Uracilo
+3132|¿Cuál de estos es un ejemplo de condicionamiento clásico?|El perro de Pávlov|La caja de Skinner|El gato de Schrödinger|Los monos de Harlow
+3133|¿Cuál es el nombre científico del homínido extinto llamado «Lucy»?|Australopithecus afarensis|Australopithecus africanus|Australopithecus architeuthis|Australopithecus anamensis
+3134|¿Cuáles de estas son células del sistema inmunitario adaptativo?|Linfocitos T citotóxicos|Células dendríticas|Células NK|Glóbulos blancos en general
+3135|¿Qué metal da una llama blanca muy brillante al arder?|Magnesio|Cobre|Litio|Plomo
+3136|¿Cuál es el nombre científico del zorro rojo?|Vulpes vulpes|Vulpes redus|Red fox|Vulpes vulpie
+3137|¿Qué síndrome genético causa tener un cromosoma Y de más (XYY)?|Síndrome de Jacobs|Síndrome de Klinefelter|Síndrome de Turner|Síndrome de Down
+3138|¿Cómo se llama la ilusión auditiva de un tono que parece subir sin fin?|Tono de Shepard|Ilusión de glissando|Efecto Fransen|Efecto McGurk
+3139|En la escala de Beaufort, ¿cómo se llama el viento de fuerza 8?|Temporal|Temporal fuerte|Huracán|Brisa
+3140|¿Qué elemento tiene 92 electrones?|Uranio|Azufre|Hidrógeno|Hierro
+3141|¿Qué significa el nombre del animal marino del Cámbrico Anomalocaris?|Camarón anormal|Pez deforme|Cangrejo extraño|Almeja anómala
+3142|¿Cuál de estos compuestos NO está en el jugo gástrico?|Ácido sulfúrico|Ácido clorhídrico|Cloruro de potasio|Cloruro de sodio
+3144|¿Qué ley relaciona el flujo eléctrico que sale de una superficie cerrada con la carga que encierra?|Ley de Gauss|Ley de Faraday|Ley de Ampère|Ley de Biot-Savart
+3145|¿Cuál es la forma más rara de daltonismo?|Al azul|Al rojo|Al verde|Al morado
+3146|¿Cuál es la unidad de la inductancia eléctrica?|El henrio|El weber|El culombio|El mho
+3147|¿Cómo se llama la envoltura gaseosa de un cometa?|La coma (cabellera)|La estela|La resaca|La ablativa
+3148|¿Qué siente la necesidad de hacer quien tiene el síndrome ACHOO al ver el sol?|Estornudar|Toser|Bostezar|Tener hipo
+3149|¿Cuál es la unidad de intensidad luminosa del Sistema Internacional?|La candela|El lumen|El faradio|El culombio
+3151|En física, ¿de qué son consecuencia la conservación de la energía y la del momento?|Del teorema de Noether|Del teorema de Bell|Del teorema de Wick|Del teorema de Carnot
+3152|¿Cuánta radiación emite un plátano?|0,1 microsieverts|0,3 microsieverts|0,5 microsieverts|0,7 microsieverts
+3153|¿Se llegó a creer que inyectar cartílago de tiburón evitaba el cáncer?|Sí
+3154|¿Cuántas unidades hay en un mol?|6,022 × 10²³|6,002 × 10²²|6,022 × 10²²|6,002 × 10²³
+3156|¿Cuántos protones tiene un átomo de oxígeno?|Ocho|Cuatro|Dos|Seis
+3157|¿Dónde está la glándula pineal?|En el cerebro|En la ingle|En el pecho|En la garganta
+3158|¿Cuál de estos NO es un elemento químico real?|Vitranio|Praseodimio|Hasio|Lutecio
+3159|¿Qué produce el sonido del latido del corazón?|El cierre de las válvulas|La contracción de las cavidades|La salida de la sangre|La relajación de las cavidades
+3160|¿Cuánto mide un año luz?|9,461 billones de kilómetros|1 unidad astronómica|105,40 años terrestres|806 millones de kilómetros
+3161|¿Qué se usa para demostrar que la Tierra gira sobre su eje?|El péndulo de Foucault|La estrella polar|El reloj de sol|Las placas tectónicas
+3162|¿Cuántos tipos de quarks hay en el modelo estándar?|6|2|3|4
+3163|¿A qué tiene miedo quien sufre coulrofobia?|A los payasos|A los cementerios|A las agujas|A los túneles
+3164|¿Cuál es la toxina más potente que se conoce?|La toxina botulínica|La ricina|El cianuro|El amianto
+3165|¿Dónde está el glúteo mayor?|En el culo|En el brazo|En la cabeza|En el torso
+3166|¿Cuál es la fórmula de la glucosa?|C6H12O6|C2H4O2|K+|CH4
+3167|¿Cuál de estos es un dispositivo semiconductor que amplifica?|El transistor|La válvula|El diodo|La unión P-N
+3168|¿Cuál de estos NO es un tipo de neurona?|Neurona perceptiva|Neurona sensitiva|Neurona motora|Interneurona
+3169|¿Ganaron Frederick Banting y John Macleod el Nobel por sus aportaciones a la mecánica cuántica?|No
+3170|¿Es distinta una Caloría (con mayúscula) de una caloría?|Sí
+3171|¿Cuál es el término científico del dolor de cabeza por comer algo muy frío?|Ganglioneuralgia esfenopalatina|Hyacinthoides italica|Amaranthus retroflexus|Amblyomma americanum
+3172|¿Cuál de estas partículas teóricas no se ha observado todavía?|El gravitón|El bosón Z|El neutrino tau|El gluon
+3173|¿Qué es «Stenoma»?|Un género de polillas|Un estimulante de la Segunda Guerra Mundial|Un condimento|Un puerto del Caribe
+3174|¿Qué constelación contiene el centro de la Vía Láctea?|Sagitario|Escorpio|Ofiuco|Capricornio
+3175|¿De qué religión era el sacerdote que formuló por primera vez la teoría del Big Bang?|Católica|Protestante|Judía|Islámica
+3176|El ácido fólico es la forma sintética de ¿qué vitamina?|Vitamina B (B9)|Vitamina A|Vitamina C|Vitamina D
+3177|¿Qué número de patas es biológicamente imposible que tenga un ciempiés?|100|26|50|74
+3178|¿Debe el litio su nombre a Lituania?|No

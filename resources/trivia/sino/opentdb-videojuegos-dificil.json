@@ -1,0 +1,204 @@
+{
+  "formato": "konkursox-banco",
+  "version": 1,
+  "nombre": "Videojuegos · Difícil",
+  "grupo": "Open Trivia DB",
+  "licencia": "Preguntas de Open Trivia Database (opentdb.com), licencia CC BY-SA 4.0, traducidas y adaptadas al español. Este banco se distribuye con la misma licencia (CC BY-SA 4.0).",
+  "preguntas": [
+    {
+      "id": "o2607",
+      "tipo": "sino",
+      "enunciado": "En Minecraft, ¿son más rápidas las herramientas de oro que las de diamante?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2616",
+      "tipo": "sino",
+      "enunciado": "¿Se planeó también el primer GTA para Nintendo 64?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2642",
+      "tipo": "sino",
+      "enunciado": "¿Ponen voz a Mario y a Paarthurnax (Skyrim) el mismo actor?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2647",
+      "tipo": "sino",
+      "enunciado": "¿Empezó Unturned como un juego de Roblox?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2648",
+      "tipo": "sino",
+      "enunciado": "¿Salió Stellaris, de Paradox, en 2016?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2664",
+      "tipo": "sino",
+      "enunciado": "En Kingdom Hearts, ¿se llaman las llaves espada de Roxas «Guardajuramentos» y «Olvido»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2675",
+      "tipo": "sino",
+      "enunciado": "¿Traía el disco de «Tony Hawk's Pro Skater 5» solo el tutorial?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2692",
+      "tipo": "sino",
+      "enunciado": "¿Salían en «Danganronpa 2: Goodbye Despair» todos los supervivientes del primer juego?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2723",
+      "tipo": "sino",
+      "enunciado": "En la saga Los Sims, ¿es ocho el número máximo de miembros de un hogar?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2764",
+      "tipo": "sino",
+      "enunciado": "¿Es GTA V la decimoquinta entrega de la saga Grand Theft Auto?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2767",
+      "tipo": "sino",
+      "enunciado": "En Portal 2, ¿empezó Cave Johnson con Aperture Science como empresa de cortinas de ducha?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2795",
+      "tipo": "sino",
+      "enunciado": "¿Empezó McCree, de Overwatch, como personaje de un StarCraft cancelado?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2796",
+      "tipo": "sino",
+      "enunciado": "¿Salió el primer «Metal Gear» para la primera PlayStation?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    }
+  ]
+}

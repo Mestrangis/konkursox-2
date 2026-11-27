@@ -17,6 +17,9 @@ extraResources:
   - from: resources/ejemplos
     to: ejemplos
     filter: ["**/*"]
+  - from: resources/trivia
+    to: trivia
+    filter: ["**/*"]
 asar: true
 win:
   target:

@@ -1,0 +1,110 @@
+2487|En Undertale, ¿a qué personaje encuentras primero al caer al subsuelo?|Flowey|Toriel|Sans|Papyrus
+2488|¿Cómo se llama el protagonista de «Metal Gear Solid V: The Phantom Pain»?|Punished «Venom» Snake|Miller|Solid Snake|Ocelot
+2491|¿En qué año salió el primer Sonic the Hedgehog?|1991|1989|1993|1995
+2495|¿Cómo se llama el protagonista de Cave Story?|Quote|Kazuma|Curly|Arthur
+2496|¿Quién creó el juego musical gratuito «osu!»?|Dean «peppy» Herbert|Daisuke «Pixel» Amaya|Eric «ConcernedApe» Barone|Toby Fox
+2497|¿Cómo se llama el juego de realidad aumentada de Niantic anterior a Pokémon GO?|Ingress|Aggress|Regress|Digress
+2498|¿Cuántas notas distintas tiene la «Canción de curación» de «Majora's Mask»?|3|4|1|6
+2499|¿Qué personaje estuvo a punto de entrar en Super Smash Bros. Melee pero llegó tarde al desarrollo?|Solid Snake|Pit|Meta Knight|R.O.B.
+2501|¿Cómo se llama el protagonista de «Pizza Tower»?|Peppino|Pastachio|Pepper|Spinachio
+2502|En el juego «Transistor», ¿se llama Red la protagonista?|Sí
+2503|¿En qué año salió el juego para móviles Jetpack Joyride?|2011|2012|2009|2014
+2505|¿Cuál fue el primer juego de PlayStation que exigía el mando DualShock?|Ape Escape|Metal Gear Solid|Tekken|Tomba! 2
+2506|¿Quién creó el Tetris?|Alekséi Pázhitnov|Toru Iwatani|Allan Alcorn|William Higinbotham
+2508|¿Se considera «Through the Fire and Flames» de DragonForce la canción más difícil de Guitar Hero?|Sí
+2510|¿Cuál es el único Pokémon de tercera generación cuyo nombre en inglés empieza por I?|Illumise|Infernape|Ivysaur|Igglybuff
+2513|¿Qué personaje de Half-Life 2 es el modelo por defecto en Garry's Mod?|Isaac Kleiner|G-Man|Alyx Vance|Gordon Freeman
+2514|¿Cuál fue el primer Call of Duty con el modo Zombies?|Call of Duty: World at War|Call of Duty: Black Ops|Call of Duty: Modern Warfare 2|Call of Duty: Black Ops II
+2515|¿Cuál fue el primer Zelda en 3D?|Ocarina of Time|Majora's Mask|A Link to the Past|The Wind Waker
+2516|¿Cómo se llama una pieza del Tetris?|Tetrominó|Tetrabaldosa|Tetris|Tetripieza
+2517|En Half-Life, ¿cuántos minutos llegas tarde al trabajo?|30|5|60|15
+2518|¿Quién desarrolló Rocket League?|Psyonix|People Can Fly|Digital Happiness|Roll7
+2519|¿Se puede jugar al baloncesto en Rocket League?|Sí
+2520|¿Cuándo salió la Mega Drive en Japón?|29 de octubre de 1988|14 de agosto de 1989|30 de noviembre de 1990|1 de septiembre de 1986
+2522|¿Cuándo salió Roblox?|2006|2003|2002|2007
+2525|¿Qué Mario Kart se hizo para Game Boy Advance?|Mario Kart: Super Circuit|Mario Kart: Double Dash!!|Mario Kart 64|Super Mario Kart
+2528|Durante la preproducción de Super Mario Bros., ¿iba a disparar balas Mario?|Sí
+2534|¿Quién pone la voz en inglés de Sora en Kingdom Hearts?|Haley Joel Osment|Kōki Uchiyama|Jesse McCartney|Miyu Irino
+2536|¿Cuándo salió la Virtual Boy de Nintendo?|1995|1989|1997|1992
+2537|¿En qué país insular ficticio del sudeste asiático transcurre Just Cause 2?|Panau|Davao|Macao|Palaos
+2540|¿Quién creó Geometry Dash?|Robert Topala|Scott Cawthon|Adam Engels|Andrew Spinks
+2542|¿Qué personaje ganó la votación de luchadores de Super Smash Bros. en 2015?|Bayonetta|Cloud|Ryu|Mega Man
+2544|¿Qué GTA inauguró las famosas portadas en cuadrícula de imágenes?|GTA III|Grand Theft Auto|GTA 2|GTA: London 1969
+2545|¿Qué criatura de la nieve llegó a Minecraft en la versión 1.10?|Los osos polares|Los esquimales|Los pingüinos|Las dinamitas andantes
+2549|¿Quién iba a ser originalmente la mascota de Splatoon?|Mario|Los inklings|Los octolings|Zelda
+2550|¿Cuál de estos NO es un pueblo de la isla principal de PUBG?|Belushya Guba|Yasnaya Polyana|Pochinki|Georgopol
+2552|En Fallout 4, ¿qué servoarmadura encuentras primero en un vertibird estrellado en la misión «Cuando la libertad llama»?|T-45|T-51|T-60|X-01
+2556|¿Por qué juego ganó más premios el compositor Mike Morasky?|Portal 2|Left 4 Dead 2|Team Fortress 2|CS:GO
+2557|¿Cuándo se lanzó Club Penguin?|24 de octubre de 2005|21 de octubre de 2005|29 de marzo de 2006|22 de noviembre de 2004
+2558|¿Cuál fue el primer videojuego de «película interactiva»?|Astron Belt|Dragon's Lair|Cube Quest|M.A.C.H. 3
+2559|En la saga Sonic, ¿cómo se llama la madre de Cream?|Vanilla|Peach|Strawberry|Mint
+2560|¿Quién es el villano principal de la saga Crash Bandicoot?|El Dr. Neo Cortex|El Dr. Evo-Cortex|El Dr. Cortox|Sir Cartex
+2561|En Left 4 Dead, ¿cómo llama la CEDA al virus que convierte a la gente en infectados?|Gripe verde|Fiebre amarilla|Virus T|Moqueo de frambuesa
+2562|¿Dónde transcurre «Majora's Mask»?|Termina|Hyrule|Gysahl|Besaid
+2563|En Minecraft, ¿qué ingrediente hace falta para la poción de respiración acuática?|Pez globo|Saco de tinta|Calabaza|Caña de pescar
+2564|¿Quién era la mascota de SEGA antes que Sonic?|Alex Kidd|Opa-Opa|NiGHTS|Ristar
+2565|En GTA V, ¿qué nivel de búsqueda te ponen si entras en la base militar de Fort Zancudo?|4|3|5|1
+2566|¿Cuántos personajes jugables tenía Street Fighter II: Champion Edition?|12|16|8|17
+2567|En Portal, ¿quién era la asistente personal de Cave Johnson?|Caroline|Heather|Melissa|Jane
+2569|¿Cómo se llamaba el juego de Masahiro Sakurai y Satoru Iwata que acabó siendo Super Smash Bros.?|Dragon King: The Fighting Game|Nintendo Land|Kirby Fighters|Smash Tournament
+2574|¿Qué probabilidad hay de que te den una escalera real en el póker (cinco cartas)?|1 entre 649 740|1 entre 763 302|1 entre 499 304|1 entre 311 875 200
+2577|¿Qué forma de impulso se añadió en Kingdom Hearts II Final Mix?|Forma Límite|Forma Valor|Forma Sabiduría|Antiforma
+2585|En Halo, ¿cómo se llama la especie a la que los humanos llaman «grunts»?|Unggoy|Huragok|Sangheili|Yanme'e
+2586|¿Qué suceso provoca los hechos del primer Half-Life?|La Cascada de Resonancia|El Blue Shift|La Guerra de las Siete Horas|El Narbacular Drop
+2588|¿Junto a Mortal Kombat, a qué juego en vídeo real (FMV) se asocia la creación de la ESRB?|Night Trap|Sewer Shark|The Daedalus Encounter|Mad Dog McCree
+2590|En World of Warcraft, ¿qué banda tiene un evento de ajedrez?|Karazhan|Zul'Aman|Guarida Alanegra|Templo de Ahn'Qiraj
+2593|En League of Legends, ¿qué campeón es «el Virtuoso»?|Jhin|Kayle|Ezreal|Camille
+2594|¿En qué videojuego participó Michael Fassbender?|Fable III|Call of Duty: Modern Warfare|Assassin's Creed III|Red Dead Redemption
+2596|¿En qué juego apareció Mario por primera vez?|Donkey Kong|Super Mario Bros.|Super Mario Land|Mario Bros.
+2597|En Devil May Cry, ¿qué juego es el primero en la cronología?|Devil May Cry 3: Dante's Awakening|Devil May Cry 4|Devil May Cry|Devil May Cry 2
+2599|¿Cuál de estos Pokémon NO es exclusivamente hembra?|Clefairy|Salazzle|Mandibuzz|Illumise
+2600|¿Qué videojuego se retiró por llevar escondido un episodio jugable de South Park?|Tiger Woods 99 PGA Tour|Tony Hawk's Pro Skater 3|Sonic Adventure|Madden 99
+2601|¿Cuándo salió el primer Call of Duty?|29 de octubre de 2003|1 de diciembre de 2003|14 de noviembre de 2002|18 de julio de 2004
+2602|En «Need for Speed III: Hot Pursuit», ¿cómo se llama el coche ficticio?|El Niño|Rápido|Ágil|La Niña
+2604|En Halo, ¿alrededor de qué planeta orbita la Instalación 04?|Threshold|Substance|Sanghelios|Reach
+2606|¿Cuál de estos juegos NO lo desarrolló Markus Persson?|Dwarf Fortress|Minecraft|Wurm Online|0x10c
+2607|En Minecraft, ¿son más rápidas las herramientas de oro que las de diamante?|Sí
+2608|¿Cómo se llama el caimán de «Where's My Water?»?|Swampy|Cranky|Crocky|Justice
+2609|En Metal Gear Solid, ¿qué pistola consideraba Revolver Ocelot la mejor jamás fabricada?|Colt Single Action Army|Colt Python|Colt M1892|Colt 1851 Navy
+2612|¿Qué videojuego clásico salió antes?|Space Invaders|Galaga|Pac-Man|Asteroids
+2615|En CS:GO, ¿qué código se teclea en la C4 al plantar la bomba?|7355608|7890728|7256380|7726354
+2616|¿Se planeó también el primer GTA para Nintendo 64?|Sí
+2617|¿Cuál fue la primera consola portátil del mundo?|Mattel Auto Race|Game Boy|Microvision|Game & Watch
+2618|¿Cuándo salió el primer Half-Life?|1998|2004|1999|1997
+2620|Durante el desarrollo de Super Mario World, ¿qué era la silla de montar de Yoshi?|Un caparazón|Gelatina|Un pastel|Un pincho
+2621|¿A cuántos personajes puedes reclutar en Suikoden en una partida?|107|108|93|96
+2623|¿En qué juego apareció originalmente Meryl Silverburgh, de Metal Gear?|Policenauts|Gradius|Contra|Castlevania: Symphony of the Night
+2624|¿Cuál de estos Pokémon de primera generación NO tuvo evolución en la cuarta?|Jynx|Electabuzz|Magmar|Rhydon
+2626|¿Qué Zelda salió en Norteamérica antes que en Japón?|Twilight Princess|Zelda II: The Adventure of Link|Ocarina of Time|The Wind Waker
+2627|¿Cómo se llama la isla principal de PUBG?|Erangel|Mármara|Severny|Lastovo
+2628|¿Cómo se llamaba la novia humana original de Sonic?|Madonna|Celeste|Sierra|Nina
+2630|En Overwatch, ¿qué aparato le permite a Tracer manipular su tiempo?|El acelerador cronal|El B.L.I.N.K.|El manipulador de desplazamiento|El dispositivo temporal
+2631|En Undertale, ¿con cuál de estos personajes NO puedes tener una cita?|Toriel|Papyrus|Undyne|Alphys
+2632|En «Tom Clancy's The Division», ¿cómo se llama el virus que infecta Nueva York?|La gripe del dólar|Ébola|Veneno rojo|Viruela
+2634|¿Cómo se llama la especie alienígena de «Shadow the Hedgehog» (2005)?|Black Arms|The Swarm|Black Hive|The Eclipse
+2636|¿Cuántas copias vendió el famoso juego de E.T. para Atari 2600?|1,5 millones|1 millón|250 000|Menos de 250 000
+2637|¿Cuántos compañeros puedes conseguir en «Paper Mario: La Puerta Milenaria»?|7|6|9|10
+2638|¿Cuándo salió Steam?|2003|2004|2011|2007
+2642|¿Ponen voz a Mario y a Paarthurnax (Skyrim) el mismo actor?|Sí
+2644|¿Qué estudio desarrolló «Burnout 3: Takedown» (2004)?|Criterion Games|EA Black Box|Codemasters|Rockstar Games
+2646|¿Cuál fue el primer juego para adultos (M) de Squaresoft?|Parasite Eve|Final Fantasy VIII|Front Mission|Vagrant Story
+2647|¿Empezó Unturned como un juego de Roblox?|Sí
+2648|¿Salió Stellaris, de Paradox, en 2016?|Sí
+2650|¿Qué personaje de Final Fantasy VIII hablaba casi siempre con una sola palabra?|Fujin|Raijin|Seifer|Zell
+2654|¿Cuál de estos Pokémon NO puede aprender Surf?|Arbok|Linoone|Tauros|Nidoking
+2655|¿Qué juego «souls» NO dirigió Hidetaka Miyazaki?|Dark Souls II|Demon's Souls|Dark Souls|Dark Souls III
+2657|En el DOOM original (1993), ¿cuál de estos NO es un truco?|IDCLIP|IDFA|IDDQD|IDSPISPOPD
+2660|En «The Binding of Isaac», ¿qué objeto mata al instante a Mamá y al Corazón de Mamá?|La Biblia|El Halo|Brimstone|El Libro de las Sombras
+2664|En Kingdom Hearts, ¿se llaman las llaves espada de Roxas «Guardajuramentos» y «Olvido»?|Sí
+2665|¿Cuál es el cuarto jefe de «Crash Bandicoot 2: Cortex Strikes Back» (1997)?|El Dr. N. Gin|El Dr. Neo Cortex|Los hermanos Komodo|Tiny Tiger
+2666|En el título «Luigi's Mansion», ¿qué letra es la única sin un par de ojos?|La s|La n|La i|La m
+2668|¿Por qué expulsaron a Trevor Philips de las Fuerzas Aéreas?|Por problemas de salud mental|Por lesiones|Por una enfermedad|Por ser un peligro para otros
+2669|¿Con qué nombre en clave empezó a desarrollarse para SNES el juego que acabó siendo «Banjo-Kazooie»?|Project Dream|Project Ukulele|Project Land|Project BK
+2672|¿Qué Kingdom Hearts incluía a los personajes de «The World Ends with You»?|Dream Drop Distance|Birth by Sleep|358/2 Days|Re:Chain of Memories
+2673|¿De qué palabra es abreviatura la «D» del «D-mail» de «Steins;Gate»?|DeLorean|Deep|Demo|Dev
+2674|¿Qué juego en línea se llamó LindenWorld al principio de su desarrollo?|Second Life|Active Worlds|IMVU|Habbo Hotel
+2675|¿Traía el disco de «Tony Hawk's Pro Skater 5» solo el tutorial?|Sí
+2678|Antes de Super Smash Bros. Ultimate, ¿en qué juego había aparecido por última vez King K. Rool?|Mario Super Sluggers|Donkey Kong 64|Donkey Kong Country 3|DK: King of Swing
+2680|En Diablo, ¿cómo se llama el mal menor surgido de una de las siete cabezas de Tathamet, la Doncella de la Angustia?|Andariel|Valla|Malthael|Kashya
+2683|¿Qué número tiene Porygon-Z en la Pokédex nacional?|474|376|432|589
+2686|En «Los Sims», ¿con cuántos simoleones empieza cada familia?|20 000|10 000|15 000|25 000

@@ -1,6 +1,7 @@
 import { join } from 'node:path'
 import { app, BrowserWindow, dialog, ipcMain, screen, session, shell } from 'electron'
-import { banksDir, createBank, deleteBank, ensureLibrary, importImage, listLibrary, markUsed, readBank, saveBank } from './banks'
+import { banksDir, createBank, deleteBank, ensureLibrary, importImage, importImageData, importImageUrl, listLibrary, markUsed, readBank, saveBank } from './banks'
+import { readFileSync, writeFileSync } from 'node:fs'
 import { importPhoto } from './library'
 import { addYoutube, createFolder, deleteMedia, importMedia, mediaDir, mediaLibrary } from './multimedia'
 import type { LibType } from '../shared/library'
@@ -193,6 +194,40 @@ function registerIpc(): void {
   ipcMain.handle('lib:delete', (_e, ref: string) => deleteBank(ref))
   ipcMain.handle('lib:markUsed', (_e, ref: string, ids: string[], used: boolean) => markUsed(ref, ids, used))
   ipcMain.handle('lib:importImage', (_e, path: string) => importImage(path))
+  ipcMain.handle('lib:importImageData', (_e, data: Uint8Array, mime: string, name?: string) => importImageData(data, mime, name))
+  ipcMain.handle('lib:importImageUrl', (_e, url: string, name?: string) => importImageUrl(url, name))
+  // "Buscar" la imagen que falta: Google Imágenes en el navegador
+  ipcMain.handle('lib:searchImage', (_e, text: string) => shell.openExternal(`https://www.google.com/search?tbm=isch&q=${encodeURIComponent(text)}`))
+  // importar preguntas: abre un archivo y devuelve su texto
+  ipcMain.handle('lib:openImportFile', async () => {
+    const win = BrowserWindow.getFocusedWindow() ?? getPanel()
+    const opts: Electron.OpenDialogOptions = {
+      title: 'Importar preguntas',
+      filters: [{ name: 'Preguntas (.json, .csv, .txt)', extensions: ['json', 'csv', 'tsv', 'txt'] }],
+      properties: ['openFile']
+    }
+    const res = win ? await dialog.showOpenDialog(win, opts) : await dialog.showOpenDialog(opts)
+    if (res.canceled || !res.filePaths[0]) return null
+    const buf = readFileSync(res.filePaths[0])
+    // Excel guarda los CSV en Windows-1252 si no se elige UTF-8
+    let text = buf.toString('utf8')
+    if (text.includes('\uFFFD')) text = new TextDecoder('windows-1252').decode(buf)
+    return { name: res.filePaths[0].replace(/^.*[\\/]/, ''), text }
+  })
+  // exportar un banco a .json o .csv
+  ipcMain.handle('lib:saveExport', async (_e, suggested: string, content: string) => {
+    const win = BrowserWindow.getFocusedWindow() ?? getPanel()
+    const csv = suggested.toLowerCase().endsWith('.csv')
+    const opts: Electron.SaveDialogOptions = {
+      title: 'Exportar banco',
+      defaultPath: join(app.getPath('desktop'), suggested),
+      filters: [csv ? { name: 'CSV (Excel)', extensions: ['csv'] } : { name: 'Banco de KONKURSOX', extensions: ['json'] }]
+    }
+    const res = win ? await dialog.showSaveDialog(win, opts) : await dialog.showSaveDialog(opts)
+    if (res.canceled || !res.filePath) return null
+    writeFileSync(res.filePath, content, 'utf8')
+    return res.filePath
+  })
   ipcMain.handle('lib:chooseImage', async () => {
     const win = BrowserWindow.getFocusedWindow() ?? getPanel()
     const opts: Electron.OpenDialogOptions = {

@@ -1,0 +1,107 @@
+# Libros (Entertainment: Books)
+469|¿Está escrito «Huevos verdes con jamón», del Dr. Seuss, con solo 50 palabras distintas?|Sí
+470|¿Quién escribió Frankenstein?|Mary Shelley|Edgar Allan Poe|Bram Stoker|H. P. Lovecraft
+471|¿Qué libro de George Orwell se considera una crítica a la vigilancia del Estado?|1984|El viejo y el mar|El guardián entre el centeno|Matar a un ruiseñor
+472|¿Quién escribió «Miedo y asco en Las Vegas»?|Hunter S. Thompson|F. Scott Fitzgerald|Henry Miller|William S. Burroughs
+473|¿Cuál es el segundo libro de «Canción de hielo y fuego»?|Choque de reyes|Danza de dragones|Tormenta de espadas|Festín de cuervos
+474|¿Quién escribió la novela juvenil «Bajo la misma estrella»?|John Green|Stephenie Meyer|Suzanne Collins|Stephen Chbosky
+475|¿Cómo se titula el primer libro de Sherlock Holmes de Arthur Conan Doyle?|Estudio en escarlata|El signo de los cuatro|Un caso de identidad|Los negocios de Raffles Haw
+476|¿Cuál de estos NO es un libro de Harry Potter?|El elfo doméstico|La cámara secreta|El prisionero de Azkaban|Las reliquias de la Muerte
+477|En «1984», ¿cómo se llama el régimen totalitario que controla Oceanía?|Ingsoc|Neobolchevismo|Obliteración del Yo|Alianza Terrestre
+478|¿Es cierto que la frase «Elemental, querido Watson» no aparece nunca en los libros de Sherlock Holmes de Conan Doyle?|Sí
+479|¿Por qué libro infantil es famoso el ilustrador Maurice Sendak?|Donde viven los monstruos|La historia interminable|Charlie y la fábrica de chocolate|El gato en el sombrero
+480|¿Se publicó «1984» en 1949?|Sí
+481|¿Qué famoso libro lleva el subtítulo «el moderno Prometeo»?|Frankenstein|Drácula|El extraño caso del Dr. Jekyll y Mr. Hyde|La leyenda de Sleepy Hollow
+482|¿Quién escribió «La letra escarlata» (1850)?|Nathaniel Hawthorne|Washington Irving|James Fenimore Cooper|Catharine Maria Sedgwick
+483|¿Quién escribió «El señor de las moscas» (1954)?|William Golding|Stephen King|F. Scott Fitzgerald|J. D. Salinger
+484|¿Qué famoso autor de novelas de espías escribió el cuento infantil «Chitty Chitty Bang Bang»?|Ian Fleming|Joseph Conrad|John Buchan|Graham Greene
+485|¿Qué novela clásica empieza con la frase «Llamadme Ismael»?|Moby Dick|Historia de dos ciudades|Secuestrado|Cumbres borrascosas
+486|¿Con qué seudónimo publicó Stephen King cinco novelas entre 1977 y 1984?|Richard Bachman|J. D. Robb|Mark Twain|Lewis Carroll
+487|¿Cómo se llama el perro de tres cabezas de «Harry Potter y la piedra filosofal»?|Fluffy|Spike|Poofy|Spot
+488|¿Cómo se llamaba el submarino del capitán Nemo en «Veinte mil leguas de viaje submarino»?|Nautilus|Neptuno|Poseidón|Atlántida
+489|¿Qué obra de Shakespeare, la más adaptada de todas, cuenta la historia de dos «amantes desventurados»?|Romeo y Julieta|Hamlet|La tempestad|El rey Lear
+490|¿Cuál de estos libros ha vendido más ejemplares en el mundo?|El señor de los anillos|El principito|Harry Potter y la piedra filosofal|El código Da Vinci
+491|¿Cómo se llama el protagonista de «El guardián entre el centeno»?|Holden Caulfield|Fletcher Christian|Jay Gatsby|Randall Flagg
+492|¿Quién escribió «Historia de dos ciudades»?|Charles Dickens|Charles Darwin|Mark Twain|Roald Dahl
+493|¿Cómo se llama el hermano de Sherlock Holmes?|Mycroft Holmes|Mederi Holmes|Martin Holmes|Herbie Holmes
+494|¿Quién es el autor de «Canción de hielo y fuego», que empieza con «Juego de tronos»?|George R. R. Martin|Brandon Sanderson|J. R. R. Tolkien|Steven Erikson
+495|¿Cómo se llama el cuarto libro de «La Torre Oscura» de Stephen King?|Mago y cristal|Los lobos del Calla|Corazones en la Atlántida|La mitad oscura
+496|¿Quién escribió Harry Potter?|J. K. Rowling|J. R. R. Tolkien|Terry Pratchett|Daniel Radcliffe
+498|¿Superan entre todos los libros de Harry Potter el millón de palabras?|Sí
+499|¿De qué autor es el libro «Huevos verdes con jamón»?|Dr. Seuss|Beatrix Potter|Roald Dahl|A. A. Milne
+500|¿Cómo se llama el padre de Harry Potter?|James Potter|Joey Potter|Frank Potter|Harold Potter
+502|¿Escribió Stephen Chbosky «Las ventajas de ser un marginado»?|Sí
+503|¿En qué libro de Harry Potter aparece por primera vez un horrocrux?|La cámara secreta|El misterio del príncipe|El cáliz de fuego|Las reliquias de la Muerte
+504|¿Cuántos libros tiene la saga principal de Harry Potter?|7|8|5|6
+506|En la novela de Bram Stoker, ¿destruye la luz del sol a Drácula?|No
+507|¿Es Shub-Niggurath una criatura creada por Tolkien en «El señor de los anillos»?|No
+509|¿Cuál de estas sagas es de James Patterson?|Maximum Ride|Harry Potter|Xanth|La trilogía de Bartimeo
+510|¿Qué modelo eran los vehículos de la visita en la novela «Parque Jurásico»?|Toyota Land Cruiser de 1989|Jeep Wrangler YJ de 1989|Ford Explorer XLT de 1989|Mercedes Clase M
+511|En el «Romance de los Tres Reinos», ¿quién NO participó en el Juramento del Jardín de los Melocotoneros?|Zhao Yun|Liu Bei|Guan Yu|Zhang Fei
+512|En «El señor de los anillos», ¿quién es el padre del enano Gimli?|Glóin|Thorin Escudo de Roble|Bombur|Dwalin
+513|¿De dónde es el oso Paddington?|De Perú|De la India|De Islandia|De Canadá
+514|En «El señor de los anillos», ¿cuántos anillos de poder se entregaron a los hombres?|9|5|11|13
+515|¿Dónde transcurre «It», de Stephen King?|Derry (Maine)|Rockford (Illinois)|Innsmouth (Massachusetts)|Kingsland (Texas)
+516|¿Quién escribió el cuento «La pequeña cerillera»?|Hans Christian Andersen|Charles Dickens|Lewis Carroll|Oscar Wilde
+517|¿Cuál de estos libros NO es del escritor checo Karel Čapek?|Viaje al centro de la Tierra|La guerra de las salamandras|R. U. R.|Daschenka o la vida de una cachorrita
+519|En «El libro de la selva», ¿qué tipo de serpiente es Kaa?|Pitón|Cobra|Anaconda|Víbora
+520|¿Cuál fue el último mensaje de los delfines en «Guía del autoestopista galáctico»?|«Hasta luego, y gracias por el pescado»|«La respuesta es 42»|«Tierra de valientes»|«Adiós, mundo cruel»
+521|Según la «Guía del autoestopista galáctico», la respuesta a la vida, el universo y todo lo demás es...|42|Querer a todo el mundo|El chocolate|La muerte
+522|¿Qué famoso personaje creó Mary Shelley en una novela de 1818?|El monstruo de Frankenstein|Drácula|La Cosa|El hombre invisible
+523|¿Cuál de estas novelas de Stephen King se publicó antes?|Cujo|Misery|Christine|It
+524|En «La isla misteriosa» de Julio Verne, ¿cómo llaman los náufragos a la isla?|Isla Lincoln|Isla Vulcania|Isla Prometeo|Isla Neptuno
+525|¿Quién escribió la novela de terror «La semilla del diablo» (Rosemary's Baby, 1967)?|Ira Levin|Stephen King|Robert Bloch|Mary Shelley
+526|En «Mujercitas», ¿con cuál de las hermanas March se casa Laurie?|Amy|Beth|Jo|Meg
+527|¿Con qué nombre es más conocido el escritor Eric Blair?|George Orwell|Aldous Huxley|Ernest Hemingway|Ray Bradbury
+528|¿Cómo se llama la dragona de Eragon?|Saphira|Glaedr|Espina|Arya
+529|¿Cuál de estos escritores NO nació en Inglaterra?|Arthur Conan Doyle|Graham Greene|H. G. Wells|Arthur C. Clarke
+530|¿Quién escribió «El principito»?|Antoine de Saint-Exupéry|Miguel de Cervantes|Jane Austen|F. Scott Fitzgerald
+531|En «El hobbit», ¿quién mata al dragón Smaug?|Bardo|Bilbo Bolsón|Gandalf el Gris|Frodo
+532|¿Cuál es el cuarto libro del Antiguo Testamento?|Números|Génesis|Éxodo|Levítico
+534|¿Quién es el autor de la saga «Percy Jackson»?|Rick Riordan|J. K. Rowling|Sandra Bullock|Roald Dahl
+535|¿Quién escribió «De ratones y hombres»?|John Steinbeck|George Orwell|Mark Twain|Harper Lee
+536|En «Alicia en el país de las maravillas», ¿cómo se llama la gatita de Alicia?|Dina|Óscar|Heath|Smokey
+537|¿Quién escribió la saga «Malaz: el Libro de los Caídos»?|Steven Erikson|Ian Cameron Esslemont|George R. R. Martin|J. R. R. Tolkien
+538|¿En qué se inspiró George Orwell para «Rebelión en la granja»?|En el comunismo soviético y Stalin|En el imperio japonés|En el fascismo y Hitler|En el New Deal de Roosevelt
+539|¿Cuál de estas obras NO es de Fiódor Dostoievski?|Ana Karenina|Memorias del subsuelo|Crimen y castigo|Los hermanos Karamázov
+540|En «Oliver Twist», ¿con qué apodo se conoce a Jack Dawkins?|El Truhan (Artful Dodger)|Fagin|Ojo de Buey|Mr. Fang
+541|¿Quién escribió la saga de fantasía «Canción de hielo y fuego»?|George R. R. Martin|George Lucas|George Orwell|George Eliot
+542|¿Iba a ser negro, en un principio, el Charlie de «Charlie y la fábrica de chocolate»?|Sí
+543|En la novela «Parque Jurásico», ¿qué dinosaurio acaba con John Hammond?|Procompsognathus|Dilophosaurus|Tiranosaurio rex|Velocirraptor
+544|¿Qué escritor estadounidense escribió sobre sus viajes con su perro Charley?|John Steinbeck|F. Scott Fitzgerald|Ernest Hemingway|William Faulkner
+545|En «El señor de los anillos», ¿de quién es Asfaloth, el caballo que lleva a Frodo a Rivendel?|Glorfindel|Arwen|Aragorn|Haldir
+546|¿Qué significa en español «Mein Kampf», el título del libro de Hitler?|Mi lucha|Mi odio|Mi tristeza|Mi deseo
+548|En Harry Potter, ¿qué hay que hacer para entrar en la sala común de Ravenclaw?|Responder a un acertijo|Golpear unos barriles con la varita|Decir una contraseña|Llamar con un ritmo
+549|¿De qué clásico del terror es autora Mary Shelley?|Frankenstein|Drácula|El extraño caso del Dr. Jekyll y Mr. Hyde|La leyenda de Sleepy Hollow
+550|¿Qué saga de Jim Butcher sigue a un mago en el Chicago actual?|Los expedientes Dresden|A Hat in Time|The Cinder Spires|Mi vida de mago adolescente
+551|¿En qué posición juega Harry Potter al quidditch?|Buscador|Golpeador|Cazador|Guardián
+552|¿Cuántos libros forman «Las crónicas de Narnia»?|7|6|8|5
+554|¿Quién escribió «Fahrenheit 451»?|Ray Bradbury|R. L. Stine|Wolfgang Amadeus Mozart|Stephen King
+555|¿Con qué seudónimo escribía la novelista Mary Ann Evans?|George Eliot|George Orwell|George Bernard Shaw|George Saunders
+556|¿En qué hotel de Edimburgo terminó J. K. Rowling «Harry Potter y las reliquias de la Muerte»?|The Balmoral|The Dunstane|Novotel|Sheraton Grand
+557|En «Brujerías» de Terry Pratchett, ¿cuál de estas NO es una de las tres brujas protagonistas?|Winny Hathersham|Yaya Ceravieja|Tata Ogg|Magrat Ajostiernos
+558|¿Qué escritor ruso escribió «Guerra y paz»?|León Tolstói|Fiódor Dostoievski|Aleksandr Pushkin|Vladímir Nabokov
+559|¿Qué poeta escribió «La balada de la cárcel de Reading» estando preso por ser homosexual?|Oscar Wilde|Lord Byron|William Blake|Wilfred Owen
+560|En la novela «El marciano», ¿cuántos soles pasó Mark Watney atrapado en Marte?|549|765|401|324
+561|¿Quién escribió «Jane Eyre»?|Charlotte Brontë|Emily Brontë|Jane Austen|Louisa May Alcott
+562|¿De dónde viene el título de «El silencio de los corderos»?|De un trauma de infancia de la protagonista|De la muerte de inocentes|De la comida favorita del villano|De los poderosos que acallan a los inocentes
+563|¿Quién escribió «Moby Dick»?|Herman Melville|William Golding|William Shakespeare|J. R. R. Tolkien
+564|¿Cuál es el segundo nombre de Hermione Granger?|Jean|Jane|Emma|Jo
+565|¿Cuál es el nombre completo del director Dumbledore?|Albus Percival Wulfric Brian Dumbledore|Albus Valum Jetta Mobius Dumbledore|Albus James Lunae Otto Dumbledore|Albus Valencium Horatio Kul Dumbledore
+566|¿Qué personaje clásico del terror mata a Elizabeth Lavenza?|El monstruo de Frankenstein|El conde Drácula|El hombre lobo|La criatura de la Laguna Negra
+567|¿En qué novela de Mark Twain un mendigo y el príncipe de Gales se cambian la ropa?|El príncipe y el mendigo|Hamlet|Tom Sawyer|Un yanqui en la corte del rey Arturo
+568|Según la novela de Bram Stoker, ¿en qué pueblo de la costa inglesa desembarca Drácula?|Whitby|Scarborough|Brighton|Portsmouth
+569|¿Quién escribió «El manifiesto comunista» junto a Karl Marx?|Friedrich Engels|Robert Owen|Aleksandr Kérenski|Paul Lafargue
+571|¿Cuál de estas obras NO es de Shakespeare?|El juicio de la templanza|Medida por medida|Tito Andrónico|Cimbelino
+572|¿En qué condado inglés imaginario transcurren las novelas de Thomas Hardy?|Wessex|Barsetshire|Fulchester|Ambridge
+574|¿Nació Harry Potter el 31 de julio de 1980?|Sí
+576|¿En qué novela clásica hay un personaje llamado Homer Simpson?|El día de la langosta|Trampa 22|De ratones y hombres|Paz separada
+577|En «Las reliquias de la Muerte», ¿destruye Hermione el cuarto horrocrux con la espada de Gryffindor?|No
+580|¿Qué escritor es autor del verso «la hembra de la especie es más letal que el macho»?|Rudyard Kipling|Edgar Allan Poe|William Shakespeare|William Wordsworth
+582|En Harry Potter, ¿cuál es el segundo nombre de Cornelius Fudge?|Oswald|James|Harold|Christopher
+583|En los libros de Beatrix Potter, ¿qué animal es Tommy Brock?|Un tejón|Un zorro|Una rana|Un conejo
+584|¿En qué pueblo están enterrados Lily y James Potter?|El Valle de Godric|Hogsmeade|Ottery St. Catchpole|Pequeño Hangleton
+585|¿Cuál es el segundo nombre de Ron Weasley?|Bilius|Arthur|John|Dominic
+586|En Harry Potter, ¿con quién se acaba casando Draco Malfoy?|Astoria Greengrass|Pansy Parkinson|Millicent Bulstrode|Hermione Granger
+587|En «El cuento de la criada», ¿cuál se da a entender que es el nombre real de Defred?|June|August|April|May
+588|¿En qué novela de Dickens aparece Abel Magwitch?|Grandes esperanzas|Los papeles póstumos del club Pickwick|Nicholas Nickleby|Oliver Twist

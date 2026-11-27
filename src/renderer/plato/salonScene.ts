@@ -7,7 +7,7 @@ import { remainingMs, roscoStats, roscoWinners, type RoscoPlayer } from '../../s
 import { activeContestants } from '../../shared/scene'
 import type { ContestantId, GameState, SlotId } from '../../shared/types'
 import { bevelBar, emblem, h, svg, type CamFrameEl } from '../ds/components'
-import { chipFor, DIAMOND, keyForSlot, lifelineEl, liveTimer, optionBar, optionStates, quizPlate, targetName, turnSlots, type OptEl, type PlateEl } from './quizScenes'
+import { chipFor, DIAMOND, imageBox, keyForSlot, lifelineEl, liveTimer, optionBar, optionStates, quizPlate, targetName, turnSlots, type OptEl, type PlateEl } from './quizScenes'
 import type { Scene } from './scenes'
 
 type SalonKind = 'test' | 'sino' | 'quien' | 'ladder' | 'estimacion' | 'rosco'
@@ -27,11 +27,14 @@ function plateIds(s: GameState): { key: string; slots: ContestantId[] }[] {
   return activeContestants(s).map((id) => ({ key: id, slots: [id] }))
 }
 
+/** ¿La pregunta trae alguna imagen? Entonces la pregunta y las opciones dejan sitio al marco. */
+const hasImage = (s: GameState) => !!(s.quiz.current?.question.imagen || s.quiz.current?.question.imagen_respuesta)
+
 export function salonKey(s: GameState): string {
   const k = salonKind(s)
   if (k === 'rosco') return `salon:rosco:${s.rosco.players.length}:${s.rosco.players.map((p) => p.letters.length).join(',')}`
   const n = s.quiz.current?.question.opciones.length ?? 4
-  return `salon:${k}:${n}:${s.layout}:${plateIds(s)
+  return `salon:${k}:${n}:${hasImage(s) ? 'img' : ''}:${s.layout}:${plateIds(s)
     .map((p) => p.key)
     .join(',')}:${s.quiz.ladder.levels.length}:${s.quiz.lifelines.map((l) => l.id + l.icon).join(',')}`
 }
@@ -60,19 +63,23 @@ function buildSalonQuiz(s: GameState): Scene {
   root.append(corner(LABELS[kind] ?? ''))
   const n = Math.max(2, Math.min(4, s.quiz.current?.question.opciones.length ?? 4))
   const ladder = kind === 'ladder'
-  const W = ladder ? 1180 : 1720
+  const withImg = hasImage(s)
+  const W = ladder || withImg ? 1180 : 1720
+  // escalera con imagen: la pregunta deja sitio al marco (a su derecha)
+  const QW = ladder && withImg ? 720 : W
 
   // pregunta
   const qText = h('span', kind === 'quien' ? 'k-quote' : 'k-question')
   const qCap = kind === 'quien' ? h('span', 'k-caption', { position: 'absolute', top: 18, left: 0, right: 0, textAlign: 'center' }, ['¿Quién lo dijo?']) : null
-  const qBar = bevelBar({ box: { x: 100, y: 130, w: W, h: kind === 'estimacion' ? 230 : 270 }, c: 64, center: true }, qCap ? [qCap, qText] : [qText])
+  const qBar = bevelBar({ box: { x: 100, y: 130, w: QW, h: kind === 'estimacion' ? 230 : 270 }, c: 64, center: true }, qCap ? [qCap, qText] : [qText])
   root.append(qBar)
 
   // opciones
   let opts: OptEl[] = []
   if (kind === 'sino') {
     root.append(h('div', 'k-track', { top: 560 }))
-    opts = [0, 1].map((i) => optionBar('', { x: i ? 980 : 100, y: 445, w: 840, h: 230 }, 80, true))
+    const sw = withImg ? 575 : 840
+    opts = [0, 1].map((i) => optionBar('', { x: i ? 100 + sw + 30 : 100, y: 445, w: sw, h: 230 }, 80, true))
   } else if (kind !== 'estimacion') {
     const ow = (W - 30) / 2
     const oh = ladder ? 112 : 130
@@ -87,7 +94,10 @@ function buildSalonQuiz(s: GameState): Scene {
   if (kind === 'estimacion') {
     const value = h('span', 'k-est__value', { fontSize: 110 })
     const close = h('span', '', { fontSize: 38, fontWeight: 600, whiteSpace: 'nowrap' })
-    const bar = bevelBar({ box: { x: 260, y: 420, w: 1400, h: 260 }, c: 80, center: true }, [h('span', 'k-caption', {}, ['Respuesta']), value, close], { flexDirection: 'column', gap: 6 })
+    const bar = bevelBar({ box: withImg ? { x: 100, y: 420, w: 1180, h: 260 } : { x: 260, y: 420, w: 1400, h: 260 }, c: 80, center: true }, [h('span', 'k-caption', {}, ['Respuesta']), value, close], {
+      flexDirection: 'column',
+      gap: 6
+    })
     bar.classList.add('k-opt')
     root.append(h('div', 'k-track', { top: 550 }), bar)
     est = { value, close, bar }
@@ -137,8 +147,12 @@ function buildSalonQuiz(s: GameState): Scene {
 
   const timer = liveTimer(ladder ? 1170 : 1700, 18, 0.8)
   root.append(timer.root)
+  // imagen: a la derecha (sin tapar la pregunta ni las opciones); en la escalera, junto a la pregunta
+  const image = imageBox(ladder ? { x: 850, y: 130, w: 430, h: 270 } : { x: 1320, y: 130, w: 500, h: 600 })
+  root.append(image.root, image.full)
 
   const update = (st: GameState) => {
+    image.set(st)
     const cur = st.quiz.current
     const text = cur && cur.phase !== 'ready' ? cur.question.enunciado : ''
     qText.textContent = kind === 'quien' && text ? `«${text}»` : text

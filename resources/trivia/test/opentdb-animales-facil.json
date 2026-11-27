@@ -1,0 +1,298 @@
+{
+  "formato": "konkursox-banco",
+  "version": 1,
+  "nombre": "Animales · Fácil",
+  "grupo": "Open Trivia DB",
+  "licencia": "Preguntas de Open Trivia Database (opentdb.com), licencia CC BY-SA 4.0, traducidas y adaptadas al español. Este banco se distribuye con la misma licencia (CC BY-SA 4.0).",
+  "preguntas": [
+    {
+      "id": "o4683",
+      "tipo": "test",
+      "enunciado": "¿Para qué sacan la lengua las serpientes y los lagartos?",
+      "opciones": [
+        "Para amenazar a otras especies",
+        "Para saborear el aire dulce",
+        "Para captar partículas de olor",
+        "Para atraer a las hembras"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Animales"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4684",
+      "tipo": "test",
+      "enunciado": "¿De qué color es la hembra del mirlo común?",
+      "opciones": [
+        "Amarillo",
+        "Negro",
+        "Blanco",
+        "Marrón"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Animales"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4686",
+      "tipo": "test",
+      "enunciado": "¿Cuál es el animal terrestre más rápido?",
+      "opciones": [
+        "La gacela de Thomson",
+        "El berrendo",
+        "El león",
+        "El guepardo"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Animales"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4687",
+      "tipo": "test",
+      "enunciado": "¿De qué país son originarios los wombats?",
+      "opciones": [
+        "Palaos",
+        "Papúa Nueva Guinea",
+        "Nueva Zelanda",
+        "Australia"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Animales"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4689",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos animales NO existe?",
+      "opciones": [
+        "El demonio de Tasmania",
+        "El dragón de mar",
+        "El calamar gigante",
+        "El león de Nemea"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Animales"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4690",
+      "tipo": "test",
+      "enunciado": "¿De qué colores es el arrendajo de Steller?",
+      "opciones": [
+        "Azul y gris",
+        "Gris y negro",
+        "Azul y blanco",
+        "Azul y negro"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Animales"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4691",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llamaba en realidad la famosa Grumpy Cat?",
+      "opciones": [
+        "Broccoli",
+        "Tardar Sauce",
+        "Minnie",
+        "Sauce"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Animales"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4695",
+      "tipo": "test",
+      "enunciado": "¿Cuántos dientes tiene un conejo adulto?",
+      "opciones": [
+        "24",
+        "26",
+        "28",
+        "30"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Animales"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4697",
+      "tipo": "test",
+      "enunciado": "¿Cuál es el animal nacional de la India?",
+      "opciones": [
+        "El tigre",
+        "El león",
+        "El camello",
+        "El caballo"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Animales"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4700",
+      "tipo": "test",
+      "enunciado": "¿Qué raza de perro se asocia tradicionalmente a los bomberos (en EE. UU.)?",
+      "opciones": [
+        "El pastor alemán",
+        "El mastín",
+        "El dálmata",
+        "El gran danés"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Animales"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4701",
+      "tipo": "test",
+      "enunciado": "¿Dónde vive un animal abisopelágico?",
+      "opciones": [
+        "En el desierto",
+        "Dentro de un árbol",
+        "En las profundidades del océano",
+        "En lo alto de una montaña"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Animales"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4702",
+      "tipo": "test",
+      "enunciado": "¿A qué clase de animales pertenecen los tritones?",
+      "opciones": [
+        "Anfibios",
+        "Peces",
+        "Mamíferos",
+        "Reptiles"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Animales"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4707",
+      "tipo": "test",
+      "enunciado": "¿Cuál es el nombre científico del ser humano actual?",
+      "opciones": [
+        "Homo erectus",
+        "Homo ergaster",
+        "Homo sapiens",
+        "Homo neanderthalensis"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Animales"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4709",
+      "tipo": "test",
+      "enunciado": "¿Qué animal marino se llama Hippocampus en latín?",
+      "opciones": [
+        "El delfín",
+        "El pulpo",
+        "La ballena",
+        "El caballito de mar"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Animales"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4710",
+      "tipo": "test",
+      "enunciado": "El kakapo es un loro grande, nocturno y que no vuela. ¿De dónde es?",
+      "opciones": [
+        "Sudáfrica",
+        "Madagascar",
+        "Australia",
+        "Nueva Zelanda"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Animales"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4711",
+      "tipo": "test",
+      "enunciado": "¿Cuántas patas tienen las mariposas?",
+      "opciones": [
+        "4",
+        "8",
+        "2",
+        "6"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Animales"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4712",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama la casa del conejo bajo tierra?",
+      "opciones": [
+        "Colmena",
+        "Guarida",
+        "Nido",
+        "Madriguera"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Animales"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    }
+  ]
+}

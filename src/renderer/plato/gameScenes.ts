@@ -3,7 +3,7 @@ import { formatNumber, niceScale, tickLabel } from '../../shared/games'
 import { targetFromKey } from '../../shared/quiz'
 import type { GameState, SlotId } from '../../shared/types'
 import { bevelBar, camFrame, h, svg, type CamFrameEl } from '../ds/components'
-import { camGeometry, DIAMOND, keyForSlot, liveTimer, optionBar, optionStates, quizPlate, setLineupPlate, targetName, turnSlots, type PlateEl } from './quizScenes'
+import { camGeometry, DIAMOND, imageBox, keyForSlot, liveTimer, optionBar, optionStates, quizPlate, setLineupPlate, targetName, turnSlots, type PlateEl } from './quizScenes'
 import { camsLineup } from '../../shared/scene'
 import type { Scene } from './scenes'
 
@@ -49,11 +49,14 @@ export function buildQuienScene(s: GameState, key: string): Scene {
 
   const timer = camsLineup(s).length === 2 ? liveTimer(900, 380) : liveTimer(1700, 572, 0.8)
   root.append(timer.root)
+  const image = imageBox({ x: 1300, y: 40, w: 520, h: 480 })
+  root.append(image.root, image.full)
 
   const update = (st: GameState) => {
+    image.set(st)
     const cur = st.quiz.current
     const q = cur?.question
-    const text = cur && cur.phase !== 'ready' ? q?.enunciado ?? '' : ''
+    const text = cur && cur.phase !== 'ready' ? (q?.enunciado ?? '') : ''
     quote.textContent = text
     quote.style.fontSize = text.length > 140 ? '44px' : text.length > 90 ? '54px' : ''
     const revealed = cur?.phase === 'revealed'
@@ -124,12 +127,16 @@ export function buildEstimationScene(s: GameState, key: string): Scene {
 
   const X = (v: number) => Math.max(0, Math.min(W, (v / scale.max) * W))
 
+  const image = imageBox({ x: 1300, y: 40, w: 520, h: 470 })
+  root.append(image.root, image.full)
+
   const draw = (st: GameState) => {
+    image.set(st)
     const cur = st.quiz.current
     const q = cur?.question
     const answer = q?.valor ?? 0
     const unit = q?.unidad ? ` ${q.unidad}` : ''
-    qText.textContent = cur && cur.phase !== 'ready' ? q?.enunciado ?? '' : ''
+    qText.textContent = cur && cur.phase !== 'ready' ? (q?.enunciado ?? '') : ''
     const revealed = cur?.phase === 'revealed'
     const guesses = Object.entries(cur?.guesses ?? {})
     const sk = `${answer}|${guesses.map(([k, v]) => k + v).join(',')}|${revealed}`
@@ -138,10 +145,7 @@ export function buildEstimationScene(s: GameState, key: string): Scene {
       scale = niceScale(Math.max(answer, ...guesses.map(([, v]) => Math.max(0, v))))
       ticksEl.replaceChildren()
       for (let v = 0; v <= scale.max + 1e-9; v += scale.step) {
-        ticksEl.append(
-          h('div', 'k-abs', { left: X(v), top: 90, width: 1, height: 14, background: 'rgba(201,169,97,0.6)' }),
-          h('div', 'k-est__tick', { left: X(v), top: 112 }, [tickLabel(v)])
-        )
+        ticksEl.append(h('div', 'k-abs', { left: X(v), top: 90, width: 1, height: 14, background: 'rgba(201,169,97,0.6)' }), h('div', 'k-est__tick', { left: X(v), top: 112 }, [tickLabel(v)]))
       }
       marksEl.replaceChildren(
         ...guesses.map(([k, v]) => {
@@ -166,14 +170,12 @@ export function buildEstimationScene(s: GameState, key: string): Scene {
     doneAnim = t >= 1
 
     const res = cur?.estimation
-    const winners = new Set(doneAnim ? res?.winners ?? [] : [])
+    const winners = new Set(doneAnim ? (res?.winners ?? []) : [])
     for (const mk of Array.from(marksEl.children) as HTMLElement[]) mk.classList.toggle('is-win', winners.has(mk.dataset.key ?? ''))
     closeCap.textContent = st.quiz.estimation.priceIsRight ? 'Más cerca sin pasarse' : 'Más cerca'
     if (res && doneAnim) {
       const w = res.rows.filter((r) => r.rank === 1)
-      closeText.textContent = w.length
-        ? `${w.map((r) => targetName(st, targetFromKey(r.key))).join(' y ')} · a ${formatNumber(w[0].diff)}${unit}`
-        : 'Todos se pasan'
+      closeText.textContent = w.length ? `${w.map((r) => targetName(st, targetFromKey(r.key))).join(' y ')} · a ${formatNumber(w[0].diff)}${unit}` : 'Todos se pasan'
     } else closeText.textContent = ''
 
     for (const { slot, plate } of plates) {

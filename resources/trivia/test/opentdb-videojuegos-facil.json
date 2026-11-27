@@ -1,0 +1,4514 @@
+{
+  "formato": "konkursox-banco",
+  "version": 1,
+  "nombre": "Videojuegos · Fácil",
+  "grupo": "Open Trivia DB",
+  "licencia": "Preguntas de Open Trivia Database (opentdb.com), licencia CC BY-SA 4.0, traducidas y adaptadas al español. Este banco se distribuye con la misma licencia (CC BY-SA 4.0).",
+  "preguntas": [
+    {
+      "id": "o1617",
+      "tipo": "test",
+      "enunciado": "¿Qué miembro del Alto Mando de la primera generación de Pokémon pasó a ser campeón en la siguiente?",
+      "opciones": [
+        "Lorelei",
+        "Agatha",
+        "Lance",
+        "Bruno"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1619",
+      "tipo": "test",
+      "enunciado": "¿Qué equipo ganó The International de Dota 2 en 2016?",
+      "opciones": [
+        "Digital Chaos",
+        "Wings Gaming",
+        "Evil Geniuses",
+        "Fnatic"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1621",
+      "tipo": "test",
+      "enunciado": "¿Qué significan las siglas DOTA?",
+      "opciones": [
+        "Defense of the Ancients",
+        "Defense of the Antiques",
+        "Defense of the Artifacts",
+        "Defense of the Animated"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1623",
+      "tipo": "test",
+      "enunciado": "¿Quién creó el videojuego «Bendy and the Ink Machine»?",
+      "opciones": [
+        "Scott Cawthon",
+        "Jeff Kaplan",
+        "TheMeatly",
+        "Konami"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1624",
+      "tipo": "test",
+      "enunciado": "¿En qué año salió el primer «Mass Effect»?",
+      "opciones": [
+        "2008",
+        "2009",
+        "2010",
+        "2007"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1626",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos juegos tiene el mapa más grande?",
+      "opciones": [
+        "The Witcher 3: Wild Hunt",
+        "Grand Theft Auto V",
+        "The Elder Scrolls IV: Oblivion",
+        "Just Cause 2"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1627",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama el aventurero que conoces en las minas de Stardew Valley?",
+      "opciones": [
+        "Marvin",
+        "Morris",
+        "Marnie",
+        "Marlon"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1631",
+      "tipo": "test",
+      "enunciado": "¿Qué personaje se estrenó en Super Smash Bros. con «Melee»?",
+      "opciones": [
+        "Sheik",
+        "Mega Man",
+        "Lucas",
+        "Samus"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1632",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos mapas estaba en Team Fortress 2 desde su lanzamiento?",
+      "opciones": [
+        "Gravel Pit",
+        "Upward",
+        "Gold Rush",
+        "Hoodoo"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1633",
+      "tipo": "test",
+      "enunciado": "En el primer Sly Cooper, ¿qué reliquia familiar quería recuperar Sly?",
+      "opciones": [
+        "The Art of Sneak",
+        "El Thievius Raccoonus",
+        "Raccoonus Teachus",
+        "Raccoon Training 101"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1634",
+      "tipo": "test",
+      "enunciado": "En «Overwatch», ¿qué héroe puede correr por las paredes?",
+      "opciones": [
+        "Sombra",
+        "Lúcio",
+        "Mercy",
+        "Reinhardt"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1635",
+      "tipo": "test",
+      "enunciado": "¿De qué nacionalidad es D.Va, de Overwatch?",
+      "opciones": [
+        "Vietnamita",
+        "China",
+        "Coreana",
+        "Japonesa"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1636",
+      "tipo": "test",
+      "enunciado": "¿Cuál era el nombre original de Crash Bandicoot?",
+      "opciones": [
+        "Marvelous Mole",
+        "Wally Wombat",
+        "Willie Wombat",
+        "Coco Bandicoot"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1637",
+      "tipo": "test",
+      "enunciado": "En Overwatch, ¿qué personaje es famoso por decir «Es la hora del duelo» (It's high noon)?",
+      "opciones": [
+        "McCree (Cassidy)",
+        "Hanzo",
+        "Soldado: 76",
+        "Pharah"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1638",
+      "tipo": "test",
+      "enunciado": "¿En qué año salió «Antichamber»?",
+      "opciones": [
+        "2012",
+        "2013",
+        "2011",
+        "2014"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1639",
+      "tipo": "test",
+      "enunciado": "¿Quién creó la saga «Metal Gear»?",
+      "opciones": [
+        "Gunpei Yokoi",
+        "Hideo Kojima",
+        "Hiroshi Yamauchi",
+        "Shigeru Miyamoto"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1641",
+      "tipo": "test",
+      "enunciado": "¿En cuál de estos Zelda NO es Ganon el jefe final?",
+      "opciones": [
+        "Breath of the Wild",
+        "Ocarina of Time",
+        "Majora's Mask",
+        "Skyward Sword"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1642",
+      "tipo": "test",
+      "enunciado": "En GTA V, ¿cuál era el apellido anterior de Michael De Santa?",
+      "opciones": [
+        "Simpson",
+        "De Santos",
+        "Townley",
+        "Watson"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1643",
+      "tipo": "test",
+      "enunciado": "¿Quién es el guionista de «Half-Life»?",
+      "opciones": [
+        "Gabe Newell",
+        "Marc Laidlaw",
+        "Robin Walker",
+        "Chet Faliszek"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1644",
+      "tipo": "test",
+      "enunciado": "Blinky, Pinky, Inky y Clyde son personajes de ¿qué videojuego clásico?",
+      "opciones": [
+        "Gauntlet",
+        "Pac-Man",
+        "Space Invaders",
+        "Street Fighter"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1646",
+      "tipo": "test",
+      "enunciado": "¿Cuántos finales principales tiene «Undertale»?",
+      "opciones": [
+        "3",
+        "5",
+        "2",
+        "13"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1648",
+      "tipo": "test",
+      "enunciado": "¿Qué título «Ultimate» tiene Makoto Naegi, protagonista de Danganronpa?",
+      "opciones": [
+        "Estudiante con mala suerte definitivo",
+        "Detective definitivo",
+        "Estudiante con suerte definitivo",
+        "Corredor definitivo"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1649",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama la protagonista de Portal y Portal 2?",
+      "opciones": [
+        "Mel",
+        "Chell",
+        "Chloe",
+        "Christine"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1650",
+      "tipo": "test",
+      "enunciado": "En la saga Half-Life, ¿cuál es el arma más característica de Gordon Freeman?",
+      "opciones": [
+        "Una katana",
+        "Un mazo",
+        "Un alambre",
+        "Una palanca"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1651",
+      "tipo": "test",
+      "enunciado": "¿Quién es el protagonista de Dead Space?",
+      "opciones": [
+        "El Jefe Maestro",
+        "Gordon Freeman",
+        "El comandante Shepard",
+        "Isaac Clarke"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1653",
+      "tipo": "test",
+      "enunciado": "¿Quién creó Ratchet & Clank?",
+      "opciones": [
+        "PixelTail Games",
+        "Rare",
+        "Bethesda",
+        "Insomniac Games"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1654",
+      "tipo": "test",
+      "enunciado": "¿Qué arma o equipo existe en Counter-Strike pero no en Counter-Strike: Source?",
+      "opciones": [
+        "El cóctel molotov",
+        "El MP5 Navy",
+        "El TMP",
+        "El escudo táctico"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1657",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos personajes NO es de Street Fighter?",
+      "opciones": [
+        "Mai Shiranui",
+        "Sakura Kasugano",
+        "Ibuki",
+        "Laura Matsuda"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1658",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama la nave del comandante Shepard en Mass Effect?",
+      "opciones": [
+        "Infinity",
+        "Normandía",
+        "Endeavour",
+        "Osiris"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1661",
+      "tipo": "test",
+      "enunciado": "¿Quién de esta lista fue uno de los fundadores de Valve?",
+      "opciones": [
+        "Gabe Newell",
+        "Ray Ueno",
+        "Marc Laidlaw",
+        "Robin Walker"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1665",
+      "tipo": "test",
+      "enunciado": "¿Qué personaje de Undertale te dice que «lo vas a pasar mal»?",
+      "opciones": [
+        "Sans",
+        "Asriel Dreemurr",
+        "Undyne",
+        "Asgore"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1666",
+      "tipo": "test",
+      "enunciado": "¿Quién es el protagonista de «Metal Gear Rising: Revengeance»?",
+      "opciones": [
+        "Revolver Ocelot",
+        "Solid Snake",
+        "Raiden",
+        "Otacon"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1668",
+      "tipo": "test",
+      "enunciado": "En World of Warcraft, ¿cuál era el nivel máximo original?",
+      "opciones": [
+        "70",
+        "60",
+        "50",
+        "100"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1669",
+      "tipo": "test",
+      "enunciado": "En World of Warcraft, ¿qué color identifica al druida en la interfaz?",
+      "opciones": [
+        "Marrón",
+        "Naranja",
+        "Verde",
+        "Azul"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1670",
+      "tipo": "test",
+      "enunciado": "En Team Fortress 2, ¿cuál de estas NO es un arma principal?",
+      "opciones": [
+        "La pistola médica",
+        "El lanzagranadas",
+        "La escopeta Scattergun",
+        "El lanzacohetes"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1672",
+      "tipo": "test",
+      "enunciado": "En CS:GO, ¿cómo se llama la rareza de las skins retiradas?",
+      "opciones": [
+        "Retirada",
+        "Reducida",
+        "Contrabando",
+        "Limitada"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1675",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama el personaje jugable de «Deltarune: Capítulo 1» (2018)?",
+      "opciones": [
+        "Gaster",
+        "Frisk",
+        "Chara",
+        "Kris"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1676",
+      "tipo": "test",
+      "enunciado": "¿Qué título le dan los demonios al protagonista de DOOM (2016)?",
+      "opciones": [
+        "Doom Reaper",
+        "Doom Marine",
+        "Doom Guy",
+        "Doom Slayer"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1679",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos mapas NO está en CS:GO?",
+      "opciones": [
+        "Assault",
+        "Mirage",
+        "Cache",
+        "Oilrig"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1680",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos NO es protagonista del modo historia de GTA V?",
+      "opciones": [
+        "Trevor Philips",
+        "Michael De Santa",
+        "Franklin Clinton",
+        "Tommy Vercetti"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1681",
+      "tipo": "test",
+      "enunciado": "En Pokémon, ¿qué Pokémon tiene en exclusiva la habilidad Superguarda?",
+      "opciones": [
+        "Shedinja",
+        "Silvally",
+        "Spiritomb",
+        "Sableye"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1682",
+      "tipo": "test",
+      "enunciado": "¿En qué año salió «Metal Gear Solid» en Norteamérica?",
+      "opciones": [
+        "2001",
+        "1998",
+        "2004",
+        "1987"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1683",
+      "tipo": "test",
+      "enunciado": "¿En qué empresa trabajaba Gabe Newell antes de fundar Valve?",
+      "opciones": [
+        "Google",
+        "Microsoft",
+        "Yahoo",
+        "Apple"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1684",
+      "tipo": "test",
+      "enunciado": "¿Cuál fue el primer juego de la saga Battlefield?",
+      "opciones": [
+        "Battlefield 1",
+        "Battlefield 2",
+        "Battlefield 1942",
+        "Battlefield Vietnam"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1685",
+      "tipo": "test",
+      "enunciado": "¿Cuándo salió Portal 2?",
+      "opciones": [
+        "2009",
+        "2007",
+        "2011",
+        "2014"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1687",
+      "tipo": "test",
+      "enunciado": "¿Qué empresa desarrolla la saga Rock Band?",
+      "opciones": [
+        "Activision",
+        "Harmonix",
+        "Electronic Arts",
+        "Konami"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1689",
+      "tipo": "test",
+      "enunciado": "¿Qué videojuego causó polémica por su minijuego oculto «Hot Coffee»?",
+      "opciones": [
+        "GTA: San Andreas",
+        "Cooking Mama",
+        "GTA: Vice City",
+        "Hitman: Blood Money"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1690",
+      "tipo": "test",
+      "enunciado": "En Hearthstone, ¿cuál es el mejor rango posible?",
+      "opciones": [
+        "Supremo n.º 1",
+        "Élite n.º 1",
+        "Leyenda n.º 1",
+        "Maestro n.º 1"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1691",
+      "tipo": "test",
+      "enunciado": "En Half-Life, ¿qué fuerza militar de EE. UU. empieza a «limpiar» Black Mesa?",
+      "opciones": [
+        "Los marines",
+        "Los Navy SEAL",
+        "La HECU",
+        "La Alianza (Combine)"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1693",
+      "tipo": "test",
+      "enunciado": "En Splatoon 2, ¿quiénes forman Off the Hook (Cefalopop)?",
+      "opciones": [
+        "Tina y Kali",
+        "Perla y Marina",
+        "Diamond y Aquamarina",
+        "DJ Octavio y Crusty Sean"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1695",
+      "tipo": "test",
+      "enunciado": "En «Call of Duty: Zombies», ¿cómo se llama la máquina que mejora las armas?",
+      "opciones": [
+        "Pack-a-Punch",
+        "Gersch Device",
+        "Wunderfizz",
+        "Mule Kick"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1697",
+      "tipo": "test",
+      "enunciado": "¿Quién es el compañero de Sonic?",
+      "opciones": [
+        "Shadow",
+        "Amy",
+        "Tails",
+        "Knuckles"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1700",
+      "tipo": "test",
+      "enunciado": "¿Cuántos juegos de Crash Bandicoot salieron en la primera PlayStation?",
+      "opciones": [
+        "6",
+        "3",
+        "4",
+        "5"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1701",
+      "tipo": "test",
+      "enunciado": "Antes de su cambio de logo en 2000, ¿qué figura NO aparecía en el logo de Electronic Arts?",
+      "opciones": [
+        "Esfera",
+        "Cubo",
+        "Pirámide",
+        "Cilindro"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1702",
+      "tipo": "test",
+      "enunciado": "¿Quién creó el juego independiente «Night in the Woods»?",
+      "opciones": [
+        "Ron Gilbert",
+        "Tim Schafer",
+        "Tommy Refenes",
+        "Alec Holowka"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1705",
+      "tipo": "test",
+      "enunciado": "¿Qué poder tiene Max Caulfield en «Life is Strange»?",
+      "opciones": [
+        "Superfuerza",
+        "Invisibilidad",
+        "Telepatía",
+        "Rebobinar el tiempo"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1706",
+      "tipo": "test",
+      "enunciado": "¿Qué significa «IWHBYD», la calavera de la saga Halo?",
+      "opciones": [
+        "I Would Have Been Your Daddy",
+        "I Would Hate Being Your Driver",
+        "I Would Have Bought Your Dog",
+        "I Wanna Have Babies You Down"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1708",
+      "tipo": "test",
+      "enunciado": "¿Cuántos personajes jugables hay en Yakuza 5?",
+      "opciones": [
+        "1",
+        "3",
+        "5",
+        "2"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1709",
+      "tipo": "test",
+      "enunciado": "En Animal Crossing, ¿quién lleva la tienda del pueblo?",
+      "opciones": [
+        "Gracia",
+        "Totakeke",
+        "Tom Nook",
+        "Mr. Resetti"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1710",
+      "tipo": "test",
+      "enunciado": "¿Cuántos monstruos insignia aparecen en «Monster Hunter Generations»?",
+      "opciones": [
+        "4",
+        "3",
+        "2",
+        "1"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1711",
+      "tipo": "test",
+      "enunciado": "¿Qué consola Game Boy salió antes?",
+      "opciones": [
+        "Game Boy Advance SP",
+        "Game Boy Color",
+        "Game Boy Micro",
+        "Game Boy Advance"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1712",
+      "tipo": "test",
+      "enunciado": "En Mortal Kombat, ¿quién resulta ser el vencedor real de la batalla de Armagedón?",
+      "opciones": [
+        "Raiden",
+        "Shao Kahn",
+        "Liu Kang",
+        "Shang Tsung"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1713",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estas es una clase de Hearthstone?",
+      "opciones": [
+        "Monje",
+        "Sacerdote",
+        "Sabio",
+        "Clérigo"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1714",
+      "tipo": "test",
+      "enunciado": "En «Rainbow Six: Siege», ¿qué operador NO puede abrir muros reforzados?",
+      "opciones": [
+        "Maverick",
+        "Thermite",
+        "Buck",
+        "Hibana"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1715",
+      "tipo": "test",
+      "enunciado": "¿Cómo se doma un caballo en Minecraft?",
+      "opciones": [
+        "Acariciándolo",
+        "Dándole trigo",
+        "Montándolo una y otra vez",
+        "Dándole azúcar"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1717",
+      "tipo": "test",
+      "enunciado": "En Kingdom Hearts, ¿cuántos miembros tiene en total la Organización XIII?",
+      "opciones": [
+        "10",
+        "14",
+        "12",
+        "13"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1718",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos NO es un personaje jugable de «Left 4 Dead»?",
+      "opciones": [
+        "Bill",
+        "Nick",
+        "Louis",
+        "Zoey"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1719",
+      "tipo": "test",
+      "enunciado": "¿Cuántos bloques de obsidiana hacen falta para un portal al Nether en Minecraft?",
+      "opciones": [
+        "10",
+        "13",
+        "14",
+        "16"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1721",
+      "tipo": "test",
+      "enunciado": "¿Con qué juego se promocionó Steam?",
+      "opciones": [
+        "Half-Life",
+        "Half-Life 2",
+        "Counter-Strike 1.6",
+        "Team Fortress"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1722",
+      "tipo": "test",
+      "enunciado": "En Left 4 Dead, ¿qué infectado atrapa a los supervivientes con la lengua?",
+      "opciones": [
+        "Jockey",
+        "Smoker",
+        "Hunter",
+        "Boomer"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1723",
+      "tipo": "test",
+      "enunciado": "En el concurso de Undertale, ¿cuál es el premio por acertar?",
+      "opciones": [
+        "Un coche nuevo",
+        "Más preguntas",
+        "Clemencia",
+        "Dinero"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1724",
+      "tipo": "test",
+      "enunciado": "¿En qué año salió Team Fortress 2?",
+      "opciones": [
+        "2007",
+        "2005",
+        "2009",
+        "2010"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1725",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llamaba el proyecto cancelado de Blizzard que acabó siendo Overwatch?",
+      "opciones": [
+        "Ghost",
+        "Omega",
+        "Omnic",
+        "Titan"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1726",
+      "tipo": "test",
+      "enunciado": "¿Qué miembro del Alto Mando de la sexta generación de Pokémon pertenecía al Team Flare?",
+      "opciones": [
+        "Siebold",
+        "Wikstrom",
+        "Drasna",
+        "Malva"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1728",
+      "tipo": "test",
+      "enunciado": "¿Quién es la antagonista principal de «Ori and the Blind Forest»?",
+      "opciones": [
+        "Nibel",
+        "King Rammer XII",
+        "Gumo",
+        "Kuro"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1729",
+      "tipo": "test",
+      "enunciado": "¿Qué número tiene Pikachu en la Pokédex nacional?",
+      "opciones": [
+        "109",
+        "1",
+        "31",
+        "25"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1730",
+      "tipo": "test",
+      "enunciado": "En la saga «Worms», ¿cuál de estas armas se ve afectada por el viento?",
+      "opciones": [
+        "El mortero",
+        "La granada",
+        "El ataque aéreo",
+        "El bazuca"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1731",
+      "tipo": "test",
+      "enunciado": "En Minecraft sin mods, ¿cuál de estos NO se puede convertir en bloque?",
+      "opciones": [
+        "Trigo",
+        "Carbón vegetal",
+        "Hilo",
+        "Carbón"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1732",
+      "tipo": "test",
+      "enunciado": "¿En qué ciudad salió Minecraft de la beta, en una convención en 2011?",
+      "opciones": [
+        "Bellevue",
+        "Las Vegas",
+        "Londres",
+        "París"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1733",
+      "tipo": "test",
+      "enunciado": "¿En qué juego de Super Mario aparece por primera vez Bowser Jr.?",
+      "opciones": [
+        "Super Mario Galaxy",
+        "Mario & Luigi: Viaje al centro de Bowser",
+        "Super Mario Sunshine",
+        "Mario Party"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1734",
+      "tipo": "test",
+      "enunciado": "¿Qué estudio creó el juego de estrategia Stellaris?",
+      "opciones": [
+        "Tripwire Interactive",
+        "Ensemble Studios",
+        "Paradox Development Studio",
+        "Overkill Software"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1736",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos tipos de Pokémon existía ya en Pokémon Rojo y Azul?",
+      "opciones": [
+        "Hada",
+        "Hielo",
+        "Siniestro",
+        "Acero"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1737",
+      "tipo": "test",
+      "enunciado": "¿Quién fundó Mann Co., la empresa ficticia de Team Fortress 2?",
+      "opciones": [
+        "Saxton Hale",
+        "Zepheniah Mann",
+        "Cave Johnson",
+        "Wallace Breen"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1738",
+      "tipo": "test",
+      "enunciado": "¿Qué motor gráfico usa Quake 2?",
+      "opciones": [
+        "id Tech 2",
+        "Unreal Engine",
+        "id Tech 3",
+        "id Tech 1"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1740",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estas NO es una facción de «Tom Clancy's The Division»?",
+      "opciones": [
+        "Los de Rikers",
+        "Los Limpiadores",
+        "El CDC",
+        "El Último Batallón"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1741",
+      "tipo": "test",
+      "enunciado": "En Pokémon Rojo y Azul, ¿qué movimiento es la MO05?",
+      "opciones": [
+        "Fuerza",
+        "Destello",
+        "Vuelo",
+        "Corte"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1743",
+      "tipo": "test",
+      "enunciado": "¿De qué color es Q*bert, el personaje de recreativa?",
+      "opciones": [
+        "Naranja",
+        "Marrón",
+        "Azul",
+        "Verde"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1744",
+      "tipo": "test",
+      "enunciado": "¿Quién es el líder del Equipo Instinto en Pokémon GO?",
+      "opciones": [
+        "Spark",
+        "Blanche",
+        "Candela",
+        "Willow"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1745",
+      "tipo": "test",
+      "enunciado": "¿De qué saga es la criatura Slowpoke?",
+      "opciones": [
+        "Sonic",
+        "Dragon Ball",
+        "Pokémon",
+        "Yu-Gi-Oh!"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1747",
+      "tipo": "test",
+      "enunciado": "¿En qué spin-off de Mario debutó Waluigi?",
+      "opciones": [
+        "Mario Party 3",
+        "Mario Tennis",
+        "Mario Kart: Double Dash!!",
+        "Mario Golf: Toadstool Tour"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1748",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama el mundo del MMO RuneScape?",
+      "opciones": [
+        "Gielinor",
+        "Glindor",
+        "Azeroth",
+        "Zaros"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1749",
+      "tipo": "test",
+      "enunciado": "¿Qué significa la D de «D-pad», la cruceta de los mandos?",
+      "opciones": [
+        "Direccional",
+        "Dial",
+        "Dinámico",
+        "Diseño"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1750",
+      "tipo": "test",
+      "enunciado": "¿Quién es el protagonista de «The Walking Dead: Temporada 1» de Telltale?",
+      "opciones": [
+        "Rick Grimes",
+        "Kenny",
+        "Clementine",
+        "Lee Everett"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1751",
+      "tipo": "test",
+      "enunciado": "En Warframe, ¿cómo se llama el robot bípedo de la facción Corpus?",
+      "opciones": [
+        "Corpus Tech",
+        "Tripulante",
+        "Corpus Walker",
+        "MOA"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1752",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos motores gráficos es de Epic Games?",
+      "opciones": [
+        "Unity",
+        "GameMaker Studio",
+        "CryEngine",
+        "Unreal"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1753",
+      "tipo": "test",
+      "enunciado": "¿Cuándo salió «Grand Theft Auto IV»?",
+      "opciones": [
+        "28 de julio de 2008",
+        "21 de mayo de 2009",
+        "22 de junio de 2010",
+        "29 de abril de 2008"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1754",
+      "tipo": "test",
+      "enunciado": "En Super Smash Bros., ¿qué personaje fue el primero en volver tras faltar en una entrega anterior?",
+      "opciones": [
+        "Roy",
+        "Mewtwo",
+        "Lucas",
+        "Dr. Mario"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1755",
+      "tipo": "test",
+      "enunciado": "¿Con qué se esconde Solid Snake?",
+      "opciones": [
+        "Con una caja metálica",
+        "Con una figura de cartón",
+        "Con un dispositivo de camuflaje",
+        "Con una caja de cartón"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1756",
+      "tipo": "test",
+      "enunciado": "¿Qué Pokémon aprende «Daño secreto» al subir de nivel?",
+      "opciones": [
+        "Arceus",
+        "Audino",
+        "Silvally",
+        "Código Cero"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1757",
+      "tipo": "test",
+      "enunciado": "¿Quién es el villano principal de «Bendy and the Ink Machine»?",
+      "opciones": [
+        "Boris",
+        "Alice",
+        "Bendy",
+        "Joey Drew"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1758",
+      "tipo": "test",
+      "enunciado": "¿Quién es la antagonista principal de la saga Portal?",
+      "opciones": [
+        "Wheatley",
+        "Rick",
+        "GLaDOS",
+        "Chell"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1760",
+      "tipo": "test",
+      "enunciado": "En Dark Souls, ¿cómo se llama la región donde pasas la mayor parte del juego?",
+      "opciones": [
+        "Catarina",
+        "Lordran",
+        "Oolacile",
+        "Drangleic"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1761",
+      "tipo": "test",
+      "enunciado": "¿Cuántas Esmeraldas del Caos hay en el universo de Sonic?",
+      "opciones": [
+        "8",
+        "7",
+        "14",
+        "6"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1762",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama el gato que habla en Persona 5?",
+      "opciones": [
+        "Ryuji",
+        "Morgana",
+        "Teddie",
+        "Marie"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1764",
+      "tipo": "test",
+      "enunciado": "¿Cuál era el nivel máximo en «World of Warcraft: Battle for Azeroth»?",
+      "opciones": [
+        "150",
+        "100",
+        "120",
+        "90"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1765",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos NO es un luchador jugable en «Super Smash Bros. Ultimate»?",
+      "opciones": [
+        "King K. Rool",
+        "Kumatora",
+        "Corrin",
+        "Incineroar"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1766",
+      "tipo": "test",
+      "enunciado": "En Halo, ¿de qué generación de SPARTAN es el Jefe Maestro?",
+      "opciones": [
+        "SPARTAN-I",
+        "SPARTAN-II",
+        "SPARTAN-IV",
+        "SPARTAN-III"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1768",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos NO es protagonista jugable de GTA V?",
+      "opciones": [
+        "Lamar",
+        "Franklin",
+        "Trevor",
+        "Michael"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1771",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos NO es un equipo de Pokémon GO?",
+      "opciones": [
+        "Equipo Instinto",
+        "Team Rocket",
+        "Equipo Valor",
+        "Equipo Sabiduría"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1772",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos NO es un personaje jugable de Overwatch (2016)?",
+      "opciones": [
+        "Mercy",
+        "Invoker",
+        "Winston",
+        "Zenyatta"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1773",
+      "tipo": "test",
+      "enunciado": "¿Qué personaje de Team Fortress 2 NO lleva escopeta como arma secundaria?",
+      "opciones": [
+        "El Ingeniero",
+        "El Pyro",
+        "El Soldado",
+        "El Heavy"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1774",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama el protagonista de «Danganronpa: Trigger Happy Havoc»?",
+      "opciones": [
+        "Makoto Naegi",
+        "Nagito Komaeda",
+        "Hajime Hinata",
+        "Komaru Naegi"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1775",
+      "tipo": "test",
+      "enunciado": "¿A qué deben su nombre Sans y Papyrus en Undertale?",
+      "opciones": [
+        "A plantas",
+        "A empresas",
+        "A un papel antiguo",
+        "A tipos de letra"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1776",
+      "tipo": "test",
+      "enunciado": "En Half-Life, ¿qué suceso da origen al universo del juego?",
+      "opciones": [
+        "La Tercera Guerra Mundial",
+        "El ataque de Xen",
+        "La bomba de Black Mesa",
+        "La Cascada de Resonancia"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1777",
+      "tipo": "test",
+      "enunciado": "En Slay the Spire, ¿cuál de estos NO es un personaje jugable?",
+      "opciones": [
+        "Ironclad",
+        "Silent",
+        "Defect",
+        "Stoneheart"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1778",
+      "tipo": "test",
+      "enunciado": "¿Quién pone voz a Thrall en la saga Warcraft?",
+      "opciones": [
+        "Jim Carrey",
+        "Ben Affleck",
+        "Jason Derulo",
+        "Chris Metzen"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1779",
+      "tipo": "test",
+      "enunciado": "¿Qué nivel NO aparece en las versiones de consola y PC de «Sonic Generations»?",
+      "opciones": [
+        "Sky Sanctuary",
+        "Planet Wisp",
+        "City Escape",
+        "Mushroom Hill"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1781",
+      "tipo": "test",
+      "enunciado": "El motor GoldSrc de Half-Life es una versión muy modificada de ¿qué motor?",
+      "opciones": [
+        "El Source",
+        "El id Engine",
+        "El de Quake",
+        "El de Doom"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1782",
+      "tipo": "test",
+      "enunciado": "¿Cuál es la dificultad más alta de «Deus Ex: Mankind Divided»?",
+      "opciones": [
+        "Extremo",
+        "Gurú",
+        "I Never Asked for This",
+        "Pesadilla"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1786",
+      "tipo": "test",
+      "enunciado": "Si un «360 no-scope» es una vuelta completa antes de disparar, ¿cuántas vueltas es un «1080 no-scope»?",
+      "opciones": [
+        "2",
+        "3",
+        "5",
+        "4"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1788",
+      "tipo": "test",
+      "enunciado": "¿Qué empresa creó Overwatch?",
+      "opciones": [
+        "Gearbox Software",
+        "Valve",
+        "Blizzard Entertainment",
+        "Hi-Rez Studios"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1790",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos juegos NO estaba en «The Orange Box» de Valve?",
+      "opciones": [
+        "Half-Life 2: Episodio Dos",
+        "Left 4 Dead",
+        "Team Fortress 2",
+        "Portal"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1791",
+      "tipo": "test",
+      "enunciado": "En «Call of Duty: Black Ops III», ¿cómo se llama la IA rebelde antagonista?",
+      "opciones": [
+        "Icarus",
+        "Corvus",
+        "Cabal",
+        "Legion"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1792",
+      "tipo": "test",
+      "enunciado": "En Final Fantasy XIV, ¿cómo se llama la mazmorra profunda que llegó con Heavensward?",
+      "opciones": [
+        "Palace of the Dead",
+        "Sunken Temple of Qarn",
+        "Heaven-on-High",
+        "Aetherochemical Research Facility"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1793",
+      "tipo": "test",
+      "enunciado": "En la saga PAYDAY, ¿quién traicionó a la banda e hizo que detuvieran a Hoxton?",
+      "opciones": [
+        "El Elefante",
+        "Vlad",
+        "Héctor",
+        "El Dentista"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1795",
+      "tipo": "test",
+      "enunciado": "En Deltarune, ¿cuál es la habilidad especial de Ralsei?",
+      "opciones": [
+        "Persuadir",
+        "Eliminar",
+        "Pacificar",
+        "Abrazar"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1796",
+      "tipo": "test",
+      "enunciado": "¿De qué ciudad es el Scout de Team Fortress 2?",
+      "opciones": [
+        "Sídney",
+        "Boston",
+        "Detroit",
+        "Nueva York"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1797",
+      "tipo": "test",
+      "enunciado": "¿En qué centro comercial transcurre «Dead Rising»?",
+      "opciones": [
+        "Willamette Parkview Mall",
+        "Liberty Mall",
+        "Twin Pines Mall",
+        "Central Square"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1798",
+      "tipo": "test",
+      "enunciado": "¿Quién es la líder del Equipo Sabiduría (Mystic) en Pokémon GO?",
+      "opciones": [
+        "Blanche",
+        "Spark",
+        "Candela",
+        "Willow"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1799",
+      "tipo": "test",
+      "enunciado": "En Undertale, ¿de qué personaje es el tema MEGALOVANIA?",
+      "opciones": [
+        "Papyrus",
+        "Sans",
+        "Flowey",
+        "Undyne"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1800",
+      "tipo": "test",
+      "enunciado": "En Overwatch, ¿cómo se llama la empresa que fabricó el meca de D.Va?",
+      "opciones": [
+        "MI8",
+        "KPAMC",
+        "JSAMB",
+        "MEKA"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1801",
+      "tipo": "test",
+      "enunciado": "¿Qué saga de shooters en primera persona tuvo un juego de estrategia en tiempo real en su universo?",
+      "opciones": [
+        "Battlefield",
+        "Call of Duty",
+        "Borderlands",
+        "Halo"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1802",
+      "tipo": "test",
+      "enunciado": "¿Qué empresa desarrolla la saga de fútbol «Pro Evolution Soccer»?",
+      "opciones": [
+        "THQ",
+        "Square Enix",
+        "Electronic Arts",
+        "Konami"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1803",
+      "tipo": "test",
+      "enunciado": "En el videojuego Bully, ¿cuál es el apellido del protagonista?",
+      "opciones": [
+        "Crabblesnitch",
+        "Smith",
+        "Kowalski",
+        "Hopkins"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1804",
+      "tipo": "test",
+      "enunciado": "¿Qué dos juegos de Valve comparten universo?",
+      "opciones": [
+        "Half-Life y Left 4 Dead",
+        "Half-Life y Counter-Strike",
+        "Portal y Left 4 Dead",
+        "Half-Life y Portal"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1805",
+      "tipo": "test",
+      "enunciado": "En Portal 2, ¿de qué murió supuestamente Cave Johnson, director de Aperture Science?",
+      "opciones": [
+        "Al resbalar en la ducha",
+        "Por el amianto",
+        "Por mandar un portal a la Luna",
+        "Envenenado por roca lunar"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1808",
+      "tipo": "test",
+      "enunciado": "¿Para qué tipo de juegos es el motor M.U.G.E.N.?",
+      "opciones": [
+        "De lucha",
+        "De puzles",
+        "De disparos",
+        "De plataformas"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1810",
+      "tipo": "test",
+      "enunciado": "¿Qué habitante de la Velvet Room NO es jugable en «Persona 4 Arena Ultimax»?",
+      "opciones": [
+        "Margaret",
+        "Theodore",
+        "Marie",
+        "Elizabeth"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1812",
+      "tipo": "test",
+      "enunciado": "¿Con qué nombre se conoce la saga «Mega Man» en Japón?",
+      "opciones": [
+        "Scissorsman",
+        "Mega Man",
+        "Rockman",
+        "Paperman"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1814",
+      "tipo": "test",
+      "enunciado": "En Spyro the Dragon, ¿cómo se llama la libélula amiga de Spyro?",
+      "opciones": [
+        "Sam",
+        "Sparx",
+        "Spinkles",
+        "Sparky"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1816",
+      "tipo": "test",
+      "enunciado": "En Skullgirls, ¿qué personaje usa como arma una silla plegable llamada «the Hurting»?",
+      "opciones": [
+        "Cerebella",
+        "Beowulf",
+        "Big Band",
+        "Squigly"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1817",
+      "tipo": "test",
+      "enunciado": "¿Cuándo salió «Luigi's Mansion 3»?",
+      "opciones": [
+        "31 de octubre de 2019",
+        "1 de octubre de 2019",
+        "13 de enero de 2019",
+        "6 de septiembre de 2018"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1818",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama el protagonista de la saga «The Legend of Zelda»?",
+      "opciones": [
+        "Pit",
+        "Mario",
+        "Link",
+        "Zelda"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1820",
+      "tipo": "test",
+      "enunciado": "¿Quién creó la saga Super Smash Bros.?",
+      "opciones": [
+        "Reggie Fils-Aimé",
+        "Masahiro Sakurai",
+        "Bill Trinen",
+        "Hideo Kojima"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1821",
+      "tipo": "test",
+      "enunciado": "En la mayoría de shooters, como Counter-Strike, ¿dónde hace más daño un disparo?",
+      "opciones": [
+        "En el brazo",
+        "En la cabeza",
+        "En la pierna",
+        "En el pecho"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1822",
+      "tipo": "test",
+      "enunciado": "En World of Warcraft, ¿cómo se llamaba el hechizo que provocó en 2005 la famosa plaga que mató a millones de jugadores?",
+      "opciones": [
+        "Sangre corrupta",
+        "Infestación desatada",
+        "Peste necrótica",
+        "Infección mutada"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1824",
+      "tipo": "test",
+      "enunciado": "¿A qué género pertenecen League of Legends, Dota 2, Smite y Heroes of the Storm?",
+      "opciones": [
+        "Estrategia en tiempo real",
+        "Shooter en primera persona",
+        "MOBA",
+        "Rol"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1825",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama la ametralladora rotativa del Heavy de Team Fortress 2?",
+      "opciones": [
+        "Betty",
+        "Anna",
+        "Diana",
+        "Sasha"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1826",
+      "tipo": "test",
+      "enunciado": "¿Quién pone voz a GLaDOS en la saga Portal?",
+      "opciones": [
+        "Natasha Radski",
+        "Michelle Forbes",
+        "Mary Kae Irvin",
+        "Ellen McLain"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1827",
+      "tipo": "test",
+      "enunciado": "¿Cuál es la primera arma que consigues en Half-Life?",
+      "opciones": [
+        "Los puños",
+        "Una pistola",
+        "El traje HEV",
+        "Una palanca"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1828",
+      "tipo": "test",
+      "enunciado": "¿Qué famosa saga consiste en colocar bloques y sobrevivir en un mundo abierto?",
+      "opciones": [
+        "Grand Theft Auto V",
+        "Roblox",
+        "Unturned",
+        "Minecraft"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1829",
+      "tipo": "test",
+      "enunciado": "En Fallout: New Vegas, ¿en cuál de estos casinos NO se puede jugar?",
+      "opciones": [
+        "Gomorra",
+        "Ultra-Luxe",
+        "The Tops",
+        "Lucky 38"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1830",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llamaba originalmente Lara Croft, de «Tomb Raider»?",
+      "opciones": [
+        "Laura Craft",
+        "Laura Croft",
+        "Lara Craft",
+        "Laura Cruz"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1832",
+      "tipo": "test",
+      "enunciado": "En el vídeo «Meet the Spy» de TF2, ¿qué código teclea el Soldado en la puerta?",
+      "opciones": [
+        "1111",
+        "Ninguno",
+        "1337",
+        "1432"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1833",
+      "tipo": "test",
+      "enunciado": "En Final Fantasy IX, ¿qué alias usa la princesa Garnet?",
+      "opciones": [
+        "Daga",
+        "Quina",
+        "Garnet",
+        "Dirk"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1835",
+      "tipo": "test",
+      "enunciado": "¿Quién es el protagonista de «Danganronpa 2: Goodbye Despair»?",
+      "opciones": [
+        "Makoto Naegi",
+        "Hajime Hinata",
+        "Junko Enoshima",
+        "Nagito Komaeda"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1837",
+      "tipo": "test",
+      "enunciado": "En los Pokémon de segunda generación, ¿con qué Pokémon puedes empezar?",
+      "opciones": [
+        "Treecko, Torchic y Mudkip",
+        "Grassy, Firey y Watery",
+        "Chikorita, Cyndaquil y Totodile",
+        "Bulbasaur, Charmander y Squirtle"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1840",
+      "tipo": "test",
+      "enunciado": "¿De qué tipo es Charizard?",
+      "opciones": [
+        "Fuego/Dragón",
+        "Fuego/Volador",
+        "Fuego",
+        "Dragón"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1841",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama el planeta más grande de Kerbal Space Program?",
+      "opciones": [
+        "Jool",
+        "Minmus",
+        "Eeloo",
+        "Kerbol"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1842",
+      "tipo": "test",
+      "enunciado": "¿En qué año salió «FTL: Faster Than Light»?",
+      "opciones": [
+        "2011",
+        "2014",
+        "2012",
+        "2013"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1843",
+      "tipo": "test",
+      "enunciado": "¿Cuál fue la primera consola PlayStation que usaba CD?",
+      "opciones": [
+        "PlayStation 4",
+        "PlayStation 2",
+        "PlayStation",
+        "PlayStation 3"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1844",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llamaba la secuela cancelada de Team Fortress?",
+      "opciones": [
+        "Team Fortress 2: Desert Mercenaries",
+        "Team Fortress 2: Brotherhood of Arms",
+        "Team Fortress 2: Operation Gear Grinder",
+        "Team Fortress 2: Return to Classic"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1845",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estas NO es una consola de Nintendo?",
+      "opciones": [
+        "Super Nintendo",
+        "Dreamcast",
+        "Wii",
+        "Switch"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1847",
+      "tipo": "test",
+      "enunciado": "¿Quién creó Garry's Mod?",
+      "opciones": [
+        "Garry Newman",
+        "Facepunch Studios",
+        "Randy Newman",
+        "Gabe Newell"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1848",
+      "tipo": "test",
+      "enunciado": "¿En qué juego apareció Sonic por primera vez?",
+      "opciones": [
+        "Sonic the Hedgehog",
+        "Super Mario 64",
+        "Rad Mobile",
+        "Mega Man"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1855",
+      "tipo": "test",
+      "enunciado": "¿En qué año se presentó Overwatch?",
+      "opciones": [
+        "2015",
+        "2011",
+        "2008",
+        "2014"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1857",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama el protagonista de «Xenoblade Chronicles»?",
+      "opciones": [
+        "Shulk",
+        "Dunban",
+        "Fiora",
+        "Reyn"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1858",
+      "tipo": "test",
+      "enunciado": "¿Cuáles fueron los dos primeros bloques de Minecraft?",
+      "opciones": [
+        "Mesa de trabajo y roca",
+        "Hierba y roca",
+        "Roca y piedra",
+        "Hierba y piedra"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1859",
+      "tipo": "test",
+      "enunciado": "¿Qué grupo secreto contrata a Sam Fisher como Splinter Cell?",
+      "opciones": [
+        "Black Arrow",
+        "Third Echelon",
+        "Los Ingenieros",
+        "Voron"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1861",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama la ciudad de «Saints Row: The Third»?",
+      "opciones": [
+        "Carcer",
+        "Liberty",
+        "Steelport",
+        "Stilwater"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1862",
+      "tipo": "test",
+      "enunciado": "¿Qué empresa desarrolla las consolas Xbox?",
+      "opciones": [
+        "Toshiba",
+        "IBM",
+        "Microsoft",
+        "Sony"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1865",
+      "tipo": "test",
+      "enunciado": "En Assassin's Creed, ¿qué nombre le dio Abstergo a Desmond Miles?",
+      "opciones": [
+        "Altaïr Ibn-La'Ahad",
+        "Sujeto 17",
+        "Sujeto 16",
+        "Sujeto 18"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1866",
+      "tipo": "test",
+      "enunciado": "¿Qué franquicia NO aparecía en «LEGO Dimensions» (2015)?",
+      "opciones": [
+        "Breaking Bad",
+        "Regreso al futuro",
+        "Portal",
+        "Doctor Who"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1869",
+      "tipo": "test",
+      "enunciado": "¿En qué año salió Super Mario Bros.?",
+      "opciones": [
+        "1983",
+        "1985",
+        "1987",
+        "1986"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1870",
+      "tipo": "test",
+      "enunciado": "¿Cuál fue el juego más violento antes de la creación del sistema de clasificación ESRB?",
+      "opciones": [
+        "Mortal Kombat",
+        "Duke Nukem",
+        "Resident Evil",
+        "Doom"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1871",
+      "tipo": "test",
+      "enunciado": "¿Qué juegos de GTA transcurren en el mismo sitio?",
+      "opciones": [
+        "GTA V y GTA San Andreas",
+        "GTA IV y GTA San Andreas",
+        "GTA V y GTA Vice City",
+        "GTA IV y GTA Vice City"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1872",
+      "tipo": "test",
+      "enunciado": "¿Qué ingrediente NO se usa para hacer una tarta en Minecraft?",
+      "opciones": [
+        "Pan",
+        "Leche",
+        "Trigo",
+        "Huevo"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1873",
+      "tipo": "test",
+      "enunciado": "¿Quién es la líder del Equipo Valor en Pokémon GO?",
+      "opciones": [
+        "Willow",
+        "Blanche",
+        "Candela",
+        "Spark"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1875",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama el protagonista de la saga «Hitman»?",
+      "opciones": [
+        "Agente 67",
+        "Agente 27",
+        "Agente Smith",
+        "Agente 47"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1876",
+      "tipo": "test",
+      "enunciado": "En la saga Yakuza, ¿quién es el Dragón de Dojima?",
+      "opciones": [
+        "Haruka Sawamura",
+        "Sohei Dojima",
+        "Ryuji Goda",
+        "Kazuma Kiryu"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1877",
+      "tipo": "test",
+      "enunciado": "¿Cuándo salió Left 4 Dead 2?",
+      "opciones": [
+        "30 de junio de 2010",
+        "30 de noviembre de 2009",
+        "3 de mayo de 2008",
+        "17 de noviembre de 2009"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1880",
+      "tipo": "test",
+      "enunciado": "¿Qué personaje de Overwatch se reveló homosexual en diciembre de 2016?",
+      "opciones": [
+        "Sombra",
+        "Widowmaker",
+        "Symmetra",
+        "Tracer"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1881",
+      "tipo": "test",
+      "enunciado": "¿En qué guerra se basa «Call of Duty: Black Ops»?",
+      "opciones": [
+        "La Primera Guerra Mundial",
+        "La Tercera Guerra Mundial",
+        "La de Vietnam",
+        "La Guerra Fría"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1882",
+      "tipo": "test",
+      "enunciado": "En Oblivion, ¿qué gremio te da el caballo Sombra (Shadowmere)?",
+      "opciones": [
+        "La Hermandad Oscura",
+        "Los Magos",
+        "Los Guerreros",
+        "Los Ladrones"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1883",
+      "tipo": "test",
+      "enunciado": "En Street Fighter, ¿cuál es el apellido de Ken?",
+      "opciones": [
+        "Michaels",
+        "Masters",
+        "Morrison",
+        "Mitchell"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1885",
+      "tipo": "test",
+      "enunciado": "¿En qué saga de Nintendo aparecen Lanky, Funky y Chunky?",
+      "opciones": [
+        "Kirby",
+        "Zelda",
+        "Donkey Kong",
+        "Mario"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1887",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama el principal objeto curativo de Dark Souls?",
+      "opciones": [
+        "Frasco de Estus",
+        "Frasco de ceniza",
+        "Zumo de naranja",
+        "Poción de vida"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1889",
+      "tipo": "test",
+      "enunciado": "¿Cuándo se publicó Minecraft por primera vez?",
+      "opciones": [
+        "7 de octubre de 2011",
+        "17 de mayo de 2009",
+        "17 de septiembre de 2009",
+        "18 de noviembre de 2011"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1892",
+      "tipo": "test",
+      "enunciado": "¿De dónde viene el nombre de la saga Metroid?",
+      "opciones": [
+        "Del jefe final",
+        "De una nave espacial",
+        "De un enemigo del juego",
+        "De la protagonista"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1896",
+      "tipo": "test",
+      "enunciado": "¿Qué empresa desarrolló Pokémon GO?",
+      "opciones": [
+        "Niantic",
+        "Zynga",
+        "Rovio",
+        "Supercell"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1898",
+      "tipo": "test",
+      "enunciado": "¿Cuál es el arma más cara de CS:GO?",
+      "opciones": [
+        "M4A1",
+        "AWP",
+        "SCAR-20/G3SG1",
+        "Revólver R8"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1899",
+      "tipo": "test",
+      "enunciado": "¿Con qué actualización pasó Team Fortress 2 a ser gratuito?",
+      "opciones": [
+        "Pyromania",
+        "Über Update",
+        "Mann-Conomy",
+        "Engineer Update"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1901",
+      "tipo": "test",
+      "enunciado": "En «A Hat in Time», ¿qué tiene que recoger Hat Kid para terminar un nivel?",
+      "opciones": [
+        "Un sombrero",
+        "Un fragmento de reliquia",
+        "Un fragmento de corazón",
+        "Un reloj de arena (time piece)"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1903",
+      "tipo": "test",
+      "enunciado": "¿Quién es el protagonista de Dead Rising (2006)?",
+      "opciones": [
+        "Chuck Greene",
+        "John North",
+        "Jason Grey",
+        "Frank West"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1904",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos NO es una invocación de «South Park: La vara de la verdad»?",
+      "opciones": [
+        "Jesús",
+        "El señor Mojón",
+        "Mr. Slave",
+        "Toallín"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1906",
+      "tipo": "test",
+      "enunciado": "¿Quién creó Minecraft?",
+      "opciones": [
+        "Carl Manneh",
+        "Jens Bergensten",
+        "Daniel Rosenfeld",
+        "Markus Persson"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1908",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos personajes es la mascota de SEGA?",
+      "opciones": [
+        "Alex Kidd",
+        "Sonic",
+        "Opa-Opa",
+        "Dynamite Headdy"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1909",
+      "tipo": "test",
+      "enunciado": "En el primer Five Nights at Freddy's, ¿cómo se hace desaparecer a Golden Freddy?",
+      "opciones": [
+        "Sin hacer nada",
+        "Cerrando la puerta",
+        "Encendiendo las cámaras",
+        "Encendiendo la luz"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1910",
+      "tipo": "test",
+      "enunciado": "En «Mario y Sonic en los Juegos Olímpicos», ¿en cuántos tipos se dividen los personajes?",
+      "opciones": [
+        "5",
+        "3",
+        "4",
+        "6"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1912",
+      "tipo": "test",
+      "enunciado": "En Half-Life 2, ¿en qué ciudad empiezas?",
+      "opciones": [
+        "Ciudad 45",
+        "Ciudad 17",
+        "Ciudad 6",
+        "Ciudad 18"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1914",
+      "tipo": "test",
+      "enunciado": "¿Cuál es el apellido de la protagonista de Final Fantasy VIII?",
+      "opciones": [
+        "Heartilly",
+        "Trepe",
+        "Loire",
+        "Almasy"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1915",
+      "tipo": "test",
+      "enunciado": "¿En qué guerra transcurre la saga «Day of Defeat»?",
+      "opciones": [
+        "La de Irak",
+        "La Primera Guerra Mundial",
+        "La Segunda Guerra Mundial",
+        "La de Vietnam"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1917",
+      "tipo": "test",
+      "enunciado": "¿En qué año salió League of Legends?",
+      "opciones": [
+        "2010",
+        "2009",
+        "2001",
+        "2003"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1919",
+      "tipo": "test",
+      "enunciado": "En «Need for Speed: Most Wanted» (2005), ¿cómo se llama el villano?",
+      "opciones": [
+        "Clarence «Razor» Callahan",
+        "Toru «Bull» Sato",
+        "Hector «Ming» Domingo",
+        "Karl «Baron» Smit"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1920",
+      "tipo": "test",
+      "enunciado": "En Super Mario Bros., ¿quién avisa a Mario de que la princesa está en otro castillo?",
+      "opciones": [
+        "Toad",
+        "Yoshi",
+        "Luigi",
+        "Bowser"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1922",
+      "tipo": "test",
+      "enunciado": "¿Qué Monty Python ponía voz a Rincewind en el videojuego «Discworld» (1995)?",
+      "opciones": [
+        "John Cleese",
+        "Terry Gilliam",
+        "Eric Idle",
+        "Michael Palin"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1925",
+      "tipo": "test",
+      "enunciado": "En Dota 2, ¿cómo se llamaba antes Wraith King?",
+      "opciones": [
+        "Hell King",
+        "Reaper King",
+        "Skull King",
+        "Skeleton King"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1926",
+      "tipo": "test",
+      "enunciado": "En «Civilization V», ¿qué civilización solo puede fundar una ciudad?",
+      "opciones": [
+        "Portugal",
+        "Liechtenstein",
+        "India",
+        "Venecia"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1928",
+      "tipo": "test",
+      "enunciado": "En Dead Rising, ¿a qué se dedica el protagonista, Frank West?",
+      "opciones": [
+        "Especialista en motos",
+        "Camarero",
+        "Mecánico",
+        "Fotoperiodista"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1929",
+      "tipo": "test",
+      "enunciado": "En Halo, ¿cómo se llama la principal facción enemiga del UNSC?",
+      "opciones": [
+        "The Peoples",
+        "The Reckoning",
+        "The Slaughterers",
+        "El Covenant"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1933",
+      "tipo": "test",
+      "enunciado": "¿Cuál es la clase favorita de Gabe Newell en Team Fortress 2?",
+      "opciones": [
+        "El Medic",
+        "El Spy",
+        "El Pyro",
+        "El Heavy"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1935",
+      "tipo": "test",
+      "enunciado": "¿Qué juego de Sonic iba a ir junto a Sonic 3 y se partió en dos por falta de tiempo?",
+      "opciones": [
+        "Sonic CD",
+        "Sonic 3D Blast",
+        "Sonic & Knuckles",
+        "Sonic 2"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1938",
+      "tipo": "test",
+      "enunciado": "¿Qué empresa desarrolló el battle royale gratuito Fortnite?",
+      "opciones": [
+        "Square Enix",
+        "Epic Games",
+        "Valve",
+        "Ubisoft"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1939",
+      "tipo": "test",
+      "enunciado": "¿Qué juego de Kirby introdujo las habilidades de copia?",
+      "opciones": [
+        "Kirby's Adventure",
+        "Kirby's Dream Land",
+        "Kirby Super Star",
+        "Kirby's Dream Land 2"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1941",
+      "tipo": "test",
+      "enunciado": "¿Qué Final Fantasy tenía un grupo protagonista solo de mujeres?",
+      "opciones": [
+        "Final Fantasy IX",
+        "Final Fantasy XIII-2",
+        "Final Fantasy X-2",
+        "Final Fantasy V"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1944",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estas NO es un personaje de «Doki Doki Literature Club»?",
+      "opciones": [
+        "Nico",
+        "Natsuki",
+        "Monika",
+        "Sayori"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1947",
+      "tipo": "test",
+      "enunciado": "En «Postal 2», ¿cómo se llama el perro de Postal Dude?",
+      "opciones": [
+        "Snoopy",
+        "Krotchy",
+        "Champ",
+        "Duke"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1950",
+      "tipo": "test",
+      "enunciado": "¿Qué letra griega es el logotipo de Half-Life?",
+      "opciones": [
+        "Lambda",
+        "Alfa",
+        "Omega",
+        "Sigma"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1951",
+      "tipo": "test",
+      "enunciado": "¿En qué año salió el primer «Los Sims»?",
+      "opciones": [
+        "1999",
+        "1998",
+        "2001",
+        "2000"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1952",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estas NO es una clase de Team Fortress 2?",
+      "opciones": [
+        "Demoman",
+        "Pyro",
+        "Spy",
+        "Healer"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1953",
+      "tipo": "test",
+      "enunciado": "¿Qué Animal Crossing salió para Wii?",
+      "opciones": [
+        "Animal Crossing: New Leaf",
+        "Animal Crossing: Wild World",
+        "Animal Crossing (GameCube)",
+        "Animal Crossing: Let's Go to the City"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1955",
+      "tipo": "test",
+      "enunciado": "¿Quién NO era personaje jugable en «Kingdom Hearts: Birth by Sleep»?",
+      "opciones": [
+        "Aqua",
+        "Ventus",
+        "Terra",
+        "Ignis"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1958",
+      "tipo": "test",
+      "enunciado": "En la saga Command & Conquer, ¿quién lidera la Hermandad de Nod?",
+      "opciones": [
+        "CABAL",
+        "Yuri",
+        "Kane",
+        "Iósif Stalin"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1960",
+      "tipo": "test",
+      "enunciado": "En Team Fortress 2, ¿qué clase puede dar doble salto?",
+      "opciones": [
+        "El Scout",
+        "El Pyro",
+        "El Ingeniero",
+        "El Spy"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1962",
+      "tipo": "test",
+      "enunciado": "¿De qué juego eran originalmente mods Cry of Fear, Natural Selection y Counter-Strike?",
+      "opciones": [
+        "Arma 2",
+        "Half-Life",
+        "Doom",
+        "Warcraft III"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1964",
+      "tipo": "test",
+      "enunciado": "Los khajiit, una raza parecida a los gatos, son de ¿qué saga de rol ambientada en Tamriel?",
+      "opciones": [
+        "Neverwinter Nights",
+        "El señor de los anillos",
+        "The Elder Scrolls",
+        "The Witcher"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1965",
+      "tipo": "test",
+      "enunciado": "En Metal Gear Solid, ¿cómo se llama el hermano de Solid Snake?",
+      "opciones": [
+        "Gilur Snake",
+        "Kulus Snake",
+        "Liquid Snake",
+        "Billy Snake"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1968",
+      "tipo": "test",
+      "enunciado": "¿Quién es el protagonista de «The Stanley Parable»?",
+      "opciones": [
+        "Stanley",
+        "El jefe",
+        "La línea de aventura",
+        "El narrador"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1970",
+      "tipo": "test",
+      "enunciado": "En el primer Spyro, ¿quién es el villano?",
+      "opciones": [
+        "La Hechicera",
+        "Ripto",
+        "Gnasty Gnorc",
+        "Cynder"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1972",
+      "tipo": "test",
+      "enunciado": "¿Qué estudio creó el modo Zombies de Call of Duty?",
+      "opciones": [
+        "Sledgehammer Games",
+        "Treyarch",
+        "Infinity Ward",
+        "Naughty Dog"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1977",
+      "tipo": "test",
+      "enunciado": "¿Quién es el protagonista de la saga Ratchet & Clank?",
+      "opciones": [
+        "Clank",
+        "El capitán Qwark",
+        "El Dr. Nefarious",
+        "Ratchet"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1978",
+      "tipo": "test",
+      "enunciado": "¿En qué año salió Hearthstone?",
+      "opciones": [
+        "2012",
+        "2011",
+        "2013",
+        "2014"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1979",
+      "tipo": "test",
+      "enunciado": "¿Cuál es la pistola inicial de los terroristas en una partida competitiva de CS:GO?",
+      "opciones": [
+        "Berettas dobles",
+        "Tec-9",
+        "Desert Eagle",
+        "Glock-18"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1980",
+      "tipo": "test",
+      "enunciado": "¿En qué ciudad tiene su sede Valve?",
+      "opciones": [
+        "Seattle (Washington)",
+        "San Francisco (California)",
+        "Austin (Texas)",
+        "Bellevue (Washington)"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1981",
+      "tipo": "test",
+      "enunciado": "¿Qué Pokémon inicial de tipo agua se presentó en la cuarta generación?",
+      "opciones": [
+        "Oshawott",
+        "Mudkip",
+        "Totodile",
+        "Piplup"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1982",
+      "tipo": "test",
+      "enunciado": "¿Cuál fue el primer juego de la saga Batman: Arkham?",
+      "opciones": [
+        "Arkham Origins",
+        "Arkham City",
+        "Arkham Asylum",
+        "Arkham Knight"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1984",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama la protagonista de «Life is Strange»?",
+      "opciones": [
+        "Maxine Caulfield",
+        "Chloe Price",
+        "Stella Hill",
+        "Victoria Chase"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1986",
+      "tipo": "test",
+      "enunciado": "En Minecraft, ¿qué dos objetos se combinan para hacer una antorcha?",
+      "opciones": [
+        "Madera y carbón",
+        "Palo y carbón",
+        "Madera y fuego",
+        "Palo y fuego"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1988",
+      "tipo": "test",
+      "enunciado": "¿Quién es la protagonista de «Life is Strange: Before the Storm»?",
+      "opciones": [
+        "Chloe Price",
+        "Frank Bowers",
+        "Max Caulfield",
+        "Rachel Amber"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1989",
+      "tipo": "test",
+      "enunciado": "¿Cómo se titula la canción del menú principal de Halo?",
+      "opciones": [
+        "Suite Autumn",
+        "Opening Suite",
+        "Halo",
+        "Shadows"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1990",
+      "tipo": "test",
+      "enunciado": "En Half-Life, ¿quién es el jefe final?",
+      "opciones": [
+        "El Dr. Wallace Breen",
+        "La Gonarch",
+        "El Nihilanth",
+        "G-Man"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1993",
+      "tipo": "test",
+      "enunciado": "¿Con qué se juega al fútbol en Rocket League?",
+      "opciones": [
+        "Con coches",
+        "Con submarinos",
+        "Con helicópteros",
+        "Con aviones"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1994",
+      "tipo": "test",
+      "enunciado": "¿Qué juego NO se financió con micromecenazgo?",
+      "opciones": [
+        "Enter the Gungeon",
+        "Undertale",
+        "Town of Salem",
+        "Tower Unite"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1995",
+      "tipo": "test",
+      "enunciado": "¿Qué electrodoméstico usan los personajes de «Steins;Gate» para viajar en el tiempo?",
+      "opciones": [
+        "Un ordenador",
+        "Una nevera",
+        "Un microondas",
+        "Una televisión"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1996",
+      "tipo": "test",
+      "enunciado": "¿Quién puso voz a Snake en «Metal Gear Solid V: The Phantom Pain»?",
+      "opciones": [
+        "David Hayter",
+        "Norman Reedus",
+        "Kiefer Sutherland",
+        "Hideo Kojima"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1997",
+      "tipo": "test",
+      "enunciado": "¿Cuál es el nombre en clave de Morgana en Persona 5?",
+      "opciones": [
+        "Panther",
+        "Mona",
+        "Nightstalker",
+        "Zorro"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1998",
+      "tipo": "test",
+      "enunciado": "En Overwatch, ¿qué tipo de simio es Winston?",
+      "opciones": [
+        "Un gorila",
+        "Un orangután",
+        "Un chimpancé",
+        "Un gibón"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1999",
+      "tipo": "test",
+      "enunciado": "¿Quién creó la plataforma de distribución digital Steam?",
+      "opciones": [
+        "Valve",
+        "Ubisoft",
+        "PixelTail Games",
+        "Electronic Arts"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2000",
+      "tipo": "test",
+      "enunciado": "¿Quién protagoniza «Brütal Legend»?",
+      "opciones": [
+        "Lemmy",
+        "Jack Black",
+        "Kanye West",
+        "Ozzy Osbourne"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2002",
+      "tipo": "test",
+      "enunciado": "¿Qué actor pone voz a Cave Johnson, director de Aperture Science?",
+      "opciones": [
+        "John Patrick Lowrie",
+        "Nolan North",
+        "Christopher Lloyd",
+        "J. K. Simmons"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2003",
+      "tipo": "test",
+      "enunciado": "¿En qué año salió Dishonored?",
+      "opciones": [
+        "2013",
+        "2011",
+        "2008",
+        "2012"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2005",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estas NO es una candidata a matrimonio en Stardew Valley?",
+      "opciones": [
+        "Haley",
+        "Leah",
+        "Abigail",
+        "Caroline"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2006",
+      "tipo": "test",
+      "enunciado": "¿Para promocionar qué juego se lanzó en 2011 el lote de juegos independientes «The Potato Sack»?",
+      "opciones": [
+        "Half-Life 3",
+        "Dota 2",
+        "Left 4 Dead 2",
+        "Portal 2"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2007",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama el protagonista de «Fire Emblem: Shadow Dragon»?",
+      "opciones": [
+        "Eliwood",
+        "Robin",
+        "Marth",
+        "Roy"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2008",
+      "tipo": "test",
+      "enunciado": "En «Phoenix Wright: Ace Attorney», ¿qué personaje es el jefe de policía del distrito?",
+      "opciones": [
+        "Lana Skye",
+        "Mike Meekins",
+        "Damon Gant",
+        "Miles Edgeworth"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2009",
+      "tipo": "test",
+      "enunciado": "¿Cuántas formas distintas de piezas hay en el Tetris?",
+      "opciones": [
+        "7",
+        "8",
+        "6",
+        "5"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2011",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos monstruos aparece en Minecraft?",
+      "opciones": [
+        "Vampiro",
+        "Esqueleto",
+        "Minotauro",
+        "Hombre lobo"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2012",
+      "tipo": "test",
+      "enunciado": "¿En qué juego de Nintendo 64 NO salía Luigi?",
+      "opciones": [
+        "Super Mario 64",
+        "Paper Mario",
+        "Super Smash Bros.",
+        "Mario Party 2"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2013",
+      "tipo": "test",
+      "enunciado": "¿Qué modalidad NO estaba en el «Wii Sports» original?",
+      "opciones": [
+        "Bolos",
+        "Boxeo",
+        "Tenis de mesa",
+        "Béisbol"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2014",
+      "tipo": "test",
+      "enunciado": "En la saga Mega Man original, ¿quién es el archienemigo de Mega Man?",
+      "opciones": [
+        "Mr. Z",
+        "El Dr. Light",
+        "El Dr. Wily",
+        "El Dr. Bad"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2015",
+      "tipo": "test",
+      "enunciado": "En Overwatch, ¿cómo se llaman los dos delincuentes australianos de los Junkers?",
+      "opciones": [
+        "Roadrat y Junkhog",
+        "Junkrat y Roadhog",
+        "McCree y Deadeye",
+        "Ana y Pharah"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2016",
+      "tipo": "test",
+      "enunciado": "¿En qué año salió el primer «Fallout»?",
+      "opciones": [
+        "1998",
+        "1997",
+        "1996",
+        "1999"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2017",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama el protagonista de Half-Life 2?",
+      "opciones": [
+        "Gordon Freeman",
+        "Wallace Breen",
+        "Alyx Vance",
+        "Isaac Kleiner"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2019",
+      "tipo": "test",
+      "enunciado": "¿Quién es el protagonista de «Half-Life: Opposing Force»?",
+      "opciones": [
+        "Barney Calhoun",
+        "Gordon Freeman",
+        "Adrian Shephard",
+        "Alyx Vance"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2020",
+      "tipo": "test",
+      "enunciado": "¿Qué ingredientes hacen falta para una tarta en Minecraft?",
+      "opciones": [
+        "Leche, pan, huevo y trigo",
+        "Leche, caña de azúcar, huevo y trigo",
+        "Leche, azúcar, huevo y trigo",
+        "Leche, azúcar y trigo"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    }
+  ]
+}

@@ -2,7 +2,7 @@
 // Primer arranque: importa legacy/ y los ejemplos, y reparte los bancos antiguos (mezclados) por tipo.
 import { copyFileSync, existsSync, mkdirSync, readdirSync, readFileSync, renameSync, rmSync, statSync, writeFileSync } from 'node:fs'
 import { basename, dirname, extname, join } from 'node:path'
-import { app } from 'electron'
+import { app, net } from 'electron'
 import { bankRef, LIB_TYPES, newBankFile, parseRef, splitBank, toFileBank, type LibBankInfo, type LibType } from '../shared/library'
 import { convertLegacy, isPlayable, parseBank, slugify, type Bank, type QuestionType } from '../shared/questions'
 
@@ -11,6 +11,7 @@ const LEGACY_MARKER = '.legacy-importado'
 const EXAMPLES_MARKER = '.ejemplos-v3'
 const LIBRARY_MARKER = '.biblioteca-v4'
 const LADDER_MARKER = '.escalera-ejemplo'
+const TRIVIA_MARKER = '.trivia-opentdb-v1'
 
 export const banksDir = (): string => join(app.getPath('documents'), 'KONKURSOX', 'preguntas')
 export const imagesDir = (): string => join(banksDir(), 'imagenes')
@@ -18,10 +19,30 @@ const typeDir = (t: LibType) => join(banksDir(), t)
 
 const legacyDir = () => (app.isPackaged ? join(process.resourcesPath, 'legacy') : join(app.getAppPath(), 'legacy', '_data'))
 const examplesDir = () => (app.isPackaged ? join(process.resourcesPath, 'ejemplos') : join(app.getAppPath(), 'resources', 'ejemplos'))
+const triviaDir = () => (app.isPackaged ? join(process.resourcesPath, 'trivia') : join(app.getAppPath(), 'resources', 'trivia'))
+
+/**
+ * Packs de Open Trivia DB (traducidos y guardados como archivos): se copian una vez a test\ y sino\.
+ * Si ya existe un banco con el mismo nombre de archivo no se toca (por si lo has editado).
+ */
+function ensureTrivia(): void {
+  const root = banksDir()
+  if (existsSync(join(root, TRIVIA_MARKER))) return
+  let n = 0
+  for (const t of ['test', 'sino'] as const) {
+    const from = join(triviaDir(), t)
+    for (const f of jsonFiles(from)) {
+      const to = join(typeDir(t), f)
+      if (existsSync(to)) continue
+      copyFileSync(join(from, f), to)
+      n++
+    }
+  }
+  writeFileSync(join(root, TRIVIA_MARKER), `Packs de Open Trivia DB copiados el ${new Date().toISOString()} (${n} bancos)\n`, 'utf8')
+}
 
 const listImages = (): string[] => (existsSync(imagesDir()) ? readdirSync(imagesDir()).filter((f) => IMAGE_EXT.has(extname(f).toLowerCase())) : [])
-const jsonFiles = (dir: string): string[] =>
-  existsSync(dir) ? readdirSync(dir).filter((f) => f.toLowerCase().endsWith('.json') && statSync(join(dir, f)).isFile()) : []
+const jsonFiles = (dir: string): string[] => (existsSync(dir) ? readdirSync(dir).filter((f) => f.toLowerCase().endsWith('.json') && statSync(join(dir, f)).isFile()) : [])
 
 function writeJson(path: string, data: unknown): void {
   const tmp = path + '.tmp'
@@ -108,6 +129,11 @@ export function ensureLibrary(used: Record<string, unknown> = {}): void {
   // siempre: cualquier banco suelto en la raíz se reparte por tipos
   migrateRoot(used)
   ensureLadderExample()
+  try {
+    ensureTrivia()
+  } catch (err) {
+    console.error('[biblioteca] trivia', err)
+  }
   if (!existsSync(join(root, LIBRARY_MARKER))) writeFileSync(join(root, LIBRARY_MARKER), `Biblioteca por tipos desde ${new Date().toISOString()}\n`, 'utf8')
 }
 
@@ -161,6 +187,8 @@ export function listLibrary(): LibBankInfo[] {
           nombre: b.nombre,
           count: b.preguntas.length,
           used: b.preguntas.filter((q) => q.usada).length,
+          ...(b.grupo ? { grupo: b.grupo } : {}),
+          ...(b.mezcla ? { mezcla: true } : {}),
           letters: t.id === 'rosco' ? new Set(b.preguntas.filter((q) => q.enunciado && q.respuesta).map((q) => q.letra)).size : undefined
         })
       } catch (err) {
@@ -199,6 +227,42 @@ export function markUsed(ref: string, ids: string[], used: boolean): void {
   const set = new Set(ids)
   bank.preguntas = bank.preguntas.map((q) => (set.has(q.id) ? { ...q, usada: used ? today : undefined } : q))
   saveBank(ref, bank)
+}
+
+const MIME_EXT: Record<string, string> = { 'image/png': '.png', 'image/jpeg': '.jpg', 'image/jpg': '.jpg', 'image/webp': '.webp', 'image/gif': '.gif', 'image/avif': '.avif' }
+
+function freeImageName(base: string, ext: string): string {
+  mkdirSync(imagesDir(), { recursive: true })
+  const b = slugify(base).slice(0, 60) || 'imagen'
+  let file = `${b}${ext}`
+  for (let i = 2; existsSync(join(imagesDir(), file)); i++) file = `${b}-${i}${ext}`
+  return file
+}
+
+/** Imagen pegada del portapapeles (bytes) o descargada: se guarda en preguntas\imagenes. */
+export function importImageData(data: Uint8Array, mime: string, name = 'pegada'): string {
+  const ext = MIME_EXT[mime.toLowerCase()]
+  if (!ext) throw new Error('Formato de imagen no admitido (' + mime + ')')
+  if (data.byteLength > 25 * 1024 * 1024) throw new Error('La imagen pesa demasiado (más de 25 MB)')
+  const file = freeImageName(name, ext)
+  writeFileSync(join(imagesDir(), file), data)
+  return file
+}
+
+/** Imagen arrastrada o pegada desde una página web (dirección http/https o data:). */
+export async function importImageUrl(url: string, name?: string): Promise<string> {
+  if (url.startsWith('data:')) {
+    const m = /^data:(image\/[a-z+]+);base64,(.+)$/i.exec(url)
+    if (!m) throw new Error('Imagen no válida')
+    return importImageData(Buffer.from(m[2], 'base64'), m[1], name)
+  }
+  if (!/^https?:\/\//i.test(url)) throw new Error('Dirección no válida')
+  const res = await net.fetch(url, { headers: { 'User-Agent': 'Mozilla/5.0 KONKURSOX' } })
+  if (!res.ok) throw new Error(`No se pudo descargar la imagen (${res.status})`)
+  const mime = (res.headers.get('content-type') ?? '').split(';')[0].trim()
+  const buf = new Uint8Array(await res.arrayBuffer())
+  const fromUrl = basename(new URL(url).pathname).replace(/\.[a-z0-9]+$/i, '')
+  return importImageData(buf, mime || 'image/' + (extname(new URL(url).pathname).slice(1) || 'png'), name ?? (fromUrl || 'web'))
 }
 
 /** Copia una imagen a preguntas\imagenes y devuelve su nombre de archivo. */

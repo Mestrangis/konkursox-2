@@ -1,0 +1,159 @@
+# Informática (Science: Computers)
+3179|En la mayoría de lenguajes de programación, ¿equivale el operador ++ a «+= 1»?|Sí
+3180|¿Cuántos bits tiene normalmente un byte?|Ocho|Seis|Doce|Quince
+3181|En redes, ¿qué significan las siglas OSPF?|Open Shortest Path First|Order State Part First|Order Sense Ping Find|Open Signal Path Finder
+3182|¿En qué lenguaje de programación se escribió GitHub?|Ruby|JavaScript|Python|Lua
+3183|¿Cuál es el dominio de internet de Tuvalu?|.tv|.tu|.tt|.tl
+3184|¿Qué palabra clave de SQL sirve para leer datos de una base de datos?|SELECT|INDEX|VALUES|EXEC
+3185|¿Es una campana el logotipo de Snapchat?|No
+3186|¿Salió Windows ME en el año 2000?|Sí
+3187|¿Se creó Linux como alternativa a Windows XP?|No
+3188|¿Se llama así la NVIDIA GTX 1080 porque solo puede mostrar imagen a 1920 × 1080?|No
+3189|¿Qué significan las siglas JVM?|Java Virtual Machine|Java Vendor Machine|Java Visual Machine|Just Virtual Machine
+3190|En hexadecimal, ¿qué color es el código #00FF00?|Verde|Rojo|Azul|Amarillo
+3191|¿Es cierto que el C original no tenía punteros y que se añadieron después en C++?|No
+3192|¿Qué sistema operativo móvil tenía más cuota de mercado en 2012?|iOS|Android|BlackBerry|Symbian
+3194|¿Cuánto mide una dirección IPv6?|128 bits|32 bits|64 bits|128 bytes
+3195|¿Qué componente del ordenador sirve de conexión para que se comuniquen todos los demás?|La placa base|El procesador|El disco duro|La memoria RAM
+3196|¿Qué significa GHz?|Gigahercio|Gigahotz|Gigahetz|Gigahatz
+3198|¿Es cierto que un Mac no es un PC?|No
+3199|¿Qué empresa sacó en 1983 el ordenador doméstico Electron en Reino Unido?|Acorn Computers|Sinclair Research|Amstrad|Commodore
+3200|¿Significa HTML «Hypertext Markup Language»?|Sí
+3201|¿Cuántos kilobytes hay en un gigabyte (en sistema decimal)?|1 000 000|1024|1000|1 048 576
+3202|¿Se basa Python en una versión modificada de JavaScript?|No
+3203|¿Debe su nombre el lenguaje Python al grupo cómico Monty Python?|Sí
+3204|En Windows, ¿cuál es el atajo de teclado para copiar?|Ctrl + C|Ctrl + X|Alt + C|Alt + X
+3205|¿Con qué lenguaje se asocia el framework Django?|Python|C#|C++|Java
+3206|En informática, ¿qué significa LAN?|Red de área local (Local Area Network)|Nodo de antena larga|Nodo de acceso ligero|Navegación por dirección terrestre
+3207|En informática, ¿cuántos bits tiene un «nibble»?|4|16|32|2
+3208|¿Qué significa CPU?|Unidad central de procesamiento|Unidad de proceso central|Unidad personal de ordenador|Unidad procesadora central
+3209|¿Viene el nombre del lenguaje AWK de las iniciales de sus creadores, Aho, Weinberger y Kernighan?|Sí
+3210|¿Qué informático estadounidense creó el lenguaje C?|Dennis Ritchie|Tim Berners-Lee|Al-Juarismi|Willis Ware
+3211|¿A qué lenguaje vino a sustituir Swift?|Objective-C|C#|Ruby|C++
+3212|¿Deriva JavaScript de una versión posterior de Java?|No
+3214|¿Qué lenguaje de programación se llama como una isla de Indonesia?|Java|Python|C|Yakarta
+3215|¿Tuvo Windows 7 seis ediciones principales?|Sí
+3216|Según el Sistema Internacional, ¿cuántos bytes hay en un kilobyte?|1000|512|1024|500
+3217|¿Cuál es el nombre en clave de Android 7.0?|Nougat|Ice Cream Sandwich|Jelly Bean|Marshmallow
+3218|¿Cómo se llama el sistema de numeración en base 16?|Hexadecimal|Binario|Duodecimal|Octal
+3219|¿Qué lenguaje usa Node.js?|JavaScript|Java|Java Source|Joomla
+3220|En programación, ¿cuál es la forma más común de recorrer un array?|Un bucle «for»|Una sentencia «if»|Un bucle «do-while»|Un bucle «while»
+3221|¿Qué significan las letras MP de MP3?|Moving Picture|Music Player|Multi Pass|Micro Point
+3222|Si programaras en este lenguaje, solo podrías escribir ceros y unos. ¿Cuál es?|Binario|JavaScript|C++|Python
+3223|¿Qué hace la tecla Impr Pant (Imprimir pantalla)?|Copia lo que se ve en pantalla al portapapeles|Nada|Guarda un PNG en la carpeta de capturas|Apaga la pantalla
+3224|¿Cuántos valores distintos puede representar un byte?|256|8|1|1024
+3225|En informática, ¿qué significa MIDI?|Musical Instrument Digital Interface|Musical Interface of Digital Instruments|Modular Interface of Digital Instruments|Musical Input Digital Interface
+3226|¿Qué tipo de lenguaje es HTML?|De marcado|De macros|De programación|De guiones
+3227|¿Qué tipo de memoria se usa en la memoria caché?|SRAM|DRAM|ROM|Flash
+3228|¿Qué significan las siglas USB?|Universal Serial Bus|Universal Simtex Blot|Unified Signal Bus|Unityped Semtex Backer
+3229|¿Se considera a Ada Lovelace la primera programadora de la historia?|Sí
+3230|¿Cuál era el límite original de caracteres de un tuit?|140|120|160|100
+3231|¿Qué empresa desarrolló Windows?|Microsoft|Apple|Nokia|IBM
+3232|¿Salió el primer IBM PC en 1981?|Sí
+3233|En software, ¿qué significan las siglas LTS?|Long Term Support (soporte prolongado)|Long Taco Service|Ludicrous Transfer Speed|Ludicrous Turbo Speed
+3234|En diseño web, ¿qué significa CSS?|Cascading Style Sheets (hojas de estilo en cascada)|Counter-Strike: Source|Corrective Style Sheet|Computer Style Sheet
+3235|¿Qué significan las siglas del modelo de color CMYK?|Cian, magenta, amarillo y negro|Crema, granate, amarillo y negro|Cian, magenta, amarillo y caqui|Crema, granate, amarillo y caqui
+3236|Cuando se lanzó Gmail, ¿cuánto espacio daba para el correo?|1 GB|512 MB|5 GB|Ilimitado
+3237|¿Qué formato de imagen se prefiere para los logotipos en Wikimedia?|SVG|PNG|JPEG|GIF
+3238|¿Cómo se llama la capa 7 del modelo OSI?|Aplicación|Sesión|Red|Presentación
+3239|¿Significa RAM «memoria de acceso aleatorio»?|Sí
+3240|¿Qué empresa fundaron el 1 de abril de 1976 Steve Jobs, Steve Wozniak y Ronald Wayne?|Apple|Microsoft|Atari|Commodore
+3241|En Java, ¿qué palabra clave hay que poner a una variable para que no se pueda modificar?|final|static|private|public
+3242|¿Qué significa SSD?|Solid State Drive (unidad de estado sólido)|Solution Source Disk|Solid State Disk|Source Solution Drive
+3244|¿Creó Linus Torvalds Linux y Git?|Sí
+3245|¿Cuál es el lema de cinco letras de IBM?|Think|Click|Logic|Pixel
+3246|¿Cuántos ordenadores Apple I se fabricaron, más o menos?|200|100|500|1000
+3247|¿Cuándo salió el lenguaje C#?|2000|1998|1999|2001
+3248|¿Cuántos bytes tiene un kibibyte?|1024|2400|1000|1240
+3249|¿Fue una polilla dentro de un ordenador Harvard Mark II el primer «bug» informático registrado?|Sí
+3250|¿Está macOS basado en Linux?|No
+3251|En programación, ¿cómo se llaman las funciones con el mismo nombre y distinta implementación?|Sobrecarga|Sobrescritura|Abstracción|Herencia
+3252|¿De qué país es el dominio .at?|Austria|Argentina|Australia|Angola
+3253|¿Significa FLAC «Free Lossless Audio Condenser»?|No
+3254|¿Qué nombre recibió Android 4.3?|Jelly Bean|Lollipop|Nutella|Froyo
+3256|En Python, ¿cuál de estas instrucciones muestra «Hello World»?|print("Hello World")|console.log("Hello World")|echo "Hello World"|printf("Hello World")
+3257|Las impresoras láser y de inyección de tinta son ejemplos de ¿qué tipo de impresora?|Sin impacto|De impacto|De margarita|Matricial
+3258|¿Fue Windows 98 el último Windows basado en el núcleo 9x?|No
+3259|¿Desarrolló originalmente el chip ARM la empresa Acorn Computers?|Sí
+3260|¿Fue un cable defectuoso el primer «bug» informático?|No
+3261|¿En qué ciudad de Silicon Valley tiene su sede NVIDIA?|Santa Clara|Palo Alto|Cupertino|Mountain View
+3262|¿Qué lenguaje fue el más usado en GitHub en 2015?|JavaScript|C#|Python|PHP
+3264|¿Qué empresa de internet empezó como una librería en línea llamada «Cadabra»?|Amazon|eBay|Overstock|Shopify
+3265|¿Qué lenguaje de programación desarrolló Sun Microsystems en 1995?|Java|Python|Solaris|C++
+3266|¿Qué significa RAID?|Conjunto redundante de discos independientes|Acceso rápido a dispositivos indexados|Gama de aplicaciones con diseños idénticos|Discos abstractos aleatorios
+3267|¿Cuál fue la primera versión de Android pensada para tabletas?|Honeycomb|Eclair|Froyo|Marshmallow
+3269|¿Es Linus Sebastian el creador del núcleo Linux?|No
+3270|¿Qué significaba originalmente el nombre de la red Tor?|The Onion Router|The Only Router|The Orange Router|The Ominous Router
+3271|¿Qué día se puso en marcha la World Wide Web?|20 de diciembre de 1990|17 de diciembre de 1996|12 de noviembre de 1990|24 de noviembre de 1995
+3273|En alojamiento de servidores, ¿qué significa IaaS?|Infraestructura como servicio|Internet como servicio|Internet y un servidor|Infraestructura como servidor
+3274|¿Qué significan las siglas de la empresa HP?|Hewlett-Packard|Howard Packmann|Husker-Pollosk|Hellman-Pohl
+3275|¿Cuál es la frecuencia de muestreo estándar del audio de un CD?|44,1 kHz|32 kHz|1,5 MHz|20,5 kHz
+3277|¿Qué significa la S del algoritmo de cifrado RSA?|Shamir|Secure|Schottky|Stable
+3279|¿Cómo se llama la pieza metálica entre el procesador y su ventilador?|Disipador|Rejilla de CPU|Decipador de temperatura|Rejilla de calor
+3280|¿Quién de estos NO fue fundador de Apple?|Jony Ive|Steve Jobs|Ronald Wayne|Steve Wozniak
+3282|¿Representa el valor booleano «0» la palabra «falso»?|Sí
+3283|Normalmente, ¿qué componente de un ordenador consume más energía?|La tarjeta gráfica|El disco duro|El procesador|La fuente de alimentación
+3284|¿Cuál de estos NO es el nombre en clave de una versión de Ubuntu?|Mystic Mansion|Trusty Tahr|Utopic Unicorn|Wily Werewolf
+3285|¿Desde cuándo cuenta los segundos la «hora Unix»?|Medianoche del 1 de enero de 1970|Medianoche del 4 de julio de 1976|El cumpleaños del creador de Unix|Medianoche del 1 de enero de 1980
+3286|¿Cada cuánto decía originalmente la ley de Moore que se duplicaría el número de transistores de un chip?|Cada año|Cada cuatro años|Cada dos años|Cada ocho años
+3287|¿Cuál es el procesador principal de la Mega Drive?|Motorola 68000|Zilog Z80|Yamaha YM2612|Intel 8088
+3288|¿Se publicó el estándar HTML5 en 2014?|Sí
+3289|¿Qué sistema operativo salió antes?|Mac OS|Windows|Linux|OS/2
+3290|Apple nació en California. ¿En qué estado del oeste se fundó Microsoft?|Nuevo México|Washington|Colorado|Arizona
+3291|En informática, ¿qué suele significar CLI?|Interfaz de línea de comandos|Entrada de lenguaje común|Interfaz de línea de control|Interfaz de lenguaje común
+3292|¿Cuál de estos es un lenguaje de bajo nivel?|Ensamblador|Python|C#|Pascal
+3293|¿Qué se conoce como «el cerebro» del ordenador?|El procesador (CPU)|La placa base|La tarjeta gráfica|El teclado
+3294|¿Qué se considera el precursor del USB?|El PS/2|El SVGA|El PCIe|El FireWire
+3295|En HTML, ¿qué etiqueta no estándar se usaba para que los elementos se desplazaran por la pantalla?|<marquee>|<scroll>|<move>|<slide>
+3297|¿Cuántos núcleos tiene el Intel i7-6950X?|10|12|8|4
+3299|¿Qué significan las siglas MIME?|Multipurpose Internet Mail Extensions|Mail Internet Mail Exchange|Multipurpose Interleave Mail Exchange|Mail Interleave Method Exchange
+3300|¿Cuál fue el primer microprocesador comercial?|Intel 4004|Intel 486SX|TMS 1000|AMD Am386
+3301|¿Qué Windows tuvo el nombre en clave «Whistler»?|Windows XP|Windows 2000|Windows 7|Windows 95
+3302|Para esquivar las leyes de exportación de EE. UU., ¿publicó el creador de PGP todo su código en forma de libro?|Sí
+3303|¿Cómo se llama la imagen del fondo de escritorio por defecto de Windows XP?|Bliss (Dicha)|Azul|Desierto de la luna roja|Tulipanes
+3304|¿Qué significa LCD?|Liquid Crystal Display (pantalla de cristal líquido)|Language Control Design|Last Common Difference|Long Continuous Design
+3305|En programación, ¿con qué símbolos se suele escribir el operador ternario?|?:|??|if then|?
+3306|En redes, ¿qué significa CDN?|Red de distribución de contenidos|Red de difusión de contenidos|Red de datos computacionales|Red de datos comprimidos
+3307|¿Hay que compilar todo programa en un ejecutable que luego funciona en cualquier máquina?|No
+3308|¿En qué componente está el chip de la BIOS?|En la placa base|En el disco duro|En el procesador|En la tarjeta gráfica
+3309|¿Iba la primera RAM soldada a la placa base, sin poder quitarse con facilidad?|Sí
+3310|¿Cuál era el tamaño máximo de bloque de Bitcoin en 2010?|1 MB|1 GB|1 KB|1 TB
+3311|¿Fabricó AMD el primer procesador de 64 bits para el gran público?|Sí
+3312|¿De qué país es el dominio .rs?|Serbia|Rumanía|Rusia|Ruanda
+3314|¿Cuál de estos programas NO es un editor de imágenes de mapa de bits?|Inkscape|Paint.NET|GIMP|Adobe Photoshop
+3316|¿Cómo se llama el tema visual por defecto de Windows XP?|Luna|Neptune|Whistler|Bliss
+3317|¿Cómo se llama la tetera que aparece en tantos programas de modelado 3D?|Tetera de Utah|Tetera de Pixar|Tetera 3D|Tetera de Tennessee
+3318|¿Tienen las versiones de Android nombres en orden alfabético?|Sí
+3319|¿Qué lenguaje se usa para programar en el motor Unity?|C#|Java|C++|Objective-C
+3320|¿Qué significa GPU?|Unidad de procesamiento gráfico|Unidad procesadora de juegos|Unidad productora de grafito|Unidad gráfica propietaria
+3322|¿Fue el Intel Pentium D el primer procesador de doble núcleo?|No
+3323|¿Qué significa DOS en MS-DOS?|Disk Operating System (sistema operativo de disco)|Dumb Operating System|Driver Oriented System|Diskless Operating System
+3324|¿Se crearon los ordenadores Raspberry Pi en Estados Unidos?|No
+3325|¿Cuál es la velocidad teórica del USB 3.1 Gen 2?|10 Gb/s|5 Gb/s|8 Gb/s|1 Gb/s
+3326|¿Qué creó Linus Torvalds?|Linux|Windows|Python|Wikipedia
+3327|¿Cuántas teclas tiene un teclado estándar de Windows (EE. UU.)?|104|64|94|76
+3328|¿Quién fundó Palantir?|Peter Thiel|Mark Zuckerberg|Marc Benioff|Jack Dorsey
+3329|¿Cuál es el nombre en clave de la octava generación de Intel Core, de octubre de 2017?|Coffee Lake|Sandy Bridge|Skylake|Broadwell
+3331|¿Qué significan las siglas CMOS?|Semiconductor complementario de óxido metálico|Semiconductor magnético complementario|Óxido metálico conmutado|Sistema operativo complementario
+3332|¿Qué motor de juegos creó el informático neerlandés Mark Overmars?|Game Maker|Stencyl|Construct|Torque 2D
+3333|¿Cuál de estas NO es una capa del modelo OSI?|Conexión|Aplicación|Transporte|Física
+3334|¿De qué país del Pacífico es el dominio .fm?|Micronesia|Fiyi|Tuvalu|Islas Marshall
+3336|¿Cuál de estos ordenadores salió antes?|TRS-80|Commodore 64|ZX Spectrum|Apple III
+3337|¿Cuál de estos NO es un algoritmo de ordenación?|Float sort|Bubble sort|Merge sort|Quicksort
+3340|¿Qué protocolo de internet se documentó en el RFC 1459?|IRC|HTTP|HTTPS|FTP
+3341|¿Cómo se llamaba la vulnerabilidad de Bash descubierta en 2014?|Shellshock|Heartbleed|Bashbug|Stagefright
+3344|¿Cómo se llamó el fallo descubierto en abril de 2014 en la biblioteca OpenSSL?|Heartbleed|Shellshock|Corrupted Blood|Shellscript
+3346|¿A qué estructura de datos se aplica «el primero en entrar es el último en salir»?|La pila|La cola|El montículo|El árbol
+3347|¿Qué tipo de RAID se asocia a la duplicación de datos en espejo?|RAID 1|RAID 0|RAID 10|RAID 5
+3349|¿Significa DHCP «Dynamic Host Configuration Port»?|No
+3352|Según las leyes de De Morgan, ¿a qué equivale (AB)'?|A' + B'|A'B + B'A|A'B'|AB' + AB
+3354|¿Cómo se llama la capa 4 del modelo OSI?|Transporte|Sesión|Enlace de datos|Red
+3356|¿Qué nombre de animal tuvo Mac OS X 10.0 (2001)?|Cheetah|Puma|Tiger|Leopard
+3360|¿En qué puerto funciona HTTP?|80|53|443|23
+3361|¿A cuántos hercios funciona el estándar de vídeo PAL?|50|59|60|25
+3363|¿En qué año compró Lenovo la división de ordenadores personales de IBM, incluida la gama ThinkPad?|2005|1999|2002|2008
+3364|¿Cómo llama el Sistema Internacional de Magnitudes a 1024 bytes?|Kibibyte|Kylobyte|Kilobyte|Kelobyte
+3366|¿Qué lenguaje de programación usa sobre todo Unreal Engine 4?|C++|Ensamblador|C#|ECMAScript
+3367|¿Estaba Apple al borde de la quiebra en 1997 y la salvó Microsoft?|Sí
+3368|¿Cuál de estos NO es un valor del manifiesto ágil?|Documentación exhaustiva|Individuos e interacciones|Colaboración con el cliente|Respuesta ante el cambio
+3370|¿Cuál es el valor máximo de un entero con signo de 32 bits?|2 147 483 647|255|2048|9 223 372 036 854 775 807

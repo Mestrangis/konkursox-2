@@ -1,0 +1,69 @@
+{
+  "formato": "konkursox-banco",
+  "version": 1,
+  "nombre": "Mitología · Media",
+  "grupo": "Open Trivia DB",
+  "licencia": "Preguntas de Open Trivia Database (opentdb.com), licencia CC BY-SA 4.0, traducidas y adaptadas al español. Este banco se distribuye con la misma licencia (CC BY-SA 4.0).",
+  "preguntas": [
+    {
+      "id": "o3478",
+      "tipo": "sino",
+      "enunciado": "En la mitología griega, ¿es Hera la diosa de la cosecha?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Mitología"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3485",
+      "tipo": "sino",
+      "enunciado": "¿Era el dios romano Júpiter el que los griegos llamaban Zeus?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Mitología"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3495",
+      "tipo": "sino",
+      "enunciado": "¿Consiguió el dios japonés Izanagi sacar a su esposa Izanami del inframundo?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Mitología"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3499",
+      "tipo": "sino",
+      "enunciado": "Según la mitología nórdica, ¿es Loki madre?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Mitología"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    }
+  ]
+}

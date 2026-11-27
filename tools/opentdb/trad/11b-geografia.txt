@@ -1,0 +1,145 @@
+# Geografía (segunda parte)
+3897|¿Dónde está la zona conocida como el Triángulo de las Bermudas?|En el Atlántico Norte, entre Florida y Puerto Rico|En el Pacífico Norte, entre Japón y EE. UU.|En el Índico, cerca de Madagascar|En el Mediterráneo, junto a Sicilia
+3899|¿Qué dos países actuales formaban la región de Rodesia entre 1890 y 1980?|Zambia y Zimbabue|Togo y Benín|Lesoto y Suazilandia|Ruanda y Burundi
+3901|¿Qué ciudad alemana está a orillas del río Isar?|Múnich|Berlín|Hamburgo|Dortmund
+3902|¿Cuál es la capital de Nueva Zelanda?|Wellington|Auckland|Christchurch|Melbourne
+3903|¿Con cuántos países tiene frontera terrestre Luxemburgo?|3|4|2|5
+3904|¿Por qué país corre el río Volga?|Rusia|Bulgaria|India|Suecia
+3905|¿Es Río de Janeiro la capital de Brasil?|No
+3906|¿Qué país del Reino Unido NO aparece en la bandera británica?|Gales|Escocia|Inglaterra|Irlanda del Norte
+3908|¿Tiene Noruega más superficie que Suecia?|No
+3909|¿Cuál es la capital de Seychelles?|Victoria|Luanda|Yamena|Trípoli
+3911|¿Es la Antártida el mayor desierto del mundo?|Sí
+3912|¿Qué país es el único cuya bandera no es rectangular?|Nepal|Panamá|Angola|Egipto
+3913|¿Es Tartu la capital de Estonia?|No
+3914|¿Cuántos condados tiene la República de Irlanda?|26|32|28|30
+3915|¿Cómo se llama la gran península que ocupa casi toda Turquía?|Anatolia|Tracia|Crimea|Capadocia
+3916|¿Qué región disputada entre Pakistán, la India y China tiene la soberanía sin resolver?|Cachemira|Andorra|Gibraltar|Tíbet
+3918|¿Cuál es el país de mayoría musulmana más poblado del mundo?|Indonesia|Pakistán|Arabia Saudí|Irán
+3919|¿Qué país es el único que tiene frontera con Uruguay y con Venezuela?|Brasil|México|Chile|Panamá
+3921|¿Qué país africano tiene el portugués como lengua oficial?|Mozambique|Botsuana|Gabón|Togo
+3922|¿Cuál de estos países está más lejos del mar de la China Meridional?|Bangladés|Malasia|Vietnam|Filipinas
+3923|¿En qué país están las ciudades de Brugelette, Arlon y Ath?|Bélgica|Andorra|Francia|Luxemburgo
+3924|¿Se podría ir andando de Noruega a Corea del Norte pasando solo por Rusia?|Sí
+3925|¿Es cierto que Liechtenstein no tiene aeropuerto?|Sí
+3926|¿Cuál de estos países NO está en África?|Surinam|Burkina Faso|Mozambique|Argelia
+3927|¿A qué país pertenece el atolón de Bikini?|Islas Marshall|Fiyi|Isla de Navidad|Bahamas
+3928|¿Formó Mongolia parte de la Unión Soviética?|No
+3929|¿Cuál es la ciudad más grande de Marruecos?|Casablanca|Rabat|Fez|Salé
+3930|¿Cuál de estos países europeos NO está en la Unión Europea?|Noruega|Lituania|Irlanda|Chequia
+3931|¿Qué país usa la abreviatura «CH»?|Suiza|China|Canadá|Chile
+3932|Todos estos países reclaman territorio en la Antártida EXCEPTO uno. ¿Cuál?|Estados Unidos|Australia|Chile|Noruega
+3934|¿En qué país de África occidental está la ciudad histórica de Tombuctú?|Malí|Senegal|Níger|Burkina Faso
+3935|¿Dónde están las líneas de Nazca?|Perú|Brasil|Colombia|Ecuador
+3937|¿Cuál fue el primer parque nacional de Estados Unidos?|Yellowstone|Secuoya|Yosemite|Montañas Rocosas
+3938|¿Está la isla de Borneo repartida entre tres países?|Sí
+3939|¿Cuál es la capital de Turquía?|Ankara|Estambul|Esmirna|Bursa
+3940|¿Cuál de estas islas NO es de Filipinas?|Java|Luzón|Mindanao|Palawan
+3941|¿Cuál es la capital de Ecuador?|Quito|Bogotá|Santiago|Guayaquil
+3942|¿En qué país está el municipio de Arteixo, sede de Inditex?|España|Marruecos|Francia|Bélgica
+3943|Todos estos son pueblos de Kiribati EXCEPTO uno. ¿Cuál?|Urutora|Rungata|London|Washington
+3944|En Washington D. C., ¿qué significa la «C»?|Columbia|Caledonia|Corintia|City
+3945|¿Cuál de estos países está «doblemente sin litoral», rodeado solo por países sin mar?|Uzbekistán|Suiza|Bolivia|Etiopía
+3947|¿Cuál es el país más pequeño del mundo?|El Vaticano|Lesoto|Mónaco|Andorra
+3948|¿Cuál es el país más pequeño de Sudamérica por superficie?|Surinam|Brasil|Uruguay|Chile
+3949|¿Cuál de estos archipiélagos NO forma parte del Reino Unido?|Las islas del Canal|Las Orcadas|Las Sorlingas|Las Shetland
+3950|¿Es Tasmania un estado insular de Australia?|Sí
+3951|¿En la bandera de qué país aparece un león empuñando una espada?|Sri Lanka|Albania|Zambia|Moldavia
+3953|¿Cuál es el asentamiento habitado todo el año más al norte del mundo?|Alert (Canadá)|Nagurskoye (Rusia)|Base McMurdo (Antártida)|Honningsvåg (Noruega)
+3954|¿Cuál es el lago más grande de África?|El Victoria|El Tanganica|El Malaui|El Turkana
+3955|¿Cómo se llama hoy la antigua ciudad prusiana de Königsberg?|Kaliningrado|Kazán|Kursk|Krasnodar
+3956|¿Existe una isla llamada Java?|Sí
+3957|¿Cuál es la montaña más alta del mundo?|El Everest|El K2|El Kangchenjunga|El Annapurna
+3959|¿En qué isla canaria ocurrió en 1977 el choque de dos Jumbos, uno de los peores accidentes aéreos de la historia?|Tenerife|Fuerteventura|Gran Canaria|Lanzarote
+3960|¿De qué país caribeño es capital Bridgetown?|Barbados|Cuba|Jamaica|Dominica
+3961|¿Cuál es la capital de Letonia?|Riga|Minsk|Tallin|Vilna
+3962|¿Qué país tiene tres capitales?|Sudáfrica|Somalia|China|Reino Unido
+3963|¿Está el volcán Krakatoa al oeste de Java, y no al este como decía el título de una película de 1969?|Sí
+3964|¿Cuál de estas ciudades NO está en Arabia Saudí?|Dubái|Riad|La Meca|Medina
+3965|¿Es Australia más grande que Groenlandia?|Sí
+3966|¿Qué país tiene más volcanes activos en tiempos históricos?|Indonesia|Japón|Estados Unidos|India
+3967|¿Cuál de estas islas japonesas es la más grande?|Shikoku|Iki|Odaiba|Okinawa
+3968|¿Cuál es el puerto con más tráfico de Europa?|Róterdam|Amberes|Hamburgo|Ámsterdam
+3970|¿Qué estrecho une el océano Atlántico con el mar Mediterráneo?|El estrecho de Gibraltar|El estrecho del Bósforo|El estrecho de Mesina|El estrecho de Ormuz
+3971|¿Cuál es la lengua oficial de Bután?|El dzongkha|El ladakhi|El karen|El nepalí
+3972|¿Cómo se llamaba antes Zimbabue?|Rodesia|Zambia|Mozambique|Bulawayo
+3974|¿Recorre la Ruta 66 Estados Unidos de costa a costa, de California a Nueva York?|No
+3975|¿Qué hecho llevó a Liechtenstein a añadir una corona a su bandera?|Los Juegos Olímpicos de 1936|La coronación del príncipe Juan I en 1805|Un decreto de Carlos VI en 1719|La firma del Tratado de Versalles
+3976|¿La capital de cuál de estos países empieza por B?|Líbano|Jordania|Kuwait|Catar
+3978|¿Tiene la bandera de Sudáfrica siete colores?|No
+3979|¿Con cuántos países tiene frontera terrestre España?|5|2|3|4
+3980|¿Cómo se llamaba el antiguo país del que surgieron Serbia, Croacia y Eslovenia?|Yugoslavia|Checoslovaquia|Abjasia|Osetia del Sur
+3981|¿Cuál es la capital de Brasil?|Brasilia|Río de Janeiro|São Paulo|Curitiba
+3982|¿En qué país europeo tiene su sede la Organización Mundial de la Salud?|Suiza|Reino Unido|Francia|Bélgica
+3984|¿Cuál es la capital de Suiza?|Berna|Zúrich|Ginebra|Basilea
+3985|¿En qué continente está Angola?|África|América del Sur|Europa|Asia
+3986|¿Qué islas se disputan Japón y Rusia?|Las Kuriles|Las Paracelso|Las Chagos|Las Spratly
+3987|¿Cuál es la capital de Chile?|Santiago|Valparaíso|Copiapó|Antofagasta
+3988|¿Cuál es la lengua nacional oficial de Pakistán?|El urdu|El hindi|El panyabí|El pastún
+3989|¿Cuál es la capital de Eslovaquia?|Bratislava|Sofía|Liubliana|Sarajevo
+3990|¿Cuántos estados tiene Australia?|6|7|8|5
+3993|¿Cuál es la capital de Perú?|Lima|Santiago|Montevideo|Buenos Aires
+3994|¿Cuál de estos países NO es miembro de la ONU?|Niue|Tuvalu|Sudán del Sur|Montenegro
+3995|¿De qué país es territorio Gibraltar?|Reino Unido|España|Portugal|Francia
+3996|¿Qué país se llama Aotearoa en maorí?|Nueva Zelanda|Australia|Islas Salomón|Nueva Caledonia
+3997|¿Cuál de estas ciudades está a unos 4° de longitud este?|Ámsterdam|Río de Janeiro|Toronto|Hong Kong
+3998|¿Qué país está completamente rodeado por Sudáfrica?|Lesoto|Suazilandia|Botsuana|Zimbabue
+4000|¿Qué día celebra Finlandia su independencia?|El 6 de diciembre|El 2 de enero|El 12 de noviembre|El 8 de febrero
+4002|¿Cuál de estos países NO formó parte de Yugoslavia?|Albania|Croacia|Serbia|Macedonia del Norte
+4003|¿Cuál es la vía de escalada más habitual del K2?|El Espolón de los Abruzos|La Línea Mágica|La Ruta Cesen|La Línea Polaca
+4004|¿Qué atracción turística recorren los barcos «Maid of the Mist»?|Las cataratas del Niágara|El Gran Cañón|Disney World|Yosemite
+4005|¿Cuál es la ciudad más grande y capital comercial de Sri Lanka?|Colombo|Moratuwa|Negombo|Kandy
+4006|¿Cuál es la montaña más alta de Canadá?|El monte Logan|El Mont Tremblant|El monte Whistler|La Blue Mountain
+4007|En la bandera de Tayikistán, ¿qué símbolo hay sobre las montañas y el sol?|Una corona|Un pájaro|Una hoz|Un árbol
+4008|¿Cómo se llama la franja de tierra que une América del Norte y América del Sur?|El istmo de Panamá|El istmo de Suez|Los Urales|Australasia
+4009|¿Tiene la bandera de Bielorrusia un bordado rojo y blanco junto al mástil?|Sí
+4010|¿De qué país africano es capital Uagadugú?|Burkina Faso|República Centroafricana|Senegal|Zambia
+4012|¿Cuál es el lago de agua dulce más grande del mundo por superficie?|El lago Superior|El mar Caspio|El lago Míchigan|El lago Hurón
+4013|¿Cómo se dice «Finlandia» en finés?|Suomi|Eesti|Magyarország|Sverige
+4014|¿En qué país está el río Taedong?|Corea del Norte|Corea del Sur|Japón|China
+4015|¿En qué país africano está el canal de Suez?|Egipto|Libia|Ghana|Nigeria
+4017|¿Cuál de estas NO es una provincia de China?|Yangtsé|Fujian|Sichuan|Cantón
+4018|¿Cómo se llamaba antes Ciudad Ho Chi Minh?|Saigón|Hanói|Dar es Salaam|Angkor Wat
+4020|¿Qué país africano tiene un fusil en su bandera?|Mozambique|Uganda|Etiopía|Nigeria
+4021|¿Cuál de estos NO es un país de África?|Guyana|Senegal|Liberia|Somalia
+4022|¿Cuántos habitantes tenía Liechtenstein en 2012, más o menos?|36.600|2.400|90.000|323.400
+4024|¿Son los flamencos y los valones los dos grandes grupos de Bélgica?|Sí
+4025|¿Cuál de estas ciudades NO está en Inglaterra?|Edimburgo|Oxford|Mánchester|Southampton
+4027|¿Cómo se llama la gran región rocosa que ocupa casi todo el este de Canadá?|El escudo canadiense|Las Montañas Rocosas|Los Apalaches|El Himalaya
+4029|¿Con cuántos países tiene frontera terrestre Rusia, sin contar territorios disputados?|14|12|10|8
+4030|¿En qué país está Tallin?|Estonia|Finlandia|Suecia|Polonia
+4032|¿De qué país depende el archipiélago de Svalbard?|Noruega|Dinamarca|Islandia|Rusia
+4033|¿Cuál de estas NO es una placa tectónica real?|La placa Atlántica|La placa Norteamericana|La placa Euroasiática|La placa de Nazca
+4034|¿Cuál es el país menos poblado del mundo?|El Vaticano|Nauru|Islas Marshall|Liechtenstein
+4035|¿Cuál es el lago de agua dulce con más volumen del mundo?|El Baikal|El lago Superior|El lago Hurón|El lago Míchigan
+4036|¿Cuál es la capital de Surinam?|Paramaribo|Antananarivo|Tegucigalpa|Sucre
+4037|¿Cuál de estos países sin mar está completamente dentro de otro país?|Lesoto|Burkina Faso|Mongolia|Luxemburgo
+4038|¿Cuál es la moneda oficial de las Islas Cook?|El dólar neozelandés|El dólar estadounidense|La libra esterlina|El dólar australiano
+4040|¿Qué superficie tiene la Ciudad del Vaticano?|0,44 km²|0,10 km²|0,86 km²|12 km²
+4042|¿A qué país pertenece la isla de Santorini?|Grecia|Italia|España|Turquía
+4043|¿Qué país NO forma parte de Escandinavia en sentido estricto?|Finlandia|Noruega|Suecia|Dinamarca
+4044|¿A qué país pertenecen las Molucas, las «islas de las Especias»?|Indonesia|Chile|Nueva Zelanda|Fiyi
+4045|¿Cuántas islas tiene Kuwait?|9|3|6|2
+4046|Bir Tawil, una franja de tierra que ningún país reclama, está en la frontera entre…|Egipto y Sudán|Israel y Jordania|Chad y Libia|Argelia y Malí
+4048|¿Cuál es la capital de las Bermudas?|Hamilton|Santo Domingo|San Juan|La Habana
+4051|¿En qué país está la ciudad de Haarlem?|Países Bajos|Alemania|Estados Unidos|Suiza
+4055|¿Qué río se represó para crear el lago Gatún y el canal de Panamá?|El Chagres|El Tuira|El Chucunaque|El Chepo
+4056|¿Qué país controla las islas Andamán y Nicobar?|India|Vietnam|Tailandia|Indonesia
+4057|¿Cómo se llaman los antiguos caladeros de pesca frente a Terranova, en Canadá?|Grandes Bancos|Gran Barrera de Coral|Fosa de las Marianas|Bahía de Hudson
+4058|¿A qué nacionalidad se refiere el prefijo «sino-», como en «sinoamericano»?|China|Japonesa|Rusa|India
+4059|¿Qué dos países une el paso de montaña del Jáiber?|Afganistán y Pakistán|India y Nepal|Pakistán e India|Tayikistán y Kirguistán
+4061|¿Cuál es la segunda ciudad más grande de Lituania?|Kaunas|Panevėžys|Vilna|Klaipėda
+4063|¿Con qué país tiene Francia su frontera terrestre más larga?|Brasil (por la Guayana Francesa)|Alemania|España|Bélgica
+4066|¿Cuál de estos países insulares está en el Caribe?|Barbados|Fiyi|Maldivas|Seychelles
+4067|¿Con cuántos países tiene frontera Kirguistán?|4|3|1|6
+4068|¿Es el inglés una de las cuatro lenguas nacionales de Suiza?|No
+4069|¿Cuál de estos países NO está en Asia?|Surinam|Georgia|Rusia|Singapur
+4070|¿Tiene Japón 47 prefecturas?|Sí
+4071|¿Cuál es la isla más grande de Canadá?|La isla de Baffin|La isla del Príncipe Eduardo|La isla de Vancouver|Terranova
+4072|¿Qué tiene de especial el lago Titicaca?|Es el lago navegable más alto del mundo|Es el lago más largo del mundo|Es el lago más profundo del mundo|Está helado todo el año
+4074|¿Dónde está la cordillera de Hunua?|Nueva Zelanda|Nepal|China|México
+4075|¿Cuál es la capital y mayor población del archipiélago noruego de Svalbard?|Longyearbyen|Sveagruva|Ny-Ålesund|Barentsburg
+4076|¿Cuál de estas ciudades NO está en la India?|Islamabad|Hyderabad|Ahmedabad|Ghaziabad
+4077|¿Cuál es la capital de Mauricio?|Port Louis|Port Moresby|Port Vila|Puerto Príncipe
+4078|¿Cuál es la capital de Burkina Faso?|Uagadugú|Yaundé|Yamusukro|Abiyán
+4079|¿En qué cuenca desemboca el río Jordán?|El mar Muerto|El mar de Aral|El mar Caspio|El mar de Saltón

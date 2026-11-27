@@ -1,0 +1,489 @@
+{
+  "formato": "konkursox-banco",
+  "version": 1,
+  "nombre": "Videojuegos · Media",
+  "grupo": "Open Trivia DB",
+  "licencia": "Preguntas de Open Trivia Database (opentdb.com), licencia CC BY-SA 4.0, traducidas y adaptadas al español. Este banco se distribuye con la misma licencia (CC BY-SA 4.0).",
+  "preguntas": [
+    {
+      "id": "o2036",
+      "tipo": "sino",
+      "enunciado": "¿Fue David Baszucki uno de los fundadores de Roblox?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2069",
+      "tipo": "sino",
+      "enunciado": "¿Salió Tony Hawk's Pro Skater en 1999?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2079",
+      "tipo": "sino",
+      "enunciado": "En la historia de Warcraft, ¿fue Thrall el primero en empuñar el Martillo Maldito?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2086",
+      "tipo": "sino",
+      "enunciado": "En TF2, ¿pone Gary Schwartz, la voz del Heavy, también la voz del Demoman?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2089",
+      "tipo": "sino",
+      "enunciado": "¿Debe en parte su nombre Carmen Sandiego a la actriz brasileña Carmen Miranda?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2100",
+      "tipo": "sino",
+      "enunciado": "¿Salió la primera PlayStation en EE. UU. el 3 de diciembre de 1994?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2103",
+      "tipo": "sino",
+      "enunciado": "En Resident Evil, ¿es Leon S. Kennedy miembro de los S.T.A.R.S.?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2115",
+      "tipo": "sino",
+      "enunciado": "¿Tuvo Minecraft otro nombre antes de llamarse así?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2139",
+      "tipo": "sino",
+      "enunciado": "¿Iba a ser Resident Evil 4 en un principio exclusivo de GameCube?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2197",
+      "tipo": "sino",
+      "enunciado": "¿Transcurre «Metal Gear Solid 3: Snake Eater» en la isla Shadow Moses?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2207",
+      "tipo": "sino",
+      "enunciado": "¿Estuvo a punto de basarse Mortal Kombat en una película de Jean-Claude Van Damme?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2219",
+      "tipo": "sino",
+      "enunciado": "¿Se pensó en el futuro Dr. Eggman como nueva mascota de Sega antes que en Sonic?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2223",
+      "tipo": "sino",
+      "enunciado": "¿Fue «Los Sims» (2000) el primer juego de Maxis con el idioma inventado «simlish»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2231",
+      "tipo": "sino",
+      "enunciado": "¿Salió Super Mario Bros. en 1990?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2233",
+      "tipo": "sino",
+      "enunciado": "En la saga BioShock, ¿se llama Little Sisters a las que recogen el ADAM?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2252",
+      "tipo": "sino",
+      "enunciado": "A febrero de 2019, ¿se habían publicado solo cinco juegos de Donkey Kong Country (sin contar remakes)?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2290",
+      "tipo": "sino",
+      "enunciado": "¿Usa la saga Titanfall el motor Unreal Engine?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2311",
+      "tipo": "sino",
+      "enunciado": "¿Iba a ser Fortnite en un principio un juego de terror?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2318",
+      "tipo": "sino",
+      "enunciado": "¿Usó Garry's Mod en sus inicios recursos y código del mod JBMod de Half-Life 2?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2375",
+      "tipo": "sino",
+      "enunciado": "En «Super Mario World», ¿debe su nombre el rinoceronte Reznor al cantante de Nine Inch Nails?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2384",
+      "tipo": "sino",
+      "enunciado": "¿Es POLYBIUS una recreativa que en realidad es una leyenda urbana?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2387",
+      "tipo": "sino",
+      "enunciado": "¿Compró Amazon Twitch en agosto de 2014 por 970 millones de dólares?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2408",
+      "tipo": "sino",
+      "enunciado": "En Portal, ¿tienen conciencia los cubos de compañía?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2410",
+      "tipo": "sino",
+      "enunciado": "¿Usa «Metal Gear Solid V: The Phantom Pain» el motor Fox Engine?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2415",
+      "tipo": "sino",
+      "enunciado": "¿Es «Return to Castle Wolfenstein» el único Wolfenstein donde no eres B. J. Blazkowicz?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2417",
+      "tipo": "sino",
+      "enunciado": "¿Iba a transcurrir en la antigua Roma un Call of Duty cancelado?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2421",
+      "tipo": "sino",
+      "enunciado": "¿Empezó Nintendo fabricando naipes?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2445",
+      "tipo": "sino",
+      "enunciado": "En Half-Life 2, si reproduces al revés lo que dicen los zombis, ¿hablan en inglés comprensible?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2502",
+      "tipo": "sino",
+      "enunciado": "En el juego «Transistor», ¿se llama Red la protagonista?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2508",
+      "tipo": "sino",
+      "enunciado": "¿Se considera «Through the Fire and Flames» de DragonForce la canción más difícil de Guitar Hero?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2519",
+      "tipo": "sino",
+      "enunciado": "¿Se puede jugar al baloncesto en Rocket League?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2528",
+      "tipo": "sino",
+      "enunciado": "Durante la preproducción de Super Mario Bros., ¿iba a disparar balas Mario?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Videojuegos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    }
+  ]
+}

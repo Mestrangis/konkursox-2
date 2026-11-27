@@ -1,0 +1,39 @@
+{
+  "formato": "konkursox-banco",
+  "version": 1,
+  "nombre": "Juegos de mesa · Media",
+  "grupo": "Open Trivia DB",
+  "licencia": "Preguntas de Open Trivia Database (opentdb.com), licencia CC BY-SA 4.0, traducidas y adaptadas al español. Este banco se distribuye con la misma licencia (CC BY-SA 4.0).",
+  "preguntas": [
+    {
+      "id": "o2834",
+      "tipo": "sino",
+      "enunciado": "¿Lleva monóculo el señor del Monopoly (Rich Uncle Pennybags)?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Juegos de mesa"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2839",
+      "tipo": "sino",
+      "enunciado": "¿Se hicieron las casas y hoteles originales del Monopoly con restos de molduras de madera?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Juegos de mesa"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    }
+  ]
+}

@@ -1,0 +1,191 @@
+# Animales (Animals)
+4678|¿Es cierto que los osos no defecan durante la hibernación?|Sí
+4679|¿Puede el ajolote regenerar sus extremidades?|Sí
+4680|¿Pasó el panda gigante en 2016 de «en peligro» a «vulnerable» según la UICN?|Sí
+4681|¿Pueden los conejos ver lo que tienen detrás sin girar la cabeza?|Sí
+4682|¿Es verde la sangre de las babosas?|Sí
+4683|¿Para qué sacan la lengua las serpientes y los lagartos?|Para captar partículas de olor|Para saborear el aire dulce|Para amenazar a otras especies|Para atraer a las hembras
+4684|¿De qué color es la hembra del mirlo común?|Marrón|Negro|Blanco|Amarillo
+4685|¿Son los conejos roedores?|No
+4686|¿Cuál es el animal terrestre más rápido?|El guepardo|El león|La gacela de Thomson|El berrendo
+4687|¿De qué país son originarios los wombats?|Australia|Nueva Zelanda|Papúa Nueva Guinea|Palaos
+4688|¿Son carnívoros los conejos?|No
+4689|¿Cuál de estos animales NO existe?|El león de Nemea|El dragón de mar|El demonio de Tasmania|El calamar gigante
+4690|¿De qué colores es el arrendajo de Steller?|Azul y negro|Azul y gris|Azul y blanco|Gris y negro
+4691|¿Cómo se llamaba en realidad la famosa Grumpy Cat?|Tardar Sauce|Sauce|Minnie|Broccoli
+4693|¿Debe su nombre el navegador Firefox al panda rojo?|Sí
+4694|¿Son las cebras blancas con rayas negras?|No
+4695|¿Cuántos dientes tiene un conejo adulto?|28|30|26|24
+4697|¿Cuál es el animal nacional de la India?|El tigre|El león|El caballo|El camello
+4699|¿Es la orca un tipo de delfín?|Sí
+4700|¿Qué raza de perro se asocia tradicionalmente a los bomberos (en EE. UU.)?|El dálmata|El pastor alemán|El gran danés|El mastín
+4701|¿Dónde vive un animal abisopelágico?|En las profundidades del océano|En el desierto|En lo alto de una montaña|Dentro de un árbol
+4702|¿A qué clase de animales pertenecen los tritones?|Anfibios|Peces|Reptiles|Mamíferos
+4703|¿Guardan los canguros comida en la bolsa junto a sus crías?|No
+4704|¿Tiene una oruga más músculos que una persona?|Sí
+4706|¿Es cierto que los conejos no pueden vomitar?|Sí
+4707|¿Cuál es el nombre científico del ser humano actual?|Homo sapiens|Homo ergaster|Homo erectus|Homo neanderthalensis
+4708|¿Es cierto que los elefantes no pueden saltar?|Sí
+4709|¿Qué animal marino se llama Hippocampus en latín?|El caballito de mar|El delfín|La ballena|El pulpo
+4710|El kakapo es un loro grande, nocturno y que no vuela. ¿De dónde es?|Nueva Zelanda|Sudáfrica|Australia|Madagascar
+4711|¿Cuántas patas tienen las mariposas?|6|2|4|8
+4712|¿Cómo se llama la casa del conejo bajo tierra?|Madriguera|Nido|Guarida|Colmena
+4713|¿Puede el ajolote pasar toda su vida en estado larvario?|Sí
+4714|¿Cuál es el nombre científico del oso polar?|Ursus maritimus|Ursus polaris|Ursus spelaeus|Ursus arctos
+4715|¿Qué tipo de animal es el sapo corredor (natterjack)?|Un sapo|Un pájaro|Un pez|Un insecto
+4716|¿De qué animal sale la lana de cachemira?|De la cabra|De la oveja|Del camello|De la llama
+4717|¿Cuál de estas especies NO se ha extinguido?|El dragón de Komodo|El león marino japonés|El tigre de Tasmania|La gacela saudí
+4719|¿Cuál es el animal más rápido del mundo?|El halcón peregrino|El águila real|El guepardo|El tábano
+4720|¿Por qué «se ríe» la hiena manchada?|Por nerviosismo|Por emoción|Por agresividad|Por agotamiento
+4721|¿De qué pez se hace el plato japonés fugu?|Del pez globo|De la lubina|Del salmón|De la caballa
+4722|¿Cómo se llama el macho de la abeja, que nace de un huevo sin fecundar?|Zángano|Soldado|Obrera|Reina
+4723|¿A qué familia pertenece el gato doméstico?|Félidos|Felinos|Felis|Gatos
+4724|¿Es el «pollo de montaña» (mountain chicken) un pollo?|No
+4725|¿Pueden tener corazón las esponjas de mar?|No
+4727|¿Tienen los tigres la piel de un solo color pese al pelaje a rayas?|No
+4728|¿Cuál es el ave nacional de Baréin?|El bulbul|El colibrí|El halcón|El gorrión
+4729|¿Qué raza de perro debe su nombre a una región de Croacia?|El dálmata|El pequinés|El chihuahua|El pomerania
+4730|¿Cómo se conoce popularmente la encefalopatía espongiforme bovina?|El mal de las vacas locas|La enfermedad de Weil|La fiebre de la leche|La fiebre aftosa
+4731|¿Es el ornitorrinco un mamífero?|Sí
+4732|¿Se usaban los perros lapones finlandeses para pastorear renos?|Sí
+4733|¿Puede un pulpo pasar por cualquier agujero más grande que su pico?|Sí
+4734|¿Es el equidna un monotrema?|Sí
+4735|¿Qué animal se domesticó en un famoso experimento ruso que empezó en 1959?|El zorro|La paloma|El oso|El caimán
+4736|¿Cuál es la serpiente venenosa más larga del mundo?|La cobra real|La anaconda verde|El taipán del interior|La serpiente marina de vientre amarillo
+4737|Los decápodos son crustáceos de diez patas. ¿Cuál de estos NO es un decápodo?|El kril|La langosta|La gamba|El cangrejo
+4738|¿De qué color es la piel del oso polar?|Negra|Blanca|Rosa|Verde
+4739|¿Cuál es el nombre científico del chimpancé común?|Pan troglodytes|Gorilla gorilla|Pan paniscus|Panthera leo
+4740|¿Tienen las nutrias una especie de bolsillo bajo las patas delanteras para guardar comida y piedras?|Sí
+4742|¿Están las hienas más emparentadas con los gatos que con los perros?|Sí
+4744|¿De qué está hecho el cuerno del rinoceronte?|De queratina|De hueso|De marfil|De piel
+4745|¿Qué raza de perro es una de las más antiguas, ya existente antes del 400 a. C.?|El carlino|El bulldog|El bóxer|El chihuahua
+4746|¿Qué significa «hipopótamo» y en qué idioma?|Caballo de río, en griego|Caballo de río, en latín|Cerdo gordo, en griego|Cerdo gordo, en latín
+4748|¿Se puede saber la edad de una mariquita contando sus puntos?|No
+4750|¿Cuál de estas serpientes NO es venenosa?|La pitón reticulada|El krait malayo|La serpiente marina de vientre amarillo|La mamba negra
+4751|Un animal carnívoro come carne. ¿Qué come uno nucívoro?|Frutos secos|Nada|Fruta|Algas
+4752|¿De dónde era el ya extinto tilacino?|De Tasmania (Australia)|De Baluchistán (Pakistán)|De Valaquia (Rumanía)|De Oregón (EE. UU.)
+4753|¿De qué están hechas las escamas de las serpientes y de casi todos los lagartos?|De queratina|De quitina|De calcio|De colágeno
+4754|¿Qué parte de su peso comen al día las nutrias marinas, más o menos?|Un 25 %|Un 10 %|Un 80 %|Un 45 %
+4755|¿Cuántos años vive de media un conejo doméstico?|De 8 a 12|De 1 a 2|De 4 a 7|De 14 a 20
+4756|¿A qué suborden pertenece la familia de las hienas?|Feliformia|Haplorhini|Caniformia|Ciconiiformes
+4757|¿Cuál es el nombre científico del pigargo cabeciblanco (águila calva)?|Haliaeetus leucocephalus|Tyto alba|Cyanocitta cristata|Aquila chrysaetos
+4758|¿Qué ave nace con garras en las alas?|El hoacín|El cormorán|El casuario|El serpentario
+4759|A diferencia de casi todas las salamandras, ¿qué parte del tritón es plana?|La cola|La cabeza|Los dientes|Las patas
+4761|¿Qué tipo de animal es el bonobo?|Un simio|Un león|Un loro|Un gato montés
+4762|¿Qué es en realidad el llamado «pollo de montaña»?|Una rana|Un pollo|Un caballo|Una mosca
+4763|¿Qué subespecie de oso pardo NO se ha extinguido?|El oso pardo sirio|El grizzly de California|El oso del Atlas|El grizzly mexicano
+4764|¿Cuántas crías tiene de media una chinchilla por camada?|2 o 3|De 10 a 15|De 5 a 8|De 15 a 18
+4765|¿Cuál de estos es una colonia de pólipos y no una medusa?|La carabela portuguesa|La avispa de mar|La irukandji|La ortiga de mar
+4766|¿Cuántas especies de hiena viven hoy?|4|8|2|6
+4768|¿A qué familia de animales afecta solo la caquexia crónica (CWD)?|A los cérvidos|A los homínidos|A los félidos|A los cánidos
+4769|¿Cuál es el nombre científico del guepardo?|Acinonyx jubatus|Panthera onca|Lynx rufus|Felis catus
+4770|¿Cuál de estos animales NO es un lagarto?|El tuátara|El dragón de Komodo|El monstruo de Gila|La iguana verde
+4771|¿Cuál es el nombre científico del lobo gris?|Canis lupus|Canis aureus|Canis latrans|Canis lycaon
+4772|¿Cómo se llamaba el lobo etíope antes de saber que era un lobo?|Chacal del Simien|Coyote etíope|Zorro amhárico|Perro salvaje abisinio
+4773|¿A qué familia pertenece el lobo de tierra (proteles)?|A las hienas|A los cánidos|A los félidos|A los euplerinos
+4774|¿A qué filo pertenecen todos los mamíferos, aves y reptiles?|Cordados|Equinodermos|Anélidos|Placozoos
+4775|¿Cómo se llama la proteína con cobre que da sangre azul al pulpo antártico?|Hemocianina|Citocromo|Hemoglobina|Mioglobina
+4776|¿Cuál es el nombre científico del periquito común?|Melopsittacus undulatus|Nymphicus hollandicus|Pyrrhura molinae|Ara macao
+
+# Vehículos (Vehicles)
+4778|¿Es BMW M la filial de BMW dedicada a los coches de altas prestaciones?|Sí
+4779|¿Qué modelo de Ford lleva el nombre de un avión de caza de la Segunda Guerra Mundial?|Mustang|Explorer|Ranger|Galaxy
+4780|¿Qué marca de coches dio nombre a una guerra?|Toyota|Honda|Ford|Volkswagen
+4781|¿Qué animal lleva Lamborghini en su logotipo?|Un toro|Un murciélago|Un caballo|Una serpiente
+4782|¿Cómo se llaman las piezas cilíndricas que suben y bajan dentro del motor?|Pistones|Ballestas|Radiadores|Frenos ABS
+4783|¿Qué tanque alemán temían más los aliados en la Segunda Guerra Mundial?|El Tiger|El Marder III|El Matilda II|El Panzer III
+4784|¿Fue Mazda en 1991 la primera marca japonesa en ganar Le Mans?|Sí
+4785|¿Qué fabricante fue antes dueño de Jaguar?|Ford|Chrysler|General Motors|Fiat
+4786|¿Cuál de estas empresas NO fabrica motos?|Toyota|Honda|Kawasaki|Yamaha
+4787|¿Cuál de estas marcas de coches es sueca?|Volvo|Mercedes|Acura|Lincoln
+4789|¿Cuántas ruedas tiene un monociclo?|1|4|3|2
+4790|¿Dónde se fabrican los Ferrari?|En Italia|En Rumanía|En Alemania|En Rusia
+4791|¿En qué ciudad italiana tiene su sede Fiat?|Turín|Maranello|Módena|Roma
+4792|¿Qué animal aparece en el logotipo de Porsche?|Un caballo|Un toro|Un león|Un guepardo
+4793|¿Es Honda una empresa japonesa?|Sí
+4794|¿En qué país se fabricaba el Trabant 601?|Alemania Oriental|La Unión Soviética|Hungría|Francia
+4795|¿Cómo se llama el coche eléctrico más popular de Nissan?|Leaf|Tree|Deer|Roots
+4796|¿Significa BMW «Fábrica Bávara de Motores»?|Sí
+4798|¿Qué fabricante de neumáticos es famoso por su gama «P Zero»?|Pirelli|Goodyear|Bridgestone|Michelin
+4800|¿Con qué energía funcionan los coches de Tesla?|Electricidad|Gasolina|Diésel|Energía nuclear
+4803|¿Qué sistema ayuda a los aviones a no chocar entre sí?|TCAS|GPWS|OCAS|TAWS
+4805|¿Para qué marca corría Enzo Ferrari antes de fundar la suya?|Alfa Romeo|Auto Union|Mercedes-Benz|Bentley
+4806|¿Qué representan los cuatro aros del logotipo de Audi?|Cuatro fabricantes que antes eran independientes|Los estados donde más vende|Las ciudades clave de la marca|Las cuatro ruedas del coche
+4807|¿Qué pieza del motor usa levas para abrir y cerrar las válvulas de admisión y escape?|El árbol de levas|El pistón|El cigüeñal|La bujía
+4808|¿Fue el GM EV1 el primer coche eléctrico de serie homologado para la calle?|No
+4809|¿Inventó el canadiense Joseph-Armand Bombardier la moto de nieve en 1937?|Sí
+4810|¿Qué marca de superdeportivos es sueca?|Koenigsegg|Bugatti|Lamborghini|McLaren
+4811|¿Qué marca hizo el coche de «Regreso al futuro»?|DeLorean|Ford|Toyota|Daihatsu
+4812|¿Qué país lleva la letra «A» como distintivo internacional de matrícula?|Austria|Afganistán|Australia|Armenia
+4813|¿Cuál de estos NO está entre los cinco «superdeportivos modernos» de Ferrari?|Testarossa|Enzo Ferrari|F40|288 GTO
+4814|¿Ha llevado siempre el Chevrolet Corvette motores V8?|No
+4815|¿Qué marca fabrica el Aventador?|Lamborghini|Ferrari|Pagani|Bugatti
+4816|¿Superó el Shinkansen japonés el récord de velocidad del TGV francés?|No
+4817|¿Cuál de estos modelos es de Lamborghini?|Aventador|Huayra|918|Chiron
+4818|¿Era Bugatti una marca italiana?|No
+4819|¿Cuándo se fundó Cadillac?|1902|1964|1898|1985
+4820|¿Es cierto que Ferrari nunca ha hecho un motor V10?|No
+4821|¿En qué país se monta el superdeportivo Hussarya de Arrinera?|Polonia|China|Suecia|Italia
+4822|¿Fue el Benz Patent-Motorwagen de 1886 el primer automóvil de verdad?|Sí
+4823|¿Cuál de estas NO es una función del aceite del motor?|La combustión|La lubricación|La refrigeración|Evitar la corrosión
+4826|¿Qué apodo recibió el vuelo 143 de Air Canada, que se quedó sin combustible y planeó hasta aterrizar en 1983?|El planeador de Gimli|El ultraligero de Gimli|El cazador de Gimli|El halcón de Gimli
+4828|Completa la analogía: Audi es a Volkswagen como Infiniti es a…|Nissan|Honda|Hyundai|Subaru
+4829|¿Cuál de estos aviones de pasajeros es el más largo?|Boeing 747-8|Airbus A350-1000|Airbus A330-200|Boeing 787-10
+4830|¿Fabricaba coches BMW cuando se fundó en 1916?|No
+4831|¿Ha tenido Mitsubishi una colaboración de 30 años con Jackie Chan, cuyas películas lucen sus coches?|Sí
+4833|¿Cuál de estos modelos NO es de Ford?|Camry|Fusion|Model A|F-150
+4835|¿Qué animal aparece en el logotipo de Abarth, la división deportiva de Fiat?|Un escorpión|Una serpiente|Un toro|Un caballo
+4836|¿Se fabrican en China la mayoría de los Subaru?|No
+4838|¿Qué empresa japonesa es el mayor fabricante de motos del mundo?|Honda|Yamaha|Suzuki|Kawasaki
+4839|¿Cuál de estos países prohibió a los particulares usar cámaras en el salpicadero?|Austria|Estados Unidos|Chequia|Corea del Sur
+4840|¿Es Arriva propiedad de Deutsche Bahn?|Sí
+4841|¿Qué marca NO pertenece a General Motors?|Ford|Buick|Cadillac|Chevrolet
+4842|¿Cuándo se fundó Tesla?|2003|2008|2005|2007
+4845|¿Se originó en Ferrari el término «GTO»?|Sí
+4847|¿Cuál de estos códigos de chasis es de un BMW Serie 3?|E46|E39|E85|F10
+4848|¿Cuál fue el primer coche híbrido fabricado en serie?|Toyota Prius|Chevrolet Volt|Honda Fit|Peugeot 3008 Hybrid4
+4849|¿Qué marca liberó su patente del cinturón de seguridad para salvar vidas?|Volvo|Ferrari|Ford|Renault
+4852|¿Qué deportivo le regaló el gobierno francés a Yuri Gagarin en 1965?|Matra Djet|Porsche 911|Alpine A110|AC Cobra
+4853|¿Cómo se llama el sistema de distribución variable de BMW?|VANOS|VVT-i|VTEC|MultiAir
+4854|¿Con qué ángulo están los cilindros del famoso motor VR6 de Volkswagen?|15 grados|30 grados|45 grados|90 grados
+4856|¿Cómo se llamaba el primer tracción delantera de Datsun (hoy Nissan)?|Cherry|Sunny|Bluebird|Skyline
+4857|¿Probó Saab en 1993 a cambiar el volante por un joystick en un Saab 9000?|Sí
+4858|En 2014, ¿por qué fallo se revisaron más de 6 millones de vehículos de General Motors?|Un interruptor de encendido defectuoso|El acelerador|Unos tubos de combustible que se rompían|Los airbags
+4860|¿Cuál de estas marcas NO pertenece al grupo Volkswagen?|Opel|Porsche|Bugatti|Bentley
+4863|¿Existe un modelo de Rolls-Royce llamado Spectre?|Sí
+
+# Tecnología (Science: Gadgets)
+4943|¿Quién acuñó el término «batería» para un dispositivo que almacena electricidad?|Benjamin Franklin|Nikola Tesla|Luigi Galvani|Alessandro Volta
+4944|¿Cuál es la unidad de resistencia eléctrica en el Sistema Internacional?|El ohmio|El amperio|El siemens|El voltio
+4945|¿Cómo se llama la máquina simple formada por una barra rígida que gira sobre un punto fijo?|La palanca|La cuña|El tornillo|La polea
+4946|¿Fue el iPhone 3G la segunda generación de iPhone?|Sí
+4947|¿Cuándo se inventó el DVD?|1995|2000|1990|1980
+4948|¿Se puede usar un micrófono para emitir sonido, como un altavoz?|Sí
+4949|¿Qué palabra usó Apple para justificar la eliminación de la toma de auriculares?|Valor (courage)|Innovación|Revolución|Audacia
+4950|¿Cuál de estos NO es un tipo de ratón de ordenador?|El ratón batido|El ratón de tambor|El ratón de bola (trackball)|El ratón óptico
+4951|¿Significa NFC «Near-Field Control»?|No
+4952|¿Qué significa GPS?|Sistema de Posicionamiento Global|Sistema Personal Global|Sistema de Posicionamiento General|Satélite Personal General
+4953|¿En qué año salió el primer iPhone?|2007|2005|2006|2004
+4954|¿Qué asistente virtual es de Amazon?|Alexa|Asistente de Google|Siri|Cortana
+4955|¿Cuándo salió el Tamagotchi?|1996|1989|1992|1990
+4956|¿Cuándo empezó a venderse el CD?|1982|1992|1972|1962
+4958|¿Qué significa SSD en almacenamiento informático?|Unidad de estado sólido|Dispositivo de almacenamiento por software|Datos de súper velocidad|Disco de sistema seguro
+4959|¿Qué videoconsola es de Sony?|PlayStation|Xbox|Atari|Nintendo Switch
+4960|¿Qué dos transbordadores espaciales de la NASA se destruyeron en accidentes?|Challenger y Columbia|Enterprise y Atlantis|Discovery y Endeavour|Atlantis y Discovery
+4961|¿En qué año se presentó Oculus Rift en Kickstarter?|2012|2010|2011|2013
+4962|¿Qué empresa creó las gafas HoloLens?|Microsoft|HTC|Oculus|Tobii
+4963|¿Quién patentó una máquina de vapor con movimiento rotatorio continuo?|James Watt|Nikola Tesla|Albert Einstein|Alessandro Volta
+4964|¿Qué empresa fabricó la mítica caja de ritmos TR-808?|Roland|Technics|Korg|Casio
+4966|¿Qué empresa diseñó el formato de vídeo Betamax?|Sony|Panasonic|LG|Fujitsu
+4967|¿En qué país se fundó BlackBerry?|Canadá|Noruega|Estados Unidos|Reino Unido
+4968|¿Cuándo salió el primer reproductor de CD?|1982|1983|1981|1980
+4969|¿Qué es el Mitsubishi Wakamaru?|Un robot|Una camioneta|Una moto|Una lancha
+4971|¿Qué ha fabricado también la empresa de armas Remington, además de armas?|Máquinas de escribir|Batidoras|Ventiladores de techo|Pomos de puerta
+4973|¿Cómo separa una centrifugadora las partículas pesadas de las ligeras?|Girando|Vibrando|Tamizando|Ionizando
+4974|¿Qué exingeniero de la NASA inventó la pistola de agua Super Soaker?|Lonnie Johnson|Bruce D'Andrade|Frances Northcutt|Steve Wozniak
+4975|¿Salió la aspiradora robot Roomba por primera vez en 2002?|Sí
+4976|¿Con qué iPhone se estrenó Siri?|iPhone 4S|iPhone 6S|iPhone 3GS|iPhone 5S
+4977|¿Cuál de estas empresas de móviles NO tiene su sede en Asia?|Nokia|LG Electronics|Samsung|HTC
+4979|¿Quién construyó el primer láser?|Theodore Maiman|Nikola Tesla|Jack Kilby|Edith Clarke
+4980|¿Con qué se mide la tensión arterial?|Con un esfigmomanómetro|Con un barómetro|Con una regla|Con un hemómetro
+4981|¿Tuvo el fusil M16 fama de poco fiable al principio de la guerra de Vietnam?|Sí

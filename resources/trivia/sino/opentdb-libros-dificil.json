@@ -1,0 +1,39 @@
+{
+  "formato": "konkursox-banco",
+  "version": 1,
+  "nombre": "Libros · Difícil",
+  "grupo": "Open Trivia DB",
+  "licencia": "Preguntas de Open Trivia Database (opentdb.com), licencia CC BY-SA 4.0, traducidas y adaptadas al español. Este banco se distribuye con la misma licencia (CC BY-SA 4.0).",
+  "preguntas": [
+    {
+      "id": "o574",
+      "tipo": "sino",
+      "enunciado": "¿Nació Harry Potter el 31 de julio de 1980?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o577",
+      "tipo": "sino",
+      "enunciado": "En «Las reliquias de la Muerte», ¿destruye Hermione el cuarto horrocrux con la espada de Gryffindor?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    }
+  ]
+}

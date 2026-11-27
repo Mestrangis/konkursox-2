@@ -1,0 +1,179 @@
+{
+  "formato": "konkursox-banco",
+  "version": 1,
+  "nombre": "Juegos de mesa · Difícil",
+  "grupo": "Open Trivia DB",
+  "licencia": "Preguntas de Open Trivia Database (opentdb.com), licencia CC BY-SA 4.0, traducidas y adaptadas al español. Este banco se distribuye con la misma licencia (CC BY-SA 4.0).",
+  "preguntas": [
+    {
+      "id": "o2856",
+      "tipo": "test",
+      "enunciado": "¿Qué juego de mesa salió el 6 de febrero de 1935?",
+      "opciones": [
+        "Risk",
+        "Candy Land",
+        "Cluedo",
+        "Monopoly"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Juegos de mesa"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2857",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estas ciudades NO aparece en el juego de mesa Pandemic?",
+      "opciones": [
+        "Ciudad Ho Chi Minh",
+        "Karachi",
+        "Lagos",
+        "Berlín"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Juegos de mesa"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2860",
+      "tipo": "test",
+      "enunciado": "¿Quién diseñó el juego de mesa «Ra»?",
+      "opciones": [
+        "Uwe Rosenberg",
+        "Allison Kline",
+        "Reiner Knizia",
+        "Bruno Cathala"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Juegos de mesa"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2862",
+      "tipo": "test",
+      "enunciado": "¿Cuál es el juego de mesa más antiguo del mundo?",
+      "opciones": [
+        "El go",
+        "El senet",
+        "Las damas",
+        "El ajedrez"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Juegos de mesa"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2864",
+      "tipo": "test",
+      "enunciado": "¿De qué juego de mesa es una variante el Monopoly?",
+      "opciones": [
+        "The Landlord's Game",
+        "Property Feud",
+        "The Monopolist's Game",
+        "Territorial Dispute"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Juegos de mesa"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2866",
+      "tipo": "test",
+      "enunciado": "En Dungeons & Dragons 5.ª edición, ¿qué clase obtiene sus poderes de un pacto con un ser superior?",
+      "opciones": [
+        "Mago",
+        "Clérigo",
+        "Brujo",
+        "Hechicero"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Juegos de mesa"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2869",
+      "tipo": "test",
+      "enunciado": "Sin contar pasillos ni escaleras, ¿cuántas habitaciones hay en el tablero del Cluedo?",
+      "opciones": [
+        "9",
+        "1",
+        "10",
+        "6"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Juegos de mesa"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2872",
+      "tipo": "test",
+      "enunciado": "En el mahjong riichi, ¿qué se dice al robar tú mismo la ficha ganadora?",
+      "opciones": [
+        "Ron",
+        "Riichi",
+        "Tsumo",
+        "Kan"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Juegos de mesa"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2875",
+      "tipo": "test",
+      "enunciado": "¿Qué Pokémon es el n.º 39 de la Pokédex nacional?",
+      "opciones": [
+        "Pikachu",
+        "Jigglypuff",
+        "Psyduck",
+        "Fearow"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Juegos de mesa"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2876",
+      "tipo": "test",
+      "enunciado": "¿Cuál es el monstruo más difícil del Manual de Monstruos de Dungeons & Dragons 5.ª edición?",
+      "opciones": [
+        "Bestia trastocadora",
+        "Tarrasque",
+        "Contemplador",
+        "Liche"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Juegos de mesa"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    }
+  ]
+}

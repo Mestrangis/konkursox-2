@@ -1,0 +1,196 @@
+{
+  "formato": "konkursox-banco",
+  "version": 1,
+  "nombre": "Anime y manga · Difícil",
+  "grupo": "Open Trivia DB",
+  "licencia": "Preguntas de Open Trivia Database (opentdb.com), licencia CC BY-SA 4.0, traducidas y adaptadas al español. Este banco se distribuye con la misma licencia (CC BY-SA 4.0).",
+  "preguntas": [
+    {
+      "id": "o5138",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos animes tiene más de 7500 episodios?",
+      "opciones": [
+        "Chibi Maruko-chan",
+        "One Piece",
+        "Naruto",
+        "Sazae-san"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Anime y manga"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5146",
+      "tipo": "test",
+      "enunciado": "¿Qué mangaka de terror creó «Uzumaki»?",
+      "opciones": [
+        "Sui Ishida",
+        "Shintaro Kago",
+        "Junji Ito",
+        "Kazuo Umezu"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Anime y manga"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5147",
+      "tipo": "test",
+      "enunciado": "En el manga de «Naruto», ¿cuál es el apellido de Tsunade?",
+      "opciones": [
+        "Senju",
+        "Yamanaka",
+        "Uzumaki",
+        "Haruno"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Anime y manga"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5150",
+      "tipo": "test",
+      "enunciado": "En «Hunter x Hunter», ¿a qué se dedica la familia de Killua?",
+      "opciones": [
+        "Son ninjas",
+        "Son asesinos",
+        "Son bandidos",
+        "Son cazadores"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Anime y manga"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5156",
+      "tipo": "test",
+      "enunciado": "¿Quién dirigió «La tumba de las luciérnagas» (1988)?",
+      "opciones": [
+        "Satoshi Kon",
+        "Isao Takahata",
+        "Hayao Miyazaki",
+        "Sunao Katabuchi"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Anime y manga"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5165",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama el protagonista de «Hunter x Hunter»?",
+      "opciones": [
+        "Gin",
+        "Gan",
+        "Gen",
+        "Gon"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Anime y manga"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5167",
+      "tipo": "test",
+      "enunciado": "En «One-Punch Man», ¿cuál es el nombre de héroe del protagonista?",
+      "opciones": [
+        "Calvo con Capa",
+        "Puño de la Justicia",
+        "Boxeador Loco",
+        "Puño Fuerte"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Anime y manga"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5175",
+      "tipo": "test",
+      "enunciado": "¿De qué anime es la decimosexta canción de apertura «Silhouette», de Kana-Boon?",
+      "opciones": [
+        "Boruto",
+        "Naruto Shippuden",
+        "One Piece",
+        "Bleach"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Anime y manga"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5177",
+      "tipo": "test",
+      "enunciado": "¿Qué estudio animó «Psycho-Pass»?",
+      "opciones": [
+        "Trigger",
+        "Kyoto Animation",
+        "Production I.G",
+        "Shaft"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Anime y manga"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5178",
+      "tipo": "test",
+      "enunciado": "¿Qué estudio produjo «Sword Art Online»?",
+      "opciones": [
+        "A-1 Pictures",
+        "Production I.G",
+        "Kyoto Animation",
+        "Silver Link"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Anime y manga"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5179",
+      "tipo": "test",
+      "enunciado": "En «Dragon Ball», ¿cómo se llama el hermano de Goku?",
+      "opciones": [
+        "Gohan",
+        "Raditz",
+        "Bardock",
+        "Vegeta"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Anime y manga"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    }
+  ]
+}

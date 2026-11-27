@@ -1,0 +1,145 @@
+{
+  "formato": "konkursox-banco",
+  "version": 1,
+  "nombre": "Famosos · Fácil",
+  "grupo": "Open Trivia DB",
+  "licencia": "Preguntas de Open Trivia Database (opentdb.com), licencia CC BY-SA 4.0, traducidas y adaptadas al español. Este banco se distribuye con la misma licencia (CC BY-SA 4.0).",
+  "preguntas": [
+    {
+      "id": "o4625",
+      "tipo": "test",
+      "enunciado": "¿De qué murió Marilyn Monroe?",
+      "opciones": [
+        "De una sobredosis",
+        "De un disparo",
+        "De un ataque con cuchillo",
+        "En un incendio"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Famosos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4628",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama la estación de esquí de Utah que compró Robert Redford, con el nombre de un personaje suyo?",
+      "opciones": [
+        "Woodward",
+        "Aspen",
+        "Sundance",
+        "Vail"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Famosos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4629",
+      "tipo": "test",
+      "enunciado": "¿Qué actriz se casó con Michael Douglas en 2000?",
+      "opciones": [
+        "Catherine Zeta-Jones",
+        "Nicole Kidman",
+        "Sharon Stone",
+        "Kim Basinger"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Famosos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4631",
+      "tipo": "test",
+      "enunciado": "¿Con qué nombre es más conocido Aubrey Graham?",
+      "opciones": [
+        "Lil Wayne",
+        "Drake",
+        "Travis Scott",
+        "2 Chainz"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Famosos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4632",
+      "tipo": "test",
+      "enunciado": "¿Con qué nombre es más conocido Carlos Estévez?",
+      "opciones": [
+        "Bruno Mars",
+        "Charlie Sheen",
+        "Ricky Martin",
+        "Joaquin Phoenix"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Famosos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4634",
+      "tipo": "test",
+      "enunciado": "¿Con qué nombre es más conocido Ramón Estévez?",
+      "opciones": [
+        "Emilio Estévez",
+        "Charlie Sheen",
+        "Antonio Banderas",
+        "Martin Sheen"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Famosos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4635",
+      "tipo": "test",
+      "enunciado": "¿Qué famoso anunció en 2015 que se presentaría a presidente de EE. UU.?",
+      "opciones": [
+        "Tom Hanks",
+        "Leonardo DiCaprio",
+        "Miley Cyrus",
+        "Kanye West"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Famosos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4636",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama la hija de Gwyneth Paltrow?",
+      "opciones": [
+        "Lily",
+        "Dakota",
+        "French",
+        "Apple"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Famosos"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    }
+  ]
+}

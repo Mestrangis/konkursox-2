@@ -1,0 +1,2491 @@
+{
+  "formato": "konkursox-banco",
+  "version": 1,
+  "nombre": "Cultura general · Fácil",
+  "grupo": "Open Trivia DB",
+  "licencia": "Preguntas de Open Trivia Database (opentdb.com), licencia CC BY-SA 4.0, traducidas y adaptadas al español. Este banco se distribuye con la misma licencia (CC BY-SA 4.0).",
+  "preguntas": [
+    {
+      "id": "o0",
+      "tipo": "test",
+      "enunciado": "¿Qué cadena de comida rápida tiene un payaso como mascota?",
+      "opciones": [
+        "KFC",
+        "McDonald's",
+        "Telepizza",
+        "Burger King"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2",
+      "tipo": "test",
+      "enunciado": "¿Cuántas cartas tiene una baraja francesa estándar (la del póker)?",
+      "opciones": [
+        "40",
+        "64",
+        "52",
+        "32"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3",
+      "tipo": "test",
+      "enunciado": "¿De qué aerolínea era el avión que se estrelló frente a la costa de Nueva Escocia (Canadá) en 1998?",
+      "opciones": [
+        "British Airways",
+        "TWA",
+        "Swissair",
+        "Air France"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4",
+      "tipo": "test",
+      "enunciado": "¿Cuál es la moneda de la India y de Pakistán, entre otros países asiáticos?",
+      "opciones": [
+        "Rupia",
+        "Dinar",
+        "Peso",
+        "Riyal"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos juegos de cartas gira en torno a números y colores?",
+      "opciones": [
+        "Dixit",
+        "UNO",
+        "Twister",
+        "Munchkin"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o6",
+      "tipo": "test",
+      "enunciado": "¿Qué juego musical desarrolló Harmonix?",
+      "opciones": [
+        "Guitar Hero Live",
+        "Rock Band",
+        "Dance Dance Revolution",
+        "Beatmania"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o7",
+      "tipo": "test",
+      "enunciado": "¿Cómo llaman los marineros al lado derecho de un barco?",
+      "opciones": [
+        "Estribor",
+        "Proa",
+        "Babor",
+        "Popa"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o8",
+      "tipo": "test",
+      "enunciado": "¿Qué empresa desarrolló a la vocaloid Hatsune Miku?",
+      "opciones": [
+        "Yamaha",
+        "Sega",
+        "Crypton Future Media",
+        "Sony"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o10",
+      "tipo": "test",
+      "enunciado": "¿Cómo se dice «sombrero» en francés?",
+      "opciones": [
+        "Bonnet",
+        "Chapeau",
+        "Casque",
+        "Écharpe"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o11",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama el pedal de más que tiene un coche con cambio manual?",
+      "opciones": [
+        "Palanca",
+        "Embrague",
+        "Freno de mano",
+        "Servofreno"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o13",
+      "tipo": "test",
+      "enunciado": "¿Cuál es el primer libro del Antiguo Testamento?",
+      "opciones": [
+        "Génesis",
+        "Levítico",
+        "Éxodo",
+        "Números"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o14",
+      "tipo": "test",
+      "enunciado": "¿Los restos de qué explorador inglés de Australia se encontraron en Londres en enero de 2019?",
+      "opciones": [
+        "William Burke",
+        "Abel Tasman",
+        "Matthew Flinders",
+        "Dirk Hartog"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o16",
+      "tipo": "test",
+      "enunciado": "¿Qué fase de la respiración celular produce la mayor parte del ATP?",
+      "opciones": [
+        "Glucólisis",
+        "Fosforilación oxidativa",
+        "Oxidación del piruvato",
+        "Ciclo de Calvin"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o18",
+      "tipo": "test",
+      "enunciado": "¿Qué país desarrolló el fusil de asalto AK-47?",
+      "opciones": [
+        "Unión Soviética",
+        "Israel",
+        "Irán",
+        "Polonia"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o19",
+      "tipo": "test",
+      "enunciado": "¿Qué representa el símbolo del signo del zodiaco Géminis?",
+      "opciones": [
+        "La balanza",
+        "La virgen",
+        "Los peces",
+        "Los gemelos"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o20",
+      "tipo": "test",
+      "enunciado": "¿Quién fue el primer presidente de México?",
+      "opciones": [
+        "Benito Juárez",
+        "Miguel Hidalgo y Costilla",
+        "Vicente Guerrero",
+        "Guadalupe Victoria"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o21",
+      "tipo": "test",
+      "enunciado": "¿Qué fruta lleva tradicionalmente la tarta Selva Negra?",
+      "opciones": [
+        "Albaricoques",
+        "Pasas",
+        "Manzanas",
+        "Cerezas"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o22",
+      "tipo": "test",
+      "enunciado": "«A3», «B1» y «Legal» son nombres de tamaños de...",
+      "opciones": [
+        "Pantallas de móvil",
+        "Aviones",
+        "Libros de leyes",
+        "Papel"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o23",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estas universidades NO es de la Ivy League?",
+      "opciones": [
+        "Princeton",
+        "Pensilvania",
+        "Harvard",
+        "Stanford"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o24",
+      "tipo": "test",
+      "enunciado": "Cuando alguien todavía no tiene experiencia, se dice que está...",
+      "opciones": [
+        "Azul",
+        "Amarillo",
+        "Rojo",
+        "Verde"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o25",
+      "tipo": "test",
+      "enunciado": "¿En qué estado de EE. UU. está el Área 51?",
+      "opciones": [
+        "Nuevo México",
+        "Utah",
+        "Arizona",
+        "Nevada"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o26",
+      "tipo": "test",
+      "enunciado": "¿Con qué empresa colaboró Valve para crear las gafas de realidad virtual Vive?",
+      "opciones": [
+        "Razer",
+        "Google",
+        "HTC",
+        "Oculus"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o27",
+      "tipo": "test",
+      "enunciado": "¿Qué significa la «S» de la tarjeta SIM?",
+      "opciones": [
+        "Secure (segura)",
+        "Solid (sólida)",
+        "Subscriber (abonado)",
+        "Single (única)"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o28",
+      "tipo": "test",
+      "enunciado": "Según el Génesis, ¿cuántos días tardó Dios en crear el mundo?",
+      "opciones": [
+        "Seis",
+        "Doce",
+        "Uno",
+        "Siete"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o29",
+      "tipo": "test",
+      "enunciado": "¿Sobre qué camina un funambulista?",
+      "opciones": [
+        "La Luna",
+        "Una cuerda floja",
+        "Pelotas",
+        "Cristales rotos"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o30",
+      "tipo": "test",
+      "enunciado": "¿Cuál es el planeta más cercano al Sol?",
+      "opciones": [
+        "Júpiter",
+        "Mercurio",
+        "La Tierra",
+        "Marte"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o31",
+      "tipo": "test",
+      "enunciado": "¿De qué están hechos los sombreros de Panamá?",
+      "opciones": [
+        "Cáñamo",
+        "Paja toquilla",
+        "Lino",
+        "Seda"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o34",
+      "tipo": "test",
+      "enunciado": "¿Por qué el cielo nocturno es oscuro?",
+      "opciones": [
+        "Porque las nubes de polvo absorben la luz",
+        "Porque el universo tiene una edad y un tamaño finitos",
+        "Por la mecánica cuántica",
+        "Porque el corrimiento al rojo no deja ver las estrellas lejanas"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o36",
+      "tipo": "test",
+      "enunciado": "¿Cuándo salió Pong?",
+      "opciones": [
+        "29 de noviembre de 1972",
+        "14 de diciembre de 1974",
+        "29 de marzo de 2017",
+        "29 de noviembre de 1970"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o37",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos meses tiene más días?",
+      "opciones": [
+        "Diciembre",
+        "Noviembre",
+        "Abril",
+        "Septiembre"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o38",
+      "tipo": "test",
+      "enunciado": "¿Cuál es el código IATA del aeropuerto de Mánchester?",
+      "opciones": [
+        "LHR",
+        "EGLL",
+        "MAN",
+        "EGCC"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o39",
+      "tipo": "test",
+      "enunciado": "¿Cuántos colores tiene el arcoíris?",
+      "opciones": [
+        "8",
+        "9",
+        "7",
+        "10"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o40",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estas fiestas NO se celebra normalmente en diciembre?",
+      "opciones": [
+        "Navidad",
+        "Acción de Gracias",
+        "Kwanzaa",
+        "Janucá"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o41",
+      "tipo": "test",
+      "enunciado": "¿Qué fruto seco se usa para hacer mazapán?",
+      "opciones": [
+        "Almendras",
+        "Cacahuetes",
+        "Nueces",
+        "Pistachos"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o43",
+      "tipo": "test",
+      "enunciado": "¿Qué componente de la sangre forma un tapón en las heridas?",
+      "opciones": [
+        "Plaquetas",
+        "Glóbulos blancos",
+        "Glóbulos rojos",
+        "Plasma"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o44",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos países NO combatió en la Primera Guerra Mundial?",
+      "opciones": [
+        "Portugal",
+        "Grecia",
+        "Rumanía",
+        "Dinamarca"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o49",
+      "tipo": "test",
+      "enunciado": "En Half-Life, ¿cómo se llama el alienígena que se engancha a la cabeza?",
+      "opciones": [
+        "Vortigaunt",
+        "Facehugger",
+        "Bullsquid",
+        "Headcrab"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o50",
+      "tipo": "test",
+      "enunciado": "¿Quién aparece en el billete de 100 dólares estadounidense?",
+      "opciones": [
+        "Abraham Lincoln",
+        "Thomas Jefferson",
+        "George Washington",
+        "Benjamin Franklin"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o52",
+      "tipo": "test",
+      "enunciado": "¿De qué religión abrahámica es libro sagrado el Corán?",
+      "opciones": [
+        "Judaísmo",
+        "Rastafarismo",
+        "Islam",
+        "Cristianismo"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o53",
+      "tipo": "test",
+      "enunciado": "¿Cuándo salió a la venta la PlayStation 3?",
+      "opciones": [
+        "11 de noviembre de 2006",
+        "16 de julio de 2006",
+        "25 de diciembre de 2007",
+        "8 de enero de 2007"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o56",
+      "tipo": "test",
+      "enunciado": "¿Qué bebida alcohólica, hecha de patata o de cereales, es originaria de Polonia y Rusia?",
+      "opciones": [
+        "Vodka",
+        "Ron",
+        "Sake",
+        "Absenta"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o57",
+      "tipo": "test",
+      "enunciado": "¿Cuál es el idioma oficial y más hablado de Cuba?",
+      "opciones": [
+        "Italiano",
+        "Portugués",
+        "Español",
+        "Francés"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o60",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama el símbolo «&»?",
+      "opciones": [
+        "Ochobarra",
+        "Ampersand",
+        "Óbelo",
+        "Signo de suma"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o62",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos colores NO aparece en el logotipo de Google?",
+      "opciones": [
+        "Rosa",
+        "Verde",
+        "Amarillo",
+        "Azul"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o63",
+      "tipo": "test",
+      "enunciado": "Si vas a 80 km/h, ¿cuánto tardas en recorrer 80 km?",
+      "opciones": [
+        "90 minutos",
+        "30 minutos",
+        "60 minutos",
+        "50 minutos"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o64",
+      "tipo": "test",
+      "enunciado": "¿Qué país ha tenido primeros ministros llamados Eden, Major, Peel, Law, Brown y Heath?",
+      "opciones": [
+        "Australia",
+        "Nueva Zelanda",
+        "Reino Unido",
+        "Canadá"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o68",
+      "tipo": "test",
+      "enunciado": "¿A qué tiene miedo una persona con cinofobia?",
+      "opciones": [
+        "A volar",
+        "A los perros",
+        "A los pájaros",
+        "A los gérmenes"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o69",
+      "tipo": "test",
+      "enunciado": "¿Cuánto mide el Burj Khalifa de Dubái?",
+      "opciones": [
+        "728 metros",
+        "628 metros",
+        "921 metros",
+        "828 metros"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o70",
+      "tipo": "test",
+      "enunciado": "La tripofobia es el miedo a...",
+      "opciones": [
+        "Nadar en aguas profundas",
+        "Hablar en público",
+        "Comer demasiado",
+        "Los grupos de agujeros"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o71",
+      "tipo": "test",
+      "enunciado": "¿Cuál es el mes más corto del año?",
+      "opciones": [
+        "Septiembre",
+        "Diciembre",
+        "Abril",
+        "Febrero"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o72",
+      "tipo": "test",
+      "enunciado": "Cuando alguien tiene envidia, se dice que se pone ¿de qué color?",
+      "opciones": [
+        "Amarillo",
+        "Rojo",
+        "Azul",
+        "Verde"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o73",
+      "tipo": "test",
+      "enunciado": "¿Con qué grupo cómico británico trabajó como animador Terry Gilliam?",
+      "opciones": [
+        "The League of Gentlemen",
+        "The Penny Dreadfuls",
+        "The Goodies",
+        "Monty Python"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o75",
+      "tipo": "test",
+      "enunciado": "¿Qué empresa es la dueña de Outlook?",
+      "opciones": [
+        "Google",
+        "Apple",
+        "Yahoo",
+        "Microsoft"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o76",
+      "tipo": "test",
+      "enunciado": "¿Dónde está la estación de tren de Llanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogoch?",
+      "opciones": [
+        "República Checa",
+        "Dinamarca",
+        "Gales",
+        "Moldavia"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o77",
+      "tipo": "test",
+      "enunciado": "¿A quién se considera el «padre de la filosofía moderna»?",
+      "opciones": [
+        "René Descartes",
+        "Antoine Lavoisier",
+        "Albert Einstein",
+        "Platón"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o78",
+      "tipo": "test",
+      "enunciado": "¿Cuál de los tres astronautas del Apolo 11 NO pisó la Luna?",
+      "opciones": [
+        "Ninguno de ellos",
+        "Michael Collins",
+        "Neil Armstrong",
+        "Buzz Aldrin"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o79",
+      "tipo": "test",
+      "enunciado": "En una diana de dardos, ¿qué número está justo enfrente del 1?",
+      "opciones": [
+        "12",
+        "19",
+        "15",
+        "20"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o80",
+      "tipo": "test",
+      "enunciado": "¿Quién interpretó al general Aladeen en El dictador?",
+      "opciones": [
+        "Sacha Baron Cohen",
+        "James Franco",
+        "Leonardo DiCaprio",
+        "Johnny Depp"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o81",
+      "tipo": "test",
+      "enunciado": "¿Cuál es la letra que más se usa en español?",
+      "opciones": [
+        "O",
+        "S",
+        "E",
+        "A"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o82",
+      "tipo": "test",
+      "enunciado": "¿Cuántas estrellas tiene la bandera de la Unión Europea?",
+      "opciones": [
+        "16",
+        "10",
+        "12",
+        "14"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o83",
+      "tipo": "test",
+      "enunciado": "¿Qué cubierto es el más adecuado para tomar sopa?",
+      "opciones": [
+        "Tenedor",
+        "Cuchara",
+        "Palillos",
+        "Cuchillo"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o84",
+      "tipo": "test",
+      "enunciado": "¿De qué país europeo es el queso gouda?",
+      "opciones": [
+        "Bélgica",
+        "Países Bajos",
+        "Francia",
+        "Alemania"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o85",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama el protagonista de la saga Dead Space?",
+      "opciones": [
+        "Isaac Clarke",
+        "Capitán Kirk",
+        "Ellen Ripley",
+        "Comandante Shepard"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o87",
+      "tipo": "test",
+      "enunciado": "¿Por qué producto es famosa la marca estadounidense Campbell's?",
+      "opciones": [
+        "Salchichas",
+        "Chocolate",
+        "Sopas en lata",
+        "Refrescos"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o88",
+      "tipo": "test",
+      "enunciado": "¿Cómo se dice «pez» en francés?",
+      "opciones": [
+        "Fiche",
+        "Escargot",
+        "Poisson",
+        "Mer"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o90",
+      "tipo": "test",
+      "enunciado": "En Shrek, ¿qué cómico pone la voz original de Asno?",
+      "opciones": [
+        "Eddie Murphy",
+        "Chris Rock",
+        "Richard Pryor",
+        "Bernie Mac"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o91",
+      "tipo": "test",
+      "enunciado": "¿Cuántos meses del año empiezan por J?",
+      "opciones": [
+        "Dos",
+        "Cuatro",
+        "Tres",
+        "Uno"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o93",
+      "tipo": "test",
+      "enunciado": "¿Qué canal une el mar Mediterráneo con el mar Rojo?",
+      "opciones": [
+        "Canal de Panamá",
+        "Canal del Sinaí",
+        "Canal de Suez",
+        "Canal de Karakum"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o96",
+      "tipo": "test",
+      "enunciado": "¿Qué idioma es el más hablado en Suiza?",
+      "opciones": [
+        "Suizo",
+        "Francés",
+        "Italiano",
+        "Alemán"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o97",
+      "tipo": "test",
+      "enunciado": "¿Por qué punto cardinal sale el Sol?",
+      "opciones": [
+        "Sur",
+        "Norte",
+        "Oeste",
+        "Este"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o98",
+      "tipo": "test",
+      "enunciado": "¿Qué planeta no lleva el nombre de un dios griego o romano?",
+      "opciones": [
+        "Marte",
+        "Mercurio",
+        "Júpiter",
+        "La Tierra"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o100",
+      "tipo": "test",
+      "enunciado": "¿Cómo llaman los marineros a la parte delantera de un barco?",
+      "opciones": [
+        "Babor",
+        "Popa",
+        "Estribor",
+        "Proa"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o101",
+      "tipo": "test",
+      "enunciado": "¿Cuál es el órgano más grande del cuerpo humano?",
+      "opciones": [
+        "La piel",
+        "El hígado",
+        "El intestino grueso",
+        "El corazón"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o103",
+      "tipo": "test",
+      "enunciado": "¿Qué tecnología lleva el nombre de un rey de Dinamarca y Noruega del siglo X?",
+      "opciones": [
+        "GPS",
+        "Bluetooth",
+        "Internet",
+        "Wi-Fi"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o106",
+      "tipo": "test",
+      "enunciado": "¿Qué presidente estadounidense aparece en el billete de un dólar?",
+      "opciones": [
+        "Abraham Lincoln",
+        "Benjamin Franklin",
+        "George Washington",
+        "Thomas Jefferson"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o107",
+      "tipo": "test",
+      "enunciado": "En aerodinámica, ¿qué fuerza empuja un objeto hacia arriba?",
+      "opciones": [
+        "Resistencia",
+        "Sustentación",
+        "Empuje",
+        "Peso"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o109",
+      "tipo": "test",
+      "enunciado": "¿Qué se expone en el museo Madame Tussauds de Londres?",
+      "opciones": [
+        "Coches antiguos",
+        "Figuras de cera",
+        "Ropa de diseño",
+        "Películas inéditas"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o111",
+      "tipo": "test",
+      "enunciado": "¿Cómo llaman los marineros a la parte trasera de un barco?",
+      "opciones": [
+        "Babor",
+        "Proa",
+        "Popa",
+        "Estribor"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o112",
+      "tipo": "test",
+      "enunciado": "¿Qué forma tienen normalmente las señales de stop?",
+      "opciones": [
+        "Hexágono",
+        "Triángulo",
+        "Octógono",
+        "Círculo"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o115",
+      "tipo": "test",
+      "enunciado": "¿Cuántas sílabas tiene un haiku?",
+      "opciones": [
+        "17",
+        "15",
+        "10",
+        "21"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o117",
+      "tipo": "test",
+      "enunciado": "¿Qué es Tasmania?",
+      "opciones": [
+        "Un trastorno psicológico",
+        "Un estado de Australia",
+        "Un sabor de helado de Ben & Jerry's",
+        "Un personaje de Warner Bros."
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o118",
+      "tipo": "test",
+      "enunciado": "¿Qué palabra representa la letra T en el alfabeto fonético de la OTAN?",
+      "opciones": [
+        "Target",
+        "Taxi",
+        "Tango",
+        "Turkey"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o119",
+      "tipo": "test",
+      "enunciado": "¿Quién fabricó la primera tableta de chocolate, en 1847?",
+      "opciones": [
+        "Andrew Johnson",
+        "John Cadbury",
+        "Joseph Fry",
+        "John Tyler"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o121",
+      "tipo": "test",
+      "enunciado": "Según Sherlock Holmes, «cuando se ha eliminado lo imposible, lo que queda, por improbable que parezca, debe ser...»",
+      "opciones": [
+        "El origen",
+        "La respuesta",
+        "La causa",
+        "La verdad"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o123",
+      "tipo": "test",
+      "enunciado": "¿Cuál es la capital de España?",
+      "opciones": [
+        "Barcelona",
+        "Lisboa",
+        "París",
+        "Madrid"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o124",
+      "tipo": "test",
+      "enunciado": "¿De qué país vienen el sushi y el karaoke?",
+      "opciones": [
+        "Corea del Sur",
+        "China",
+        "Vietnam",
+        "Japón"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o125",
+      "tipo": "test",
+      "enunciado": "¿Qué significan las siglas RAM?",
+      "opciones": [
+        "Rapid Access Module",
+        "Random Assist Memory",
+        "Read Archive Memory",
+        "Random Access Memory (memoria de acceso aleatorio)"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o126",
+      "tipo": "test",
+      "enunciado": "Virgin Trains, Virgin Atlantic y Virgin Racing son empresas de qué famoso empresario?",
+      "opciones": [
+        "Richard Branson",
+        "Bill Gates",
+        "Donald Trump",
+        "Alan Sugar"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o127",
+      "tipo": "test",
+      "enunciado": "¿Qué estilo de cerveza suele llevar más lúpulo de lo normal?",
+      "opciones": [
+        "Scotch Ale",
+        "India Pale Ale (IPA)",
+        "Extra Special Bitter",
+        "Stout"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o129",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos presidentes NO está esculpido en el monte Rushmore?",
+      "opciones": [
+        "John F. Kennedy",
+        "Abraham Lincoln",
+        "Thomas Jefferson",
+        "Theodore Roosevelt"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o131",
+      "tipo": "test",
+      "enunciado": "¿En qué país se fundó Hyundai?",
+      "opciones": [
+        "Japón",
+        "China",
+        "Corea del Sur",
+        "Rusia"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o132",
+      "tipo": "test",
+      "enunciado": "¿Qué órgano del cuerpo produce la bilis?",
+      "opciones": [
+        "La vesícula biliar",
+        "El hígado",
+        "El estómago",
+        "El páncreas"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o133",
+      "tipo": "test",
+      "enunciado": "¿Qué pieza mecánica va en el centro de los fidget spinners?",
+      "opciones": [
+        "Ejes",
+        "Rodamientos",
+        "Correas",
+        "Engranajes"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o134",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama el Año Nuevo judío?",
+      "opciones": [
+        "Rosh Hashaná",
+        "Sucot",
+        "Elul",
+        "Purim"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o135",
+      "tipo": "test",
+      "enunciado": "¿Qué signo del zodiaco se representa con una balanza?",
+      "opciones": [
+        "Libra",
+        "Sagitario",
+        "Aries",
+        "Capricornio"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o136",
+      "tipo": "test",
+      "enunciado": "¿A qué se dedica Maye Musk, la madre de Elon Musk?",
+      "opciones": [
+        "Es música",
+        "Es profesora",
+        "Es modelo",
+        "Es bióloga"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o137",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos colores NO forma parte del arcoíris?",
+      "opciones": [
+        "Azul",
+        "Naranja",
+        "Rosa",
+        "Violeta"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o138",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama el telescopio espacial más famoso de la NASA?",
+      "opciones": [
+        "Gran Ojo",
+        "Telescopio espacial Hubble",
+        "Estrella de la Muerte",
+        "Halcón Milenario"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o139",
+      "tipo": "test",
+      "enunciado": "¿Qué país lleva la Union Jack en su bandera?",
+      "opciones": [
+        "Nueva Zelanda",
+        "Sudáfrica",
+        "Canadá",
+        "Hong Kong"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o142",
+      "tipo": "test",
+      "enunciado": "¿Qué es el H2O?",
+      "opciones": [
+        "Oxígeno",
+        "Hidrógeno",
+        "Agua",
+        "Nada"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o143",
+      "tipo": "test",
+      "enunciado": "¿Qué forma tiene el juguete que inventó el profesor húngaro Ernő Rubik?",
+      "opciones": [
+        "Una esfera",
+        "Un cilindro",
+        "Un cubo",
+        "Una pirámide"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o145",
+      "tipo": "test",
+      "enunciado": "¿Qué signo del zodiaco se representa con un cangrejo?",
+      "opciones": [
+        "Sagitario",
+        "Libra",
+        "Virgo",
+        "Cáncer"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o146",
+      "tipo": "test",
+      "enunciado": "¿Cuál es el idioma oficial de Brasil?",
+      "opciones": [
+        "Español",
+        "Inglés",
+        "Brasileño",
+        "Portugués"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o147",
+      "tipo": "test",
+      "enunciado": "¿Qué signo del zodiaco va entre Virgo y Escorpio?",
+      "opciones": [
+        "Tauro",
+        "Capricornio",
+        "Géminis",
+        "Libra"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o148",
+      "tipo": "test",
+      "enunciado": "¿Qué animal era Harambe, al que dispararon tras caer un niño en su recinto del zoo de Cincinnati?",
+      "opciones": [
+        "Un tigre",
+        "Un panda",
+        "Un cocodrilo",
+        "Un gorila"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o149",
+      "tipo": "test",
+      "enunciado": "¿Qué significan las siglas GMT de los husos horarios?",
+      "opciones": [
+        "General Median Time",
+        "Global Meridian Time",
+        "Glasgow Main Time",
+        "Greenwich Mean Time"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o151",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estas espadas NO es un diseño típico europeo?",
+      "opciones": [
+        "La flamígera",
+        "La cimitarra",
+        "La Ulfberht",
+        "El bracamarte"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o152",
+      "tipo": "test",
+      "enunciado": "¿En qué año se independizó Ghana?",
+      "opciones": [
+        "1960",
+        "1957",
+        "1958",
+        "1947"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o153",
+      "tipo": "test",
+      "enunciado": "En los grupos sanguíneos, el signo + o − detrás de A, B, AB o 0 es el factor Rh. ¿De dónde viene su descubrimiento?",
+      "opciones": [
+        "De personas pelirrojas",
+        "De los monos rhesus",
+        "De los rizomas",
+        "De enfermos de reumatismo"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o155",
+      "tipo": "test",
+      "enunciado": "¿Quién escribió Parque Jurásico?",
+      "opciones": [
+        "Chuck Palahniuk",
+        "Irvine Welsh",
+        "Michael Crichton",
+        "Peter Benchley"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o156",
+      "tipo": "test",
+      "enunciado": "¿Qué significan las siglas VR?",
+      "opciones": [
+        "Reconocimiento de voz",
+        "Realidad virtual",
+        "Reconocimiento visual",
+        "Muy real"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o157",
+      "tipo": "test",
+      "enunciado": "¿Qué significan las siglas de la cadena KFC?",
+      "opciones": [
+        "Kentucky Fresh Cheese",
+        "Kentucky Fried Chicken",
+        "Kansas Food Company",
+        "King Fried Chicken"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o158",
+      "tipo": "test",
+      "enunciado": "Un delincuente que ha «maquillado las cuentas» ha cometido...",
+      "opciones": [
+        "Chantaje",
+        "Fraude contable",
+        "Blanqueo de capitales",
+        "Extorsión"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o159",
+      "tipo": "test",
+      "enunciado": "¿Cuántas letras tiene el abecedario inglés?",
+      "opciones": [
+        "26",
+        "24",
+        "28",
+        "23"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o160",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos lugares NO está en Nueva York?",
+      "opciones": [
+        "Central Park",
+        "El Empire State",
+        "El Monumento a Lincoln",
+        "Times Square"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o161",
+      "tipo": "test",
+      "enunciado": "¿Contra qué se toman normalmente los antibióticos?",
+      "opciones": [
+        "Virus",
+        "Dolores musculares",
+        "Infecciones bacterianas",
+        "Migrañas"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o163",
+      "tipo": "test",
+      "enunciado": "¿De qué parte del pato o de la oca se hace el foie gras?",
+      "opciones": [
+        "El corazón",
+        "El hígado",
+        "El estómago",
+        "Los intestinos"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o164",
+      "tipo": "test",
+      "enunciado": "¿Cuál fue la primera línea del metro de Londres?",
+      "opciones": [
+        "Metropolitan",
+        "Bakerloo",
+        "Circle",
+        "Victoria"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o165",
+      "tipo": "test",
+      "enunciado": "¿Quién es la persona más joven en recibir un Premio Nobel?",
+      "opciones": [
+        "Malala Yousafzai",
+        "Werner Heisenberg",
+        "Lawrence Bragg",
+        "Yasser Arafat"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o167",
+      "tipo": "test",
+      "enunciado": "¿Qué elemento químico, el número 11 de la tabla periódica, tiene el símbolo Na?",
+      "opciones": [
+        "Carbono",
+        "Plomo",
+        "Sodio",
+        "Nitrógeno"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o168",
+      "tipo": "test",
+      "enunciado": "¿En qué año se fundó Reddit?",
+      "opciones": [
+        "2005",
+        "2008",
+        "2004",
+        "2006"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o169",
+      "tipo": "test",
+      "enunciado": "¿En qué generación de los juegos principales de Pokémon apareció el tipo hada?",
+      "opciones": [
+        "6.ª",
+        "2.ª",
+        "7.ª",
+        "4.ª"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o170",
+      "tipo": "test",
+      "enunciado": "¿Cuál es la segunda lengua materna más hablada en España?",
+      "opciones": [
+        "Francés",
+        "Gallego",
+        "Portugués",
+        "Catalán"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o171",
+      "tipo": "test",
+      "enunciado": "¿Cómo llaman los marineros al lado izquierdo de un barco?",
+      "opciones": [
+        "Proa",
+        "Popa",
+        "Estribor",
+        "Babor"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o173",
+      "tipo": "test",
+      "enunciado": "¿Qué presidente aparece en el raro billete estadounidense de 2 dólares?",
+      "opciones": [
+        "Ulysses Grant",
+        "Martin Van Buren",
+        "John Quincy Adams",
+        "Thomas Jefferson"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o174",
+      "tipo": "test",
+      "enunciado": "¿Qué es el «dab»?",
+      "opciones": [
+        "Un idioma",
+        "Una prueba médica",
+        "Un deporte",
+        "Un baile"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o175",
+      "tipo": "test",
+      "enunciado": "¿Qué bebida alcohólica se hace con melaza de caña?",
+      "opciones": [
+        "Whisky",
+        "Ginebra",
+        "Vodka",
+        "Ron"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o176",
+      "tipo": "test",
+      "enunciado": "¿Cuántas cosas son una docena?",
+      "opciones": [
+        "20",
+        "12",
+        "10",
+        "6"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o177",
+      "tipo": "test",
+      "enunciado": "¿En qué juego apareció Waluigi por primera vez?",
+      "opciones": [
+        "Mario Party (N64)",
+        "Mario Tennis (N64)",
+        "Super Smash Bros. Ultimate",
+        "Wario Land: Super Mario Land 3"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o179",
+      "tipo": "test",
+      "enunciado": "¿Qué tipo de aeronave desarrolló Igor Sikorsky en Estados Unidos en 1942?",
+      "opciones": [
+        "Un avión a reacción",
+        "Una cápsula espacial",
+        "Un helicóptero",
+        "Un dirigible invisible"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o181",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama el perímetro de un círculo?",
+      "opciones": [
+        "Arco",
+        "Circunferencia",
+        "Radio",
+        "Diámetro"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o185",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama la jugada de póker con un trío y una pareja?",
+      "opciones": [
+        "Carta alta",
+        "Color",
+        "Full",
+        "Escalera"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o187",
+      "tipo": "test",
+      "enunciado": "¿Qué significa la F de FBI?",
+      "opciones": [
+        "Foreign (extranjero)",
+        "Federal",
+        "First (primero)",
+        "Formal"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o188",
+      "tipo": "test",
+      "enunciado": "¿En qué ciudad sudamericana nació el cártel de Pablo Escobar?",
+      "opciones": [
+        "Medellín",
+        "Bogotá",
+        "Cali",
+        "Quito"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o189",
+      "tipo": "test",
+      "enunciado": "En los cómics de DC, ¿dónde vive Flecha Verde (Oliver Queen)?",
+      "opciones": [
+        "Star City",
+        "Gotham City",
+        "Central City",
+        "Metrópolis"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o193",
+      "tipo": "test",
+      "enunciado": "¿De qué país es la leyenda de Robin Hood?",
+      "opciones": [
+        "Inglaterra",
+        "Francia",
+        "Portugal",
+        "Escocia"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o194",
+      "tipo": "test",
+      "enunciado": "En la saga Kingdom Hearts, ¿qué forma tiene el arma del protagonista?",
+      "opciones": [
+        "De llave",
+        "De espada",
+        "De bolígrafo",
+        "De móvil"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o196",
+      "tipo": "test",
+      "enunciado": "¿En qué galaxia está la Tierra?",
+      "opciones": [
+        "La Galaxy Note",
+        "El agujero negro",
+        "La galaxia de Marte",
+        "La Vía Láctea"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o198",
+      "tipo": "test",
+      "enunciado": "En Katamari Damacy, ¿a qué personaje controlas?",
+      "opciones": [
+        "A Ichigo",
+        "A Fujio",
+        "A Foomin",
+        "Al Príncipe"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o199",
+      "tipo": "test",
+      "enunciado": "¿Qué elemento químico tiene el símbolo Kr?",
+      "opciones": [
+        "Curio",
+        "Queroseno",
+        "Kinetio",
+        "Kriptón"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o200",
+      "tipo": "test",
+      "enunciado": "¿Cómo se dice «Polonia» en polaco?",
+      "opciones": [
+        "Pupcia",
+        "Póland",
+        "Polszka",
+        "Polska"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o202",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos juegos de Marvel salió para PlayStation 2?",
+      "opciones": [
+        "Howard el Pato",
+        "Spider-Man 2",
+        "Wolverine: Adamantium Rage",
+        "Silver Surfer"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o204",
+      "tipo": "test",
+      "enunciado": "¿Cuál es la especie de pingüino más grande que existe?",
+      "opciones": [
+        "Pingüino papúa",
+        "Pingüino de Adelia",
+        "Pingüino emperador",
+        "Pingüino rey"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o206",
+      "tipo": "test",
+      "enunciado": "¿Cómo se dice «adiós» en italiano?",
+      "opciones": [
+        "Tschüss",
+        "Ciao",
+        "Au revoir",
+        "Hola"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o207",
+      "tipo": "test",
+      "enunciado": "Sin contar Japón, ¿qué país tiene más personas de origen japonés?",
+      "opciones": [
+        "Estados Unidos",
+        "Brasil",
+        "China",
+        "Corea del Sur"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o210",
+      "tipo": "test",
+      "enunciado": "¿De quién es la frase «lo que no te mata te hace más fuerte»?",
+      "opciones": [
+        "G. Gordon Liddy",
+        "Christopher Hitchens",
+        "Friedrich Nietzsche",
+        "Kelly Clarkson"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    }
+  ]
+}

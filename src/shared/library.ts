@@ -31,6 +31,10 @@ export interface LibBankInfo {
   nombre: string
   count: number
   used: number
+  /** grupo en la navegación (p. ej. "Open Trivia DB") */
+  grupo?: string
+  /** banco generado por "Partida mezclada" */
+  mezcla?: boolean
   /** rosco: letras con definición y respuesta */
   letters?: number
 }
@@ -80,15 +84,21 @@ export function splitBank(bank: Bank, file: string, used: Record<string, unknown
   return out
 }
 
-export const sortRosco = (qs: Question[]): Question[] =>
-  [...qs].sort((a, b) => ROSCO_ALPHABET.indexOf(a.letra ?? '') - ROSCO_ALPHABET.indexOf(b.letra ?? ''))
+export const sortRosco = (qs: Question[]): Question[] => [...qs].sort((a, b) => ROSCO_ALPHABET.indexOf(a.letra ?? '') - ROSCO_ALPHABET.indexOf(b.letra ?? ''))
 
 /** Pregunta en formato de archivo (lo que se guarda en el JSON). */
 export function toFileQuestion(q: Question): Record<string, unknown> {
   const extra: Record<string, unknown> = {}
   if (q.imagen) extra.imagen = q.imagen
+  if (q.imagen_modo === 'manual') extra.imagen_modo = 'manual'
+  if (q.imagen_sugerida) extra.imagen_sugerida = q.imagen_sugerida
+  if (q.imagen_respuesta) extra.imagen_respuesta = q.imagen_respuesta
+  if (q.imagen_respuesta_sugerida) extra.imagen_respuesta_sugerida = q.imagen_respuesta_sugerida
   if (q.nota_presentador) extra.nota_presentador = q.nota_presentador
   if (q.dificultad !== undefined) extra.dificultad = q.dificultad
+  if (q.etiquetas?.length) extra.etiquetas = q.etiquetas
+  if (q.sin_revisar) extra.sin_revisar = true
+  if (q.origen) extra.origen = q.origen
   if (q.usada) extra.usada = q.usada
   switch (q.tipo) {
     case 'rosco':
@@ -113,7 +123,15 @@ export function toFileQuestion(q: Question): Record<string, unknown> {
 }
 
 export function toFileBank(bank: Bank): Record<string, unknown> {
-  return { formato: 'konkursox-banco', version: 1, nombre: bank.nombre, preguntas: bank.preguntas.map(toFileQuestion) }
+  return {
+    formato: 'konkursox-banco',
+    version: 1,
+    nombre: bank.nombre,
+    ...(bank.grupo ? { grupo: bank.grupo } : {}),
+    ...(bank.mezcla ? { mezcla: true } : {}),
+    ...(bank.licencia ? { licencia: bank.licencia } : {}),
+    preguntas: bank.preguntas.map(toFileQuestion)
+  }
 }
 
 /** Nombre de archivo libre para un banco nuevo. */

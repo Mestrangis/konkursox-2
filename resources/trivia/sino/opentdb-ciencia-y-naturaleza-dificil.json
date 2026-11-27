@@ -1,0 +1,84 @@
+{
+  "formato": "konkursox-banco",
+  "version": 1,
+  "nombre": "Ciencia y naturaleza · Difícil",
+  "grupo": "Open Trivia DB",
+  "licencia": "Preguntas de Open Trivia Database (opentdb.com), licencia CC BY-SA 4.0, traducidas y adaptadas al español. Este banco se distribuye con la misma licencia (CC BY-SA 4.0).",
+  "preguntas": [
+    {
+      "id": "o3104",
+      "tipo": "sino",
+      "enunciado": "¿Ganó Albert Einstein el Nobel por su teoría de la relatividad?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3153",
+      "tipo": "sino",
+      "enunciado": "¿Se llegó a creer que inyectar cartílago de tiburón evitaba el cáncer?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3169",
+      "tipo": "sino",
+      "enunciado": "¿Ganaron Frederick Banting y John Macleod el Nobel por sus aportaciones a la mecánica cuántica?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3170",
+      "tipo": "sino",
+      "enunciado": "¿Es distinta una Caloría (con mayúscula) de una caloría?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3178",
+      "tipo": "sino",
+      "enunciado": "¿Debe el litio su nombre a Lituania?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    }
+  ]
+}

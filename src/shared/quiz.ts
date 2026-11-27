@@ -1,5 +1,6 @@
 // Juegos de preguntas del modo clásico: flujo de pregunta, turnos/rebote, puntuación y escalera.
 // Todo puro: lo ejecuta el reducer del proceso main.
+import { imageView, toggleImage } from './questionImage'
 import { estimationPoints, estimationResult, type EstimationConfig, type EstimationResult } from './games'
 import { contestantOrder, playerCount } from './order'
 import type { QuizGameId } from './scene'
@@ -38,7 +39,12 @@ export interface CurrentQuestion {
   picked: number | null
   target: Target | null
   attempts: Attempt[]
-  showImage: boolean
+  /** imagen de la pregunta: null = según la pregunta (automática después del texto o manual); true / false = a mano */
+  showImage: boolean | null
+  /** imagen de la respuesta: null = al revelar; true / false = a mano */
+  showAnswerImage?: boolean | null
+  /** la imagen que se ve, a pantalla completa en el plató */
+  imageFull?: boolean
   /** escalón por el que se juega (solo en escalera) */
   ladderLevel: number | null
   /** a quién pasa la pregunta si pulsas "Rebote a X" */
@@ -90,15 +96,24 @@ export const MAX_LIFELINES = 5
 /** Iconos propios para comodines (trazados 24x24, o texto). */
 export const LIFELINE_ICONS: Record<string, { label: string; path?: string; text?: string }> = {
   mitad: { label: '50:50', text: '50:50' },
-  telefono: { label: 'Teléfono', path: 'M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z' },
+  telefono: {
+    label: 'Teléfono',
+    path: 'M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z'
+  },
   publico: { label: 'Público', path: 'M2 12h4v9H2zM8 4h4v17H8zM14 9h4v12h-4zM20 15h3v6h-3z' },
   cambio: { label: 'Cambio', path: 'M7 6h10.2l-2.6-2.6L16 2l5 5-5 5-1.4-1.4L17.2 8H7zM17 18H6.8l2.6 2.6L8 22l-5-5 5-5 1.4 1.4L6.8 16H17z' },
   bombilla: { label: 'Pista', path: 'M12 2a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2zM9 19h6v2H9z' },
   estrella: { label: 'Estrella', path: 'M12 2l3 6.9 7.5.7-5.7 5 1.7 7.4L12 18l-6.5 4 1.7-7.4-5.7-5 7.5-.7z' },
   reloj: { label: 'Reloj', path: 'M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm0 2a8 8 0 1 1 0 16 8 8 0 0 1 0-16zm-1 3v6l5 3 1-1.7-4-2.3V7z' },
-  pregunta: { label: 'Pregunta', path: 'M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm-1 15h2v2h-2zm1-12a4 4 0 0 1 2.8 6.8l-.9.9c-.6.6-.9 1.1-.9 2.3h-2v-.5c0-1.1.4-2.1 1.2-2.8l1.2-1.3A2 2 0 1 0 10 9H8a4 4 0 0 1 4-4z' },
+  pregunta: {
+    label: 'Pregunta',
+    path: 'M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm-1 15h2v2h-2zm1-12a4 4 0 0 1 2.8 6.8l-.9.9c-.6.6-.9 1.1-.9 2.3h-2v-.5c0-1.1.4-2.1 1.2-2.8l1.2-1.3A2 2 0 1 0 10 9H8a4 4 0 0 1 4-4z'
+  },
   amigo: { label: 'Persona', path: 'M12 2a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 12c5 0 9 2.2 9 5v3H3v-3c0-2.8 4-5 9-5z' },
-  dado: { label: 'Dado', path: 'M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm2.5 3a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm9 9a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM12 10.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z' }
+  dado: {
+    label: 'Dado',
+    path: 'M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm2.5 3a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm9 9a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM12 10.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z'
+  }
 }
 export const DEFAULT_LIFELINES: LifelineDef[] = [
   { id: '5050', name: '50:50', icon: 'mitad', kind: 'fifty' },
@@ -132,22 +147,7 @@ export interface LadderState {
 }
 
 export type CueId =
-  | 'pregunta'
-  | 'marcar'
-  | 'respondido'
-  | 'correcto'
-  | 'error'
-  | 'reloj'
-  | 'victoria'
-  | 'plantarse'
-  | 'caida'
-  | 'transicion'
-  | 'pasapalabra'
-  | 'estimacion'
-  | 'ganador'
-  | 'soborno'
-  | 'opcion'
-  | 'tiempo'
+  'pregunta' | 'marcar' | 'respondido' | 'correcto' | 'error' | 'reloj' | 'victoria' | 'plantarse' | 'caida' | 'transicion' | 'pasapalabra' | 'estimacion' | 'ganador' | 'soborno' | 'opcion' | 'tiempo'
 export const CUES: { id: CueId; label: string; def: string | null }[] = [
   { id: 'pregunta', label: 'Entrada de pregunta', def: 'kx-pregunta.wav' },
   { id: 'opcion', label: 'Aparece una opción', def: 'kx-opcion.wav' },
@@ -221,7 +221,8 @@ export type QuizAction = (
   | { type: 'quizReveal'; now: number }
   | { type: 'quizAward' }
   | { type: 'quizClear' }
-  | { type: 'quizToggleImage' }
+  | { type: 'quizToggleImage'; which?: 'q' | 'a' }
+  | { type: 'quizImageFull' }
   | { type: 'quizSetScoring'; patch: Partial<Scoring> }
   | { type: 'quizSetTurn'; target: Target | null }
   | { type: 'quizSetOptions'; patch: Partial<Pick<QuizState, 'rebound' | 'autoRotate'>> }
@@ -318,10 +319,11 @@ export function targetFromKey(key: string): Target | null {
 
 /** Concursantes/equipos que pueden recibir turno según la plantilla. */
 export function turnTargets(s: Pick<GameState, 'layout' | 'contestants'>): Target[] {
-  if (s.layout === 'teams') return [
-    { kind: 'team', index: 0 },
-    { kind: 'team', index: 1 }
-  ]
+  if (s.layout === 'teams')
+    return [
+      { kind: 'team', index: 0 },
+      { kind: 'team', index: 1 }
+    ]
   return contestantOrder(s)
     .slice(0, playerCount(s.layout))
     .map((id) => ({ kind: 'contestant', id }))
@@ -347,8 +349,7 @@ export function scoreDelta(scoring: Scoring, correct: boolean): number {
 /** Aplica puntos a un concursante o equipo. */
 export function applyDelta<S extends Pick<GameState, 'contestants' | 'teams'>>(s: S, target: Target | null, delta: number): S {
   if (!target || !delta) return s
-  if (target.kind === 'contestant')
-    return { ...s, contestants: s.contestants.map((c) => (c.id === target.id ? { ...c, score: c.score + delta } : c)) }
+  if (target.kind === 'contestant') return { ...s, contestants: s.contestants.map((c) => (c.id === target.id ? { ...c, score: c.score + delta } : c)) }
   const teams = [...s.teams] as GameState['teams']
   teams[target.index] = { ...teams[target.index], score: teams[target.index].score + delta }
   return { ...s, teams }
@@ -356,7 +357,7 @@ export function applyDelta<S extends Pick<GameState, 'contestants' | 'teams'>>(s
 
 /** Lo ganado hasta ahora: el valor del último escalón superado. */
 export function ladderBank(levels: LadderLevel[], level: number): number {
-  return level > 0 ? levels[Math.min(level, levels.length) - 1]?.value ?? 0 : 0
+  return level > 0 ? (levels[Math.min(level, levels.length) - 1]?.value ?? 0) : 0
 }
 
 /** Lo que se lleva si falla: el último escalón seguro superado. */
@@ -406,8 +407,7 @@ export function shuffle<T>(arr: T[], rnd: () => number = Math.random): T[] {
 type S = GameState
 
 const withQuiz = (s: S, patch: Partial<QuizState>): S => ({ ...s, quiz: { ...s.quiz, ...patch } })
-const withCurrent = (s: S, patch: Partial<CurrentQuestion>): S =>
-  s.quiz.current ? withQuiz(s, { current: { ...s.quiz.current, ...patch } }) : s
+const withCurrent = (s: S, patch: Partial<CurrentQuestion>): S => (s.quiz.current ? withQuiz(s, { current: { ...s.quiz.current, ...patch } }) : s)
 
 function startTimer(t: TimerState, now: number): TimerState {
   if (t.endsAt !== null) return t
@@ -594,7 +594,17 @@ function setCorrect(s: S, index: number): S {
   const solved = cur.mode !== 'all' && attempts.some((x) => x.correct || x.forgiven)
   const phase = solved ? 'revealed' : cur.phase
   const last = attempts.find((x) => x.correct || x.forgiven) ?? attempts[attempts.length - 1]
-  next = withQuiz(next, { current: { ...cur, question, attempts, phase, picked: solved && cur.phase !== 'revealed' ? last.pick : cur.picked, target: solved && cur.phase !== 'revealed' ? last.target : cur.target, revealedAt: cur.revealedAt ?? (solved ? Date.now() : null) } })
+  next = withQuiz(next, {
+    current: {
+      ...cur,
+      question,
+      attempts,
+      phase,
+      picked: solved && cur.phase !== 'revealed' ? last.pick : cur.picked,
+      target: solved && cur.phase !== 'revealed' ? last.target : cur.target,
+      revealedAt: cur.revealedAt ?? (solved ? Date.now() : null)
+    }
+  })
   if (inLadder && before && cur.phase === 'revealed') {
     const was = before.correct || !!before.forgiven
     const now = attempts[attempts.length - 1].correct || !!attempts[attempts.length - 1].forgiven
@@ -639,6 +649,7 @@ const SLOT_ACTIONS = new Set<string>([
   'quizAward',
   'quizClear',
   'quizToggleImage',
+  'quizImageFull',
   'quizRebound',
   'quizSecondChance',
   'quizForgive',
@@ -690,7 +701,7 @@ function applyQuizInner(s: S, a: QuizAction): S {
       const ladder = q.ladder
       const inLadder = ladder.active && !ladder.outcome && (!a.game || a.game === 'escalera')
       let turn = q.turn
-      const mode: 'turn' | 'all' = inLadder || a.question.tipo === 'estimacion' ? 'turn' : a.mode ?? (q.allMode ? 'all' : 'turn')
+      const mode: 'turn' | 'all' = inLadder || a.question.tipo === 'estimacion' ? 'turn' : (a.mode ?? (q.allMode ? 'all' : 'turn'))
       const individual = mode === 'turn' && a.question.tipo !== 'estimacion'
       if (!inLadder && individual && q.autoRotate && q.asked > 0) turn = nextTarget(turnTargets(s), turn) ?? turn
       const current: CurrentQuestion = {
@@ -703,7 +714,9 @@ function applyQuizInner(s: S, a: QuizAction): S {
         picked: null,
         target: inLadder ? ladder.target : turn,
         attempts: [],
-        showImage: !!a.question.imagen,
+        showImage: null,
+        showAnswerImage: null,
+        imageFull: false,
         ladderLevel: inLadder ? ladder.level : null,
         mode,
         answers: {},
@@ -806,8 +819,21 @@ function applyQuizInner(s: S, a: QuizAction): S {
       })
     case 'quizClear':
       return { ...s, quiz: { ...q, current: null, timer: resetTimer(q.timer) } }
-    case 'quizToggleImage':
-      return q.current?.question.imagen ? withCurrent(s, { showImage: !q.current.showImage }) : s
+    case 'quizToggleImage': {
+      const cur = q.current
+      const which = a.which ?? 'q'
+      if (!cur || !(which === 'q' ? cur.question.imagen : cur.question.imagen_respuesta)) return s
+      const patch = toggleImage({ ...cur, showAnswerImage: cur.showAnswerImage ?? null }, which) as Partial<CurrentQuestion>
+      // al ocultar la imagen que estaba a pantalla completa, se quita la pantalla completa
+      const next = { ...cur, ...patch }
+      return withCurrent(s, { ...patch, imageFull: !!cur.imageFull && !!imageView({ ...next, showAnswerImage: next.showAnswerImage ?? null }).file })
+    }
+    case 'quizImageFull': {
+      const cur = q.current
+      if (!cur) return s
+      if (!cur.imageFull && !imageView({ ...cur, showAnswerImage: cur.showAnswerImage ?? null }).file) return s
+      return withCurrent(s, { imageFull: !cur.imageFull })
+    }
     case 'quizSetScoring':
       return withQuiz(s, { scoring: { ...q.scoring, ...a.patch } })
     case 'quizSetTurn': {

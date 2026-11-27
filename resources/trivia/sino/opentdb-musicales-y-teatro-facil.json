@@ -1,0 +1,54 @@
+{
+  "formato": "konkursox-banco",
+  "version": 1,
+  "nombre": "Musicales y teatro · Fácil",
+  "grupo": "Open Trivia DB",
+  "licencia": "Preguntas de Open Trivia Database (opentdb.com), licencia CC BY-SA 4.0, traducidas y adaptadas al español. Este banco se distribuye con la misma licencia (CC BY-SA 4.0).",
+  "preguntas": [
+    {
+      "id": "o1385",
+      "tipo": "sino",
+      "enunciado": "¿Significa IMAX «Image Maximum»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Musicales y teatro"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1389",
+      "tipo": "sino",
+      "enunciado": "¿Escribió William Shakespeare «Las brujas de Salem» (The Crucible)?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Musicales y teatro"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1393",
+      "tipo": "sino",
+      "enunciado": "En «Edipo rey», ¿mata Edipo a su padre por celos porque ama a su madre?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Musicales y teatro"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    }
+  ]
+}

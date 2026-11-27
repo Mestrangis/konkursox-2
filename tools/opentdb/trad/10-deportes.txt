@@ -1,0 +1,134 @@
+# Deportes (Sports)
+3521|¿Qué país organizó el Mundial de fútbol de 2018?|Rusia|Alemania|Estados Unidos|Arabia Saudí
+3525|¿Quién ganó la Liga de Campeones en 2016?|Real Madrid|Bayern de Múnich|Atlético de Madrid|Manchester City
+3527|¿Cuántos futbolistas tiene que haber en el campo a la vez?|22|20|24|26
+3529|En el fútbol, ¿es un saque de esquina la forma de reanudar el juego tras un gol?|No
+3530|¿Cuál de estos deportes NO forma parte del triatlón?|La equitación|El ciclismo|La natación|La carrera a pie
+3531|¿Cómo se llama el estadio del Manchester United?|Old Trafford|Anfield|Etihad Stadium|St James' Park
+3532|¿De qué ciudad eran originalmente los Dodgers de Los Ángeles?|Brooklyn (Nueva York)|Las Vegas|Boston|Seattle
+3534|¿Qué club de fútbol inglés tiene el apodo de «los zorros» (The Foxes)?|Leicester City|Northampton Town|Bradford City|West Bromwich Albion
+3535|¿Metió Shaquille O'Neal un solo triple en toda su carrera?|Sí
+3536|¿Quién ganó el Mundial de Fórmula 1 de pilotos en 2017?|Lewis Hamilton|Sebastian Vettel|Nico Rosberg|Max Verstappen
+3537|¿Cuántos jugadores tiene un equipo de fútbol en el campo?|11|10|9|8
+3538|¿Qué país ganó el Mundial de Rusia 2018?|Francia|Croacia|Bélgica|Inglaterra
+3539|¿Qué boxeador fue sancionado por arrancarle un trozo de oreja de un mordisco a Evander Holyfield en 1997?|Mike Tyson|Roy Jones Jr.|Evander Holyfield|Lennox Lewis
+3541|En los bolos, ¿cómo se llama hacer tres plenos seguidos?|Pavo (turkey)|Flamenco|Birdie|Eagle
+3542|¿De qué equipo es el estadio «Stadium of Light»?|Sunderland|Barcelona|París Saint-Germain|Manchester United
+3543|¿Qué selección ganó el Mundial de Brasil 2014?|Alemania|Argentina|Brasil|Países Bajos
+3545|¿Qué selección ganó la primera Liga de Naciones de la UEFA?|Portugal|Países Bajos|Inglaterra|Suiza
+3546|¿Quién ganó la Liga de Campeones en 2017?|Real Madrid|Atlético de Madrid|Mónaco|Juventus
+3547|¿Qué país organizó los Juegos Olímpicos de verano de 2020?|Japón|China|Australia|Alemania
+3548|¿Cómo se llama el palo con el que se golpea la bola en el billar?|Taco|Raqueta|Bate|Mazo
+3550|¿De qué continente son los clubes que juegan la Liga de Campeones de la UEFA?|Europa|América del Sur|África|Asia
+3552|En el Mundial 2014, ¿cómo acabó el Brasil-Alemania?|1-7|1-5|1-6|2-6
+3553|¿Qué equipo ganó la Premier League 2015-2016 tras una temporada de cuento?|Leicester City|Tottenham Hotspur|Watford|Stoke City
+3554|¿Cuándo se jugó el primer partido internacional oficial de fútbol?|1872|1880|1863|1865
+3555|En béisbol, ¿cuántas bolas malas hacen falta para que el bateador pase a primera base?|4|1|2|3
+3556|¿Cuántos puntos anotó LeBron James en su primer partido de la NBA?|25|19|69|41
+3557|¿Con qué equipo ganó Steven Gerrard la Liga de Campeones?|Liverpool|Real Madrid|Chelsea|Manchester City
+3561|¿De qué país son futbolistas como Cafú, Roberto Carlos y Pelé?|Brasil|Argentina|Portugal|España
+3562|¿En qué año ganó Jenson Button su único Mundial de Fórmula 1?|2009|2010|2007|2006
+3563|¿Cuándo se fundó el Schalke 04?|1904|1909|2008|1999
+3564|¿Qué jugador afroamericano contribuyó a acabar con la segregación en las Grandes Ligas de béisbol?|Jackie Robinson|Curt Flood|Roy Campanella|Satchel Paige
+3566|¿A qué selección ganó Inglaterra en la final del Mundial de 1966?|Alemania Occidental|Unión Soviética|Portugal|Brasil
+3567|¿En qué deporte se usan los términos «love», «deuce», «match» y «volley»?|Tenis|Críquet|Baloncesto|Curling
+3568|¿Qué país organizó el Mundial de fútbol de 2022?|Catar|Estados Unidos|Japón|Suiza
+3569|¿Quién ganó el Mundial de Fórmula 1 de 2016?|Nico Rosberg|Lewis Hamilton|Max Verstappen|Kimi Räikkönen
+3571|¿Es Roger Federer un famoso futbolista?|No
+3572|En golf, ¿cómo se llama hacer un hoyo con dos golpes menos del par?|Eagle|Birdie|Bogey|Albatros
+3573|¿En qué deporte se usa un volante (pluma)?|Bádminton|Tenis de mesa|Rugby|Críquet
+3575|¿Quién ganó el Mundial de Fórmula 1 de 2015?|Lewis Hamilton|Nico Rosberg|Sebastian Vettel|Jenson Button
+3576|¿Qué día fue la ceremonia de clausura de los Juegos Olímpicos de Río 2016?|21 de agosto|23 de agosto|19 de agosto|17 de agosto
+3578|¿Tuvo la temporada 2016 de Fórmula 1 un total de 20 carreras?|No
+3579|¿Qué piloto ha sido campeón del mundo de Fórmula 1 siete veces, todo un récord compartido?|Michael Schumacher|Ayrton Senna|Fernando Alonso|Jim Clark
+3580|¿A quién se suele llamar «el Maestro» en el tenis masculino?|Roger Federer|Bill Tilden|Boris Becker|Pete Sampras
+3583|¿Cuánto mide exactamente una recta de la calle 1 de una pista olímpica de atletismo?|84,39 m|100 m|91,44 m|100 m exactos más la curva
+3585|¿Qué marca ganó las 24 Horas de Le Mans en 2017?|Porsche|Toyota|Audi|Chevrolet
+3586|¿Quién era el máximo goleador de la selección inglesa (hasta Harry Kane)?|Wayne Rooney|David Beckham|Steven Gerrard|Michael Owen
+3588|En 2008, ¿batió Usain Bolt el récord de los 100 metros con un cordón desatado?|Sí
+3589|¿Sobre qué superficie mide un estimpómetro la velocidad de la bola?|Un green de golf|Un campo de fútbol|Un campo de críquet|Una mesa de pinball
+3590|¿Qué jugador de dardos ha ganado más Mundiales?|Phil Taylor|Michael van Gerwen|Raymond van Barneveld|Eric Bristow
+3591|¿Quién ha jugado más partidos con la selección brasileña de fútbol?|Cafú|Ronaldo|Kaká|Roberto Carlos
+3592|En 1988, McLaren ganó todas las carreras de F1 menos una. ¿Cuál?|El GP de Italia|El GP de Japón|El GP de Mónaco|El GP de Brasil
+3595|¿Cuál de estas pruebas NO está en el decatlón olímpico masculino?|Lanzamiento de martillo|Salto con pértiga|Salto de longitud|Lanzamiento de peso
+3596|¿Quién ganó la Liga de Campeones en 1999?|Manchester United|Barcelona|Bayern de Múnich|Liverpool
+3597|¿Qué país organizó el Mundial de fútbol de 2006?|Alemania|Reino Unido|Brasil|Sudáfrica
+3598|¿De qué isla portuguesa es Cristiano Ronaldo?|Madeira|Terceira|Santa María|Porto Santo
+3599|¿Cuántos partidos estuvo invicto el Arsenal en la Premier League 2003-2004?|38|51|49|22
+3600|¿Pueden los espectadores comprar en Wimbledon las pelotas usadas en los partidos?|Sí
+3601|¿Qué entrenador ganó más títulos en el Manchester United?|Sir Alex Ferguson|David Moyes|Louis van Gaal|José Mourinho
+3602|¿Qué selección ganó la Copa América 2015?|Chile|Argentina|Brasil|Paraguay
+3603|¿Quién fue el MVP de la NBA en la temporada 1999-2000?|Shaquille O'Neal|Allen Iverson|Kobe Bryant|Paul Pierce
+3604|¿Cuál de estos clubes ingleses es de Liverpool?|Everton|West Ham United|Crystal Palace|Arsenal
+3606|¿Se jugaban antes torneos de la ATP en moqueta, retirada para evitar lesiones?|Sí
+3608|¿Cuál fue el promedio de bateo de Donald Bradman en partidos test de críquet?|99,94|100|69,51|44,78
+3609|¿Qué país organizó los Juegos Olímpicos de invierno de 2014?|Rusia|Canadá|Estados Unidos|Alemania
+3610|¿Se llamó antes «raquetbol» al tenis?|No
+3611|¿Cuál de estos torneos de Grand Slam se juega el último del año?|El Abierto de EE. UU.|Roland Garros|Wimbledon|El Abierto de Australia
+3612|¿Qué deporte practica la alemana Fanny Chmelar?|Esquí|Natación|Saltos ecuestres|Gimnasia
+3613|¿Qué piloto de Fórmula 1 tenía el apodo de «el Profesor»?|Alain Prost|Ayrton Senna|Niki Lauda|Emerson Fittipaldi
+3614|¿Usa la Fórmula E coches híbridos?|No
+3616|¿En qué puente empieza la regata anual Oxford-Cambridge?|Putney|Hammersmith|Vauxhall|Battersea
+3617|¿Cuál es la mejor tarjeta de la carrera de Tiger Woods?|61|65|63|67
+3618|¿Qué selección ganó la Eurocopa de 2016?|Portugal|Francia|Alemania|Inglaterra
+3619|¿Por qué suceso trágico se recuerda la temporada 1994 de Fórmula 1?|La muerte de Ayrton Senna en Imola|El choque decisivo en Australia|El incendio de Verstappen en Alemania|La descalificación de Schumacher
+3620|¿De qué país es originario el kabaddi, un deporte de contacto?|India|Australia|Turquía|Camboya
+3621|¿De qué legendario futbolista es el nombre completo Edson Arantes do Nascimento?|Pelé|Romário|Zico|Ronaldinho
+3622|¿En qué año ganó el Steaua de Bucarest la Copa de Europa contra el Barcelona?|1986|1990|1982|1989
+3623|¿Cuántos Roland Garros ganó Björn Borg?|6|4|9|2
+3624|¿Quién fue el máximo goleador del Mundial 2014?|James Rodríguez|Thomas Müller|Lionel Messi|Neymar
+3625|¿Quién fue el primer futbolista en marcar 200 goles en la Premier League?|Alan Shearer|Wayne Rooney|Robbie Fowler|Thierry Henry
+3626|¿Es la pista de tenis olímpica una enorme pantalla verde?|Sí
+3628|¿Quién ganó el GP de San Marino de 1994, la carrera en la que murió Ayrton Senna?|Michael Schumacher|Nicola Larini|Gerhard Berger|Mika Häkkinen
+3629|¿Cuántas zonas de puntuación tiene una diana de dardos normal?|82|62|42|102
+3630|¿En qué país está Sochi, sede de los Juegos de invierno de 2014?|Rusia|Corea del Sur|Noruega|Canadá
+3634|¿Qué país organizó el Mundial de 2022?|Catar|Uganda|Vietnam|Bolivia
+3635|¿Anotó Wilt Chamberlain sus famosos 100 puntos contra los New York Knicks en 1962?|Sí
+3636|¿Ha abierto Cristiano Ronaldo un museo dedicado a sí mismo?|Sí
+3637|¿Qué deporte NO se practica tradicionalmente en el festival mongol del Naadam?|El fútbol americano|La lucha|El tiro con arco|Las carreras de caballos
+3639|¿Qué equipo de baloncesto ha jugado más finales de la NBA?|Los Angeles Lakers|Boston Celtics|Philadelphia 76ers|Golden State Warriors
+3640|¿Quién ganó la NBA en la temporada 2014-2015?|Golden State Warriors|Cleveland Cavaliers|Houston Rockets|Atlanta Hawks
+3641|¿Quién se considera el mejor futbolista rumano de la historia?|Gheorghe Hagi|Cristian Chivu|Nicolae Dobrin|Gheorghe Popescu
+3642|¿Para qué torneo de 1996 se hizo la canción «Three Lions»?|La Eurocopa|El Mundial|La Liga de Campeones|La Copa Confederaciones
+3643|¿Qué marca ganó las 24 Horas de Le Mans en 2016?|Porsche|Toyota|Audi|Ferrari
+3644|¿Cuál de estas selecciones se clasificó para el Mundial de Rusia 2018?|Túnez|Estados Unidos|Italia|Países Bajos
+3645|¿Qué piloto de Fórmula 1 cambió de equipo a mitad de la temporada 2017?|Carlos Sainz|Daniil Kvyat|Jolyon Palmer|Rio Haryanto
+3647|¿Con qué equipo debutó Michael Schumacher en la Fórmula 1, en el GP de Bélgica de 1991?|Jordan|Benetton|Ferrari|Mercedes
+3648|En críquet, ¿cómo se llama quedar eliminado sin haber anotado?|Pato (duck)|Bye|Beamer|Carry
+3649|¿Qué jugador marcó un triplete en su debut con el Manchester United?|Wayne Rooney|Cristiano Ronaldo|Robin van Persie|David Beckham
+3650|¿Cuántas Premier League ganó Sir Alex Ferguson con el Manchester United?|13|11|20|22
+3651|¿Estuvo el monopatín en los Juegos Olímpicos de Tokio 2020?|Sí
+3652|¿Tras el accidente mortal de qué piloto se introdujo el coche de seguridad virtual en la Fórmula 1?|Jules Bianchi|Ayrton Senna|Roland Ratzenberger|Gilles Villeneuve
+3653|¿De qué marca alemana de ropa deportiva es el logotipo «Formstripe»?|Puma|Nike|Adidas|Reebok
+3654|¿Quién ha jugado más partidos con la selección alemana de fútbol?|Lothar Matthäus|Miroslav Klose|Philipp Lahm|Oliver Kahn
+3655|¿Quién es el máximo goleador de la historia de la Premier League?|Alan Shearer|Wayne Rooney|Lionel Messi|Didier Drogba
+3656|En el snooker, ¿qué bola vale 3 puntos?|La verde|La amarilla|La marrón|La azul
+3658|¿De qué ciudad eran los Lakers antes de mudarse a Los Ángeles?|Mineápolis|Filadelfia|Chicago|San Francisco
+3659|¿Cuál es el cinturón más alto en taekwondo?|El negro|El blanco|El rojo|El verde
+3661|¿Qué selección ganó la Copa América Centenario de 2016?|Chile|Argentina|Brasil|Colombia
+3662|¿Quién es el máximo goleador del Manchester United en la Premier League?|Wayne Rooney|Bobby Charlton|Ryan Giggs|David Beckham
+3664|¿Quién ganó el GP de Mónaco de 2018?|Daniel Ricciardo|Sebastian Vettel|Kimi Räikkönen|Lewis Hamilton
+3665|En 2016, ¿qué escudería ganó por tercer año seguido el Mundial de constructores de Fórmula 1?|Mercedes|Ferrari|McLaren Honda|Red Bull
+3666|¿Qué jugador ha disputado más partidos en la historia de la NBA (hasta 2016)?|Robert Parish|Kareem Abdul-Jabbar|Kevin Garnett|Kobe Bryant
+3667|¿Quién ganó la NBA en la temporada 2015-2016?|Cleveland Cavaliers|Golden State Warriors|Toronto Raptors|Oklahoma City Thunder
+3669|¿Cuál es la mejor marca de Kenenisa Bekele en maratón?|2:01:41|2:01:12|2:01:45|2:01:51
+3671|¿Qué futbolista italiano le indicó a Neuer por dónde iba a tirar el penalti y lo mandó fuera en la Eurocopa 2016?|Pellè|Insigne|Barzagli|Giaccherini
+3672|¿A quién ganó Inglaterra en la semifinal del Mundial de 1966?|Portugal|Alemania Occidental|Unión Soviética|Brasil
+3673|¿Dónde se celebraron los Juegos de la XXII Olimpiada (1980)?|Moscú|Barcelona|Tokio|Los Ángeles
+3676|¿Qué ciudad europea fue la primera en organizar tres veces los Juegos Olímpicos de verano modernos?|Londres|París|Atenas|Roma
+3677|¿Con qué compañero de dobles tuvo más éxito John McEnroe?|Peter Fleming|Mark Woodforde|Michael Stich|Mary Carillo
+3679|¿Cuál de estas ciudades rusas NO tuvo un estadio del Mundial 2018?|Vladivostok|Rostov del Don|Ekaterimburgo|Kaliningrado
+3680|¿Quién ganó el oro olímpico de tenis de mesa individual masculino en 2016?|Ma Long (China)|Zhang Jike (China)|Jun Mizutani (Japón)|Vladimir Samsonov (Bielorrusia)
+3681|¿Cuántas veces ganó Martina Navratilova Wimbledon en individual?|Nueve|Diez|Siete|Ocho
+3682|¿Qué jugador le dio una «patada de kung-fu» a un aficionado del Crystal Palace en enero de 1995?|Eric Cantona|David Seaman|Ashley Cole|Mark Hughes
+3683|¿En qué año ganó el Mazda 787B las 24 Horas de Le Mans?|1991|1990|2000|1987
+3684|¿En qué carrera se decidió el Mundial de pilotos de Fórmula 1 de 2018?|México|Estados Unidos|Bélgica|Abu Dabi
+3685|En el curling, ¿qué herramienta da nombre a la ventaja de lanzar la última piedra?|Martillo|Llave inglesa|Taladro|Destornillador
+3686|¿Quién ganó el oro olímpico de tenis de mesa individual femenino en 2016?|Ding Ning (China)|Li Xiaoxia (China)|Ai Fukuhara (Japón)|Kim Song-i (Corea del Norte)
+3688|¿Cuál es el nombre completo de Cristiano Ronaldo?|Cristiano Ronaldo dos Santos Aveiro|Cristiano Ronaldo los Santos Diego|Cristiano Armando Diego Ronaldo|Cristiano Ronaldo da Silva
+3689|¿Qué equipo inglés tiene el apodo de «los tigres»?|Hull City|Cardiff City|Bristol City|Manchester City
+3690|Antes de 2018, ¿cuál era la única marca japonesa que había ganado las 24 Horas de Le Mans?|Mazda|Toyota|Subaru|Nissan
+3691|¿Quién ha jugado más partidos con el Manchester United?|Ryan Giggs|David Beckham|Wayne Rooney|Eric Cantona
+3693|¿De qué equipo es el Etihad Stadium?|Manchester City|Manchester United|Arsenal|Blackpool
+3694|¿Qué es «el deporte de los reyes»?|Las carreras de caballos|El ajedrez|Las justas|La esgrima
+3696|¿Quién marcó en el descuento el gol de la victoria en la final de la Liga de Campeones de 1999 entre el Manchester United y el Bayern?|Ole Gunnar Solskjær|Dwight Yorke|Andy Cole|Teddy Sheringham

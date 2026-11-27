@@ -1,0 +1,264 @@
+{
+  "formato": "konkursox-banco",
+  "version": 1,
+  "nombre": "Arte · Fácil",
+  "grupo": "Open Trivia DB",
+  "licencia": "Preguntas de Open Trivia Database (opentdb.com), licencia CC BY-SA 4.0, traducidas y adaptadas al español. Este banco se distribuye con la misma licencia (CC BY-SA 4.0).",
+  "preguntas": [
+    {
+      "id": "o4567",
+      "tipo": "test",
+      "enunciado": "¿Quién pintó la Mona Lisa?",
+      "opciones": [
+        "Vincent van Gogh",
+        "Miguel Ángel",
+        "Leonardo da Vinci",
+        "Pablo Picasso"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Arte"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4568",
+      "tipo": "test",
+      "enunciado": "¿Quién pintó la bóveda de la Capilla Sixtina?",
+      "opciones": [
+        "Rafael",
+        "Miguel Ángel",
+        "Pablo Picasso",
+        "Leonardo da Vinci"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Arte"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4570",
+      "tipo": "test",
+      "enunciado": "¿Qué cuadro de Van Gogh muestra la vista desde su sanatorio de Saint-Rémy-de-Provence?",
+      "opciones": [
+        "La noche estrellada",
+        "El sembrador",
+        "Los girasoles",
+        "Trigal con cuervos"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Arte"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4571",
+      "tipo": "test",
+      "enunciado": "¿Quién pintó «Cisnes que se reflejan como elefantes», «El sueño» y «La persistencia de la memoria»?",
+      "opciones": [
+        "Salvador Dalí",
+        "Vincent van Gogh",
+        "Edgar Degas",
+        "Jackson Pollock"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Arte"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4572",
+      "tipo": "test",
+      "enunciado": "¿Quién pintó el fresco bíblico «La creación de Adán»?",
+      "opciones": [
+        "Rembrandt",
+        "Leonardo da Vinci",
+        "Miguel Ángel",
+        "Caravaggio"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Arte"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4573",
+      "tipo": "test",
+      "enunciado": "¿Qué color sale al mezclar negro y blanco?",
+      "opciones": [
+        "Negro",
+        "Blanco",
+        "Gris",
+        "Marrón"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Arte"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4574",
+      "tipo": "test",
+      "enunciado": "¿Quién pintó «La noche estrellada»?",
+      "opciones": [
+        "Edvard Munch",
+        "Vincent van Gogh",
+        "Claude Monet",
+        "Pablo Picasso"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Arte"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4575",
+      "tipo": "test",
+      "enunciado": "¿Qué elemento es fundamental en la arquitectura gótica?",
+      "opciones": [
+        "El arco apuntado",
+        "Los techos artesonados",
+        "Los frescos interiores",
+        "Las fachadas con frontón"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Arte"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4576",
+      "tipo": "test",
+      "enunciado": "¿Quién pintó el mural «La última cena» a finales del siglo XV?",
+      "opciones": [
+        "Leonardo da Vinci",
+        "Piero della Francesca",
+        "Luca Pacioli",
+        "Paolo Uccello"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Arte"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4577",
+      "tipo": "test",
+      "enunciado": "¿Con qué otro nombre se conoce «La Gioconda»?",
+      "opciones": [
+        "Los girasoles",
+        "La Mona Lisa",
+        "La joven de la perla",
+        "La noche estrellada"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Arte"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4580",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama el arte japonés de doblar papel para hacer figuras?",
+      "opciones": [
+        "Ukiyo-e",
+        "Sumi-e",
+        "Papiroflexia (origami)",
+        "Haiku"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Arte"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4581",
+      "tipo": "test",
+      "enunciado": "¿Qué pintor es famoso por cortarse una oreja?",
+      "opciones": [
+        "Vincent van Gogh",
+        "Salvador Dalí",
+        "Rembrandt",
+        "Miguel Ángel"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Arte"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4582",
+      "tipo": "test",
+      "enunciado": "¿Cuál es la obra de ficción más antigua que se conoce?",
+      "opciones": [
+        "El papiro de Ani",
+        "La epopeya de Gilgamesh",
+        "El código de Hammurabi",
+        "La piedra de Rosetta"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Arte"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4583",
+      "tipo": "test",
+      "enunciado": "¿Qué cuadro NO es de Van Gogh?",
+      "opciones": [
+        "El dormitorio en Arlés",
+        "La novena ola",
+        "Terraza de café por la noche",
+        "La noche estrellada"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Arte"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4584",
+      "tipo": "test",
+      "enunciado": "¿Quién esculpió el David de Florencia?",
+      "opciones": [
+        "Auguste Rodin",
+        "Donatello",
+        "Bernini",
+        "Miguel Ángel"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Arte"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "formato": "konkursox-banco",
+  "version": 1,
+  "nombre": "Anime y manga · Difícil",
+  "grupo": "Open Trivia DB",
+  "licencia": "Preguntas de Open Trivia Database (opentdb.com), licencia CC BY-SA 4.0, traducidas y adaptadas al español. Este banco se distribuye con la misma licencia (CC BY-SA 4.0).",
+  "preguntas": [
+    {
+      "id": "o5169",
+      "tipo": "sino",
+      "enunciado": "¿Es cierto que en todo «Dragon Ball Z» Goku solo mata a dos personajes: Yakon y Kid Buu?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Anime y manga"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    }
+  ]
+}

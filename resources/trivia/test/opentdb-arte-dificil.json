@@ -1,0 +1,264 @@
+{
+  "formato": "konkursox-banco",
+  "version": 1,
+  "nombre": "Arte · Difícil",
+  "grupo": "Open Trivia DB",
+  "licencia": "Preguntas de Open Trivia Database (opentdb.com), licencia CC BY-SA 4.0, traducidas y adaptadas al español. Este banco se distribuye con la misma licencia (CC BY-SA 4.0).",
+  "preguntas": [
+    {
+      "id": "o4604",
+      "tipo": "test",
+      "enunciado": "¿De qué nacionalidad era Van Gogh?",
+      "opciones": [
+        "Rusa",
+        "Francesa",
+        "Neerlandesa",
+        "Polaca"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Arte"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4606",
+      "tipo": "test",
+      "enunciado": "¿En qué año pintó Durero «La liebre joven»?",
+      "opciones": [
+        "1502",
+        "1702",
+        "1402",
+        "1602"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Arte"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4607",
+      "tipo": "test",
+      "enunciado": "El Guernica de Picasso expresa el horror de ¿qué guerra?",
+      "opciones": [
+        "La guerra de Crimea",
+        "La guerra civil española",
+        "La Primera Guerra Mundial",
+        "La guerra de Cuba"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Arte"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4608",
+      "tipo": "test",
+      "enunciado": "¿Qué escultor francés diseñó la Estatua de la Libertad?",
+      "opciones": [
+        "Auguste Rodin",
+        "Frédéric Auguste Bartholdi",
+        "Jean-Léon Gérôme",
+        "Henri Matisse"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Arte"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4609",
+      "tipo": "test",
+      "enunciado": "¿A dónde se fue a vivir Paul Gauguin en 1895?",
+      "opciones": [
+        "A Japón",
+        "A París",
+        "A Lituania",
+        "A Tahití"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Arte"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4610",
+      "tipo": "test",
+      "enunciado": "¿De qué nacionalidad era Picasso?",
+      "opciones": [
+        "Italiana",
+        "Francesa",
+        "Alemana",
+        "Española"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Arte"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4612",
+      "tipo": "test",
+      "enunciado": "¿A qué movimiento pertenece «La noche estrellada» de Van Gogh?",
+      "opciones": [
+        "Al romanticismo",
+        "Al impresionismo",
+        "Al neoclasicismo",
+        "Al postimpresionismo"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Arte"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4613",
+      "tipo": "test",
+      "enunciado": "¿Cuándo terminó Dalí «La persistencia de la memoria»?",
+      "opciones": [
+        "1929",
+        "1934",
+        "1932",
+        "1931"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Arte"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4614",
+      "tipo": "test",
+      "enunciado": "¿Cuál fue la primera técnica fotográfica que tuvo éxito comercial?",
+      "opciones": [
+        "La película Kodachrome",
+        "La Sábana Santa",
+        "El colodión",
+        "El daguerrotipo"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Arte"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4615",
+      "tipo": "test",
+      "enunciado": "¿Quién pintó «American Gothic»?",
+      "opciones": [
+        "Pablo Picasso",
+        "Marc Chagall",
+        "Grant Wood",
+        "Anita Malfatti"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Arte"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4618",
+      "tipo": "test",
+      "enunciado": "¿A qué movimiento perteneció Piet Mondrian?",
+      "opciones": [
+        "Al impresionismo",
+        "Al neoplasticismo",
+        "Al cubismo",
+        "Al precisionismo"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Arte"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4619",
+      "tipo": "test",
+      "enunciado": "¿En qué año se suele decir que Leonardo terminó la Mona Lisa?",
+      "opciones": [
+        "1504",
+        "1523",
+        "1511",
+        "1487"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Arte"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4621",
+      "tipo": "test",
+      "enunciado": "¿Cuántas versiones en pintura y pastel de «El grito» hizo Munch?",
+      "opciones": [
+        "2",
+        "3",
+        "4",
+        "1"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Arte"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4623",
+      "tipo": "test",
+      "enunciado": "¿En qué ciudad nació y murió Alberto Durero?",
+      "opciones": [
+        "Augsburgo",
+        "Núremberg",
+        "Berlín",
+        "Bamberg"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Arte"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4624",
+      "tipo": "test",
+      "enunciado": "¿Qué distingue sobre todo al gótico inglés del francés?",
+      "opciones": [
+        "La bóveda de abanico",
+        "Los pináculos",
+        "Las cúpulas semiesféricas",
+        "Las gárgolas"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Arte"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    }
+  ]
+}

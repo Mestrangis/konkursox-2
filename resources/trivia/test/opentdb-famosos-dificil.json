@@ -1,0 +1,94 @@
+{
+  "formato": "konkursox-banco",
+  "version": 1,
+  "nombre": "Famosos · Difícil",
+  "grupo": "Open Trivia DB",
+  "licencia": "Preguntas de Open Trivia Database (opentdb.com), licencia CC BY-SA 4.0, traducidas y adaptadas al español. Este banco se distribuye con la misma licencia (CC BY-SA 4.0).",
+  "preguntas": [
+    {
+      "id": "o4670",
+      "tipo": "test",
+      "enunciado": "¿Quién fue la primera esposa de Donald Trump?",
+      "opciones": [
+        "Nancy Davis",
+        "Marla Maples",
+        "Ivana Zelníčková",
+        "Melania Knauss"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Famosos"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4672",
+      "tipo": "test",
+      "enunciado": "¿Qué animal tenía como mascota el excéntrico astrónomo Tycho Brahe?",
+      "opciones": [
+        "Un perro",
+        "Un alce",
+        "Una cabra",
+        "Un oso"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Famosos"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4675",
+      "tipo": "test",
+      "enunciado": "¿En qué año nació Gabe Newell, el fundador de Valve?",
+      "opciones": [
+        "1972",
+        "1962",
+        "1970",
+        "1960"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Famosos"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4676",
+      "tipo": "test",
+      "enunciado": "¿Qué religión profesaba Freddie Mercury?",
+      "opciones": [
+        "El paganismo",
+        "El judaísmo",
+        "El zoroastrismo",
+        "El hinduismo"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Famosos"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4677",
+      "tipo": "test",
+      "enunciado": "¿Cuánto mide Tom Cruise, más o menos?",
+      "opciones": [
+        "1,75 m",
+        "1,65 m",
+        "1,70 m",
+        "1,63 m"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Famosos"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    }
+  ]
+}

@@ -1,0 +1,366 @@
+{
+  "formato": "konkursox-banco",
+  "version": 1,
+  "nombre": "Deportes · Difícil",
+  "grupo": "Open Trivia DB",
+  "licencia": "Preguntas de Open Trivia Database (opentdb.com), licencia CC BY-SA 4.0, traducidas y adaptadas al español. Este banco se distribuye con la misma licencia (CC BY-SA 4.0).",
+  "preguntas": [
+    {
+      "id": "o3669",
+      "tipo": "test",
+      "enunciado": "¿Cuál es la mejor marca de Kenenisa Bekele en maratón?",
+      "opciones": [
+        "2:01:51",
+        "2:01:41",
+        "2:01:12",
+        "2:01:45"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3671",
+      "tipo": "test",
+      "enunciado": "¿Qué futbolista italiano le indicó a Neuer por dónde iba a tirar el penalti y lo mandó fuera en la Eurocopa 2016?",
+      "opciones": [
+        "Giaccherini",
+        "Insigne",
+        "Pellè",
+        "Barzagli"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3672",
+      "tipo": "test",
+      "enunciado": "¿A quién ganó Inglaterra en la semifinal del Mundial de 1966?",
+      "opciones": [
+        "Brasil",
+        "Alemania Occidental",
+        "Portugal",
+        "Unión Soviética"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3673",
+      "tipo": "test",
+      "enunciado": "¿Dónde se celebraron los Juegos de la XXII Olimpiada (1980)?",
+      "opciones": [
+        "Barcelona",
+        "Moscú",
+        "Los Ángeles",
+        "Tokio"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3676",
+      "tipo": "test",
+      "enunciado": "¿Qué ciudad europea fue la primera en organizar tres veces los Juegos Olímpicos de verano modernos?",
+      "opciones": [
+        "Londres",
+        "Atenas",
+        "París",
+        "Roma"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3677",
+      "tipo": "test",
+      "enunciado": "¿Con qué compañero de dobles tuvo más éxito John McEnroe?",
+      "opciones": [
+        "Michael Stich",
+        "Mark Woodforde",
+        "Peter Fleming",
+        "Mary Carillo"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3679",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estas ciudades rusas NO tuvo un estadio del Mundial 2018?",
+      "opciones": [
+        "Rostov del Don",
+        "Vladivostok",
+        "Ekaterimburgo",
+        "Kaliningrado"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3680",
+      "tipo": "test",
+      "enunciado": "¿Quién ganó el oro olímpico de tenis de mesa individual masculino en 2016?",
+      "opciones": [
+        "Ma Long (China)",
+        "Zhang Jike (China)",
+        "Jun Mizutani (Japón)",
+        "Vladimir Samsonov (Bielorrusia)"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3681",
+      "tipo": "test",
+      "enunciado": "¿Cuántas veces ganó Martina Navratilova Wimbledon en individual?",
+      "opciones": [
+        "Ocho",
+        "Siete",
+        "Diez",
+        "Nueve"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3682",
+      "tipo": "test",
+      "enunciado": "¿Qué jugador le dio una «patada de kung-fu» a un aficionado del Crystal Palace en enero de 1995?",
+      "opciones": [
+        "Ashley Cole",
+        "Mark Hughes",
+        "David Seaman",
+        "Eric Cantona"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3683",
+      "tipo": "test",
+      "enunciado": "¿En qué año ganó el Mazda 787B las 24 Horas de Le Mans?",
+      "opciones": [
+        "1990",
+        "2000",
+        "1987",
+        "1991"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3684",
+      "tipo": "test",
+      "enunciado": "¿En qué carrera se decidió el Mundial de pilotos de Fórmula 1 de 2018?",
+      "opciones": [
+        "Estados Unidos",
+        "Bélgica",
+        "Abu Dabi",
+        "México"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3685",
+      "tipo": "test",
+      "enunciado": "En el curling, ¿qué herramienta da nombre a la ventaja de lanzar la última piedra?",
+      "opciones": [
+        "Destornillador",
+        "Llave inglesa",
+        "Taladro",
+        "Martillo"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3686",
+      "tipo": "test",
+      "enunciado": "¿Quién ganó el oro olímpico de tenis de mesa individual femenino en 2016?",
+      "opciones": [
+        "Kim Song-i (Corea del Norte)",
+        "Li Xiaoxia (China)",
+        "Ai Fukuhara (Japón)",
+        "Ding Ning (China)"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3688",
+      "tipo": "test",
+      "enunciado": "¿Cuál es el nombre completo de Cristiano Ronaldo?",
+      "opciones": [
+        "Cristiano Armando Diego Ronaldo",
+        "Cristiano Ronaldo dos Santos Aveiro",
+        "Cristiano Ronaldo da Silva",
+        "Cristiano Ronaldo los Santos Diego"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3689",
+      "tipo": "test",
+      "enunciado": "¿Qué equipo inglés tiene el apodo de «los tigres»?",
+      "opciones": [
+        "Manchester City",
+        "Bristol City",
+        "Hull City",
+        "Cardiff City"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3690",
+      "tipo": "test",
+      "enunciado": "Antes de 2018, ¿cuál era la única marca japonesa que había ganado las 24 Horas de Le Mans?",
+      "opciones": [
+        "Subaru",
+        "Nissan",
+        "Mazda",
+        "Toyota"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3691",
+      "tipo": "test",
+      "enunciado": "¿Quién ha jugado más partidos con el Manchester United?",
+      "opciones": [
+        "Ryan Giggs",
+        "Eric Cantona",
+        "Wayne Rooney",
+        "David Beckham"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3693",
+      "tipo": "test",
+      "enunciado": "¿De qué equipo es el Etihad Stadium?",
+      "opciones": [
+        "Arsenal",
+        "Manchester City",
+        "Blackpool",
+        "Manchester United"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3694",
+      "tipo": "test",
+      "enunciado": "¿Qué es «el deporte de los reyes»?",
+      "opciones": [
+        "La esgrima",
+        "Las carreras de caballos",
+        "El ajedrez",
+        "Las justas"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3696",
+      "tipo": "test",
+      "enunciado": "¿Quién marcó en el descuento el gol de la victoria en la final de la Liga de Campeones de 1999 entre el Manchester United y el Bayern?",
+      "opciones": [
+        "Teddy Sheringham",
+        "Dwight Yorke",
+        "Ole Gunnar Solskjær",
+        "Andy Cole"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    }
+  ]
+}

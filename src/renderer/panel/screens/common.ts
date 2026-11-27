@@ -2,9 +2,11 @@
 import { isPlayable, questionKey, type Question } from '../../../shared/questions'
 import type { LibType } from '../../../shared/library'
 import type { CurrentQuestion, QuizAction } from '../../../shared/quiz'
+import { imageView } from '../../../shared/questionImage'
 import type { QuizGameId } from '../../../shared/scene'
 import type { GameState } from '../../../shared/types'
 import { askConfirm, btn, h, icon, ICONS, kbd, openDialog, type Ctx } from '../ui'
+import { applyMix, mixDialog } from './mix'
 
 const store = {
   get: (k: string): string | null => {
@@ -54,6 +56,9 @@ function orderedAll(ctx: Ctx, ref: string | null): Question[] {
   }
 }
 
+/** Vuelve al orden del archivo (p. ej. un banco que se acaba de rehacer). */
+export const clearOrder = (ref: string) => store.set(`konk.order.${ref}`, null)
+
 export function shuffleBank(ctx: Ctx, ref: string): void {
   const bank = ctx.lib.peek(ref)
   if (!bank) return
@@ -80,23 +85,49 @@ export function questionList(ctx: Ctx, tipo: LibType, onPick: (q: Question, ref:
   search.setAttribute('aria-label', 'Buscar pregunta')
   const items = h('div', 'items')
   const title = h('span', 'lbl', { flex: 1, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' })
-  const shuffle = btn([icon(ICONS.shuffle, 14, '#ececef'), 'Barajar'], () => {
-    const ref = bankFor(ctx, tipo)
-    if (ref) shuffleBank(ctx, ref)
-    render(ctx.state)
-  }, 'b sm')
+  const shuffle = btn(
+    [icon(ICONS.shuffle, 14, '#ececef'), 'Barajar'],
+    () => {
+      const ref = bankFor(ctx, tipo)
+      if (ref) shuffleBank(ctx, ref)
+      render(ctx.state)
+    },
+    'b sm'
+  )
   // en la escalera el orden del banco es el de los niveles: no se baraja
   if (tipo === 'escalera') shuffle.style.display = 'none'
+  // partida mezclada: varios bancos o filtros a la vez
+  const mix = btn(
+    'Mezclar…',
+    async () => {
+      if (tipo !== 'test' && tipo !== 'sino') return
+      const picks = await mixDialog(ctx, tipo)
+      if (!picks) return
+      const ref = await applyMix(ctx, tipo, picks)
+      if (!ref) return
+      clearOrder(ref)
+      setBankFor(tipo, ref)
+      ctx.toast(`Partida mezclada: ${picks.length} preguntas`)
+      render(ctx.state)
+    },
+    'b sm'
+  )
+  mix.title = 'Partida mezclada: varios bancos, etiquetas o dificultades a la vez'
+  if (tipo !== 'test' && tipo !== 'sino') mix.style.display = 'none'
   // reiniciar las usadas del banco elegido
-  const resetUsed = btn('Reiniciar usadas', async () => {
-    const ref = bankFor(ctx, tipo)
-    const bank = ctx.lib.peek(ref)
-    if (!ref || !bank) return
-    const ids = bank.preguntas.filter((x) => x.usada).map((x) => x.id)
-    if (!ids.length) return ctx.toast('No hay preguntas usadas en este banco')
-    if (!(await askConfirm(`¿Marcar las ${ids.length} preguntas usadas como sin usar?`, '', 'Reiniciar'))) return
-    ctx.lib.markUsed(ref, ids, false)
-  }, 'b sm ghost')
+  const resetUsed = btn(
+    'Reiniciar usadas',
+    async () => {
+      const ref = bankFor(ctx, tipo)
+      const bank = ctx.lib.peek(ref)
+      if (!ref || !bank) return
+      const ids = bank.preguntas.filter((x) => x.usada).map((x) => x.id)
+      if (!ids.length) return ctx.toast('No hay preguntas usadas en este banco')
+      if (!(await askConfirm(`¿Marcar las ${ids.length} preguntas usadas como sin usar?`, '', 'Reiniciar'))) return
+      ctx.lib.markUsed(ref, ids, false)
+    },
+    'b sm ghost'
+  )
   resetUsed.style.flex = 'none'
   bankSel.onchange = () => {
     setBankFor(tipo, bankSel.value || null)
@@ -104,7 +135,7 @@ export function questionList(ctx: Ctx, tipo: LibType, onPick: (q: Question, ref:
   }
   search.oninput = () => render(ctx.state)
   const el = h('div', 'pnl qlist', {}, [
-    h('div', '', { display: 'flex', alignItems: 'center', gap: 8 }, [title, shuffle]),
+    h('div', '', { display: 'flex', alignItems: 'center', gap: 8 }, [title, mix, shuffle]),
     bankSel,
     h('div', '', { display: 'flex', gap: 6 }, [search, resetUsed]),
     items,
@@ -183,6 +214,54 @@ export function goButton(): { el: HTMLButtonElement; set(label: string, after: s
   }
 }
 
+/** Botones de las imágenes de la pregunta en curso (I pregunta, U respuesta, F pantalla completa). */
+export function imageButtons(ctx: Ctx, cur: CurrentQuestion | null | undefined, send: (a: QuizAction) => void): HTMLElement[] {
+  if (!cur) return []
+  const q = cur.question
+  const v = imageView({ ...cur, showAnswerImage: cur.showAnswerImage ?? null })
+  const out: HTMLElement[] = []
+  if (q.imagen)
+    out.push(
+      btn(
+        v.qVisible ? 'Ocultar imagen' : q.imagen_modo === 'manual' ? 'Mostrar imagen' : cur.phase === 'ready' ? 'Imagen: sale sola' : 'Mostrar imagen',
+        () => send({ type: 'quizToggleImage', which: 'q' }),
+        `b ghost${v.qVisible ? ' on' : ''}`,
+        'I'
+      )
+    )
+  if (q.imagen_respuesta)
+    out.push(
+      btn(
+        v.aVisible ? 'Ocultar imagen respuesta' : cur.phase === 'revealed' ? 'Mostrar imagen respuesta' : 'Imagen respuesta (al revelar)',
+        () => send({ type: 'quizToggleImage', which: 'a' }),
+        `b ghost${v.aVisible ? ' on' : ''}`,
+        'U'
+      )
+    )
+  if (q.imagen || q.imagen_respuesta) {
+    const full = btn(v.full ? 'Quitar pantalla completa' : 'Pantalla completa', () => send({ type: 'quizImageFull' }), `b ghost${v.full ? ' on' : ''}`, 'F')
+    full.disabled = !v.file
+    out.push(full)
+  }
+  // la imagen que falta: buscarla
+  const missing = [!q.imagen && q.imagen_sugerida, !q.imagen_respuesta && q.imagen_respuesta_sugerida].filter(Boolean) as string[]
+  for (const m of missing) out.push(btn(`Falta imagen: buscar «${m.slice(0, 30)}»`, () => void window.konk.libSearchImage(m), 'b ghost warn'))
+  void ctx
+  return out
+}
+
+/** Una línea con el estado de las imágenes (para el panel de la pregunta). */
+export function imageStatus(cur: CurrentQuestion): HTMLElement | null {
+  const q = cur.question
+  if (!q.imagen && !q.imagen_respuesta) return null
+  const v = imageView({ ...cur, showAnswerImage: cur.showAnswerImage ?? null })
+  const parts: string[] = []
+  if (q.imagen) parts.push(`Imagen (${q.imagen_modo === 'manual' ? 'manual' : 'sale sola después del texto'}): ${v.qVisible && v.which === 'q' ? 'en el plató' : 'oculta'}`)
+  if (q.imagen_respuesta) parts.push(`Imagen de la respuesta: ${v.which === 'a' ? 'en el plató' : cur.phase === 'revealed' ? 'oculta' : 'sale al revelar'}`)
+  if (v.full) parts.push('a pantalla completa')
+  return h('div', 'mut', { fontSize: 12 }, [parts.join(' · ')])
+}
+
 /** "Plató: ..." con el punto rojo. */
 export function onAirLabel(s: GameState, game: QuizGameId | 'rosco', what: string): HTMLElement {
   const live = s.scene === 'juego' && s.liveGame === game
@@ -198,8 +277,7 @@ export const toGame = (game: QuizGameId, a: QuizAction): QuizAction => ({ ...a, 
 /** Insignia "EN EL AIRE" o botón "Poner en el aire" (cabecera de cada pantalla de juego). */
 export function airBadge(ctx: Ctx, s: GameState, game: QuizGameId | 'rosco'): HTMLElement {
   const onAir = s.scene === 'juego' && s.liveGame === game
-  if (onAir)
-    return h('span', 'air', { fontSize: 11, fontWeight: 700, letterSpacing: '0.06em', display: 'inline-flex', alignItems: 'center', gap: 5 }, [h('span', 'dotlive'), 'EN EL AIRE'])
+  if (onAir) return h('span', 'air', { fontSize: 11, fontWeight: 700, letterSpacing: '0.06em', display: 'inline-flex', alignItems: 'center', gap: 5 }, [h('span', 'dotlive'), 'EN EL AIRE'])
   return btn('Poner en el aire', () => ctx.send({ type: 'setLiveGame', game, scene: true }), 'b sm acc')
 }
 
@@ -214,7 +292,7 @@ export function timerControls(ctx: Ctx): { el: HTMLElement; update(s: GameState)
   const label = h('span', 'mut', { fontSize: 12, minWidth: 92 })
   const left = (s: GameState) => {
     const t = s.quiz.timer
-    const ms = t.endsAt !== null ? Math.max(0, t.endsAt - Date.now()) : t.remainingMs ?? t.seconds * 1000
+    const ms = t.endsAt !== null ? Math.max(0, t.endsAt - Date.now()) : (t.remainingMs ?? t.seconds * 1000)
     return Math.ceil(ms / 1000)
   }
   setInterval(() => {
@@ -249,10 +327,14 @@ export async function askSaveFix(ctx: Ctx, cur: CurrentQuestion, fix: (q: Questi
       h('span', 'mut', { fontSize: 13 }, [`Pregunta: «${cur.question.enunciado.slice(0, 120)}»`]),
       h('div', 'dlg-actions', {}, [
         btn('Solo para esta partida', close, 'b'),
-        btn('Sí, guardar en el banco', () => {
-          save = true
-          close()
-        }, 'b acc')
+        btn(
+          'Sí, guardar en el banco',
+          () => {
+            save = true
+            close()
+          },
+          'b acc'
+        )
       ])
     ],
     520

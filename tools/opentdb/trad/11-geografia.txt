@@ -1,0 +1,164 @@
+# Geografía (Geography)
+3697|¿Es África un país?|No
+3698|¿Cuál de estas NO es una lengua finoúgria?|Samoyedo|Húngaro|Finés|Estonio
+3699|¿Qué país tiene la mayor población japonesa fuera de Japón?|Brasil|China|Rusia|Estados Unidos
+3700|¿De qué reino forma parte Groenlandia?|Dinamarca|Suecia|Noruega|Reino Unido
+3703|¿Cómo se llama un arrecife o isla de coral en forma de anillo?|Atolón|Península|Istmo|Delta
+3704|¿Cuál es el país más pequeño del mundo?|El Vaticano|Maldivas|Mónaco|Malta
+3705|¿Cuál es el país más grande del mundo?|Rusia|China|Canadá|Brasil
+3706|¿Dónde está la famosa «Escalinata de la Plaza de España»?|En Roma|En Barcelona|En Berlín|En Londres
+3707|¿Qué país es dueño de la Antártida?|Ninguno, aunque hay reclamaciones|Estados Unidos|La ONU|Australia
+3708|¿Cuántos estados federados tiene Alemania?|16|13|32|25
+3709|¿Cuál de estas lenguas europeas es una «lengua aislada», sin parientes conocidos?|El euskera|El gallego|El maltés|El húngaro
+3710|¿Cuál de estos NO es un estado o territorio de Australia?|Alberta|Nueva Gales del Sur|Victoria|Queensland
+3711|¿Cuál es la capital de Escocia?|Edimburgo|Glasgow|Dundee|Londres
+3712|¿Es Bali la capital de Indonesia?|No
+3713|¿Cuántas estrellas tiene la bandera de Nueva Zelanda?|4|5|2|0
+3714|¿Cuál es la capital de Dinamarca?|Copenhague|Aarhus|Odense|Aalborg
+3715|¿Cuál es el mayor desierto cálido del mundo?|El Sáhara|El Gobi|El Mojave|El Kalahari
+3716|¿Es la Ciudad del Vaticano un país?|Sí
+3717|¿Cómo se llama el pueblo indígena de Nueva Zelanda?|Maorí|Vikingo|Polinesio|Samoano
+3718|¿En qué continente está la cordillera de los Andes?|América del Sur|Europa|Asia|África
+3719|¿En qué ciudad de la India está el Taj Mahal?|Agra|Bombay|Faridabad|Thane
+3720|¿Qué país rodea por completo a la Ciudad del Vaticano?|Italia|Francia|España|Alemania
+3721|¿Cuál es la capital de Estados Unidos?|Washington D. C.|Seattle|Albany|Los Ángeles
+3722|¿Cómo se llama la península que forman España y Portugal?|Península ibérica|Península europea|Peloponeso|Península escandinava
+3724|¿Cuál de estos países de la antigua Yugoslavia no tiene salida al mar?|Serbia|Bosnia y Herzegovina|Montenegro|Croacia
+3725|¿Cuál de estos países africanos tiene el español como lengua oficial?|Guinea Ecuatorial|Guinea|Camerún|Angola
+3727|¿Es Malta el microestado más pequeño del mundo?|No
+3728|¿Con qué país tiene frontera Belice?|Guatemala|Laos|Perú|Kenia
+3729|¿En qué ciudad está la Space Needle?|Seattle|Los Ángeles|Toronto|Vancouver
+3730|¿Es Ottawa la capital de Canadá?|Sí
+3731|¿Qué ciudad europea se conoce como «la Ciudad de la Luz»?|París|Roma|Londres|Madrid
+3733|¿Cuál es la capital de Rumanía?|Bucarest|Bratislava|Belgrado|Budapest
+3734|¿Formó parte del Imperio romano el territorio del actual Portugal?|Sí
+3735|¿En qué continente está Guyana?|América del Sur|África|América del Norte|Asia
+3736|¿Cuál de estos países NO tiene frontera con la República Democrática del Congo?|Sudán|República Centroafricana|Tanzania|Zambia
+3737|¿Cuál es el país más grande del mundo?|Rusia|Canadá|China|Estados Unidos
+3738|¿Cuál es la capital de Jamaica?|Kingston|San Juan|Puerto Príncipe|Bridgetown
+3740|¿Cuál es el idioma oficial de Costa Rica?|Español|Inglés|Portugués|Criollo
+3741|¿En qué país está Río de Janeiro?|Brasil|Perú|Chile|Venezuela
+3742|¿Qué país tiene una hoja de arce en su bandera?|Canadá|México|Brasil|India
+3743|¿Cuál es la segunda ciudad más grande de Rusia?|San Petersburgo|Minsk|Nizhni Nóvgorod|Vladivostok
+3744|¿Cuál de estas islas japonesas es la más grande?|Honshu|Hokkaido|Shikoku|Kyushu
+3746|¿Qué región de Europa del Este es famosa por los vampiros?|Transilvania|Silesia|Macedonia|Eslovaquia
+3747|¿Cuál es la ciudad más grande de Canadá?|Toronto|Montreal|Vancouver|Ottawa
+3748|¿En qué océano está la isla de la Reunión?|Índico|Atlántico|Pacífico Sur|Pacífico Norte
+3749|¿Cuál es el idioma oficial de Liechtenstein?|Alemán|Francés|Inglés|Italiano
+3751|¿Se considera Washington D. C. un estado de EE. UU.?|No
+3753|¿Es San Marino el único país completamente rodeado por otro país?|No
+3754|¿Cómo se llamaba antes la ciudad turca que hoy conocemos como Estambul?|Constantinopla|Hüdavendigar|Söğüt|Adrianópolis
+3755|¿Es Toronto la capital de Canadá?|No
+3759|¿Qué ciudad polaca llamaban Danzig los alemanes?|Gdansk|Varsovia|Zakopane|Poznan
+3760|¿Está Bosnia y Herzegovina en la región del Báltico?|No
+3762|¿Cuál es la capital de España?|Madrid|Barcelona|Sevilla|Toledo
+3763|¿Qué continente es el más grande y el más poblado?|Asia|África|Europa|América del Norte
+3764|¿Es California más grande que Japón?|Sí
+3765|¿Tiene Sudáfrica más de una capital?|Sí
+3766|¿Cuál es la capital de Corea del Sur?|Seúl|Pionyang|Daegu|Kitakyushu
+3767|¿Cuál es la decimoquinta letra del alfabeto griego?|Ómicron (Ο)|Sigma (Σ)|Pi (Π)|Ny (Ν)
+3768|¿Es Alaska el estado más grande de EE. UU.?|Sí
+3769|¿Cuál es la capital de Finlandia?|Helsinki|Gibraltar|Skopie|Oslo
+3771|¿Qué país NO formó parte de la Unión Soviética?|Rumanía|Turkmenistán|Bielorrusia|Tayikistán
+3773|¿Cuántos husos horarios tiene China?|1|3|4|2
+3774|¿Hay una ciudad llamada Roma en todos los continentes?|No
+3775|¿Entre qué dos países está la frontera común más larga del mundo?|Canadá y Estados Unidos|Chile y Argentina|Rusia y China|India y Pakistán
+3777|¿Es Groenlandia casi tan grande como África?|No
+3779|¿Qué país es el segundo más grande del mundo por superficie?|Canadá|Rusia|China|Estados Unidos
+3780|¿Dónde estaba la antigua ciudad de Pompeya?|En Italia|En África oriental|En Sudamérica|En Grecia
+3781|¿Qué país tiene en su bandera un león amarillo con una espada sobre fondo granate?|Sri Lanka|Kiribati|Escocia|Bután
+3782|¿Se llamaba Siam Laos hasta 1939?|No
+3783|¿Cuál es el estado más grande de EE. UU.?|Alaska|California|Texas|Washington
+3784|¿Qué país tiene una bandera de dos franjas horizontales, roja y blanca?|Mónaco|Baréin|Malta|Liechtenstein
+3786|¿En qué continente están los Alpes?|Europa|América del Norte|Asia|África
+3788|¿Qué país del Reino Unido lleva un dragón en su bandera?|Gales|Inglaterra|Irlanda del Norte|Escocia
+3790|¿Con cuántos países tiene frontera terrestre Estados Unidos?|2|1|3|4
+3791|¿Viene el nombre de Argentina del latín «argentum», plata?|Sí
+3792|¿Es Hungría el único país del mundo que empieza por H?|No
+3793|¿Qué es Laos?|Un país|Una región|Un río|Una ciudad
+3794|¿Debe Colombia su nombre a Cristóbal Colón?|Sí
+3795|¿Cuántos países hay en el mundo, más o menos?|200|100|300|500
+3796|¿En qué animal se basa el cuerpo de la Esfinge de Egipto?|El león|El toro|El caballo|El perro
+3797|¿Cuál es la capital de Indonesia?|Yakarta|Bandung|Medan|Palembang
+3798|¿Qué océano baña la costa oeste de Estados Unidos?|El Pacífico|El Atlántico|El Índico|El Ártico
+3799|¿Con qué país NO tiene frontera Austria?|Francia|Eslovenia|Suiza|Eslovaquia
+3801|¿Cuál de estos países árabes NO tiene una bandera solo con colores panárabes?|Catar|Kuwait|Emiratos Árabes Unidos|Jordania
+3802|¿Está Groenlandia cubierta de hierba e Islandia de hielo?|No
+3804|¿Se llama archipiélago a un grupo de islas?|Sí
+3805|¿A qué países se refería el despectivo acrónimo «PIIGS» por su situación económica?|Portugal, Irlanda, Italia, Grecia y España|Polonia, Islandia, Italia, Grecia y Suecia|Portugal, Islandia, Irlanda, Grecia y Eslovenia|Polonia, Irlanda, Italia, Georgia y España
+3807|¿Hay una isla en Japón, Ōkunoshima, llamada «la isla de los conejos» por la cantidad que tiene?|Sí
+3808|¿Cuál es la capital de la India?|Nueva Delhi|Pekín|Montreal|Bombay
+3809|¿En qué océano está Hawái?|El Pacífico|El Atlántico|El Índico|El Ártico
+3810|¿Con cuántos países tiene frontera México?|3|2|4|1
+3811|¿Cuál es la capital de Bangladés?|Daca|Khulna|Londres|Lahore
+3812|¿Qué pequeño país está entre Francia y España?|Andorra|San Marino|El Vaticano|Liechtenstein
+3813|¿Cuál de estas lenguas NO usa el alfabeto latino?|El georgiano|El turco|El suajili|El vietnamita
+3814|¿De qué color es el círculo de la bandera de Japón?|Rojo|Blanco|Amarillo|Negro
+3815|¿Es Tokio la capital de Japón?|Sí
+3816|¿Cuál es el país más grande con un solo huso horario?|China|Canadá|India|Rusia
+3817|¿Qué región rusa tiene frontera con Polonia?|Kaliningrado|Samara|Nizhni Nóvgorod|Omsk
+3819|¿Cuál es la capital de Vietnam?|Hanói|Da Nang|Hai Phong|Ciudad Ho Chi Minh
+3820|¿Qué ciudad tiene el aeropuerto con más tráfico del mundo?|Atlanta (EE. UU.)|Londres|Chicago|Tokio
+3821|¿Cómo se escribe correctamente la capital de Hungría?|Budapest|Boodapest|Bhudapest|Budapast
+3822|Contando todo su territorio, ¿en qué continentes está España?|Europa y África|Europa, África y Asia|Solo Europa|Europa y América
+3823|¿Qué país prohibió los test genéticos personales de ascendencia?|Alemania|Austria|Canadá|Suecia
+3824|¿Qué ciudad europea tiene más kilómetros de canales?|Birmingham|Venecia|Ámsterdam|Berlín
+3828|¿Cuántos países forman el Reino Unido?|Cuatro|Dos|Tres|Uno
+3829|¿Tiene Rusia frontera terrestre con Corea del Norte?|Sí
+3830|¿Cuál es el río más largo del mundo (según la medición tradicional)?|El Nilo|El Misuri|El Amazonas|El Yangtsé
+3832|¿Cuál es la capital de Chipre?|Nicosia|Pafos|Limasol|Lárnaca
+3833|¿Cuál de estas ciudades NO es una capital?|Sídney|El Cairo|Moscú|Pekín
+3834|¿Cuál es el quinto país más grande por superficie?|Brasil|Estados Unidos|Australia|India
+3836|¿Cuál es la capital de Groenlandia?|Nuuk|Sisimiut|Narsaq|Maniitsoq
+3838|¿Es Seúl la capital de Corea del Norte?|No
+3839|¿Va Israel siete horas por delante de Nueva York?|Sí
+3840|¿Frente a la costa de qué país está la micronación no reconocida del Principado de Sealand?|Reino Unido|Japón|Australia|Argentina
+3841|¿De qué país es capital Kuala Lumpur?|Malasia|Indonesia|Singapur|Tailandia
+3842|¿Entre qué dos países está el lago Titicaca?|Perú y Bolivia|Kenia y Uganda|México y EE. UU.|India y Bangladés
+3844|¿Cuál es la capital de Eslovenia?|Liubliana|Maribor|Velenje|Trbovlje
+3845|¿Es la superficie de Rusia algo mayor que la del planeta enano Plutón?|Sí
+3846|¿Cuál de estos países NO es megadiverso (con muchas especies endémicas)?|Tailandia|Perú|México|Sudáfrica
+3847|¿Cuál es la capital de Laos?|Vientián|Tarawa|Vaduz|Tegucigalpa
+3849|¿Qué país está en la zona euro pero fuera del espacio Schengen (hasta 2025)?|Chipre|Malta|Grecia|Portugal
+3851|¿En qué continente está Lesoto?|África|Asia|América del Sur|Europa
+3852|¿Es Colombia el tercer país más grande de Sudamérica?|No
+3854|¿Cuál de estos países es una isla?|Chipre|Azerbaiyán|El Salvador|Yibuti
+3855|¿Qué cordillera separa España y Francia?|Los Pirineos|Los Alpes|Los Cárpatos|Los Urales
+3856|¿Dónde está la base de lanzamiento espacial más antigua aún en funcionamiento?|Kazajistán|Rusia|Irán|Estados Unidos
+3857|¿Cuál de estos países NO reconoce a Armenia como país independiente?|Pakistán|Irán|Turquía|Azerbaiyán
+3858|¿Cuál es la capital de Lituania?|Vilna|Tallin|Helsinki|Riga
+3859|¿Dónde está el Muro de Adriano?|Cerca de Carlisle (Inglaterra)|En Roma|En Alejandría|En Dublín
+3860|¿Cuál es la capital de Bielorrusia?|Minsk|Varsovia|Kiev|Vilna
+3861|¿Está el desierto de Sonora en el este de África?|No
+3862|¿Con qué apodo se conoce el barrio japonés de Akihabara?|La Ciudad Eléctrica|El Río del Paseo Lunar|La Central Otaku|Ojos Grandes
+3863|¿Cuál es el único gran ducado que queda en el mundo?|Luxemburgo|Montenegro|Liechtenstein|Andorra
+3864|¿Cuántos estados soberanos son miembros de la ONU?|193|201|153|178
+3865|¿Dónde está el desierto de Sonora?|En América del Norte|En América del Sur|En Asia|En África
+3867|¿En qué ciudad están los Guerreros de terracota?|Xi'an|Pekín|Shanghái|Hong Kong
+3868|¿Cuál es la capital de Estonia?|Tallin|Helsinki|Tartu|Riga
+3869|¿Cuál de estas islas es la más grande?|Borneo|Gran Bretaña|Cuba|Madagascar
+3870|¿Cuál de estos países o territorios tiene menos habitantes?|Noruega|Eslovaquia|Finlandia|Hong Kong
+3871|¿En qué país están los acantilados blancos de Dover?|Reino Unido|Estados Unidos|Países Bajos|Suecia
+3872|¿Cuántos países independientes hay en América del Sur?|12|8|9|10
+3873|¿Cuál es la capital de Australia?|Canberra|Sídney|Melbourne|Brisbane
+3874|¿Cuántos países son más grandes que Australia?|5|4|3|6
+3875|¿Cuál de estos es el río más largo de Europa?|El Volga|El Danubio|El Ural|El Dniéper
+3876|¿Cuál de estos países tiene frontera con Polonia?|Lituania|Francia|Noruega|Países Bajos
+3877|¿A qué país europeo pertenece la isla de Gotland?|Suecia|Dinamarca|Noruega|Alemania
+3878|¿Cuánto mide el One World Trade Center de Nueva York?|541 metros|575 metros|373 metros|597 metros
+3879|¿Cuántas provincias tienen los Países Bajos?|12|14|10|13
+3880|¿Qué país reclama el territorio de Kosovo?|Serbia|Croacia|Albania|Macedonia del Norte
+3881|¿Es Gotemburgo la capital de Suecia?|No
+3882|¿Cuál era la ciudad más poblada de América en 2015?|São Paulo|Nueva York|Ciudad de México|Los Ángeles
+3884|¿Cuál de estas provincias españolas NO está en el norte?|Murcia|Asturias|Navarra|León
+3885|¿Cuál es la isla más grande del mundo (sin contar continentes)?|Groenlandia|Nueva Guinea|Borneo|Madagascar
+3886|¿Cuál de estos nombres de país NO está escrito en su propio idioma?|Slovaško|Suomi|Schweiz|Elláda
+3887|¿Cuál es la capital de Senegal?|Dakar|Nuakchot|Conakri|Monrovia
+3888|¿Dónde está la antigua ciudad de Petra?|Jordania|Egipto|Israel|Italia
+3889|¿Se conduce por la izquierda en Japón?|Sí
+3890|Eritrea se unió a la ONU en 1993 como el miembro 182. ¿En qué continente está?|África|Europa|Asia|América del Sur
+3891|¿En qué continente está Gambia?|África|Asia|América del Sur|Europa
+3892|¿Cuántos husos horarios tiene Rusia?|11|8|5|2
+3893|¿Cuántos ríos permanentes hay en Arabia Saudí?|0|1|2|3
+3894|¿Es Vietnam el único país del mundo que empieza por V?|No
+3895|¿Cuál de estas islas mediterráneas es de Francia?|Córcega|Mallorca|Cerdeña|Malta

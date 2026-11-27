@@ -1,0 +1,84 @@
+{
+  "formato": "konkursox-banco",
+  "version": 1,
+  "nombre": "Música · Difícil",
+  "grupo": "Open Trivia DB",
+  "licencia": "Preguntas de Open Trivia Database (opentdb.com), licencia CC BY-SA 4.0, traducidas y adaptadas al español. Este banco se distribuye con la misma licencia (CC BY-SA 4.0).",
+  "preguntas": [
+    {
+      "id": "o1310",
+      "tipo": "sino",
+      "enunciado": "¿Salió «Scatman's World» después de «Scatman (Ski-Ba-Bop-Ba-Dop-Bop)»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1321",
+      "tipo": "sino",
+      "enunciado": "¿Nació en Corea del Sur Myoui Mina, la japonesa de TWICE?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1326",
+      "tipo": "sino",
+      "enunciado": "¿Publicó «Mystery Train» el grupo Little Junior's Blue Flames en 1953?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1329",
+      "tipo": "sino",
+      "enunciado": "¿Se conocía también a Billie Holiday como «Lady Day»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1348",
+      "tipo": "sino",
+      "enunciado": "¿Transcurre «White City: A Novel», disco en solitario de Pete Townshend, en Chicago?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    }
+  ]
+}

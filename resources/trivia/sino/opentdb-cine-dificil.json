@@ -1,0 +1,39 @@
+{
+  "formato": "konkursox-banco",
+  "version": 1,
+  "nombre": "Cine · Difícil",
+  "grupo": "Open Trivia DB",
+  "licencia": "Preguntas de Open Trivia Database (opentdb.com), licencia CC BY-SA 4.0, traducidas y adaptadas al español. Este banco se distribuye con la misma licencia (CC BY-SA 4.0).",
+  "preguntas": [
+    {
+      "id": "o843",
+      "tipo": "sino",
+      "enunciado": "¿Dirigió la misma persona «Cube», «Cube 2: Hypercube» y «Cube Zero»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o856",
+      "tipo": "sino",
+      "enunciado": "¿Era una .44 Automag el arma de Clint Eastwood en «Harry el Sucio»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cine"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    }
+  ]
+}

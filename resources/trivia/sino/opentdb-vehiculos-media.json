@@ -1,0 +1,174 @@
+{
+  "formato": "konkursox-banco",
+  "version": 1,
+  "nombre": "Vehículos · Media",
+  "grupo": "Open Trivia DB",
+  "licencia": "Preguntas de Open Trivia Database (opentdb.com), licencia CC BY-SA 4.0, traducidas y adaptadas al español. Este banco se distribuye con la misma licencia (CC BY-SA 4.0).",
+  "preguntas": [
+    {
+      "id": "o4808",
+      "tipo": "sino",
+      "enunciado": "¿Fue el GM EV1 el primer coche eléctrico de serie homologado para la calle?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Vehículos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4809",
+      "tipo": "sino",
+      "enunciado": "¿Inventó el canadiense Joseph-Armand Bombardier la moto de nieve en 1937?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Vehículos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4814",
+      "tipo": "sino",
+      "enunciado": "¿Ha llevado siempre el Chevrolet Corvette motores V8?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Vehículos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4816",
+      "tipo": "sino",
+      "enunciado": "¿Superó el Shinkansen japonés el récord de velocidad del TGV francés?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Vehículos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4818",
+      "tipo": "sino",
+      "enunciado": "¿Era Bugatti una marca italiana?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Vehículos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4820",
+      "tipo": "sino",
+      "enunciado": "¿Es cierto que Ferrari nunca ha hecho un motor V10?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Vehículos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4822",
+      "tipo": "sino",
+      "enunciado": "¿Fue el Benz Patent-Motorwagen de 1886 el primer automóvil de verdad?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Vehículos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4830",
+      "tipo": "sino",
+      "enunciado": "¿Fabricaba coches BMW cuando se fundó en 1916?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Vehículos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4831",
+      "tipo": "sino",
+      "enunciado": "¿Ha tenido Mitsubishi una colaboración de 30 años con Jackie Chan, cuyas películas lucen sus coches?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Vehículos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4836",
+      "tipo": "sino",
+      "enunciado": "¿Se fabrican en China la mayoría de los Subaru?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Vehículos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4840",
+      "tipo": "sino",
+      "enunciado": "¿Es Arriva propiedad de Deutsche Bahn?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Vehículos"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    }
+  ]
+}

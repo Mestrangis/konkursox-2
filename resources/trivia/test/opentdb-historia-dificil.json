@@ -1,0 +1,1352 @@
+{
+  "formato": "konkursox-banco",
+  "version": 1,
+  "nombre": "Historia · Difícil",
+  "grupo": "Open Trivia DB",
+  "licencia": "Preguntas de Open Trivia Database (opentdb.com), licencia CC BY-SA 4.0, traducidas y adaptadas al español. Este banco se distribuye con la misma licencia (CC BY-SA 4.0).",
+  "preguntas": [
+    {
+      "id": "o4386",
+      "tipo": "test",
+      "enunciado": "¿Cuál era el nombre real del héroe nacional albanés Skanderbeg?",
+      "opciones": [
+        "Mirash Krasniqi",
+        "Diturak Zhulati",
+        "Iskander Bejko",
+        "Gjergj Kastrioti"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4387",
+      "tipo": "test",
+      "enunciado": "¿Cuántas sonatas para piano escribió Beethoven?",
+      "opciones": [
+        "50",
+        "21",
+        "31",
+        "32"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4388",
+      "tipo": "test",
+      "enunciado": "¿Qué país del sudeste asiático se llamaba antes Lan Xang?",
+      "opciones": [
+        "Vietnam",
+        "Tailandia",
+        "Camboya",
+        "Laos"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4389",
+      "tipo": "test",
+      "enunciado": "¿Cuál fue la última colonia importante que cedió Reino Unido, con la que se da por terminado el Imperio británico?",
+      "opciones": [
+        "Irlanda",
+        "Australia",
+        "India",
+        "Hong Kong"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4390",
+      "tipo": "test",
+      "enunciado": "¿Qué pedía la «Revolución de los Paraguas» de Hong Kong en 2014?",
+      "opciones": [
+        "Volver a ser británicos",
+        "Bajar los impuestos",
+        "Sufragio universal de verdad",
+        "La independencia"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4391",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llamaba Napoleón Bonaparte antes de afrancesar su nombre?",
+      "opciones": [
+        "Napoleão do Boaparte",
+        "Napoleon von Bonapart",
+        "Napoleone di Buonaparte",
+        "Napoleón de Buenaparte"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4392",
+      "tipo": "test",
+      "enunciado": "¿Qué vendían las primeras máquinas expendedoras, a principios de la década de 1880?",
+      "opciones": [
+        "Refrescos",
+        "Postales",
+        "Cigarrillos",
+        "Alcohol"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4393",
+      "tipo": "test",
+      "enunciado": "¿Quién fue el primer hombre en viajar dos veces al espacio?",
+      "opciones": [
+        "Yuri Gagarin",
+        "Gus Grissom",
+        "Charles Conrad",
+        "Vladímir Komarov"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4394",
+      "tipo": "test",
+      "enunciado": "¿Cuál era al principio el objetivo de la operación alemana «Caso Azul»?",
+      "opciones": [
+        "El Cáucaso",
+        "Crimea",
+        "Vorónezh",
+        "Stalingrado"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4395",
+      "tipo": "test",
+      "enunciado": "¿Qué rey inglés se casó con Leonor de Aquitania?",
+      "opciones": [
+        "Enrique II",
+        "Enrique I",
+        "Enrique V",
+        "Ricardo I"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4396",
+      "tipo": "test",
+      "enunciado": "¿En qué año se fundó Canadá como país?",
+      "opciones": [
+        "1798",
+        "1668",
+        "1867",
+        "1859"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4397",
+      "tipo": "test",
+      "enunciado": "¿Qué hicieron los protestantes de Praga a los regentes católicos para iniciar la revuelta de Bohemia de 1618?",
+      "opciones": [
+        "Insultar a su rey",
+        "Envenenarlos",
+        "Tirarlos por una ventana",
+        "Quemarles la casa"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4398",
+      "tipo": "test",
+      "enunciado": "¿Cuándo empezó la Revolución francesa?",
+      "opciones": [
+        "1823",
+        "1789",
+        "1799",
+        "1756"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4400",
+      "tipo": "test",
+      "enunciado": "¿En qué país empezó la Primavera Árabe?",
+      "opciones": [
+        "Túnez",
+        "Egipto",
+        "Marruecos",
+        "Siria"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4401",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llamaba originalmente Nueva York?",
+      "opciones": [
+        "Nueva Roma",
+        "Nueva Ámsterdam",
+        "Nueva Londres",
+        "Nueva París"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4402",
+      "tipo": "test",
+      "enunciado": "¿Cuándo fue nombrado Hitler canciller de Alemania?",
+      "opciones": [
+        "El 1 de septiembre de 1939",
+        "El 27 de febrero de 1933",
+        "El 30 de enero de 1933",
+        "El 6 de octubre de 1939"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4403",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llamaba el B-29 que lanzó la bomba atómica sobre Hiroshima?",
+      "opciones": [
+        "Necessary Evil",
+        "The Great Artiste",
+        "Enola Gay",
+        "Bockscar"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4404",
+      "tipo": "test",
+      "enunciado": "¿En qué sector trabajaban los primeros «luditas»?",
+      "opciones": [
+        "El textil",
+        "El campo",
+        "La minería",
+        "La cerámica"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4405",
+      "tipo": "test",
+      "enunciado": "¿Qué significaban las siglas RMS del RMS Titanic?",
+      "opciones": [
+        "Royal Mail Ship (buque correo real)",
+        "Royal Majesty Service",
+        "Regular Maritime Schedule",
+        "Royal Marine Steamer"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4406",
+      "tipo": "test",
+      "enunciado": "¿En qué año fue el atentado con gas sarín en el metro de Tokio?",
+      "opciones": [
+        "2011",
+        "1995",
+        "2001",
+        "1991"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4409",
+      "tipo": "test",
+      "enunciado": "¿En qué año fue la batalla de Verdún?",
+      "opciones": [
+        "1915",
+        "1917",
+        "1918",
+        "1916"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4410",
+      "tipo": "test",
+      "enunciado": "¿En qué país encabezó Toussaint Louverture una rebelión de esclavos que triunfó?",
+      "opciones": [
+        "Estados Unidos",
+        "Francia",
+        "Cuba",
+        "Haití"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4411",
+      "tipo": "test",
+      "enunciado": "En 1469 se casaron Isabel de Castilla y Fernando, heredero de ¿qué otro reino?",
+      "opciones": [
+        "Galicia",
+        "Navarra",
+        "León",
+        "Aragón"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4412",
+      "tipo": "test",
+      "enunciado": "¿A qué dios estaba dedicado el Panteón de Roma?",
+      "opciones": [
+        "A Júpiter",
+        "A Marte",
+        "A Minerva",
+        "A todos los dioses"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4413",
+      "tipo": "test",
+      "enunciado": "¿Cuándo se fundó Roma, según la tradición?",
+      "opciones": [
+        "En el 524 a. C.",
+        "En el 697 a. C.",
+        "En el 902 a. C.",
+        "En el 753 a. C."
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4414",
+      "tipo": "test",
+      "enunciado": "¿Quién creó el refresco Dr Pepper?",
+      "opciones": [
+        "John Pemberton",
+        "James Wellington",
+        "Caleb Bradham",
+        "Charles Alderton"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4415",
+      "tipo": "test",
+      "enunciado": "¿En qué año fue la batalla de Hastings?",
+      "opciones": [
+        "1204",
+        "1420",
+        "1066",
+        "911"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4416",
+      "tipo": "test",
+      "enunciado": "¿Qué primer ministro australiano desapareció en 1967 y nunca se encontró?",
+      "opciones": [
+        "Robert Menzies",
+        "Harold Holt",
+        "Edmund Barton",
+        "Paul Keating"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4417",
+      "tipo": "test",
+      "enunciado": "¿En qué año se firmó la Declaración de Independencia de Estados Unidos?",
+      "opciones": [
+        "1777",
+        "1776",
+        "1774",
+        "1775"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4418",
+      "tipo": "test",
+      "enunciado": "¿Cuándo se adoptó por primera vez el calendario gregoriano?",
+      "opciones": [
+        "1582",
+        "1501",
+        "1555",
+        "1623"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4419",
+      "tipo": "test",
+      "enunciado": "¿Dónde se cultivó por primera vez la patata?",
+      "opciones": [
+        "En Perú",
+        "En Irlanda",
+        "En Nueva Zelanda",
+        "En Estados Unidos"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4420",
+      "tipo": "test",
+      "enunciado": "¿Qué físico predijo por primera vez la existencia de la antimateria?",
+      "opciones": [
+        "Albert Einstein",
+        "Werner Heisenberg",
+        "Paul Dirac",
+        "Niels Bohr"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4421",
+      "tipo": "test",
+      "enunciado": "En la Primera Guerra Mundial, ¿los monarcas de qué países eran familia?",
+      "opciones": [
+        "Francia, Rusia y Alemania",
+        "Alemania, España y Austria",
+        "Reino Unido, Alemania y Rusia",
+        "Serbia, Rusia y Croacia"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4422",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llamó el desembarco aliado en el sur de Francia en agosto de 1944?",
+      "opciones": [
+        "Operación Overlord",
+        "Operación Dragoon",
+        "Operación Torch",
+        "Operación Market Garden"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4424",
+      "tipo": "test",
+      "enunciado": "¿Cuál es la única de las siete maravillas del mundo antiguo que sigue en pie?",
+      "opciones": [
+        "La Gran Pirámide de Guiza",
+        "El Mausoleo de Halicarnaso",
+        "El Coloso de Rodas",
+        "El Faro de Alejandría"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4425",
+      "tipo": "test",
+      "enunciado": "En el triunvirato del 42 a. C., ¿qué región recibió Lépido?",
+      "opciones": [
+        "Hispania",
+        "Asia",
+        "Italia",
+        "La Galia"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4427",
+      "tipo": "test",
+      "enunciado": "¿Qué pueblo irlandés vive del turismo por una supuesta aparición de la Virgen en 1879?",
+      "opciones": [
+        "Ballycastle",
+        "Swinford",
+        "Knock",
+        "Lourdes"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4428",
+      "tipo": "test",
+      "enunciado": "¿En qué país tuvo lugar la rebelión de Eureka contra el gobierno colonial, en 1854?",
+      "opciones": [
+        "Australia",
+        "India",
+        "Canadá",
+        "Brasil"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4429",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos físicos NO trabajó en el Proyecto Manhattan?",
+      "opciones": [
+        "Murray Gell-Mann",
+        "Richard Feynman",
+        "J. Robert Oppenheimer",
+        "John von Neumann"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4430",
+      "tipo": "test",
+      "enunciado": "¿Qué emperador bizantino mandó construir Santa Sofía?",
+      "opciones": [
+        "Justiniano I",
+        "Arcadio",
+        "Constantino IV",
+        "Teodosio el Grande"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4431",
+      "tipo": "test",
+      "enunciado": "¿El hijo de qué papa organizó supuestamente una fiesta con 50 cortesanas en el palacio papal?",
+      "opciones": [
+        "Urbano II",
+        "Alejandro VI",
+        "Inocencio V",
+        "Pío III"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4435",
+      "tipo": "test",
+      "enunciado": "¿Quién inventó la lanzadera volante en 1733, clave en la industrialización del tejido?",
+      "opciones": [
+        "Edmund Cartwright",
+        "James Hargreaves",
+        "Richard Arkwright",
+        "John Kay"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4436",
+      "tipo": "test",
+      "enunciado": "¿Con qué filósofo se asocia la frase «Solo sé que no sé nada»?",
+      "opciones": [
+        "Platón",
+        "Pitágoras",
+        "Aristóteles",
+        "Sócrates"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4437",
+      "tipo": "test",
+      "enunciado": "¿Qué día empezó la Primera Guerra Mundial?",
+      "opciones": [
+        "El 28 de junio",
+        "El 28 de abril",
+        "El 28 de enero",
+        "El 28 de julio"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4440",
+      "tipo": "test",
+      "enunciado": "¿Quién fue el primer hombre en viajar al espacio?",
+      "opciones": [
+        "Buzz Aldrin",
+        "Yuri Gagarin",
+        "Neil Armstrong",
+        "Gus Grissom"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4442",
+      "tipo": "test",
+      "enunciado": "¿En qué ciudad se abrió el primer Legoland, en 1968?",
+      "opciones": [
+        "Winter Haven (Florida)",
+        "Billund (Dinamarca)",
+        "Nagoya (Japón)",
+        "Carlsbad (California)"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4443",
+      "tipo": "test",
+      "enunciado": "¿A quién se atribuye por primera vez el argumento ontológico de la existencia de Dios?",
+      "opciones": [
+        "San Anselmo de Canterbury",
+        "Immanuel Kant",
+        "Aristóteles",
+        "René Descartes"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4444",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llamó la ofensiva alemana de octubre de 1941 para tomar Moscú antes del invierno?",
+      "opciones": [
+        "Operación Barbarroja",
+        "Operación Ciudadela",
+        "Operación Tifón",
+        "Operación Girasol"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4445",
+      "tipo": "test",
+      "enunciado": "¿El asesinato de qué noble desencadenó la Primera Guerra Mundial?",
+      "opciones": [
+        "El zar Nicolás II",
+        "El rey Carlos I",
+        "El archiduque Francisco Fernando",
+        "Lord Mountbatten"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4446",
+      "tipo": "test",
+      "enunciado": "¿Dónde se libró la segunda guerra de los bóeres, en 1899?",
+      "opciones": [
+        "Argentina",
+        "Sudáfrica",
+        "Bulgaria",
+        "Nepal"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4447",
+      "tipo": "test",
+      "enunciado": "¿A qué época musical pertenece Chopin?",
+      "opciones": [
+        "Al Clasicismo",
+        "Al Romanticismo",
+        "Al Renacimiento",
+        "Al Barroco"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4448",
+      "tipo": "test",
+      "enunciado": "¿Cuándo declaró Lituania su independencia de la Unión Soviética?",
+      "opciones": [
+        "El 11 de marzo de 1990",
+        "El 25 de diciembre de 1991",
+        "El 20 de abril de 1989",
+        "El 5 de diciembre de 1991"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4449",
+      "tipo": "test",
+      "enunciado": "¿Por qué ganó Einstein el Nobel de 1921?",
+      "opciones": [
+        "Por el efecto fotoeléctrico",
+        "Por la energía del vacío",
+        "Por la relatividad",
+        "Por la dualidad onda-partícula"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4450",
+      "tipo": "test",
+      "enunciado": "¿Qué encontraron en 1946 dos jóvenes pastores en una cueva?",
+      "opciones": [
+        "Una momia egipcia",
+        "Los manuscritos del mar Muerto",
+        "El cofre de Barbanegra",
+        "Una oveja perdida"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4452",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos reyes NO era de la casa de Habsburgo?",
+      "opciones": [
+        "Carlos V",
+        "Felipe II",
+        "Felipe V",
+        "Francisco José"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4454",
+      "tipo": "test",
+      "enunciado": "¿Dónde nació Napoleón Bonaparte?",
+      "opciones": [
+        "En Córcega",
+        "En Normandía",
+        "En Bretaña",
+        "En París"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4455",
+      "tipo": "test",
+      "enunciado": "¿Qué civilización construyó Chichén Itzá?",
+      "opciones": [
+        "La inca",
+        "La maya",
+        "La azteca",
+        "La tolteca"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4457",
+      "tipo": "test",
+      "enunciado": "¿Qué físico ayudó a la Alemania nazi en su intento de fabricar la bomba atómica?",
+      "opciones": [
+        "John von Neumann",
+        "Albert Einstein",
+        "Werner Heisenberg",
+        "Max Planck"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4461",
+      "tipo": "test",
+      "enunciado": "En la guerra civil española, ¿en qué bando luchó Franco?",
+      "opciones": [
+        "El Frente Popular",
+        "El anarquista",
+        "El republicano",
+        "El sublevado (nacional)"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4463",
+      "tipo": "test",
+      "enunciado": "¿Qué microestado tiene la constitución más antigua que sigue en vigor?",
+      "opciones": [
+        "Mónaco",
+        "Andorra",
+        "San Cristóbal y Nieves",
+        "San Marino"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4464",
+      "tipo": "test",
+      "enunciado": "¿Cuánto duró el levantamiento de Varsovia en la Segunda Guerra Mundial?",
+      "opciones": [
+        "55 días",
+        "20 días",
+        "224 días",
+        "63 días"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4465",
+      "tipo": "test",
+      "enunciado": "En la guerra de las Dos Rosas, ¿a quién apodaron «el Hacedor de Reyes»?",
+      "opciones": [
+        "Thomas Warwick",
+        "Richard Neville",
+        "Enrique V",
+        "Ricardo III"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4468",
+      "tipo": "test",
+      "enunciado": "¿Cuándo se levantó el sitio de Leningrado?",
+      "opciones": [
+        "En enero de 1944",
+        "En noviembre de 1943",
+        "En marzo de 1944",
+        "En septiembre de 1943"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4469",
+      "tipo": "test",
+      "enunciado": "El escudo del rey de España lleva las armas de Castilla, León, Aragón y ¿qué otro reino?",
+      "opciones": [
+        "Portugal",
+        "Valencia",
+        "Navarra",
+        "Galicia"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4470",
+      "tipo": "test",
+      "enunciado": "¿Qué rey de Inglaterra se enfrentó a la revuelta campesina de 1381?",
+      "opciones": [
+        "Enrique IV",
+        "Eduardo II",
+        "Ricardo II",
+        "Eduardo III"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4471",
+      "tipo": "test",
+      "enunciado": "De 1940 a 1942, ¿cuál fue la capital en el exilio de la Francia Libre?",
+      "opciones": [
+        "Argel",
+        "Brazzaville",
+        "Túnez",
+        "París"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4472",
+      "tipo": "test",
+      "enunciado": "¿En qué año empezó la guerra de la Independencia española?",
+      "opciones": [
+        "1808",
+        "1806",
+        "1809",
+        "1810"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4473",
+      "tipo": "test",
+      "enunciado": "Tras la batalla de Marj Dabiq (1516), ¿a qué sultanato quitaron Jerusalén los otomanos?",
+      "opciones": [
+        "Al mameluco",
+        "Al selyúcida",
+        "Al ayubí",
+        "Al omeya"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4476",
+      "tipo": "test",
+      "enunciado": "¿Quién fue en 1547 el primer zar de Rusia?",
+      "opciones": [
+        "Alejo I",
+        "Pedro el Grande",
+        "Iván el Terrible",
+        "Miguel Románov"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4477",
+      "tipo": "test",
+      "enunciado": "¿Qué batalla naval fue el punto de inflexión de la guerra del Pacífico?",
+      "opciones": [
+        "Midway",
+        "Truk",
+        "Pearl Harbor",
+        "Leyte"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4480",
+      "tipo": "test",
+      "enunciado": "Ordena estos imperios iranios de más antiguo a más moderno:",
+      "opciones": [
+        "Aqueménida, medo, parto, sasánida",
+        "Medo, aqueménida, parto, sasánida",
+        "Medo, aqueménida, sasánida, parto",
+        "Parto, medo, aqueménida, sasánida"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4481",
+      "tipo": "test",
+      "enunciado": "¿En qué año abrió el primer Pizza Hut?",
+      "opciones": [
+        "1976",
+        "1965",
+        "1958",
+        "1942"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4482",
+      "tipo": "test",
+      "enunciado": "Además de sus profecías, Nostradamus publicó en 1555 un tratado con una parte sobre…",
+      "opciones": [
+        "Astrología para reyes",
+        "Cómo curar la peste con sanguijuelas",
+        "Cómo hacer mermeladas y confituras",
+        "Cómo fabricar pólvora"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4483",
+      "tipo": "test",
+      "enunciado": "¿Quién era primer ministro británico al empezar la Segunda Guerra Mundial?",
+      "opciones": [
+        "Neville Chamberlain",
+        "Stanley Baldwin",
+        "Winston Churchill",
+        "Ramsay MacDonald"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4485",
+      "tipo": "test",
+      "enunciado": "¿Qué presidente de EE. UU. era, según la leyenda, demasiado honrado para mentir a su padre sobre un cerezo talado?",
+      "opciones": [
+        "Thomas Jefferson",
+        "John Adams",
+        "Abraham Lincoln",
+        "George Washington"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4486",
+      "tipo": "test",
+      "enunciado": "¿Quién fue el último emperador de México?",
+      "opciones": [
+        "Napoleón III",
+        "Porfirio Díaz",
+        "Agustín de Iturbide",
+        "Maximiliano de Habsburgo"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4487",
+      "tipo": "test",
+      "enunciado": "¿Cuántos años tenía Enrique V de Inglaterra al morir?",
+      "opciones": [
+        "87",
+        "62",
+        "73",
+        "35"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4488",
+      "tipo": "test",
+      "enunciado": "¿En qué año cumplió Finlandia cien años de independencia?",
+      "opciones": [
+        "2018",
+        "2016",
+        "2015",
+        "2017"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4489",
+      "tipo": "test",
+      "enunciado": "¿Quién fue Bogdán Jmelnitski?",
+      "opciones": [
+        "Un secretario general del PCUS",
+        "Un zar de Rusia",
+        "Un príncipe de Valaquia",
+        "El líder de los cosacos ucranianos"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    }
+  ]
+}

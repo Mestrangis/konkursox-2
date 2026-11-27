@@ -1,0 +1,230 @@
+{
+  "formato": "konkursox-banco",
+  "version": 1,
+  "nombre": "Dibujos animados · Difícil",
+  "grupo": "Open Trivia DB",
+  "licencia": "Preguntas de Open Trivia Database (opentdb.com), licencia CC BY-SA 4.0, traducidas y adaptadas al español. Este banco se distribuye con la misma licencia (CC BY-SA 4.0).",
+  "preguntas": [
+    {
+      "id": "o5272",
+      "tipo": "test",
+      "enunciado": "¿De cuál de estas películas fue Don Bluth guionista, director y productor?",
+      "opciones": [
+        "Anastasia",
+        "Todos los perros van al cielo",
+        "En busca del valle encantado",
+        "Titan A.E."
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Dibujos animados"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5274",
+      "tipo": "test",
+      "enunciado": "¿Quién puso la voz al perro de Stan en el episodio de «South Park» del barco gay?",
+      "opciones": [
+        "Robert Smith",
+        "Jay Leno",
+        "George Clooney",
+        "Matt Stone"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Dibujos animados"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5276",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llamaba el perro de Jonny Quest?",
+      "opciones": [
+        "Bandit",
+        "Lucky",
+        "Max",
+        "Rocky"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Dibujos animados"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5281",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estas novias de dibujos apareció antes que su novio?",
+      "opciones": [
+        "Olivia (de Popeye)",
+        "Minnie Mouse",
+        "Lola Bunny",
+        "La Pata Daisy"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Dibujos animados"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5282",
+      "tipo": "test",
+      "enunciado": "En el universo de «Star Wars», ¿de qué especie es el gran almirante Thrawn?",
+      "opciones": [
+        "Gungan",
+        "Chiss",
+        "Pantorano",
+        "Twi'lek"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Dibujos animados"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5283",
+      "tipo": "test",
+      "enunciado": "¿Quién puso la voz original a Hipo en «Cómo entrenar a tu dragón»?",
+      "opciones": [
+        "John Powell",
+        "Jay Baruchel",
+        "Jack Black",
+        "Gerard Butler"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Dibujos animados"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5284",
+      "tipo": "test",
+      "enunciado": "Benny, Brain, Fancy-Fancy, Spook y Choo-Choo eran la pandilla de ¿qué personaje de Hanna-Barbera?",
+      "opciones": [
+        "Don Gato",
+        "Leoncio",
+        "El Oso Yogui",
+        "Scooby-Doo"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Dibujos animados"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5286",
+      "tipo": "test",
+      "enunciado": "En «Rick y Morty», ¿de qué dimensión son Rick y Morty?",
+      "opciones": [
+        "C-136",
+        "J1977",
+        "C500-a",
+        "C-137"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Dibujos animados"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5287",
+      "tipo": "test",
+      "enunciado": "¿Qué familia de dibujos vive en el 31 de Spooner Street, en Quahog?",
+      "opciones": [
+        "Los Simpson",
+        "Los Hill",
+        "Los Supersónicos",
+        "Los Griffin"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Dibujos animados"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5291",
+      "tipo": "test",
+      "enunciado": "En «Rick y Morty», ¿qué significa «Wubba Lubba Dub Dub» en el idioma de Persona Pájaro?",
+      "opciones": [
+        "Adiós, amigo",
+        "Soy el más listo",
+        "Me lo paso genial",
+        "Sufro mucho, ayúdame"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Dibujos animados"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5292",
+      "tipo": "test",
+      "enunciado": "En «Los autos locos», ¿cómo se llamaba la pareja de cavernícolas del Troncomóvil?",
+      "opciones": [
+        "Los Hermanos Piedra",
+        "Los Hermanos Roca",
+        "Los Hermanos Garrote",
+        "Los Hermanos Macana"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Dibujos animados"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5293",
+      "tipo": "test",
+      "enunciado": "¿Cuándo se estrenó el primer episodio de «Las Supernenas»?",
+      "opciones": [
+        "El 14 de abril de 2001",
+        "El 28 de julio de 2000",
+        "El 18 de noviembre de 1998",
+        "El 25 de junio de 1999"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Dibujos animados"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5294",
+      "tipo": "test",
+      "enunciado": "¿Cuál es el nombre completo de Scooby-Doo?",
+      "opciones": [
+        "Scoobert Doo",
+        "Scoobity Doo",
+        "Scooby Dooby Doo",
+        "Scooter Doo"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Dibujos animados"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    }
+  ]
+}

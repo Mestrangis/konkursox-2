@@ -1,0 +1,219 @@
+{
+  "formato": "konkursox-banco",
+  "version": 1,
+  "nombre": "Televisión · Media",
+  "grupo": "Open Trivia DB",
+  "licencia": "Preguntas de Open Trivia Database (opentdb.com), licencia CC BY-SA 4.0, traducidas y adaptadas al español. Este banco se distribuye con la misma licencia (CC BY-SA 4.0).",
+  "preguntas": [
+    {
+      "id": "o1499",
+      "tipo": "sino",
+      "enunciado": "¿Fue Bob Ross piloto de las Fuerzas Aéreas de EE. UU.?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1501",
+      "tipo": "sino",
+      "enunciado": "¿Escribió el autor de la novela «Leaving Las Vegas» un episodio de «Rugrats»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1504",
+      "tipo": "sino",
+      "enunciado": "¿Hay un episodio de «Los Simpson» dedicado al trapo de la barra de Moe?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1513",
+      "tipo": "sino",
+      "enunciado": "En «Futurama», ¿es Philip J. Fry su propio abuelo?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1515",
+      "tipo": "sino",
+      "enunciado": "¿Tuvieron los klingon un periodo democrático al que llamaron «los Tiempos Oscuros»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1519",
+      "tipo": "sino",
+      "enunciado": "¿Se emitió «Doctor Who» por primera vez en 1963?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1525",
+      "tipo": "sino",
+      "enunciado": "En «Enano Rojo», ¿es el nombre completo de Kryten «Kryten 2X4B-523P»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1528",
+      "tipo": "sino",
+      "enunciado": "¿Era el Ranger Blanco el líder de los Power Rangers?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1538",
+      "tipo": "sino",
+      "enunciado": "¿Respetan los klingon a sus compañeros discapacitados, viejos, heridos o indefensos?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1541",
+      "tipo": "sino",
+      "enunciado": "En «The Walking Dead», ¿aparecen Rick, Carl, Daryl, Morgan, Carol y Maggie desde la primera temporada?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1553",
+      "tipo": "sino",
+      "enunciado": "En «Star Trek: La nueva generación», ¿es Data el único androide que existe?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1554",
+      "tipo": "sino",
+      "enunciado": "¿Se canceló «La isla de Gilligan» por falta de audiencia?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1556",
+      "tipo": "sino",
+      "enunciado": "En «Star Trek», ¿se llama habitualmente a los klingon «elfos negros»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1557",
+      "tipo": "sino",
+      "enunciado": "¿Admiran los klingon a Shakespeare, hasta el punto de sospechar que tenía sangre klingon?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    }
+  ]
+}

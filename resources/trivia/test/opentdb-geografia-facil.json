@@ -1,0 +1,1284 @@
+{
+  "formato": "konkursox-banco",
+  "version": 1,
+  "nombre": "Geografía · Fácil",
+  "grupo": "Open Trivia DB",
+  "licencia": "Preguntas de Open Trivia Database (opentdb.com), licencia CC BY-SA 4.0, traducidas y adaptadas al español. Este banco se distribuye con la misma licencia (CC BY-SA 4.0).",
+  "preguntas": [
+    {
+      "id": "o3698",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estas NO es una lengua finoúgria?",
+      "opciones": [
+        "Húngaro",
+        "Samoyedo",
+        "Estonio",
+        "Finés"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3699",
+      "tipo": "test",
+      "enunciado": "¿Qué país tiene la mayor población japonesa fuera de Japón?",
+      "opciones": [
+        "Estados Unidos",
+        "Brasil",
+        "China",
+        "Rusia"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3700",
+      "tipo": "test",
+      "enunciado": "¿De qué reino forma parte Groenlandia?",
+      "opciones": [
+        "Dinamarca",
+        "Noruega",
+        "Suecia",
+        "Reino Unido"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3703",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama un arrecife o isla de coral en forma de anillo?",
+      "opciones": [
+        "Península",
+        "Atolón",
+        "Istmo",
+        "Delta"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3704",
+      "tipo": "test",
+      "enunciado": "¿Cuál es el país más pequeño del mundo?",
+      "opciones": [
+        "El Vaticano",
+        "Maldivas",
+        "Mónaco",
+        "Malta"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3705",
+      "tipo": "test",
+      "enunciado": "¿Cuál es el país más grande del mundo?",
+      "opciones": [
+        "Rusia",
+        "Canadá",
+        "China",
+        "Brasil"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3706",
+      "tipo": "test",
+      "enunciado": "¿Dónde está la famosa «Escalinata de la Plaza de España»?",
+      "opciones": [
+        "En Londres",
+        "En Berlín",
+        "En Barcelona",
+        "En Roma"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3707",
+      "tipo": "test",
+      "enunciado": "¿Qué país es dueño de la Antártida?",
+      "opciones": [
+        "Estados Unidos",
+        "La ONU",
+        "Australia",
+        "Ninguno, aunque hay reclamaciones"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3708",
+      "tipo": "test",
+      "enunciado": "¿Cuántos estados federados tiene Alemania?",
+      "opciones": [
+        "13",
+        "32",
+        "25",
+        "16"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3709",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estas lenguas europeas es una «lengua aislada», sin parientes conocidos?",
+      "opciones": [
+        "El húngaro",
+        "El gallego",
+        "El maltés",
+        "El euskera"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3710",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos NO es un estado o territorio de Australia?",
+      "opciones": [
+        "Queensland",
+        "Nueva Gales del Sur",
+        "Victoria",
+        "Alberta"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3711",
+      "tipo": "test",
+      "enunciado": "¿Cuál es la capital de Escocia?",
+      "opciones": [
+        "Londres",
+        "Dundee",
+        "Glasgow",
+        "Edimburgo"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3713",
+      "tipo": "test",
+      "enunciado": "¿Cuántas estrellas tiene la bandera de Nueva Zelanda?",
+      "opciones": [
+        "0",
+        "2",
+        "4",
+        "5"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3714",
+      "tipo": "test",
+      "enunciado": "¿Cuál es la capital de Dinamarca?",
+      "opciones": [
+        "Odense",
+        "Aalborg",
+        "Copenhague",
+        "Aarhus"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3715",
+      "tipo": "test",
+      "enunciado": "¿Cuál es el mayor desierto cálido del mundo?",
+      "opciones": [
+        "El Sáhara",
+        "El Kalahari",
+        "El Mojave",
+        "El Gobi"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3717",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama el pueblo indígena de Nueva Zelanda?",
+      "opciones": [
+        "Polinesio",
+        "Maorí",
+        "Samoano",
+        "Vikingo"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3718",
+      "tipo": "test",
+      "enunciado": "¿En qué continente está la cordillera de los Andes?",
+      "opciones": [
+        "Asia",
+        "América del Sur",
+        "África",
+        "Europa"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3719",
+      "tipo": "test",
+      "enunciado": "¿En qué ciudad de la India está el Taj Mahal?",
+      "opciones": [
+        "Thane",
+        "Bombay",
+        "Agra",
+        "Faridabad"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3720",
+      "tipo": "test",
+      "enunciado": "¿Qué país rodea por completo a la Ciudad del Vaticano?",
+      "opciones": [
+        "Alemania",
+        "Francia",
+        "Italia",
+        "España"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3721",
+      "tipo": "test",
+      "enunciado": "¿Cuál es la capital de Estados Unidos?",
+      "opciones": [
+        "Washington D. C.",
+        "Seattle",
+        "Los Ángeles",
+        "Albany"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3722",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama la península que forman España y Portugal?",
+      "opciones": [
+        "Península europea",
+        "Península ibérica",
+        "Península escandinava",
+        "Peloponeso"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3724",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos países de la antigua Yugoslavia no tiene salida al mar?",
+      "opciones": [
+        "Serbia",
+        "Croacia",
+        "Bosnia y Herzegovina",
+        "Montenegro"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3725",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos países africanos tiene el español como lengua oficial?",
+      "opciones": [
+        "Camerún",
+        "Guinea",
+        "Guinea Ecuatorial",
+        "Angola"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3728",
+      "tipo": "test",
+      "enunciado": "¿Con qué país tiene frontera Belice?",
+      "opciones": [
+        "Laos",
+        "Guatemala",
+        "Perú",
+        "Kenia"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3729",
+      "tipo": "test",
+      "enunciado": "¿En qué ciudad está la Space Needle?",
+      "opciones": [
+        "Seattle",
+        "Toronto",
+        "Los Ángeles",
+        "Vancouver"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3731",
+      "tipo": "test",
+      "enunciado": "¿Qué ciudad europea se conoce como «la Ciudad de la Luz»?",
+      "opciones": [
+        "Roma",
+        "Londres",
+        "Madrid",
+        "París"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3733",
+      "tipo": "test",
+      "enunciado": "¿Cuál es la capital de Rumanía?",
+      "opciones": [
+        "Bratislava",
+        "Budapest",
+        "Belgrado",
+        "Bucarest"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3735",
+      "tipo": "test",
+      "enunciado": "¿En qué continente está Guyana?",
+      "opciones": [
+        "Asia",
+        "África",
+        "América del Norte",
+        "América del Sur"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3736",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos países NO tiene frontera con la República Democrática del Congo?",
+      "opciones": [
+        "Tanzania",
+        "Zambia",
+        "República Centroafricana",
+        "Sudán"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3737",
+      "tipo": "test",
+      "enunciado": "¿Cuál es el país más grande del mundo?",
+      "opciones": [
+        "China",
+        "Estados Unidos",
+        "Canadá",
+        "Rusia"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3738",
+      "tipo": "test",
+      "enunciado": "¿Cuál es la capital de Jamaica?",
+      "opciones": [
+        "Bridgetown",
+        "Puerto Príncipe",
+        "Kingston",
+        "San Juan"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3740",
+      "tipo": "test",
+      "enunciado": "¿Cuál es el idioma oficial de Costa Rica?",
+      "opciones": [
+        "Español",
+        "Criollo",
+        "Portugués",
+        "Inglés"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3741",
+      "tipo": "test",
+      "enunciado": "¿En qué país está Río de Janeiro?",
+      "opciones": [
+        "Venezuela",
+        "Brasil",
+        "Chile",
+        "Perú"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3742",
+      "tipo": "test",
+      "enunciado": "¿Qué país tiene una hoja de arce en su bandera?",
+      "opciones": [
+        "Brasil",
+        "Canadá",
+        "India",
+        "México"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3743",
+      "tipo": "test",
+      "enunciado": "¿Cuál es la segunda ciudad más grande de Rusia?",
+      "opciones": [
+        "Nizhni Nóvgorod",
+        "San Petersburgo",
+        "Vladivostok",
+        "Minsk"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3744",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estas islas japonesas es la más grande?",
+      "opciones": [
+        "Kyushu",
+        "Hokkaido",
+        "Honshu",
+        "Shikoku"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3746",
+      "tipo": "test",
+      "enunciado": "¿Qué región de Europa del Este es famosa por los vampiros?",
+      "opciones": [
+        "Silesia",
+        "Transilvania",
+        "Eslovaquia",
+        "Macedonia"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3747",
+      "tipo": "test",
+      "enunciado": "¿Cuál es la ciudad más grande de Canadá?",
+      "opciones": [
+        "Montreal",
+        "Toronto",
+        "Ottawa",
+        "Vancouver"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3748",
+      "tipo": "test",
+      "enunciado": "¿En qué océano está la isla de la Reunión?",
+      "opciones": [
+        "Índico",
+        "Pacífico Norte",
+        "Atlántico",
+        "Pacífico Sur"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3749",
+      "tipo": "test",
+      "enunciado": "¿Cuál es el idioma oficial de Liechtenstein?",
+      "opciones": [
+        "Alemán",
+        "Italiano",
+        "Francés",
+        "Inglés"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3754",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llamaba antes la ciudad turca que hoy conocemos como Estambul?",
+      "opciones": [
+        "Constantinopla",
+        "Söğüt",
+        "Hüdavendigar",
+        "Adrianópolis"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3759",
+      "tipo": "test",
+      "enunciado": "¿Qué ciudad polaca llamaban Danzig los alemanes?",
+      "opciones": [
+        "Poznan",
+        "Varsovia",
+        "Zakopane",
+        "Gdansk"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3762",
+      "tipo": "test",
+      "enunciado": "¿Cuál es la capital de España?",
+      "opciones": [
+        "Barcelona",
+        "Sevilla",
+        "Toledo",
+        "Madrid"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3763",
+      "tipo": "test",
+      "enunciado": "¿Qué continente es el más grande y el más poblado?",
+      "opciones": [
+        "Europa",
+        "América del Norte",
+        "Asia",
+        "África"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3766",
+      "tipo": "test",
+      "enunciado": "¿Cuál es la capital de Corea del Sur?",
+      "opciones": [
+        "Daegu",
+        "Seúl",
+        "Kitakyushu",
+        "Pionyang"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3767",
+      "tipo": "test",
+      "enunciado": "¿Cuál es la decimoquinta letra del alfabeto griego?",
+      "opciones": [
+        "Pi (Π)",
+        "Ómicron (Ο)",
+        "Ny (Ν)",
+        "Sigma (Σ)"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3769",
+      "tipo": "test",
+      "enunciado": "¿Cuál es la capital de Finlandia?",
+      "opciones": [
+        "Oslo",
+        "Gibraltar",
+        "Helsinki",
+        "Skopie"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3771",
+      "tipo": "test",
+      "enunciado": "¿Qué país NO formó parte de la Unión Soviética?",
+      "opciones": [
+        "Turkmenistán",
+        "Rumanía",
+        "Tayikistán",
+        "Bielorrusia"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3773",
+      "tipo": "test",
+      "enunciado": "¿Cuántos husos horarios tiene China?",
+      "opciones": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3775",
+      "tipo": "test",
+      "enunciado": "¿Entre qué dos países está la frontera común más larga del mundo?",
+      "opciones": [
+        "Chile y Argentina",
+        "Rusia y China",
+        "Canadá y Estados Unidos",
+        "India y Pakistán"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3779",
+      "tipo": "test",
+      "enunciado": "¿Qué país es el segundo más grande del mundo por superficie?",
+      "opciones": [
+        "Canadá",
+        "China",
+        "Rusia",
+        "Estados Unidos"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3780",
+      "tipo": "test",
+      "enunciado": "¿Dónde estaba la antigua ciudad de Pompeya?",
+      "opciones": [
+        "En África oriental",
+        "En Sudamérica",
+        "En Italia",
+        "En Grecia"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3781",
+      "tipo": "test",
+      "enunciado": "¿Qué país tiene en su bandera un león amarillo con una espada sobre fondo granate?",
+      "opciones": [
+        "Kiribati",
+        "Escocia",
+        "Bután",
+        "Sri Lanka"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3783",
+      "tipo": "test",
+      "enunciado": "¿Cuál es el estado más grande de EE. UU.?",
+      "opciones": [
+        "Washington",
+        "California",
+        "Texas",
+        "Alaska"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3784",
+      "tipo": "test",
+      "enunciado": "¿Qué país tiene una bandera de dos franjas horizontales, roja y blanca?",
+      "opciones": [
+        "Liechtenstein",
+        "Malta",
+        "Baréin",
+        "Mónaco"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3786",
+      "tipo": "test",
+      "enunciado": "¿En qué continente están los Alpes?",
+      "opciones": [
+        "América del Norte",
+        "Asia",
+        "África",
+        "Europa"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3788",
+      "tipo": "test",
+      "enunciado": "¿Qué país del Reino Unido lleva un dragón en su bandera?",
+      "opciones": [
+        "Gales",
+        "Escocia",
+        "Irlanda del Norte",
+        "Inglaterra"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3790",
+      "tipo": "test",
+      "enunciado": "¿Con cuántos países tiene frontera terrestre Estados Unidos?",
+      "opciones": [
+        "3",
+        "2",
+        "4",
+        "1"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3793",
+      "tipo": "test",
+      "enunciado": "¿Qué es Laos?",
+      "opciones": [
+        "Un río",
+        "Una ciudad",
+        "Un país",
+        "Una región"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3795",
+      "tipo": "test",
+      "enunciado": "¿Cuántos países hay en el mundo, más o menos?",
+      "opciones": [
+        "100",
+        "200",
+        "500",
+        "300"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3796",
+      "tipo": "test",
+      "enunciado": "¿En qué animal se basa el cuerpo de la Esfinge de Egipto?",
+      "opciones": [
+        "El perro",
+        "El león",
+        "El toro",
+        "El caballo"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3797",
+      "tipo": "test",
+      "enunciado": "¿Cuál es la capital de Indonesia?",
+      "opciones": [
+        "Yakarta",
+        "Palembang",
+        "Bandung",
+        "Medan"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3798",
+      "tipo": "test",
+      "enunciado": "¿Qué océano baña la costa oeste de Estados Unidos?",
+      "opciones": [
+        "El Ártico",
+        "El Atlántico",
+        "El Pacífico",
+        "El Índico"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3799",
+      "tipo": "test",
+      "enunciado": "¿Con qué país NO tiene frontera Austria?",
+      "opciones": [
+        "Eslovaquia",
+        "Eslovenia",
+        "Francia",
+        "Suiza"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3801",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos países árabes NO tiene una bandera solo con colores panárabes?",
+      "opciones": [
+        "Kuwait",
+        "Catar",
+        "Emiratos Árabes Unidos",
+        "Jordania"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3805",
+      "tipo": "test",
+      "enunciado": "¿A qué países se refería el despectivo acrónimo «PIIGS» por su situación económica?",
+      "opciones": [
+        "Polonia, Islandia, Italia, Grecia y Suecia",
+        "Portugal, Islandia, Irlanda, Grecia y Eslovenia",
+        "Portugal, Irlanda, Italia, Grecia y España",
+        "Polonia, Irlanda, Italia, Georgia y España"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3808",
+      "tipo": "test",
+      "enunciado": "¿Cuál es la capital de la India?",
+      "opciones": [
+        "Bombay",
+        "Pekín",
+        "Montreal",
+        "Nueva Delhi"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3809",
+      "tipo": "test",
+      "enunciado": "¿En qué océano está Hawái?",
+      "opciones": [
+        "El Ártico",
+        "El Índico",
+        "El Atlántico",
+        "El Pacífico"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3810",
+      "tipo": "test",
+      "enunciado": "¿Con cuántos países tiene frontera México?",
+      "opciones": [
+        "4",
+        "1",
+        "2",
+        "3"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3811",
+      "tipo": "test",
+      "enunciado": "¿Cuál es la capital de Bangladés?",
+      "opciones": [
+        "Khulna",
+        "Londres",
+        "Lahore",
+        "Daca"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3812",
+      "tipo": "test",
+      "enunciado": "¿Qué pequeño país está entre Francia y España?",
+      "opciones": [
+        "El Vaticano",
+        "San Marino",
+        "Liechtenstein",
+        "Andorra"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3813",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estas lenguas NO usa el alfabeto latino?",
+      "opciones": [
+        "El georgiano",
+        "El vietnamita",
+        "El suajili",
+        "El turco"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3814",
+      "tipo": "test",
+      "enunciado": "¿De qué color es el círculo de la bandera de Japón?",
+      "opciones": [
+        "Negro",
+        "Rojo",
+        "Amarillo",
+        "Blanco"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3816",
+      "tipo": "test",
+      "enunciado": "¿Cuál es el país más grande con un solo huso horario?",
+      "opciones": [
+        "India",
+        "China",
+        "Rusia",
+        "Canadá"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3817",
+      "tipo": "test",
+      "enunciado": "¿Qué región rusa tiene frontera con Polonia?",
+      "opciones": [
+        "Nizhni Nóvgorod",
+        "Omsk",
+        "Kaliningrado",
+        "Samara"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Geografía"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    }
+  ]
+}

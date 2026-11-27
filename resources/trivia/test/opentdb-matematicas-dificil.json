@@ -1,0 +1,230 @@
+{
+  "formato": "konkursox-banco",
+  "version": 1,
+  "nombre": "Matemáticas · Difícil",
+  "grupo": "Open Trivia DB",
+  "licencia": "Preguntas de Open Trivia Database (opentdb.com), licencia CC BY-SA 4.0, traducidas y adaptadas al español. Este banco se distribuye con la misma licencia (CC BY-SA 4.0).",
+  "preguntas": [
+    {
+      "id": "o3430",
+      "tipo": "test",
+      "enunciado": "¿Qué famoso matemático murió en un duelo a los 20 años?",
+      "opciones": [
+        "Abel",
+        "Gauss",
+        "Euler",
+        "Galois"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3431",
+      "tipo": "test",
+      "enunciado": "¿La integración es la operación inversa de cuál?",
+      "opciones": [
+        "La multiplicación",
+        "La desviación típica",
+        "La división",
+        "La derivación"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3432",
+      "tipo": "test",
+      "enunciado": "¿Cuál es el valor aproximado del número e?",
+      "opciones": [
+        "1,41",
+        "1,62",
+        "3,14",
+        "2,72"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3433",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos matemáticos hizo grandes aportaciones a la teoría de juegos?",
+      "opciones": [
+        "Carl Friedrich Gauss",
+        "Leonhard Euler",
+        "Stefan Banach",
+        "John von Neumann"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3434",
+      "tipo": "test",
+      "enunciado": "¿A qué filósofo inglés se atribuye la paradoja del «conjunto de todos los conjuntos que no se contienen a sí mismos»?",
+      "opciones": [
+        "Francis Bacon",
+        "John Locke",
+        "Thomas Hobbes",
+        "Bertrand Russell"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3437",
+      "tipo": "test",
+      "enunciado": "¿Por qué es conocido sobre todo el matemático francés Évariste Galois?",
+      "opciones": [
+        "Por la teoría de Galois",
+        "Por un método para ecuaciones en derivadas parciales",
+        "Por las integrales abelianas",
+        "Por las fracciones continuas de Galois"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3438",
+      "tipo": "test",
+      "enunciado": "¿Cómo se escribe el número decimal 31 en hexadecimal?",
+      "opciones": [
+        "2E",
+        "1F",
+        "1B",
+        "3D"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3440",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama la derivada de la aceleración respecto al tiempo?",
+      "opciones": [
+        "Golpe",
+        "Deslizamiento",
+        "Tirón (jerk)",
+        "Cambio"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3441",
+      "tipo": "test",
+      "enunciado": "¿Cuál es la cuarta cifra de π (3,14...)?",
+      "opciones": [
+        "1",
+        "4",
+        "3",
+        "2"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3443",
+      "tipo": "test",
+      "enunciado": "¿Cuál es el número más pequeño que puede escribirse de dos formas distintas como suma de dos cubos positivos?",
+      "opciones": [
+        "4104",
+        "1729",
+        "91",
+        "561"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3445",
+      "tipo": "test",
+      "enunciado": "¿Cuántos zeptómetros hay en un femtómetro?",
+      "opciones": [
+        "1000",
+        "10",
+        "1 000 000",
+        "1 000 000 000"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3446",
+      "tipo": "test",
+      "enunciado": "¿Cuál es el único problema del milenio resuelto hasta ahora?",
+      "opciones": [
+        "La conjetura de Fermat",
+        "P frente a NP",
+        "La conjetura de Poincaré",
+        "La hipótesis de Riemann"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3448",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama la curva que propuso Descartes para poner a prueba los métodos de Fermat?",
+      "opciones": [
+        "Paraboloide de Descartes",
+        "Folium de Descartes",
+        "Elipse de Descartes",
+        "Cartesiana de Fermat"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    }
+  ]
+}

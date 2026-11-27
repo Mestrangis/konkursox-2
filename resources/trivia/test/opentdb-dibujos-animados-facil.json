@@ -1,0 +1,468 @@
+{
+  "formato": "konkursox-banco",
+  "version": 1,
+  "nombre": "Dibujos animados · Fácil",
+  "grupo": "Open Trivia DB",
+  "licencia": "Preguntas de Open Trivia Database (opentdb.com), licencia CC BY-SA 4.0, traducidas y adaptadas al español. Este banco se distribuye con la misma licencia (CC BY-SA 4.0).",
+  "preguntas": [
+    {
+      "id": "o5187",
+      "tipo": "test",
+      "enunciado": "En «Avatar: la leyenda de Aang», ¿qué elemento empieza a aprender Aang tras ser descongelado?",
+      "opciones": [
+        "El fuego",
+        "La tierra",
+        "El aire",
+        "El agua"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Dibujos animados"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5189",
+      "tipo": "test",
+      "enunciado": "¿En qué serie de dibujos sale el doctor Heinz Doofenshmirtz?",
+      "opciones": [
+        "Ren y Stimpy",
+        "Ben 10",
+        "Batman: la serie animada",
+        "Phineas y Ferb"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Dibujos animados"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5190",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama la bruja del mar de «La sirenita» (1989)?",
+      "opciones": [
+        "Mim",
+        "Lady Tremaine",
+        "Maléfica",
+        "Úrsula"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Dibujos animados"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5191",
+      "tipo": "test",
+      "enunciado": "¿Qué nombre de niña significa «perdido» en hawaiano y protagoniza una película de 2002 con el alienígena Stitch?",
+      "opciones": [
+        "Lulú",
+        "Lolo",
+        "Lucy",
+        "Lilo"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Dibujos animados"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5194",
+      "tipo": "test",
+      "enunciado": "En «Los Simpson», ¿en qué guerra sirvió Seymour Skinner como boina verde?",
+      "opciones": [
+        "Corea",
+        "La Primera Guerra Mundial",
+        "Vietnam",
+        "La Segunda Guerra Mundial"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Dibujos animados"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5195",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos NO es un personaje de «Los Picapiedra»?",
+      "opciones": [
+        "Pablo Mármol",
+        "El Gran Gazoo",
+        "Lord Rockingham IX",
+        "El señor Rajuela"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Dibujos animados"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5196",
+      "tipo": "test",
+      "enunciado": "¿Cuál fue la primera película de Disney en usar imágenes por ordenador?",
+      "opciones": [
+        "Taron y el caldero mágico",
+        "Fantasía",
+        "Toy Story",
+        "Tron"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Dibujos animados"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5200",
+      "tipo": "test",
+      "enunciado": "En «My Little Pony», ¿cómo se llama la hermana pequeña de Applejack?",
+      "opciones": [
+        "Red Delicious",
+        "Apple Fritter",
+        "Apple Bloom",
+        "Apple Sweets"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Dibujos animados"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5202",
+      "tipo": "test",
+      "enunciado": "En «South Park», ¿cómo se apellida Stan?",
+      "opciones": [
+        "Marsh",
+        "Stotch",
+        "Tweak",
+        "Broflovski"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Dibujos animados"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5203",
+      "tipo": "test",
+      "enunciado": "En «Toy Story», ¿cómo se llama el niño dueño de los juguetes?",
+      "opciones": [
+        "Edward",
+        "Andy",
+        "Matt",
+        "Danny"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Dibujos animados"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5204",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama el burro melancólico amigo de Winnie the Pooh?",
+      "opciones": [
+        "Kanga",
+        "Ígor",
+        "Piglet",
+        "Tigger"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Dibujos animados"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5205",
+      "tipo": "test",
+      "enunciado": "¿Qué Tortuga Ninja lleva tradicionalmente la cinta naranja?",
+      "opciones": [
+        "Donatello",
+        "Michelangelo",
+        "Leonardo",
+        "Raphael"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Dibujos animados"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5207",
+      "tipo": "test",
+      "enunciado": "¿Qué personaje de «Padre de familia» tuvo su propia serie en 2009?",
+      "opciones": [
+        "Joe Swanson",
+        "Glenn Quagmire",
+        "Cleveland Brown",
+        "Stewie Griffin"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Dibujos animados"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5209",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos NO es un personaje de Disney?",
+      "opciones": [
+        "El Pato Donald",
+        "El Pato Lucas",
+        "La Pata Daisy",
+        "El Tío Gilito"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Dibujos animados"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5210",
+      "tipo": "test",
+      "enunciado": "¿Qué personaje de «Bob Esponja» vive en una piña bajo el mar?",
+      "opciones": [
+        "Calamardo",
+        "Bob Esponja",
+        "Patricio Estrella",
+        "Arenita"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Dibujos animados"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5211",
+      "tipo": "test",
+      "enunciado": "¿Quién creó la serie «Hora de aventuras»?",
+      "opciones": [
+        "Rebecca Sugar",
+        "Ben Bocquelet",
+        "J. G. Quintel",
+        "Pendleton Ward"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Dibujos animados"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5213",
+      "tipo": "test",
+      "enunciado": "¿Quién puso la voz original al Genio de «Aladdin»?",
+      "opciones": [
+        "Billy Crystal",
+        "Adam Sandler",
+        "Jim Carrey",
+        "Robin Williams"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Dibujos animados"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5215",
+      "tipo": "test",
+      "enunciado": "¿Qué animal es Bambi?",
+      "opciones": [
+        "Un elefante",
+        "Un ratón",
+        "Un lobo",
+        "Un ciervo"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Dibujos animados"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5216",
+      "tipo": "test",
+      "enunciado": "¿En qué ciudad viven «Los Picapiedra»?",
+      "opciones": [
+        "Ciudad Roca",
+        "Pedrópolis",
+        "Rocaville",
+        "Piedradura"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Dibujos animados"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5218",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos personajes de «Bob Esponja» NO es un calamar?",
+      "opciones": [
+        "Squidette",
+        "Calamardo",
+        "Gary",
+        "Orvillie"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Dibujos animados"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5219",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos vehículos NO salía en «Los autos locos»?",
+      "opciones": [
+        "El Compact Pussycat",
+        "El Súper Chatarra Special",
+        "El Carro Dragón",
+        "El Troncomóvil"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Dibujos animados"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5220",
+      "tipo": "test",
+      "enunciado": "¿Qué actor de doblaje ha puesto voz en todas las películas de Pixar?",
+      "opciones": [
+        "Geoffrey Rush",
+        "John Ratzenberger",
+        "Dave Foley",
+        "Tom Hanks"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Dibujos animados"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5221",
+      "tipo": "test",
+      "enunciado": "¿Qué familia de dibujos vive en el 742 de Evergreen Terrace, en Springfield?",
+      "opciones": [
+        "Los Simpson",
+        "Los Griffin",
+        "Los Picapiedra",
+        "Los Hill"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Dibujos animados"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5222",
+      "tipo": "test",
+      "enunciado": "¿Quién creó la serie «Historias corrientes» (Regular Show)?",
+      "opciones": [
+        "J. G. Quintel",
+        "Pendleton Ward",
+        "Rebecca Sugar",
+        "Ben Bocquelet"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Dibujos animados"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5223",
+      "tipo": "test",
+      "enunciado": "¿En qué serie de dibujos salen Butters Stotch, Pip Pirrup y Wendy Testaburger?",
+      "opciones": [
+        "Padre de familia",
+        "South Park",
+        "Futurama",
+        "Los Simpson"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Dibujos animados"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5225",
+      "tipo": "test",
+      "enunciado": "¿Qué relación tienen Rick y Morty?",
+      "opciones": [
+        "Compañeros de trabajo",
+        "Padre e hijo",
+        "Abuelo y nieto",
+        "Mejores amigos"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Dibujos animados"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5226",
+      "tipo": "test",
+      "enunciado": "¿Quién es el villano de «El rey león»?",
+      "opciones": [
+        "Hades",
+        "Fred",
+        "Scar",
+        "Jafar"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Dibujos animados"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    }
+  ]
+}

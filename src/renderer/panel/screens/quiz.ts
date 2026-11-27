@@ -18,7 +18,7 @@ import {
 import { gameLabel, type QuizGameId } from '../../../shared/scene'
 import type { GameState } from '../../../shared/types'
 import { askConfirm, btn, h, icon, ICONS, kbd, nameOf, sw, type Ctx, type Screen } from '../ui'
-import { airBadge, askSaveFix, bankFor, flowSteps, goButton, nextUnused, onAirLabel, questionList, timerControls, toGame } from './common'
+import { airBadge, askSaveFix, bankFor, flowSteps, goButton, imageButtons, imageStatus, nextUnused, onAirLabel, questionList, timerControls, toGame } from './common'
 import { editLadderPlan, planQuestion } from './ladderPlan'
 import { lifelineIcon } from '../../ds/lifeline'
 
@@ -549,7 +549,8 @@ export function createQuizScreen(ctx: Ctx, game: Exclude<QuizGameId, 'estimacion
         )
       )
       if (q.nota_presentador) qpanel.append(h('div', 'note', {}, [icon(ICONS.note, 16, '#9a9aa3'), h('span', '', {}, [q.nota_presentador])]))
-      if (q.imagen) qpanel.append(h('div', 'mut', { fontSize: 12 }, [`Con imagen: ${q.imagen} ${cur.showImage ? '(se ve en el plató)' : '(oculta)'}`]))
+      const imgLine = imageStatus(cur)
+      if (imgLine) qpanel.append(imgLine)
       if (cur.attempts.length && cur.mode !== 'all')
         qpanel.append(
           h(
@@ -694,9 +695,9 @@ export function createQuizScreen(ctx: Ctx, game: Exclude<QuizGameId, 'estimacion
       btn(cur && cur.shown > 0 ? 'Ocultar opciones' : 'Mostrar opciones', toggleOptions, 'b ghost', 'O'),
       timer.el,
 
+      ...imageButtons(ctx, cur, send),
       ...(cur?.question.imagen
         ? [
-            btn(cur.showImage ? 'Ocultar imagen' : 'Mostrar imagen', () => send({ type: 'quizToggleImage' }), 'b ghost', 'I'),
             btn(
               'Imagen a Multimedia',
               () =>
@@ -832,7 +833,9 @@ export function createQuizScreen(ctx: Ctx, game: Exclude<QuizGameId, 'estimacion
     else if (k === 't') timer.toggleShow()
     else if (k === 'y') timer.togglePlay()
     else if (k === 'r' && game !== 'escalera') ctx.send({ type: 'quizSetOptions', patch: { rebound: !s.quiz.rebound } })
-    else if (k === 'i') send({ type: 'quizToggleImage' })
+    else if (k === 'i') send({ type: 'quizToggleImage', which: 'q' })
+    else if (k === 'u') send({ type: 'quizToggleImage', which: 'a' })
+    else if (k === 'f') send({ type: 'quizImageFull' })
     else if (k === 'p' && cur && !s.quiz.scoring.autoAward) send({ type: 'quizAward' })
     else if ((k === 'ArrowRight' || k === 'ArrowLeft') && cur?.mode === 'all') {
       const n = turnTargets(s).length

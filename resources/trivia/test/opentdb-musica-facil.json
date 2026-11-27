@@ -1,0 +1,1845 @@
+{
+  "formato": "konkursox-banco",
+  "version": 1,
+  "nombre": "Música · Fácil",
+  "grupo": "Open Trivia DB",
+  "licencia": "Preguntas de Open Trivia Database (opentdb.com), licencia CC BY-SA 4.0, traducidas y adaptadas al español. Este banco se distribuye con la misma licencia (CC BY-SA 4.0).",
+  "preguntas": [
+    {
+      "id": "o890",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama el primer disco de Metallica, de 1983?",
+      "opciones": [
+        "Countdown to Extinction",
+        "Kill 'Em All",
+        "...And Justice for All",
+        "Master of Puppets"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o891",
+      "tipo": "test",
+      "enunciado": "¿De qué país es el grupo Rammstein?",
+      "opciones": [
+        "Armenia",
+        "Alemania",
+        "Austria",
+        "Bélgica"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o893",
+      "tipo": "test",
+      "enunciado": "«Gran vals», de Tárrega, contiene un fragmento muy famoso. ¿Cómo se le conoce?",
+      "opciones": [
+        "El tono de Droid",
+        "El tono de Motorola",
+        "El tono de llamada de Nokia",
+        "El tono de Microsoft"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o895",
+      "tipo": "test",
+      "enunciado": "¿Qué canción de «Random Access Memories» de Daft Punk lleva la voz de Pharrell Williams?",
+      "opciones": [
+        "Doin' It Right",
+        "Get Lucky",
+        "Instant Crush",
+        "The Game of Love"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o897",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama de verdad el rapero Eminem?",
+      "opciones": [
+        "Nasir Jones",
+        "Shawn Carter",
+        "Calvin Broadus",
+        "Marshall Mathers"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o898",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estas canciones NO es de Men at Work?",
+      "opciones": [
+        "Who Can It Be Now?",
+        "Dr. Heckyll and Mr. Jive",
+        "Be Good Johnny",
+        "Basket Case"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o899",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos NO es un disco de estudio de Pink Floyd?",
+      "opciones": [
+        "Wish You Were Here",
+        "The Dark Side of the Moon",
+        "Animals",
+        "Moving Pictures"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o900",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estas es una canción de Tears for Fears?",
+      "opciones": [
+        "Scream",
+        "Shriek",
+        "Yell",
+        "Shout"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o901",
+      "tipo": "test",
+      "enunciado": "¿Quién cantaba «I Took a Pill in Ibiza»?",
+      "opciones": [
+        "Avicii",
+        "Harry Styles",
+        "Robbie Williams",
+        "Mike Posner"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o903",
+      "tipo": "test",
+      "enunciado": "¿Qué canción cantó Elton John tras la muerte de la princesa Diana?",
+      "opciones": [
+        "Candle in the Wind",
+        "Your Song",
+        "Island Girl",
+        "I Guess That's Why They Call It the Blues"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o904",
+      "tipo": "test",
+      "enunciado": "«Some people call me the space cowboy» es el primer verso de ¿qué canción?",
+      "opciones": [
+        "Take the Money and Run",
+        "Fly Like an Eagle",
+        "The Joker",
+        "Fandango"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o905",
+      "tipo": "test",
+      "enunciado": "¿Cuántos discos publicó King Gizzard & the Lizard Wizard en 2017?",
+      "opciones": [
+        "2",
+        "6",
+        "5",
+        "3"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o907",
+      "tipo": "test",
+      "enunciado": "¿En qué grupo de chicos de los 90 estuvo Justin Timberlake?",
+      "opciones": [
+        "*NSYNC",
+        "Boyzone",
+        "Westlife",
+        "Backstreet Boys"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o908",
+      "tipo": "test",
+      "enunciado": "¿Qué balada de los 70 llamó «el día en que murió la música» al accidente de avión de 1959?",
+      "opciones": [
+        "American Pie",
+        "I Will Always Love You",
+        "Rock 'n' Roll Suicide",
+        "Kentucky Rain"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o911",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estas canciones NO es de Men at Work?",
+      "opciones": [
+        "Down Under",
+        "It's a Mistake",
+        "The Safety Dance",
+        "Who Can It Be Now?"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o912",
+      "tipo": "test",
+      "enunciado": "¿De qué disco de Daft Punk es «Harder, Better, Faster, Stronger»?",
+      "opciones": [
+        "Discovery",
+        "Homework",
+        "Human After All",
+        "Random Access Memories"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o913",
+      "tipo": "test",
+      "enunciado": "¿Qué actor ganador del Óscar canta en «Gold Digger» de Kanye West?",
+      "opciones": [
+        "Jamie Foxx",
+        "Alec Baldwin",
+        "Bruce Willis",
+        "Dwayne Johnson"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o914",
+      "tipo": "test",
+      "enunciado": "¿Qué tipo de instrumento es la mandolina?",
+      "opciones": [
+        "De viento madera",
+        "De cuerda",
+        "De metal",
+        "De percusión"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o915",
+      "tipo": "test",
+      "enunciado": "¿De dónde viene el «Mac» de Fleetwood Mac?",
+      "opciones": [
+        "De David Tennant",
+        "De John McVie",
+        "De Christine McVie",
+        "De Mac McAnally"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o916",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama el disco que publicó Maroon 5 en 2014?",
+      "opciones": [
+        "X",
+        "III",
+        "V",
+        "IV"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o917",
+      "tipo": "test",
+      "enunciado": "¿Qué disco publicó Bon Iver en 2016?",
+      "opciones": [
+        "Blood Bank",
+        "Bon Iver, Bon Iver",
+        "22, A Million",
+        "For Emma, Forever Ago"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o918",
+      "tipo": "test",
+      "enunciado": "¿En qué grupo tocaban Sting, Stewart Copeland y Andy Summers?",
+      "opciones": [
+        "The Police",
+        "Def Leppard",
+        "The Cure",
+        "Bon Jovi"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o920",
+      "tipo": "test",
+      "enunciado": "¿Qué guitarrista inglés tiene el apodo de «Slowhand»?",
+      "opciones": [
+        "Jeff Beck",
+        "Eric Clapton",
+        "Mark Knopfler",
+        "Jimmy Page"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o921",
+      "tipo": "test",
+      "enunciado": "¿Quién publicó en 2012 «Harlem Shake», la canción de miles de vídeos de YouTube en 2013?",
+      "opciones": [
+        "NGHTMRE",
+        "Baauer",
+        "RL Grime",
+        "Flosstradamus"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o923",
+      "tipo": "test",
+      "enunciado": "¿«Sleepyhead» fue el primer sencillo de qué grupo electrónico?",
+      "opciones": [
+        "Ladytron",
+        "The Chemical Brothers",
+        "Kraftwerk",
+        "Passion Pit"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o925",
+      "tipo": "test",
+      "enunciado": "¿Qué músico canadiense de reggae triunfó en 1993 con «Informer»?",
+      "opciones": [
+        "Rain",
+        "Sleet",
+        "Hail",
+        "Snow"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o927",
+      "tipo": "test",
+      "enunciado": "¿De qué país es la canción «Gangnam Style»?",
+      "opciones": [
+        "China",
+        "Corea del Norte",
+        "Japón",
+        "Corea del Sur"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o929",
+      "tipo": "test",
+      "enunciado": "¿Con qué género se asocia sobre todo a John Coltrane?",
+      "opciones": [
+        "Folk",
+        "Death metal",
+        "Jazz",
+        "Rock and roll"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o930",
+      "tipo": "test",
+      "enunciado": "¿Cuántos discos de estudio publicó el dúo Daft Punk?",
+      "opciones": [
+        "2",
+        "4",
+        "5",
+        "1"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o931",
+      "tipo": "test",
+      "enunciado": "¿Qué disco de Nirvana tiene un bebé desnudo en la portada?",
+      "opciones": [
+        "Nevermind",
+        "Incesticide",
+        "In Utero",
+        "Bleach"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o932",
+      "tipo": "test",
+      "enunciado": "¿Cuántos miembros tenía Nirvana?",
+      "opciones": [
+        "Tres",
+        "Cuatro",
+        "Cinco",
+        "Dos"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o933",
+      "tipo": "test",
+      "enunciado": "En la ópera de Rossini, ¿cómo se llama «El barbero de Sevilla»?",
+      "opciones": [
+        "Fígaro",
+        "Fernando",
+        "Rosina",
+        "Ángelo"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o934",
+      "tipo": "test",
+      "enunciado": "¿Quién triunfó en 1969 con «A Boy Named Sue»?",
+      "opciones": [
+        "Kris Kristofferson",
+        "Willie Nelson",
+        "Johnny Cash",
+        "Bob Dylan"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o935",
+      "tipo": "test",
+      "enunciado": "¿Qué disco conjunto publicaron Kanye West y Jay-Z en 2011?",
+      "opciones": [
+        "Distant Relatives",
+        "Unfinished Business",
+        "Watch the Throne",
+        "What a Time to Be Alive"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o936",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos NO es un instrumento de viento?",
+      "opciones": [
+        "Viola",
+        "Oboe",
+        "Duduk",
+        "Trombón"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o937",
+      "tipo": "test",
+      "enunciado": "¿Qué excantante de un grupo de chicos lanzó el éxito «Angels» en 1997?",
+      "opciones": [
+        "Robbie Williams",
+        "Justin Timberlake",
+        "Gary Barlow",
+        "Harry Styles"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o938",
+      "tipo": "test",
+      "enunciado": "Las cuatro cuerdas del violín son sol, re, la y...",
+      "opciones": [
+        "Mi",
+        "Fa",
+        "Do",
+        "Si"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o939",
+      "tipo": "test",
+      "enunciado": "La canción «YYZ» de Rush debe su nombre al código IATA del aeropuerto de ¿qué ciudad?",
+      "opciones": [
+        "Calgary",
+        "Toronto",
+        "Vancouver",
+        "Ottawa"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o940",
+      "tipo": "test",
+      "enunciado": "Un clásico de Blue Öyster Cult de 1976 aconseja «Don't Fear the...». ¿Qué?",
+      "opciones": [
+        "Dark (la oscuridad)",
+        "Clowns (los payasos)",
+        "Reaper (la Parca)",
+        "Silence (el silencio)"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o941",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos NO es un instrumento de viento madera?",
+      "opciones": [
+        "Clarinete",
+        "Oboe",
+        "Trombón",
+        "Fagot"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o942",
+      "tipo": "test",
+      "enunciado": "¿Cuál fue el primer disco de estudio de Daft Punk?",
+      "opciones": [
+        "Homework",
+        "Discovery",
+        "Random Access Memories",
+        "Human After All"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o943",
+      "tipo": "test",
+      "enunciado": "¿Qué instrumento de metal es el más grave de la orquesta?",
+      "opciones": [
+        "La tuba",
+        "La trompeta",
+        "El saxofón",
+        "El trombón"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o944",
+      "tipo": "test",
+      "enunciado": "¿Con qué nombre es conocido el DJ sueco Tim Bergling, autor de «Levels» y «Wake Me Up»?",
+      "opciones": [
+        "Alesso",
+        "Avicii",
+        "deadmau5",
+        "Skrillex"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o945",
+      "tipo": "test",
+      "enunciado": "«Doctor Jones», «Turn Back Time» y «Barbie Girl» fueron número uno en el Reino Unido. ¿De qué grupo?",
+      "opciones": [
+        "Eiffel 65",
+        "Aqua",
+        "Vengaboys",
+        "Sash!"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o946",
+      "tipo": "test",
+      "enunciado": "¿Quién publicó la canción «Photograph» en 2005?",
+      "opciones": [
+        "Coldplay",
+        "Fall Out Boy",
+        "Nickelback",
+        "Green Day"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o948",
+      "tipo": "test",
+      "enunciado": "¿Quién es el cantante de Pearl Jam?",
+      "opciones": [
+        "Kurt Cobain",
+        "Ozzy Osbourne",
+        "Stone Gossard",
+        "Eddie Vedder"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o949",
+      "tipo": "test",
+      "enunciado": "¿Cuál fue el primer disco de Rage Against the Machine?",
+      "opciones": [
+        "Evil Empire",
+        "The Battle of Los Angeles",
+        "Bombtrack",
+        "Rage Against the Machine"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o950",
+      "tipo": "test",
+      "enunciado": "¿Qué canción NO es de Tom Jones?",
+      "opciones": [
+        "What's New Pussycat",
+        "Delilah",
+        "It's Not Unusual",
+        "Never Gonna Give You Up"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o951",
+      "tipo": "test",
+      "enunciado": "¿Qué cantante participa en «Where Are Ü Now» (2015) de Jack Ü (Skrillex y Diplo)?",
+      "opciones": [
+        "The Weeknd",
+        "Ellie Goulding",
+        "Selena Gomez",
+        "Justin Bieber"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o952",
+      "tipo": "test",
+      "enunciado": "¿De qué grupo de metal era cantante Ozzy Osbourne?",
+      "opciones": [
+        "Iron Maiden",
+        "AC/DC",
+        "Judas Priest",
+        "Black Sabbath"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o953",
+      "tipo": "test",
+      "enunciado": "¿Qué miembro de Foo Fighters fue antes el batería de Nirvana?",
+      "opciones": [
+        "Taylor Hawkins",
+        "Nate Mendel",
+        "Chris Shiflett",
+        "Dave Grohl"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o954",
+      "tipo": "test",
+      "enunciado": "¿Qué grupo grabó el disco «Parallel Lines»?",
+      "opciones": [
+        "The Police",
+        "Coldplay",
+        "Blondie",
+        "Paramore"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o955",
+      "tipo": "test",
+      "enunciado": "¿Quién es el cantante de Arctic Monkeys?",
+      "opciones": [
+        "Nick O'Malley",
+        "Alex Turner",
+        "Matt Helders",
+        "Jamie Cook"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o956",
+      "tipo": "test",
+      "enunciado": "¿Qué género tocaba el grupo Type O Negative?",
+      "opciones": [
+        "Metal gótico",
+        "Pop rock",
+        "Hard rock",
+        "Thrash metal"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o957",
+      "tipo": "test",
+      "enunciado": "¿Quién triunfó en 1983 con «Africa»?",
+      "opciones": [
+        "Toto",
+        "Steely Dan",
+        "Journey",
+        "Foreigner"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o958",
+      "tipo": "test",
+      "enunciado": "En una orquesta, ¿cuál es el instrumento más grave de la familia del metal?",
+      "opciones": [
+        "El contrabajo",
+        "La tuba",
+        "El fagot",
+        "El trombón"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o960",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama el éxito del DJ finlandés Darude de 1999?",
+      "opciones": [
+        "Dust Devil",
+        "Khamsin",
+        "Sandstorm",
+        "Sirocco"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o961",
+      "tipo": "test",
+      "enunciado": "¿A qué familia de instrumentos pertenece la tuba?",
+      "opciones": [
+        "Metal",
+        "Percusión",
+        "Viento madera",
+        "Cuerda"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o962",
+      "tipo": "test",
+      "enunciado": "¿Quién fue el artista más escuchado en Spotify en 2019?",
+      "opciones": [
+        "Post Malone",
+        "Billie Eilish",
+        "Drake",
+        "Ariana Grande"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o963",
+      "tipo": "test",
+      "enunciado": "¿Qué personaje de Disney canta «Soñar es desear» (A Dream Is a Wish Your Heart Makes)?",
+      "opciones": [
+        "Pocahontas",
+        "Cenicienta",
+        "Bella",
+        "Blancanieves"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o965",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos NO es un disco de Adele?",
+      "opciones": [
+        "19",
+        "25",
+        "12",
+        "21"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o966",
+      "tipo": "test",
+      "enunciado": "¿Quién escribió «Nothing Compares 2 U», el éxito de Sinéad O'Connor?",
+      "opciones": [
+        "Cameo",
+        "Michael Jackson",
+        "Prince",
+        "Rick James"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o967",
+      "tipo": "test",
+      "enunciado": "¿En qué década se produjo la «invasión británica», cuando los grupos británicos triunfaron en EE. UU.?",
+      "opciones": [
+        "Los 60",
+        "Los 50",
+        "Los 40",
+        "Los 30"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o968",
+      "tipo": "test",
+      "enunciado": "¿Cuál fue el disco más vendido de 2015?",
+      "opciones": [
+        "Fetty Wap, de Fetty Wap",
+        "25, de Adele",
+        "1989, de Taylor Swift",
+        "Purpose, de Justin Bieber"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o971",
+      "tipo": "test",
+      "enunciado": "¿Quién es el cantante de Green Day?",
+      "opciones": [
+        "Sean Hughes",
+        "Mike Dirnt",
+        "Billie Joe Armstrong",
+        "Tré Cool"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o973",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estas canciones NO lanzó originalmente Elton John?",
+      "opciones": [
+        "Crocodile Rock",
+        "I Don't Wanna Go On with You Like That",
+        "Candle in the Wind",
+        "You'll Be in My Heart"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o974",
+      "tipo": "test",
+      "enunciado": "Según una canción de Belinda Carlisle, el cielo es un lugar en...",
+      "opciones": [
+        "Venus",
+        "Urano",
+        "Marte",
+        "La Tierra"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o977",
+      "tipo": "test",
+      "enunciado": "¿En qué grupo tocaba la guitarra Brian May?",
+      "opciones": [
+        "The Rolling Stones",
+        "Pink Floyd",
+        "The Doors",
+        "Queen"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o978",
+      "tipo": "test",
+      "enunciado": "¿Quién es el cantante de Coldplay?",
+      "opciones": [
+        "Chris Isaak",
+        "Chris Wallace",
+        "Chris Connelly",
+        "Chris Martin"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o979",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos instrumentos NO es de viento madera?",
+      "opciones": [
+        "El saxofón alto",
+        "La trompeta",
+        "El oboe",
+        "El clarinete"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o980",
+      "tipo": "test",
+      "enunciado": "¿Cuántas cuerdas tiene un violonchelo?",
+      "opciones": [
+        "4",
+        "8",
+        "6",
+        "5"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o982",
+      "tipo": "test",
+      "enunciado": "En los VMA de 2009, ¿a quién interrumpió Kanye West?",
+      "opciones": [
+        "A Taylor Swift",
+        "A Beyoncé",
+        "A Beck",
+        "A MF DOOM"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o985",
+      "tipo": "test",
+      "enunciado": "¿Qué artista electrónico participa en «Starboy» (2016) de The Weeknd?",
+      "opciones": [
+        "Daft Punk",
+        "deadmau5",
+        "DJ Shadow",
+        "Disclosure"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o986",
+      "tipo": "test",
+      "enunciado": "¿En qué año se subió «Gangnam Style» a YouTube?",
+      "opciones": [
+        "2012",
+        "2013",
+        "2011",
+        "2014"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o988",
+      "tipo": "test",
+      "enunciado": "¿De quién es la técnica de guitarra llamada «el molino»?",
+      "opciones": [
+        "Jimi Hendrix",
+        "Pete Townshend",
+        "Jimmy Page",
+        "Eddie Van Halen"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o989",
+      "tipo": "test",
+      "enunciado": "¿Qué significa la K de «K-pop»?",
+      "opciones": [
+        "Keniano",
+        "Kuwaití",
+        "Coreano (Korean)",
+        "Kazajo"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o990",
+      "tipo": "test",
+      "enunciado": "¿Cuál fue el mayor éxito del grupo canadiense Men Without Hats?",
+      "opciones": [
+        "Anthems for a Seventeen Year-Old Girl",
+        "Mmm Mmm Mmm Mmm",
+        "The Safety Dance",
+        "Ahead by a Century"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o992",
+      "tipo": "test",
+      "enunciado": "¿Qué instrumento toca sobre todo Sting, el cantante de The Police?",
+      "opciones": [
+        "El bajo",
+        "La batería",
+        "La guitarra",
+        "Los teclados"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o993",
+      "tipo": "test",
+      "enunciado": "¿Qué revista musical se abrevia como NME?",
+      "opciones": [
+        "Next Musical Enterprise",
+        "New Musical Express",
+        "New Metro Entertainment",
+        "North Manchester Express"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o994",
+      "tipo": "test",
+      "enunciado": "¿Cuál es el disco más vendido de todos los tiempos (datos de 1976 a 2018)?",
+      "opciones": [
+        "Abbey Road",
+        "Thriller",
+        "Back in Black",
+        "The Dark Side of the Moon"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o996",
+      "tipo": "test",
+      "enunciado": "¿Qué disco publicó The Lumineers en 2016?",
+      "opciones": [
+        "The Lumineers",
+        "Winter",
+        "Cleopatra",
+        "Tracks from the Attic"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o998",
+      "tipo": "test",
+      "enunciado": "¿Qué grupo de rap publicó el disco «Straight Outta Compton»?",
+      "opciones": [
+        "Wu-Tang Clan",
+        "Beastie Boys",
+        "Run-D.M.C.",
+        "N.W.A"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o999",
+      "tipo": "test",
+      "enunciado": "¿Quién es el cantante de Foo Fighters?",
+      "opciones": [
+        "James Hetfield",
+        "Corey Taylor",
+        "Dave Mustaine",
+        "Dave Grohl"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1001",
+      "tipo": "test",
+      "enunciado": "¿Quién es el líder de 30 Seconds to Mars?",
+      "opciones": [
+        "Matthew Bellamy",
+        "Gerard Way",
+        "Mike Shinoda",
+        "Jared Leto"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1002",
+      "tipo": "test",
+      "enunciado": "¿Con qué nombre artístico se conoce a la rapera británica Mathangi Arulpragasam, autora de «Paper Planes»?",
+      "opciones": [
+        "K.I.A.",
+        "C.I.A.",
+        "A.I.A.",
+        "M.I.A."
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1003",
+      "tipo": "test",
+      "enunciado": "¿Qué grupo publicó en 2006 su primer disco, «A Fever You Can't Sweat Out»?",
+      "opciones": [
+        "Twenty One Pilots",
+        "Fall Out Boy",
+        "My Chemical Romance",
+        "Panic! at the Disco"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1004",
+      "tipo": "test",
+      "enunciado": "¿Qué disco de Led Zeppelin incluye «Stairway to Heaven»?",
+      "opciones": [
+        "Led Zeppelin III",
+        "Led Zeppelin IV",
+        "Physical Graffiti",
+        "Houses of the Holy"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1005",
+      "tipo": "test",
+      "enunciado": "¿Qué grupo canta «Crash into Me»?",
+      "opciones": [
+        "Dave Matthews Band",
+        "The Grateful Dead",
+        "Destiny's Child",
+        "Phish"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1006",
+      "tipo": "test",
+      "enunciado": "¿Quién lanzó el éxito «Love Song» en 2007?",
+      "opciones": [
+        "Sara Bareilles",
+        "Katy Perry",
+        "Sarah Silverman",
+        "Taylor Swift"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1007",
+      "tipo": "test",
+      "enunciado": "¿De quién son los discos «Back in Black» y «Ballbreaker»?",
+      "opciones": [
+        "Metallica",
+        "Black Sabbath",
+        "AC/DC",
+        "Iron Maiden"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1008",
+      "tipo": "test",
+      "enunciado": "¿Qué compositor clásico escribió la «Sonata Claro de luna»?",
+      "opciones": [
+        "Johannes Brahms",
+        "Wolfgang Amadeus Mozart",
+        "Ludwig van Beethoven",
+        "Frédéric Chopin"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1009",
+      "tipo": "test",
+      "enunciado": "¿Qué artista canadiense escribió «Hallelujah»?",
+      "opciones": [
+        "Justin Bieber",
+        "Leonard Cohen",
+        "Bryan Adams",
+        "Neil Young"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1011",
+      "tipo": "test",
+      "enunciado": "¿En qué año salió «Let Go», el primer disco de Avril Lavigne?",
+      "opciones": [
+        "2002",
+        "2005",
+        "2001",
+        "2004"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1012",
+      "tipo": "test",
+      "enunciado": "¿Qué grupo de los 80 lidera el cantante y guitarrista Robert Smith?",
+      "opciones": [
+        "New Order",
+        "The Cure",
+        "The Smiths",
+        "Echo & the Bunnymen"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1013",
+      "tipo": "test",
+      "enunciado": "¿En qué año publicó Muse su primer disco, «Showbiz»?",
+      "opciones": [
+        "1998",
+        "2001",
+        "1999",
+        "2000"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1014",
+      "tipo": "test",
+      "enunciado": "¿Quién es el cantante del grupo británico Coldplay?",
+      "opciones": [
+        "Jonny Buckland",
+        "Will Champion",
+        "Chris Martin",
+        "Guy Berryman"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1015",
+      "tipo": "test",
+      "enunciado": "¿Qué grupo publicó «Rio», «Girls on Film» y «The Reflex»?",
+      "opciones": [
+        "Duran Duran",
+        "The Cure",
+        "Depeche Mode",
+        "New Order"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1016",
+      "tipo": "test",
+      "enunciado": "En su canción de 1973, ¿a qué puerta llama («knock, knock, knockin'») Bob Dylan?",
+      "opciones": [
+        "La del cielo (Heaven's Door)",
+        "La de la oportunidad",
+        "La de Angie",
+        "La de Eileen"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1017",
+      "tipo": "test",
+      "enunciado": "¿Quién es el cantante del grupo de metal Megadeth?",
+      "opciones": [
+        "Vince Neil",
+        "Dave Mustaine",
+        "Rob Halford",
+        "James Hetfield"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1018",
+      "tipo": "test",
+      "enunciado": "¿Qué instrumento tocaba Ringo Starr en los Beatles?",
+      "opciones": [
+        "La guitarra",
+        "La batería",
+        "El bajo",
+        "El piano"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1019",
+      "tipo": "test",
+      "enunciado": "¿De qué disco de Red Hot Chili Peppers es «Give It Away»?",
+      "opciones": [
+        "Blood Sugar Sex Magik",
+        "By the Way",
+        "One Hot Minute",
+        "Stadium Arcadium"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1022",
+      "tipo": "test",
+      "enunciado": "¿Quién cantaba «Kung Fu Fighting» en 1974?",
+      "opciones": [
+        "Bee Gees",
+        "Carl Douglas",
+        "Heatwave",
+        "Kool & the Gang"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1023",
+      "tipo": "test",
+      "enunciado": "Según el rapero Nelly en «Hot in Herre», ¿qué hay que hacer cuando hace calor aquí?",
+      "opciones": [
+        "Darse una ducha fría",
+        "Bañarse desnudo",
+        "Beber agua",
+        "Quitarse toda la ropa"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1024",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama el segundo disco de Frank Ocean, de 2016?",
+      "opciones": [
+        "Burgundy",
+        "Black",
+        "Brunette",
+        "Blonde"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1025",
+      "tipo": "test",
+      "enunciado": "¿Qué grupo lanzó «Californication», «Can't Stop» y «Under the Bridge»?",
+      "opciones": [
+        "Foo Fighters",
+        "Linkin Park",
+        "Green Day",
+        "Red Hot Chili Peppers"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1026",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama el pasaje que une dos secciones de una canción?",
+      "opciones": [
+        "Cejilla",
+        "Coda",
+        "Forma binaria",
+        "Puente"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1027",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama la mujer de Rivers Cuomo?",
+      "opciones": [
+        "Yoko Ono",
+        "Kyary Pamyu Pamyu",
+        "LiSA",
+        "Kyoko Ito"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1028",
+      "tipo": "test",
+      "enunciado": "¿En qué disco de los Beatles NO sale ninguno de los miembros en la portada?",
+      "opciones": [
+        "Rubber Soul",
+        "Magical Mystery Tour",
+        "Abbey Road",
+        "The Beatles (el Disco Blanco)"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Música"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    }
+  ]
+}

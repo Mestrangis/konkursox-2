@@ -1,0 +1,995 @@
+{
+  "formato": "konkursox-banco",
+  "version": 1,
+  "nombre": "Televisión · Media",
+  "grupo": "Open Trivia DB",
+  "licencia": "Preguntas de Open Trivia Database (opentdb.com), licencia CC BY-SA 4.0, traducidas y adaptadas al español. Este banco se distribuye con la misma licencia (CC BY-SA 4.0).",
+  "preguntas": [
+    {
+      "id": "o1494",
+      "tipo": "test",
+      "enunciado": "En «LazyTown», ¿quién es el actor que interpreta a Robbie Rotten?",
+      "opciones": [
+        "Stefán Karl Stefánsson",
+        "Magnús Scheving",
+        "Adam Sandler",
+        "Stephen Carl"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1500",
+      "tipo": "test",
+      "enunciado": "¿Cómo se titula el instrumental de The Allman Brothers Band que era la sintonía de «Top Gear»?",
+      "opciones": [
+        "Sandra",
+        "Erica",
+        "Angela",
+        "Jessica"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1503",
+      "tipo": "test",
+      "enunciado": "En «Los Simpson», ¿cuál es el nombre real del dependiente de la tienda de cómics?",
+      "opciones": [
+        "Comic Book Guy",
+        "Jack Richardson",
+        "Edward Stone",
+        "Jeff Albertson"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1507",
+      "tipo": "test",
+      "enunciado": "¿Dónde transcurre la serie «Parks and Recreation»?",
+      "opciones": [
+        "Londres",
+        "Pasadena (California)",
+        "Pawnee (Indiana)",
+        "Eagleton (Indiana)"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1508",
+      "tipo": "test",
+      "enunciado": "¿Quién protagonizaba la serie «24»?",
+      "opciones": [
+        "Rob Lowe",
+        "Hugh Laurie",
+        "Kiefer Sutherland",
+        "Kevin Bacon"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1509",
+      "tipo": "test",
+      "enunciado": "¿Quién interpreta a Dennis Reynolds en «Colgados en Filadelfia»?",
+      "opciones": [
+        "Glenn Howerton",
+        "Danny DeVito",
+        "Charlie Day",
+        "Rob McElhenney"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1510",
+      "tipo": "test",
+      "enunciado": "¿Cuál es el apellido de Daryl en «The Walking Dead»?",
+      "opciones": [
+        "Dixon",
+        "Dicketson",
+        "Dickinson",
+        "Grimes"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1511",
+      "tipo": "test",
+      "enunciado": "En «Star Trek», ¿cuál es la primera Regla de Adquisición de los ferengi?",
+      "opciones": [
+        "«La codicia es eterna»",
+        "«Cuando tienes su dinero, no lo devuelvas nunca»",
+        "«No dejes que la familia se interponga en una oportunidad»",
+        "«No antepongas nunca la amistad al beneficio»"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1512",
+      "tipo": "test",
+      "enunciado": "¿De qué serie es el personaje James Doakes?",
+      "opciones": [
+        "The Walking Dead",
+        "Dexter",
+        "Daredevil",
+        "Boardwalk Empire"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1516",
+      "tipo": "test",
+      "enunciado": "¿En qué año se estrenó «The Big Bang Theory» en la CBS?",
+      "opciones": [
+        "2008",
+        "2007",
+        "2009",
+        "2006"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1520",
+      "tipo": "test",
+      "enunciado": "¿En qué universidad trabajan Wolowitz, Cooper, Hofstadter y Koothrappali en «The Big Bang Theory»?",
+      "opciones": [
+        "MIT",
+        "UCLA",
+        "Caltech",
+        "Berkeley"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1522",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llamaba Nickelodeon en sus orígenes?",
+      "opciones": [
+        "MTVKids",
+        "Pinwheel",
+        "KidsTV",
+        "Splat!"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1523",
+      "tipo": "test",
+      "enunciado": "¿Qué canción de Massive Attack es la sintonía de «House»?",
+      "opciones": [
+        "Teardrop",
+        "Angel",
+        "Protection",
+        "Black Milk"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1524",
+      "tipo": "test",
+      "enunciado": "¿Cuándo se emitió por primera vez «Bob Esponja»?",
+      "opciones": [
+        "27 de junio de 1997",
+        "6 de febrero de 2003",
+        "20 de julio de 2000",
+        "1 de mayo de 1999"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1526",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama el caballo de carreras al que se encariña Tony Soprano?",
+      "opciones": [
+        "Man o' War",
+        "Bada Bing",
+        "Honest Earnings",
+        "Pie-O-My"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1527",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llamaba el mono de Ross en «Friends»?",
+      "opciones": [
+        "Jojo",
+        "Champ",
+        "George",
+        "Marcel"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1529",
+      "tipo": "test",
+      "enunciado": "¿Qué actor NO era protagonista de «Freaks and Geeks»?",
+      "opciones": [
+        "James Franco",
+        "Seth Rogen",
+        "Jason Segel",
+        "Jonah Hill"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1530",
+      "tipo": "test",
+      "enunciado": "El Toyota Corolla AE86 de 1985 es el coche del protagonista de ¿qué anime?",
+      "opciones": [
+        "Initial D",
+        "Ghost MF",
+        "eX-Driver",
+        "Wangan Midnight"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1531",
+      "tipo": "test",
+      "enunciado": "¿Qué actor interpreta a Hoban «Wash» Washburne en «Firefly»?",
+      "opciones": [
+        "Sean Maher",
+        "Nathan Fillion",
+        "Alan Tudyk",
+        "Adam Baldwin"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1532",
+      "tipo": "test",
+      "enunciado": "En «Person of Interest», ¿quién interpreta a Harold Finch?",
+      "opciones": [
+        "Kevin Chapman",
+        "Taraji P. Henson",
+        "Michael Emerson",
+        "Jim Caviezel"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1533",
+      "tipo": "test",
+      "enunciado": "¿A qué personaje NO pone voz la actriz Tara Strong?",
+      "opciones": [
+        "Burbuja (2016)",
+        "Harley Quinn",
+        "Timmy Turner",
+        "Twilight Sparkle"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1534",
+      "tipo": "test",
+      "enunciado": "En «Stranger Things», ¿qué canción se cantaba Will cuando estaba desaparecido?",
+      "opciones": [
+        "Should I Stay or Should I Go",
+        "Africa",
+        "This Charming Man",
+        "Love Will Tear Us Apart"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1535",
+      "tipo": "test",
+      "enunciado": "En «Star Trek», ¿en qué consiste el ritual klingon ante la muerte?",
+      "opciones": [
+        "Lanzar el cuerpo al espacio en un torpedo",
+        "Mirar al cielo y gritar con fuerza",
+        "Repartir las ganancias del difunto",
+        "Besar la frente antes del entierro"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1537",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama la serie derivada de «The Flash» y «Arrow» con un equipo de personajes de ambas?",
+      "opciones": [
+        "The Justice Society",
+        "Legends of Tomorrow",
+        "Heroes of Tomorrow",
+        "The Justice Society of America"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1539",
+      "tipo": "test",
+      "enunciado": "¿A qué personaje puso voz Alan Reed?",
+      "opciones": [
+        "G. I. Joe",
+        "Bugs Bunny",
+        "Pedro Picapiedra",
+        "Fangface"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1542",
+      "tipo": "test",
+      "enunciado": "¿En qué año se estrenó «El equipo A» en EE. UU. y el Reino Unido?",
+      "opciones": [
+        "1987",
+        "1983",
+        "1981",
+        "1985"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1543",
+      "tipo": "test",
+      "enunciado": "¿A qué villano de Batman interpretaba César Romero en la serie de los 60?",
+      "opciones": [
+        "El Joker",
+        "Enigma",
+        "El Pingüino",
+        "Mr. Freeze"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1544",
+      "tipo": "test",
+      "enunciado": "En «Community», ¿cuál era el nombre real de Star-Burns?",
+      "opciones": [
+        "Neal",
+        "Todd",
+        "Alex",
+        "Grimus"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1546",
+      "tipo": "test",
+      "enunciado": "¿En qué año se fundó Netflix?",
+      "opciones": [
+        "1999",
+        "1997",
+        "2004",
+        "2001"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1547",
+      "tipo": "test",
+      "enunciado": "En «Doctor Who», ¿cuántas veces puede regenerarse normalmente un Señor del Tiempo?",
+      "opciones": [
+        "11",
+        "12",
+        "13",
+        "15"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1548",
+      "tipo": "test",
+      "enunciado": "¿De qué héroe de dibujos es archienemigo el barón Silas Greenback?",
+      "opciones": [
+        "Danger Mouse",
+        "SuperTed",
+        "Bananaman",
+        "Captain Star"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1549",
+      "tipo": "test",
+      "enunciado": "¿Qué guionista británico escribió para «Doctor Who» y «Sherlock»?",
+      "opciones": [
+        "Toby Whithouse",
+        "Russell T Davies",
+        "Phil Ford",
+        "Steven Moffat"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1550",
+      "tipo": "test",
+      "enunciado": "¿Qué es grosero y deshonroso para un klingon?",
+      "opciones": [
+        "Insultarle y reírse de él en la mesa",
+        "Coger comida de su plato",
+        "Darle un puñetazo y quitarle el puesto",
+        "Quitarle su d'k tahg"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1551",
+      "tipo": "test",
+      "enunciado": "En «Breaking Bad», ¿a quién se refieren las iniciales W. W.?",
+      "opciones": [
+        "William Wolf",
+        "Willy Wonka",
+        "Wally Walrus",
+        "Walter White"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1555",
+      "tipo": "test",
+      "enunciado": "En «Padre de familia», ¿cuál es el nombre completo de Meg?",
+      "opciones": [
+        "Neil Griffin",
+        "Megan Griffin",
+        "Who-Cares Griffin",
+        "Megatron Griffin"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1559",
+      "tipo": "test",
+      "enunciado": "En el «Doctor Who» clásico, ¿cuánto medía la bufanda del cuarto Doctor, Tom Baker?",
+      "opciones": [
+        "7 metros",
+        "5 metros",
+        "2 metros",
+        "10 metros"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1560",
+      "tipo": "test",
+      "enunciado": "¿Quién fue el actor de voz original de Shaggy en Scooby-Doo?",
+      "opciones": [
+        "Billy West",
+        "Casey Kasem",
+        "Frank Welker",
+        "Dante Basco"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1561",
+      "tipo": "test",
+      "enunciado": "¿Qué compositor trabajó en la serie «Battlestar Galactica» (2003)?",
+      "opciones": [
+        "Jeremy Soule",
+        "Bear McCreary",
+        "Harry Gregson-Williams",
+        "Ramin Djawadi"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1562",
+      "tipo": "test",
+      "enunciado": "En el episodio «Bandersnatch» de «Black Mirror», ¿qué significa PAC-MAN?",
+      "opciones": [
+        "Physics & Astronomy Classification Man",
+        "Postgraduate Applications Centre Man",
+        "Program And Control Man",
+        "Political Action Committee Man"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1563",
+      "tipo": "test",
+      "enunciado": "En «Naruto Shippuden», ¿cuál de estos elementos es un «Kekkei Tōta»?",
+      "opciones": [
+        "Estilo Hielo",
+        "Cualquier dōjutsu",
+        "Estilo Polvo (partículas)",
+        "Estilo Sombra"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1565",
+      "tipo": "test",
+      "enunciado": "¿Por cuánto vende Bart su alma en el episodio «Bart vende su alma»?",
+      "opciones": [
+        "Una copia de Bonestorm 2",
+        "5 dólares",
+        "Un caramelo gigante",
+        "100 dólares"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1566",
+      "tipo": "test",
+      "enunciado": "¿Quién compuso la sintonía de «Los Simpson»?",
+      "opciones": [
+        "Ennio Morricone",
+        "Danny Elfman",
+        "John Williams",
+        "Hans Zimmer"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1567",
+      "tipo": "test",
+      "enunciado": "En «Battlestar Galactica» (2004), ¿cómo se llama la presidenta de las Doce Colonias?",
+      "opciones": [
+        "Laura Roslin",
+        "Harry Stills",
+        "William Adama",
+        "Tricia Helfer"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1568",
+      "tipo": "test",
+      "enunciado": "En «Juego de tronos», ¿cómo se llama la espada de Jon Nieve?",
+      "opciones": [
+        "Lamento de Viuda",
+        "Guardajuramentos",
+        "Garra",
+        "Aguja"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1569",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama el científico loco dueño de Planet Express en «Futurama»?",
+      "opciones": [
+        "Rick Sánchez",
+        "Philip J. Fry",
+        "Hubert J. Farnsworth",
+        "Ogden Wernstrom"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1571",
+      "tipo": "test",
+      "enunciado": "¿En qué año lanzó oficialmente la BBC su canal BBC One?",
+      "opciones": [
+        "1948",
+        "1936",
+        "1932",
+        "1955"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1572",
+      "tipo": "test",
+      "enunciado": "En «Bob Esponja», ¿cuál es el nombre completo de Don Cangrejo?",
+      "opciones": [
+        "Eugene H. Krabs",
+        "Eugene J. Krabs",
+        "Eugene G. Krabs",
+        "Eugene D. Krabs"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1574",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llaman los antagonistas de «Battlestar Galactica»?",
+      "opciones": [
+        "La Federación",
+        "El Colectivo",
+        "Los rebeldes",
+        "Los cylones"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1575",
+      "tipo": "test",
+      "enunciado": "En «The Big Bang Theory», ¿qué nombre usa Howard Wolowitz en World of Warcraft?",
+      "opciones": [
+        "Sheldor",
+        "Rajesh",
+        "Priya",
+        "Wolowizard"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1576",
+      "tipo": "test",
+      "enunciado": "¿De qué raza es Scooby-Doo?",
+      "opciones": [
+        "Pitbull",
+        "Dóberman",
+        "Bóxer",
+        "Gran danés"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1577",
+      "tipo": "test",
+      "enunciado": "En «The Office», ¿con quién acaba Michael Scott?",
+      "opciones": [
+        "Pam Beesly",
+        "Angela Martin",
+        "Jan Levinson",
+        "Holly Flax"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1578",
+      "tipo": "test",
+      "enunciado": "¿Qué programa de televisión hizo mirar a todo el público debajo de su asiento?",
+      "opciones": [
+        "El de Larry Rubert",
+        "Saturday Night Live",
+        "El de Jimmy Fallon",
+        "El de Oprah"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1579",
+      "tipo": "test",
+      "enunciado": "¿En qué episodio de «Mr. Bean» intenta que nadie lo vea desnudo?",
+      "opciones": [
+        "Los problemas de Mr. Bean",
+        "Mr. Bean vuelve al colegio",
+        "Mr. Bean va a la ciudad",
+        "Mr. Bean en la habitación 426"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1580",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos autobots de las películas de Michael Bay NO estaba en los dibujos de los 80?",
+      "opciones": [
+        "Skids",
+        "Sideswipe",
+        "Ratchet",
+        "Mudflap"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1581",
+      "tipo": "test",
+      "enunciado": "En «Breaking Bad», ¿qué protagonista iba a morir en la primera temporada y se salvó porque al creador le gustaba el actor?",
+      "opciones": [
+        "Hank Schrader",
+        "Gus Fring",
+        "Jesse Pinkman",
+        "Saul Goodman"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1582",
+      "tipo": "test",
+      "enunciado": "¿En qué año se emitió «ReBoot», la primera serie de animación por ordenador de media hora?",
+      "opciones": [
+        "1994",
+        "1999",
+        "1998",
+        "1993"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1583",
+      "tipo": "test",
+      "enunciado": "¿En qué serie aparece la película ficticia «Rochelle, Rochelle»?",
+      "opciones": [
+        "Seinfeld",
+        "Friends",
+        "Cheers",
+        "Frasier"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o1584",
+      "tipo": "test",
+      "enunciado": "En «Doctor Who», ¿quién interpreta al décimo Doctor?",
+      "opciones": [
+        "Peter Capaldi",
+        "David Tennant",
+        "Peter Davison",
+        "William Hartnell"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Televisión"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    }
+  ]
+}

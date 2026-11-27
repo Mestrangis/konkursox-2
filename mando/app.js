@@ -642,6 +642,7 @@ function testScreen(m, g) {
     h('div', 'qt', null, [g.text]),
     optionList(g),
     g.note ? noteBox(g.note) : null,
+    imageRow(g),
     missRow(g),
     h('span', 'spacer'),
     g.mode === 'all' ? null : h('span', 'tiny', null, ['Marca lo que responde ' + g.target]),
@@ -649,6 +650,17 @@ function testScreen(m, g) {
     goButton(),
     g.mode === 'all' ? null : scoreRow(g.target)
   )
+}
+/** Imágenes de la pregunta: el mando no las ve, solo las enciende y apaga (y avisa de la que falta). */
+function imageRow(g) {
+  const im = g.image
+  if (!im) return null
+  return h('div', '', { display: 'flex', flexWrap: 'wrap', gap: 6, alignItems: 'center' }, [
+    im.q ? tap(h('button', 'vx' + (im.qOn ? ' on' : ''), { flex: '1 1 0', height: 42 }, [im.qOn ? 'Ocultar imagen' : 'Imagen']), () => send({ t: 'image', op: 'q' })) : null,
+    im.a ? tap(h('button', 'vx' + (im.aOn ? ' on' : ''), { flex: '1 1 0', height: 42 }, [im.aOn ? 'Ocultar img. respuesta' : 'Img. respuesta']), () => send({ t: 'image', op: 'a' })) : null,
+    im.q || im.a ? tap(h('button', 'vx' + (im.full ? ' on' : ''), { flex: '1 1 0', height: 42 }, [im.full ? 'Quitar grande' : 'Pantalla completa']), () => send({ t: 'image', op: 'full' })) : null,
+    im.missing ? h('span', '', { flex: '1 1 100%', fontSize: 12, color: '#e8a23a' }, ['Falta imagen: ' + im.missing]) : null
+  ])
 }
 const noteBox = (t) => h('div', '', { display: 'flex', gap: 10, padding: '10px 12px', borderRadius: 10, background: '#19191c', fontSize: 13, lineHeight: 1.45, color: '#c9c9d0' }, [t])
 
@@ -663,6 +675,7 @@ function sinoScreen(m, g) {
       () => changeCorrect(g, g.correcta === 0 ? 1 : 0)
     ),
     g.note ? noteBox(g.note) : null,
+    imageRow(g),
     missRow(g),
     h('span', 'spacer'),
     g.mode === 'all' ? allMarks(g) : h('span', 'tiny', null, ['Marca lo que responde ' + g.target]),
@@ -696,6 +709,7 @@ function quienScreen(m, g) {
       h('span', null, null, ['Lo escribió ', h('b', null, null, [g.author || (g.options[g.correcta] || {}).t || '—'])]),
       h('span', 'priv', null, ['SOLO TÚ'])
     ]),
+    imageRow(g),
     missRow(g),
     h('span', 'spacer'),
     g.mode === 'all' ? allMarks(g) : h('span', 'tiny', null, ['Marca lo que responde ' + g.target]),
@@ -764,6 +778,7 @@ function ladderScreen(m, g) {
         return tap(b, () => send({ t: 'lifeline', i }), true)
       })
     ),
+    imageRow(g),
     missRow(g),
     h('span', 'spacer'),
     g.text ? marksGrid(g) : null,
@@ -801,6 +816,7 @@ function estimationScreen(m, g) {
       h('span', 'mut', { fontSize: 12 }, [subLine() + ' · todos responden'])
     ]),
     h('div', 'qt', { fontSize: 17 }, [g.text]),
+    imageRow(g),
     h('div', 'mo right', { justifyContent: 'space-between', minHeight: 36 }, [
       h('span', null, null, ['Respuesta: ', h('b', null, null, [fmt(g.value) + (g.unit ? ' ' + g.unit : '')])]),
       h('span', 'priv', null, ['SOLO TÚ'])

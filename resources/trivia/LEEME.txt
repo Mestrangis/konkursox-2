@@ -1,0 +1,149 @@
+Packs de preguntas de Open Trivia Database (https://opentdb.com), licencia Creative Commons
+Atribución-CompartirIgual 4.0 (CC BY-SA 4.0): https://creativecommons.org/licenses/by-sa/4.0/deed.es
+
+Traducidas al español de España y adaptadas (se descartaron las que solo tienen sentido en
+EE. UU. o pierden el sentido al traducirse). Las de verdadero/falso están en Sí o no.
+Estos bancos se distribuyen con la misma licencia CC BY-SA 4.0.
+
+sino	Animales · Fácil	15
+test	Animales · Fácil	17
+test	Animales · Media	26
+sino	Animales · Media	10
+test	Animales · Difícil	19
+test	Anime y manga · Fácil	24
+sino	Anime y manga · Fácil	7
+test	Anime y manga · Media	19
+sino	Anime y manga · Media	1
+test	Anime y manga · Difícil	11
+sino	Anime y manga · Difícil	1
+test	Arte · Fácil	15
+sino	Arte · Fácil	2
+test	Arte · Media	15
+sino	Arte · Media	2
+test	Arte · Difícil	15
+sino	Arte · Difícil	4
+sino	Ciencia y naturaleza · Fácil	18
+test	Ciencia y naturaleza · Fácil	64
+test	Ciencia y naturaleza · Media	99
+sino	Ciencia y naturaleza · Media	23
+test	Ciencia y naturaleza · Difícil	67
+sino	Ciencia y naturaleza · Difícil	5
+test	Cine · Fácil	87
+sino	Cine · Fácil	20
+sino	Cine · Media	9
+test	Cine · Media	117
+test	Cine · Difícil	34
+sino	Cine · Difícil	2
+test	Cómics · Fácil	10
+sino	Cómics · Fácil	2
+test	Cómics · Media	19
+sino	Cómics · Media	1
+test	Cómics · Difícil	7
+test	Cultura general · Fácil	146
+sino	Cultura general · Fácil	33
+test	Cultura general · Media	114
+sino	Cultura general · Media	33
+test	Cultura general · Difícil	55
+sino	Cultura general · Difícil	6
+test	Deportes · Fácil	39
+sino	Deportes · Fácil	4
+test	Deportes · Media	60
+sino	Deportes · Media	9
+test	Deportes · Difícil	21
+test	Dibujos animados · Fácil	27
+sino	Dibujos animados · Fácil	3
+test	Dibujos animados · Media	20
+sino	Dibujos animados · Media	6
+test	Dibujos animados · Difícil	13
+sino	Dibujos animados · Difícil	1
+test	Famosos · Fácil	8
+sino	Famosos · Fácil	1
+test	Famosos · Media	20
+sino	Famosos · Media	2
+test	Famosos · Difícil	5
+sino	Famosos · Difícil	1
+sino	Geografía · Fácil	23
+test	Geografía · Fácil	75
+test	Geografía · Media	125
+sino	Geografía · Media	23
+test	Geografía · Difícil	57
+sino	Geografía · Difícil	4
+sino	Historia · Fácil	17
+test	Historia · Fácil	66
+test	Historia · Media	145
+sino	Historia · Media	19
+test	Historia · Difícil	79
+sino	Historia · Difícil	9
+sino	Informática · Fácil	17
+test	Informática · Fácil	45
+test	Informática · Media	55
+sino	Informática · Media	16
+test	Informática · Difícil	23
+sino	Informática · Difícil	2
+test	Juegos de mesa · Fácil	16
+sino	Juegos de mesa · Fácil	6
+test	Juegos de mesa · Media	15
+sino	Juegos de mesa · Media	2
+sino	Juegos de mesa · Difícil	1
+test	Juegos de mesa · Difícil	10
+sino	Libros · Fácil	7
+test	Libros · Fácil	29
+test	Libros · Media	46
+sino	Libros · Media	1
+test	Libros · Difícil	21
+sino	Libros · Difícil	2
+sino	Matemáticas · Fácil	6
+test	Matemáticas · Fácil	21
+test	Matemáticas · Media	20
+sino	Matemáticas · Media	7
+test	Matemáticas · Difícil	13
+sino	Matemáticas · Difícil	4
+sino	Mitología · Fácil	6
+test	Mitología · Fácil	17
+test	Mitología · Media	28
+sino	Mitología · Media	4
+test	Mitología · Difícil	12
+sino	Mitología · Difícil	3
+test	Música · Fácil	108
+sino	Música · Fácil	18
+test	Música · Media	210
+sino	Música · Media	27
+test	Música · Difícil	66
+sino	Música · Difícil	5
+sino	Musicales y teatro · Fácil	3
+test	Musicales y teatro · Fácil	8
+test	Musicales y teatro · Media	14
+test	Musicales y teatro · Difícil	8
+sino	Musicales y teatro · Difícil	1
+test	Política · Fácil	7
+sino	Política · Fácil	7
+test	Política · Media	19
+sino	Política · Media	5
+test	Política · Difícil	10
+sino	Política · Difícil	1
+test	Tecnología · Fácil	13
+sino	Tecnología · Fácil	3
+test	Tecnología · Media	13
+sino	Tecnología · Media	1
+test	Tecnología · Difícil	3
+sino	Tecnología · Difícil	1
+test	Televisión · Fácil	58
+sino	Televisión · Fácil	5
+test	Televisión · Media	58
+sino	Televisión · Media	14
+test	Televisión · Difícil	19
+sino	Televisión · Difícil	1
+sino	Vehículos · Fácil	4
+test	Vehículos · Fácil	17
+test	Vehículos · Media	21
+sino	Vehículos · Media	11
+sino	Vehículos · Difícil	3
+test	Vehículos · Difícil	9
+test	Videojuegos · Fácil	265
+sino	Videojuegos · Fácil	77
+test	Videojuegos · Media	273
+sino	Videojuegos · Media	32
+test	Videojuegos · Difícil	98
+sino	Videojuegos · Difícil	13
+
+Total: 4040 preguntas de 5295 originales.
