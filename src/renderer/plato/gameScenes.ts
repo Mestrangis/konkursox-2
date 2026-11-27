@@ -3,7 +3,23 @@ import { formatNumber, niceScale, tickLabel } from '../../shared/games'
 import { targetFromKey } from '../../shared/quiz'
 import type { GameState, SlotId } from '../../shared/types'
 import { bevelBar, camFrame, h, svg, type CamFrameEl } from '../ds/components'
-import { camGeometry, DIAMOND, imageBox, keyForSlot, liveTimer, optionBar, optionStates, quizPlate, setLineupPlate, targetName, turnSlots, type PlateEl } from './quizScenes'
+import {
+  camGeometry,
+  DIAMOND,
+  flowLayout,
+  imageBox,
+  shrinkLayout,
+  type FlowItem,
+  keyForSlot,
+  liveTimer,
+  optionBar,
+  optionStates,
+  quizPlate,
+  setLineupPlate,
+  targetName,
+  turnSlots,
+  type PlateEl
+} from './quizScenes'
 import { camsLineup } from '../../shared/scene'
 import type { Scene } from './scenes'
 
@@ -13,12 +29,18 @@ export function buildQuienScene(s: GameState, key: string): Scene {
   const frames = new Map<SlotId, CamFrameEl>()
   const root = h('div', 'k-stage k-enter')
   const plates: { slot: SlotId; plate: PlateEl }[] = []
+  // con la imagen a la vista, las cámaras se encogen hacia la izquierda y la imagen va a la derecha
+  const shrink = shrinkLayout(100, 1820, 1070, 40, 0.85)
+  const flow: FlowItem[] = []
   for (const g of camGeometry(s, 'test', 450, 464)) {
     const f = camFrame(g.cam, g.slot)
     frames.set(g.slot, f)
-    const plate = quizPlate({ ...g.plate, h: 54 }, 22, g.nameSize)
+    const pBox = { ...g.plate, h: 54 }
+    const plate = quizPlate(pBox, 22, g.nameSize)
     plates.push({ slot: g.slot, plate })
     root.append(f.root, plate.root)
+    const sc = shrink.cam(g.cam)
+    flow.push({ el: f.root, normal: g.cam, small: sc }, { el: plate.root, normal: pBox, small: shrink.plate(pBox, sc.w + 12), after: plate.refit, smallClass: 'is-narrow' })
   }
 
   // caja de la cita
@@ -47,13 +69,17 @@ export function buildQuienScene(s: GameState, key: string): Scene {
   const opts = Array.from({ length: n }, (_, i) => optionBar('ABCD'[i], { x: x0 + i * 435, y: 900, w: 415, h: 80 }, 32, false, true))
   root.append(...opts.map((o) => o.root))
 
-  const timer = camsLineup(s).length === 2 ? liveTimer(900, 380) : liveTimer(1700, 572, 0.8)
+  const two = camsLineup(s).length === 2
+  const timer = two ? liveTimer(900, 380) : liveTimer(1700, 572, 0.8)
   root.append(timer.root)
-  const image = imageBox({ x: 1300, y: 40, w: 520, h: 480 })
+  if (two) flow.push({ el: timer.root, normal: { x: 900, y: 380, w: 120, h: 120 }, small: shrink.point(900, 380, 120, 120), posOnly: true })
+  const image = imageBox({ x: 1100, y: 40, w: 720, h: 450 })
   root.append(image.root, image.full)
+  const layout = flowLayout(flow)
 
   const update = (st: GameState) => {
-    image.set(st)
+    const img = image.set(st)
+    layout.apply(img.on, img.wait)
     const cur = st.quiz.current
     const q = cur?.question
     const text = cur && cur.phase !== 'ready' ? (q?.enunciado ?? '') : ''
@@ -84,12 +110,16 @@ export function buildEstimationScene(s: GameState, key: string): Scene {
   const frames = new Map<SlotId, CamFrameEl>()
   const root = h('div', 'k-stage k-enter')
   const plates: { slot: SlotId; plate: PlateEl }[] = []
+  const shrink = shrinkLayout(100, 1820, 1070, 40, 0.85)
+  const flow: FlowItem[] = []
   for (const g of camGeometry(s, 'test', 430, 444)) {
     const f = camFrame(g.cam, g.slot)
     frames.set(g.slot, f)
     const plate = quizPlate(g.plate, 22, g.nameSize)
     plates.push({ slot: g.slot, plate })
     root.append(f.root, plate.root)
+    const sc = shrink.cam(g.cam)
+    flow.push({ el: f.root, normal: g.cam, small: sc }, { el: plate.root, normal: g.plate, small: shrink.plate(g.plate, sc.w + 12), after: plate.refit, smallClass: 'is-narrow' })
   }
 
   // recta
@@ -127,11 +157,13 @@ export function buildEstimationScene(s: GameState, key: string): Scene {
 
   const X = (v: number) => Math.max(0, Math.min(W, (v / scale.max) * W))
 
-  const image = imageBox({ x: 1300, y: 40, w: 520, h: 470 })
+  const image = imageBox({ x: 1100, y: 40, w: 720, h: 430 })
   root.append(image.root, image.full)
+  const layout = flowLayout(flow)
 
   const draw = (st: GameState) => {
-    image.set(st)
+    const img = image.set(st)
+    layout.apply(img.on, img.wait)
     const cur = st.quiz.current
     const q = cur?.question
     const answer = q?.valor ?? 0

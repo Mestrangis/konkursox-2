@@ -92,7 +92,11 @@ export function buildFinalScene(s: GameState): Scene {
   const stats = h('span', 'k-caption k-caption--muted')
   root.append(
     h('div', 'k-track', { top: 968 }),
-    bevelBar({ box: { x: 100, y: 920, w: 1720, h: 98 }, c: 40, center: true }, [date, h('span', 'k-lower__sep'), h('span', 'k-logo', { fontSize: 40 }, ['KONKURSOX']), h('span', 'k-lower__sep'), stats], { gap: 32 })
+    bevelBar(
+      { box: { x: 100, y: 920, w: 1720, h: 98 }, c: 40, center: true },
+      [date, h('span', 'k-lower__sep'), h('span', 'k-logo', { fontSize: 40 }, ['KONKURSOX']), h('span', 'k-lower__sep'), stats],
+      { gap: 32 }
+    )
   )
 
   const update = (st: GameState) => {

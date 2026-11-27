@@ -13,8 +13,7 @@ import type { Scene } from './scenes'
 export const planoKey = (s: GameState): string =>
   `plano:${activePlano(s)}:${camsLineup(s).join(',')}:${s.camsScene.hostMode}:${s.camsScene.corner}:${s.liveGame}:${s.liveGame === 'rosco' ? s.rosco.players.length : ''}`
 
-const nameOf = (s: GameState, slot: SlotId): string =>
-  slot === 'host' ? s.host.name : slot === 'publico' ? 'Público' : s.contestants.find((c) => c.id === slot)?.name ?? ''
+const nameOf = (s: GameState, slot: SlotId): string => (slot === 'host' ? s.host.name : slot === 'publico' ? 'Público' : (s.contestants.find((c) => c.id === slot)?.name ?? ''))
 
 /** Recuadros 16:9 según cómo salgo yo (igual, destacado o en esquina). */
 function boxes(s: GameState, area: Box, gap: number): { slot: SlotId; cam: Box; small: boolean }[] {
@@ -44,7 +43,9 @@ export function slotData(s: GameState, slot: SlotId): string | null {
     const l = s.quiz.ladder
     if (membersOf(s, l.target).includes(slot)) {
       const val = l.levels[Math.min(l.level, l.levels.length - 1)]?.value ?? 0
-      return l.outcome ? `Final · ${formatPoints(l.outcome.prize)}` : `Escalón ${Math.min(l.level + 1, l.levels.length)} · ${formatPoints(val)}  (ganado ${formatPoints(ladderBank(l.levels, l.level))})`
+      return l.outcome
+        ? `Final · ${formatPoints(l.outcome.prize)}`
+        : `Escalón ${Math.min(l.level + 1, l.levels.length)} · ${formatPoints(val)}  (ganado ${formatPoints(ladderBank(l.levels, l.level))})`
     }
   }
   const c = s.contestants.find((x) => x.id === slot)

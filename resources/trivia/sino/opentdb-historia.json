@@ -1,0 +1,684 @@
+{
+  "formato": "konkursox-banco",
+  "version": 1,
+  "nombre": "Historia",
+  "grupo": "Trivia",
+  "licencia": "Preguntas de Open Trivia Database (opentdb.com), licencia CC BY-SA 4.0, traducidas y adaptadas al español. Este banco se distribuye con la misma licencia (CC BY-SA 4.0).",
+  "preguntas": [
+    {
+      "id": "o4080",
+      "tipo": "sino",
+      "enunciado": "¿Fue Adolf Hitler soldado alemán en la Primera Guerra Mundial?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4083",
+      "tipo": "sino",
+      "enunciado": "¿Declaró Estados Unidos su independencia del Imperio británico el 4 de julio de 1776?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4088",
+      "tipo": "sino",
+      "enunciado": "¿Era Kublai Kan nieto de Gengis Kan?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4097",
+      "tipo": "sino",
+      "enunciado": "¿Fue la Ilustración una época de ideas, avances y teorías científicas para mejorar la sociedad?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4098",
+      "tipo": "sino",
+      "enunciado": "¿Inventó el fontanero Thomas Crapper el retrete con cisterna?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4107",
+      "tipo": "sino",
+      "enunciado": "¿Murieron los presidentes John Adams y Thomas Jefferson con pocas horas de diferencia?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4122",
+      "tipo": "sino",
+      "enunciado": "¿Fue juzgado Adolf Hitler en los juicios de Núremberg?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4125",
+      "tipo": "sino",
+      "enunciado": "¿Fue Estados Unidos miembro de la Sociedad de Naciones?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4126",
+      "tipo": "sino",
+      "enunciado": "¿Fue Estados Unidos el primer país en mandar a un hombre al espacio?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4128",
+      "tipo": "sino",
+      "enunciado": "¿Nació el avión Spitfire de un avión de carreras?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4136",
+      "tipo": "sino",
+      "enunciado": "¿Acabó la Guerra Fría con la muerte de Stalin?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4147",
+      "tipo": "sino",
+      "enunciado": "¿Fueron las protestas de la plaza de Tiananmén de 1989 en Hong Kong?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4150",
+      "tipo": "sino",
+      "enunciado": "¿Asesinaron a John F. Kennedy en Atlanta?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4163",
+      "tipo": "sino",
+      "enunciado": "¿Usó Reino Unido tanques hinchables en la Segunda Guerra Mundial para despistar a Hitler antes del desembarco de Normandía?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4168",
+      "tipo": "sino",
+      "enunciado": "¿Ayudó Francia a Estados Unidos a independizarse de Reino Unido?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4169",
+      "tipo": "sino",
+      "enunciado": "¿Fueron los vikingos los primeros europeos en llegar a América del Norte?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4174",
+      "tipo": "sino",
+      "enunciado": "¿Se llamaban «romanos» a sí mismos la mayoría de los habitantes del Imperio bizantino?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4181",
+      "tipo": "sino",
+      "enunciado": "¿Fue Brézhnev el quinto líder de la URSS?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4184",
+      "tipo": "sino",
+      "enunciado": "¿Es de Voltaire la frase «No estoy de acuerdo con lo que dices, pero defenderé con mi vida tu derecho a decirlo»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4192",
+      "tipo": "sino",
+      "enunciado": "¿Era Augusto primo de Julio César?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4199",
+      "tipo": "sino",
+      "enunciado": "¿Es la Universidad de Oxford más antigua que el Imperio azteca?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4202",
+      "tipo": "sino",
+      "enunciado": "¿Fue Brasil un imperio?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4213",
+      "tipo": "sino",
+      "enunciado": "¿Duró la cuarta cruzada de 1095 a 1099?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4242",
+      "tipo": "sino",
+      "enunciado": "¿Cedió Francia Canadá a Reino Unido en el Tratado de París de 1763?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4258",
+      "tipo": "sino",
+      "enunciado": "¿Admitieron a Hitler en la Academia de Bellas Artes de Viena?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4284",
+      "tipo": "sino",
+      "enunciado": "¿Terminó la guerra de Corea en 1953 sin ningún alto el fuego?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4289",
+      "tipo": "sino",
+      "enunciado": "¿Hay una forma de agarrar una espada larga por la hoja sin cortarse?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4290",
+      "tipo": "sino",
+      "enunciado": "¿Se abrió el canal de Panamá menos de 30 días después de empezar la Primera Guerra Mundial?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4294",
+      "tipo": "sino",
+      "enunciado": "¿Duró la guerra de los Cien Años más de cien años?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4311",
+      "tipo": "sino",
+      "enunciado": "¿Tiene el calendario etíope 13 meses?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4340",
+      "tipo": "sino",
+      "enunciado": "¿Publicó una revista en 1967 un falso método para sacar alucinógenos de los plátanos, para abrir el debate sobre prohibir las drogas?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4342",
+      "tipo": "sino",
+      "enunciado": "¿Es cierto que Isaac Newton fue diputado y que la única vez que habló fue para quejarse de una corriente de aire?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4350",
+      "tipo": "sino",
+      "enunciado": "¿Se llamaban «Little Man» y «Fat Boy» las bombas atómicas lanzadas sobre Japón?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4356",
+      "tipo": "sino",
+      "enunciado": "¿Nacieron Martin Luther King y Ana Frank el mismo año?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4360",
+      "tipo": "sino",
+      "enunciado": "¿Nació el Imperio otomano en 1299?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4376",
+      "tipo": "sino",
+      "enunciado": "¿Fue Francisco José I el último emperador de Austria?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4408",
+      "tipo": "sino",
+      "enunciado": "¿Era falsa la cuarta chimenea del Titanic, puesta para que pareciera más potente y simétrico?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4423",
+      "tipo": "sino",
+      "enunciado": "¿Ganaron los emús la «Gran Guerra del Emú» de Australia en 1932?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4426",
+      "tipo": "sino",
+      "enunciado": "¿Fue la batalla de Trafalgar el 23 de octubre de 1805?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4432",
+      "tipo": "sino",
+      "enunciado": "¿Estaba Japón en el bando aliado en la Primera Guerra Mundial?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4441",
+      "tipo": "sino",
+      "enunciado": "¿Llegó el tenedor a Italia antes que a ningún otro país europeo?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4458",
+      "tipo": "sino",
+      "enunciado": "¿Se llamaba Aaron Burr el hombre que mató a Alexander Hamilton en un duelo?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4459",
+      "tipo": "sino",
+      "enunciado": "En la guerra de Invierno, ¿murieron o desaparecieron cinco veces más soldados soviéticos que finlandeses?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4466",
+      "tipo": "sino",
+      "enunciado": "¿Se llamaba Stalin en realidad Ioseb Besarionis dze Jughashvili?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4475",
+      "tipo": "sino",
+      "enunciado": "¿Tuvo el reino de Prusia tierras en Estonia durante un tiempo?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Historia"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    }
+  ]
+}

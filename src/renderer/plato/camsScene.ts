@@ -103,7 +103,7 @@ export function buildCamsScene(s: GameState): Scene {
       }
       const c = st.contestants.find((x) => x.id === slot)
       plate.setName(c?.name ?? '')
-      const score = st.layout === 'teams' && c ? st.teams[c.team].score : c?.score ?? 0
+      const score = st.layout === 'teams' && c ? st.teams[c.team].score : (c?.score ?? 0)
       plate.setScore(st.camsScene.scores ? formatPoints(score) : null)
     }
     const lt = st.lowerThird

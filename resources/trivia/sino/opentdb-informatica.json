@@ -1,0 +1,534 @@
+{
+  "formato": "konkursox-banco",
+  "version": 1,
+  "nombre": "Informática",
+  "grupo": "Trivia",
+  "licencia": "Preguntas de Open Trivia Database (opentdb.com), licencia CC BY-SA 4.0, traducidas y adaptadas al español. Este banco se distribuye con la misma licencia (CC BY-SA 4.0).",
+  "preguntas": [
+    {
+      "id": "o3179",
+      "tipo": "sino",
+      "enunciado": "En la mayoría de lenguajes de programación, ¿equivale el operador ++ a «+= 1»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3185",
+      "tipo": "sino",
+      "enunciado": "¿Es una campana el logotipo de Snapchat?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3186",
+      "tipo": "sino",
+      "enunciado": "¿Salió Windows ME en el año 2000?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3187",
+      "tipo": "sino",
+      "enunciado": "¿Se creó Linux como alternativa a Windows XP?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3188",
+      "tipo": "sino",
+      "enunciado": "¿Se llama así la NVIDIA GTX 1080 porque solo puede mostrar imagen a 1920 × 1080?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3191",
+      "tipo": "sino",
+      "enunciado": "¿Es cierto que el C original no tenía punteros y que se añadieron después en C++?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3198",
+      "tipo": "sino",
+      "enunciado": "¿Es cierto que un Mac no es un PC?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3200",
+      "tipo": "sino",
+      "enunciado": "¿Significa HTML «Hypertext Markup Language»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3202",
+      "tipo": "sino",
+      "enunciado": "¿Se basa Python en una versión modificada de JavaScript?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3203",
+      "tipo": "sino",
+      "enunciado": "¿Debe su nombre el lenguaje Python al grupo cómico Monty Python?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3209",
+      "tipo": "sino",
+      "enunciado": "¿Viene el nombre del lenguaje AWK de las iniciales de sus creadores, Aho, Weinberger y Kernighan?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3212",
+      "tipo": "sino",
+      "enunciado": "¿Deriva JavaScript de una versión posterior de Java?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3215",
+      "tipo": "sino",
+      "enunciado": "¿Tuvo Windows 7 seis ediciones principales?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3229",
+      "tipo": "sino",
+      "enunciado": "¿Se considera a Ada Lovelace la primera programadora de la historia?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3232",
+      "tipo": "sino",
+      "enunciado": "¿Salió el primer IBM PC en 1981?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3239",
+      "tipo": "sino",
+      "enunciado": "¿Significa RAM «memoria de acceso aleatorio»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3244",
+      "tipo": "sino",
+      "enunciado": "¿Creó Linus Torvalds Linux y Git?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3249",
+      "tipo": "sino",
+      "enunciado": "¿Fue una polilla dentro de un ordenador Harvard Mark II el primer «bug» informático registrado?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3250",
+      "tipo": "sino",
+      "enunciado": "¿Está macOS basado en Linux?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3253",
+      "tipo": "sino",
+      "enunciado": "¿Significa FLAC «Free Lossless Audio Condenser»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3258",
+      "tipo": "sino",
+      "enunciado": "¿Fue Windows 98 el último Windows basado en el núcleo 9x?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3259",
+      "tipo": "sino",
+      "enunciado": "¿Desarrolló originalmente el chip ARM la empresa Acorn Computers?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3260",
+      "tipo": "sino",
+      "enunciado": "¿Fue un cable defectuoso el primer «bug» informático?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3269",
+      "tipo": "sino",
+      "enunciado": "¿Es Linus Sebastian el creador del núcleo Linux?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3282",
+      "tipo": "sino",
+      "enunciado": "¿Representa el valor booleano «0» la palabra «falso»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3288",
+      "tipo": "sino",
+      "enunciado": "¿Se publicó el estándar HTML5 en 2014?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3302",
+      "tipo": "sino",
+      "enunciado": "Para esquivar las leyes de exportación de EE. UU., ¿publicó el creador de PGP todo su código en forma de libro?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3307",
+      "tipo": "sino",
+      "enunciado": "¿Hay que compilar todo programa en un ejecutable que luego funciona en cualquier máquina?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3309",
+      "tipo": "sino",
+      "enunciado": "¿Iba la primera RAM soldada a la placa base, sin poder quitarse con facilidad?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3311",
+      "tipo": "sino",
+      "enunciado": "¿Fabricó AMD el primer procesador de 64 bits para el gran público?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3318",
+      "tipo": "sino",
+      "enunciado": "¿Tienen las versiones de Android nombres en orden alfabético?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3322",
+      "tipo": "sino",
+      "enunciado": "¿Fue el Intel Pentium D el primer procesador de doble núcleo?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3324",
+      "tipo": "sino",
+      "enunciado": "¿Se crearon los ordenadores Raspberry Pi en Estados Unidos?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3349",
+      "tipo": "sino",
+      "enunciado": "¿Significa DHCP «Dynamic Host Configuration Port»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3367",
+      "tipo": "sino",
+      "enunciado": "¿Estaba Apple al borde de la quiebra en 1997 y la salvó Microsoft?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Informática"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    }
+  ]
+}

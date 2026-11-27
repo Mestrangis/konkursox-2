@@ -2437,3 +2437,8 @@ input[type='range'] {
   outline: none;
   border-color: #4f7dff;
 }
+.tg-sep {
+  height: 1px;
+  margin: 6px 10px;
+  background: #2a2a2f;
+}

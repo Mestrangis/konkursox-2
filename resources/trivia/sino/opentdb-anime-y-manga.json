@@ -1,0 +1,144 @@
+{
+  "formato": "konkursox-banco",
+  "version": 1,
+  "nombre": "Anime y manga",
+  "grupo": "Trivia",
+  "licencia": "Preguntas de Open Trivia Database (opentdb.com), licencia CC BY-SA 4.0, traducidas y adaptadas al español. Este banco se distribuye con la misma licencia (CC BY-SA 4.0).",
+  "preguntas": [
+    {
+      "id": "o4992",
+      "tipo": "sino",
+      "enunciado": "¿Se niega el Pikachu de Ash a meterse en la Poké Ball?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Anime y manga"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5001",
+      "tipo": "sino",
+      "enunciado": "¿Es una chica el protagonista de «Naruto»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Anime y manga"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5003",
+      "tipo": "sino",
+      "enunciado": "¿Debe su nombre el ataque «Kamehameha» de Dragon Ball a un famoso rey de Hawái?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Anime y manga"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5013",
+      "tipo": "sino",
+      "enunciado": "En la película «Akira» (1988), ¿acaba Tetsuo destruyendo Tokio?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Anime y manga"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5021",
+      "tipo": "sino",
+      "enunciado": "¿Es Gosho Aoyama el autor de «Detective Conan»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Anime y manga"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5028",
+      "tipo": "sino",
+      "enunciado": "¿Iba a ser Clefairy el primer Pokémon de Ash en el episodio piloto?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Anime y manga"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5041",
+      "tipo": "sino",
+      "enunciado": "¿Hizo el Studio Ghibli «Los niños lobo» y «El niño y la bestia»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Anime y manga"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5051",
+      "tipo": "sino",
+      "enunciado": "¿Ganó «El viaje de Chihiro» el Óscar a la mejor película de animación en 2003?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Anime y manga"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o5169",
+      "tipo": "sino",
+      "enunciado": "¿Es cierto que en todo «Dragon Ball Z» Goku solo mata a dos personajes: Yakon y Kid Buu?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Anime y manga"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    }
+  ]
+}

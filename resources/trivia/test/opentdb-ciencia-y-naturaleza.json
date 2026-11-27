@@ -1,0 +1,3919 @@
+{
+  "formato": "konkursox-banco",
+  "version": 1,
+  "nombre": "Ciencia y naturaleza",
+  "grupo": "Trivia",
+  "licencia": "Preguntas de Open Trivia Database (opentdb.com), licencia CC BY-SA 4.0, traducidas y adaptadas al español. Este banco se distribuye con la misma licencia (CC BY-SA 4.0).",
+  "preguntas": [
+    {
+      "id": "o2881",
+      "tipo": "test",
+      "enunciado": "¿Cuál es la unidad de temperatura del Sistema Internacional?",
+      "opciones": [
+        "Fahrenheit",
+        "Rankine",
+        "Celsius",
+        "Kelvin"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2883",
+      "tipo": "test",
+      "enunciado": "¿Cuál es el primer elemento de la tabla periódica?",
+      "opciones": [
+        "Litio",
+        "Oxígeno",
+        "Helio",
+        "Hidrógeno"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2884",
+      "tipo": "test",
+      "enunciado": "¿Qué animal aparece en el famoso experimento mental de Schrödinger?",
+      "opciones": [
+        "Un murciélago",
+        "Un perro",
+        "Una mariposa",
+        "Un gato"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2885",
+      "tipo": "test",
+      "enunciado": "¿De qué isótopo se compone sobre todo el uranio natural?",
+      "opciones": [
+        "233",
+        "239",
+        "238",
+        "235"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2886",
+      "tipo": "test",
+      "enunciado": "¿Cuál es la unidad de la resistencia eléctrica?",
+      "opciones": [
+        "El julio",
+        "El ohmio",
+        "El tesla",
+        "El mho"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2888",
+      "tipo": "test",
+      "enunciado": "¿Cuál es el peso atómico estándar del plutonio?",
+      "opciones": [
+        "244",
+        "481",
+        "128",
+        "94"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2890",
+      "tipo": "test",
+      "enunciado": "¿Qué elemento tiene el símbolo químico Fe?",
+      "opciones": [
+        "Estaño",
+        "Plata",
+        "Hierro",
+        "Oro"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2891",
+      "tipo": "test",
+      "enunciado": "¿Cuál es la unidad de longitud del Sistema Internacional?",
+      "opciones": [
+        "El ángstrom",
+        "La braza",
+        "El metro",
+        "El pie"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2892",
+      "tipo": "test",
+      "enunciado": "¿Cuál es el planeta más caliente del sistema solar?",
+      "opciones": [
+        "Júpiter",
+        "Venus",
+        "Marte",
+        "Mercurio"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2893",
+      "tipo": "test",
+      "enunciado": "¿Cuántas leyes de la termodinámica hay?",
+      "opciones": [
+        "Cuatro",
+        "Tres",
+        "Cinco",
+        "Dos"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2894",
+      "tipo": "test",
+      "enunciado": "¿Cuál es la unidad de tiempo del Sistema Internacional?",
+      "opciones": [
+        "El segundo",
+        "El minuto",
+        "El día",
+        "La hora"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2895",
+      "tipo": "test",
+      "enunciado": "¿Qué significan las siglas ADN?",
+      "opciones": [
+        "Ácido detóxico",
+        "Ácido desoxirribonucleico",
+        "Ácido desoxirribogenético",
+        "Átomos desoxirribogenéticos"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2896",
+      "tipo": "test",
+      "enunciado": "¿Qué porcentaje de la superficie de la Tierra es agua, más o menos?",
+      "opciones": [
+        "90 %",
+        "70 %",
+        "30 %",
+        "50 %"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2898",
+      "tipo": "test",
+      "enunciado": "¿Sobre qué parte del cuerpo es la rinoplastia?",
+      "opciones": [
+        "La barbilla",
+        "Las orejas",
+        "La nariz",
+        "El cuello"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2900",
+      "tipo": "test",
+      "enunciado": "¿Cuántos planetas hay en el sistema solar?",
+      "opciones": [
+        "Nueve",
+        "Ocho",
+        "Siete",
+        "Diez"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2901",
+      "tipo": "test",
+      "enunciado": "¿Cuántas copias de cada gen suelen tener las células humanas?",
+      "opciones": [
+        "4",
+        "2",
+        "1",
+        "3"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2902",
+      "tipo": "test",
+      "enunciado": "¿Cuántos pares de cromosomas tienen las células del cuerpo humano?",
+      "opciones": [
+        "23",
+        "22",
+        "21",
+        "24"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2903",
+      "tipo": "test",
+      "enunciado": "¿Cuántos huesos tiene el cuerpo humano adulto?",
+      "opciones": [
+        "209",
+        "203",
+        "206",
+        "200"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2904",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos elementos es un metaloide?",
+      "opciones": [
+        "Bromo",
+        "Estaño",
+        "Rubidio",
+        "Antimonio"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2906",
+      "tipo": "test",
+      "enunciado": "¿Cuál es el elemento más abundante del universo?",
+      "opciones": [
+        "Helio",
+        "Oxígeno",
+        "Litio",
+        "Hidrógeno"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2907",
+      "tipo": "test",
+      "enunciado": "¿Cuál es la unidad de masa del Sistema Internacional?",
+      "opciones": [
+        "El gramo",
+        "La libra",
+        "La tonelada",
+        "El kilogramo"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2908",
+      "tipo": "test",
+      "enunciado": "¿Qué significa la S de NASA?",
+      "opciones": [
+        "Star (estrella)",
+        "Society (sociedad)",
+        "Science (ciencia)",
+        "Space (espacio)"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2909",
+      "tipo": "test",
+      "enunciado": "¿Cuál es el nombre común del «monóxido de dihidrógeno»?",
+      "opciones": [
+        "Amoniaco",
+        "Metano",
+        "Gas de la risa",
+        "Agua"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2910",
+      "tipo": "test",
+      "enunciado": "¿Entre qué dos planetas está el cinturón de asteroides?",
+      "opciones": [
+        "La Tierra y Marte",
+        "Mercurio y Venus",
+        "Marte y Júpiter",
+        "Júpiter y Saturno"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2913",
+      "tipo": "test",
+      "enunciado": "¿Qué hay en el centro de nuestra galaxia?",
+      "opciones": [
+        "Un agujero negro",
+        "Una supernova",
+        "Un cuásar",
+        "Un agujero de gusano"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2915",
+      "tipo": "test",
+      "enunciado": "¿Qué significan las siglas LÁSER?",
+      "opciones": [
+        "Antimateria luminosa",
+        "Luz amplificada por energía de radio",
+        "Amplificación de luz por emisión estimulada de radiación",
+        "Luz analizada por estéreo"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2917",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llamaba el primer satélite artificial, que lanzó la Unión Soviética en 1957?",
+      "opciones": [
+        "Sputnik 1",
+        "Soyuz 7K-OK",
+        "Vosjod 3KV",
+        "Zenit-2"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2918",
+      "tipo": "test",
+      "enunciado": "¿Qué elemento hace roja la sangre humana?",
+      "opciones": [
+        "El hierro",
+        "El cobre",
+        "El cobalto",
+        "El iridio"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2919",
+      "tipo": "test",
+      "enunciado": "Las estrellas están hechas sobre todo de hidrógeno y ¿qué otro gas?",
+      "opciones": [
+        "Nitrógeno",
+        "Helio",
+        "Oxígeno",
+        "Argón"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2920",
+      "tipo": "test",
+      "enunciado": "¿Cuál es el hueso más largo del cuerpo humano?",
+      "opciones": [
+        "El cúbito",
+        "El fémur",
+        "La escápula",
+        "El peroné"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2921",
+      "tipo": "test",
+      "enunciado": "¿Qué usó Gregor Mendel para estudiar los cruces genéticos?",
+      "opciones": [
+        "Gatos",
+        "Loros",
+        "Guisantes",
+        "Flores"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2923",
+      "tipo": "test",
+      "enunciado": "¿De qué sustancia es el hielo seco la forma sólida?",
+      "opciones": [
+        "Dióxido de carbono",
+        "Nitrógeno",
+        "Amoniaco",
+        "Oxígeno"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2924",
+      "tipo": "test",
+      "enunciado": "¿Cuál es el planeta más grande del sistema solar?",
+      "opciones": [
+        "Saturno",
+        "Júpiter",
+        "La Tierra",
+        "Marte"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2925",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama en inglés a todas las crías de marsupial?",
+      "opciones": [
+        "Pup",
+        "Joey",
+        "Calf",
+        "Cub"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2927",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos NO es un grupo de la tabla periódica?",
+      "opciones": [
+        "Los halógenos",
+        "Los metales alcalinos",
+        "Los flúores",
+        "Los gases nobles"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2928",
+      "tipo": "test",
+      "enunciado": "¿Cuál es la principal sustancia adictiva del tabaco?",
+      "opciones": [
+        "Efedrina",
+        "Catinona",
+        "Nicotina",
+        "Glaucina"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2930",
+      "tipo": "test",
+      "enunciado": "¿Qué misión Apolo fue la primera en llegar a la Luna?",
+      "opciones": [
+        "Apolo 10",
+        "Apolo 13",
+        "Apolo 9",
+        "Apolo 11"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2931",
+      "tipo": "test",
+      "enunciado": "¿Cuál es la fórmula química del agua?",
+      "opciones": [
+        "CO2",
+        "H",
+        "C12H6O2",
+        "H2O"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2932",
+      "tipo": "test",
+      "enunciado": "¿Cuál es el símbolo químico del mercurio?",
+      "opciones": [
+        "Hy",
+        "Mc",
+        "Me",
+        "Hg"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2933",
+      "tipo": "test",
+      "enunciado": "¿Qué elemento tiene el punto de fusión más alto?",
+      "opciones": [
+        "Platino",
+        "Wolframio",
+        "Osmio",
+        "Carbono"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2934",
+      "tipo": "test",
+      "enunciado": "¿Cuál es la masa atómica del carbono?",
+      "opciones": [
+        "14",
+        "16",
+        "10",
+        "12"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2935",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama la capa más externa y fina de la Tierra?",
+      "opciones": [
+        "Núcleo externo",
+        "Corteza",
+        "Manto",
+        "Exosfera"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2936",
+      "tipo": "test",
+      "enunciado": "¿Qué da el color verde a la mayoría de las hojas?",
+      "opciones": [
+        "La radiación ultravioleta",
+        "La clorofila",
+        "Pigmentos naturales",
+        "La refracción de la luz"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2937",
+      "tipo": "test",
+      "enunciado": "¿En honor de quién se llama el elemento curio?",
+      "opciones": [
+        "Marie y Pierre Curie",
+        "Jorge el Curioso",
+        "Stephen Curry",
+        "El róver Curiosity"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2938",
+      "tipo": "test",
+      "enunciado": "¿Cuántas lunas tiene la Tierra?",
+      "opciones": [
+        "1",
+        "2",
+        "3",
+        "0"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2939",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estas enfermedades la causa una bacteria?",
+      "opciones": [
+        "La tiña",
+        "El sida",
+        "El cólera",
+        "El sarampión"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2941",
+      "tipo": "test",
+      "enunciado": "¿Cuál es el animal más grande que existe hoy?",
+      "opciones": [
+        "La ballena azul",
+        "La orca",
+        "La jirafa",
+        "El calamar colosal"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2943",
+      "tipo": "test",
+      "enunciado": "¿Quién descubrió la ley de la gravitación universal?",
+      "opciones": [
+        "Isaac Newton",
+        "Albert Einstein",
+        "Galileo Galilei",
+        "Charles Darwin"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2945",
+      "tipo": "test",
+      "enunciado": "¿Qué elemento, sometido a enorme calor y presión, forma diamantes?",
+      "opciones": [
+        "Nitrógeno",
+        "Hidrógeno",
+        "Carbono",
+        "Oxígeno"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2946",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama la estrella más cercana al polo norte celeste?",
+      "opciones": [
+        "Iota Cephei",
+        "Erídano",
+        "Polaris (la estrella polar)",
+        "Gamma Cephei"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2947",
+      "tipo": "test",
+      "enunciado": "¿Qué gas forma alrededor del 78 % de la atmósfera terrestre?",
+      "opciones": [
+        "Nitrógeno",
+        "Oxígeno",
+        "Dióxido de carbono",
+        "Argón"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2948",
+      "tipo": "test",
+      "enunciado": "¿Qué tipo de roca se forma por calor y presión intensos?",
+      "opciones": [
+        "Metamórfica",
+        "Sedimentaria",
+        "Ígnea",
+        "Diamante"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2949",
+      "tipo": "test",
+      "enunciado": "¿Qué parte del cuerpo afecta sobre todo el alzhéimer?",
+      "opciones": [
+        "La piel",
+        "El cerebro",
+        "Los pulmones",
+        "El corazón"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2950",
+      "tipo": "test",
+      "enunciado": "¿Cuántas cavidades tiene el corazón humano?",
+      "opciones": [
+        "6",
+        "4",
+        "2",
+        "3"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2951",
+      "tipo": "test",
+      "enunciado": "¿Cuántas lunas tiene Plutón?",
+      "opciones": [
+        "Tres",
+        "Dos",
+        "Cinco",
+        "Una"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2952",
+      "tipo": "test",
+      "enunciado": "¿Qué gas noble tiene el número atómico más bajo?",
+      "opciones": [
+        "Argón",
+        "Neón",
+        "Helio",
+        "Kriptón"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2953",
+      "tipo": "test",
+      "enunciado": "¿Cuál es la «central energética» de la célula eucariota animal?",
+      "opciones": [
+        "La mitocondria",
+        "El núcleo",
+        "El cloroplasto",
+        "El retículo endoplasmático"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2955",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos vasos sanguíneos lleva sangre sin oxígeno?",
+      "opciones": [
+        "La aorta",
+        "La arteria coronaria",
+        "La vena pulmonar",
+        "La arteria pulmonar"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2956",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos huesos es el más difícil de romper?",
+      "opciones": [
+        "La tibia",
+        "El húmero",
+        "El cráneo",
+        "El fémur"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2958",
+      "tipo": "test",
+      "enunciado": "¿Cuál es la velocidad de la luz en el vacío?",
+      "opciones": [
+        "308 215 043 m/s",
+        "50 461 m/s",
+        "751 665 014 151 m/s",
+        "299 792 458 m/s"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2959",
+      "tipo": "test",
+      "enunciado": "¿Cuál es la mayor diferencia entre una célula eucariota y una procariota?",
+      "opciones": [
+        "El tamaño",
+        "Tener o no ciertos orgánulos",
+        "La pared celular",
+        "Tener o no núcleo"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2962",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos huesos NO está en la pierna?",
+      "opciones": [
+        "El radio",
+        "La tibia",
+        "El peroné",
+        "La rótula"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2963",
+      "tipo": "test",
+      "enunciado": "¿Cuál es el término médico del ombligo?",
+      "opciones": [
+        "Nares",
+        "Umbilicus",
+        "Paxillus",
+        "Nevus"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2966",
+      "tipo": "test",
+      "enunciado": "¿Cuál es el símbolo químico del helio?",
+      "opciones": [
+        "He",
+        "H",
+        "Hs",
+        "Hg"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2968",
+      "tipo": "test",
+      "enunciado": "¿En qué se mide la dosis de radiación absorbida?",
+      "opciones": [
+        "En kelvin",
+        "En grays",
+        "En vatios",
+        "En decibelios"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2969",
+      "tipo": "test",
+      "enunciado": "¿Cuál es el término científico del sentido del gusto?",
+      "opciones": [
+        "Percepción auditiva",
+        "Percepción gustativa",
+        "Olfato",
+        "Somatosensación"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2970",
+      "tipo": "test",
+      "enunciado": "¿Qué parte del cuerpo afecta la osteoporosis?",
+      "opciones": [
+        "La piel",
+        "El corazón",
+        "Los huesos",
+        "El cerebro"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2971",
+      "tipo": "test",
+      "enunciado": "¿Cuáles son los vasos sanguíneos más pequeños del cuerpo?",
+      "opciones": [
+        "Los linfáticos",
+        "Las arteriolas",
+        "Los capilares",
+        "Las vénulas"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2973",
+      "tipo": "test",
+      "enunciado": "¿Cuál es la parte masculina de la flor, que produce el polen?",
+      "opciones": [
+        "El sépalo",
+        "El estambre",
+        "El pistilo",
+        "El pétalo"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2974",
+      "tipo": "test",
+      "enunciado": "¿Cuál es el ser vivo más grande que se conoce?",
+      "opciones": [
+        "La secuoya",
+        "Un hongo de miel (Armillaria)",
+        "La ballena azul",
+        "El arrecife de coral"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2976",
+      "tipo": "test",
+      "enunciado": "¿Qué elemento químico tiene el punto de ebullición más bajo?",
+      "opciones": [
+        "Neón",
+        "Hidrógeno",
+        "Helio",
+        "Nitrógeno"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2977",
+      "tipo": "test",
+      "enunciado": "¿Cuál es el término médico del azúcar bajo en sangre?",
+      "opciones": [
+        "Hipotermia",
+        "Hipotiroidismo",
+        "Hipoglucemia",
+        "Hipoxia"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2979",
+      "tipo": "test",
+      "enunciado": "¿Cuál es el periodo de semidesintegración del uranio-235?",
+      "opciones": [
+        "Unos 4300 millones de años",
+        "Es un isótopo estable",
+        "Unos 1260 millones de años",
+        "Unos 704 millones de años"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2981",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos metales NO es líquido a temperatura ambiente o cerca de ella?",
+      "opciones": [
+        "Mercurio",
+        "Cesio",
+        "Galio",
+        "Berilio"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2982",
+      "tipo": "test",
+      "enunciado": "¿Qué articulación forman el húmero, el radio y el cúbito?",
+      "opciones": [
+        "El hombro",
+        "La rodilla",
+        "El tobillo",
+        "El codo"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2983",
+      "tipo": "test",
+      "enunciado": "¿Qué estudia la entomología?",
+      "opciones": [
+        "Los humanos",
+        "El cerebro",
+        "Los peces",
+        "Los insectos"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2984",
+      "tipo": "test",
+      "enunciado": "¿Qué transbordador espacial de la NASA se desintegró al volver a la atmósfera el 1 de febrero de 2003?",
+      "opciones": [
+        "Challenger",
+        "Endeavour",
+        "Discovery",
+        "Columbia"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2985",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estas naves NUNCA tocó la Luna?",
+      "opciones": [
+        "Mariner 4",
+        "SMART-1",
+        "Luna 2",
+        "Apolo 11"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2986",
+      "tipo": "test",
+      "enunciado": "¿Quién descubrió los rayos X?",
+      "opciones": [
+        "Wilhelm Conrad Röntgen",
+        "James Watt",
+        "Albert Einstein",
+        "Thomas Alva Edison"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2987",
+      "tipo": "test",
+      "enunciado": "¿Con qué polímero se hacen los CD, las gafas de seguridad y los escudos antidisturbios?",
+      "opciones": [
+        "Policarbonato",
+        "Nailon",
+        "Baquelita",
+        "Caucho"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2989",
+      "tipo": "test",
+      "enunciado": "¿Qué elemento químico se llamó en un principio «alabamio»?",
+      "opciones": [
+        "Molibdeno",
+        "Antimonio",
+        "Astato",
+        "Selenio"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2990",
+      "tipo": "test",
+      "enunciado": "¿Qué causa la enfermedad de Lyme?",
+      "opciones": [
+        "Una bacteria",
+        "Una ameba",
+        "Un gusano parásito",
+        "Un virus"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2991",
+      "tipo": "test",
+      "enunciado": "¿Qué elemento es Au en la tabla periódica?",
+      "opciones": [
+        "Oro",
+        "Plata",
+        "Níquel",
+        "Oxígeno"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2992",
+      "tipo": "test",
+      "enunciado": "En aeronáutica, ¿qué controlan los flaps y los slats de un avión?",
+      "opciones": [
+        "La sustentación",
+        "El peso",
+        "El empuje",
+        "La resistencia"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2994",
+      "tipo": "test",
+      "enunciado": "¿Alrededor de qué planeta giran las lunas Miranda, Ariel, Umbriel, Titania y Oberón?",
+      "opciones": [
+        "Júpiter",
+        "Neptuno",
+        "Urano",
+        "Venus"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2995",
+      "tipo": "test",
+      "enunciado": "¿Qué es la hipernatremia?",
+      "opciones": [
+        "Falta de hierro en sangre",
+        "Falta de potasio en sangre",
+        "Exceso de sodio en sangre",
+        "Exceso de glucosa en sangre"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2996",
+      "tipo": "test",
+      "enunciado": "¿En qué desierto crece de forma natural el cactus saguaro?",
+      "opciones": [
+        "El de Sonora",
+        "El de Gobi",
+        "El de Arabia",
+        "El de Yuma"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2997",
+      "tipo": "test",
+      "enunciado": "¿Cuál es el símbolo químico del plomo?",
+      "opciones": [
+        "Pb",
+        "Ld",
+        "Pm",
+        "Le"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2998",
+      "tipo": "test",
+      "enunciado": "¿Cuál es el nombre científico del manzano común?",
+      "opciones": [
+        "Pomus domestica",
+        "Malus pumila",
+        "Malus americana",
+        "Appelus delectica"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o2999",
+      "tipo": "test",
+      "enunciado": "¿Qué edad tiene el universo?",
+      "opciones": [
+        "7900 millones de años",
+        "13 800 millones de años",
+        "4500 millones de años",
+        "16 200 millones de años"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3000",
+      "tipo": "test",
+      "enunciado": "¿Cuál es la unidad de la capacidad eléctrica?",
+      "opciones": [
+        "El henrio",
+        "El gauss",
+        "El faradio",
+        "El vatio"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3001",
+      "tipo": "test",
+      "enunciado": "¿Quién desarrolló la primera vacuna eficaz contra la polio en los años 50?",
+      "opciones": [
+        "Thomas Weller",
+        "John F. Enders",
+        "Jonas Salk",
+        "Frederick Robbins"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3002",
+      "tipo": "test",
+      "enunciado": "¿De dónde es originaria la raza de perro chihuahua?",
+      "opciones": [
+        "México",
+        "Francia",
+        "España",
+        "Rusia"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3004",
+      "tipo": "test",
+      "enunciado": "¿Qué elemento tiene el número atómico 7?",
+      "opciones": [
+        "Hidrógeno",
+        "Neón",
+        "Oxígeno",
+        "Nitrógeno"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3005",
+      "tipo": "test",
+      "enunciado": "¿Qué término psicológico describe el malestar de tener creencias contradictorias?",
+      "opciones": [
+        "Visión ciega",
+        "Cerebro dividido",
+        "Síndrome del vaivén",
+        "Disonancia cognitiva"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3007",
+      "tipo": "test",
+      "enunciado": "¿En qué misión se desintegró el transbordador Columbia al volver a la atmósfera?",
+      "opciones": [
+        "STS-51-L",
+        "STS-61-C",
+        "STS-109",
+        "STS-107"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3008",
+      "tipo": "test",
+      "enunciado": "¿En qué fase pasa la mayor parte de su vida la mayoría de las células eucariotas?",
+      "opciones": [
+        "Profase",
+        "Telofase",
+        "Estasis",
+        "Interfase"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3009",
+      "tipo": "test",
+      "enunciado": "¿De qué color es la sangre sin oxigenar?",
+      "opciones": [
+        "Azul",
+        "Verde",
+        "Morada",
+        "Roja"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3010",
+      "tipo": "test",
+      "enunciado": "¿Cuántos dientes de leche tiene un niño en total?",
+      "opciones": [
+        "20",
+        "15",
+        "25",
+        "10"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3011",
+      "tipo": "test",
+      "enunciado": "¿Cuál es la unidad de corriente eléctrica del Sistema Internacional?",
+      "opciones": [
+        "El amperio",
+        "El ohmio",
+        "El vatio",
+        "El voltio"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3012",
+      "tipo": "test",
+      "enunciado": "¿Cuántos lóbulos tiene el pulmón derecho?",
+      "opciones": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3013",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos es un reflejo tendinoso profundo?",
+      "opciones": [
+        "El reflejo de rascado",
+        "El reflejo pupilar",
+        "El reflejo aquíleo",
+        "El reflejo nauseoso"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3014",
+      "tipo": "test",
+      "enunciado": "¿Cuántos dientes tiene un adulto, contando las muelas del juicio?",
+      "opciones": [
+        "28",
+        "32",
+        "20",
+        "36"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3016",
+      "tipo": "test",
+      "enunciado": "¿Qué científico hizo el experimento de la lámina de oro que demostró que el átomo es casi todo espacio vacío?",
+      "opciones": [
+        "Ernest Rutherford",
+        "Niels Bohr",
+        "Joseph John Thomson",
+        "Arquímedes"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3017",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama la capa más baja de la atmósfera?",
+      "opciones": [
+        "Termosfera",
+        "Troposfera",
+        "Estratosfera",
+        "Mesosfera"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3019",
+      "tipo": "test",
+      "enunciado": "¿Qué parte de la planta de marihuana produce el THC?",
+      "opciones": [
+        "Las hojas",
+        "La raíz",
+        "La flor femenina",
+        "La flor masculina"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3020",
+      "tipo": "test",
+      "enunciado": "¿Qué órgano produce la insulina?",
+      "opciones": [
+        "El páncreas",
+        "El riñón",
+        "El estómago",
+        "El hígado"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3021",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos NO es un componente eléctrico pasivo?",
+      "opciones": [
+        "El transistor",
+        "La resistencia",
+        "La bobina",
+        "El condensador"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3022",
+      "tipo": "test",
+      "enunciado": "¿Con qué término se asocia sobre todo a Sigmund Freud?",
+      "opciones": [
+        "La terapia dialéctica conductual",
+        "El psicoanálisis",
+        "La terapia cognitivo-conductual",
+        "La teoría de la gravedad"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3023",
+      "tipo": "test",
+      "enunciado": "¿Qué edad tiene la Tierra, más o menos?",
+      "opciones": [
+        "2500 millones de años",
+        "4500 millones de años",
+        "3500 millones de años",
+        "5500 millones de años"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3026",
+      "tipo": "test",
+      "enunciado": "¿De qué continente es originaria la batata (boniato)?",
+      "opciones": [
+        "África",
+        "Asia",
+        "América del Sur",
+        "Europa"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3027",
+      "tipo": "test",
+      "enunciado": "¿Cuánto dura un año en Urano, más o menos?",
+      "opciones": [
+        "47 años terrestres",
+        "84 años terrestres",
+        "62 años terrestres",
+        "109 años terrestres"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3028",
+      "tipo": "test",
+      "enunciado": "¿De qué elemento es isótopo el deuterio?",
+      "opciones": [
+        "Nitrógeno",
+        "Hidrógeno",
+        "Helio",
+        "Neón"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3029",
+      "tipo": "test",
+      "enunciado": "¿De qué planeta envió imágenes de la superficie la sonda Viking 1 a partir de 1976?",
+      "opciones": [
+        "Venus",
+        "Júpiter",
+        "Saturno",
+        "Marte"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3030",
+      "tipo": "test",
+      "enunciado": "¿Cuántos corazones tiene un pulpo?",
+      "opciones": [
+        "Cuatro",
+        "Dos",
+        "Uno",
+        "Tres"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3031",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estas estrellas es la más grande?",
+      "opciones": [
+        "Betelgeuse",
+        "VY Canis Majoris",
+        "RW Cephei",
+        "UY Scuti"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3032",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estas NO es una fase de la mitosis?",
+      "opciones": [
+        "Metafase",
+        "Anafase",
+        "Telofase",
+        "Diplofase"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3034",
+      "tipo": "test",
+      "enunciado": "Redondeando al minuto, ¿cuánto tarda la luz del Sol en llegar a la Tierra?",
+      "opciones": [
+        "12 minutos",
+        "6 minutos",
+        "2 minutos",
+        "8 minutos"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3035",
+      "tipo": "test",
+      "enunciado": "¿De qué planeta es Ganímedes la luna más grande?",
+      "opciones": [
+        "Júpiter",
+        "Neptuno",
+        "Marte",
+        "Urano"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3036",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos científicos NO tiene un elemento químico con su nombre?",
+      "opciones": [
+        "Isaac Newton",
+        "Niels Bohr",
+        "Enrico Fermi",
+        "Albert Einstein"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3037",
+      "tipo": "test",
+      "enunciado": "¿Cuál es la fórmula de la ley de Ohm?",
+      "opciones": [
+        "V = I / R",
+        "R = V × I",
+        "V = I × R",
+        "I = V × R"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3039",
+      "tipo": "test",
+      "enunciado": "¿De qué están hechas las uñas humanas?",
+      "opciones": [
+        "Queratina",
+        "Calcio",
+        "Quitina",
+        "Hueso"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3040",
+      "tipo": "test",
+      "enunciado": "En psicología, ¿qué necesidad está más arriba en la pirámide de Maslow?",
+      "opciones": [
+        "Reconocimiento (estima)",
+        "Fisiológicas",
+        "Seguridad",
+        "Afiliación (amor)"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3041",
+      "tipo": "test",
+      "enunciado": "¿De qué partícula es antipartícula el positrón?",
+      "opciones": [
+        "El electrón",
+        "El protón",
+        "El fotón",
+        "El neutrón"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3043",
+      "tipo": "test",
+      "enunciado": "¿Cuál es el símbolo del estaño en la tabla periódica?",
+      "opciones": [
+        "Ti",
+        "Na",
+        "Sn",
+        "Ni"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3044",
+      "tipo": "test",
+      "enunciado": "¿Cuántos grados Fahrenheit son 100 grados Celsius?",
+      "opciones": [
+        "451",
+        "326",
+        "212",
+        "100"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3045",
+      "tipo": "test",
+      "enunciado": "¿Qué medicamento se usó antes como veneno para ratas?",
+      "opciones": [
+        "La warfarina",
+        "La aspirina",
+        "El paracetamol",
+        "El apixabán"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3046",
+      "tipo": "test",
+      "enunciado": "¿Para qué catástrofe natural creó una escala el científico Tetsuya Fujita?",
+      "opciones": [
+        "Los tornados",
+        "Los huracanes",
+        "Los volcanes",
+        "Los terremotos"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3047",
+      "tipo": "test",
+      "enunciado": "¿Cuándo se clonó con éxito el primer mamífero?",
+      "opciones": [
+        "1985",
+        "1996",
+        "2009",
+        "1999"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3050",
+      "tipo": "test",
+      "enunciado": "¿De qué articulación forma parte el menisco medial?",
+      "opciones": [
+        "El tobillo",
+        "El codo",
+        "La rodilla",
+        "El hombro"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3051",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama el estudio de los tejidos de plantas y animales?",
+      "opciones": [
+        "Histología",
+        "Microbiología",
+        "Anatomía",
+        "Bioquímica"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3052",
+      "tipo": "test",
+      "enunciado": "¿Qué planeta del sistema solar es el más cercano al Sol?",
+      "opciones": [
+        "La Tierra",
+        "Mercurio",
+        "Marte",
+        "Venus"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3053",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos elementos es un gas noble?",
+      "opciones": [
+        "Yodo",
+        "Neón",
+        "Potasio",
+        "Cobalto"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3054",
+      "tipo": "test",
+      "enunciado": "¿Cuál es la fórmula química del amoniaco?",
+      "opciones": [
+        "CH4",
+        "NO3",
+        "CO2",
+        "NH3"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3055",
+      "tipo": "test",
+      "enunciado": "¿Qué porcentaje aproximado de la atmósfera es oxígeno?",
+      "opciones": [
+        "78 %",
+        "54 %",
+        "7 %",
+        "21 %"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3057",
+      "tipo": "test",
+      "enunciado": "¿Qué significan las siglas RCP de la maniobra que se hace ante una parada cardiaca?",
+      "opciones": [
+        "Recuperación cardiaca progresiva",
+        "Reflejo cardiaco primario",
+        "Respiración controlada pulmonar",
+        "Reanimación cardiopulmonar"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3058",
+      "tipo": "test",
+      "enunciado": "¿Qué parte del cerebro debe su nombre a la palabra griega para «caballito de mar»?",
+      "opciones": [
+        "El cerebelo",
+        "La amígdala",
+        "El tálamo",
+        "El hipocampo"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3059",
+      "tipo": "test",
+      "enunciado": "¿De qué dos elementos se compone sobre todo el Sol?",
+      "opciones": [
+        "Carbono y helio",
+        "Carbono y nitrógeno",
+        "Hidrógeno y nitrógeno",
+        "Hidrógeno y helio"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3060",
+      "tipo": "test",
+      "enunciado": "¿Qué color no se consigue en las rosas ni siquiera con modificación genética?",
+      "opciones": [
+        "Azul",
+        "Naranja",
+        "Marrón",
+        "Negro"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3061",
+      "tipo": "test",
+      "enunciado": "¿A qué profundidad se hace la parada de seguridad en una inmersión normal con botella?",
+      "opciones": [
+        "23 metros",
+        "15 metros",
+        "5 metros",
+        "7,5 metros"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3062",
+      "tipo": "test",
+      "enunciado": "¿Qué es la miopía?",
+      "opciones": [
+        "Ver borroso",
+        "Ver doble",
+        "No ver bien de lejos",
+        "No ver bien de cerca"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3063",
+      "tipo": "test",
+      "enunciado": "¿Cuántos planetas enanos oficiales llevan nombre de dioses polinesios?",
+      "opciones": [
+        "5",
+        "2",
+        "1",
+        "0"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3069",
+      "tipo": "test",
+      "enunciado": "¿Qué otro nombre tiene el trastorno de personalidad múltiple?",
+      "opciones": [
+        "Trastorno de identidad disociativo",
+        "Trastorno de identidad de la integridad corporal",
+        "Esquizofrenia",
+        "Crisis de identidad"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3070",
+      "tipo": "test",
+      "enunciado": "¿Cuántas horas dura aproximadamente un ritmo circadiano?",
+      "opciones": [
+        "24",
+        "8",
+        "32",
+        "16"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3071",
+      "tipo": "test",
+      "enunciado": "¿Qué psicólogo suizo es sinónimo de los conceptos de introvertido y extrovertido?",
+      "opciones": [
+        "Hermann Rorschach",
+        "Carl Jung",
+        "Jean Piaget",
+        "Alice Miller"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3073",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos huesos NO está en el brazo?",
+      "opciones": [
+        "El húmero",
+        "El cúbito",
+        "La tibia",
+        "El radio"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3074",
+      "tipo": "test",
+      "enunciado": "¿En qué parte del cuerpo está la tibia?",
+      "opciones": [
+        "En la mano",
+        "En el brazo",
+        "En la pierna",
+        "En la cabeza"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3075",
+      "tipo": "test",
+      "enunciado": "¿Qué parte del cuerpo afecta el glaucoma?",
+      "opciones": [
+        "Los ojos",
+        "La garganta",
+        "El estómago",
+        "La sangre"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3076",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama el sesgo por el que alguien poco hábil en algo se cree mejor de lo que es?",
+      "opciones": [
+        "Efecto Myers-Briggs",
+        "Efecto Dunning-Kruger",
+        "Efecto placebo",
+        "Efecto Mandela"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3078",
+      "tipo": "test",
+      "enunciado": "¿Cuál es el número atómico del estroncio?",
+      "opciones": [
+        "38",
+        "47",
+        "73",
+        "11"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3081",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama el agujero negro supermasivo del centro de la Vía Láctea?",
+      "opciones": [
+        "Messier 87",
+        "Andrómeda",
+        "Alfa Centauri",
+        "Sagitario A*"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3082",
+      "tipo": "test",
+      "enunciado": "En el vuelo de prueba del Falcon Heavy, ¿qué fue lo único que falló?",
+      "opciones": [
+        "El aterrizaje de los propulsores laterales",
+        "El encendido de la segunda fase",
+        "El despliegue del Starman",
+        "El aterrizaje del núcleo central"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3083",
+      "tipo": "test",
+      "enunciado": "¿Hacia dónde tiende a moverse un organismo «heliotrópico»?",
+      "opciones": [
+        "Hacia el polen",
+        "Hacia los árboles",
+        "Hacia el agua",
+        "Hacia la luz"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3084",
+      "tipo": "test",
+      "enunciado": "¿Cuántos isómeros tiene el butanol (C4H9OH)?",
+      "opciones": [
+        "6",
+        "5",
+        "3",
+        "4"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3086",
+      "tipo": "test",
+      "enunciado": "¿Qué mineral tiene el número más bajo en la escala de Mohs?",
+      "opciones": [
+        "El yeso",
+        "El diamante",
+        "El talco",
+        "El cuarzo"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3087",
+      "tipo": "test",
+      "enunciado": "¿Qué categoría tuvo el huracán Katrina (2005) en la escala Saffir-Simpson?",
+      "opciones": [
+        "Categoría 2",
+        "Categoría 5",
+        "Categoría 4",
+        "Categoría 1"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3088",
+      "tipo": "test",
+      "enunciado": "¿Una copia extra de qué cromosoma suele causar el síndrome de Down?",
+      "opciones": [
+        "El 21",
+        "El 24",
+        "El 15",
+        "El 23"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3089",
+      "tipo": "test",
+      "enunciado": "¿Cuál es el número atómico del uranio?",
+      "opciones": [
+        "92",
+        "167",
+        "17",
+        "235"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3091",
+      "tipo": "test",
+      "enunciado": "¿De qué ciudad danesa toma el nombre el elemento 72 de la tabla periódica (hafnio)?",
+      "opciones": [
+        "Herning",
+        "Copenhague",
+        "Skagen",
+        "Odense"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3094",
+      "tipo": "test",
+      "enunciado": "¿Cuál fue el primer ser vivo en el espacio?",
+      "opciones": [
+        "Moscas de la fruta",
+        "Un mono",
+        "Un ratón",
+        "Un perro"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3096",
+      "tipo": "test",
+      "enunciado": "¿Qué orgánulo se conoce como «la central energética de la célula»?",
+      "opciones": [
+        "El retículo endoplasmático",
+        "La mitocondria",
+        "El núcleo",
+        "El aparato de Golgi"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3097",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos NO forma parte de una neurona típica?",
+      "opciones": [
+        "La vaina de mielina",
+        "Los islotes de Langerhans",
+        "El nódulo de Ranvier",
+        "La célula de Schwann"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3099",
+      "tipo": "test",
+      "enunciado": "Además del oxígeno, ¿qué elemento es el principal responsable de que el cielo se vea azul?",
+      "opciones": [
+        "Carbono",
+        "Helio",
+        "Nitrógeno",
+        "Hidrógeno"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3100",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos líquidos es el menos viscoso a 25 °C?",
+      "opciones": [
+        "Agua",
+        "Acetona",
+        "Mercurio",
+        "Benceno"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3101",
+      "tipo": "test",
+      "enunciado": "¿Qué luna es el único satélite del sistema solar con una atmósfera densa?",
+      "opciones": [
+        "Europa",
+        "Titán",
+        "Miranda",
+        "Calisto"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3102",
+      "tipo": "test",
+      "enunciado": "¿Qué elemento se suele usar para dopar el silicio de los semiconductores?",
+      "opciones": [
+        "Carbono",
+        "Boro",
+        "Oxígeno",
+        "Hierro"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3103",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llaman los orgánulos largos que forman las fibras musculares?",
+      "opciones": [
+        "Miofibrillas",
+        "Miofilamentos",
+        "Epimisio",
+        "Miocardio"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3105",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama la complicación por una gasa olvidada dentro del paciente tras una operación?",
+      "opciones": [
+        "Gongoozler",
+        "Jentacular",
+        "Meupareunia",
+        "Gossypiboma"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3106",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos es un codón de parada en el ADN?",
+      "opciones": [
+        "ACT",
+        "GTA",
+        "ACA",
+        "TAA"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3109",
+      "tipo": "test",
+      "enunciado": "¿Cuál es el nombre químico del H2O?",
+      "opciones": [
+        "Dióxido de manganeso",
+        "Carbonato de sodio anhidro",
+        "Cloruro de amonio",
+        "Monóxido de dihidrógeno"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3110",
+      "tipo": "test",
+      "enunciado": "¿Qué temperatura puede alcanzar el núcleo del Sol?",
+      "opciones": [
+        "521 093 °C",
+        "4400 millones de °C",
+        "El cero absoluto",
+        "15 millones de °C"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3111",
+      "tipo": "test",
+      "enunciado": "En la escala Scoville, ¿cuál es la sustancia más picante?",
+      "opciones": [
+        "Tinyatoxina",
+        "Dihidrocapsaicina",
+        "Resiniferatoxina",
+        "Capsaicina"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3112",
+      "tipo": "test",
+      "enunciado": "¿En qué órgano están los islotes de Langerhans?",
+      "opciones": [
+        "En el cerebro",
+        "En el páncreas",
+        "En el hígado",
+        "En el riñón"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3113",
+      "tipo": "test",
+      "enunciado": "La palabra «ciencia» viene del latín «scire». ¿Qué significa?",
+      "opciones": [
+        "Saber",
+        "Contar",
+        "Vivir",
+        "Medir"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3114",
+      "tipo": "test",
+      "enunciado": "¿Qué plástico se usa mucho en marcos de ventanas, canalones y tuberías?",
+      "opciones": [
+        "PVC (policloruro de vinilo)",
+        "Polipropileno",
+        "Poliestireno",
+        "Polietileno"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3115",
+      "tipo": "test",
+      "enunciado": "¿Qué país consiguió por primera vez criar atún rojo en granja, en 1979?",
+      "opciones": [
+        "Estados Unidos",
+        "Japón",
+        "Filipinas",
+        "Francia"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3116",
+      "tipo": "test",
+      "enunciado": "¿Con qué nombre se conoce el ácido isobutilfenilpropanoico?",
+      "opciones": [
+        "Aspirina",
+        "Ketamina",
+        "Ibuprofeno",
+        "Morfina"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3117",
+      "tipo": "test",
+      "enunciado": "¿Cuál es la fórmula del ozono?",
+      "opciones": [
+        "C6H2O6",
+        "SO4",
+        "O3",
+        "N2O"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3118",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos animales pertenece a la clase de los condrictios (peces cartilaginosos)?",
+      "opciones": [
+        "El tiburón blanco",
+        "El pulpo",
+        "El siluro",
+        "La orca"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3120",
+      "tipo": "test",
+      "enunciado": "¿Qué unidad científica debe su nombre a un noble italiano?",
+      "opciones": [
+        "El hercio",
+        "El voltio",
+        "El pascal",
+        "El ohmio"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3121",
+      "tipo": "test",
+      "enunciado": "¿Qué grupo funcional hace que un compuesto orgánico sea un alcohol?",
+      "opciones": [
+        "El aldehído",
+        "El hidroxilo",
+        "El carbonilo",
+        "El alquilo"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3122",
+      "tipo": "test",
+      "enunciado": "¿Cuál es el nombre científico del gorila occidental de llanura?",
+      "opciones": [
+        "Gorilla beringei beringei",
+        "Gorilla gorilla diehli",
+        "Gorilla gorilla gorilla",
+        "Gorilla beringei graueri"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3123",
+      "tipo": "test",
+      "enunciado": "¿Cuál fue el primer compuesto orgánico sintetizado a partir de compuestos inorgánicos?",
+      "opciones": [
+        "El etanol",
+        "El propano",
+        "La urea",
+        "El formaldehído"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3124",
+      "tipo": "test",
+      "enunciado": "¿Qué extinción masiva, causada por un asteroide, acabó con la mayoría de los dinosaurios?",
+      "opciones": [
+        "La del Cretácico-Paleógeno",
+        "La del Triásico-Jurásico",
+        "La del Pérmico-Triásico",
+        "La del Ordovícico-Silúrico"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3125",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama comúnmente el síndrome de estrés tibial medial?",
+      "opciones": [
+        "Codo de tenista",
+        "Periostitis tibial",
+        "Túnel carpiano",
+        "Rodilla de fregona"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3126",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos es un músculo importante de la espalda?",
+      "opciones": [
+        "El trapecio (hueso)",
+        "El trapecio",
+        "El trapezoide (hueso)",
+        "El piramidal"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3127",
+      "tipo": "test",
+      "enunciado": "¿Cuál es el nombre científico de la rótula?",
+      "opciones": [
+        "Patella",
+        "Foramen magnum",
+        "Fémur",
+        "Escápula"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3128",
+      "tipo": "test",
+      "enunciado": "Botánicamente, ¿cuál de estas frutas NO es una baya?",
+      "opciones": [
+        "El plátano",
+        "El arándano",
+        "La fresa",
+        "La uva"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3129",
+      "tipo": "test",
+      "enunciado": "¿Qué temperatura es igual en grados Celsius y Fahrenheit?",
+      "opciones": [
+        "−39",
+        "32",
+        "−42",
+        "−40"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3130",
+      "tipo": "test",
+      "enunciado": "¿Con qué base nitrogenada se empareja la guanina?",
+      "opciones": [
+        "Timina",
+        "Uracilo",
+        "Adenina",
+        "Citosina"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3132",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos es un ejemplo de condicionamiento clásico?",
+      "opciones": [
+        "Los monos de Harlow",
+        "El gato de Schrödinger",
+        "La caja de Skinner",
+        "El perro de Pávlov"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3133",
+      "tipo": "test",
+      "enunciado": "¿Cuál es el nombre científico del homínido extinto llamado «Lucy»?",
+      "opciones": [
+        "Australopithecus anamensis",
+        "Australopithecus architeuthis",
+        "Australopithecus africanus",
+        "Australopithecus afarensis"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3134",
+      "tipo": "test",
+      "enunciado": "¿Cuáles de estas son células del sistema inmunitario adaptativo?",
+      "opciones": [
+        "Células NK",
+        "Células dendríticas",
+        "Glóbulos blancos en general",
+        "Linfocitos T citotóxicos"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3135",
+      "tipo": "test",
+      "enunciado": "¿Qué metal da una llama blanca muy brillante al arder?",
+      "opciones": [
+        "Cobre",
+        "Litio",
+        "Plomo",
+        "Magnesio"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3136",
+      "tipo": "test",
+      "enunciado": "¿Cuál es el nombre científico del zorro rojo?",
+      "opciones": [
+        "Vulpes vulpie",
+        "Vulpes vulpes",
+        "Red fox",
+        "Vulpes redus"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3137",
+      "tipo": "test",
+      "enunciado": "¿Qué síndrome genético causa tener un cromosoma Y de más (XYY)?",
+      "opciones": [
+        "Síndrome de Jacobs",
+        "Síndrome de Down",
+        "Síndrome de Turner",
+        "Síndrome de Klinefelter"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3138",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama la ilusión auditiva de un tono que parece subir sin fin?",
+      "opciones": [
+        "Tono de Shepard",
+        "Efecto Fransen",
+        "Efecto McGurk",
+        "Ilusión de glissando"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3139",
+      "tipo": "test",
+      "enunciado": "En la escala de Beaufort, ¿cómo se llama el viento de fuerza 8?",
+      "opciones": [
+        "Temporal",
+        "Huracán",
+        "Brisa",
+        "Temporal fuerte"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3140",
+      "tipo": "test",
+      "enunciado": "¿Qué elemento tiene 92 electrones?",
+      "opciones": [
+        "Hierro",
+        "Hidrógeno",
+        "Uranio",
+        "Azufre"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3141",
+      "tipo": "test",
+      "enunciado": "¿Qué significa el nombre del animal marino del Cámbrico Anomalocaris?",
+      "opciones": [
+        "Almeja anómala",
+        "Cangrejo extraño",
+        "Camarón anormal",
+        "Pez deforme"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3142",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos compuestos NO está en el jugo gástrico?",
+      "opciones": [
+        "Ácido sulfúrico",
+        "Ácido clorhídrico",
+        "Cloruro de sodio",
+        "Cloruro de potasio"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3144",
+      "tipo": "test",
+      "enunciado": "¿Qué ley relaciona el flujo eléctrico que sale de una superficie cerrada con la carga que encierra?",
+      "opciones": [
+        "Ley de Biot-Savart",
+        "Ley de Gauss",
+        "Ley de Faraday",
+        "Ley de Ampère"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3145",
+      "tipo": "test",
+      "enunciado": "¿Cuál es la forma más rara de daltonismo?",
+      "opciones": [
+        "Al morado",
+        "Al azul",
+        "Al rojo",
+        "Al verde"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3146",
+      "tipo": "test",
+      "enunciado": "¿Cuál es la unidad de la inductancia eléctrica?",
+      "opciones": [
+        "El weber",
+        "El mho",
+        "El henrio",
+        "El culombio"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3147",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama la envoltura gaseosa de un cometa?",
+      "opciones": [
+        "La ablativa",
+        "La estela",
+        "La coma (cabellera)",
+        "La resaca"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3148",
+      "tipo": "test",
+      "enunciado": "¿Qué siente la necesidad de hacer quien tiene el síndrome ACHOO al ver el sol?",
+      "opciones": [
+        "Estornudar",
+        "Toser",
+        "Bostezar",
+        "Tener hipo"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3149",
+      "tipo": "test",
+      "enunciado": "¿Cuál es la unidad de intensidad luminosa del Sistema Internacional?",
+      "opciones": [
+        "El lumen",
+        "La candela",
+        "El faradio",
+        "El culombio"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3151",
+      "tipo": "test",
+      "enunciado": "En física, ¿de qué son consecuencia la conservación de la energía y la del momento?",
+      "opciones": [
+        "Del teorema de Wick",
+        "Del teorema de Noether",
+        "Del teorema de Bell",
+        "Del teorema de Carnot"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3152",
+      "tipo": "test",
+      "enunciado": "¿Cuánta radiación emite un plátano?",
+      "opciones": [
+        "0,5 microsieverts",
+        "0,3 microsieverts",
+        "0,1 microsieverts",
+        "0,7 microsieverts"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3154",
+      "tipo": "test",
+      "enunciado": "¿Cuántas unidades hay en un mol?",
+      "opciones": [
+        "6,002 × 10²²",
+        "6,022 × 10²²",
+        "6,002 × 10²³",
+        "6,022 × 10²³"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3156",
+      "tipo": "test",
+      "enunciado": "¿Cuántos protones tiene un átomo de oxígeno?",
+      "opciones": [
+        "Cuatro",
+        "Seis",
+        "Dos",
+        "Ocho"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3157",
+      "tipo": "test",
+      "enunciado": "¿Dónde está la glándula pineal?",
+      "opciones": [
+        "En la garganta",
+        "En el pecho",
+        "En la ingle",
+        "En el cerebro"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3158",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos NO es un elemento químico real?",
+      "opciones": [
+        "Lutecio",
+        "Hasio",
+        "Praseodimio",
+        "Vitranio"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3159",
+      "tipo": "test",
+      "enunciado": "¿Qué produce el sonido del latido del corazón?",
+      "opciones": [
+        "La contracción de las cavidades",
+        "La salida de la sangre",
+        "La relajación de las cavidades",
+        "El cierre de las válvulas"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3160",
+      "tipo": "test",
+      "enunciado": "¿Cuánto mide un año luz?",
+      "opciones": [
+        "1 unidad astronómica",
+        "105,40 años terrestres",
+        "806 millones de kilómetros",
+        "9,461 billones de kilómetros"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3161",
+      "tipo": "test",
+      "enunciado": "¿Qué se usa para demostrar que la Tierra gira sobre su eje?",
+      "opciones": [
+        "Las placas tectónicas",
+        "El péndulo de Foucault",
+        "El reloj de sol",
+        "La estrella polar"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3162",
+      "tipo": "test",
+      "enunciado": "¿Cuántos tipos de quarks hay en el modelo estándar?",
+      "opciones": [
+        "6",
+        "4",
+        "3",
+        "2"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3163",
+      "tipo": "test",
+      "enunciado": "¿A qué tiene miedo quien sufre coulrofobia?",
+      "opciones": [
+        "A los payasos",
+        "A las agujas",
+        "A los túneles",
+        "A los cementerios"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3164",
+      "tipo": "test",
+      "enunciado": "¿Cuál es la toxina más potente que se conoce?",
+      "opciones": [
+        "El cianuro",
+        "La toxina botulínica",
+        "El amianto",
+        "La ricina"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3165",
+      "tipo": "test",
+      "enunciado": "¿Dónde está el glúteo mayor?",
+      "opciones": [
+        "En el torso",
+        "En la cabeza",
+        "En el culo",
+        "En el brazo"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3166",
+      "tipo": "test",
+      "enunciado": "¿Cuál es la fórmula de la glucosa?",
+      "opciones": [
+        "K+",
+        "CH4",
+        "C6H12O6",
+        "C2H4O2"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3167",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos es un dispositivo semiconductor que amplifica?",
+      "opciones": [
+        "El transistor",
+        "La válvula",
+        "La unión P-N",
+        "El diodo"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3168",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos NO es un tipo de neurona?",
+      "opciones": [
+        "Neurona perceptiva",
+        "Neurona sensitiva",
+        "Interneurona",
+        "Neurona motora"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3171",
+      "tipo": "test",
+      "enunciado": "¿Cuál es el término científico del dolor de cabeza por comer algo muy frío?",
+      "opciones": [
+        "Amblyomma americanum",
+        "Hyacinthoides italica",
+        "Ganglioneuralgia esfenopalatina",
+        "Amaranthus retroflexus"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3172",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estas partículas teóricas no se ha observado todavía?",
+      "opciones": [
+        "El gluon",
+        "El bosón Z",
+        "El gravitón",
+        "El neutrino tau"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3173",
+      "tipo": "test",
+      "enunciado": "¿Qué es «Stenoma»?",
+      "opciones": [
+        "Un género de polillas",
+        "Un estimulante de la Segunda Guerra Mundial",
+        "Un condimento",
+        "Un puerto del Caribe"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3174",
+      "tipo": "test",
+      "enunciado": "¿Qué constelación contiene el centro de la Vía Láctea?",
+      "opciones": [
+        "Escorpio",
+        "Sagitario",
+        "Ofiuco",
+        "Capricornio"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3175",
+      "tipo": "test",
+      "enunciado": "¿De qué religión era el sacerdote que formuló por primera vez la teoría del Big Bang?",
+      "opciones": [
+        "Judía",
+        "Católica",
+        "Protestante",
+        "Islámica"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3176",
+      "tipo": "test",
+      "enunciado": "El ácido fólico es la forma sintética de ¿qué vitamina?",
+      "opciones": [
+        "Vitamina B (B9)",
+        "Vitamina C",
+        "Vitamina A",
+        "Vitamina D"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3177",
+      "tipo": "test",
+      "enunciado": "¿Qué número de patas es biológicamente imposible que tenga un ciempiés?",
+      "opciones": [
+        "50",
+        "26",
+        "100",
+        "74"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Ciencia y naturaleza"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    }
+  ]
+}

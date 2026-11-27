@@ -79,6 +79,8 @@ export function quizSceneKey(s: GameState): string {
 export interface PlateEl {
   root: HTMLDivElement
   set(name: string, score: string | null, chip: string, chipCls: string): void
+  /** vuelve a ajustar el nombre al ancho (tras cambiar el tamaño de la placa) */
+  refit(): void
 }
 
 export function quizPlate(box: Box, c: number, nameSize?: number): PlateEl {
@@ -88,6 +90,12 @@ export function quizPlate(box: Box, c: number, nameSize?: number): PlateEl {
   const root = bevelBar({ box, c }, [name, chip, score])
   return {
     root,
+    refit: () => {
+      // la letra base puede cambiar (placa estrecha): se vuelve a medir desde el CSS
+      delete name.dataset.base
+      name.style.fontSize = ''
+      fitName(name)
+    },
     set: (n, sc, ch, cls) => {
       if (name.textContent !== n) {
         name.textContent = n
@@ -207,7 +215,8 @@ export function imageBox(box: Box) {
   return {
     root,
     full,
-    set(st: GameState) {
+    /** Devuelve si el marco se ve (y con cuánto retraso aparece) para que lo demás le deje sitio. */
+    set(st: GameState): { on: boolean; wait: number } {
       const cur = st.quiz.current
       const v = imageView(cur ? { ...cur, showAnswerImage: cur.showAnswerImage ?? null } : null)
       const textNow = !!cur && cur.phase !== 'ready'
@@ -223,7 +232,84 @@ export function imageBox(box: Box) {
       tag.textContent = v.which === 'a' ? 'Respuesta' : ''
       tag.style.display = v.which === 'a' ? '' : 'none'
       full.classList.toggle('is-off', !v.full)
+      return { on, wait }
     }
+  }
+}
+
+// ---------------------------------------------------------------- hueco para la imagen
+
+/** Algo que se recoloca cuando sale la imagen: su caja normal y su caja con la imagen a la vista. */
+export interface FlowItem {
+  el: HTMLElement
+  normal: Box
+  small: Box
+  /** solo mueve (el reloj tiene su propio tamaño) */
+  posOnly?: boolean
+  /** se llama al acabar de moverse (p. ej. reajustar el nombre a la nueva placa) */
+  after?: () => void
+  /** clase que lleva mientras está encogido (p. ej. letra más pequeña en las placas) */
+  smallClass?: string
+}
+
+/** Duración de la recolocación (igual que en components.css, .k-flow). */
+const FLOW_MS = 600
+
+/**
+ * Mientras se ve la imagen de la pregunta o de la respuesta, lo que haya en su sitio se aparta
+ * (con transición suave) y al ocultarla todo vuelve a su caja normal.
+ */
+export function flowLayout(items: FlowItem[]) {
+  for (const it of items) it.el.classList.add('k-flow')
+  let on = false
+  let timer = 0
+  const place = (it: FlowItem, b: Box) => {
+    it.el.style.left = `${b.x}px`
+    it.el.style.top = `${b.y}px`
+    if (it.posOnly) return
+    it.el.style.width = `${b.w}px`
+    it.el.style.height = `${b.h}px`
+  }
+  return {
+    apply(next: boolean, delay = 0) {
+      if (next === on) return
+      on = next
+      for (const it of items) {
+        it.el.style.transitionDelay = delay ? `${delay}ms` : ''
+        place(it, on ? it.small : it.normal)
+        if (it.smallClass) it.el.classList.toggle(it.smallClass, on)
+      }
+      clearTimeout(timer)
+      timer = window.setTimeout(
+        () => {
+          for (const it of items) {
+            it.el.style.transitionDelay = ''
+            it.after?.()
+          }
+        },
+        delay + FLOW_MS + 50
+      )
+    }
+  }
+}
+
+/**
+ * Encoge cajas de la fila de cámaras hacia la izquierda: lo que iba de x0 a x1 pasa a ir de x0 a nx1,
+ * y la altura se reduce con `hf` (desde arriba, y0). Las placas siguen a su cámara.
+ */
+export function shrinkLayout(x0: number, x1: number, nx1: number, y0: number, hf: number) {
+  const fw = (nx1 - x0) / (x1 - x0)
+  const mx = (x: number) => Math.round(x0 + (x - x0) * fw)
+  const my = (y: number) => Math.round(y0 + (y - y0) * hf)
+  return {
+    cam: (b: Box): Box => ({ x: mx(b.x), y: my(b.y), w: Math.round(b.w * fw), h: Math.round(b.h * hf) }),
+    /** placa: mismo alto, centrada donde caiga el centro de la original */
+    plate: (b: Box, minW = 170): Box => {
+      const w = Math.round(Math.max(b.w * fw, Math.min(b.w, minW)))
+      return { x: Math.round(mx(b.x + b.w / 2) - w / 2), y: Math.round(my(b.y + b.h / 2) - b.h / 2), w, h: b.h }
+    },
+    /** algo de tamaño fijo (el reloj, w×h): se mueve con su centro */
+    point: (x: number, y: number, w: number, h: number): Box => ({ x: Math.round(mx(x + w / 2) - w / 2), y: Math.round(my(y + h / 2) - h / 2), w, h })
   }
 }
 
@@ -376,6 +462,9 @@ export function buildQuizScene(s: GameState): Scene {
   // cámaras + placas
   const plates: { slots: SlotId[]; plate: PlateEl }[] = []
   let imgBox: Box
+  // con la imagen a la vista, las cámaras se encogen hacia la izquierda y la imagen va a la derecha
+  const flow: FlowItem[] = []
+  let shrink: ReturnType<typeof shrinkLayout>
   let ladderEls: { rungs: HTMLDivElement[]; lifes: HTMLDivElement[] } | null = null
   if (kind === 'ladder') {
     const members = membersOf(s, s.quiz.ladder.target).slice(0, 2)
@@ -392,25 +481,32 @@ export function buildQuizScene(s: GameState): Scene {
       boxes.push({ slot, x, w })
       x += w + gap
     }
+    shrink = shrinkLayout(100, 1280, 710, 40, 0.9)
     for (const b of boxes) {
-      const f = camFrame({ x: b.x, y: 40, w: b.w, h: 600 }, b.slot)
+      const box = { x: b.x, y: 40, w: b.w, h: 600 }
+      const f = camFrame(box, b.slot)
       frames.set(b.slot, f)
       root.append(f.root)
+      flow.push({ el: f.root, normal: box, small: shrink.cam(box) })
     }
     const mBoxes = boxes.filter((b) => members.includes(b.slot as ContestantId))
     const mx0 = mBoxes[0]?.x ?? 100
     const mx1 = mBoxes.length ? mBoxes[mBoxes.length - 1].x + mBoxes[mBoxes.length - 1].w : 1280
     const pw = Math.min(600, mx1 - mx0 - 40)
-    const plate = quizPlate({ x: mx0 + (mx1 - mx0 - pw) / 2, y: 612, w: pw, h: 56 }, 24)
+    const pBox = { x: mx0 + (mx1 - mx0 - pw) / 2, y: 612, w: pw, h: 56 }
+    const plate = quizPlate(pBox, 24)
     plates.push({ slots: members, plate })
     root.append(plate.root)
+    flow.push({ el: plate.root, normal: pBox, small: shrink.plate(pBox, 260), after: plate.refit, smallClass: 'is-narrow' })
     for (const b of boxes.filter((x) => !members.includes(x.slot as ContestantId))) {
-      const ep = quizPlate({ x: b.x + 20, y: 612, w: b.w - 40, h: 48 }, 20, 22)
+      const eBox = { x: b.x + 20, y: 612, w: b.w - 40, h: 48 }
+      const ep = quizPlate(eBox, 20, 22)
       ep.set(b.slot === 'host' ? s.host.name : 'Público', null, '', '')
       root.append(ep.root)
+      flow.push({ el: ep.root, normal: eBox, small: shrink.plate(eBox, 140), after: ep.refit, smallClass: 'is-narrow' })
     }
-    // a un lado, sobre las cámaras: nunca tapa la pregunta, las opciones ni la escalera
-    imgBox = { x: 740, y: 50, w: 540, h: 560 }
+    // en el hueco que dejan las cámaras: nunca tapa la pregunta, las opciones ni la escalera
+    imgBox = { x: 740, y: 40, w: 540, h: 600 }
 
     const lifeRow = h('div', 'k-abs', { left: 1340, top: 40, width: 480, display: 'flex', justifyContent: 'space-between' })
     const defs = s.quiz.lifelines
@@ -433,14 +529,18 @@ export function buildQuizScene(s: GameState): Scene {
     ladderEls = { rungs: rungs.reverse(), lifes }
   } else {
     const geo = camGeometry(s, kind)
+    shrink = shrinkLayout(100, 1820, 1070, 40, 0.85)
     for (const g of geo) {
       const f = camFrame(g.cam, g.slot)
       frames.set(g.slot, f)
       const plate = quizPlate(g.plate, g.c, g.nameSize)
       plates.push({ slots: [g.slot], plate })
       root.append(f.root, plate.root)
+      const sc = shrink.cam(g.cam)
+      flow.push({ el: f.root, normal: g.cam, small: sc }, { el: plate.root, normal: g.plate, small: shrink.plate(g.plate, sc.w + 12), after: plate.refit, smallClass: 'is-narrow' })
     }
-    imgBox = { x: 1240, y: 50, w: 580, h: kind === 'sino' ? 500 : 540 }
+    // en el hueco que dejan las cámaras a la derecha (a la altura de la fila de cámaras)
+    imgBox = { x: 1100, y: 40, w: 720, h: kind === 'sino' ? 560 : 600 }
   }
 
   // pregunta + opciones
@@ -463,12 +563,20 @@ export function buildQuizScene(s: GameState): Scene {
   const n = camsLineup(s).length
   const timer = kind === 'ladder' ? liveTimer(1160, 520) : n === 2 ? liveTimer(900, 560) : liveTimer(1702, sino ? 680 : 710, 0.8)
   root.append(timer.root)
+  // el reloj entre las cámaras se aparta con ellas
+  if (kind === 'ladder' || n === 2) {
+    const tx = kind === 'ladder' ? 1160 : 900
+    const ty = kind === 'ladder' ? 520 : 560
+    flow.push({ el: timer.root, normal: { x: tx, y: ty, w: 120, h: 120 }, small: shrink.point(tx, ty, 120, 120), posOnly: true })
+  }
+  const layout = flowLayout(flow)
 
   const update = (st: GameState) => {
     const cur = st.quiz.current
     qText.textContent = cur && cur.phase !== 'ready' ? cur.question.enunciado : ''
     optionStates(st).forEach((o, i) => opts[i]?.set(o.text, o.state, o.visible))
-    image.set(st)
+    const img = image.set(st)
+    layout.apply(img.on, img.wait)
     const turn = turnSlots(st)
     for (const [slot, f] of frames) f.root.classList.toggle('is-turn', turn.has(slot))
 

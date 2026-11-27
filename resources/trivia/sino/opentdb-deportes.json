@@ -1,0 +1,204 @@
+{
+  "formato": "konkursox-banco",
+  "version": 1,
+  "nombre": "Deportes",
+  "grupo": "Trivia",
+  "licencia": "Preguntas de Open Trivia Database (opentdb.com), licencia CC BY-SA 4.0, traducidas y adaptadas al español. Este banco se distribuye con la misma licencia (CC BY-SA 4.0).",
+  "preguntas": [
+    {
+      "id": "o3529",
+      "tipo": "sino",
+      "enunciado": "En el fútbol, ¿es un saque de esquina la forma de reanudar el juego tras un gol?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3535",
+      "tipo": "sino",
+      "enunciado": "¿Metió Shaquille O'Neal un solo triple en toda su carrera?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3571",
+      "tipo": "sino",
+      "enunciado": "¿Es Roger Federer un famoso futbolista?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3578",
+      "tipo": "sino",
+      "enunciado": "¿Tuvo la temporada 2016 de Fórmula 1 un total de 20 carreras?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3588",
+      "tipo": "sino",
+      "enunciado": "En 2008, ¿batió Usain Bolt el récord de los 100 metros con un cordón desatado?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3600",
+      "tipo": "sino",
+      "enunciado": "¿Pueden los espectadores comprar en Wimbledon las pelotas usadas en los partidos?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3606",
+      "tipo": "sino",
+      "enunciado": "¿Se jugaban antes torneos de la ATP en moqueta, retirada para evitar lesiones?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3610",
+      "tipo": "sino",
+      "enunciado": "¿Se llamó antes «raquetbol» al tenis?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3614",
+      "tipo": "sino",
+      "enunciado": "¿Usa la Fórmula E coches híbridos?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3626",
+      "tipo": "sino",
+      "enunciado": "¿Es la pista de tenis olímpica una enorme pantalla verde?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3635",
+      "tipo": "sino",
+      "enunciado": "¿Anotó Wilt Chamberlain sus famosos 100 puntos contra los New York Knicks en 1962?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3636",
+      "tipo": "sino",
+      "enunciado": "¿Ha abierto Cristiano Ronaldo un museo dedicado a sí mismo?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3651",
+      "tipo": "sino",
+      "enunciado": "¿Estuvo el monopatín en los Juegos Olímpicos de Tokio 2020?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Deportes"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    }
+  ]
+}

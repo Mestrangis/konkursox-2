@@ -54,9 +54,7 @@ export function buildRoscoScene(s: GameState): Scene {
     frames.set('host', f)
     root.append(f.root)
   }
-  root.append(
-    h('div', 'k-infobox', { left: withHost ? 1490 : 1150, top: 170, width: withHost ? 330 : 670, height: 400, gap: 0 }, [h('span', 'k-caption', {}, ['Tiempo']), time, timeCap])
-  )
+  root.append(h('div', 'k-infobox', { left: withHost ? 1490 : 1150, top: 170, width: withHost ? 330 : 670, height: 400, gap: 0 }, [h('span', 'k-caption', {}, ['Tiempo']), time, timeCap]))
   const counter = (label: string, color: string) => {
     const v = h('span', 'k-rosco__count')
     return { v, el: h('div', 'k-rosco__box', {}, [v, h('span', 'k-rosco__cnt', {}, [h('span', 'k-rosco__dot', { background: color }), label])]) }
@@ -76,10 +74,7 @@ export function buildRoscoScene(s: GameState): Scene {
   const lead = h('span', 'k-caption', { fontSize: 18 })
   const big = h('span', 'k-rosco__letter')
   const def = h('span', 'k-question', { fontSize: 42 })
-  root.append(
-    h('div', 'k-track', { top: 960 }),
-    bevelBar({ box: { x: 100, y: 900, w: 1720, h: 120 }, c: 48 }, [h('span', 'k-rosco__lead', {}, [lead, big]), def], { gap: 30 })
-  )
+  root.append(h('div', 'k-track', { top: 960 }), bevelBar({ box: { x: 100, y: 900, w: 1720, h: 120 }, c: 48 }, [h('span', 'k-rosco__lead', {}, [lead, big]), def], { gap: 30 }))
 
   const update = (st: GameState) => {
     const ro = st.rosco

@@ -245,6 +245,13 @@ export function drawFrames(feed: CaptureFeed | null, scene: Scene | null, s: Gam
       continue
     }
     const { canvas } = frame
+    // el marco puede cambiar de tamaño (deja sitio a la imagen de la pregunta): el lienzo le sigue
+    const cw = frame.root.clientWidth
+    const ch = frame.root.clientHeight
+    if (cw > 0 && ch > 0 && (canvas.width !== cw || canvas.height !== ch)) {
+      canvas.width = cw
+      canvas.height = ch
+    }
     const src = sourceRectForFrame(rel, feed!.width, feed!.height, canvas.width, canvas.height)
     if (!src) {
       frame.setLive(false)

@@ -10,6 +10,8 @@ export class LibStore {
   // lecturas en curso: cada banco se pide una sola vez aunque muchos lo miren a la vez
   private loading = new Map<string, Promise<Bank>>()
   private emitQueued = false
+  /** sube cada vez que cambia algún banco en caché (para cachear cálculos sobre toda la biblioteca) */
+  rev = 0
 
   onChange(fn: () => void): void {
     this.listeners.push(fn)
@@ -49,6 +51,7 @@ export class LibStore {
         this.loading.delete(ref)
         // si mientras tanto se editó, manda lo que hay en caché
         if (!this.cache.has(ref)) this.cache.set(ref, b)
+        this.rev++
         this.emitSoon()
         return this.cache.get(ref) ?? b
       },
@@ -74,6 +77,7 @@ export class LibStore {
   /** Cambia un banco y lo guarda solo (con un poco de retraso para no escribir en cada tecla). */
   update(ref: string, bank: Bank): void {
     this.cache.set(ref, bank)
+    this.rev++
     const i = this.list.findIndex((x) => x.ref === ref)
     if (i >= 0)
       this.list[i] = {
@@ -119,6 +123,7 @@ export class LibStore {
   async remove(ref: string): Promise<void> {
     await window.konk.libDelete(ref)
     this.cache.delete(ref)
+    this.rev++
     await this.refresh()
   }
 }

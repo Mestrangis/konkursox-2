@@ -1,0 +1,84 @@
+{
+  "formato": "konkursox-banco",
+  "version": 1,
+  "nombre": "Tecnología",
+  "grupo": "Trivia",
+  "licencia": "Preguntas de Open Trivia Database (opentdb.com), licencia CC BY-SA 4.0, traducidas y adaptadas al español. Este banco se distribuye con la misma licencia (CC BY-SA 4.0).",
+  "preguntas": [
+    {
+      "id": "o4946",
+      "tipo": "sino",
+      "enunciado": "¿Fue el iPhone 3G la segunda generación de iPhone?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Tecnología"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4948",
+      "tipo": "sino",
+      "enunciado": "¿Se puede usar un micrófono para emitir sonido, como un altavoz?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Tecnología"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4951",
+      "tipo": "sino",
+      "enunciado": "¿Significa NFC «Near-Field Control»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Tecnología"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4975",
+      "tipo": "sino",
+      "enunciado": "¿Salió la aspiradora robot Roomba por primera vez en 2002?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Tecnología"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4981",
+      "tipo": "sino",
+      "enunciado": "¿Tuvo el fusil M16 fama de poco fiable al principio de la guerra de Vietnam?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Tecnología"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    }
+  ]
+}

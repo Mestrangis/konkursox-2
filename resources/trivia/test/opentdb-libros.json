@@ -1,0 +1,1641 @@
+{
+  "formato": "konkursox-banco",
+  "version": 1,
+  "nombre": "Libros",
+  "grupo": "Trivia",
+  "licencia": "Preguntas de Open Trivia Database (opentdb.com), licencia CC BY-SA 4.0, traducidas y adaptadas al español. Este banco se distribuye con la misma licencia (CC BY-SA 4.0).",
+  "preguntas": [
+    {
+      "id": "o470",
+      "tipo": "test",
+      "enunciado": "¿Quién escribió Frankenstein?",
+      "opciones": [
+        "Bram Stoker",
+        "Mary Shelley",
+        "Edgar Allan Poe",
+        "H. P. Lovecraft"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o471",
+      "tipo": "test",
+      "enunciado": "¿Qué libro de George Orwell se considera una crítica a la vigilancia del Estado?",
+      "opciones": [
+        "El viejo y el mar",
+        "El guardián entre el centeno",
+        "Matar a un ruiseñor",
+        "1984"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o472",
+      "tipo": "test",
+      "enunciado": "¿Quién escribió «Miedo y asco en Las Vegas»?",
+      "opciones": [
+        "Henry Miller",
+        "F. Scott Fitzgerald",
+        "William S. Burroughs",
+        "Hunter S. Thompson"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o473",
+      "tipo": "test",
+      "enunciado": "¿Cuál es el segundo libro de «Canción de hielo y fuego»?",
+      "opciones": [
+        "Festín de cuervos",
+        "Danza de dragones",
+        "Tormenta de espadas",
+        "Choque de reyes"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o474",
+      "tipo": "test",
+      "enunciado": "¿Quién escribió la novela juvenil «Bajo la misma estrella»?",
+      "opciones": [
+        "Stephenie Meyer",
+        "Stephen Chbosky",
+        "Suzanne Collins",
+        "John Green"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o475",
+      "tipo": "test",
+      "enunciado": "¿Cómo se titula el primer libro de Sherlock Holmes de Arthur Conan Doyle?",
+      "opciones": [
+        "Un caso de identidad",
+        "Los negocios de Raffles Haw",
+        "El signo de los cuatro",
+        "Estudio en escarlata"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o476",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos NO es un libro de Harry Potter?",
+      "opciones": [
+        "El prisionero de Azkaban",
+        "Las reliquias de la Muerte",
+        "La cámara secreta",
+        "El elfo doméstico"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o477",
+      "tipo": "test",
+      "enunciado": "En «1984», ¿cómo se llama el régimen totalitario que controla Oceanía?",
+      "opciones": [
+        "Obliteración del Yo",
+        "Alianza Terrestre",
+        "Ingsoc",
+        "Neobolchevismo"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o479",
+      "tipo": "test",
+      "enunciado": "¿Por qué libro infantil es famoso el ilustrador Maurice Sendak?",
+      "opciones": [
+        "El gato en el sombrero",
+        "Donde viven los monstruos",
+        "Charlie y la fábrica de chocolate",
+        "La historia interminable"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o481",
+      "tipo": "test",
+      "enunciado": "¿Qué famoso libro lleva el subtítulo «el moderno Prometeo»?",
+      "opciones": [
+        "Frankenstein",
+        "El extraño caso del Dr. Jekyll y Mr. Hyde",
+        "La leyenda de Sleepy Hollow",
+        "Drácula"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o482",
+      "tipo": "test",
+      "enunciado": "¿Quién escribió «La letra escarlata» (1850)?",
+      "opciones": [
+        "Nathaniel Hawthorne",
+        "James Fenimore Cooper",
+        "Catharine Maria Sedgwick",
+        "Washington Irving"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o483",
+      "tipo": "test",
+      "enunciado": "¿Quién escribió «El señor de las moscas» (1954)?",
+      "opciones": [
+        "J. D. Salinger",
+        "Stephen King",
+        "William Golding",
+        "F. Scott Fitzgerald"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o484",
+      "tipo": "test",
+      "enunciado": "¿Qué famoso autor de novelas de espías escribió el cuento infantil «Chitty Chitty Bang Bang»?",
+      "opciones": [
+        "Joseph Conrad",
+        "Graham Greene",
+        "Ian Fleming",
+        "John Buchan"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o485",
+      "tipo": "test",
+      "enunciado": "¿Qué novela clásica empieza con la frase «Llamadme Ismael»?",
+      "opciones": [
+        "Historia de dos ciudades",
+        "Moby Dick",
+        "Cumbres borrascosas",
+        "Secuestrado"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o486",
+      "tipo": "test",
+      "enunciado": "¿Con qué seudónimo publicó Stephen King cinco novelas entre 1977 y 1984?",
+      "opciones": [
+        "Richard Bachman",
+        "J. D. Robb",
+        "Lewis Carroll",
+        "Mark Twain"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o487",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama el perro de tres cabezas de «Harry Potter y la piedra filosofal»?",
+      "opciones": [
+        "Fluffy",
+        "Spot",
+        "Spike",
+        "Poofy"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o488",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llamaba el submarino del capitán Nemo en «Veinte mil leguas de viaje submarino»?",
+      "opciones": [
+        "Nautilus",
+        "Atlántida",
+        "Neptuno",
+        "Poseidón"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o489",
+      "tipo": "test",
+      "enunciado": "¿Qué obra de Shakespeare, la más adaptada de todas, cuenta la historia de dos «amantes desventurados»?",
+      "opciones": [
+        "Hamlet",
+        "El rey Lear",
+        "Romeo y Julieta",
+        "La tempestad"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o490",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos libros ha vendido más ejemplares en el mundo?",
+      "opciones": [
+        "El principito",
+        "Harry Potter y la piedra filosofal",
+        "El señor de los anillos",
+        "El código Da Vinci"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o491",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama el protagonista de «El guardián entre el centeno»?",
+      "opciones": [
+        "Holden Caulfield",
+        "Fletcher Christian",
+        "Jay Gatsby",
+        "Randall Flagg"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o492",
+      "tipo": "test",
+      "enunciado": "¿Quién escribió «Historia de dos ciudades»?",
+      "opciones": [
+        "Charles Dickens",
+        "Charles Darwin",
+        "Mark Twain",
+        "Roald Dahl"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o493",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama el hermano de Sherlock Holmes?",
+      "opciones": [
+        "Mycroft Holmes",
+        "Martin Holmes",
+        "Mederi Holmes",
+        "Herbie Holmes"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o494",
+      "tipo": "test",
+      "enunciado": "¿Quién es el autor de «Canción de hielo y fuego», que empieza con «Juego de tronos»?",
+      "opciones": [
+        "J. R. R. Tolkien",
+        "George R. R. Martin",
+        "Brandon Sanderson",
+        "Steven Erikson"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o495",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama el cuarto libro de «La Torre Oscura» de Stephen King?",
+      "opciones": [
+        "Los lobos del Calla",
+        "Corazones en la Atlántida",
+        "Mago y cristal",
+        "La mitad oscura"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o496",
+      "tipo": "test",
+      "enunciado": "¿Quién escribió Harry Potter?",
+      "opciones": [
+        "Terry Pratchett",
+        "J. R. R. Tolkien",
+        "Daniel Radcliffe",
+        "J. K. Rowling"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o499",
+      "tipo": "test",
+      "enunciado": "¿De qué autor es el libro «Huevos verdes con jamón»?",
+      "opciones": [
+        "Roald Dahl",
+        "A. A. Milne",
+        "Beatrix Potter",
+        "Dr. Seuss"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o500",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama el padre de Harry Potter?",
+      "opciones": [
+        "Frank Potter",
+        "Harold Potter",
+        "Joey Potter",
+        "James Potter"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o503",
+      "tipo": "test",
+      "enunciado": "¿En qué libro de Harry Potter aparece por primera vez un horrocrux?",
+      "opciones": [
+        "Las reliquias de la Muerte",
+        "El cáliz de fuego",
+        "La cámara secreta",
+        "El misterio del príncipe"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o504",
+      "tipo": "test",
+      "enunciado": "¿Cuántos libros tiene la saga principal de Harry Potter?",
+      "opciones": [
+        "6",
+        "7",
+        "5",
+        "8"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o509",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estas sagas es de James Patterson?",
+      "opciones": [
+        "Harry Potter",
+        "La trilogía de Bartimeo",
+        "Maximum Ride",
+        "Xanth"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o510",
+      "tipo": "test",
+      "enunciado": "¿Qué modelo eran los vehículos de la visita en la novela «Parque Jurásico»?",
+      "opciones": [
+        "Jeep Wrangler YJ de 1989",
+        "Toyota Land Cruiser de 1989",
+        "Mercedes Clase M",
+        "Ford Explorer XLT de 1989"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o511",
+      "tipo": "test",
+      "enunciado": "En el «Romance de los Tres Reinos», ¿quién NO participó en el Juramento del Jardín de los Melocotoneros?",
+      "opciones": [
+        "Zhao Yun",
+        "Liu Bei",
+        "Zhang Fei",
+        "Guan Yu"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o512",
+      "tipo": "test",
+      "enunciado": "En «El señor de los anillos», ¿quién es el padre del enano Gimli?",
+      "opciones": [
+        "Glóin",
+        "Dwalin",
+        "Thorin Escudo de Roble",
+        "Bombur"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o513",
+      "tipo": "test",
+      "enunciado": "¿De dónde es el oso Paddington?",
+      "opciones": [
+        "De Canadá",
+        "De Perú",
+        "De la India",
+        "De Islandia"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o514",
+      "tipo": "test",
+      "enunciado": "En «El señor de los anillos», ¿cuántos anillos de poder se entregaron a los hombres?",
+      "opciones": [
+        "5",
+        "13",
+        "9",
+        "11"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o515",
+      "tipo": "test",
+      "enunciado": "¿Dónde transcurre «It», de Stephen King?",
+      "opciones": [
+        "Rockford (Illinois)",
+        "Innsmouth (Massachusetts)",
+        "Derry (Maine)",
+        "Kingsland (Texas)"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o516",
+      "tipo": "test",
+      "enunciado": "¿Quién escribió el cuento «La pequeña cerillera»?",
+      "opciones": [
+        "Hans Christian Andersen",
+        "Charles Dickens",
+        "Lewis Carroll",
+        "Oscar Wilde"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o517",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos libros NO es del escritor checo Karel Čapek?",
+      "opciones": [
+        "Viaje al centro de la Tierra",
+        "La guerra de las salamandras",
+        "R. U. R.",
+        "Daschenka o la vida de una cachorrita"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o519",
+      "tipo": "test",
+      "enunciado": "En «El libro de la selva», ¿qué tipo de serpiente es Kaa?",
+      "opciones": [
+        "Anaconda",
+        "Pitón",
+        "Cobra",
+        "Víbora"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o520",
+      "tipo": "test",
+      "enunciado": "¿Cuál fue el último mensaje de los delfines en «Guía del autoestopista galáctico»?",
+      "opciones": [
+        "«La respuesta es 42»",
+        "«Tierra de valientes»",
+        "«Hasta luego, y gracias por el pescado»",
+        "«Adiós, mundo cruel»"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o521",
+      "tipo": "test",
+      "enunciado": "Según la «Guía del autoestopista galáctico», la respuesta a la vida, el universo y todo lo demás es...",
+      "opciones": [
+        "El chocolate",
+        "Querer a todo el mundo",
+        "La muerte",
+        "42"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o522",
+      "tipo": "test",
+      "enunciado": "¿Qué famoso personaje creó Mary Shelley en una novela de 1818?",
+      "opciones": [
+        "El hombre invisible",
+        "Drácula",
+        "La Cosa",
+        "El monstruo de Frankenstein"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o523",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estas novelas de Stephen King se publicó antes?",
+      "opciones": [
+        "Misery",
+        "It",
+        "Christine",
+        "Cujo"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o524",
+      "tipo": "test",
+      "enunciado": "En «La isla misteriosa» de Julio Verne, ¿cómo llaman los náufragos a la isla?",
+      "opciones": [
+        "Isla Prometeo",
+        "Isla Neptuno",
+        "Isla Vulcania",
+        "Isla Lincoln"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o525",
+      "tipo": "test",
+      "enunciado": "¿Quién escribió la novela de terror «La semilla del diablo» (Rosemary's Baby, 1967)?",
+      "opciones": [
+        "Mary Shelley",
+        "Robert Bloch",
+        "Stephen King",
+        "Ira Levin"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o526",
+      "tipo": "test",
+      "enunciado": "En «Mujercitas», ¿con cuál de las hermanas March se casa Laurie?",
+      "opciones": [
+        "Jo",
+        "Beth",
+        "Meg",
+        "Amy"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o527",
+      "tipo": "test",
+      "enunciado": "¿Con qué nombre es más conocido el escritor Eric Blair?",
+      "opciones": [
+        "Ernest Hemingway",
+        "Ray Bradbury",
+        "George Orwell",
+        "Aldous Huxley"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o528",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama la dragona de Eragon?",
+      "opciones": [
+        "Arya",
+        "Saphira",
+        "Espina",
+        "Glaedr"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o529",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos escritores NO nació en Inglaterra?",
+      "opciones": [
+        "Arthur C. Clarke",
+        "Arthur Conan Doyle",
+        "H. G. Wells",
+        "Graham Greene"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o530",
+      "tipo": "test",
+      "enunciado": "¿Quién escribió «El principito»?",
+      "opciones": [
+        "Antoine de Saint-Exupéry",
+        "Jane Austen",
+        "F. Scott Fitzgerald",
+        "Miguel de Cervantes"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o531",
+      "tipo": "test",
+      "enunciado": "En «El hobbit», ¿quién mata al dragón Smaug?",
+      "opciones": [
+        "Bardo",
+        "Gandalf el Gris",
+        "Frodo",
+        "Bilbo Bolsón"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o532",
+      "tipo": "test",
+      "enunciado": "¿Cuál es el cuarto libro del Antiguo Testamento?",
+      "opciones": [
+        "Éxodo",
+        "Levítico",
+        "Números",
+        "Génesis"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o534",
+      "tipo": "test",
+      "enunciado": "¿Quién es el autor de la saga «Percy Jackson»?",
+      "opciones": [
+        "J. K. Rowling",
+        "Rick Riordan",
+        "Roald Dahl",
+        "Sandra Bullock"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o535",
+      "tipo": "test",
+      "enunciado": "¿Quién escribió «De ratones y hombres»?",
+      "opciones": [
+        "John Steinbeck",
+        "George Orwell",
+        "Harper Lee",
+        "Mark Twain"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o536",
+      "tipo": "test",
+      "enunciado": "En «Alicia en el país de las maravillas», ¿cómo se llama la gatita de Alicia?",
+      "opciones": [
+        "Dina",
+        "Smokey",
+        "Óscar",
+        "Heath"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o537",
+      "tipo": "test",
+      "enunciado": "¿Quién escribió la saga «Malaz: el Libro de los Caídos»?",
+      "opciones": [
+        "Steven Erikson",
+        "J. R. R. Tolkien",
+        "Ian Cameron Esslemont",
+        "George R. R. Martin"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o538",
+      "tipo": "test",
+      "enunciado": "¿En qué se inspiró George Orwell para «Rebelión en la granja»?",
+      "opciones": [
+        "En el imperio japonés",
+        "En el New Deal de Roosevelt",
+        "En el comunismo soviético y Stalin",
+        "En el fascismo y Hitler"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o539",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estas obras NO es de Fiódor Dostoievski?",
+      "opciones": [
+        "Memorias del subsuelo",
+        "Los hermanos Karamázov",
+        "Ana Karenina",
+        "Crimen y castigo"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o540",
+      "tipo": "test",
+      "enunciado": "En «Oliver Twist», ¿con qué apodo se conoce a Jack Dawkins?",
+      "opciones": [
+        "El Truhan (Artful Dodger)",
+        "Fagin",
+        "Ojo de Buey",
+        "Mr. Fang"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o541",
+      "tipo": "test",
+      "enunciado": "¿Quién escribió la saga de fantasía «Canción de hielo y fuego»?",
+      "opciones": [
+        "George R. R. Martin",
+        "George Lucas",
+        "George Orwell",
+        "George Eliot"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o543",
+      "tipo": "test",
+      "enunciado": "En la novela «Parque Jurásico», ¿qué dinosaurio acaba con John Hammond?",
+      "opciones": [
+        "Tiranosaurio rex",
+        "Procompsognathus",
+        "Dilophosaurus",
+        "Velocirraptor"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o544",
+      "tipo": "test",
+      "enunciado": "¿Qué escritor estadounidense escribió sobre sus viajes con su perro Charley?",
+      "opciones": [
+        "F. Scott Fitzgerald",
+        "Ernest Hemingway",
+        "John Steinbeck",
+        "William Faulkner"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o545",
+      "tipo": "test",
+      "enunciado": "En «El señor de los anillos», ¿de quién es Asfaloth, el caballo que lleva a Frodo a Rivendel?",
+      "opciones": [
+        "Aragorn",
+        "Arwen",
+        "Glorfindel",
+        "Haldir"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o546",
+      "tipo": "test",
+      "enunciado": "¿Qué significa en español «Mein Kampf», el título del libro de Hitler?",
+      "opciones": [
+        "Mi deseo",
+        "Mi odio",
+        "Mi tristeza",
+        "Mi lucha"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o548",
+      "tipo": "test",
+      "enunciado": "En Harry Potter, ¿qué hay que hacer para entrar en la sala común de Ravenclaw?",
+      "opciones": [
+        "Decir una contraseña",
+        "Llamar con un ritmo",
+        "Golpear unos barriles con la varita",
+        "Responder a un acertijo"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o549",
+      "tipo": "test",
+      "enunciado": "¿De qué clásico del terror es autora Mary Shelley?",
+      "opciones": [
+        "El extraño caso del Dr. Jekyll y Mr. Hyde",
+        "La leyenda de Sleepy Hollow",
+        "Drácula",
+        "Frankenstein"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o550",
+      "tipo": "test",
+      "enunciado": "¿Qué saga de Jim Butcher sigue a un mago en el Chicago actual?",
+      "opciones": [
+        "The Cinder Spires",
+        "A Hat in Time",
+        "Mi vida de mago adolescente",
+        "Los expedientes Dresden"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o551",
+      "tipo": "test",
+      "enunciado": "¿En qué posición juega Harry Potter al quidditch?",
+      "opciones": [
+        "Cazador",
+        "Golpeador",
+        "Guardián",
+        "Buscador"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o552",
+      "tipo": "test",
+      "enunciado": "¿Cuántos libros forman «Las crónicas de Narnia»?",
+      "opciones": [
+        "5",
+        "7",
+        "8",
+        "6"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o554",
+      "tipo": "test",
+      "enunciado": "¿Quién escribió «Fahrenheit 451»?",
+      "opciones": [
+        "Wolfgang Amadeus Mozart",
+        "Ray Bradbury",
+        "Stephen King",
+        "R. L. Stine"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o555",
+      "tipo": "test",
+      "enunciado": "¿Con qué seudónimo escribía la novelista Mary Ann Evans?",
+      "opciones": [
+        "George Eliot",
+        "George Bernard Shaw",
+        "George Saunders",
+        "George Orwell"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o556",
+      "tipo": "test",
+      "enunciado": "¿En qué hotel de Edimburgo terminó J. K. Rowling «Harry Potter y las reliquias de la Muerte»?",
+      "opciones": [
+        "Novotel",
+        "Sheraton Grand",
+        "The Balmoral",
+        "The Dunstane"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o557",
+      "tipo": "test",
+      "enunciado": "En «Brujerías» de Terry Pratchett, ¿cuál de estas NO es una de las tres brujas protagonistas?",
+      "opciones": [
+        "Magrat Ajostiernos",
+        "Tata Ogg",
+        "Winny Hathersham",
+        "Yaya Ceravieja"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o558",
+      "tipo": "test",
+      "enunciado": "¿Qué escritor ruso escribió «Guerra y paz»?",
+      "opciones": [
+        "Vladímir Nabokov",
+        "León Tolstói",
+        "Aleksandr Pushkin",
+        "Fiódor Dostoievski"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o559",
+      "tipo": "test",
+      "enunciado": "¿Qué poeta escribió «La balada de la cárcel de Reading» estando preso por ser homosexual?",
+      "opciones": [
+        "Lord Byron",
+        "Oscar Wilde",
+        "Wilfred Owen",
+        "William Blake"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o560",
+      "tipo": "test",
+      "enunciado": "En la novela «El marciano», ¿cuántos soles pasó Mark Watney atrapado en Marte?",
+      "opciones": [
+        "549",
+        "324",
+        "765",
+        "401"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o561",
+      "tipo": "test",
+      "enunciado": "¿Quién escribió «Jane Eyre»?",
+      "opciones": [
+        "Charlotte Brontë",
+        "Louisa May Alcott",
+        "Emily Brontë",
+        "Jane Austen"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o562",
+      "tipo": "test",
+      "enunciado": "¿De dónde viene el título de «El silencio de los corderos»?",
+      "opciones": [
+        "De la muerte de inocentes",
+        "De los poderosos que acallan a los inocentes",
+        "De un trauma de infancia de la protagonista",
+        "De la comida favorita del villano"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o563",
+      "tipo": "test",
+      "enunciado": "¿Quién escribió «Moby Dick»?",
+      "opciones": [
+        "William Golding",
+        "J. R. R. Tolkien",
+        "Herman Melville",
+        "William Shakespeare"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o564",
+      "tipo": "test",
+      "enunciado": "¿Cuál es el segundo nombre de Hermione Granger?",
+      "opciones": [
+        "Jane",
+        "Jean",
+        "Jo",
+        "Emma"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o565",
+      "tipo": "test",
+      "enunciado": "¿Cuál es el nombre completo del director Dumbledore?",
+      "opciones": [
+        "Albus Percival Wulfric Brian Dumbledore",
+        "Albus Valum Jetta Mobius Dumbledore",
+        "Albus James Lunae Otto Dumbledore",
+        "Albus Valencium Horatio Kul Dumbledore"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o566",
+      "tipo": "test",
+      "enunciado": "¿Qué personaje clásico del terror mata a Elizabeth Lavenza?",
+      "opciones": [
+        "El monstruo de Frankenstein",
+        "El conde Drácula",
+        "El hombre lobo",
+        "La criatura de la Laguna Negra"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o567",
+      "tipo": "test",
+      "enunciado": "¿En qué novela de Mark Twain un mendigo y el príncipe de Gales se cambian la ropa?",
+      "opciones": [
+        "Tom Sawyer",
+        "El príncipe y el mendigo",
+        "Hamlet",
+        "Un yanqui en la corte del rey Arturo"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o568",
+      "tipo": "test",
+      "enunciado": "Según la novela de Bram Stoker, ¿en qué pueblo de la costa inglesa desembarca Drácula?",
+      "opciones": [
+        "Brighton",
+        "Whitby",
+        "Scarborough",
+        "Portsmouth"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o569",
+      "tipo": "test",
+      "enunciado": "¿Quién escribió «El manifiesto comunista» junto a Karl Marx?",
+      "opciones": [
+        "Aleksandr Kérenski",
+        "Robert Owen",
+        "Friedrich Engels",
+        "Paul Lafargue"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o571",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estas obras NO es de Shakespeare?",
+      "opciones": [
+        "Cimbelino",
+        "Medida por medida",
+        "Tito Andrónico",
+        "El juicio de la templanza"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o572",
+      "tipo": "test",
+      "enunciado": "¿En qué condado inglés imaginario transcurren las novelas de Thomas Hardy?",
+      "opciones": [
+        "Barsetshire",
+        "Ambridge",
+        "Fulchester",
+        "Wessex"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o576",
+      "tipo": "test",
+      "enunciado": "¿En qué novela clásica hay un personaje llamado Homer Simpson?",
+      "opciones": [
+        "De ratones y hombres",
+        "Trampa 22",
+        "Paz separada",
+        "El día de la langosta"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o580",
+      "tipo": "test",
+      "enunciado": "¿Qué escritor es autor del verso «la hembra de la especie es más letal que el macho»?",
+      "opciones": [
+        "Rudyard Kipling",
+        "William Shakespeare",
+        "William Wordsworth",
+        "Edgar Allan Poe"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o582",
+      "tipo": "test",
+      "enunciado": "En Harry Potter, ¿cuál es el segundo nombre de Cornelius Fudge?",
+      "opciones": [
+        "Christopher",
+        "Harold",
+        "Oswald",
+        "James"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o583",
+      "tipo": "test",
+      "enunciado": "En los libros de Beatrix Potter, ¿qué animal es Tommy Brock?",
+      "opciones": [
+        "Un conejo",
+        "Un tejón",
+        "Una rana",
+        "Un zorro"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o584",
+      "tipo": "test",
+      "enunciado": "¿En qué pueblo están enterrados Lily y James Potter?",
+      "opciones": [
+        "El Valle de Godric",
+        "Hogsmeade",
+        "Pequeño Hangleton",
+        "Ottery St. Catchpole"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o585",
+      "tipo": "test",
+      "enunciado": "¿Cuál es el segundo nombre de Ron Weasley?",
+      "opciones": [
+        "Bilius",
+        "Dominic",
+        "Arthur",
+        "John"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o586",
+      "tipo": "test",
+      "enunciado": "En Harry Potter, ¿con quién se acaba casando Draco Malfoy?",
+      "opciones": [
+        "Astoria Greengrass",
+        "Hermione Granger",
+        "Pansy Parkinson",
+        "Millicent Bulstrode"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o587",
+      "tipo": "test",
+      "enunciado": "En «El cuento de la criada», ¿cuál se da a entender que es el nombre real de Defred?",
+      "opciones": [
+        "August",
+        "May",
+        "June",
+        "April"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o588",
+      "tipo": "test",
+      "enunciado": "¿En qué novela de Dickens aparece Abel Magwitch?",
+      "opciones": [
+        "Los papeles póstumos del club Pickwick",
+        "Oliver Twist",
+        "Grandes esperanzas",
+        "Nicholas Nickleby"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    }
+  ]
+}

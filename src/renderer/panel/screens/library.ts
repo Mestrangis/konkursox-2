@@ -18,6 +18,8 @@ const usedLabel = (d?: string) => {
 }
 /** "Todas las preguntas de este tipo" en lugar de un banco. */
 const ALL = '*'
+/** grupo de los packs incluidos: va aparte y no entra en «Todas» */
+const TRIVIA = 'Trivia'
 type Estado = '' | 'sinusar' | 'usadas' | 'revisar' | 'faltaimg' | 'conimg'
 interface Row {
   ref: string
@@ -77,7 +79,9 @@ export function createLibraryScreen(ctx: Ctx): Screen {
   }
   /** bancos donde puede ir una pregunta de este tipo */
   const compatible = (q: Question): LibBankInfo[] => ctx.lib.list.filter((b) => QTYPE_OF[b.tipo] === q.tipo && b.tipo !== 'rosco')
-  const banksInScope = (): string[] => (ref === ALL ? ctx.lib.banksOf(tipo).map((b) => b.ref) : ref ? [ref] : [])
+  /** tus bancos (sin los packs de Trivia) */
+  const ownBanks = (t: LibType): LibBankInfo[] => ctx.lib.banksOf(t).filter((b) => b.grupo !== TRIVIA)
+  const banksInScope = (): string[] => (ref === ALL ? ownBanks(tipo).map((b) => b.ref) : ref ? [ref] : [])
 
   function pickBank(t: LibType, r: string | null): void {
     tipo = t
@@ -88,7 +92,7 @@ export function createLibraryScreen(ctx: Ctx): Screen {
     checked.clear()
     quick = null
     open.add(t)
-    if (r === ALL) void Promise.all(ctx.lib.banksOf(t).map((b) => ctx.lib.get(b.ref))).then(render)
+    if (r === ALL) void Promise.all(ownBanks(t).map((b) => ctx.lib.get(b.ref))).then(render)
     render()
   }
 
@@ -199,14 +203,16 @@ export function createLibraryScreen(ctx: Ctx): Screen {
         if (t.id !== 'rosco') dropTarget(a, b)
         return a
       }
-      if (banks.length > 1 && t.id !== 'rosco') {
-        const all = h('a', `tg bank${ref === ALL && tipo === t.id ? ' on' : ''}`, {}, [h('span', '', {}, ['Todas']), h('span', 'c', {}, [String(banks.reduce((n, b) => n + b.count, 0))])])
-        all.title = 'Todas las preguntas de este juego (para filtrar por etiqueta, dificultad...)'
+      const own = banks.filter((b) => b.grupo !== TRIVIA)
+      if (own.length > 1 && t.id !== 'rosco') {
+        const all = h('a', `tg bank${ref === ALL && tipo === t.id ? ' on' : ''}`, {}, [h('span', '', {}, ['Todas']), h('span', 'c', {}, [String(own.reduce((n, b) => n + b.count, 0))])])
+        all.title = 'Todas tus preguntas de este juego (sin la Trivia), para filtrar por etiqueta, dificultad...'
         all.onclick = () => pickBank(t.id, ALL)
         navEl.append(all)
       }
       for (const b of banks.filter((x) => !x.grupo)) navEl.append(bankLink(b))
-      const groups = [...new Set(banks.map((b) => b.grupo).filter(Boolean) as string[])]
+      // tus grupos primero; la Trivia al final, separada
+      const groups = [...new Set(banks.map((b) => b.grupo).filter(Boolean) as string[])].sort((a, b) => Number(a === TRIVIA) - Number(b === TRIVIA))
       for (const g of groups) {
         const gk = `${t.id}|${g}`
         const inGroup = banks.filter((b) => b.grupo === g)
@@ -220,6 +226,10 @@ export function createLibraryScreen(ctx: Ctx): Screen {
           if (gOpen) openGroups.delete(gk)
           else openGroups.add(gk)
           renderNav()
+        }
+        if (g === TRIVIA) {
+          navEl.append(h('div', 'tg-sep'))
+          head.title = 'Packs de preguntas incluidos (Open Trivia DB, CC BY-SA 4.0): uno por categoría, con la dificultad en cada pregunta'
         }
         navEl.append(head)
         if (gOpen) for (const b of inGroup) navEl.append(bankLink(b, true))
@@ -940,16 +950,28 @@ export function createLibraryScreen(ctx: Ctx): Screen {
   // ---------------------------------------------------------------- editor de una pregunta
   let editorKey = ''
   /** Otras preguntas con el mismo texto en la biblioteca (bancos ya leídos). */
+  // índice de enunciados normalizados de toda la biblioteca, rehecho solo cuando cambia algo
+  let dupRev = -1
+  let dupIndex = new Map<string, { ref: string; id: string; nombre: string }[]>()
   function duplicatesOf(q: Question, r: string): string[] {
     const k = normText(q.enunciado)
     if (k.length < 6) return []
-    const out: string[] = []
-    for (const b of ctx.lib.list) {
-      const bk = ctx.lib.peek(b.ref)
-      if (!bk) continue
-      for (const x of bk.preguntas) if (x.tipo === q.tipo && normText(x.enunciado) === k && !(b.ref === r && x.id === q.id)) out.push(b.nombre)
+    if (dupRev !== ctx.lib.rev) {
+      dupRev = ctx.lib.rev
+      dupIndex = new Map()
+      for (const b of ctx.lib.list) {
+        const bk = ctx.lib.peek(b.ref)
+        if (!bk) continue
+        for (const x of bk.preguntas) {
+          const key = `${x.tipo}|${normText(x.enunciado)}`
+          const arr = dupIndex.get(key)
+          const item = { ref: b.ref, id: x.id, nombre: b.nombre }
+          if (arr) arr.push(item)
+          else dupIndex.set(key, [item])
+        }
+      }
     }
-    return out
+    return (dupIndex.get(`${q.tipo}|${k}`) ?? []).filter((x) => !(x.ref === r && x.id === q.id)).map((x) => x.nombre)
   }
 
   function renderEditor(): void {

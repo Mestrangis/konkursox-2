@@ -79,7 +79,7 @@ for (const f of fs
     seen.add(idx)
     const [, enunciado, correcta, ...inc] = parts
     const bool = src.type === 'boolean'
-    const [dif, difLabel] = DIF[src.difficulty]
+    const [dif] = DIF[src.difficulty]
     const cat = CAT[src.category]
     if (!cat) {
       problems.push(`${idx}: categoría ${src.category}`)
@@ -102,8 +102,8 @@ for (const f of fs
       q = { tipo: 'test', enunciado, opciones, correcta: opciones.indexOf(correcta) }
     }
     const tipo = bool ? 'sino' : 'test'
-    const key = `${tipo}|${cat}|${dif}`
-    if (!banks.has(key)) banks.set(key, { tipo, cat, dif, difLabel, preguntas: [] })
+    const key = `${tipo}|${cat}`
+    if (!banks.has(key)) banks.set(key, { tipo, cat, preguntas: [] })
     const b = banks.get(key)
     b.preguntas.push({ id: `o${idx}`, ...q, etiquetas: [cat], dificultad: dif, fuente: FUENTE })
     kept++
@@ -111,15 +111,15 @@ for (const f of fs
 }
 fs.rmSync(OUT, { recursive: true, force: true })
 const summary = []
-for (const b of [...banks.values()].sort((a, b) => a.cat.localeCompare(b.cat, 'es') || ['facil', 'media', 'dificil'].indexOf(a.dif) - ['facil', 'media', 'dificil'].indexOf(b.dif))) {
+for (const b of [...banks.values()].sort((a, b) => a.cat.localeCompare(b.cat, 'es'))) {
   const d = path.join(OUT, b.tipo)
   fs.mkdirSync(d, { recursive: true })
-  const file = `opentdb-${slug(b.cat)}-${b.dif}.json`
-  fs.writeFileSync(
-    path.join(d, file),
-    JSON.stringify({ formato: 'konkursox-banco', version: 1, nombre: `${b.cat} · ${b.difLabel}`, grupo: 'Open Trivia DB', licencia: LICENCIA, preguntas: b.preguntas }, null, 2) + '\n'
-  )
-  summary.push(`${b.tipo}\t${b.cat} · ${b.difLabel}\t${b.preguntas.length}`)
+  const file = `opentdb-${slug(b.cat)}.json`
+  // de fácil a difícil (la dificultad va en cada pregunta)
+  const order = ['facil', 'media', 'dificil']
+  b.preguntas.sort((x, y) => order.indexOf(x.dificultad) - order.indexOf(y.dificultad))
+  fs.writeFileSync(path.join(d, file), JSON.stringify({ formato: 'konkursox-banco', version: 1, nombre: b.cat, grupo: 'Trivia', licencia: LICENCIA, preguntas: b.preguntas }, null, 2) + '\n')
+  summary.push(`${b.tipo}\t${b.cat}\t${b.preguntas.length}`)
 }
 fs.writeFileSync(
   path.join(OUT, 'LEEME.txt'),

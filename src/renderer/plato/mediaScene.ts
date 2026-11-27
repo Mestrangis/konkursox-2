@@ -64,7 +64,8 @@ export function buildMediaScene(s: GameState): Scene {
       if (!iframe || e.source !== iframe.contentWindow) return
       try {
         const d = typeof e.data === 'string' ? JSON.parse(e.data) : e.data
-        if (d.event === 'onError') report(undefined, Number(d.info) === 101 || Number(d.info) === 150 ? 'Este vídeo no permite incrustarse: ábrelo en el navegador' : `YouTube no puede reproducir este vídeo (error ${d.info})`)
+        if (d.event === 'onError')
+          report(undefined, Number(d.info) === 101 || Number(d.info) === 150 ? 'Este vídeo no permite incrustarse: ábrelo en el navegador' : `YouTube no puede reproducir este vídeo (error ${d.info})`)
         if (d.event === 'infoDelivery' && d.info?.duration) report(d.info.duration)
         if (d.event === 'onReady' || (d.event === 'infoDelivery' && lastPlaying === null)) sync(window.__konkMediaState!)
       } catch {

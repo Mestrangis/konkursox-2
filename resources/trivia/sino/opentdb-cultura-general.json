@@ -1,0 +1,1089 @@
+{
+  "formato": "konkursox-banco",
+  "version": 1,
+  "nombre": "Cultura general",
+  "grupo": "Trivia",
+  "licencia": "Preguntas de Open Trivia Database (opentdb.com), licencia CC BY-SA 4.0, traducidas y adaptadas al español. Este banco se distribuye con la misma licencia (CC BY-SA 4.0).",
+  "preguntas": [
+    {
+      "id": "o15",
+      "tipo": "sino",
+      "enunciado": "¿El cáncer es, en sí mismo, una enfermedad contagiosa?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o32",
+      "tipo": "sino",
+      "enunciado": "¿Inventó Michael Jackson el moonwalk?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o35",
+      "tipo": "sino",
+      "enunciado": "¿Es zurda aproximadamente el 40 % de la población mundial?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o45",
+      "tipo": "sino",
+      "enunciado": "¿Se llama Tim Apple el consejero delegado de Apple que sucedió a Steve Jobs?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o46",
+      "tipo": "sino",
+      "enunciado": "¿Es el perro un mamífero?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o48",
+      "tipo": "sino",
+      "enunciado": "¿Fabrica la Nutella la empresa alemana Ferrero?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o51",
+      "tipo": "sino",
+      "enunciado": "¿Es el rumano una lengua romance, como el francés, el español, el portugués y el italiano?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o58",
+      "tipo": "sino",
+      "enunciado": "¿Es el metro de Nueva York el más antiguo del mundo?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o59",
+      "tipo": "sino",
+      "enunciado": "¿Nació Adolf Hitler en Australia?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o66",
+      "tipo": "sino",
+      "enunciado": "¿Es el monóxido de dihidrógeno una sustancia química peligrosa?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o67",
+      "tipo": "sino",
+      "enunciado": "¿Es la bandera de Vietnam una estrella roja sobre fondo amarillo?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o74",
+      "tipo": "sino",
+      "enunciado": "¿Son las mitocondrias la «central de energía» de la célula?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o86",
+      "tipo": "sino",
+      "enunciado": "¿Es el francés lengua oficial de Canadá?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o89",
+      "tipo": "sino",
+      "enunciado": "En arquitectura, ¿es un «pecklesteiner» un juego de puertas que se solapan al cerrarse y se cierran con una sola llave?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o95",
+      "tipo": "sino",
+      "enunciado": "¿Es «ananás» la palabra más usada para la piña en otros idiomas?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o110",
+      "tipo": "sino",
+      "enunciado": "¿Es el unicornio el animal nacional de Escocia?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o113",
+      "tipo": "sino",
+      "enunciado": "¿Atrae el color rojo a los toros?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o116",
+      "tipo": "sino",
+      "enunciado": "¿Nació el ping-pong en Inglaterra?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o128",
+      "tipo": "sino",
+      "enunciado": "¿Es el pasodoble una salsa italiana para la pasta?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o141",
+      "tipo": "sino",
+      "enunciado": "¿Votó Escocia a favor de la independencia en el referéndum de septiembre de 2014?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o144",
+      "tipo": "sino",
+      "enunciado": "¿Se asociaron en 2010 Twitter y la Biblioteca del Congreso de EE. UU. para archivar todos los tuits de los estadounidenses?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o150",
+      "tipo": "sino",
+      "enunciado": "¿Se compuso «Jingle Bells» en un principio para el Día de Acción de Gracias?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o162",
+      "tipo": "sino",
+      "enunciado": "¿Debe su nombre el color naranja a la fruta?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o172",
+      "tipo": "sino",
+      "enunciado": "¿Compró Facebook YouTube por 1650 millones de dólares en acciones?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o178",
+      "tipo": "sino",
+      "enunciado": "¿Es Eslovaquia miembro de la Unión Europea?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o180",
+      "tipo": "sino",
+      "enunciado": "¿Sale el Sol por el norte?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o184",
+      "tipo": "sino",
+      "enunciado": "¿Es Plutón un planeta?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o186",
+      "tipo": "sino",
+      "enunciado": "Si lloras en el espacio, ¿se te quedan las lágrimas pegadas a la cara?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o191",
+      "tipo": "sino",
+      "enunciado": "¿Se conoce el 10 de marzo como el «Día de Mario» (MAR10)?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o192",
+      "tipo": "sino",
+      "enunciado": "¿Se ve la Gran Muralla china desde la Luna?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o203",
+      "tipo": "sino",
+      "enunciado": "¿Se fundó el Grupo LEGO en 1932?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o208",
+      "tipo": "sino",
+      "enunciado": "¿Son rojas todas las fresas?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o212",
+      "tipo": "sino",
+      "enunciado": "¿Se llama «Club de los 27» a la lista de artistas famosos que murieron a los 27 años?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o231",
+      "tipo": "sino",
+      "enunciado": "¿Es el 911 el teléfono de emergencias de EE. UU. por los atentados del 11 de septiembre?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o236",
+      "tipo": "sino",
+      "enunciado": "¿Salió Furby a la venta en 1998?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o239",
+      "tipo": "sino",
+      "enunciado": "¿Debe su nombre el biquini al atolón Bikini, donde EE. UU. hizo pruebas con bombas atómicas?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o240",
+      "tipo": "sino",
+      "enunciado": "¿Tenía Albert Einstein problemas con las matemáticas en el colegio?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o241",
+      "tipo": "sino",
+      "enunciado": "¿Se dice «vaso» en francés «glace»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o243",
+      "tipo": "sino",
+      "enunciado": "¿Es la berenjena, botánicamente, una verdura?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o248",
+      "tipo": "sino",
+      "enunciado": "¿Se empezó a poner pepinillo en las hamburguesas porque una ley sanitaria de EE. UU. exigía vitamina C en la comida rápida?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o252",
+      "tipo": "sino",
+      "enunciado": "¿Es el pepino normalmente más de un 90 % agua?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o259",
+      "tipo": "sino",
+      "enunciado": "¿Puede quitar dos años de esperanza de vida pasar más de tres horas sentado al día?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o260",
+      "tipo": "sino",
+      "enunciado": "¿Se llama aurora austral la aurora del hemisferio sur?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o273",
+      "tipo": "sino",
+      "enunciado": "¿Conduce bien la electricidad el agua pura?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o277",
+      "tipo": "sino",
+      "enunciado": "¿Es simplemente agua el vapor de los cigarrillos electrónicos?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o285",
+      "tipo": "sino",
+      "enunciado": "¿Murió Francis Bacon de una neumonía cuando intentaba conservar carne rellenando un pollo de nieve?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o300",
+      "tipo": "sino",
+      "enunciado": "¿Inventó el canadiense Edward Asselbergs el puré de patatas instantáneo en 1962?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o313",
+      "tipo": "sino",
+      "enunciado": "¿Existe una variedad de melón llamada «piel de sapo» o «Santa Claus»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o314",
+      "tipo": "sino",
+      "enunciado": "¿Es la mujer media unos 13 centímetros más baja que el hombre medio?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o316",
+      "tipo": "sino",
+      "enunciado": "¿Se come tradicionalmente haggis en la Noche de Burns, en Escocia?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o318",
+      "tipo": "sino",
+      "enunciado": "¿Significa ITV, la cadena británica, «International Television»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o319",
+      "tipo": "sino",
+      "enunciado": "¿Existía la palabra «spam» antes que la carne enlatada Spam?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o322",
+      "tipo": "sino",
+      "enunciado": "¿Usa Ecuador el peso mexicano como moneda?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o335",
+      "tipo": "sino",
+      "enunciado": "¿Suman 666 todos los números de una ruleta de casino?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o337",
+      "tipo": "sino",
+      "enunciado": "¿Eran nabos vaciados las primeras calabazas de Halloween («jack-o'-lanterns»)?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o347",
+      "tipo": "sino",
+      "enunciado": "¿Es de grafito, y no de plomo, la mina de un lápiz?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o352",
+      "tipo": "sino",
+      "enunciado": "¿Tiene un día 86 400 segundos?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o357",
+      "tipo": "sino",
+      "enunciado": "¿Significa CAMRA, la organización británica, «Campaign for Real Ale»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o358",
+      "tipo": "sino",
+      "enunciado": "«Buffalo buffalo Buffalo buffalo buffalo buffalo Buffalo buffalo», ¿es una frase gramaticalmente correcta en inglés?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o368",
+      "tipo": "sino",
+      "enunciado": "¿Era verde la Coca-Cola original?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o371",
+      "tipo": "sino",
+      "enunciado": "¿Es solo un pequeño porcentaje de la población mundial intolerante a la lactosa?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o374",
+      "tipo": "sino",
+      "enunciado": "¿Creó el dibujante Harvey Ball la carita sonriente amarilla?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o380",
+      "tipo": "sino",
+      "enunciado": "¿Lleva el Cheez Whiz de Kraft cultivo de queso pero no queso de verdad?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o382",
+      "tipo": "sino",
+      "enunciado": "¿Se puede vender el alma en eBay?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o384",
+      "tipo": "sino",
+      "enunciado": "¿Inventó Frederick W. Rueckheim las palomitas en 1871 en Chicago?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o389",
+      "tipo": "sino",
+      "enunciado": "¿Viene la palabra inglesa «news» de las iniciales de los cuatro puntos cardinales?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o400",
+      "tipo": "sino",
+      "enunciado": "¿Significa NCIS «Navy Corps Investigative Service»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o407",
+      "tipo": "sino",
+      "enunciado": "¿Aprobó el Gobierno de Nueva Zelanda que un niño se llamara «Number 16 Bus Shelter» (Marquesina del bus 16)?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o419",
+      "tipo": "sino",
+      "enunciado": "¿Existe de verdad el idioma luxemburgués?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o432",
+      "tipo": "sino",
+      "enunciado": "¿Es la samhainofobia el miedo anormal y persistente a Halloween?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o439",
+      "tipo": "sino",
+      "enunciado": "¿Usa la «teoría de las cucharas» las cucharas como metáfora de la energía disponible en un día?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o452",
+      "tipo": "sino",
+      "enunciado": "¿Se escribe así: «Supercalifragilisticexpialidocious»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cultura general"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    }
+  ]
+}

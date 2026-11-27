@@ -1,0 +1,159 @@
+{
+  "formato": "konkursox-banco",
+  "version": 1,
+  "nombre": "Libros",
+  "grupo": "Trivia",
+  "licencia": "Preguntas de Open Trivia Database (opentdb.com), licencia CC BY-SA 4.0, traducidas y adaptadas al español. Este banco se distribuye con la misma licencia (CC BY-SA 4.0).",
+  "preguntas": [
+    {
+      "id": "o469",
+      "tipo": "sino",
+      "enunciado": "¿Está escrito «Huevos verdes con jamón», del Dr. Seuss, con solo 50 palabras distintas?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o478",
+      "tipo": "sino",
+      "enunciado": "¿Es cierto que la frase «Elemental, querido Watson» no aparece nunca en los libros de Sherlock Holmes de Conan Doyle?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o480",
+      "tipo": "sino",
+      "enunciado": "¿Se publicó «1984» en 1949?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o498",
+      "tipo": "sino",
+      "enunciado": "¿Superan entre todos los libros de Harry Potter el millón de palabras?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o502",
+      "tipo": "sino",
+      "enunciado": "¿Escribió Stephen Chbosky «Las ventajas de ser un marginado»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o506",
+      "tipo": "sino",
+      "enunciado": "En la novela de Bram Stoker, ¿destruye la luz del sol a Drácula?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o507",
+      "tipo": "sino",
+      "enunciado": "¿Es Shub-Niggurath una criatura creada por Tolkien en «El señor de los anillos»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o542",
+      "tipo": "sino",
+      "enunciado": "¿Iba a ser negro, en un principio, el Charlie de «Charlie y la fábrica de chocolate»?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o574",
+      "tipo": "sino",
+      "enunciado": "¿Nació Harry Potter el 31 de julio de 1980?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o577",
+      "tipo": "sino",
+      "enunciado": "En «Las reliquias de la Muerte», ¿destruye Hermione el cuarto horrocrux con la espada de Gryffindor?",
+      "opciones": [
+        "Sí",
+        "No"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Libros"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    }
+  ]
+}

@@ -1450,3 +1450,33 @@
   object-fit: contain;
   display: block;
 }
+
+/* Recolocación cuando sale la imagen de la pregunta: las cámaras (y sus placas, el reloj, la pregunta
+   del modo salón...) se apartan y luego vuelven. Mantiene las transiciones que ya tenía cada pieza. */
+.k-stage .k-flow {
+  transition:
+    left 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+    top 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+    width 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+    height 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 0.4s ease,
+    transform 0.4s ease,
+    box-shadow 0.35s ease,
+    filter 0.3s ease;
+}
+/* Placa estrecha (cámaras encogidas por la imagen): el nombre manda, puntos y respuesta más pequeños */
+.k-bar.is-narrow .k-name {
+  font-size: 21px;
+}
+.k-bar.is-narrow .k-score {
+  min-width: 0 !important;
+  font-size: 26px;
+}
+.k-bar.is-narrow .k-chip {
+  transform: scale(0.8);
+  margin-right: -4px;
+}
+.k-bar.is-narrow .k-bar__in {
+  gap: 8px;
+  padding: 0 calc(var(--c) + 2px);
+}

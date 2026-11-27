@@ -1,0 +1,927 @@
+{
+  "formato": "konkursox-banco",
+  "version": 1,
+  "nombre": "Matemáticas",
+  "grupo": "Trivia",
+  "licencia": "Preguntas de Open Trivia Database (opentdb.com), licencia CC BY-SA 4.0, traducidas y adaptadas al español. Este banco se distribuye con la misma licencia (CC BY-SA 4.0).",
+  "preguntas": [
+    {
+      "id": "o3372",
+      "tipo": "test",
+      "enunciado": "¿Cuál es el número mínimo de lados que puede tener un polígono?",
+      "opciones": [
+        "7",
+        "1",
+        "3",
+        "2"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3373",
+      "tipo": "test",
+      "enunciado": "¿Cuántos grados tiene una circunferencia completa?",
+      "opciones": [
+        "720",
+        "180",
+        "360",
+        "90"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3376",
+      "tipo": "test",
+      "enunciado": "En números romanos, ¿cuánto vale XL?",
+      "opciones": [
+        "15",
+        "40",
+        "60",
+        "90"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3377",
+      "tipo": "test",
+      "enunciado": "¿Cuántas caras cuadradas tiene un cubo?",
+      "opciones": [
+        "6",
+        "8",
+        "4",
+        "10"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3378",
+      "tipo": "test",
+      "enunciado": "En español, ¿qué viene después del millón, el billón y el trillón?",
+      "opciones": [
+        "Quintillón",
+        "Sextillón",
+        "Cuatrillón",
+        "Septillón"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3379",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama un polígono de nueve lados?",
+      "opciones": [
+        "Hexágono",
+        "Octógono",
+        "Eneágono",
+        "Heptágono"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3380",
+      "tipo": "test",
+      "enunciado": "¿Qué número primo viene después del 19?",
+      "opciones": [
+        "25",
+        "27",
+        "21",
+        "23"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3381",
+      "tipo": "test",
+      "enunciado": "¿Cuántos lados tiene un heptágono?",
+      "opciones": [
+        "5",
+        "9",
+        "4",
+        "7"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3383",
+      "tipo": "test",
+      "enunciado": "¿Quién demostró el último teorema de Fermat?",
+      "opciones": [
+        "Srinivasa Ramanujan",
+        "Carl Friedrich Gauss",
+        "Leonhard Euler",
+        "Andrew Wiles"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3384",
+      "tipo": "test",
+      "enunciado": "¿Cuál es el orden correcto de las operaciones?",
+      "opciones": [
+        "Suma, multiplicación, paréntesis, potencias",
+        "Potencias, paréntesis, suma, multiplicación",
+        "De izquierda a derecha sin más",
+        "Paréntesis, potencias, multiplicación y división, suma y resta"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3385",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama un polígono de ocho lados?",
+      "opciones": [
+        "Hexágono",
+        "Nonágono",
+        "Heptágono",
+        "Octógono"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3386",
+      "tipo": "test",
+      "enunciado": "¿Cuál es la raíz cuadrada de 49?",
+      "opciones": [
+        "9",
+        "7",
+        "12",
+        "4"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3388",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos NO es uno de los siete problemas del milenio?",
+      "opciones": [
+        "La conjetura de Navier",
+        "La hipótesis de Riemann",
+        "La conjetura de Poincaré",
+        "La conjetura de Birch y Swinnerton-Dyer"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3389",
+      "tipo": "test",
+      "enunciado": "¿Cuál es la fórmula del volumen de una esfera?",
+      "opciones": [
+        "(1/3)πhr²",
+        "(4/3)πr³",
+        "πr⁴",
+        "4πr²"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3390",
+      "tipo": "test",
+      "enunciado": "¿Cuántos lados tiene un pentágono?",
+      "opciones": [
+        "4",
+        "6",
+        "5",
+        "9"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3391",
+      "tipo": "test",
+      "enunciado": "¿Cuántos lados tiene un trapecio?",
+      "opciones": [
+        "5",
+        "6",
+        "4",
+        "3"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3392",
+      "tipo": "test",
+      "enunciado": "¿Cuántas caras tiene una banda de Möbius?",
+      "opciones": [
+        "1",
+        "4",
+        "3",
+        "2"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3393",
+      "tipo": "test",
+      "enunciado": "¿Qué dos hombres descubrieron por separado el cálculo diferencial?",
+      "opciones": [
+        "Newton y Leibniz",
+        "Platón y Aristóteles",
+        "Dvorak y Smith",
+        "Asimov y Rutherford"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3395",
+      "tipo": "test",
+      "enunciado": "¿Cuál era el nombre de pila del matemático Euler?",
+      "opciones": [
+        "Ajan",
+        "Leonhard",
+        "Lionel",
+        "Andrin"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3397",
+      "tipo": "test",
+      "enunciado": "¿Cuántas veces más pequeña que la unidad hace una medida el prefijo «atto-»?",
+      "opciones": [
+        "Una cuatrillonésima",
+        "Una milmillonésima",
+        "Una trillonésima",
+        "Una milbillonésima"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3398",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama un ángulo de más de 90°?",
+      "opciones": [
+        "Obtuso",
+        "Agudo",
+        "Llano",
+        "Recto"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3399",
+      "tipo": "test",
+      "enunciado": "Con π = 3,1415, ¿cuál es el área de un círculo de 20 cm de diámetro?",
+      "opciones": [
+        "380,12 cm²",
+        "314,15 cm²",
+        "3141,5 cm²",
+        "1256,6 cm²"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3400",
+      "tipo": "test",
+      "enunciado": "¿Cuántos ceros tiene un gúgol?",
+      "opciones": [
+        "1000",
+        "100",
+        "10",
+        "1 000 000"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3401",
+      "tipo": "test",
+      "enunciado": "Redondeando, ¿cuántos radianes tiene una circunferencia completa?",
+      "opciones": [
+        "6",
+        "4",
+        "3",
+        "5"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3402",
+      "tipo": "test",
+      "enunciado": "En el sistema hexadecimal, ¿qué viene después del 9?",
+      "opciones": [
+        "El 0",
+        "El 10",
+        "La letra A",
+        "El 16"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3403",
+      "tipo": "test",
+      "enunciado": "¿Qué números forman la quinta fila del triángulo de Pascal?",
+      "opciones": [
+        "1 5 10 10 5 1",
+        "1 3 3 1",
+        "1 4 6 4 1",
+        "1 6 15 20 15 6 1"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3405",
+      "tipo": "test",
+      "enunciado": "¿Qué matemático rechazó la Medalla Fields?",
+      "opciones": [
+        "Andrew Wiles",
+        "Edward Witten",
+        "Terence Tao",
+        "Grigori Perelmán"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3406",
+      "tipo": "test",
+      "enunciado": "¿Cuáles son las seis primeras cifras del número pi?",
+      "opciones": [
+        "3,25812",
+        "3,12423",
+        "3,14169",
+        "3,14159"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3408",
+      "tipo": "test",
+      "enunciado": "¿Con qué letra se representa la unidad imaginaria?",
+      "opciones": [
+        "n",
+        "e",
+        "x",
+        "i"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3409",
+      "tipo": "test",
+      "enunciado": "¿Qué forma dibujan en una gráfica sen(x) o cos(x)?",
+      "opciones": [
+        "Una parábola",
+        "Una recta",
+        "Zigzags",
+        "Ondas"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3411",
+      "tipo": "test",
+      "enunciado": "¿Cuántos libros tienen los «Elementos» de Euclides?",
+      "opciones": [
+        "17",
+        "8",
+        "10",
+        "13"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3412",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos dados NO es un sólido platónico?",
+      "opciones": [
+        "El de 10 caras",
+        "El de 8 caras",
+        "El de 20 caras",
+        "El de 12 caras"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3414",
+      "tipo": "test",
+      "enunciado": "En el plano complejo, ¿cuántos grados gira en sentido antihorario algo al multiplicarlo por i?",
+      "opciones": [
+        "270",
+        "90",
+        "0",
+        "180"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3415",
+      "tipo": "test",
+      "enunciado": "¿Qué matemático griego corrió desnudo por Siracusa gritando «¡Eureka!»?",
+      "opciones": [
+        "Pitágoras",
+        "Herón",
+        "Arquímedes",
+        "Euclides"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3418",
+      "tipo": "test",
+      "enunciado": "¿Qué letra griega representa el sumatorio?",
+      "opciones": [
+        "Delta",
+        "Sigma",
+        "Omega",
+        "Alfa"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3419",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estas distribuciones de probabilidad NO es discreta?",
+      "opciones": [
+        "La hipergeométrica",
+        "La normal",
+        "La binomial",
+        "La de Poisson"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3420",
+      "tipo": "test",
+      "enunciado": "¿Cómo se escribe 500 en números romanos?",
+      "opciones": [
+        "X",
+        "D",
+        "L",
+        "C"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3421",
+      "tipo": "test",
+      "enunciado": "¿Cuál es la derivada de sen(x)?",
+      "opciones": [
+        "−sen(x)",
+        "csc(x)",
+        "cos(x)",
+        "−cos(x)"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3422",
+      "tipo": "test",
+      "enunciado": "¿Con qué letra griega se suele representar el número áureo?",
+      "opciones": [
+        "τ (tau)",
+        "π (pi)",
+        "Φ (fi)",
+        "Ψ (psi)"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3427",
+      "tipo": "test",
+      "enunciado": "En una distribución normal, ¿a cuántas desviaciones típicas de la media está el 95 % de los datos?",
+      "opciones": [
+        "3",
+        "1",
+        "2",
+        "4"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3428",
+      "tipo": "test",
+      "enunciado": "¿Qué tipo de función es x² + 2x + 1?",
+      "opciones": [
+        "Racional",
+        "Lineal",
+        "Cuadrática",
+        "Exponencial"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3430",
+      "tipo": "test",
+      "enunciado": "¿Qué famoso matemático murió en un duelo a los 20 años?",
+      "opciones": [
+        "Abel",
+        "Gauss",
+        "Euler",
+        "Galois"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3431",
+      "tipo": "test",
+      "enunciado": "¿La integración es la operación inversa de cuál?",
+      "opciones": [
+        "La multiplicación",
+        "La desviación típica",
+        "La división",
+        "La derivación"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3432",
+      "tipo": "test",
+      "enunciado": "¿Cuál es el valor aproximado del número e?",
+      "opciones": [
+        "1,41",
+        "1,62",
+        "3,14",
+        "2,72"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3433",
+      "tipo": "test",
+      "enunciado": "¿Cuál de estos matemáticos hizo grandes aportaciones a la teoría de juegos?",
+      "opciones": [
+        "Carl Friedrich Gauss",
+        "Leonhard Euler",
+        "Stefan Banach",
+        "John von Neumann"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3434",
+      "tipo": "test",
+      "enunciado": "¿A qué filósofo inglés se atribuye la paradoja del «conjunto de todos los conjuntos que no se contienen a sí mismos»?",
+      "opciones": [
+        "Francis Bacon",
+        "John Locke",
+        "Thomas Hobbes",
+        "Bertrand Russell"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3437",
+      "tipo": "test",
+      "enunciado": "¿Por qué es conocido sobre todo el matemático francés Évariste Galois?",
+      "opciones": [
+        "Por la teoría de Galois",
+        "Por un método para ecuaciones en derivadas parciales",
+        "Por las integrales abelianas",
+        "Por las fracciones continuas de Galois"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3438",
+      "tipo": "test",
+      "enunciado": "¿Cómo se escribe el número decimal 31 en hexadecimal?",
+      "opciones": [
+        "2E",
+        "1F",
+        "1B",
+        "3D"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3440",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama la derivada de la aceleración respecto al tiempo?",
+      "opciones": [
+        "Golpe",
+        "Deslizamiento",
+        "Tirón (jerk)",
+        "Cambio"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3441",
+      "tipo": "test",
+      "enunciado": "¿Cuál es la cuarta cifra de π (3,14...)?",
+      "opciones": [
+        "1",
+        "4",
+        "3",
+        "2"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3443",
+      "tipo": "test",
+      "enunciado": "¿Cuál es el número más pequeño que puede escribirse de dos formas distintas como suma de dos cubos positivos?",
+      "opciones": [
+        "4104",
+        "1729",
+        "91",
+        "561"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3445",
+      "tipo": "test",
+      "enunciado": "¿Cuántos zeptómetros hay en un femtómetro?",
+      "opciones": [
+        "1000",
+        "10",
+        "1 000 000",
+        "1 000 000 000"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3446",
+      "tipo": "test",
+      "enunciado": "¿Cuál es el único problema del milenio resuelto hasta ahora?",
+      "opciones": [
+        "La conjetura de Fermat",
+        "P frente a NP",
+        "La conjetura de Poincaré",
+        "La hipótesis de Riemann"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o3448",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama la curva que propuso Descartes para poner a prueba los métodos de Fermat?",
+      "opciones": [
+        "Paraboloide de Descartes",
+        "Folium de Descartes",
+        "Elipse de Descartes",
+        "Cartesiana de Fermat"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Matemáticas"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    }
+  ]
+}

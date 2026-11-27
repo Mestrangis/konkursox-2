@@ -1,0 +1,621 @@
+{
+  "formato": "konkursox-banco",
+  "version": 1,
+  "nombre": "Cómics",
+  "grupo": "Trivia",
+  "licencia": "Preguntas de Open Trivia Database (opentdb.com), licencia CC BY-SA 4.0, traducidas y adaptadas al español. Este banco se distribuye con la misma licencia (CC BY-SA 4.0).",
+  "preguntas": [
+    {
+      "id": "o4864",
+      "tipo": "test",
+      "enunciado": "¿Qué superhéroe es famoso por su supervelocidad?",
+      "opciones": [
+        "Spider-Man",
+        "Batman",
+        "Superman",
+        "Flash"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cómics"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4866",
+      "tipo": "test",
+      "enunciado": "¿Quién es Batman?",
+      "opciones": [
+        "Tony Stark",
+        "Barry Allen",
+        "Bruce Wayne",
+        "Clark Kent"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cómics"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4868",
+      "tipo": "test",
+      "enunciado": "En el cómic «The Superior Spider-Man», ¿quién se apodera del cuerpo de Peter Parker?",
+      "opciones": [
+        "Otto Octavius (Doctor Octopus)",
+        "Eddie Brock",
+        "Mary Jane",
+        "Norman Osborn"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cómics"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4870",
+      "tipo": "test",
+      "enunciado": "¿Quién creó el cómic «The Walking Dead»?",
+      "opciones": [
+        "Robert Kirkman",
+        "Malcolm Wheeler-Nicholson",
+        "Robert Crumb",
+        "Stan Lee"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cómics"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4872",
+      "tipo": "test",
+      "enunciado": "¿Cuál es la identidad secreta de Superman?",
+      "opciones": [
+        "Bruce Wayne",
+        "John Jones",
+        "Clark Kent",
+        "Arthur Curry"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cómics"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4874",
+      "tipo": "test",
+      "enunciado": "¿A qué superhéroe de Marvel se le llama «el hombre sin miedo»?",
+      "opciones": [
+        "Daredevil",
+        "Thor",
+        "Hulk",
+        "Lobezno"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cómics"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4876",
+      "tipo": "test",
+      "enunciado": "¿De qué planeta viene Superman?",
+      "opciones": [
+        "Oa",
+        "Krypton",
+        "Avalon",
+        "Xolnar"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cómics"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4879",
+      "tipo": "test",
+      "enunciado": "Según su apodo de siempre, ¿qué tipo de dúo son Batman y Robin?",
+      "opciones": [
+        "El Dúo Dinámico",
+        "El Dúo Peligroso",
+        "El Dúo Dinástico",
+        "El Dúo Delirante"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cómics"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4882",
+      "tipo": "test",
+      "enunciado": "¿A qué teólogo debe su nombre el protagonista de «Calvin y Hobbes»?",
+      "opciones": [
+        "Calvin Coolidge",
+        "Juan Calvino",
+        "Calvin Klein",
+        "Felipe Calvino"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cómics"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4883",
+      "tipo": "test",
+      "enunciado": "¿Cuándo se fundó Marvel Comics?",
+      "opciones": [
+        "1951",
+        "1932",
+        "1939",
+        "1936"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cómics"
+      ],
+      "dificultad": "facil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4886",
+      "tipo": "test",
+      "enunciado": "¿En quién se inspiró Hergé para crear al profesor Tornasol de Tintín?",
+      "opciones": [
+        "Jacques Piccard",
+        "Marie Curie",
+        "Albert Einstein",
+        "Auguste Piccard"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cómics"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4887",
+      "tipo": "test",
+      "enunciado": "En los cómics de Marvel, ¿cuál de estas NO es una Gema del Infinito?",
+      "opciones": [
+        "Poder",
+        "Alma",
+        "Tiempo",
+        "Energía"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cómics"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4888",
+      "tipo": "test",
+      "enunciado": "¿Cuál es el verdadero nombre de Hellboy?",
+      "opciones": [
+        "Azzael",
+        "Ogdru Jahad",
+        "Mano Derecha del Destino",
+        "Anung Un Rama"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cómics"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4889",
+      "tipo": "test",
+      "enunciado": "¿De qué mundo viene Thor?",
+      "opciones": [
+        "Jotunheim",
+        "Midgard",
+        "Sovngarde",
+        "Asgard"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cómics"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4890",
+      "tipo": "test",
+      "enunciado": "¿Qué compañero de Batman es hijo de Talia al Ghul?",
+      "opciones": [
+        "Dick Grayson",
+        "Tim Drake",
+        "Jason Todd",
+        "Damian Wayne"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cómics"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4891",
+      "tipo": "test",
+      "enunciado": "¿Cuál es el nombre completo del Capitán América?",
+      "opciones": [
+        "Steven William Rogers",
+        "Steven Grant Rogers",
+        "Steven Peggy Rogers",
+        "Steven John Rogers"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cómics"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4896",
+      "tipo": "test",
+      "enunciado": "¿Cuál es el nombre real de Magneto?",
+      "opciones": [
+        "Johann Schmidt",
+        "Pietro Maximoff",
+        "Max Eisenhardt",
+        "Charles Xavier"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cómics"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4898",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama el metal casi indestructible que recubre los huesos y las garras de Lobezno?",
+      "opciones": [
+        "Adamantium",
+        "Vibranium",
+        "Carbonadium",
+        "Uru"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cómics"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4899",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llama el cómic de un niño y un tigre que en realidad es un peluche?",
+      "opciones": [
+        "Calvin y Hobbes",
+        "Snoopy",
+        "Winnie the Pooh",
+        "Mafalda"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cómics"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4900",
+      "tipo": "test",
+      "enunciado": "¿A qué filósofo debe su nombre el tigre de peluche de «Calvin y Hobbes»?",
+      "opciones": [
+        "Nathaniel Hobbes",
+        "Thomas Hobbes",
+        "David Hume",
+        "John Locke"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cómics"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4901",
+      "tipo": "test",
+      "enunciado": "El éxito de «La Cosa del Pantano» y «Sandman» llevó a DC a crear en 1993 ¿qué sello?",
+      "opciones": [
+        "Black Label",
+        "Vertigo",
+        "Wildstorm",
+        "Image"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cómics"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4902",
+      "tipo": "test",
+      "enunciado": "¿Quién creó a Ultrón en los cómics de Marvel?",
+      "opciones": [
+        "Amadeus Cho",
+        "Reed Richards",
+        "Henry Pym",
+        "Tony Stark"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cómics"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4906",
+      "tipo": "test",
+      "enunciado": "¿Quién escribió el cómic de Batman «La broma asesina»?",
+      "opciones": [
+        "Frank Miller",
+        "Alan Moore",
+        "Bill Finger",
+        "Jerry Siegel"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cómics"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4912",
+      "tipo": "test",
+      "enunciado": "¿Cómo se llamaban los padres de Batman?",
+      "opciones": [
+        "Todd y Mira",
+        "Jason y Sarah",
+        "Joey y Jackie",
+        "Thomas y Martha"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cómics"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4915",
+      "tipo": "test",
+      "enunciado": "¿Con cuál de estos superhéroes NO ha tenido una relación Wonder Woman?",
+      "opciones": [
+        "Superman",
+        "Batman",
+        "Steve Trevor",
+        "Flecha Verde"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cómics"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4917",
+      "tipo": "test",
+      "enunciado": "¿Qué número de Tierra recibe el Universo Cinematográfico de Marvel?",
+      "opciones": [
+        "Tierra-199999",
+        "Tierra-2008",
+        "Tierra-10005",
+        "Tierra-616"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cómics"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4918",
+      "tipo": "test",
+      "enunciado": "¿Quién fue el primer Robin en los cómics de Batman?",
+      "opciones": [
+        "Dick Grayson",
+        "Jason Todd",
+        "Tim Drake",
+        "Bruce Wayne"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cómics"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4919",
+      "tipo": "test",
+      "enunciado": "¿Quién creó «Las aventuras de Tintín»?",
+      "opciones": [
+        "Hergé",
+        "Goscinny",
+        "Franquin",
+        "Edgar P. Jacobs"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cómics"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4920",
+      "tipo": "test",
+      "enunciado": "En «Watchmen», ¿quién es el segundo en llevar el traje de Búho Nocturno?",
+      "opciones": [
+        "Adrian Veidt",
+        "Hollis Mason",
+        "Daniel Dreiberg",
+        "Nelson Gardner"
+      ],
+      "correcta": 2,
+      "etiquetas": [
+        "Cómics"
+      ],
+      "dificultad": "media",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4924",
+      "tipo": "test",
+      "enunciado": "¿Cuándo se publicó por primera vez Garfield?",
+      "opciones": [
+        "1978",
+        "1988",
+        "1982",
+        "1973"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cómics"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4929",
+      "tipo": "test",
+      "enunciado": "En los cómics de Batman, ¿con qué otro nombre se conoce al doctor Jonathan Crane?",
+      "opciones": [
+        "El Espantapájaros",
+        "Bane",
+        "El Hombre Calendario",
+        "Barro"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cómics"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4935",
+      "tipo": "test",
+      "enunciado": "En 1978, Superman se unió a ¿qué famoso para frenar una invasión alienígena?",
+      "opciones": [
+        "Mike Tyson",
+        "Arnold Schwarzenegger",
+        "Sylvester Stallone",
+        "Muhammad Ali"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cómics"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4937",
+      "tipo": "test",
+      "enunciado": "¿En qué año salió el primer cómic de «The Walking Dead»?",
+      "opciones": [
+        "1999",
+        "2006",
+        "2001",
+        "2003"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cómics"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4940",
+      "tipo": "test",
+      "enunciado": "En el universo Marvel, ¿qué raza vive en el planeta Svartalfheim?",
+      "opciones": [
+        "Los gigantes de hielo",
+        "Los skrulls",
+        "Los kronanos",
+        "Los elfos oscuros"
+      ],
+      "correcta": 3,
+      "etiquetas": [
+        "Cómics"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4941",
+      "tipo": "test",
+      "enunciado": "¿En qué año se celebró la primera Comic-Con de San Diego?",
+      "opciones": [
+        "1985",
+        "1970",
+        "1990",
+        "2000"
+      ],
+      "correcta": 1,
+      "etiquetas": [
+        "Cómics"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    },
+    {
+      "id": "o4942",
+      "tipo": "test",
+      "enunciado": "Más conocido como Logan, ¿cuál es el nombre de nacimiento de Lobezno?",
+      "opciones": [
+        "James Howlett",
+        "Thomas Wilde",
+        "John Savage",
+        "Logan Wolf"
+      ],
+      "correcta": 0,
+      "etiquetas": [
+        "Cómics"
+      ],
+      "dificultad": "dificil",
+      "fuente": "Open Trivia DB (CC BY-SA 4.0)"
+    }
+  ]
+}

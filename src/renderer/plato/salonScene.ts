@@ -7,7 +7,23 @@ import { remainingMs, roscoStats, roscoWinners, type RoscoPlayer } from '../../s
 import { activeContestants } from '../../shared/scene'
 import type { ContestantId, GameState, SlotId } from '../../shared/types'
 import { bevelBar, emblem, h, svg, type CamFrameEl } from '../ds/components'
-import { chipFor, DIAMOND, imageBox, keyForSlot, lifelineEl, liveTimer, optionBar, optionStates, quizPlate, targetName, turnSlots, type OptEl, type PlateEl } from './quizScenes'
+import {
+  chipFor,
+  DIAMOND,
+  flowLayout,
+  imageBox,
+  type FlowItem,
+  keyForSlot,
+  lifelineEl,
+  liveTimer,
+  optionBar,
+  optionStates,
+  quizPlate,
+  targetName,
+  turnSlots,
+  type OptEl,
+  type PlateEl
+} from './quizScenes'
 import type { Scene } from './scenes'
 
 type SalonKind = 'test' | 'sino' | 'quien' | 'ladder' | 'estimacion' | 'rosco'
@@ -27,14 +43,11 @@ function plateIds(s: GameState): { key: string; slots: ContestantId[] }[] {
   return activeContestants(s).map((id) => ({ key: id, slots: [id] }))
 }
 
-/** ¿La pregunta trae alguna imagen? Entonces la pregunta y las opciones dejan sitio al marco. */
-const hasImage = (s: GameState) => !!(s.quiz.current?.question.imagen || s.quiz.current?.question.imagen_respuesta)
-
 export function salonKey(s: GameState): string {
   const k = salonKind(s)
   if (k === 'rosco') return `salon:rosco:${s.rosco.players.length}:${s.rosco.players.map((p) => p.letters.length).join(',')}`
   const n = s.quiz.current?.question.opciones.length ?? 4
-  return `salon:${k}:${n}:${hasImage(s) ? 'img' : ''}:${s.layout}:${plateIds(s)
+  return `salon:${k}:${n}:${s.layout}:${plateIds(s)
     .map((p) => p.key)
     .join(',')}:${s.quiz.ladder.levels.length}:${s.quiz.lifelines.map((l) => l.id + l.icon).join(',')}`
 }
@@ -63,29 +76,42 @@ function buildSalonQuiz(s: GameState): Scene {
   root.append(corner(LABELS[kind] ?? ''))
   const n = Math.max(2, Math.min(4, s.quiz.current?.question.opciones.length ?? 4))
   const ladder = kind === 'ladder'
-  const withImg = hasImage(s)
-  const W = ladder || withImg ? 1180 : 1720
-  // escalera con imagen: la pregunta deja sitio al marco (a su derecha)
-  const QW = ladder && withImg ? 720 : W
+  // ancho de la pregunta y las opciones: normal, y con la imagen a la vista (se encogen y la imagen ocupa
+  // el hueco grande de la derecha; en la escalera, la pregunta deja sitio al marco a su derecha)
+  const W0 = ladder ? 1180 : 1720
+  const W1 = ladder ? 1180 : 1060
+  const QW0 = W0
+  const QW1 = ladder ? 720 : W1
+  const flow: FlowItem[] = []
 
   // pregunta
   const qText = h('span', kind === 'quien' ? 'k-quote' : 'k-question')
   const qCap = kind === 'quien' ? h('span', 'k-caption', { position: 'absolute', top: 18, left: 0, right: 0, textAlign: 'center' }, ['¿Quién lo dijo?']) : null
-  const qBar = bevelBar({ box: { x: 100, y: 130, w: QW, h: kind === 'estimacion' ? 230 : 270 }, c: 64, center: true }, qCap ? [qCap, qText] : [qText])
+  const qh = kind === 'estimacion' ? 230 : 270
+  const qBar = bevelBar({ box: { x: 100, y: 130, w: QW0, h: qh }, c: 64, center: true }, qCap ? [qCap, qText] : [qText])
   root.append(qBar)
+  flow.push({ el: qBar, normal: { x: 100, y: 130, w: QW0, h: qh }, small: { x: 100, y: 130, w: QW1, h: qh } })
 
   // opciones
   let opts: OptEl[] = []
   if (kind === 'sino') {
     root.append(h('div', 'k-track', { top: 560 }))
-    const sw = withImg ? 575 : 840
-    opts = [0, 1].map((i) => optionBar('', { x: i ? 100 + sw + 30 : 100, y: 445, w: sw, h: 230 }, 80, true))
+    const sinoBox = (w: number, i: number) => {
+      const sw = Math.round((w - 30) / 2)
+      return { x: i ? 100 + sw + 30 : 100, y: 445, w: sw, h: 230 }
+    }
+    opts = [0, 1].map((i) => optionBar('', sinoBox(W0, i), 80, true))
+    opts.forEach((o, i) => flow.push({ el: o.root, normal: sinoBox(W0, i), small: sinoBox(W1, i) }))
   } else if (kind !== 'estimacion') {
-    const ow = (W - 30) / 2
     const oh = ladder ? 112 : 130
     const y0 = ladder ? 440 : 450
+    const optBox = (w: number, i: number) => {
+      const ow = Math.round((w - 30) / 2)
+      return { x: 100 + (i % 2) * (ow + 30), y: y0 + (i < 2 ? 0 : oh + 24), w: ow, h: oh }
+    }
     root.append(h('div', 'k-track', { top: y0 + oh / 2 }), h('div', 'k-track', { top: y0 + oh + 24 + oh / 2 }))
-    opts = Array.from({ length: n }, (_, i) => optionBar('ABCD'[i], { x: 100 + (i % 2) * (ow + 30), y: y0 + (i < 2 ? 0 : oh + 24), w: ow, h: oh }, 46, false, kind === 'quien'))
+    opts = Array.from({ length: n }, (_, i) => optionBar('ABCD'[i], optBox(W0, i), 46, false, kind === 'quien'))
+    if (!ladder) opts.forEach((o, i) => flow.push({ el: o.root, normal: optBox(W0, i), small: optBox(W1, i) }))
   }
   root.append(...opts.map((o) => o.root))
 
@@ -94,10 +120,12 @@ function buildSalonQuiz(s: GameState): Scene {
   if (kind === 'estimacion') {
     const value = h('span', 'k-est__value', { fontSize: 110 })
     const close = h('span', '', { fontSize: 38, fontWeight: 600, whiteSpace: 'nowrap' })
-    const bar = bevelBar({ box: withImg ? { x: 100, y: 420, w: 1180, h: 260 } : { x: 260, y: 420, w: 1400, h: 260 }, c: 80, center: true }, [h('span', 'k-caption', {}, ['Respuesta']), value, close], {
+    const estBox = { x: 260, y: 420, w: 1400, h: 260 }
+    const bar = bevelBar({ box: estBox, c: 80, center: true }, [h('span', 'k-caption', {}, ['Respuesta']), value, close], {
       flexDirection: 'column',
       gap: 6
     })
+    flow.push({ el: bar, normal: estBox, small: { x: 100, y: 420, w: W1, h: 260 } })
     bar.classList.add('k-opt')
     root.append(h('div', 'k-track', { top: 550 }), bar)
     est = { value, close, bar }
@@ -148,11 +176,13 @@ function buildSalonQuiz(s: GameState): Scene {
   const timer = liveTimer(ladder ? 1170 : 1700, 18, 0.8)
   root.append(timer.root)
   // imagen: a la derecha (sin tapar la pregunta ni las opciones); en la escalera, junto a la pregunta
-  const image = imageBox(ladder ? { x: 850, y: 130, w: 430, h: 270 } : { x: 1320, y: 130, w: 500, h: 600 })
+  const image = imageBox(ladder ? { x: 850, y: 130, w: 430, h: 270 } : { x: 100 + W1 + 40, y: 130, w: 1820 - (100 + W1 + 40), h: 680 })
   root.append(image.root, image.full)
+  const layout = flowLayout(flow)
 
   const update = (st: GameState) => {
-    image.set(st)
+    const img = image.set(st)
+    layout.apply(img.on, img.wait)
     const cur = st.quiz.current
     const text = cur && cur.phase !== 'ready' ? cur.question.enunciado : ''
     qText.textContent = kind === 'quien' && text ? `«${text}»` : text
